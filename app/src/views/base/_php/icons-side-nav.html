@@ -1,0 +1,20 @@
+<!--
+	<ul class="uk-nav uk-nav-default tm-nav" *ngFor="let i of iconSideNav"><li><a routerLink="{{ i.linkPath }}">{{ i.linkLabel }}</a></li>
+</ul>
+-->
+<div class="tm-sidebar-right uk-visible@l">
+	<div uk-sticky="offset: 160" class="uk-sticky uk-active uk-sticky-fixed" style="position: fixed; width: 200px; margin-top: 0px !important; top: 160px;">
+		<ul class="uk-nav uk-nav-default tm-nav" uk-scrollspy-nav="closest: li; scroll: true">
+			<li><a [routerLink]="['/base/icons/']" [fragment]="'home'" uk-scroll>Home</a></li>
+			<li><a [routerLink]="['/base/icons/']" [fragment]="'fileTypes'" uk-scroll>File Types</a></li>
+			<li><a [routerLink]="['/base/icons/']" [fragment]="'grid'" uk-scroll>Grid</a></li>
+			<li><a [routerLink]="['/base/icons/']" [fragment]="'informative'" uk-scroll>Informative</a></li>
+			<li><a [routerLink]="['/base/icons/']" [fragment]="'lists'" uk-scroll>Lists</a></li>
+			<li><a [routerLink]="['/base/icons/']" [fragment]="'navigation'" uk-scroll>Navigation</a></li>
+			<li><a [routerLink]="['/base/icons/']" [fragment]="'opendata'" uk-scroll>Opendata</a></li>
+			<li><a [routerLink]="['/base/icons/']" [fragment]="'social'" uk-scroll>Social</a></li>
+			<li><a [routerLink]="['/base/icons/']" [fragment]="'tables'" uk-scroll>Tables</a></li>
+			<li><a [routerLink]="['/base/icons/']" [fragment]="'weekly'" uk-scroll>Weekly</a></li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,43 @@
+<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Accessible Button</h2>
+<div class="uk-section uk-section-muted uk-padding">
+	<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
+	<ul>
+		<li>
+			The <code>role="button"</code> lets screen-readers know the element is a button
+		</li>
+		<li>
+			the <code>id="submitFeedback"</code> should describe the function of the button
+		</li>
+		<li>
+			The <code>tabindex="0"</code> allows elements besides links and form elements to receive keyboard focus. It does not change the tab order, but places the element in the logical navigation flow, as if it were a link on the page.
+		</li>
+	</ul>
+</div>
+<!-- Live Examples --
+<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
+<dl class="uk-description-list uk-description-list-divider">
+	<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
+</dl>
+-->
+<!-- Example -->
+<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+<div class="eia-card">
+	<div class="button-container">
+		<button type="submit" id="submitFeedback" tabIndex="0" role="button" class="submit">
+			This is a button
+		</button>
+	</div>
+</div>
+<!-- HTML -->
+<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+<pre><code class="language-html" id="Button">&lt;div class="button-container"&gt;
+  &lt;button type="submit" id="submitFeedback" tabIndex="0" role="button" class="submit"&gt;
+    Submit Feedback
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+<!-- Copy Button -->
+<p>
+	<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Button">
+		<span uk-icon="copy"></span>Copy to clipboard
+	</button>
+</p>

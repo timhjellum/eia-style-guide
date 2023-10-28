@@ -1,0 +1,32 @@
+<h1 class="uk-h1 tm-heading-fragment" id=" Page Titles">Page Titles</h1>
+<p class="uk-text-lead"></p>
+
+<div *ngFor="let i of pageTitleList" class="">
+	<!-- uk-parallax="opacity: 1,0; start: 100vh; end: 95vh + 10%;" -->
+	<h2 class="uk-h3 tm-heading-fragment">{{ i.titleName }}</h2>
+	<p>Add <code>.{{ i.titleClass }}</code> to an anchor tag with the class of <code>.title-banner</code>.</p>
+	<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+	<div class="eia-card">
+		<div class="module-outer">
+			<div class="module-inner">
+				<!-- start example -->
+				<div class="title-banner {{ i.titleClass }}">
+					<h1>The five boxing wizards jump quickly</h1>
+					<p class="uk-text-lead"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- HTML -->
+	<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+	<pre><code class="language-html" id="{{ i.titleClass }}">&lt;div class="title-banner {{ i.titleClass }}"&gt;
+  &lt;h1&gt;The five boxing wizards jump quickly&lt;/h1&gt;
+&lt;/div&gt;</code></pre>
+	<!-- Copy Button -->
+	<p>
+		<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" attr.data-clipboard-target="#{{i.titleClass}}">
+			<span uk-icon="copy"></span>Copy to clipboard
+		</button>
+	</p>
+</div>
+</section>

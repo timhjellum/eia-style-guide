@@ -1,0 +1,6 @@
+### JetBrains IDEs
+.idea/
+
+### NodeJS
+node_modules/
+package-lock.json

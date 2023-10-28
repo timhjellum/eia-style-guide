@@ -1,0 +1,104 @@
+<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Accessible EIA Branded Select</h2>
+<div class="uk-section uk-section-muted uk-padding">
+	<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
+	<ul>
+		<li>
+			The <code> for="previousReports"</code> associates the label with the form input
+		</li>
+		<li>
+			The <code>id="previousReports"</code> should reference the label <code> for="previousReports"</code>
+		</li>
+		<li>
+			The <code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> and <code>&lt;legend&gt;&lt;/legend&gt;</code> should be utilized
+		</li>
+	</ul>
+</div>
+<!-- Live Examples --
+<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
+<dl class="uk-description-list uk-description-list-divider">
+	<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
+</dl>
+-->
+<!-- Example -->
+<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+<div class="eia-card">
+	<div class="l-row l-two-col-left-wide">
+		<div class="primary l-col">
+			<div class="l-col">
+				<div class="form-container do-not-print">
+					<fieldset>
+						<legend>Previous reports</legend>
+						<div class="dropdown-container">
+							<div class="dropdown-button">
+								<span class="text" for="previousReports">
+									Select Year
+								</span>
+								<span class="eia ico d-arrow">
+									<span>dropdown arrow</span>
+								</span>
+							</div>
+							<div class="dropdown-menu">
+								<ul id="previousReports">
+									<li class="eia ico pdf">
+										<a>2020</a>
+									</li>
+									<li class="eia ico pdf">
+										<a>2019</a>
+									</li>
+									<li class="eia ico pdf">
+										<a>2018</a>
+									</li>
+									<li>
+										<a>See all</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="l-col"></div>
+</div>
+<!-- HTML -->
+<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+<pre><code class="language-html" id="BrandedSelect">&lt;div class="form-container do-not-print"&gt;
+  &lt;!-- add width here or leave blank --&gt;
+  &lt;fieldset style="width: 150px;"&gt;
+    &lt;legend&gt;Previous reports&lt;/legend&gt;
+	  &lt;div class="dropdown-container"&gt;
+		&lt;div class="dropdown-button"&gt;
+		  &lt;span class="text" for="previousReports"&gt;Select Year&lt;/span&gt;
+		  &lt;span class="ico d-arrow"&gt;
+			&lt;span&gt;dropdown arrow&lt;/span&gt;
+		  &lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class="dropdown-menu"&gt;
+		  &lt;ul id="<mark>previousReports</mark>"&gt;
+		    &lt;!-- note the icon (ico pdf) --&gt;
+			&lt;li class="ico pdf"&gt;
+			  &lt;a&gt;2020&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class="ico pdf"&gt;
+			  &lt;a&gt;2019&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class="ico pdf"&gt;
+			  &lt;a&gt;2018&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+			  &lt;a&gt;See all&lt;/a&gt;
+			&lt;/li&gt;
+		  &lt;/ul&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/fieldset&gt;
+  &lt;/div&gt;</code></pre>
+<!-- Copy Button -->
+<p>
+	<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#BrandedSelect">
+		<span uk-icon="copy"></span>Copy to clipboard
+	</button>
+</p>
+<hr class="uk-margin-large">
