@@ -1,7 +1,8 @@
 <div id="secondaryNavigation">
 	<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
-		<li><a href="#pageLayouts">Introduction</a></li>
-		<li><a href="#namingConventions">Naming Convention</a></li>
+		<li><a href="#layoutsIntroduction">Introduction</a></li>
+		<li><a href="#layoutsArchitecture">Introduction</a></li>
+		<li><a href="#layoutsNamingConventions">Naming Convention</a></li>
 		<li><a href="#fullWidthColumn">full Width Column</a></li>
 		<li><a href="#twoColEven">two Columns Even</a></li>
 		<li><a href="#twoColLeftWide">two Columns Left Wide</a></li>
@@ -17,14 +18,22 @@
 		<li><a href="#sixColumnsEven">six Columns Even</a></li>
 	</ul>
 </div>
-
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$  Page Layouts $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="pageLayouts">
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$ Page Layouts Architecture $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section id="layoutsArchitecture">
 	<div class="eia-container">
+		<h1></h1>
 		<p class="uk-text-lead"></p>
-		<h2 class=" uk-h3 tm-heading-fragment">Architecture</h2>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$ Page Layouts Architecture $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section id="layoutsArchitecture">
+	<div class="eia-container">
+
+		<h3 class="eia-sub-heading">Architecture</h3>
 		<p>We leverage a custom <a href="https://www.w3schools.com/css/css_grid.asp">CSS Grid</a> system for the page layouts. The page layouts allow for the pages and elements on the page to be responsive based on the users' media device (e.g. print, mobile, laptop, desktop). To accomplish this, we use break points based off of the width of the users' media device. The breakpoints are as follows:</p>
 		<table class="uk-table uk-table-striped" id="layout-resolution">
 			<caption>Screen Resolution</caption>
@@ -92,10 +101,10 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$ Naming Conventions $$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="namingConventions">
+<section id="layoutsNamingConventions">
 	<div class="eia-container">
 
-		<h3>Naming Conventions</h3>
+		<h3 class="eia-sub-heading">Naming Conventions</h3>
 		<ul class="ul">
 			<li class="li">All style naming conventions use classes and not ID selectors.</li>
 			<li class="li">All class names are lowercase and hyphenated.</li>
@@ -110,10 +119,10 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <section>
 	<div class="eia-container">
-		<h2 id="small-margin" class="uk-h3 tm-heading-fragment">Single Columns</h2>
-		<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
+		<h2 class="eia-sub-heading uk-text-center">Single Column</h2>
+		<ul class="uk-grid-small uk-child-width-1-2 uk-flex-center uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
 			<li>
-				<div class="uk-card uk-card-default uk-card-body uk-text-center prototype-thumb">
+				<div class="uk-card uk-card-default uk-card-body prototype-thumb">
 					<div class="prototype-thumb-inside">
 						<div class="prototype-column-container w100">
 							<div class="prototype-column prototype-secondary"></div>
@@ -121,7 +130,7 @@
 					</div>
 				</div>
 			</li>
-			<li>
+			<!--li>
 				<div class="uk-card uk-card-default uk-card-body uk-text-center">Item 2</div>
 			</li>
 			<li>
@@ -141,7 +150,7 @@
 			</li>
 			<li>
 				<div class="uk-card uk-card-default uk-card-body uk-text-center">Item 8</div>
-			</li>
+			</li-->
 		</ul>
 	</div>
 </section>
@@ -187,7 +196,7 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <section>
 	<div class="eia-container">
-		<h2 id="small-margin" class="uk-h3 tm-heading-fragment">Two Columns</h2>
+		<h2 class="eia-sub-heading">Two Columns</h2>
 		<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
 			<li>
 				<div class="uk-card uk-card-default uk-card-body uk-text-center prototype-thumb" uk-tooltip="2 Column Left Narrow (25/75)">
@@ -551,7 +560,7 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <section>
 	<div class="eia-container">
-		<h2 id="small-margin" class="uk-h3 tm-heading-fragment">Three Columns</h2>
+		<h2 class="eia-sub-heading">Three Columns</h2>
 		<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
 			<li>
 				<div class="uk-card uk-card-default uk-card-body uk-text-center prototype-thumb" uk-tooltip="3 Column (25/50/25)">
@@ -669,7 +678,7 @@
 </section>
 <section>
 	<div class="eia-container">
-		<h2 id="small-margin" class="uk-h3 tm-heading-fragment">Four Columns</h2>
+		<h2 class="eia-sub-heading">Four Columns</h2>
 		<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
 			<li>
 				<div class="uk-card uk-card-default uk-card-body uk-text-center prototype-thumb" uk-tooltip="2 Column Right (58/42)">
@@ -735,7 +744,7 @@
 </section>
 <section>
 	<div class="eia-container">
-		<h2 id="small-margin" class="uk-h3 tm-heading-fragment">Five Columns Even</h2>
+		<h2 class="eia-sub-heading">Five Columns Even</h2>
 		<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
 			<li>
 				<div class="uk-card uk-card-default uk-card-body uk-text-center prototype-thumb" uk-tooltip="2 Column Right (58/42)">
@@ -796,7 +805,7 @@
 </section>
 <section>
 	<div class="eia-container">
-		<h2 id="small-margin" class="uk-h3 tm-heading-fragment">Six Columns Even</h2>
+		<h2 class="eia-sub-heading">Six Columns Even</h2>
 		<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
 			<li>
 				<div class="uk-card uk-card-default uk-card-body uk-text-center prototype-thumb" uk-tooltip="6 Column Even (16/16/16/16/16/16)">
