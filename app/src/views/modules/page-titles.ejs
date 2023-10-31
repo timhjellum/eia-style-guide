@@ -1,5 +1,5 @@
 <div id="secondaryNavigation">
-	<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true" id="dingDong"></ul>
+	<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true" id="scrollSpy"></ul>
 </div>
 <script>
 	const pageTitles = [
@@ -105,12 +105,7 @@
 		},
 	]
 
-	const dingDong = document.getElementById('dingDong')
-	//const secondaryNavigationUL = secondaryNavigation.getElementsByTagName('ul')[0]
-
-
-
-
+	const scrollSpy = document.getElementById('scrollSpy')
 
 	pageTitles.forEach((element) => {
 		let titleName = element.titleName
@@ -122,7 +117,7 @@
 		anchor.innerHTML = (titleName)
 
 		li.appendChild(anchor)
-		dingDong.appendChild(li)
+		scrollSpy.appendChild(li)
 
 		const h2 = document.createElement('h2')
 		const h2InnerHTML = titleName
