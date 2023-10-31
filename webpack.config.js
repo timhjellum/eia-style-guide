@@ -77,7 +77,7 @@ const ejsPagesArray = () => {
 					templateParameters: {
 						'title': title,
 						'page': relativeFilePath,
-					}
+					},
 				})
 			)
 		})
