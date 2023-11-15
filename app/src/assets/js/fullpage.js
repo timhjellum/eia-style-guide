@@ -9,7 +9,7 @@ class FullPage {
 			//parallax: true,
 			//parallaxKey: 'V2phR3BsYkd4MWJTNWpiMjA9NFlfdnB6Y0dGeVlXeHNZWGc9eGZ2', //'9091D6F3-396D4EFE-B12B831F-E44444DF',
 			//slidesNavigation: true,
-			//scrollOverflow: true,
+			scrollOverflow: false, // required for longer pages
 			//scrollOverflowReset: true,
 			//scrollOverflowResetKey: 'aDNibVYwYkdsbWVTNWhjSEE9WXBfRTRsYzJOeWIyeHNUM1psY21ac2IzZFNaWE5sZEE9PWx6ZA==', // netlifly.app
 			//scrollOverflowResetKey: 'V2ZhR3BsYkd4MWJTNWpiMjA9MTFfZDdwYzJOeWIyeHNUM1psY21ac2IzZFNaWE5sZEE9PVVTRw==', // hjellum.com

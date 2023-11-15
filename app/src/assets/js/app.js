@@ -32,6 +32,8 @@ import fullpageJS from './fullpage'
 new fullpageJS();
 import UIKit from './uikit'
 new UIKit();
+import highlightJS from './highlight'
+new highlightJS();
 
 
 

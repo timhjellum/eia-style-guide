@@ -1,11 +1,44 @@
-/*!* fullPage 4.0.21
-* https://github.com/alvarotrigo/fullPage.js
-*
-* @license GPLv3 for open source use only
-* or Fullpage Commercial License for commercial use
-* http://alvarotrigo.com/fullPage/pricing/
-*
-* Copyright (C) 2021 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo*/
+/*
+section {
+
+    &#fileTypes,
+    &#grid,
+    &#list,
+    &#menu,
+    &#social {
+        display: table;
+
+        .fp-section {
+            height: 100% !important;
+            min-height: 100% !important;
+        }
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 html.fp-enabled,
 .fp-enabled body {
     margin: 0;
@@ -23,6 +56,7 @@ html.fp-enabled,
     display: block
 }
 
+/*
 .fp-slide {
     float: left
 }
@@ -41,7 +75,7 @@ html.fp-enabled,
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out
 }
-
+*/
 .fp-table {
     display: flex;
     flex-direction: column;
@@ -49,6 +83,7 @@ html.fp-enabled,
     width: 100%
 }
 
+/*
 .fp-slidesContainer {
     float: left;
     position: relative
@@ -231,7 +266,7 @@ html.fp-enabled,
 #fp-nav ul li .fp-tooltip.fp-left {
     left: 20px
 }
-
+*/
 .fp-auto-height.fp-section,
 .fp-auto-height .fp-slide {
     height: auto !important
@@ -241,6 +276,7 @@ html.fp-enabled,
     height: auto !important
 }
 
+/*
 .fp-scrollable.fp-responsive .fp-is-overflow.fp-section,
 .fp-scrollable .fp-section,
 .fp-scrollable .fp-slide {
@@ -248,13 +284,14 @@ html.fp-enabled,
     height: calc(var(--vh, 1vh) * 100)
 }
 
+
 .fp-scrollable.fp-responsive .fp-is-overflow.fp-section:not(.fp-auto-height):not([data-percentage]),
 .fp-scrollable .fp-section:not(.fp-auto-height):not([data-percentage]),
 .fp-scrollable .fp-slide:not(.fp-auto-height):not([data-percentage]) {
     min-height: 100vh;
     min-height: calc(var(--vh, 1vh) * 100)
 }
-
+*/
 .fp-overflow {
     justify-content: flex-start;
     max-height: 100vh
@@ -310,25 +347,10 @@ html.fp-enabled,
     border: 4px solid transparent
 }
 
-.fp-warning,
-.fp-watermark {
-    z-index: 9999999;
-    position: absolute;
-    bottom: 0
-}
-
+.fp-watermark,
 .fp-warning,
 .fp-watermark a {
-    text-decoration: none;
-    color: #000;
-    background: rgba(255, 255, 255, .6);
-    padding: 5px 8px;
-    font-size: 14px;
-    font-family: arial;
-    color: #000;
-    display: inline-block;
-    border-radius: 3px;
-    margin: 12px
+    display: none;
 }
 
 .fp-noscroll .fp-overflow {
