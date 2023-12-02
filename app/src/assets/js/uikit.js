@@ -1,12 +1,14 @@
 import UIkit from 'uikit';
-//import '../../../node_modules/uikit/dist/js/uikit-icons';
+import Icons from 'uikit/dist/js/uikit-icons';
 
 
 class UIKit {
 	constructor() {
 		document.addEventListener('uikit:init', () => {
 			UIkit.modal()
-			//UIkit.icon()
+			UIkit.icon()
+			// loads the Icon plugin
+			UIkit.use(Icons);
 			UIkit.scrollspyNav();
 		})
 

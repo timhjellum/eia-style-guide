@@ -9,6 +9,110 @@ body {
 
 }
 
+
+#eiaWrapper {
+    display: grid;
+}
+
+@media screen and (min-width: 440px)
+
+/* 400px + body padding */
+    {
+    #eiaWrapper {
+        width: 100%;
+        grid-template-columns: 1fr 1000px 1fr;
+
+        #scrollingSection {
+            //border: 2px solid orange;
+            //color: orange;
+            //margin-bottom: 1px;
+            //text-align: center;
+            //padding: 20px;
+
+        }
+
+
+        .fluid {
+            display: none;
+        }
+
+        .fixed {
+            display: inline-block;
+        }
+    }
+}
+
+@media screen and (max-width: 439px)
+
+/* 400px + body padding */
+    {
+    #eiaWrapper {
+        grid-template-columns: 1fr 100% 1fr;
+
+        div {
+
+            &:nth-child(2) {
+                border: 2px solid orangered;
+                color: orangered;
+                text-align: center;
+                padding: 20px;
+
+            }
+        }
+
+        .fluid {
+            display: inline-block;
+        }
+
+        .fixed {
+            display: none;
+        }
+    }
+}
+
+
+
+/* Fixed header and footer.
+	* --------------------------------------- */
+#eiaHeader {
+    position: fixed;
+    height: 50px;
+    display: block;
+    width: 100%;
+    background: #333;
+    z-index: 9;
+    text-align: center;
+    color: #f2f2f2;
+    padding: 20px 0 0 0;
+}
+
+#eiaPanorama {
+    //position: fixed;
+    //height: 50px;
+    display: block;
+    width: 100%;
+    //background: #333;
+    //z-index: 9;
+    //text-align: center;
+    //color: #f2f2f2;
+    padding: 0;
+}
+
+#eiaFooter {
+    //position: fixed;
+    //height: 50px;
+    display: block;
+    width: 100%;
+    //background: #333;
+    //z-index: 9;
+    //text-align: center;
+    //color: #f2f2f2;
+    padding: 0;
+}
+
+
+
+
 section {
     &.fp-is-overflow {
         >.fp-overflow {
@@ -18,6 +122,7 @@ section {
     }
 }
 
+/*
 @media @small {
     div {
         order: 1;
@@ -47,6 +152,7 @@ section {
     #rightColumn {
         display: none;
     }
+
 }
 
 @media @medium {
@@ -83,7 +189,7 @@ section {
     }
 
 }
-
+*/
 
 
 

@@ -4,7 +4,7 @@ import fullpage from 'fullpage.js'
 
 class FullPage {
 	constructor() {
-		new fullpage('#mainColumn', {
+		new fullpage('#scrollingSection', {
 			licenseKey: 'L75AH-JQ2RI-EIHJ7-35EKK-JVMSM',
 			//parallax: true,
 			//parallaxKey: 'V2phR3BsYkd4MWJTNWpiMjA9NFlfdnB6Y0dGeVlXeHNZWGc9eGZ2', //'9091D6F3-396D4EFE-B12B831F-E44444DF',

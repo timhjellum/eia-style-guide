@@ -1,1 +1,3 @@
-module.exports = `PANORAMA`
+module.exports = `<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" sources="srcset: ./assets/images/eia-style-guide_background.jpg?fit=crop&w=650&h=433&q=80 650w,
+./assets/images/eia-style-guide_background.jpg?fit=crop&w=1300&h=866&q=80 1300w; media: (min-width: 1200px)" data-src="./assets/images/eia-style-guide_background.jpg?fit=crop&w=650&h=433&q=80" data-srcset="./assets/images/eia-style-guide_background.jpg?fit=crop&w=650&h=433&q=80 650w,
+./assets/images/eia-style-guide_background.jpg?fit=crop&w=1300&h=866&q=80 1300w" sizes="(min-width: 650px) 650px, 100vw" uk-img>`
