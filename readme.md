@@ -1,7 +1,7 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=0196d8&size=35&center=true&vCenter=true&width=1000&lines=Welcome+To+The+EIA+Profile!;www.eia.gov)](https://git.io/typing-svg)
 
 <h3 align="center">"Given the complex and evolving energy challenges we face as a nation, EIA data and non-partisan analysis have never been more important."</h3>
-<p align="center">
+<p align="center" style="margin-bottom: 0">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Joseph_DeCarolis%2C_EIA_Administrator_2.png/330px-Joseph_DeCarolis%2C_EIA_Administrator_2.png" height="120px">
 </p>  
 <h4 align="center" style="margin-top: 0">- EIA Administrator Joseph DeCarolis -</h4>
