@@ -4,7 +4,7 @@
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Joseph_DeCarolis%2C_EIA_Administrator_2.png/330px-Joseph_DeCarolis%2C_EIA_Administrator_2.png" height="120px">
 </p>  
-<h4 align="center">- EIA Administrator Joseph DeCarolis -</h4>
+<h4 align="center" style="margin-top: -20px">- EIA Administrator Joseph DeCarolis -</h4>
 
 <br>
 
