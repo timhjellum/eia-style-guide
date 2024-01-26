@@ -2,7 +2,7 @@
 
 <h3 align="center">"Given the complex and evolving energy challenges we face as a nation, EIA data and non-partisan analysis have never been more important."</h3>
 <div align="center" style="margin-bottom: 0">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Joseph_DeCarolis%2C_EIA_Administrator_2.png/330px-Joseph_DeCarolis%2C_EIA_Administrator_2.png" height="120px">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Joseph_DeCarolis%2C_EIA_Administrator_2.png/330px-Joseph_DeCarolis%2C_EIA_Administrator_2.png" alt="EIA Administrator Joseph DeCarolis" />
 </div>  
 <h4 align="center" style="margin-top: 0">- EIA Administrator Joseph DeCarolis -</h4>
 
