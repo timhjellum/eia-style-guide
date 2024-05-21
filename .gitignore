@@ -1,10 +1,2 @@
-### JetBrains IDEs
-.idea/
-
 ### NodeJS
 node_modules/
-partials/
-_php/
-package-lock.json
-*.php
-*.html
