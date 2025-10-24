@@ -1,96 +1,114 @@
-<section id="">
-	<div class="eia-container">
+<a id="scrollTop" href>
+	<div></div>
+</a>
+<aside>
+	<nav>
+		<ul>
+		</ul>
+	</nav>
+</aside>
+<main>
+	<h1 class="eia-h1">Header Logos</h1>
+	<section>
+		<div class="eia-container">
+			<!-- h2 class="eia-h2"></h2 -->
+			<!-- p class="eia-para"></p -->
+			<h3 class="eia-h3">Example</h3>
+			<div class="eia-card">
+				<div class="l-margin-bottom eia-container-resizer">
 
-		<h1 id="introduction" class="uk-h1 tm-heading-fragment">
-			<%= title %>
-		</h1>
-		<p class="uk-text-lead"></p>
-		<h2 class=" uk-h3 tm-heading-fragment">Header Logos</h2>
-		<div class="eia-card header-logo">
-			<h3 class="uk-h3 tm-heading-fragment uk-text-muted">Example</h3>
-			<div class="logo-full-size">
-				<span class="logo"></span>
+
+					<div class="eia-cardheader-logo">
+						<h3 class="uk-text-muted">Example</h3>
+						<div class="logo-full-size">
+							<span class="logo"></span>
+						</div>
+
+						<h3 class="uk-text-muted">Shrunk Example</h3>
+						<div class="logo-shrink">
+							<span class="logo"></span>
+						</div>
+					</div>
+
+				</div>
+	</section>
+	<section class="">
+		<div class="eia-container">
+			<h2 class="eia-h2">Header Logos Focus</h2>
+			<!-- Example -->
+			<div class="eia-cardheader-logo">
+				<h3 class="uk-text-muted">Example</h3>
+				<div class="logo-full-size">
+					<span class="logo focus"></span>
+				</div>
+
+				<h3 class="uk-text-muted">Shrunk Example</h3>
+				<div class="logo-shrink">
+					<span class="logo focus"></span>
+				</div>
 			</div>
+		</div>
+	</section>
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<section class="dilly">
+		<div class="eia-container">
+			<h2 class="eia-h2">Beta Header Logos</h2>
+			<div class="eia-cardheader-logo">
+				<h3 class="uk-text-muted">Example</h3>
+				<div class="logo-full-size">
+					<a class="logo beta"></a>
+				</div>
 
-			<h3 class="uk-h3 tm-heading-fragment uk-text-muted">Shrunk Example</h3>
-			<div class="logo-shrink">
-				<span class="logo"></span>
+				<h3 class="uk-text-muted">Shrunk Example</h3>
+				<div class="logo-shrink">
+					<a class="logo beta"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<section class="dilly">
+		<div class="eia-container">
+			<h2 class="eia-h2">Beta Header Logos</h2>
+			<div class="eia-cardheader-logo">
+				<h3 class="uk-text-muted">Example</h3>
+				<div class="logo-full-size">
+					<a class="logo beta focus"></a>
+				</div>
+
+				<h3 class="uk-text-muted">Shrunk Example</h3>
+				<div class="logo-shrink">
+					<a class="logo beta focus"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
+	<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+	<section class="dilly">
+		<div class="eia-container">
+			<h2 class="eia-h2">Print Logo</h2>
+			<div class="eia-card">
+				<div class="uk-text-muted">Example</div>
+				<div class="logo-logo-white-background">
+					<span class="print-logo"></span>
+				</div>
 			</div>
 		</div>
 
-	</div>
-</section>
-<section id="">
-	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">Header Logos Focus</h2>
-		<!-- Example -->
-		<div class="eia-card header-logo">
-			<h3 class="uk-h3 tm-heading-fragment uk-text-muted">Example</h3>
-			<div class="logo-full-size">
-				<span class="logo focus"></span>
-			</div>
-
-			<h3 class="uk-h3 tm-heading-fragment uk-text-muted">Shrunk Example</h3>
-			<div class="logo-shrink">
-				<span class="logo focus"></span>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
-	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">Beta Header Logos</h2>
-		<div class="eia-card header-logo">
-			<h3 class="uk-h3 tm-heading-fragment uk-text-muted">Example</h3>
-			<div class="logo-full-size">
-				<a class="logo beta"></a>
-			</div>
-
-			<h3 class="uk-h3 tm-heading-fragment uk-text-muted">Shrunk Example</h3>
-			<div class="logo-shrink">
-				<a class="logo beta"></a>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
-	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">Beta Header Logos</h2>
-		<div class="eia-card header-logo">
-			<h3 class="uk-h3 tm-heading-fragment uk-text-muted">Example</h3>
-			<div class="logo-full-size">
-				<a class="logo beta focus"></a>
-			</div>
-
-			<h3 class="uk-h3 tm-heading-fragment uk-text-muted">Shrunk Example</h3>
-			<div class="logo-shrink">
-				<a class="logo beta focus"></a>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
-	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">Print Logo</h2>
-		<div class="eia-card">
-			<div class="uk-text-default uk-text-normal uk-text-muted">Example</div>
-			<div class="logo-logo-white-background">
-				<span class="print-logo"></span>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
-	<div class="eia-container">
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

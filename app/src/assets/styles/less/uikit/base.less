@@ -2,7 +2,7 @@
 // Description:     Default values for HTML elements
 //
 // Component:       `uk-link`
-//                  `uk-h1`, `uk-h2`, `uk-h3`, `uk-h4`, `uk-h5`, `uk-h6`
+//                  `uk-h1`, `uk-h2`, ``, `uk-h4`, `uk-h5`, `uk-h6`
 //                  `uk-hr`
 //
 // ========================================================================
@@ -345,7 +345,7 @@ h1,
 h2,
 .uk-h2,
 h3,
-.uk-h3,
+.,
 h4,
 .uk-h4,
 h5,
@@ -371,7 +371,7 @@ h6,
 *+h2,
 *+.uk-h2,
 *+h3,
-*+.uk-h3,
+*+.,
 *+h4,
 *+.uk-h4,
 *+h5,
@@ -405,7 +405,7 @@ h2,
 }
 
 h3,
-.uk-h3 {
+. {
     font-size: @base-h3-font-size;
     line-height: @base-h3-line-height;
     .hook-base-h3();
@@ -741,7 +741,7 @@ template {
     h2,
     .uk-h2,
     h3,
-    .uk-h3,
+    .,
     h4,
     .uk-h4,
     h5,
@@ -768,7 +768,7 @@ template {
     }
 
     h3,
-    .uk-h3 {
+    . {
         .hook-inverse-base-h3();
     }
 

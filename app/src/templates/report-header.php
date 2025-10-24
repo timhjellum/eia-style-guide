@@ -33,7 +33,7 @@ $selectOptions       = '<li class="eia ico pdf"><a href="./archive/05842017.pdf"
 		<h1>
 			<?php echo "$pageTitle"?>
 		</h1>
-		<p class="uk-text-lead"></p>
+		<p class="eia-para"></p>
 		<div class="release-dates">
 			<span class="responsive-container">
 				<?php echo "$dataSeries"?>

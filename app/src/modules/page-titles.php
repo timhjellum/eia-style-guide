@@ -1,6 +1,4 @@
-<div id="secondaryNavigation">
-	<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true" id="scrollSpy"></ul>
-</div>
+
 <script>
 	const pageTitles = [
 		{
@@ -126,11 +124,11 @@
 		const p1InnerHTML = 'Add <code>' + titleClass + '</code> to an anchor tag with the class of <code>.title-banner</code>.'
 		p1.innerHTML = p1InnerHTML
 		const exampleDiv = document.createElement('div')
-		exampleDiv.className = ('uk-text-default uk-text-normal uk-text-uppercase')
+		exampleDiv.className = ('')
 		const Example = document.createTextNode('Example')
 		exampleDiv.appendChild(Example)
 		const cardDiv = document.createElement('div')
-		cardDiv.className = ('uk-card uk-card-default uk-padding')
+		cardDiv.className = ('eia-card')
 		const moduleOuter = document.createElement('div')
 		moduleOuter.className = ('module-outer')
 		const moduleInner = document.createElement('div')
@@ -142,7 +140,7 @@
 		const alpha = document.createTextNode('The five boxing wizards jump quickly');
 		h1.appendChild(alpha)
 		const htmlDiv = document.createElement('div')
-		htmlDiv.className = ('uk-text-default uk-text-normal uk-text-uppercase')
+		htmlDiv.className = ('')
 		const htmlInner = document.createTextNode('HTML')
 		htmlDiv.appendChild(htmlInner)
 		const pre = document.createElement('pre')
@@ -160,7 +158,7 @@
 
 		const p2 = document.createElement('p')
 		const button = document.createElement('button')
-		button.className = ('copy-element uk-button uk-button-primary')
+		button.className = ('copy-element eia-button eia-button-primary')
 		button.setAttribute('data-clipboard-action', 'copy')
 		//data-clipboard-action="copy"
 		button.setAttribute('data-clipboard-target', '#' + titleClass)

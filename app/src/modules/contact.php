@@ -1,29 +1,23 @@
-<div id="secondaryNavigation">
-	<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
-		<li><a href="#contactIntroduction">Introduction</a></li>
-		<li><a href="#primaryColumnExampleOne">Primary Column Example One</a></li>
-		<li><a href="#primaryColumnExampleTwo">Primary Column Example Two</a></li>
-		<li><a href="#primaryColumnExampleThr">Primary Column Example Three</a></li>
-		<li><a href="#SecondaryColumnExampleOne">Primary Column Example Three</a></li>
-		<li><a href="#blockQuote">Block Quote Contact Example</a></li>
-		<li><a href="#reportContactExampleOne">Report Contact Example Two</a></li>
-		<li><a href="#reportContactExampleTwo">Report Contact Example Two</a></li>
-	</ul>
-</div>
-
-<section id="contactIntroduction">
-	<h1 class="uk-h1 tm-heading-fragment" id=" Contact">Contact</h1>
-	<p class="uk-text-lead"></p>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$  primary Column Example One $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="primaryColumnExampleOne">
-	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">Primary Column Example One</h2>
-		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="eia-card">
+<a id="scrollTop" href>
+  <div></div>
+</a>
+<aside>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+</aside>
+<main>
+  <h1 class="eia-h1">Contact</h1>
+  <section>
+    <div class="eia-container">
+      <!-- h2 class="eia-h2"></h2 --><h2 class="eia-h2">Primary Column Example One</h2>
+      <!-- p class="eia-para"></p -->
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer">
+		
+	
 			<ul class="contact">
 				<li class="head">
 					<h4>Contacts</h4>
@@ -47,7 +41,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="PrimaryColumnExampleOne">&lt;ul class="contact"&gt;
 	&lt;li class="head"&gt;
 		&lt;h4&gt;Contacts&lt;/h4&gt;
@@ -71,8 +65,8 @@
 	&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#PrimaryColumnExampleOne">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#PrimaryColumnExampleOne">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -80,11 +74,11 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Primary Column Example Two $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="primaryColumnExampleTwo">
+<section class="primaryColumnExampleTwo">
 	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">Primary Column Example Two</h2>
+		<h2 class="eia-h2">Primary Column Example Two</h2>
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h3 class="eia-h3">Example</h3>
 		<div class="eia-card">
 			<ul class="contact">
 				<li class="head">
@@ -117,7 +111,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="Primary Column Example Two">&lt;ul class="contact"&gt;
 	&lt;li class="head"&gt;
 		&lt;h4&gt;Contacts&lt;/h4&gt;
@@ -149,8 +143,8 @@
 	&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Primary Column Example Two">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Primary Column Example Two">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -158,25 +152,25 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Primary Column Example Three $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="primaryColumnExampleThree">
+<section class="primaryColumnExampleThree">
 	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">Primary Column Example Three</h2>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h2 class="eia-h2">Primary Column Example Three</h2>
+		<h3 class="eia-h3">Example</h3>
 		<ul class="contact">
 			<li class="foot">
 				<a href="/about/contact/coal.php">Coal Data Contacts</a>
 			</li>
 		</ul>
 
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="PrimaryColumnExampleThree">&lt;ul class="contact"&gt;
 	&lt;li class="foot"&gt;
 		&lt;a href="/about/contact/coal.php"&gt;Coal Data Contacts&lt;/a&gt;
 	&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#PrimaryColumnExampleThree">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#PrimaryColumnExampleThree">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -184,15 +178,15 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Secondary Column $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="SecondaryColumnExampleOne">
+<section class="SecondaryColumnExampleOne">
 	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">Secondary Column</h2>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Example</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<h2 class="eia-h2">Secondary Column</h2>
+		<div class="">Live Example</div>
+		<dl class="">
 			<dd><a href="https://wwwdev.eia.gov/outlooks/ieo/section_issue_aiso.php">https://wwwdev.eia.gov/outlooks/ieo/section_issue_aiso.php</a></dd>
 		</dl>
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h3 class="eia-h3">Example</h3>
 		<div class="eia-card">
 			<ul class="contact">
 				<li class="head">
@@ -211,7 +205,7 @@
 			<p>Elizabeth Sendich, PhD, is Lead Industry Economist on the Macroeconomic Analysis Team. She helps maintain EIA&apos;s long-term production forecasts and enhances public understanding of important issues related to the industrial sector, including manufacturing, construction, mining, and agriculture. She is responsible for the integrated modeling of a diverse set of industries across the world and for analysis of topics important to the sector, such as trade, supply chains, and technology.</p>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="SecondaryColumn">&lt;ul class="contact"&gt;
 	&lt;li class="head"&gt;
 		&lt;h4&gt;About the author&lt;/h4&gt;
@@ -229,8 +223,8 @@
 &lt;p&gt;Elizabeth Sendich, PhD, is Lead Industry Economist on the Macroeconomic Analysis Team. She helps maintain EIA&amp;apos;s long-term production forecasts and enhances public understanding of important issues related to the industrial sector, including manufacturing, construction, mining, and agriculture. She is responsible for the integrated modeling of a diverse set of industries across the world and for analysis of topics important to the sector, such as trade, supply chains, and technology.&lt;/p&gt;
 </code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#SecondaryColumn">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#SecondaryColumn">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -238,27 +232,27 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Block Quote $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="blockQuote">
+<section class="blockQuote">
 	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">Block Quote</h2>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Example</div>
+		<h2 class="eia-h2">Block Quote</h2>
+		<div class="">Live Example</div>
 		<ul>
 			<li><a href="https://www.eia.gov/outlooks/ieo/section_issue_aiso.php">https://www.eia.gov/outlooks/ieo/section_issue_aiso.php</a></li>
 		</ul>
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h3 class="eia-h3">Example</h3>
 		<div class="eia-card">
 			<p>Elizabeth Sendich, PhD, is Lead Industry Economist on the Macroeconomic Analysis Team. She helps maintain EIA&apos;s long-term production forecasts and enhances public understanding of important issues related to the industrial sector, including manufacturing, construction, mining, and agriculture. She is responsible for the integrated modeling of a diverse set of industries across the world and for analysis of topics important to the sector, such as trade, supply chains, and technology.</p>
 			<blockquote>long-term energy consumption projections are uncertain because of the rapid rate of change that is magnified by the size of the economy.</blockquote>
 			<p>Elizabeth Sendich, PhD, is Lead Industry Economist on the Macroeconomic Analysis Team. She helps maintain EIA&apos;s long-term production forecasts and enhances public understanding of important issues related to the industrial sector, including manufacturing, construction, mining, and agriculture. She is responsible for the integrated modeling of a diverse set of industries across the world and for analysis of topics important to the sector, such as trade, supply chains, and technology.</p>
 		</div>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="BlockQuote">&lt;p&gt;Elizabeth Sendich, PhD, is Lead Industry Economist on the Macroeconomic Analysis Team. She helps maintain EIA&amp;apos;s long-term production forecasts and enhances public understanding of important issues related to the industrial sector, including manufacturing, construction, mining, and agriculture. She is responsible for the integrated modeling of a diverse set of industries across the world and for analysis of topics important to the sector, such as trade, supply chains, and technology.&lt;/p&gt;
 &lt;blockquote&gt;long-term energy consumption projections are uncertain because of the rapid rate of change that is magnified by the size of the economy.&lt;/blockquote&gt;
 &lt;p&gt;Elizabeth Sendich, PhD, is Lead Industry Economist on the Macroeconomic Analysis Team. She helps maintain EIA&amp;apos;s long-term production forecasts and enhances public understanding of important issues related to the industrial sector, including manufacturing, construction, mining, and agriculture. She is responsible for the integrated modeling of a diverse set of industries across the world and for analysis of topics important to the sector, such as trade, supply chains, and technology.&lt;/p&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#BlockQuote">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#BlockQuote">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -266,11 +260,11 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Report Contact Example One $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="reportContactExampleOne">
+<section class="reportContactExampleOne">
 	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">Report Contact Example One</h2>
+		<h2 class="eia-h2">Report Contact Example One</h2>
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h3 class="eia-h3">Example</h3>
 		<div class="eia-card">
 			<p>Please comment by September 25, 2014.</p>
 			<ul class="contact">
@@ -293,7 +287,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="ReportContactExampleOne">&lt;p&gt;Please comment by September 25, 2014.&lt;/p&gt;
 &lt;ul class="contact"&gt;
 	&lt;li class="head"&gt;
@@ -315,8 +309,8 @@
 	&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#ReportContactExampleOne">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#ReportContactExampleOne">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -324,11 +318,11 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Report Contact Example Two $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="reportContactExampleTwo">
+<section class="reportContactExampleTwo">
 	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">Report Contact Example Two</h2>
+		<h2 class="eia-h2">Report Contact Example Two</h2>
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h3 class="eia-h3">Example</h3>
 		<div class="eia-card">
 			<p>Please send comments on the proposed information collection and WPSR methodology changes to:</p>
 			<ul class="contact">
@@ -344,7 +338,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="ReportContactExampleTwo">&lt;p&gt;Please send comments on the proposed information collection and WPSR methodology changes to:&lt;/p&gt;
 &lt;ul class="contact"&gt;
 	&lt;li class="head"&gt;
@@ -359,9 +353,19 @@
 	&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#ReportContactExampleTwo">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#ReportContactExampleTwo">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
-	</div>
-</section>
+</div>
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

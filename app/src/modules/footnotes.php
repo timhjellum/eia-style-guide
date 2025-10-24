@@ -1,20 +1,34 @@
-<h1 class="uk-h1 tm-heading-fragment" id="Footnotes">Footnotes</h1>
-<p class="uk-text-lead"></p>
-<!-- HTML -->
-<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-<div class="uk-margin-medium">
-	<p class="footnotes"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	<p class="footnotes"> Donec lorem massa, semper nec eros a, lacinia porttitor nunc.</p>
-	<p class="footnotes"> Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.</p>
-	<p class="footnotes"> Suspendisse sagittis risus eu sem suscipit sodales.</p>
-	<p class="footnotes">Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus.</p>
-	<p class="footnotes">Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis.</p>
-	<p class="footnotes">Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem.</p>
-	<p class="footnotes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
-<!-- HTML -->
-<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-<pre><code class="language-html" id="Footnotes">&lt;p class="footnotes"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+<a id="scrollTop" href>
+  <div></div>
+</a>
+<aside>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+</aside>
+<main>
+  <h1 class="eia-h1">Footnotes</h1>
+<p class="eia-para"></p>
+<section class="dilly">
+	<div class="eia-container">
+		<!-- Example -->
+		<h3 class="eia-h3">Example</h3>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<div class="eia-margin-medium">
+			<p class="footnotes"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<p class="footnotes"> Donec lorem massa, semper nec eros a, lacinia porttitor nunc.</p>
+			<p class="footnotes"> Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.</p>
+			<p class="footnotes"> Suspendisse sagittis risus eu sem suscipit sodales.</p>
+			<p class="footnotes">Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus.</p>
+			<p class="footnotes">Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis.</p>
+			<p class="footnotes">Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem.</p>
+			<p class="footnotes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="Footnotes">&lt;p class="footnotes"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
 &lt;p class="footnotes"&gt; Donec lorem massa, semper nec eros a, lacinia porttitor nunc.&lt;/p&gt;
 &lt;p class="footnotes"&gt; Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.&lt;/p&gt;
 &lt;p class="footnotes"&gt; Suspendisse sagittis risus eu sem suscipit sodales.&lt;/p&gt;
@@ -23,26 +37,19 @@
 &lt;p class="footnotes"&gt;Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem.&lt;/p&gt;
 &lt;p class="footnotes"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
 </code></pre>
-<!-- Copy Button -->
-<p>
-	<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Footnotes">
-		<span uk-icon="copy"></span>Copy to clipboard
-	</button>
-</p>
-</div>
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Footnotes">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
 </section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
+<section class="dilly">
 	<div class="eia-container">
-
-
-
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h3 class="eia-h3">Example</h3>
 		<div class="eia-card">
-
 			<p><sup>1</sup>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			<p><sup>2</sup>Donec lorem massa, semper nec eros a, lacinia porttitor nunc.</p>
 			<p><sup>3</sup>Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.</p>
@@ -55,7 +62,7 @@
 			<p><sup>10</sup>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.</p>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="FootnotesSuperscript">&lt;p class="footnotes"&gt;&lt;sup&gt;1&lt;/sup&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
 &lt;p class="footnotes"&gt;&lt;sup&gt;2&lt;/sup&gt;Donec lorem massa, semper nec eros a, lacinia porttitor nunc.&lt;/p&gt;
 &lt;p class="footnotes"&gt;&lt;sup&gt;3&lt;/sup&gt;Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.&lt;/p&gt;
@@ -68,33 +75,26 @@
 &lt;p class="footnotes"&gt;&lt;sup&gt;10&lt;/sup&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.&lt;/p&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#FootnotesSuperscript">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#FootnotesSuperscript">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
 </section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
+<section class="dilly">
 	<div class="eia-container">
-
-
-
-
-		<h2 class="uk-h3 tm-heading-fragment">Footnotes</h2>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h2 class="eia-h2">Footnotes</h2>
+		<h3 class="eia-h3">Example</h3>
 		<div class="eia-card">
 			<ul class="footnotes eia">
-				<li class="eia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-				<li class="eia">Donec lorem massa, semper nec eros a, lacinia porttitor nunc.</li>
-				<li class="eia">Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.</li>
-				<li class="eia">Suspendisse sagittis risus eu sem suscipit sodales.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+				<li>Donec lorem massa, semper nec eros a, lacinia porttitor nunc.</li>
+				<li>Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.</li>
+				<li>Suspendisse sagittis risus eu sem suscipit sodales.</li>
 			</ul>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="FootnotesList">&lt;ul class="footnotes"&gt;
   &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/li&gt;
   &lt;li&gt;Donec lorem massa, semper nec eros a, lacinia porttitor nunc.&lt;/li&gt;
@@ -103,39 +103,32 @@
 &lt;/ul&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#FootnotesList">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#FootnotesList">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
 </section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
+<section class="dilly">
 	<div class="eia-container">
-
-
-
-
-		<h2 class="uk-h3 tm-heading-fragment">Ordered Numerical Footnotes</h2>
+		<h2 class="eia-h2">Ordered Numerical Footnotes</h2>
 		<p>Note adding the <code>sup</code> to the footnotes class: <code>&lt;ol class="footnotes"&gt;</code> will apply a sequential numerical superscript to the footnotes.</p>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Example</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<div class="">Live Example</div>
+		<dl class="">
 			<dd><a href="https://wwwdev.eia.gov/international/analysis/country/ECU/background">https://wwwdev.eia.gov/international/analysis/country/ECU/background</a></dd>
 		</dl>
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h3 class="eia-h3">Example</h3>
 		<div class="eia-card">
 			<ol class="sup footnotes eia">
-				<li class="eia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-				<li class="eia">Donec lorem massa, semper nec eros a, lacinia porttitor nunc.</li>
-				<li class="eia">Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.</li>
-				<li class="eia">Suspendisse sagittis risus eu sem suscipit sodales.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+				<li>Donec lorem massa, semper nec eros a, lacinia porttitor nunc.</li>
+				<li>Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.</li>
+				<li>Suspendisse sagittis risus eu sem suscipit sodales.</li>
 			</ol>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="OrderedListFootnotesSuperscripts">&lt;ol class="sup footnotes"&gt;
   &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/li&gt;
   &lt;li&gt;Donec lorem massa, semper nec eros a, lacinia porttitor nunc.&lt;/li&gt;
@@ -144,23 +137,16 @@
 &lt;/ol&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#OrderedListFootnotesSuperscripts">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#OrderedListFootnotesSuperscripts">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
 </section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
+<section class="dilly">
 	<div class="eia-container">
-
-
-
-
-		<h2 class="uk-h3 tm-heading-fragment">Table Footnotes</h2>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h2 class="eia-h2">Table Footnotes</h2>
+		<h3 class="eia-h3">Example</h3>
 		<div class="eia-card">
 			<div class="basic-table">
 				<table class="basic-table full-width">
@@ -202,7 +188,7 @@
 			</div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="TableFootnotes">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
       &lt;tfoot&gt;
@@ -227,23 +213,16 @@
 &lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#TableFootnotes">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#TableFootnotes">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
 </section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
+<section class="dilly">
 	<div class="eia-container">
-
-
-
-
-		<h2 class="uk-h3 tm-heading-fragment">Table Paragraph Footnotes Superscript</h2>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h2 class="eia-h2">Table Paragraph Footnotes Superscript</h2>
+		<h3 class="eia-h3">Example</h3>
 		<div class="eia-card">
 			<div class="basic-table">
 				<table class="basic-table full-width">
@@ -281,7 +260,7 @@
 			</div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="TableParagraphFootnotesSuperscript">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;tfoot&gt;
@@ -302,23 +281,16 @@
 &lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#TableParagraphFootnotesSuperscript">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#TableParagraphFootnotesSuperscript">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
 </section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
+<section class="dilly">
 	<div class="eia-container">
-
-
-
-
-		<h2 class="uk-h3 tm-heading-fragment">Table Footnotes Ordered List Superscript</h2>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h2 class="eia-h2">Table Footnotes Ordered List Superscript</h2>
+		<h3 class="eia-h3">Example</h3>
 		<div class="eia-card">
 			<div class="basic-table">
 				<table class="basic-table full-width">
@@ -358,7 +330,7 @@
 			</div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="TableFootnotesOrderedListSuperscript">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;tfoot&gt;
@@ -381,16 +353,19 @@
 &lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#TableFootnotesOrderedListSuperscript">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#TableFootnotesOrderedListSuperscript">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
-	</div>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
-	<div class="eia-container">
-
-		<app-side-nav-modules></app-side-nav-modules>
+</div>
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

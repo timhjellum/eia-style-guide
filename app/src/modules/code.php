@@ -1,40 +1,26 @@
-<div id="secondaryNavigation">
-	<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
-		<li><a href="#codeIntroduction">Introduction</a></li>
-		<li><a href="#opendataDashboard">Opendata Dashboard</a></li>
-		<li><a href="#codeBlockWrap">Code Block Wrap</a></li>
-		<li><a href="#codeBlock">Code Block</a></li>
-		<li><a href="#standAloneCodeBlock">Stand Alone Code Block</a></li>
-	</ul>
-</div>
+<a id="scrollTop" href>
+  <div></div>
+</a>
+<aside>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+</aside>
+<main>
+  <h1 class="eia-h1">Code</h1>
+  <section>
+    <div class="eia-container">
+      <h2 class="eia-h2">Opendata Dashboard</h2>
+      <!-- p class="eia-para"></p -->
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer">
 
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$  Introduction $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="codeIntroduction">
-	<div class="eia-container">
-		<h1 class="uk-h1 tm-heading-fragment">Code</h1>
-		<p class="uk-text-lead"></p>
-	</div>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$   Opendata Dashboard $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="opendataDashboard">
-	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Opendata Dashboard</h2>
-		<h3 class="uk-h3 uk-heading-small">Live Examples</h2>
-			<!-- dl class="uk-description-list uk-description-list-divider">
-				<dd><a href="https://www.eia.gov/opendata/">https://www.eia.gov/opendata/</a></li>
-					</ul -->
-	</div>
-	<!-- Example -->
-	<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-	<div class="eia-card">
 
 		<div class="l-row l-two-col-left-narrow code-container">
 			<div class="l-col">
-				<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">API URL:</h2>
+				<h2 id="" class="eia-h2 eia-margin-xlarge-top">API URL:</h2>
 			</div>
 			<div class="l-col">
 				<pre><code class="language-html">http://apidev.eia.gov/v2/electricity/state-electricity-profiles/source-disposition/data/</code></pre>
@@ -44,7 +30,7 @@
 		<br />
 		<div class="l-row l-two-col-left-narrow code-container">
 			<div class="l-col">
-				<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Method:</h2>
+				<h2 id="" class="eia-h2 eia-margin-xlarge-top">Method:</h2>
 			</div>
 			<div class="l-col">
 				<pre><code class="language-json">Get</code></pre>
@@ -53,7 +39,7 @@
 		<!-- notice no space -->
 		<div class="l-row l-two-col-left-narrow code-container">
 			<div class="l-col">
-				<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Series description:</h2>
+				<h2 id="" class="eia-h2 eia-margin-xlarge-top">Series description:</h2>
 			</div>
 			<div class="l-col">
 				<pre><code class="language-json">State Specific Data</code></pre>
@@ -86,7 +72,7 @@
 }</code></pre>
 			</div>
 		</div>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="OpendataDashboard">&lt;div class="l-row l-two-col-left-narrow code-container"&gt;
 	&lt;div class="l-col"&gt;
 	&lt;h3&gt;API URL:&lt;/h3&gt;
@@ -144,8 +130,8 @@
 	</div>
 	<!-- Copy Button -->
 	<p>
-		<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#OpendataDashboard">
-			<span uk-icon="copy"></span>Copy to clipboard
+		<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#OpendataDashboard">
+			<span></span>Copy to clipboard
 		</button>
 	</p>
 	</div>
@@ -153,17 +139,17 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$     Code Block Wrap      $$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="codeBlockWrap">
+<section class="codeBlockWrap">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Code Block Wrap</h2>
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Code Block Wrap</h2>
 		<p>Add <code>class="wrap"</code> to the <code>pre</code> HTML tag, like <code>&lt;pre class="wrap"&gt;</code>.</p>
-		<h3 class="uk-h3 uk-heading-small">Live Examples</h2>
-			<!-- dl class="uk-description-list uk-description-list-divider">
+		<h3 class="eia-h3">Live Examples</h2>
+			<!-- dl class="">
 				<dd><a href="https://www.eia.gov/opendata/">https://www.eia.gov/opendata/</a></li>
 					</ul-->
 	</div>
 	<!-- Example -->
-	<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+	<h3 class="eia-h3">Example</h3>
 	<div class="eia-card">
 
 		<div class="code-container">
@@ -198,7 +184,7 @@
 <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
 <span class="hljs-etc">…</span></code></pre>
 		</div>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="CodeBlockWrap">&lt;div class="code-container"&gt;
   &lt;pre class="wrap"&gt;
     &lt;code&gt;{
@@ -236,8 +222,8 @@
 	</div>
 	<!-- Copy Button -->
 	<p>
-		<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#CodeBlockWrap">
-			<span uk-icon="copy"></span>Copy to clipboard
+		<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#CodeBlockWrap">
+			<span></span>Copy to clipboard
 		</button>
 	</p>
 	</div>
@@ -245,16 +231,16 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$    Code Block    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="codeBlock">
+<section class="codeBlock">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Code Block</h2>
-		<h3 class="uk-h3 uk-heading-small">Live Examples</h2>
-			<!-- dl class="uk-description-list uk-description-list-divider">
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Code Block</h2>
+		<h3 class="eia-h3">Live Examples</h2>
+			<!-- dl class="">
 				<dd><a href="https://www.eia.gov/opendata/">https://www.eia.gov/opendata/</a></li>
 					</ul -->
 	</div>
 	<!-- Example -->
-	<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+	<h3 class="eia-h3">Example</h3>
 	<div class="eia-card">
 
 		<div class="code-container">
@@ -294,7 +280,7 @@
 
 
 
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="CodeBlock">&lt;div class="code-container"&gt;
   &lt;pre&gt;
     &lt;code&gt;{
@@ -332,8 +318,8 @@
 	</div>
 	<!-- Copy Button -->
 	<p>
-		<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#CodeBlock">
-			<span uk-icon="copy"></span>Copy to clipboard
+		<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#CodeBlock">
+			<span></span>Copy to clipboard
 		</button>
 	</p>
 	</div>
@@ -342,28 +328,38 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$    StandAloneCodeBlock    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="standAloneCodeBlock">
+<section class="standAloneCodeBlock">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Code Block</h2>
-		<!-- h3 class="uk-h3 uk-heading-small">Live Examples</h2>
-			<dl class="uk-description-list uk-description-list-divider">
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Code Block</h2>
+		<!-- h3 class="uk-heading-small">Live Examples</h2>
+			<dl class="">
 				<dd><a href="https://www.eia.gov/opendata/">https://www.eia.gov/opendata/</a></li>
 					</ul -->
 	</div>
 	<!-- Example -->
-	<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+	<h3 class="eia-h3">Example</h3>
 	<div class="eia-card">
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc: <code>https://api.eia.gov/v2/electricity/retail-sales?api_key=your_api_key</code>. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.</p>
 
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="StandAloneCodeBlock">&lt;p&gt;Lorem ipsum dolor nunc: &lt;code&gt;https://api.eia.gov/v2/electricity/retail-sales?api_key=your_api_key&lt;/code&gt;. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.&lt;/p&gt;</code></pre>
 	</div>
 	<!-- Copy Button -->
 	<p>
-		<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#StandAloneCodeBlock">
-			<span uk-icon="copy"></span>Copy to clipboard
+		<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#StandAloneCodeBlock">
+			<span></span>Copy to clipboard
 		</button>
 	</p>
-	</div>
-</section>
+</div>
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

@@ -1,40 +1,30 @@
-<div id="secondaryNavigation">
-	<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
-		<li><a href="#introduction">Introduction</a></li>
-		<li><a href="#Enlarge Image">Enlarge Image</a></li>
-		<li><a href="#Enlarge Image With Caption">Enlarge Image With Caption</a></li>
-		<li><a href="#clickToEnlargeImage">Click to Enlarge Button</a></li>
-		<li><a href="#openIFrameInModal">Open iFrame in Modal</a></li>
-		<li><a href="#"></a></li>
-		<li><a href="#"></a></li>
-		<li><a href="#"></a></li>
-		<li><a href="#"></a></li>
-		<li><a href="#"></a></li>
-	</ul>
-</div>
-
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$  Introduction $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="introduction">
-	<div class="eia-container">
-		<h1 class="uk-h1 tm-heading-fragment" id=" FancyApps (Modals)">FancyApps (Modals)</h1>
-		<p class="uk-text-lead"></p>
+<a id="scrollTop" href>
+  <div></div>
+</a>
+<aside>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+</aside>
+<main>
+  <h1 class="eia-h1">FancyApps (Modals)</h1>
+		<p class="eia-para"></p>
 	</div>
 </section>
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Enlarge Image $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="Enlarge Image">
+<section class="Enlarge Image">
 	<div class="eia-container">
 		<h3>Enlarge Image</h3>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Example</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<div class="">Live Example</div>
+		<dl class="">
 			<dd></dd>
 		</dl>
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="uk-card uk-card-default uk-padding">
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<div uk-alert>
 				<a class="uk-alert-close" uk-close></a>
 				<h3>Notice</h3>
@@ -45,8 +35,8 @@
 			</a>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-		<div class="uk-margin-medium">
+		<h3 class="eia-h3">HTML</h3>
+		<div class="eia-margin-medium">
 
 			<pre><code class="language-html" id="EnlargeImage">&lt;!-- &lt;div class="image-container"&gt; --&gt;
 &lt;a href="https://www.eia.gov/global/images/kids_promos/kids-standard.png" class="enlarge-image"&gt;
@@ -55,8 +45,8 @@
 &lt;!-- &lt;/div&gt; --&gt;</code></pre>
 			<!-- Copy Button -->
 			<p>
-				<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#EnlargeImage">
-					<span uk-icon="copy"></span>Copy to clipboard
+				<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#EnlargeImage">
+					<span></span>Copy to clipboard
 				</button>
 			</p>
 		</div>
@@ -65,16 +55,16 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$    Enlarge Image With Caption    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="enlargeImageCaption">
+<section class="enlargeImageCaption">
 	<div class="eia-container">
 		<h3>Enlarge Image With Caption</h3>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Example</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<div class="">Live Example</div>
+		<dl class="">
 			<dd></dd>
 		</dl>
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="uk-card uk-card-default uk-padding">
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<div uk-alert>
 				<a class="uk-alert-close" uk-close></a>
 				<h3>Notice</h3>
@@ -87,16 +77,16 @@
 			</div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-		<div class="uk-margin-medium">
+		<h3 class="eia-h3">HTML</h3>
+		<div class="eia-margin-medium">
 
 			<pre><code class="language-html" id="EnlargeImageCaption">&lt;a href="path/to/image/large" class="enlarge-image" title="Image caption"&gt;
   &lt;img src="path/to/image/small" alt="" &gt;
 &lt;/a&gt;</code></pre>
 			<!-- Copy Button -->
 			<p>
-				<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#EnlargeImageCaption">
-					<span uk-icon="copy"></span>Copy to clipboard
+				<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#EnlargeImageCaption">
+					<span></span>Copy to clipboard
 				</button>
 			</p>
 		</div>
@@ -105,16 +95,16 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$    clickToEnlargeImage    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="clickToEnlargeImage">
+<section class="clickToEnlargeImage">
 	<div class="eia-container">
 		<h3>Enlarge Image With Caption and "Click to enlarge" instruction</h3>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Example</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<div class="">Live Example</div>
+		<dl class="">
 			<dd></dd>
 		</dl>
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="uk-card uk-card-default uk-padding">
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<div uk-alert>
 				<a class="uk-alert-close" uk-close></a>
 				<h3>Notice</h3>
@@ -131,8 +121,8 @@
 		</div>
 		<br />
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-		<div class="uk-margin-medium">
+		<h3 class="eia-h3">HTML</h3>
+		<div class="eia-margin-medium">
 
 			<pre><code class="language-html" id="ClickToEnlargeImage">&lt;div class="image-container"&gt;
   &lt;a href="/global/images/energy-kids/kids-laptop-halloween.png" title="Image caption" class="enlarge-image"&gt;
@@ -144,8 +134,8 @@
 &lt;/div&gt;</code></pre>
 			<!-- Copy Button -->
 			<p>
-				<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#ClickToEnlargeImage">
-					<span uk-icon="copy"></span>Copy to clipboard
+				<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#ClickToEnlargeImage">
+					<span></span>Copy to clipboard
 				</button>
 			</p>
 		</div>
@@ -154,16 +144,16 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$    Open iFrame in Modal    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="openIFrameInModal">
+<section class="openIFrameInModal">
 	<div class="eia-container">
 		<h3>Open iFrame in Modal</h3>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Example</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<div class="">Live Example</div>
+		<dl class="">
 			<dd><a href="/opendata/">Opendata</a></dd>
 		</dl>
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="uk-card uk-card-default uk-padding">
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<div uk-alert>
 				<a class="uk-alert-close" uk-close></a>
 				<h3>Notice</h3>
@@ -191,20 +181,26 @@
 
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-		<div class="uk-margin-medium">
+		<h3 class="eia-h3">HTML</h3>
+		<div class="eia-margin-medium">
 
 			<pre><code class="language-html" id="OpenIFrameInModal">
         &lt;a href="iframe.php" class="lframe"&gt;Register&lt;/a&gt;</code></pre>
 			<!-- Copy Button -->
 			<p>
-				<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#OpenIFrameInModal">
-					<span uk-icon="copy"></span>Copy to clipboard
+				<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#OpenIFrameInModal">
+					<span></span>Copy to clipboard
 				</button>
 			</p>
-		</div>
-	</div>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$    First Open    $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+</div>
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

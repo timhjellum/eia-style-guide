@@ -1,13 +1,27 @@
-<div class="tm-main uk-section uk-section-default">
-	<div class="eia-container">
-		<h1 class="uk-h1 tm-heading-fragment">Typography</h1>
-		<p class="uk-text-lead"></p>
-		<p class=" uk-text-lead">A collection of utility classes to style text.</p>
+<a id="scrollTop" href>
+  <div></div>
+</a>
+<aside>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+</aside>
+<main>
+  <h1 class="eia-h1">Typography</h1>
+  <section>
+    <div class="eia-container">
+      <!-- h2 class="eia-h2"></h2 -->		<p class="eia-para">A collection of utility classes to style text.</p>
 		<!-- p>Combine this component with the <a href="/docs/heading">Heading component</a> to style your content.</p -->
-		<h2 id="Headers" class="uk-h3 tm-heading-fragment">Headers</h2>
-		<p>UIkit offers various text utilities to style your text.</p>
-		<div class="uk-overflow-auto">
-			<table class="uk-table uk-table-divider">
+		<h2 id="Headers" class="">Headers</h2>
+      <!-- p class="eia-para"></p -->
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer">
+
+
+		<div>
+			<table class="eia-table eia-table-divider">
 				<thead>
 					<tr>
 						<th>Tag</th>
@@ -19,7 +33,7 @@
 						<td><code>&lt;h1&gt;...&lt;/h1&gt;</code></td>
 						<td><span class="uk-text-meta">
 								<h1>H1 Lorem Ipsum Dolor</h1>
-								<p class="uk-text-lead"></p>
+								<p class="eia-para"></p>
 							</span></td>
 					</tr>
 					<tr>
@@ -76,10 +90,20 @@
 					</li>
 					<li class=""><a href="#text-alignment">Text alignment</a>
 					</li>
-					<li><a href="#text-wrapping">Text wrapping</a>
+					<li data-section="text-wrapping">Text wrapping</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-	</div>
 </div>
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

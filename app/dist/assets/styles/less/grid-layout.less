@@ -1,0 +1,134 @@
+// |-300-|-----1000-----|-300-|
+//body {
+//  display: flex;
+//  flex-direction: column;
+//}
+.grid-row {
+    >div {
+        //border: 2px solid rgba(247, 37, 133);
+        //color: #f72585;
+    }
+}
+
+.grid-row {
+    display: grid;
+    //border: 3px solid red;
+    width: @default-width;
+
+    &.grid-full-width-col {
+        grid-template-columns: 100%;
+    }
+
+
+    &.grid-two-col-left-narrow {
+        grid-template-columns: 23% 73%;
+        column-gap: 4%;
+    }
+
+    &.grid-two-col-left {
+        grid-template-columns: 31.333% 64.666%;
+        column-gap: 4%;
+    }
+
+    &.grid-two-col-even {
+        grid-template-columns: 48% 48%;
+        column-gap: 4%;
+    }
+
+    &.grid-two-col-left-wide {
+        grid-template-columns: 56.333% 39.666%;
+        column-gap: 4%;
+    }
+
+    &.grid-two-col-right-narrow {
+        grid-template-columns: 73% 23%;
+        column-gap: 4%;
+    }
+
+    &.grid-two-col-right {
+        grid-template-columns: 64.666% 31.333%;
+        column-gap: 4%;
+    }
+
+    &.grid-two-col-right-wide {
+        grid-template-columns: 39.666% 56.333%;
+        column-gap: 4%;
+    }
+
+    &.grid-three-col-even {
+        grid-template-columns: 31.333% 31.334% 31.333%;
+        column-gap: 3%;
+    }
+
+    &.grid-three-col {
+        grid-template-columns: 23% 48% 23%;
+        column-gap: 3%;
+    }
+
+    &.grid-four-col-even {
+        grid-template-columns: 23% 23% 23% 23%;
+        column-gap: 3%;
+    }
+
+    &.grid-five-col-even {
+        grid-template-columns: 18% 18% 18% 18% 18%;
+        column-gap: 3%;
+    }
+
+    &.grid-six-col-even {
+        grid-template-columns: 15% 15% 15% 15% 15% 15%;
+        
+        column-gap: 2%;
+        /* test only
+        >div {
+            border: 1px solid red;
+        }
+        */
+    }
+}
+
+.grid-wrapper {
+    width: 100%;
+    height: 100%;
+    //background-color: rgb(76, 201, 240);
+    //color: rgb(76, 201, 240);
+    //border: 2px solid rgb(76, 201, 240);
+    >div {
+// testing only
+        border-left: 1px dotted #666; //rgb(72, 149, 239);
+        border-right: 1px dotted #666; // rgb(72, 149, 239);
+    }
+  
+  }
+  
+  .grid-main {
+    grid-area: gridMain;
+  }
+  
+  .grid-left {
+    grid-area: gridLeft;
+  }
+  
+  .grid-right {
+    grid-area: gridRight;
+  }
+  //@media (min-width: 700px) {
+    .grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1024px 1fr;
+      grid-template-areas:
+        "gridLeft gridMain gridRight";
+    }
+  //}
+  /*
+  @media (min-width: 340px) {
+    .grid-wrapper {
+      display: grid;
+      gap: 20px;
+      grid-template-areas:
+        "gridLeft"
+        "gridmain"
+        "gridRight";
+    }
+  }
+  */

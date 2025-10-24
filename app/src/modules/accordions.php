@@ -1,37 +1,22 @@
-<div id="secondaryNavigation">
-	<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
-		<li><a href="#accordions">Introduction</a></li>
-		<li><a href="#allClosed">All Closed</a></li>
-		<li><a href="#firstOpen">FirstOpen</a></li>
-		<li><a href="#allOpen">All Open</a></li>
-	</ul>
-</div>
-
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$  Introduction $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="accordions">
-	<div class="eia-container">
-		<h1 class="uk-h1 tm-heading-fragment" id="accordions">Accordions</h1>
-		<p class="uk-text-lead"></p>
-	</div>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$   All Closed  $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="allClosed">
-	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">All Closed</h2>
+<a id="scrollTop" href>
+  <div></div>
+</a>
+<aside>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+</aside>
+<main>
+  <h1 class="eia-h1">Accordions</h1>
+  <section>
+    <div class="eia-container">
+      <!-- h2 class="eia-h2"></h2 --><h2 class="eia-h2">All Closed</h2>
 		<p>Add <code>all-closed</code> to the accordion <code class="html">&lt;div class=&#34;accordion all-closed&#34;&gt;</code></p>
-		<!-- Live Examples --
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-<dl class="uk-description-list uk-description-list-divider">
-	<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
-</dl>
--->
-		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="eia-card">
+      <!-- p class="eia-para"></p -->
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer">
 			<div class="module-outer">
 				<div class="module-inner">
 					<div class="l-row l-two-col-left-wide">
@@ -71,7 +56,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code id="accordionAllClosed">&lt;div class="primary"&gt;
   &lt;span class="expand-collapse-container"&gt;
     &lt;span class="ico expand"&gt;
@@ -106,8 +91,8 @@
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#accordionAllClosed">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#accordionAllClosed">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -115,22 +100,21 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$      All Open      $$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="allOpen">
+<section class="allOpen">
 	<div class="eia-container">
 
 
 
 
-		<h2 class="uk-h3 tm-heading-fragment">All Open</h2>
+		<h2 class="eia-h2">All Open</h2>
 		<p>Add <code>all-open</code> to the accordion <code class="html">&lt;div class=&#34;accordion all-open&#34;&gt;</code></p>
-		<!-- Live Examples --
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-<dl class="uk-description-list uk-description-list-divider">
-	<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
-</dl>
--->
+		<!-- Live Examples -->
+		<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
+			<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</dd>
+		</dl>
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h3 class="eia-h3">Example</h3>
 		<div class="eia-card">
 			<div class="module-outer">
 				<div class="module-inner">
@@ -164,7 +148,7 @@
 			</div>
 		</div>
 
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="AllOpen">&lt;div class="primary"&gt;
   &lt;div class="accordion all-open"&gt;
 	&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;
@@ -191,8 +175,8 @@
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#AllOpen">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#AllOpen">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -200,18 +184,17 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$    First Open    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="firstOpen">
+<section class="firstOpen">
 	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">first-open</h2>
+		<h2 class="eia-h2">first-open</h2>
 		<p>Add <code>first-open</code> to the accordion <code class="html">&lt;div class=&#34;accordion first-open&#34;&gt;</code></p>
-		<!-- Live Examples --
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-<dl class="uk-description-list uk-description-list-divider">
-	<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
-</dl>
--->
+		<!-- Live Examples -->
+		<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
+			<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</dd>
+		</dl>
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h3 class="eia-h3">Example</h3>
 		<div class="eia-card">
 			<div class="module-outer">
 				<div class="module-inner">
@@ -255,7 +238,7 @@
 			</div>
 		</div>
 
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="FirstOpen">&lt;div class="primary"&gt;
   &lt;span class="expand-collapse-container"&gt;
 	&lt;span class="ico expand"&gt;
@@ -290,9 +273,19 @@
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#FirstOpen">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#FirstOpen">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
-	</div>
-</section>
+</div>
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

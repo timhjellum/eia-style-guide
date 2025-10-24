@@ -1,6 +1,18 @@
-<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Enctype</h2>
-
-<h4>enctype</h4>
+<a id="scrollTop" href>
+  <div></div>
+</a>
+<aside>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+</aside>
+<main>
+  <h1 class="eia-h1">Enctype</h1>
+  <section>
+    <div class="eia-container">
+      <!-- h2 class="eia-h2"></h2 -->
+      <!-- p class="eia-para"></p --><h4>enctype</h4>
 <p>
 	Defines the <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">MIME type</a> of the information sent to the server. Only works if the method is <code>post</code>.
 </p>
@@ -9,15 +21,18 @@
 <p>
 	The <strong>default</strong> value.
 </p>
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer">
+
 <!-- Live Examples --
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-<dl class="uk-description-list uk-description-list-divider">
+<h3 class="eia-h3">Live Examples</h3>
+<dl class="">
 	<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 </dl>
 -->
 <!-- Example -->
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-<div class="uk-card uk-card-default uk-padding">
+
 	<div class="l-row l-two-col-left-wide">
 		<div class="primary l-col form-area">
 
@@ -43,14 +58,14 @@
 <code>"text/plain"</code>
 <p>For HTML5 plain text.</p>
 <!-- Live Examples --
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-<dl class="uk-description-list uk-description-list-divider">
+<h3 class="eia-h3">Live Examples</h3>
+<dl class="">
 	<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 </dl>
 -->
 <!-- Example -->
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-<div class="uk-card uk-card-default uk-padding">
+<h3 class="eia-h3">Example</h3>
+<div class="eia-card">
 	<div class="l-row l-two-col-left-wide">
 		<div class="primary l-col form-area">
 
@@ -77,14 +92,14 @@
 	Needed when using an <code>&lt;input type="file"&gt;</code> element.
 </p>
 <!-- Live Examples --
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-<dl class="uk-description-list uk-description-list-divider">
+<h3 class="eia-h3">Live Examples</h3>
+<dl class="">
 	<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 </dl>
 -->
 <!-- Example -->
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-<div class="uk-card uk-card-default uk-padding">
+<h3 class="eia-h3">Example</h3>
+<div class="eia-card">
 	<div class="l-row l-two-col-left-wide">
 		<div class="primary l-col form-area">
 
@@ -100,12 +115,24 @@
 	<div class="l-col"></div>
 </div>
 <!-- HTML -->
-<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+<h3 class="eia-h3">HTML</h3>
 
 <pre><code class="language-html" id="Enctype"></code></pre>
 <!-- Copy Button -->
 <p>
-	<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Enctype">
-		<span uk-icon="copy"></span>Copy to clipboard
+	<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Enctype">
+		<span></span>Copy to clipboard
 	</button>
 </p>
+</div>
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

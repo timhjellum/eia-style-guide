@@ -1,0 +1,119 @@
+/*
+.uk-navbar-container {
+    &:not(.uk-navbar-transparent) {
+        background: transparent;
+    }
+}
+
+#header {
+    top: 0px;
+}
+*/
+
+section {
+    &.eia-landing-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        //grid-template-columns: subgrid;
+    }
+}
+
+div {
+    &.eia-grouping {}
+}
+
+// landing page
+.color-palette {
+    li {
+        list-style: none;
+    }
+
+    .default {
+        &:before {
+            content: '';
+            background: white;
+            border-radius: 1ch;
+            padding-inline: 1ch;
+            margin-inline-end: 1ch;
+        }
+    }
+
+    .red {
+        &:before {
+            content: '';
+            background: @eia-red;
+            border-radius: 1ch;
+            padding-inline: 1ch;
+            margin-inline-end: 1ch;
+        }
+    }
+
+    .green {
+        &:before {
+            content: '';
+            background: @eia-green;
+            border-radius: 1ch;
+            padding-inline: 1ch;
+            margin-inline-end: 1ch;
+        }
+    }
+
+    .yellow {
+        &:before {
+            content: '';
+            background: @eia-yellow;
+            border-radius: 1ch;
+            padding-inline: 1ch;
+            margin-inline-end: 1ch;
+        }
+    }
+
+    .orange {
+        &:before {
+            content: '';
+            background: @eia-orange;
+            border-radius: 1ch;
+            padding-inline: 1ch;
+            margin-inline-end: 1ch;
+        }
+    }
+
+    .brown {
+        &:before {
+            content: '';
+            background: @eia-brown;
+            border-radius: 1ch;
+            padding-inline: 1ch;
+            margin-inline-end: 1ch;
+        }
+    }
+
+    .purple {
+        &:before {
+            content: '';
+            background: @eia-purple;
+            border-radius: 1ch;
+            padding-inline: 1ch;
+            margin-inline-end: 1ch;
+        }
+    }
+
+    .grey {
+        &:before {
+            content: '';
+            background: @eia-black-50;
+            border-radius: 1ch;
+            padding-inline: 1ch;
+            margin-inline-end: 1ch;
+        }
+    }
+}
+
+
+
+
+
+
+mark {
+    background-color: orange !important;
+}

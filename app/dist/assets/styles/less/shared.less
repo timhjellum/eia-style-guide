@@ -1,0 +1,152 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+	.eia-container {
+		//width: @layoutMaxWidthMobile;
+		margin: 60px 0 0 0;
+	}
+    section {
+
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        /* Scroll Snap */
+        scroll-snap-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    --text: #333;
+    --text-inverse: #333;
+    --background: #f4f4f4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //transition: background 250ms ease-in;
+    //background-color: #f4f4f4;
+    color: #333;
+    animation: navDefault linear forwards;
+    animation-duration: 0.3s;
+
+}
+
+.eia-lead {
+    font-size: 2em;
+    line-height: 1.5;
+    color: #222;
+    font-weight: 300
+}
+
+.eia-grouping {
+    text-align: left;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+
+        a {
+            color: #333;
+        }
+    }
+}
+
+
+
+.nav {
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    &__link {
+        --spacing: 1em;
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+        padding: calc(var(--spacing) / 2) var(--spacing);
+        position: relative;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: var(--spacing);
+            right: var(--spacing);
+            height: 2px;
+            background: currentColor;
+            transform: scaleX(0);
+            transition: transform 150ms ease-in-out;
+        }
+
+        &:hover {
+            &:after {
+                transform: scaleX(1);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.copy-element,
+pre {
+	display: none !important;
+}

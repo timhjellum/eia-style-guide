@@ -1,0 +1,41 @@
+@import "assets/styles/less/eia-accessibility.less";
+
+@import "assets/styles/less/eia-color-palette.less";
+@import "assets/styles/less/eia-logos.less";
+
+@import "assets/styles/less/eia-color-palette";
+
+@import "assets/styles/less/eia-color-examples";
+
+@import "assets/styles/less/eia-example";
+@import "assets/styles/less/eia-expand-collapse";
+@import "assets/styles/less/eia-footer";
+@import "assets/styles/less/eia-placeholder001.less";
+@import "assets/styles/less/eia-legend";
+
+@import "assets/styles/less/eia-module-containers";
+@import "assets/styles/less/eia-headings";
+@import "assets/styles/less/eia-layout";
+@import "assets/styles/less/eia-layout-prototypes";
+@import "assets/styles/less/eia-vars";
+
+
+@import "assets/styles/less/mixins";
+@import "assets/styles/less/vars";
+@import "assets/styles/less/resolution";
+@import "assets/styles/less/sub-nav";
+@import "assets/styles/less/eia-tabs";
+@import "assets/styles/less/eia-typography";
+@import "assets/styles/less/eia-tables";
+@import "assets/styles/less/eia-reveal-on-scroll";
+@import "assets/styles/less/eia-opendata";
+
+
+@import "assets/styles/less/eia-overides.less";
+@import "assets/styles/less/eia-fullpagejs.less";
+
+@import "assets/styles/less/eia/layouts/flex";
+@import "assets/styles/less/eia/layouts/full-page";
+@import "assets/styles/less/eia/layouts/global";
+@import "assets/styles/less/eia/layouts/reordering";
+@import "assets/styles/less/eia/layouts/responsive";

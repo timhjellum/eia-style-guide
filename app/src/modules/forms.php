@@ -1,65 +1,24 @@
-<div id="secondaryNavigation">
-	<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
-		<li><a href="#introduction">Introduction</a></li>
-		<li><a href="#eiaBrandedCheckbox">EIA Branded Checkbox</a></li>
-		<li><a href="#accessibleEIABrandedSelect">Accessible EIA Branded Select</a></li>
-		<!--
-			Accessible Checkbox
-		GroupaccessibleCheckboxGroup
-		Accessible Checkbox Group
-		-->
-
-		<li><a href="#accessibleButton">Accessible Button</a></li>
-		<li><a href="#disabled">disabled</a></li>
-		<li><a href="#enctype">Fieldsetfieldset</a></li>
-		<li><a href="#fieldset">form-labelformLabel</a></li>
-		<li><a href="#form-label">form-placeholder</a></li>
-		<li><a href="#formPlaceholder">form-placeholder</a></li>
-		<li><a href="#accessibleLabelAndInputAccessible Label and Input">Accessible Label and Input</a></li>
-		<li><a href="#name">Name</a></li>
-		<li><a href="#required">Required</a></li>
-		<li><a href="#accessibleStandAloneCheckBox">Accessible Stand-alone Check-Box</a></li>
-		<li><a href="#target">Target</a></li>
-		<li><a href="#configurationTextarea">Configurationtextarea</a></li>
-		<li><a href="#disabled"></a></li>
-		<li><a href="#textareaMaxLength"></a></li>
-		<li><a href="#textareaMinlength"></a></li>
-		<li><a href="#textareaPlaceholder"></a></li>
-		<li><a href="#textareaRows"></a></li>
-		<li><a href="#textareaSpellcheck"></a></li>
-		<li><a href="#textarea">Textarea</a></li>
-		<li><a href="#accessibleLabelAndInput">Accessible Label and Input</a></li>
-		<li><a href="#inputConfiguration">Input Configuration</a></li>
-		<li><a href="#validation">Validation</a></li>
-	</ul>
-</div>
-
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$  Introduction $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="introduction">
-	<div class="eia-container">
-		<h1 class="uk-h1 tm-heading-fragment">Introduction</h1>
-		<p class="uk-text-lead"></p>
-	</div>
-</section>
-
-
-
-<section id="eiaBrandedCheckbox">
-	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">EIA Branded Checkbox</h2>
+<a id="scrollTop" href>
+  <div></div>
+</a>
+<aside>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+</aside>
+<main>
+  <h1 class="eia-h1">EIA Branded Checkbox</h1>
+  <section>
+    <div class="eia-container">
+      <!-- h2 class="eia-h2"></h2 -->	<h2>EIA Branded Checkbox</h2>
 		<h5>Checkboxes</h5>
 		<p>A toggle checkbox that can only be one of two states: checked or unchecked. The value is only submitted by the form if the checkbox is checked.</p>
-		<!-- Live Examples --
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-<dl class="uk-description-list uk-description-list-divider">
-	<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
-</dl>
--->
-		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="eia-card">
+      <!-- p class="eia-para"></p -->
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer">
+
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col form-area">
 					<ul class="checkbox-container">
@@ -81,12 +40,12 @@
 			<div class="l-col"></div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="BrandedCheckbox"></code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#BrandedCheckbox">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#BrandedCheckbox">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -94,11 +53,11 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Accessible EIA Branded Select $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="accessibleEIABrandedSelect">
+<section class="accessibleEIABrandedSelect">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Accessible EIA Branded Select</h2>
-		<div class="uk-section uk-section-muted uk-padding">
-			<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Accessible EIA Branded Select</h2>
+		<div class="uk-section uk-section-muted ">
+			<h3 id="" class=""><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
 			<ul>
 				<li>
 					The <code> for="previousReports"</code> associates the label with the form input
@@ -112,14 +71,14 @@
 			</ul>
 		</div>
 		<!-- Live Examples --
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 		</dl>
 		-->
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="uk-card uk-card-default uk-padding">
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col">
 					<div class="l-col">
@@ -161,7 +120,7 @@
 			<div class="l-col"></div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="BrandedSelect">&lt;div class="form-container do-not-print"&gt;
 		  &lt;!-- add width here or leave blank --&gt;
 		  &lt;fieldset style="width: 150px;"&gt;
@@ -195,8 +154,8 @@
 		  &lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#BrandedSelect">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#BrandedSelect">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 		<hr class="uk-margin-large">
@@ -205,11 +164,11 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Accessible Button $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="accessibleButton">
+<section class="accessibleButton">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Accessible Button</h2>
-		<div class="uk-section uk-section-muted uk-padding">
-			<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Accessible Button</h2>
+		<div class="uk-section uk-section-muted ">
+			<h3 id="" class=""><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
 			<ul>
 				<li>
 					The <code>role="button"</code> lets screen-readers know the element is a button
@@ -223,14 +182,14 @@
 			</ul>
 		</div>
 		<!-- Live Examples --
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 		</dl>
 		-->
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="uk-card uk-card-default uk-padding">
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<div class="button-container">
 				<button type="submit" id="submitFeedback" tabIndex="0" role="button" class="submit">
 					This is a button
@@ -238,7 +197,7 @@
 			</div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="Button">&lt;div class="button-container"&gt;
 		  &lt;button type="submit" id="submitFeedback" tabIndex="0" role="button" class="submit"&gt;
 			Submit Feedback
@@ -246,8 +205,8 @@
 		&lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Button">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Button">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -255,12 +214,12 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Accessible Checkbox Group $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="accessibleCheckboxGroup">
+<section class="accessibleCheckboxGroup">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Accessible Checkbox Group</h2>
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Accessible Checkbox Group</h2>
 		<p>Checkboxes should be utilized when the user has a list of options to choose from. Checkboxes should always allow for multiple selections.</p>
-		<div class="uk-section uk-section-muted uk-padding">
-			<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
+		<div class="uk-section uk-section-muted ">
+			<h3 id="" class=""><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
 			<ul>
 				<li>
 					The <code>for="itemX"</code> associates the label with the form input <code>id="itemX"</code>
@@ -273,14 +232,14 @@
 		</div>
 		<p class="_note p">The user can click on the label to set focus to the form control. This is useful on small screens and to some people with motor disabilities, particularly when targeting small checkboxes and radio buttons. Clicking on labels is also an easy way to check for proper form labeling. If clicking the label sets focus to or activates the form control, then that label is programmatically associated.</p>
 		<!-- Live Examples --
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 		</dl>
 		-->
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="uk-card uk-card-default uk-padding">
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col form-area">
 
@@ -307,7 +266,7 @@
 			<div class="l-col"></div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="CheckboxGroup">&lt;div class="l-row l-two-col-left-narrow full-width"&gt;
 		  &lt;div class="l-col"&gt;
 			&lt;label&gt;Select your items:&lt;/label&gt;
@@ -329,8 +288,8 @@
 		&lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#CheckboxGroup">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#CheckboxGroup">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 		<hr class="uk-margin-large" />
@@ -339,11 +298,11 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Accessible Button $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="accessibleButton">
+<section class="accessibleButton">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Accessible Button</h2>
-		<div class="uk-section uk-section-muted uk-padding">
-			<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Accessible Button</h2>
+		<div class="uk-section uk-section-muted ">
+			<h3 id="" class=""><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
 			<ul>
 				<li>
 					The <code>role="button"</code> lets screen-readers know the element is a button
@@ -357,14 +316,14 @@
 			</ul>
 		</div>
 		<!-- Live Examples --
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 		</dl>
 		-->
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="uk-card uk-card-default uk-padding">
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<div class="button-container">
 				<button type="submit" id="submitFeedback" tabIndex="0" role="button" class="submit">
 					This is a button
@@ -372,7 +331,7 @@
 			</div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="Button">&lt;div class="button-container"&gt;
 		  &lt;button type="submit" id="submitFeedback" tabIndex="0" role="button" class="submit"&gt;
 			Submit Feedback
@@ -380,8 +339,8 @@
 		&lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Button">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Button">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -389,7 +348,7 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  disabled $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="disabled">
+<section class="disabled">
 	<div class="eia-container">
 		<!-- %- include('./partials/disabled') % -->
 	</div>
@@ -397,7 +356,7 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  dropdown-select $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dropdownSelect">
+<section class="dropdownSelect">
 	<div class="eia-container">
 		<!-- %- include('./partials/dropdown-select') % -->
 	</div>
@@ -405,7 +364,7 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Enctype $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="enctype">
+<section class="enctype">
 	<div class="eia-container">
 		<!-- %- include('./partials/enctype') % -->
 	</div>
@@ -413,7 +372,7 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Fieldset $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="fieldset">
+<section class="fieldset">
 	<div class="eia-container">
 		<!-- %- include('./partials/fieldset') % -->
 	</div>
@@ -421,7 +380,7 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  form-label $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="formLabel">
+<section class="formLabel">
 	<div class="eia-container">
 		<!-- %- include('./partials/form-label') % -->
 	</div>
@@ -429,7 +388,7 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  form-placeholder $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="formPlaceholder">
+<section class="formPlaceholder">
 	<div class="eia-container">
 		<!-- %- include('./partials/form-placeholder') % -->
 	</div>
@@ -437,7 +396,7 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Introduction $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="introduction">
+<section class="introduction">
 	<div class="eia-container">
 		<!-- %- include('./partials/images') % -->
 	</div>
@@ -445,14 +404,14 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Accessible Label and Input $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="accessibleLabelAndInput">
+<section class="accessibleLabelAndInput">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Accessible Label and Input</h2>
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Accessible Label and Input</h2>
 		<!--
 		<app-text-input-config></app-text-input-config>
 		 -->
-		<div class="uk-section uk-section-muted uk-padding">
-			<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
+		<div class="uk-section uk-section-muted ">
+			<h3 id="" class=""><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
 			<ul>
 				<li>
 					The <code> for="name"</code> associates the label with the form input
@@ -464,14 +423,14 @@
 		</div>
 		<p class="_note p">The user can click on the label to set focus to the form control. This is useful on small screens and to some people with motor disabilities, particularly when targeting small checkboxes and radio buttons. Clicking on labels is also an easy way to check for proper form labeling. If clicking the label sets focus to or activates the form control, then that label is programmatically associated.</p>
 		<!-- Live Examples --
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 		</dl>
 		-->
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="uk-card uk-card-default uk-padding">
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col form-area">
 					<div class="l-row l-two-col-left-narrow full-width">
@@ -500,7 +459,7 @@
 			<div class="l-col"></div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="LabelAndInput">&lt;div class="primary form-area"&gt;
 		  &lt;div class="l-row l-two-col-left-narrow full-width"&gt;
 			&lt;div class="l-col"&gt;&lt;label  for="firstName"&gt;Firse Name:&lt;/label&gt;&lt;/div&gt;
@@ -525,8 +484,8 @@
 		&lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#LabelAndInput">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#LabelAndInput">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 		<hr class="uk-margin-large" />
@@ -535,9 +494,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Name $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="name">
+<section class="name">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Name</h2>
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Name</h2>
 
 		<code>name</code>
 		<p>Defines the unique identifier for that input within the form. It allows the server to access each input's value when submitted.</p>
@@ -556,9 +515,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  No Validate $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="noValidate">
+<section class="noValidate">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">No Validate</h2>
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">No Validate</h2>
 		<code>novalidate</code>
 		<p>Tells the browser to not validate the form on submission.</p>
 	</div>
@@ -566,14 +525,14 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Accessible Radiobutton Group $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="accessibleRadiobuttonGroup">
+<section class="accessibleRadiobuttonGroup">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Accessible Radiobutton Group</h2>
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Accessible Radiobutton Group</h2>
 
 		<p>Radiobuttones should be utilized when the user has a list of options to choose from. Radiobuttones should always allow for multiple selections.</p>
 
-		<div class="uk-section uk-section-muted uk-padding">
-			<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
+		<div class="uk-section uk-section-muted ">
+			<h3 id="" class=""><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
 			<ul>
 				<li>
 					The <code>for="itemX"</code> associates the label with the form input <code>id="itemX"</code>
@@ -585,14 +544,14 @@
 		</div>
 		<p class="_note p">The user can click on the label to set focus to the form control. This is useful on small screens and to some people with motor disabilities, particularly when targeting small checkboxes and radio buttons. Clicking on labels is also an easy way to check for proper form labeling. If clicking the label sets focus to or activates the form control, then that label is programmatically associated.</p>
 		<!-- Live Examples --
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 		</dl>
 		-->
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="uk-card uk-card-default uk-padding">
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<div class="l-row l-two-col-left-narrow full-width">
 				<div class="l-col">
 					<label>Select an Item:</label>
@@ -615,7 +574,7 @@
 		</div>
 
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="RadiobuttonGroup">&lt;div class="l-row l-two-col-left-narrow full-width"&gt;
 			&lt;div class="l-col"&gt;
 				&lt;label&gt;Select an Item:&lt;/label&gt;
@@ -637,8 +596,8 @@
 		&lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#RadiobuttonGroup">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#RadiobuttonGroup">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 		<hr class="uk-margin-large" />
@@ -647,9 +606,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Required $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="required">
+<section class="required">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Required</h2>
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Required</h2>
 
 		<code>required</code>
 		<p>
@@ -660,14 +619,14 @@
 		</p>
 		<p>The browser should show a warning if you try to submit the form with an empty text input.</p>
 		<!-- Live Examples --
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 		</dl>
 		-->
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="uk-card uk-card-default uk-padding">
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col form-area">
 					<fieldset>
@@ -687,12 +646,12 @@
 			<div class="l-col"></div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="Required"></code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Required">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Required">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -700,14 +659,14 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Accessible Stand-alone Check-Box $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="accessibleStandAloneCheckBox">
+<section class="accessibleStandAloneCheckBox">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Accessible Stand-alone Check-Box</h2>
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Accessible Stand-alone Check-Box</h2>
 
 		<p>A stand-alone checkbox should be utilized when the user has a single option to choose from. The label should always be positive and never negative. For example: "Active rather than Not Active," or "Yes rather than No."</p>
 
-		<div class="uk-section uk-section-muted uk-padding">
-			<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
+		<div class="uk-section uk-section-muted ">
+			<h3 id="" class=""><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
 			<ul>
 				<li>
 					The <code> for="itemX"</code> associates the label with the form input
@@ -719,14 +678,14 @@
 		</div>
 		<p class="_note p">The user can click on the label to set focus to the form control. This is useful on small screens and to some people with motor disabilities, particularly when targeting small checkboxes and radio buttons. Clicking on labels is also an easy way to check for proper form labeling. If clicking the label sets focus to or activates the form control, then that label is programmatically associated.</p>
 		<!-- Live Examples --
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 		</dl>
 		-->
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="uk-card uk-card-default uk-padding">
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col form-area">
 
@@ -740,12 +699,12 @@
 			<div class="l-col"></div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="StandAloneCheckbox"></code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#StandAloneCheckbox">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#StandAloneCheckbox">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 		<hr class="uk-margin-large" />
@@ -754,9 +713,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Target $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="target">
+<section class="target">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Target</h2>
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Target</h2>
 
 		<p>Defines in which tab or window the clicked link will show up.</p>
 		<code>"_blank"</code>
@@ -783,42 +742,42 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Textarea Configuration $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="textareaConfiguration">
+<section class="textareaConfiguration">
 	<div class="eia-container">
-		<button href="#toggle-animation" class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-animation; animation: uk-animation-fade">Textarea Configurations</button>
-		<div id="toggle-animation" class="uk-card uk-card-default uk-card-body uk-margin-small" hidden>
+		<button href="#toggle-animation" class="eia-button eia-button-default" type="button" uk-toggle="target: #toggle-animation; animation: uk-animation-fade">Textarea Configurations</button>
+		<div id="toggle-animation" class="eia-card uk-margin-small" hidden>
 
-			<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Textarea Autocomplete</h2>
+			<h2 id="" class="eia-h2 eia-margin-xlarge-top">Textarea Autocomplete</h2>
 			<p>What controls fall into each group is described here: <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#inappropriate-for-the-control">https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#inappropriate-for-the-control</a>.</p>
 			<ul>
 				<li>The <code>autocomplete="on"</code> will <strong>enable</strong> autocomplete functionality in the browser.</li>
 				<li>The <code>autocomplete="off"</code> will <strong>disable</strong> autocomplete functionality in the browser.</li>
 			</ul>
 
-			<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Textarea Autofocus</h2>
-			<div class="uk-section uk-section-muted uk-padding">
-				<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
+			<h2 id="" class="eia-h2 eia-margin-xlarge-top">Textarea Autofocus</h2>
+			<div class="uk-section uk-section-muted ">
+				<h3 id="" class=""><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
 				<ul>
 					<li>
 						Do not use the <code>autofocus=""</code>.</li>
 				</ul>
 			</div>
-			<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Textarea Cols</h2>
+			<h2 id="" class="eia-h2 eia-margin-xlarge-top">Textarea Cols</h2>
 
 			<ul>
 				<li><code>cols=""</code> defines the number of columns.</li>
 				<li>You can use <strong>integers</strong>, e.g.: <code>cols="40"</code>.</li>
 			</ul>
 			<!-- LIVE EXAMPLES --
-			<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+			<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd>
 				<a></a>
 			</dd>
 		</dl>
 		-->
 			<!-- Example -->
-			<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+			<h3 class="eia-h3">Example</h3>
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col form-area">
 					<fieldset>
@@ -830,7 +789,7 @@
 				<div class="l-col"></div>
 			</div>
 			<!-- Textarea Disabled -->
-			<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Textarea Disabled</h2>
+			<h2 id="" class="eia-h2 eia-margin-xlarge-top">Textarea Disabled</h2>
 
 			<ul>
 				<li><code>disabled=""</code> defines the number of columns.</li>
@@ -838,15 +797,15 @@
 					Disables the textarea, e.g.: <code>disabled="true"</code>.</li>
 			</ul>
 			<!-- LIVE EXAMPLES --
-			<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+			<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd>
 				<a></a>
 			</dd>
 		</dl>
 		-->
 			<!-- Example -->
-			<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+			<h3 class="eia-h3">Example</h3>
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col form-area">
 					<fieldset>
@@ -858,7 +817,7 @@
 				<div class="l-col"></div>
 			</div>
 			<!-- Textarea Max-Length -->
-			<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Textarea Max-Length</h2>
+			<h2 id="" class="eia-h2 eia-margin-xlarge-top">Textarea Max-Length</h2>
 
 			<ul>
 				<li><code>maxlength=""</code> defines the maxlength amount of characters allowed.</li>
@@ -866,15 +825,15 @@
 					You can use <strong>integers</strong>, e.g.: <code>maxlength="50"</code>.</li>
 			</ul>
 			<!-- LIVE EXAMPLES --
-			<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+			<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd>
 				<a></a>
 			</dd>
 		</dl>
 		-->
 			<!-- Example -->
-			<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+			<h3 class="eia-h3">Example</h3>
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col form-area">
 					<fieldset>
@@ -886,7 +845,7 @@
 				<div class="l-col"></div>
 			</div>
 			<!-- Textarea minlength -->
-			<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Textarea minlength</h2>
+			<h2 id="" class="eia-h2 eia-margin-xlarge-top">Textarea minlength</h2>
 
 			<ul>
 				<li><code>minlength=""</code> defines the minimum amount of characters the textarea required to be valid.</li>
@@ -894,15 +853,15 @@
 					You can use <strong>integers</strong>, e.g.: <code>minlength="15"</code>.</li>
 			</ul>
 			<!-- LIVE EXAMPLES --
-			<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+			<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd>
 				<a></a>
 			</dd>
 		</dl>
 		-->
 			<!-- Example -->
-			<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+			<h3 class="eia-h3">Example</h3>
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col form-area">
 					<fieldset>
@@ -914,7 +873,7 @@
 				<div class="l-col"></div>
 			</div>
 			<!-- Textarea Placeholder -->
-			<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Textarea Placeholder</h2>
+			<h2 id="" class="eia-h2 eia-margin-xlarge-top">Textarea Placeholder</h2>
 
 			<ul>
 				<li><code>placeholder=""</code> defines a non-selectable placeholder text that only appears when the textarea is empty.</li>
@@ -923,15 +882,15 @@
 				</li>
 			</ul>
 			<!-- LIVE EXAMPLES --
-			<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+			<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd>
 				<a></a>
 			</dd>
 		</dl>
 		-->
 			<!-- Example -->
-			<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+			<h3 class="eia-h3">Example</h3>
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col form-area">
 					<fieldset>
@@ -943,7 +902,7 @@
 				<div class="l-col"></div>
 			</div>
 			<!-- Textarea Rows -->
-			<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Textarea Rows</h2>
+			<h2 id="" class="eia-h2 eia-margin-xlarge-top">Textarea Rows</h2>
 
 			<ul>
 				<li><code>rows=""</code> defines the number of rows.</li>
@@ -951,15 +910,15 @@
 					You can use <strong>integers</strong>, e.g.: <code>rows="5"</code>.</li>
 			</ul>
 			<!-- LIVE EXAMPLES --
-			<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+			<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd>
 				<a></a>
 			</dd>
 		</dl>
 		-->
 			<!-- Example -->
-			<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+			<h3 class="eia-h3">Example</h3>
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col form-area">
 					<fieldset>
@@ -971,21 +930,21 @@
 				<div class="l-col"></div>
 			</div>
 			<!-- Textarea Spellcheck -->
-			<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Textarea Spellcheck</h2>
+			<h2 id="" class="eia-h2 eia-margin-xlarge-top">Textarea Spellcheck</h2>
 
 			<ul>
 				<li><code>spellcheck="true"</code> enables the browser spell-checker.</li>
 			</ul>
 			<!-- LIVE EXAMPLES --
-			<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+			<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd>
 				<a></a>
 			</dd>
 		</dl>
 		-->
 			<!-- Example -->
-			<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+			<h3 class="eia-h3">Example</h3>
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col form-area">
 					<fieldset>
@@ -1006,7 +965,7 @@
 					<li><code>wrap="soft"</code> the text will only break when needed.</li>
 				</ul>
 				<!-- Example -->
-				<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+				<h3 class="eia-h3">Example</h3>
 				<div class="l-row l-two-col-left-wide">
 					<div class="primary l-col form-area">
 						<code>wrap="hard"</code> will always be wrapped depending on the <code>cols</code> value.
@@ -1030,19 +989,19 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Textarea $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="textarea">
+<section class="textarea">
 	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Textarea</h2>
+		<h3 class="eia-h2 eia-margin-xlarge-top">Live Examples</h3>Textarea</h2>
 
 		<p class="_note p">The user can click on the label to set focus to the form control. This is useful on small screens and to some people with motor disabilities, particularly when targeting small checkboxes and radio buttons. Clicking on labels is also an easy way to check for proper form labeling. If clicking the label sets focus to or activates the form control, then that label is programmatically associated.</p>
 		<!-- Live Examples --
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 		</dl>
 		-->
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h3 class="eia-h3">Example</h3>
 		<div class="l-row l-two-col-left-wide">
 			<div class="primary l-col form-area">
 				<div class="form-container">
@@ -1054,12 +1013,12 @@
 			<div class="l-col"></div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="Textarea"></code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Textarea">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Textarea">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -1067,16 +1026,16 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Accessible Label and Input $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="accessibleLabelAndInput">
+<section class="accessibleLabelAndInput">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Accessible Label and Input</h2>
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Accessible Label and Input</h2>
 		<!--
 		<app-text-input-config></app-text-input-config>	
 		-->
 
 
-		<div class="uk-section uk-section-muted uk-padding">
-			<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
+		<div class="uk-section uk-section-muted ">
+			<h3 id="" class=""><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
 			<ul>
 				<li>
 					The <code> for="name"</code> associates the label with the form input
@@ -1088,14 +1047,14 @@
 		</div>
 		<p class="_note p">The user can click on the label to set focus to the form control. This is useful on small screens and to some people with motor disabilities, particularly when targeting small checkboxes and radio buttons. Clicking on labels is also an easy way to check for proper form labeling. If clicking the label sets focus to or activates the form control, then that label is programmatically associated.</p>
 		<!-- Live Examples --
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 		</dl>
 		-->
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="uk-card uk-card-default uk-padding">
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col form-area">
 					<div class="l-row l-two-col-left-narrow full-width">
@@ -1123,7 +1082,7 @@
 			<div class="l-col"></div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 
 
 		<pre><code class="language-html" id="LabelAndInput">&lt;div class="primary form-area"&gt;
@@ -1150,8 +1109,8 @@
 		&lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#LabelAndInput">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#LabelAndInput">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 		<hr class="uk-margin-large" />
@@ -1160,12 +1119,12 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  InputConfiguration $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="inputConfiguration">
+<section class="inputConfiguration">
 	<div class="eia-container">
 		<div class="primary">
 			<div class="accordion all-closed">
 
-				<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Input Text</h2>
+				<h2 id="" class="eia-h2 eia-margin-xlarge-top">Input Text</h2>
 				<div class="eia accordion-content">
 					<ul class="ul">
 						<li class="li">
@@ -1174,7 +1133,7 @@
 					</ul>
 				</div>
 
-				<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Input Number</h2>
+				<h2 id="" class="eia-h2 eia-margin-xlarge-top">Input Number</h2>
 				<div class="eia accordion-content">
 					<ul class="ul">
 						<li class="li">
@@ -1186,7 +1145,7 @@
 					</ul>
 				</div>
 
-				<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Input Email</h2>
+				<h2 id="" class="eia-h2 eia-margin-xlarge-top">Input Email</h2>
 				<div class="eia accordion-content">
 					<ul class="ul">
 						<li class="li">
@@ -1198,7 +1157,7 @@
 					</ul>
 				</div>
 
-				<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Input Telephone</h2>
+				<h2 id="" class="eia-h2 eia-margin-xlarge-top">Input Telephone</h2>
 				<div class="eia accordion-content">
 					<ul class="ul">
 						<li class="li">
@@ -1237,7 +1196,7 @@
 					</ul>
 				</div>
 
-				<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Text Input Autocomplete</h2>
+				<h2 id="" class="eia-h2 eia-margin-xlarge-top">Text Input Autocomplete</h2>
 				<div class="eia accordion-content">
 					<p>
 						What controls fall into each group is described here: <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#inappropriate-for-the-control">https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#inappropriate-for-the-control</a>.
@@ -1253,7 +1212,7 @@
 					</ul>
 				</div>
 
-				<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Text Input Autofocus</h2>
+				<h2 id="" class="eia-h2 eia-margin-xlarge-top">Text Input Autofocus</h2>
 				<div class="eia accordion-content">
 					<p class="accessibility p">
 						<strong>
@@ -1267,7 +1226,7 @@
 					</ul>
 				</div>
 
-				<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Text Input Disabled</h2>
+				<h2 id="" class="eia-h2 eia-margin-xlarge-top">Text Input Disabled</h2>
 				<div class="eia accordion-content">
 					<ul class="ul">
 						<li class="li">
@@ -1293,7 +1252,7 @@
 					</ul>
 				</div>
 
-				<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Text Input Max-Length</h2>
+				<h2 id="" class="eia-h2 eia-margin-xlarge-top">Text Input Max-Length</h2>
 				<div class="eia accordion-content">
 					<ul class="ul">
 						<li class="li">
@@ -1319,7 +1278,7 @@
 					</ul>
 				</div>
 
-				<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Text Input minlength</h2>
+				<h2 id="" class="eia-h2 eia-margin-xlarge-top">Text Input minlength</h2>
 				<div class="eia accordion-content">
 					<ul class="ul">
 						<li class="li">
@@ -1345,7 +1304,7 @@
 					</ul>
 				</div>
 
-				<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Text Input Placeholder</h2>
+				<h2 id="" class="eia-h2 eia-margin-xlarge-top">Text Input Placeholder</h2>
 				<div class="eia accordion-content">
 					<ul class="ul">
 						<li class="li">
@@ -1371,7 +1330,7 @@
 					</ul>
 				</div>
 
-				<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Text Input Spellcheck</h2>
+				<h2 id="" class="eia-h2 eia-margin-xlarge-top">Text Input Spellcheck</h2>
 				<div class="eia accordion-content">
 					<ul class="ul">
 						<li class="li">
@@ -1400,18 +1359,18 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$  Validation $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="validation">
+<section class="validation">
 	<div class="eia-container">
-		<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Validation</h2>
+		<h2 id="" class="eia-h2 eia-margin-xlarge-top">Validation</h2>
 		<!-- Live Examples --
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-		<dl class="uk-description-list uk-description-list-divider">
+		<h3 class="eia-h3">Live Examples</h3>
+		<dl class="">
 			<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 		</dl>
 		-->
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="uk-card uk-card-default uk-padding">
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<div class="l-row l-two-col-left-wide">
 				<div class="primary l-col form-area">
 
@@ -1421,12 +1380,12 @@
 						<label>Form Label</label>
 						<textarea class="textarea invalid" rows="10" placeholder="e.g. Hello my name is Alex" name="message"></textarea>
 					</div>
-					<div class="uk-text-default uk-text-bold">Label Example</div>
+					<div class="uk-text-bold">Label Example</div>
 					<div class="form-container">
 						<label>Form Label</label>
 						<textarea class="textarea valid" rows="10" placeholder="e.g. Hello my name is Alex" name="message"></textarea>
 					</div>
-					<div class="uk-text-default uk-text-bold">Title Example</div>
+					<div class="uk-text-bold">Title Example</div>
 
 					<div class="form-container">
 						<label>Title</label>
@@ -1437,7 +1396,7 @@
 						</ul>
 					</div>
 
-					<div class="uk-text-default uk-text-bold">First name Example</div>
+					<div class="uk-text-bold">First name Example</div>
 
 					<div class="form-container">
 						<label>First name</label>
@@ -1447,7 +1406,7 @@
 
 					</div>
 
-					<div class="uk-text-default uk-text-bold">Last name Example</div>
+					<div class="uk-text-bold">Last name Example</div>
 
 
 
@@ -1457,7 +1416,7 @@
 					</div>
 
 
-					<div class="uk-text-default uk-text-bold">Email Example</div>
+					<div class="uk-text-bold">Email Example</div>
 
 
 					<div class="form-container">
@@ -1466,7 +1425,7 @@
 					</div>
 
 
-					<div class="uk-text-default uk-text-bold">Phone Number Example</div>
+					<div class="uk-text-bold">Phone Number Example</div>
 
 
 					<div class="form-container">
@@ -1475,7 +1434,7 @@
 					</div>
 
 
-					<div class="uk-text-default uk-text-bold">Password Example</div>
+					<div class="uk-text-bold">Password Example</div>
 
 
 					<div class="form-container">
@@ -1486,7 +1445,7 @@
 
 					</div>
 
-					<div class="uk-text-default uk-text-bold">Select Example</div>
+					<div class="uk-text-bold">Select Example</div>
 
 					<div class="form-container">
 						<label>Country</label>
@@ -1513,14 +1472,23 @@
 			<div class="l-col"></div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="Validation"></code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Validation">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Validation">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
-		<hr class="uk-margin-large" />
-	</div>
-</section>
+</div>
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

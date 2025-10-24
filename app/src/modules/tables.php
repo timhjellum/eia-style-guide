@@ -83,53 +83,25 @@
 		display: block;
 	}
 </style>
-<div id="secondaryNavigation">
-	<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
-		<li><a href="#introduction">Introduction</a></li>
-		<li><a href="#basic">Basic Table</a></li>
-		<li><a href="#fullWidth">Full Width</a></li>
-		<li><a href="#caption">Caption</a></li>
-		<li><a href="#doubleHead">Double Head</a></li>
-		<li><a href="#rowHead">Row-head</a></li>
-		<li><a href="#rowTotal">Total</a></li>
-		<li><a href="#rowBold">Bold</a></li>
-		<li><a href="#rowIndent">Indent</a></li>
-		<li><a href="#rowSectionHead">Row Head</a></li>
-		<li><a href="#rowSectionDivider">Row (Horizontal) Divider</a></li>
-		<li><a href="#columnHighlight">Column Highlight</a></li>
-		<li><a href="#columnDivider">Column (Vertical) divider</a></li>
-		<li><a href="#columnAlign">Column Align</a></li>
-		<li><a href="#columnHide">Column Hide</a></li>
-		<li><a href="#foot">tableFoot</a></li>
-		<li><a href="#footnotes">table</a></li>
-		<li><a href="#stacked">Stacked table</a></li>
-		<li><a href="#rowSelected">table</a></li>
-		<li><a href="#holidaySchedule">table</a></li>
-	</ul>
-</div>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$  Introduction $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="introduction">
-	<div class="eia-container">
-		<h1 class="uk-h1 tm-heading-fragment">Introduction</h1>
-	</div>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$     basic    $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="basic">
-	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Basic Table</h3>
-		<p>
-			The basic EIA styled table can created by nesting the table in a div with the style: <code>class="basic-table"</code>, and adding the style <code>class="basic-table"</code> to the <code>table</code> tag. It's also important to use the HTML table structure of <code>&lt;head&gt;&lt;/head&gt;</code>, <code>&lt;body&gt;&lt;/body&gt;</code>, and <code>&lt;foot&gt;&lt;/foot&gt;</code> as needed.
-		</p>
-		<div class="uk-section uk-section-muted uk-padding">
-			<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
-			<p class="accessibility p">
-				Header cells must be marked up with <code>        &lt;th&gt;</code>, and data cells with <code>        &lt;td&gt;</code>, along with a <code>scope</code> to make tables accessible.
-			</p>
-		</div>
+<a id="scrollTop" href>
+  <div></div>
+</a>
+<aside>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+</aside>
+<main>
+  <h1 class="eia-h1">Introduction</h1></h1>
+  <section>
+    <div class="eia-container">
+      <!-- h2 class="eia-h2">Basic Table</h2 -->
+      <!-- p class="eia-para"></p -->
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer">
+
 		<div class="basic-table">
 			<table class="basic-table full-width">
 				<thead>
@@ -176,7 +148,7 @@
 			</table>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="Basic">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
@@ -223,8 +195,8 @@
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Basic">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Basic">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -232,9 +204,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$     full-width    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="fullWidth">
+<section class="fullWidth">
 	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Full Width</h3>
+		<h3 class="">Full Width</h3>
 		<p>
 			Adding a <code>&lt;full-width&gt;</code> to the table class ( &lt;table class="basic-table full-width&gt;).
 		</p>
@@ -285,7 +257,7 @@
 		</div>
 
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="FullWidth">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
@@ -331,8 +303,8 @@
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#FullWidth">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#FullWidth">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -340,9 +312,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$     caption    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="caption">
+<section class="caption">
 	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Caption</h3>
+		<h3 class="">Caption</h3>
 		<p><code>caption</code></p>
 		<div class="basic-table">
 			<table class="basic-table full-width">
@@ -371,7 +343,7 @@
 		</div>
 
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="Caption">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
 &lt;caption&gt;
@@ -398,8 +370,8 @@
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Caption">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Caption">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -411,9 +383,9 @@
 	<div class="eia-container">
 		<h2 class="eia-sub-heading uk-text-center">HEAD</h2>
 		<p><code>&lt;head&gt;...&lt;/head&gt;</code></p>
-		<ul class="uk-grid-small uk-child-width-1-2 uk-flex-center uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
+		<ul class="  uk-flex-center ">
 			<li>
-				<div class="uk-card uk-card-default uk-card-body prototype-table">
+				<div class="eia-card prototype-table">
 					<div class="prototype-table-inside">
 						<div class="prototype-table-cell active">
 							<div class="prototype-column">head</div>
@@ -468,12 +440,12 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$     double-head    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="doubleHead">
+<section class="doubleHead">
 	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Double Head</h3>
+		<h3 class="">Double Head</h3>
 		<a name="DoubleHeader"></a>
-		<div class="uk-section uk-section-muted uk-padding">
-			<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
+		<div class="uk-section uk-section-muted ">
+			<h3 id="" class=""><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
 			<p class="accessibility p">
 				Add a <code>scope="colgroup"</code> whenever you use a <code>colspan="x"</code>.
 			</p>
@@ -515,7 +487,7 @@
 			</table>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="DoubleHeader">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
         &lt;thead class="double-header"&gt;
@@ -553,8 +525,8 @@
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#DoubleHeader">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#DoubleHeader">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -562,14 +534,14 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$        Head Row         $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="rowHead">
+<section class="rowHead">
 	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Row head</h3>
+		<h3 class="">Row head</h3>
 		<p>
 			Adding a <code>class="sectionhead"</code> to the table row.
 		</p>
-		<div class="uk-section uk-section-muted uk-padding">
-			<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
+		<div class="uk-section uk-section-muted ">
+			<h3 id="" class=""><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
 			<p class="accessibility p">
 				Add a <code>scope="colgroup"</code> whenever you use a <code>colspan="x"</code>.
 			</p>
@@ -619,7 +591,7 @@
 				</tbody>
 			</table>
 		</div><!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="RowSectionHead">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
@@ -663,8 +635,8 @@
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowSectionHead">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowSectionHead">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -677,9 +649,9 @@
 		<h2 class="eia-sub-heading uk-text-center">Table Rows</h2>
 		<p><code>    &lt;tbody&gt;...    &lt;/tbody&gt;</code></p>
 		<p><code>&lt;head&gt;...&lt;/head&gt;</code></p>
-		<ul class="uk-grid-small uk-child-width-1-2 uk-flex-center uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
+		<ul class="  uk-flex-center ">
 			<li>
-				<div class="uk-card uk-card-default uk-card-body prototype-table">
+				<div class="eia-card prototype-table">
 					<div class="prototype-table-inside">
 						<div class="prototype-table-cell">
 							<div class="prototype-column">head</div>
@@ -734,9 +706,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$         Bold Row        $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="rowBold">
+<section class="rowBold">
 	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Row Bold</h3>
+		<h3 class="">Row Bold</h3>
 		<a name="RowBold"></a>
 		<p>
 			Adding a <code>class="bold"</code> to the table row ( &lt;tr&gt;).
@@ -792,7 +764,7 @@
 			</table>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="RowBold">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
@@ -837,8 +809,8 @@
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowBold">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowBold">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -846,9 +818,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$     row-section-head    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="rowHead">
+<section class="rowHead">
 	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Row Head</h3>
+		<h3 class="">Row Head</h3>
 		<a name="RowHead"></a>
 
 		Table Row Head (<span class="accessibility-requirement">Accessibility requirement</span>)
@@ -903,7 +875,7 @@
 			</table>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="RowHead">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
@@ -949,8 +921,8 @@
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowHead">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowHead">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -958,9 +930,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$     row-indent    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="rowIndent">
+<section class="rowIndent">
 	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Row Indent</h3>
+		<h3 class="">Row Indent</h3>
 		<a name="RowIndent"></a>
 		<p>
 			Adding a <code>class="level-1/2/3-indent"</code> to the first table cell.
@@ -1017,7 +989,7 @@
 			</table>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="RowIndent">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
@@ -1069,8 +1041,8 @@
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowIndent">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowIndent">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -1078,14 +1050,14 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$     row-Section-divider    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="rowDivider">
+<section class="rowDivider">
 	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Row (Horizontal) Divider</h3>
+		<h3 class="">Row (Horizontal) Divider</h3>
 		<p>
 			Adding a <code>class="divider"</code> to the table row.
 		</p>
-		<div class="uk-section uk-section-muted uk-padding">
-			<h3 id="" class="uk-h3 tm-heading-fragment"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
+		<div class="uk-section uk-section-muted ">
+			<h3 id="" class=""><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
 			<p class="accessibility p">
 				Add a <code>scope="colgroup"</code> whenever you use a <code>colspan="x"</code>.
 			</p>
@@ -1134,7 +1106,7 @@
 				</tbody>
 			</table>
 		</div><!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="RowSectionDivider">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
 &lt;caption&gt;Caption&lt;/caption&gt;
@@ -1181,8 +1153,8 @@
 &lt;/div&gt;</code></pre>
 
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowSectionDivider">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowSectionDivider">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -1190,9 +1162,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$     row-total    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="rowTotal">
+<section class="rowTotal">
 	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Row Total</h3>
+		<h3 class="">Row Total</h3>
 		<div class="basic-table">
 			<table class="basic-table full-width">
 				<thead>
@@ -1225,7 +1197,7 @@
 				</tbody>
 			</table>
 		</div><!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="RowTotal">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
@@ -1259,8 +1231,8 @@
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowTotal">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowTotal">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -1273,9 +1245,9 @@
 	<div class="eia-container">
 		<h2 class="eia-sub-heading uk-text-center">Table Columns</h2>
 		<p><code>    &lt;tbody&gt;...    &lt;/tbody&gt;</code></p>
-		<ul class="uk-grid-small uk-child-width-1-2 uk-flex-center uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
+		<ul class="  uk-flex-center ">
 			<li>
-				<div class="uk-card uk-card-default uk-card-body prototype-table">
+				<div class="eia-card prototype-table">
 					<div class="prototype-table-inside">
 						<div class="prototype-table-cell">
 							<div class="prototype-column">head</div>
@@ -1330,9 +1302,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$     column-align    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="columnAlign">
+<section class="columnAlign">
 	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Column Align</h3>
+		<h3 class="">Column Align</h3>
 		<a name="ColumnAlign"></a>
 		<p>
 			Adding a <code>class="align-left-col-1/2/3/4/5/6/7/8/9/10"</code> to the to the table class (Note, this may not have the desired effect if there are spanned columns).
@@ -1371,7 +1343,7 @@
 			</table>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="ColumnAlign">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width align-left-col-2"&gt;
     &lt;thead&gt;
@@ -1405,8 +1377,8 @@
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnAlign">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnAlign">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -1414,9 +1386,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$     column-divider    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="columnDivider">
+<section class="columnDivider">
 	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Column (Vertical) divider</h3>
+		<h3 class="">Column (Vertical) divider</h3>
 		<a name="ColumnDivider"></a>
 
 
@@ -1482,7 +1454,7 @@
 			</table>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="ColumnDivider">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width vertical-divider-after-col-1"&gt;
     &lt;thead&gt;
@@ -1539,8 +1511,8 @@
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnDivider">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnDivider">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -1548,9 +1520,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$     column-hide    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="columnHide">
+<section class="columnHide">
 	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Column Hide</h3>
+		<h3 class="">Column Hide</h3>
 		<a name="ColumnHide"></a>
 		<p>
 			Hiding a column (head, body and foot) can be accomplished by adding a <code>class="hide-col-1/2/3/4/5..."</code> to the table class.
@@ -1611,7 +1583,7 @@
 			</table>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="ColumnHide">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width hide-col-2 hide-col-4 highlight-col-2  highlight-col-4"&gt;
     &lt;thead&gt;
@@ -1639,8 +1611,8 @@
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnHide">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnHide">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -1648,9 +1620,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$ column-highlight $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="columnHighlight">
+<section class="columnHighlight">
 	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">Column Highlight</h2>
+		<h2 class="eia-h2">Column Highlight</h2>
 		<a name="ColumnHighlight"></a>
 		<p>
 			Highlighting a column can be accomplished by adding a <code>class="highlight-col-1/2/3/4/5..."</code> to the to the table class.
@@ -1683,7 +1655,7 @@
 			</table>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="ColumnHighlight">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width highlight-col-2  highlight-col-4"&gt;
     &lt;thead&gt;
@@ -1711,8 +1683,8 @@
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnHighlight">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnHighlight">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -1724,9 +1696,9 @@
 	<div class="eia-container">
 		<h2 class="eia-sub-heading uk-text-center">FOOT</h2>
 		<p><code>&lt;foot&gt;...&lt;/foot&gt;</code></p>
-		<ul class="uk-grid-small uk-child-width-1-2 uk-flex-center uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
+		<ul class="  uk-flex-center ">
 			<li>
-				<div class="uk-card uk-card-default uk-card-body prototype-table">
+				<div class="eia-card prototype-table">
 					<div class="prototype-table-inside">
 						<div class="prototype-table-cell">
 							<div class="prototype-column">head</div>
@@ -1781,9 +1753,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$       Table Foot        $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="tableFoot">
+<section class="tableFoot">
 	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">Table Foot</h2>
+		<h2 class="eia-h2">Table Foot</h2>
 		<div class="basic-table">
 			<table class="basic-table full-width">
 				<thead>
@@ -1813,7 +1785,7 @@
 			</table>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="Foot">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
@@ -1843,8 +1815,8 @@
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Foot">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Foot">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -1852,9 +1824,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$     footnotes    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="Footnotes">
+<section class="Footnotes">
 	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Footnotes</h3>
+		<h3 class="">Footnotes</h3>
 
 		<div class="basic-table">
 			<table class="basic-table full-width">
@@ -1893,7 +1865,7 @@
 			</table>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="TableFootnotesOrderedList">&lt;div class="basic-table"&gt;
 	&lt;table class="basic-table full-width"&gt;
 		&lt;tfoot&gt;
@@ -1916,8 +1888,8 @@
 &lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#TableFootnotesOrderedList">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#TableFootnotesOrderedList">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -1928,9 +1900,9 @@
 <section>
 	<div class="eia-container">
 		<h2 class="eia-sub-heading uk-text-center">Multiple Tables</h2>
-		<ul class="uk-grid-small uk-child-width-1-2 uk-flex-center uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
+		<ul class="  uk-flex-center ">
 			<li>
-				<div class="uk-card uk-card-default uk-card-body prototype-table">
+				<div class="eia-card prototype-table">
 					<div class="prototype-table-inside">
 						<div class="prototype-table-cell">
 							<div class="prototype-column">head</div>
@@ -1980,7 +1952,7 @@
 				</div>
 			</li>
 			<li>
-				<div class="uk-card uk-card-default uk-card-body prototype-table">
+				<div class="eia-card prototype-table">
 					<div class="prototype-table-inside">
 						<div class="prototype-table-cell">
 							<div class="prototype-column">head</div>
@@ -2035,9 +2007,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$     stacked    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="stacked">
+<section class="stacked">
 	<div class="eia-container">
-		<h3 class="uk-h3 tm-heading-fragment">Stacked</h3>
+		<h3 class="">Stacked</h3>
 
 		<div class="basic-table">
 			<table class="basic-table full-width">
@@ -2092,7 +2064,7 @@
 			</table>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="Stacked">&lt;div class="basic-table"&gt;
 	&lt;table class="basic-table full-width"&gt;
 	&lt;caption&gt;Table One&lt;/caption&gt;
@@ -2147,8 +2119,8 @@
 &lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Stacked">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Stacked">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -2164,14 +2136,14 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$     row-selected    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="table">
+<section class="table">
 	<div class="eia-container">
 	</div>
 </section>
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$     holiday-schedule    $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="table">
+<section class="table">
 	<div class="eia-container">
 
 		<div class="basic-table">
@@ -2295,7 +2267,7 @@
 			</table>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="HolidaySchedule">&lt;div class="basic-table"&gt;
 	&lt;table class="basic-table schedule full-width align-left-col-2 align-left-col-3 align-left-col-4 align-left-col-5"&gt;
 	&lt;thead&gt;
@@ -2418,9 +2390,19 @@
 &lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#HolidaySchedule">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#HolidaySchedule">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
-	</div>
-</section>
+</div>
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

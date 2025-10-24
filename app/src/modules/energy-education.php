@@ -1,11 +1,24 @@
-<h1 class="uk-h1 tm-heading-fragment" id=" Energy Education">Energy Education</h1>
-<p class="uk-text-lead"></p>
-<!-- Example -->
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Example 1</div>
-<div class="eia-card">
+<a id="scrollTop" href>
+  <div></div>
+</a>
+<aside>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+</aside>
+<main>
+  <h1 class="eia-h1">Energy Education</h1>
+  <section>
+    <div class="eia-container">
+      <!-- h2 class="eia-h2"></h2 -->
+      <!-- p class="eia-para"></p -->
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer">
 	<div class="l-row l-three-col-even energy-education">
-		<h1 class="eia">Energy Education</h1>
-		<p class="uk-text-lead"></p>
+		<h1>Energy Education</h1>
+		<p class="eia-para"></p>
 		<div class="l-col">
 			<span class="eia ico energy-education petroleum"></span>
 			<ul>
@@ -57,11 +70,11 @@
 	</div>
 </div>
 <!-- Example -->
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Example 2</div>
+<div class="">Example 2</div>
 <div class="eia-card">
 	<div class="l-row l-three-col-even energy-education">
 		<h1>Energy Education</h1>
-		<p class="uk-text-lead"></p>
+		<p class="eia-para"></p>
 		<div class="l-col">
 			<span class="eia ico energy-education petroleum"></span>
 			<ul>
@@ -113,20 +126,23 @@
 	</div>
 </div>
 <!-- HTML -->
-<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+<h3 class="eia-h3">HTML</h3>
 <pre><code class="language-html" id="EnergyEducation">Code sample not ready yet.</code></pre>
 <!-- Copy Button -->
 <p>
-	<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#EnergyEducation">
-		<span uk-icon="copy"></span>Copy to clipboard
+	<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#EnergyEducation">
+		<span></span>Copy to clipboard
 	</button>
 </p>
 </div>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
-	<div class="eia-container">
-
-		<app-side-nav-modules></app-side-nav-modules>
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

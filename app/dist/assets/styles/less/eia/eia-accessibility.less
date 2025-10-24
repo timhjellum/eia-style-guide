@@ -1,0 +1,145 @@
+.accessibility {
+    a {
+
+
+        padding-bottom: 0px;
+        border-bottom: 1px solid white;
+        border-image: repeating-linear-gradient(to right, transparent, transparent 2px, @eia-508-hover-underline-color 0, @eia-508-hover-underline-color 3px) 2 stretch;
+        color: @eia-508-link-color;
+        text-decoration: none !important;
+
+        &:hover {
+            border-image: none;
+            border-bottom: 2px solid @eia-508-hover-underline-color;
+            color: @eia-508-link-color;
+            text-decoration: none !important;
+        }
+
+        &:focus {
+            color: @eia-508-focus-color  !important;
+            border-image: none;
+            border-bottom: 3px solid @eia-508-focus-underline-color;
+            background: @eia-508-focus-bg-color;
+            outline: none;
+            text-decoration: none !important;
+        }
+
+        &.link {
+            color: @eia-508-link-color;
+            padding-bottom: 0px;
+            border-bottom: 1px solid white;
+            text-decoration: none !important;
+            border-image: repeating-linear-gradient(to right, transparent, transparent 2px, @eia-508-hover-underline-color 0, @eia-508-hover-underline-color 3px) 2 stretch;
+
+            &:hover {
+                color: @eia-508-link-color;
+                padding-bottom: 0px;
+                border-bottom: 1px solid white;
+                text-decoration: none !important;
+                border-image: repeating-linear-gradient(to right, transparent, transparent 2px, @eia-508-hover-underline-color 0, @eia-508-hover-underline-color 3px) 2 stretch;
+            }
+
+            &:focus {
+                //color: @eia-508-link-color
+                padding-bottom: 0px;
+                border-bottom: 1px solid white;
+                text-decoration: none !important;
+                border-image: repeating-linear-gradient(to right, transparent, transparent 2px, @eia-508-hover-underline-color 0, @eia-508-hover-underline-color 3px) 2 stretch;
+            }
+        }
+
+        &.hover {
+            border-image: none;
+            border-bottom: 2px solid @eia-508-hover-underline-color;
+            color: @eia-508-link-color;
+            text-decoration: none !important;
+
+            &:focus {
+                border-image: none;
+                border-bottom: 2px solid @eia-508-hover-underline-color;
+                color: @eia-508-link-color;
+                text-decoration: none !important;
+            }
+        }
+
+        &.focus {
+            color: white !important;
+            border-image: none;
+            border-bottom: 3px solid @eia-508-focus-underline-color;
+            background: @eia-508-focus-bg-color;
+            outline: none;
+            text-decoration: none !important;
+
+            &:hover {
+                color: white !important;
+                border-image: none;
+                border-bottom: 3px solid @eia-508-focus-underline-color;
+                background: @eia-508-focus-bg-color;
+                outline: none;
+                text-decoration: none !important;
+            }
+        }
+    }
+
+    //.svg-container,
+    .image-container {
+        a {
+            border-bottom: none;
+            border-image: none;
+            border: 2px solid transparent;
+
+            &.hover {
+                border-image: none;
+                border: 2px solid transparent;
+            }
+
+            &.focus {
+                //color: white;
+                //border-image: none;
+                //border-bottom: 3px solid @eia-508-focus-underline-color;
+                //background: #0078ac;
+                //outline: none;
+                //text-decoration: none !important;
+                border: 2px dashed @eia-508-link-color;
+                //color: white;
+                //border-image: none;
+                border-top: 2px dashed @eia-508-link-color;
+                border-right: 2px dashed @eia-508-link-color;
+                border-bottom: 2px dashed @eia-508-link-color;
+                border-left: 2px dashed @eia-508-link-color;
+                background: #fff;
+                //outline: none;
+                //text-decoration: none !important;
+            }
+        }
+    }
+}
+
+/*
+    .secondary-alt {
+        p {
+            a {
+                color: #4e7f2a;
+                padding-bottom: 0px;
+                border-bottom: 2px solid white;
+                border-image: repeating-linear-gradient(to right, transparent, transparent 3px, #4e7f2a 3px, #4e7f2a 10px) 3 stretch;
+
+                &:hover {
+                    border-image: none;
+                    border-bottom: 2px solid #4e7f2a;
+                    color: #4e7f2a;
+                    text-decoration: none !important;
+                }
+
+                &:focus {
+                    color: white;
+                    border-image: none;
+                    border-bottom: 2px solid @eia-508-focus-underline-color;
+                    background: #4e7f2a;
+                    outline: none;
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
+*/

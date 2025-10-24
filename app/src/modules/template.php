@@ -1,43 +1,29 @@
-<div id="secondaryNavigation">
-	<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
-		<li><a href="#introduction">Introduction</a></li>
-		<li><a href="#allClosed">All Closed</a></li>
-		<li><a href="#firstOpen">FirstOpen</a></li>
-		<li><a href="#allOpen">All Open</a></li>
-	</ul>
-</div>
-
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$  Introduction $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="introduction">
-	<div class="eia-container">
-		<h1 class="uk-h1 tm-heading-fragment">Introduction</h1>
-		<p class="uk-text-lead"></p>
-	</div>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$   All Closed  $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="allClosed">
-	<div class="eia-container">
-
-	</div>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$      All Open      $$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="allOpen">
-	<div class="eia-container">
-
-	</div>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$    First Open    $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="firstOpen">
-	<div class="eia-container">
-
-
-	</div>
-</section>
+<a id="scrollTop" href>
+	<div></div>
+</a>
+<aside>
+	<nav>
+		<ul>
+		</ul>
+	</nav>
+</aside>
+<main>
+	<h1 class="eia-h1">Introduction</h1>
+	<section>
+		<div class="eia-container">
+			<!-- h2 class="eia-h2"></h2 -->
+			<!-- p class="eia-para"></p -->
+			<h3 class="eia-h3">Example</h3>
+			<div class="eia-card">
+				<div class="l-margin-bottom eia-container-resizer"></div>
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

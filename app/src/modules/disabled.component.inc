@@ -1,18 +1,21 @@
-<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">Disabled</h2>
-
-<code>disabled</code>
-<p>Disables the controls the fieldset contains.</p>
-
-<code>n/a</code>
-<!-- Live Examples --
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-<dl class="uk-description-list uk-description-list-divider">
-	<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
-</dl>
--->
-<!-- Example -->
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-<div class="uk-card uk-card-default uk-padding">
+<a id="scrollTop" href>
+  <div></div>
+</a>
+<aside>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+</aside>
+<main>
+  <h1 class="eia-h1">Disabled</h1>
+  <section>
+    <div class="eia-container">
+      <!-- h2 class="eia-h2"></h2 -->
+      <!-- p class="eia-para"></p -->
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer">
 	<div class="l-row l-two-col-left-wide">
 		<div class="primary l-col form-area">
 
@@ -39,14 +42,14 @@
 <code>disabled</code>
 <p>Disables the input.</p>
 <!-- Live Examples --
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-<dl class="uk-description-list uk-description-list-divider">
+<h3 class="eia-h3">Live Examples</h3>
+<dl class="">
 	<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
 </dl>
 -->
 <!-- Example -->
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-<div class="uk-card uk-card-default uk-padding">
+<h3 class="eia-h3">Example</h3>
+<div class="eia-card">
 	<div class="l-row l-two-col-left-wide">
 		<div class="primary l-col form-area">
 
@@ -62,11 +65,23 @@
 	<div class="l-col"></div>
 </div>
 <!-- HTML -->
-<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+<h3 class="eia-h3">HTML</h3>
 <pre><code class="language-html" id="Disabled"></code></pre>
 <!-- Copy Button -->
 <p>
-	<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Disabled">
-		<span uk-icon="copy"></span>Copy to clipboard
+	<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Disabled">
+		<span></span>Copy to clipboard
 	</button>
 </p>
+</div>
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

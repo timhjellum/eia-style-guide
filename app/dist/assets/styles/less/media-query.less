@@ -1,0 +1,198 @@
+@media screen {
+
+    /* $$$$$       $$$$$  $$$$$$$$$$$$$$  $$$$$       $$$$$ */
+    /*  $$$$$     $$$$$   $$$$$$$$$$$$$$  $$$$$$     $$$$$$ */
+    /*   $$$$$   $$$$$    $$$$$           $$$$$$$   $$$$$$$ */
+    /*    $$$$$ $$$$$     $$$$$           $$$$$$$$ $$$$$$$$ */
+    /*     $$$$$$$$$      $$$$$$$$$$$$$$  $$$$$$$$$$$$$$$$$ */
+    /*     $$$$$$$$$      $$$$$$$$$$$$$$  $$$$$ $$$$$ $$$$$ */
+    /*    $$$$$ $$$$$              $$$$$  $$$$$  $$$  $$$$$ */
+    /*   $$$$$   $$$$$             $$$$$  $$$$$   $   $$$$$ */
+    /*  $$$$$     $$$$$   $$$$$$$$$$$$$$  $$$$$       $$$$$ */
+    /* $$$$$       $$$$$  $$$$$$$$$$$$$$  $$$$$       $$$$$ */
+    @media (min-width: 0) {
+        #output {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 5000;
+            line-height: .5;
+            padding: 5px 0 0 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            &:after {
+                content: 'mobile';
+                background-color: black;
+                border: 3px solid black;
+                color: white;
+                font-size: 16px;
+            }
+        }
+
+        @media (orientation: portrait) {
+            #output {
+                padding: 0 10px 10px 0;
+                transform: rotate(-90deg);
+
+                &:after {
+                    background-color: red;
+                    border: 3px solid red;
+                    //font-size: 5vw;
+                }
+            }
+        }
+
+        @media (orientation: landscape) {}
+    }
+
+    /* $$$$$$$$$$$$$$  $$$$$       $$$$$ */
+    /* $$$$$$$$$$$$$$  $$$$$$     $$$$$$ */
+    /* $$$$$           $$$$$$$   $$$$$$$ */
+    /* $$$$$           $$$$$$$$ $$$$$$$$ */
+    /* $$$$$$$$$$$$$$  $$$$$$$$$$$$$$$$$ */
+    /* $$$$$$$$$$$$$$  $$$$$ $$$$$ $$$$$ */
+    /*          $$$$$  $$$$$  $$$  $$$$$ */
+    /*          $$$$$  $$$$$   $   $$$$$ */
+    /* $$$$$$$$$$$$$$  $$$$$       $$$$$ */
+    /* $$$$$$$$$$$$$$  $$$$$       $$$$$ */
+    @media (min-width: @mobile-landscape) {
+        #output {
+            &:after {
+                font-size: 1.8vw;
+                content: 'mobile-landscape'
+            }
+        }
+
+        @media (orientation: portrait) {
+            #output {
+                padding: 0 10px 25px 0;
+                transform: rotate(-90deg);
+
+                &:after {
+                    background-color: red;
+                    border: 3px solid red;
+                    //font-size: 2vh;
+                }
+            }
+        }
+
+        @media (orientation: landscape) {}
+    }
+
+    /* $$$$$       $$$$$ */
+    /* $$$$$$     $$$$$$ */
+    /* $$$$$$$   $$$$$$$ */
+    /* $$$$$$$$ $$$$$$$$ */
+    /* $$$$$$$$$$$$$$$$$ */
+    /* $$$$$$$$$$$$$$$$$ */
+    /* $$$$$ $$$$$ $$$$$ */
+    /* $$$$$  $$$  $$$$$ */
+    /* $$$$$   $   $$$$$ */
+    /* $$$$$       $$$$$ */
+    /* $$$$$       $$$$$ */
+    @media (min-width: @tablet) {
+        #output {
+            &:after {
+                font-size: 1.5vw;
+                content: 'tablet portrait';
+            }
+        }
+
+        @media (orientation: portrait) {
+            #output {
+                padding: 0 10px 25px 0;
+                transform: rotate(-90deg);
+                //&:after {
+                //background-color: green;
+                //border: 3px solid green;
+                //font-size: 2vh;
+                //}
+            }
+        }
+
+        @media (orientation: landscape) {
+            #output {
+                //&:after {
+                //font-size: 1.5vw;
+                //content: 'tablet portrait';
+                //}
+            }
+        }
+    }
+
+    /* $$$$$ */
+    /* $$$$$ */
+    /* $$$$$ */
+    /* $$$$$ */
+    /* $$$$$ */
+    /* $$$$$ */
+    /* $$$$$ */
+    /* $$$$$$$$$$$$$$$ */
+    /* $$$$$$$$$$$$$$$ */
+    /* $$$$$$$$$$$$$$$ */
+    @media (min-width: @tablet-landscape) {
+        #output {
+            &:after {
+                font-size: 1.5vw;
+                content: 'tablet-landscape';
+            }
+        }
+    }
+
+    /* $$$$$       $$$$$ $$$$$ */
+    /*  $$$$$     $$$$$  $$$$$ */
+    /*   $$$$$   $$$$$   $$$$$ */
+    /*    $$$$$ $$$$$    $$$$$ */
+    /*     $$$$$$$$$     $$$$$ */
+    /*     $$$$$$$$$     $$$$$ */
+    /*    $$$$$ $$$$$    $$$$$ */
+    /*   $$$$$   $$$$$   $$$$$$$$$$$$$$$ */
+    /*  $$$$$     $$$$$  $$$$$$$$$$$$$$$ */
+    /* $$$$$       $$$$$ $$$$$$$$$$$$$$$ */
+    @media (min-width: @laptop) {
+        #output {
+            &:after {
+                font-size: 1.2vw;
+                content: 'laptop';
+            }
+        }
+    }
+
+    /* $$$$$       $$$$$ $$$$$       $$$$$ $$$$$ */
+    /*  $$$$$     $$$$$   $$$$$     $$$$$  $$$$$ */
+    /*   $$$$$   $$$$$     $$$$$   $$$$$   $$$$$ */
+    /*    $$$$$ $$$$$       $$$$$ $$$$$    $$$$$ */
+    /*     $$$$$$$$$         $$$$$$$$$     $$$$$ */
+    /*     $$$$$$$$$         $$$$$$$$$     $$$$$ */
+    /*    $$$$$ $$$$$       $$$$$ $$$$$    $$$$$ */
+    /*   $$$$$   $$$$$     $$$$$   $$$$$   $$$$$$$$$$$$$$$ */
+    /*  $$$$$     $$$$$   $$$$$     $$$$$  $$$$$$$$$$$$$$$ */
+    /* $$$$$       $$$$$ $$$$$       $$$$$ $$$$$$$$$$$$$$$ */
+    @media (min-width: @desktop) {
+        #output {
+            &:after {
+                font-size: 1vw;
+                content: 'desktop';
+            }
+        }
+    }
+        /* $$$$$       $$$$$ $$$$$       $$$$$ $$$$$ */
+    /*  $$$$$     $$$$$   $$$$$     $$$$$  $$$$$ */
+    /*   $$$$$   $$$$$     $$$$$   $$$$$   $$$$$ */
+    /*    $$$$$ $$$$$       $$$$$ $$$$$    $$$$$ */
+    /*     $$$$$$$$$         $$$$$$$$$     $$$$$ */
+    /*     $$$$$$$$$         $$$$$$$$$     $$$$$ */
+    /*    $$$$$ $$$$$       $$$$$ $$$$$    $$$$$ */
+    /*   $$$$$   $$$$$     $$$$$   $$$$$   $$$$$$$$$$$$$$$ */
+    /*  $$$$$     $$$$$   $$$$$     $$$$$  $$$$$$$$$$$$$$$ */
+    /* $$$$$       $$$$$ $$$$$       $$$$$ $$$$$$$$$$$$$$$ */
+    @media (min-width: @desktop-lg) {
+        #output {
+            &:after {
+                font-size: 1vw;
+                content: 'desktop lg';
+            }
+        }
+    }
+}

@@ -3,7 +3,7 @@
 //
 // Component:       `uk-grid`
 //
-// Modifiers:       `uk-grid-small`
+// Modifiers:       ``
 //                  `uk-grid-medium`
 //                  `uk-grid-large`
 //                  `uk-grid-collapse`
@@ -115,15 +115,15 @@
  */
 
 /* Horizontal */
-.uk-grid-small,
+.,
 .uk-grid-column-small { margin-left: -@grid-small-gutter-horizontal; }
-.uk-grid-small > *,
+. > *,
 .uk-grid-column-small > *  { padding-left: @grid-small-gutter-horizontal; }
 
 /* Vertical */
-.uk-grid + .uk-grid-small,
+.uk-grid + .,
 .uk-grid + .uk-grid-row-small,
-.uk-grid-small > .uk-grid-margin,
+. > .uk-grid-margin,
 .uk-grid-row-small > .uk-grid-margin,
 * + .uk-grid-margin-small { margin-top: @grid-small-gutter-vertical; }
 
@@ -262,19 +262,19 @@
  */
 
 /* Horizontal */
-.uk-grid-divider.uk-grid-small,
+.uk-grid-divider.,
 .uk-grid-divider.uk-grid-column-small { margin-left: -(@grid-small-gutter-horizontal * 2); }
-.uk-grid-divider.uk-grid-small > *,
+.uk-grid-divider. > *,
 .uk-grid-divider.uk-grid-column-small > * { padding-left: (@grid-small-gutter-horizontal * 2); }
 
-.uk-grid-divider.uk-grid-small > :not(.uk-first-column)::before,
+.uk-grid-divider. > :not(.uk-first-column)::before,
 .uk-grid-divider.uk-grid-column-small > :not(.uk-first-column)::before { left: @grid-small-gutter-horizontal; }
 
 /* Vertical */
-.uk-grid-divider.uk-grid-small.uk-grid-stack > .uk-grid-margin,
+.uk-grid-divider..uk-grid-stack > .uk-grid-margin,
 .uk-grid-divider.uk-grid-row-small.uk-grid-stack > .uk-grid-margin { margin-top: (@grid-small-gutter-vertical * 2); }
 
-.uk-grid-divider.uk-grid-small.uk-grid-stack > .uk-grid-margin::before {
+.uk-grid-divider..uk-grid-stack > .uk-grid-margin::before {
     top: -@grid-small-gutter-vertical;
     left: (@grid-small-gutter-horizontal * 2);
 }

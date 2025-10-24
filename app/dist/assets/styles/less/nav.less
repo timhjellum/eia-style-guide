@@ -1,0 +1,191 @@
+a {
+    text-decoration: none;
+}
+
+.default-width {
+    margin: auto;
+    width: @default-width;
+}
+
+.ul-reset {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+/* #Navigation Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav {
+    background: #fff;
+    font-size: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: stretch;
+    animation: navDefault linear forwards;
+    animation-duration: 0.3s;
+
+    /* #Mega Menu Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .mega-menu {
+        background: #f0f0f0;
+        display: none;
+
+        &__layouts {
+            grid-template-columns: 122px 122px 122px 122px 122px 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: ". . . . . .";
+        }
+
+        h3 {
+            //color: #333;
+            font-size: 17px;
+            min-height: 27px;
+            margin: 8px 0;
+			.primary-header;
+
+            a {
+				.primary-header-a;
+            }
+        }
+
+        ul {
+            float: left;
+            margin-bottom: 20px;
+            margin-right: 40px;
+            width: 205px;
+
+            a {
+                border-bottom: 1px solid @eia-divider-color;
+                color: @default-link-color; // #4ea3d8;
+                display: block;
+                padding: 10px 0;
+
+                &:hover {
+                    color: @default-link-hover-color; //#2d6a91;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    /* #Droppable Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .droppable {
+        position: static;
+    }
+
+    .droppable>a:after {
+        content: "\f107";
+        font-family: FontAwesome;
+        font-size: 12px;
+        padding-left: 6px;
+        position: relative;
+        top: -1px;
+    }
+
+    .droppable:hover .mega-menu {
+        display: block;
+    }
+
+    /* #Browser Clearfix
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .cf {
+
+        &:before,
+        &:after {
+            content: " ";
+            /* 1 */
+            display: table;
+            /* 2 */
+        }
+
+        &:after {
+            clear: both;
+        }
+    }
+
+    &.nav-scrolled {
+        color: #333;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+        animation: navScrolled linear forwards;
+        animation-duration: 0.3s;
+    }
+
+
+
+    >ul {
+
+        display: flex;
+        align-items: center;
+        align-content: stretch;
+        flex-direction: row;
+
+        >li {
+            display: inline-block;
+            font-size: 14px;
+            padding: 0 15px;
+            position: relative;
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            >a {
+                color: #333;
+                display: block;
+                position: relative;
+                border-bottom: 3px solid transparent;
+            }
+
+            &:hover {
+                >a {
+                    color: #333;
+                    border-bottom: 3px solid #333;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes navScrolled {
+    from {
+        //padding: 2em 3em;
+        height: 50px;
+        background-color: rgba(244, 244, 244, 0.5);
+    }
+
+    to {
+        //padding: 0.5em 3em;
+        height: 30px;
+        background-color: rgba(244, 244, 244, 1);
+    }
+}
+
+@keyframes navDefault {
+    from {
+        //padding: 0.5em 3em;
+        height: 30px;
+        background-color: rgba(244, 244, 244, 1);
+    }
+
+    to {
+        //padding: 2em 3em;
+        height: 50px;
+        background-color: rgba(244, 244, 244, 0.5);
+    }
+}

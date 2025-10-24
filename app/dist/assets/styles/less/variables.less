@@ -1,0 +1,262 @@
+/*
+@mobile: 320px)"; // could be 320px - smartphones, portrait iPhone, portrait 480x320 phones (Android)
+@mobile-landscape: ~"(min-width:480px)"; // smartphones, Android phones, landscape iPhone
+@tablet: 600px)"; // mobile panorama
+@tablet-landscape: 801px)"; // tablet, landscape iPad, lo-res laptops ands desktops
+@laptop: 1025px)"; // normall 1025 - big landscape tablets, laptops, and desktops
+@desktop: 1200px)"; // big landscape tablets, laptops, and desktops
+@desktop-lg: 2300px)"; // hi-res laptops and desktops
+
+
+
+
+360?800   (11.01%)
+390?844   (7.92%)
+414?896   (5.55%)
+393?873   (5.26)
+412?915   (5%)
+_______________
+414x915 (34%)
+
+1920?1080   (22.18%)
+1366?768      (14.04%)
+1440?900      (6.41%)
+1280?720       (5.45%)
+1280?1024    (4.52%)
+*/
+@mobile: 1px; // could be 320px - smartphones, portrait iPhone, portrait 480x320 phones (Android)
+@mobile-landscape: 480px; // smartphones, Android phones, landscape iPhone
+@tablet: 600px; // mobile panorama
+@tablet-landscape: 801px; // tablet, landscape iPad, lo-res laptops ands desktops
+@laptop: 1025px; // normall 1025 - big landscape tablets, laptops, and desktops
+@desktop: 1366px; // big landscape tablets, laptops, and desktops
+@desktop-lg: 2300px; // hi-res laptops and desktops
+
+@size: 16px;
+
+@default-width: 1032px;
+@default-font-color: #333;
+@default-link-color: #4ea3d8;
+@default-link-hover-color: #2d6a91;
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** *****  messaging and banners  ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+@eia-508-red-color: #892b36; //use shade(@eia-red, 16%). This yields #892b36
+@eia-508-red-bg-color: tint(@eia-red, 80%);
+
+@eia-508-yellow-color: #876901; //shade 47% for the text/link color (yields #876901)
+@eia-508-yellow-bg-color: #fff4cc; //tint 80% for the background (yields #fff4cc)
+
+@eia-508-green-color: #467126; //use shade(@eia-green, 25%). This yields #467126
+@eia-508-green-bg-color: tint(@eia-green, 80%);
+
+@eia-508-notice-blue-color: shade(@eia-blue, 25%);
+@eia-508-notice-blue-bg-color: tint(@eia-blue, 85%);
+
+@eia-508-call-out-bg-color: #ededed;
+
+@eia-508-dark-grey: #333; // was 
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** ** 508 accessibility ** ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+@transparent: transparent;
+
+
+@eia-508-link-color: #007eb5;
+@eia-508-hover-underline-color: #007eb5;
+
+@eia-508-focus-underline-color: @eia-yellow;
+@eia-508-focus-bg-color: #007eb5;
+@eia-508-focus-color: @eia-black-10;
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** ***** eia colors ****** ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+@eia-link-color: #007eb5;
+@eia-dark-link-color: #003c57;
+@eia-white: #fff;
+@eia-yellow: #ffd84e;
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** **** color palette **** ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+@eia-dark-blue-60: shade(@eia-blue, 62%); // really 62%
+@eia-dark-blue-45: shade(@eia-blue, 45%);
+@eia-dark-blue-30: shade(@eia-blue, 30%);
+@eia-dark-blue-15: shade(@eia-blue, 15%);
+@eia-blue: #0096d7; // base color
+@eia-light-blue-15: tint(@eia-blue, 15%);
+@eia-light-blue-30: tint(@eia-blue, 30%);
+@eia-light-blue-45: tint(@eia-blue, 45%);
+@eia-light-blue-60: tint(@eia-blue, 62%); // really 62%
+// +++++
+@eia-dark-green-60: shade(@eia-green, 62%); // really 62%
+@eia-dark-green-45: shade(@eia-green, 45%);
+@eia-dark-green-30: shade(@eia-green, 30%);
+@eia-dark-green-15: shade(@eia-green, 15%);
+@eia-green: #5d9732; // base color
+@eia-light-green-15: tint(@eia-green, 15%);
+@eia-light-green-30: tint(@eia-green, 30%);
+@eia-light-green-45: tint(@eia-green, 45%);
+@eia-light-green-60: tint(@eia-green, 62%); // really 62%
+// +++++
+@eia-dark-red-60: shade(@eia-red, 62%); // really 62%
+@eia-dark-red-45: shade(@eia-red, 45%);
+@eia-dark-red-30: shade(@eia-red, 30%);
+@eia-dark-red-15: shade(@eia-red, 15%);
+@eia-red: #a33340; // base color
+@eia-light-red-15: tint(@eia-red, 15%);
+@eia-light-red-30: tint(@eia-red, 30%);
+@eia-light-red-45: tint(@eia-red, 45%);
+@eia-light-red-60: tint(@eia-red, 62%); // really 62%
+// +++++
+@eia-dark-yellow-60: shade(@eia-yellow, 62%); // really 62%
+@eia-dark-yellow-45: shade(@eia-yellow, 45%);
+@eia-dark-yellow-30: shade(@eia-yellow, 30%);
+@eia-dark-yellow-15: shade(@eia-yellow, 15%);
+@eia-yellow: #ffc702; // base color
+@eia-light-yellow-15: tint(@eia-yellow, 15%);
+@eia-light-yellow-30: tint(@eia-yellow, 30%);
+@eia-light-yellow-45: tint(@eia-yellow, 45%);
+@eia-light-yellow-60: tint(@eia-yellow, 62%); // really 62%
+
+@eia-dark-brown-60: shade(@eia-brown, 62%); // really 62%
+@eia-dark-brown-45: shade(@eia-brown, 45%);
+@eia-dark-brown-30: shade(@eia-brown, 30%);
+@eia-dark-brown-15: shade(@eia-brown, 15%);
+@eia-brown: #bd732a; // tan
+@eia-light-brown-15: tint(@eia-brown, 15%);
+@eia-light-brown-30: tint(@eia-brown, 30%);
+@eia-light-brown-45: tint(@eia-brown, 45%);
+@eia-light-brown-60: tint(@eia-brown, 62%); // really 62%
+// +++++
+@eia-light-yellow-50: mix(@eia-light-yellow, @eia-yellow, 50%);
+@eia-light-yellow-25: mix(@eia-light-yellow, @eia-yellow, 25%);
+// +++++
+
+@eia-dark-orange-60: shade(@eia-orange, 62%); // really 62%
+@eia-dark-orange-45: shade(@eia-orange, 45%);
+@eia-dark-orange-30: shade(@eia-orange, 30%);
+@eia-dark-orange-15: shade(@eia-orange, 15%);
+@eia-orange: #ff6f1f; // base color
+@eia-light-orange-15: tint(@eia-orange, 15%);
+@eia-light-orange-30: tint(@eia-orange, 30%);
+@eia-light-orange-45: tint(@eia-orange, 45%);
+@eia-light-orange-60: tint(@eia-orange, 62%); // really 62%
+// +++++
+@eia-dark-purple-60: shade(@eia-purple, 62%); // really 62%
+@eia-dark-purple-45: shade(@eia-purple, 45%);
+@eia-dark-purple-30: shade(@eia-purple, 30%);
+@eia-dark-purple-15: shade(@eia-purple, 15%);
+@eia-purple: #513c7a; // base color
+@eia-light-purple-15: tint(@eia-purple, 15%);
+@eia-light-purple-30: tint(@eia-purple, 30%);
+@eia-light-purple-45: tint(@eia-purple, 45%);
+@eia-light-purple-60: tint(@eia-purple, 62%); // really 62%
+// +++++
+@eia-white: rgb(255, 255, 255); // base color white
+@eia-black-10: mix(@eia-black, @eia-white, 10%);
+@eia-black-20: mix(@eia-black, @eia-white, 20%);
+@eia-black-30: mix(@eia-black, @eia-white, 30%);
+@eia-black-40: mix(@eia-black, @eia-white, 40%);
+@eia-black-50: mix(@eia-black, @eia-white, 50%);
+@eia-black-60: mix(@eia-black, @eia-white, 60%);
+@eia-black-70: mix(@eia-black, @eia-white, 70%);
+@eia-black-80: mix(@eia-black, @eia-white, 80%);
+@eia-black-90: mix(@eia-black, @eia-white, 90%);
+@eia-black: rgb(0, 0, 0); // base color black
+
+@eia-white: rgb(255, 255, 255); // base color white
+@eia-black-10: mix(@eia-black, @eia-white, 10%);
+@eia-black-20: mix(@eia-black, @eia-white, 20%);
+@eia-black-30: mix(@eia-black, @eia-white, 30%);
+@eia-black-40: mix(@eia-black, @eia-white, 40%);
+@eia-black-50: mix(@eia-black, @eia-white, 50%);
+@eia-black-60: mix(@eia-black, @eia-white, 60%);
+@eia-black-70: mix(@eia-black, @eia-white, 70%);
+@eia-black-80: mix(@eia-black, @eia-white, 80%);
+@eia-black-90: mix(@eia-black, @eia-white, 90%);
+@eia-black: rgb(0, 0, 0); // base color black
+
+
+@eia-dark-grey: #333;
+
+@eia-muted-blue: #66a0b9;
+@eia-muted-green: #92a753;
+@eia-muted-brown: #a27d33;
+
+// @gradient-background: #d8e6ce;
+//@eia-dark-grey: #333;
+//@eia-light-grey: #dadada;
+
+//@eia-508-focus-bg-color: #0078ac;
+//@eia-508-link-color: #007eb5;
+
+
+
+// ---New Purple Color---*/
+//@eia-yellow: #ffc702;
+//@eia-yellow-mono: #d0d0d0; // top swoosh
+//@eia-blue-mono: #6e6e6e; // top swoosh
+@eia-darker-blue: #003c57;
+@eia-dark-blue: #003953;
+@eia-light-blue: #76d5ff;
+
+@eia-dark-green: #2a4b11;
+@eia-light-green: #bed5ad;
+
+@eia-dark-red: #410e14;
+@eia-light-red: #daadb3;
+
+@eia-dark-yellow: #806401;
+@eia-light-yellow: #ffe99a;
+
+@eia-light-orange: #ffddc5;
+@eia-dark-orange: #de611c;
+
+@eia-dark-purple: #362852;
+@eia-light-purple: #b9b1ca;
+
+@gradient-background: rgba(246, 246, 246, 1);
+@eia-divider: #e3e5e6;
+@button_green: #7da85b;
+@eia-greyish-blue: #a9c1da;
+
+@port-blue: #3380a2;
+@eia-blue-module-background: #dff2fb;
+@alert-background: #e8cccf;
+@eia-date-light: #928b81;
+
+
+
+
+
+
+
+
+
+
+@baseFontSize: 16;
+@fontWeightBold: 700;
+@fontWeightSemiBold: 600;
+@fontWeightNormal: normal;
+@fontStyleItalic: italic;
+@floatRight: right;
+@floatLeft: left;
+
+@NoWrap: no-wrap;
+
+@AlignLeft: left;
+@AlignRight: right;
+@AlignCenter: center;
+@AlignTop: top;
+@AlignMiddle: middle;
+@AlignBottom: bottom;
+
+@DisplayNone: hide;
+@DisplayShow: block;

@@ -1,6 +1,29 @@
-<section id="columnHighlight">
-	<div class="eia-container">
-		<h2 class="uk-h3 tm-heading-fragment">Highlight</h2>
-		<p>Add <code>.highlight</code> to the <code>ul</code> of any list item to apply <strong>bold</strong> to the font, and EIA styling.</p>
-	</div>
-</section>
+<a id="scrollTop" href>
+  <div></div>
+</a>
+<aside>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+</aside>
+<main>
+  <h1 class="eia-h1">Highlight</h1>
+  <section>
+    <div class="eia-container">
+      <!-- h2 class="eia-h2"></h2 -->
+      <!-- p class="eia-para"></p -->
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer"></div>
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

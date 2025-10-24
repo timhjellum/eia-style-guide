@@ -1,8 +1,22 @@
-<h1 class="uk-h1 tm-heading-fragment" id=" Tabs">Tabs</h1>
-<p class="uk-text-lead"></p>
+<a id="scrollTop" href>
+  <div></div>
+</a>
+<aside>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+</aside>
+<main>
+  <h1 class="eia-h1">Tabs</h1>
+  <section>
+    <div class="eia-container">
+      <!-- h2 class="eia-h2">Default</h2 -->
+      <!-- p class="eia-para"></p -->
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer">
 
-
-<h2>Default</h2>
 
 <p>Tabs are generally used to break content into multiple sections that can be swapped to save space, much like an accordion.</p>
 <p>Tabs have a particular set of markup that must be used in order for them to work properly:</p>
@@ -71,12 +85,12 @@
 	</ul>
 
 	<!-- HTML -->
-	<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-	<div class="uk-margin-medium">
+	<h3 class="eia-h3">HTML</h3>
+	<div class="eia-margin-medium">
 		<div class="tabs">
 			<ul>
-				<li><a href="#tabOne">Tab One</a></li>
-				<li><a href="#tabTwo">Tab Two</a></li>
+				<li data-section="tabOne">Tab One</a></li>
+				<li data-section="tabTwo">Tab Two</a></li>
 			</ul>
 			<div id="tabOne">
 				<div class="tab-content">
@@ -91,8 +105,8 @@
 		</div>
 	</div>
 	<!-- HTML -->
-	<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-	<div class="uk-margin-medium">
+	<h3 class="eia-h3">HTML</h3>
+	<div class="eia-margin-medium">
 		<pre><code class="language-html" id="tabs">&lt;div class="tabs"&gt;
   &lt;ul&gt;
 	&lt;li&gt;&lt;a href="#tabOne"&gt;Tab One&lt;/a&gt;&lt;/li&gt;
@@ -112,8 +126,8 @@
 	</div>
 	<!-- Copy Button -->
 	<p>
-		<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#tabs">
-			<span uk-icon="copy"></span>Copy to clipboard
+		<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#tabs">
+			<span></span>Copy to clipboard
 		</button>
 	</p>
 </div>
@@ -121,7 +135,7 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
+<section class="dilly">
 	<div class="eia-container">
 
 
@@ -169,8 +183,8 @@
 	</div>
 	<!-- Copy Button -->
 	<p>
-		<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#fakeTabsResponsive">
-			<span uk-icon="copy"></span>Copy to clipboard
+		<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#fakeTabsResponsive">
+			<span></span>Copy to clipboard
 		</button>
 	</p>
 	</div>
@@ -178,7 +192,7 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
+<section class="dilly">
 	<div class="eia-container">
 
 
@@ -214,15 +228,19 @@
 &lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#subTabNavigation">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#subTabNavigation">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
-	</div>
-</section>
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
-	<div class="eia-container">
-		<app-side-nav-modules></app-side-nav-modules>
+</div>
+	</section>
+</main>
+<footer>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</footer>
+<link href="https://www.eia.gov/global/styles/global.min.css" type="text/css" media="screen, projection" rel="stylesheet">

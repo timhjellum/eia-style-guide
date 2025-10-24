@@ -5866,7 +5866,7 @@
         return openDialog(
         ({ labels }) => `<div class="uk-modal-body">${
     isString(message) ? message : html(message)
-    }</div> <div class="uk-modal-footer uk-text-right"> <button class="uk-button uk-button-primary uk-modal-close" autofocus>${
+    }</div> <div class="uk-modal-footer uk-text-right"> <button class="eia-button eia-button-primary uk-modal-close" autofocus>${
     labels.ok
     }</button> </div>`,
         options,
@@ -5876,9 +5876,9 @@
 
       modal.confirm = function (message, options) {
         return openDialog(
-        ({ labels }) => `<form> <div class="uk-modal-body">${isString(message) ? message : html(message)}</div> <div class="uk-modal-footer uk-text-right"> <button class="uk-button uk-button-default uk-modal-close" type="button">${
+        ({ labels }) => `<form> <div class="uk-modal-body">${isString(message) ? message : html(message)}</div> <div class="uk-modal-footer uk-text-right"> <button class="eia-button eia-button-default uk-modal-close" type="button">${
     labels.cancel
-    }</button> <button class="uk-button uk-button-primary" autofocus>${labels.ok}</button> </div> </form>`,
+    }</button> <button class="eia-button eia-button-primary" autofocus>${labels.ok}</button> </div> </form>`,
         options,
         (deferred) => deferred.reject());
 
@@ -5886,9 +5886,9 @@
 
       modal.prompt = function (message, value, options) {
         return openDialog(
-        ({ labels }) => `<form class="uk-form-stacked"> <div class="uk-modal-body"> <label>${isString(message) ? message : html(message)}</label> <input class="uk-input" value="${value || ''}" autofocus> </div> <div class="uk-modal-footer uk-text-right"> <button class="uk-button uk-button-default uk-modal-close" type="button">${
+        ({ labels }) => `<form class="uk-form-stacked"> <div class="uk-modal-body"> <label>${isString(message) ? message : html(message)}</label> <input class="uk-input" value="${value || ''}" autofocus> </div> <div class="uk-modal-footer uk-text-right"> <button class="eia-button eia-button-default uk-modal-close" type="button">${
     labels.cancel
-    }</button> <button class="uk-button uk-button-primary">${labels.ok}</button> </div> </form>`,
+    }</button> <button class="eia-button eia-button-primary">${labels.ok}</button> </div> </form>`,
         options,
         (deferred) => deferred.resolve(null),
         (dialog) => $('input', dialog.$el).value);
@@ -9214,7 +9214,7 @@
         pauseOnHover: false,
         velocity: 2,
         Animations: Animations$1,
-        template: `<div class="uk-lightbox uk-overflow-hidden"> <ul class="uk-lightbox-items"></ul> <div class="uk-lightbox-toolbar uk-position-top uk-text-right uk-transition-slide-top uk-transition-opaque"> <button class="uk-lightbox-toolbar-icon uk-close-large" type="button" uk-close></button> </div> <a class="uk-lightbox-button uk-position-center-left uk-position-medium uk-transition-fade" href uk-slidenav-previous uk-lightbox-item="previous"></a> <a class="uk-lightbox-button uk-position-center-right uk-position-medium uk-transition-fade" href uk-slidenav-next uk-lightbox-item="next"></a> <div class="uk-lightbox-toolbar uk-lightbox-caption uk-position-bottom uk-text-center uk-transition-slide-bottom uk-transition-opaque"></div> </div>`
+        template: `<div class="uk-lightbox uk-overflow-hidden"> <ul class="uk-lightbox-items"></ul> <div class="uk-lightbox-toolbar uk-position-top uk-text-right uk-transition-slide-top uk-transition-opaque"> <button class="uk-lightbox-toolbar-icon uk-close-large" type="button" uk-close></button> </div> <a class="uk-lightbox-button uk-position-center-left uk-position-medium uk-transition-fade" href uk-slidenav-previous uk-lightbox-item="previous"></a> <a class="uk-lightbox-button uk-position-center-right uk-position-medium uk-transition-fade" href uk-slidenav-next uk-lightbox-item="next"></a> <div class="uk-lightbox-toolbar uk-lightbox-caption uk-position-bottom uk-transition-slide-bottom uk-transition-opaque"></div> </div>`
       }),
 
       created() {

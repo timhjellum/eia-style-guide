@@ -1,0 +1,59 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+
+    .hero {
+        //padding: 38% 0 0 0;
+        background-image: url('../../images/eia-style-guide_background.jpg');
+        aspect-ratio: 1445 / 548;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 1022px;
+    }
+
+    h3 {
+        &.first-child {
+
+            .primary-header;
+            margin-bottom: 1em;
+
+            a {
+                .primary-header-a
+            }
+        }
+    }
+
+
+    .default-width {
+        width: 100%;
+
+        .mega-menu {
+
+            //background: #f0f0f0;
+            //display: block;
+            //left: 0;
+            //position: absolute;
+            //text-align: left;
+            //width: 100%;
+            //z-index: 3;
+            &__layouts {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                gap: 0px 0px;
+                grid-template-areas: "."
+                    "."
+                    "."
+                    "."
+                    "."
+                    "."
+                    ".";
+            }
+        }
+    }
+}

@@ -1,15 +1,14 @@
-<h2 id="" class="uk-h3 tm-heading-fragment uk-margin-xlarge-top">EIA Branded Checkbox</h2>
+<h2 id="" class="eia-h2 eia-margin-xlarge-top">Branded Checkbox</h2>
 <h5>Checkboxes</h5>
 <p>A toggle checkbox that can only be one of two states: checked or unchecked. The value is only submitted by the form if the checkbox is checked.</p>
-<!-- Live Examples --
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Examples</div>
-<dl class="uk-description-list uk-description-list-divider">
-	<dd><a [routerLink]="['/modules/']" [fragment]="'placeholder'">placeholder</a></dd>
+<!-- Live Examples -->
+<h3 class="eia-h3">Live Examples</h3>
+<dl class="">
+	<dd><a>placeholder</a></dd>
 </dl>
--->
 <!-- Example -->
-<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-<div class="uk-card uk-card-default uk-padding">
+<h3 class="eia-h3">Example</h3>
+<div class="eia-card">
 	<div class="l-row l-two-col-left-wide">
 		<div class="primary l-col form-area">
 			<ul class="checkbox-container">
@@ -31,11 +30,11 @@
 	<div class="l-col"></div>
 </div>
 <!-- HTML -->
-<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+<h3 class="eia-h3">HTML</h3>
 <pre><code class="language-html" id="BrandedCheckbox"></code></pre>
 <!-- Copy Button -->
 <p>
-	<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#BrandedCheckbox">
-		<span uk-icon="copy"></span>Copy to clipboard
+	<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#BrandedCheckbox">
+		<span></span>Copy to clipboard
 	</button>
 </p>
