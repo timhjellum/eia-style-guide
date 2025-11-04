@@ -17,7 +17,7 @@
       <div class="eia-card">
         <div class="l-margin-bottom eia-container-resizer">
 	<div class="l-row l-three-col-even energy-education">
-		<h1>Energy Education</h1>
+		<h1 class="l-border-bottom l-border-thin">Energy Education</h1>
 		<p class="eia-para"></p>
 		<div class="l-col">
 			<span class="eia ico energy-education petroleum"></span>
@@ -73,7 +73,7 @@
 <div class="">Example 2</div>
 <div class="eia-card">
 	<div class="l-row l-three-col-even energy-education">
-		<h1>Energy Education</h1>
+		<h1 class="l-border-bottom l-border-thin">Energy Education</h1>
 		<p class="eia-para"></p>
 		<div class="l-col">
 			<span class="eia ico energy-education petroleum"></span>

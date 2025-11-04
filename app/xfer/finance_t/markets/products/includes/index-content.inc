@@ -1,4 +1,4 @@
-<h1>
+<h1 class="l-border-bottom l-border-thin">
     <?=$pageTitle?>
 </h1>
 <p>Although crude oil prices receive a lot of media attention, consumers purchase petroleum products refined from crude oil rather than the crude oil itself. Refiners produce many petroleum products from crude oil for a wide range of applications. Prices for some petroleum products, such as gasoline, are very visible to consumers, while others are much less so. This section focuses on the two most prominent groups of petroleum products&#8212;gasoline and distillate (or diesel fuel).</p>

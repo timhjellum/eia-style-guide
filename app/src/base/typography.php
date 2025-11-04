@@ -32,7 +32,7 @@
 					<tr>
 						<td><code>&lt;h1&gt;...&lt;/h1&gt;</code></td>
 						<td><span class="uk-text-meta">
-								<h1>H1 Lorem Ipsum Dolor</h1>
+								<h1 class="l-border-bottom l-border-thin">H1 Lorem Ipsum Dolor</h1>
 								<p class="eia-para"></p>
 							</span></td>
 					</tr>

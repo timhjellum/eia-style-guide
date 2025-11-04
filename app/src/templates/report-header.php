@@ -30,7 +30,7 @@ $selectOptions       = '<li class="eia ico pdf"><a href="./archive/05842017.pdf"
 		<div class="see-all">
 			<?php echo "$seeAll"?>
 		</div>
-		<h1>
+		<h1 class="l-border-bottom l-border-thin">
 			<?php echo "$pageTitle"?>
 		</h1>
 		<p class="eia-para"></p>

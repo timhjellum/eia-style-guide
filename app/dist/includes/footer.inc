@@ -1,1 +1,0 @@
-<footer class="grid-footer">footer</footer>
