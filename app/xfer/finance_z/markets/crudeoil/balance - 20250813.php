@@ -1,0 +1,109 @@
+<?php
+$locale 		= 'crudeoil';
+$linkPage 	= 'link04page';
+$globalTitle 	= 'U.S. Energy Information Administration (EIA)';
+$pageTitle 		= 'What drives crude oil prices: Balance';
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<?php
+	$doNotIncludeHighcharts = true;
+	include("global/includes/eia_head_info.inc");
+	include('../includes/header_efmi.inc');
+	include('../includes/highcharts.inc');
+	?>
+
+
+	<link rel="stylesheet" href="includes/efmi.css" type="text/css">
+
+	<script type="text/javascript" src="../includes/efmi.js"></script>
+	<script>
+	$(function() {
+		$('#efmi_ui').show();
+	});
+	</script>
+	<?php if (!isset($no_titling)) include "global/includes/titling.inc"; ?>
+</head>
+
+<body>
+	<?php /* BEGIN Outer Wrapper */ ?>
+	<div id="outerX">
+		<?php
+	include('global/includes/eia_header.inc');
+	include("includes/dashboard.inc");
+	?>
+		<div class="blue_top"><a class="right <?php /* show_menu */ ?>" style="cursor:pointer;">&nbsp;</a></div>
+		<div class="clear"></div>
+		<?php /*  BEGIN Page/Body Content */ ?>
+		<div class="pagecontent mr_temp4">
+			<?php /*  BEGIN Main Column */ ?>
+			<div class="main_col" style="margin-top:-20px;">
+				<h1><?=$pageTitle?></h1>
+				<p>Inventories act as the balancing point between supply and demand. During periods when production exceeds
+					consumption, crude oil and petroleum products can be stored for expected future use. In the economic downturn of
+					late 2008 and early 2009, for example, the unexpected drop in world demand led to record crude oil inventories
+					in the United States and other OECD countries. In contrast, when consumption outstrips current production,
+					supplies can be supplemented by draws on inventories to satisfy the needs of consumers. Given the uncertainty of
+					supply and demand, petroleum inventories are often seen as a precautionary measure.
+				<div class="chart_r">
+					<div class="chart_h">Inventory builds tend to go hand-in-hand with increases in future oil prices relative to
+						current prices (and vice versa)
+					</div>
+					<?php include("includes/charts/inventory.inc"); ?>
+					<div class="clear"></div>
+
+					<div class="chart_desc">In this chart, the price of the next (prompt) month's oil futures contract is subtracted
+						from the price of the oil futures contract 12 months ahead. The change in this spread is then plotted over
+						time. This difference is compared to the change in OECD petroleum inventories. The more positive the spread
+						between the near term and longer term contracts, the greater the incentive to build inventories. Also,
+						declining inventories tend to go hand-in-hand with increases in near term prices relative to prices further
+						into the future.
+					</div>
+				</div>
+				</p>
+				<p>Refineries and storage terminals can store crude oil and/or finished products like motor gasoline, heating oil,
+					and diesel to prepare for seasonal fluctuations, refinery maintenance, or unexpected weather. Some petroleum
+					products, such as heating oil and gasoline, have pronounced seasonal demand variance; inventories rise when
+					consumption is lower and are drawn down when consumption increases. For this reason, inventory levels are most
+					usefully assessed in relation to prior year levels for the same calendar quarter.</p>
+				<p> Because inventories can satisfy either current or future demand, their level is sensitive to the relationship
+					between the current price of oil and expectations of future prices. If market expectations indicate a change
+					toward relatively stronger future demand or lower future supply, prices for futures contracts will tend to
+					increase, encouraging inventory builds to satisfy the otherwise tightening future balance. On the other hand, a
+					sharp loss of current production or unexpected increase in current consumption will tend to push up spot prices
+					relative to futures prices and encourage inventory draw downs to meet the current demand.</p>
+				<p>The relationship between prices and inventories allows for effects in either direction. If futures prices rise
+					relative to the current spot level, incentives to store oil (and wait to sell at the higher expected price) will
+					strengthen. Conversely, if market participants notice an increase in crude oil storage, this increase can
+					indicate that current production surpasses current consumption at the prevailing price. Spot prices will likely
+					drop to rebalance demand and supply. This balancing between current and future prices and between supply and
+					demand through inventories is one of the main connections between financial market participants and commercial
+					companies with a physical interest in oil, both of whom engage in futures trading. Physical inventory levels and
+					price spreads over time act as a signals between current market participants and those with longer-term
+					exposures.</p>
+				<p>The U.S. Energy Information Administration publishes weekly, monthly, and annual inventory statistics for crude
+					oil and its related products. Industrialized countries that belong to the Organization of Economic Cooperation
+					and Development (OECD) countries usually publish inventory statistics on a regular basis. However, inventory
+					data for other countries&mdash;including key developing countries with rapidly growing oil consumption as well
+					as major producing countries&mdash;is sometimes available on a less timely basis, or in some cases, not
+					available at all. In addition, oil is often stored on ships at sea. The lack of complete information on
+					inventories creates additional uncertainty in oil markets, which can also influence oil prices.</p>
+				<p>Finally, in addition to the commercial inventories discussed above, the United States and other countries
+					maintain strategic reserves of oil. The U.S. Strategic Petroleum Reserve, which is maintained by the Department
+					of Energy, holds oil that can be drawn upon by order of the President
+					in the event of a supply disruption that meets specific statutory criteria. Members of the International Energy
+					Agency, including the United States, collectively hold about 1.6 billion barrels of publically-owned petroleum
+					stocks for emergency response.</p>
+			</div>
+			<div class="clear"></div>
+			<?php /*  END Main Column */ ?>
+		</div>
+		<?php /*  END Page/Body Content */ ?>
+		<?php include("global/includes/eia_footer.inc"); ?>
+	</div>
+	<?php /* END Outer Wrapper */ ?>
+</body>
+
+</html>
