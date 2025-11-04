@@ -19,7 +19,6 @@ $l2id 			= 10;
 	include('../includes/highcharts.inc');
 	?>
 	<link rel="stylesheet" href="includes/efmi.css" type="text/css">
-	<link rel="stylesheet" href="includes/efmi.css" type="text/css">
 </head>
 
 <body>

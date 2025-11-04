@@ -12,21 +12,13 @@ $l2id 			= 10;
 	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
 	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
 	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
-	<?php include('global/head/includes/head.inc'); ?>
 	<?php
 	$doNotIncludeHighcharts = true;
-	
+	include('global/head/includes/head.inc');
 	include('../includes/header_efmi.inc');
 	include('../includes/highcharts.inc');
 	?>
 	<link rel="stylesheet" href="includes/efmi.css" type="text/css">
-
-	<script type="text/javascript" src="../includes/efmi.js"></script>
-	<script>
-	$(function() {
-		$('#efmi_ui').show();
-	});
-	</script>
 </head>
 
 <body>

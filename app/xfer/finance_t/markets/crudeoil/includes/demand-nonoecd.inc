@@ -1,35 +1,14 @@
 <div class="l-row l-full-width-col">
 		<div class="l-col article">
-			<h1><?=$pageTitle?></h1>
-			<p>Oil consumption in developing countries that are not part of the <a href="/tools/glossary/index.php?id=O#org_econ_cd">Organization of Economic Cooperation and Development (OECD)</a> has risen sharply in recent years. While oil consumption in the OECD countries declined between 2000 and 2010, non-OECD oil consumption increased more than 40 percent. China, India, and Saudi Arabia had the largest growth in oil consumption among the countries in the non-OECD during this period.</p>
-			<div class="chart_r">
-				<div class="chart_h">Economic growth has a strong impact on oil consumption</div>
-				<?php include("includes/charts/non_oecd_demand.inc"); ?>
-
-				<div class="chart_desc">In this chart there is a strong relationship between GDP growth rates and growth in oil consumption in non-OECD countries. Since 2001, oil consumption in non-OECD countries declined only three times. Increased demand pressure due to economic growth overwhelmed any downward pressure on oil consumption due to higher prices. </div>
+        <h1>
+            <?=$pageTitle?>
+        </h1>
+        <p>Crude oil demand in countries outside the <a href="https://www.eia.gov/tools/glossary/index.php?id=O#org_econ_cd">Organization of Economic Cooperation and Development (OECD)</a>&nbsp;plays a significant and growing role in driving global crude prices. Developing non-OECD countries, particularly those in Asia, have experienced rapid economic growth in recent decades. This growth has fueled a surge in demand for crude oil and petroleum products to power the burgeoning transportation, industrial, and manufacturing sectors.</p>
+        <p><img src="images/Demand_non-OECD_chart-01.svg" alt="Rapid economic growth in non-OECD countries has driven the rise in global crude oil demand" /></p>
+        <p style="font-size: 80%;">Data source: U.S. Energy Information Administration, <a href="https://www.eia.gov/outlooks/steo/data/browser/"><em>Short-Term Energy Outlook</em></a></p>
+        <p>Oil consumption in OECD countries fell from 2000 to 2024. In contrast, oil consumption in non-OECD countries doubled during that period. The jump in non-OECD oil consumption reflects the rapid economic growth in these countries. Transportation, in particular, requires large amounts of oil and is directly tied to economic activity. Many manufacturing processes consume crude oil as fuel or use it as feedstock, and in some non-OECD countries, oil remains an important fuel for power generation. Consequently, oil prices tend to rise when economic activity, and in turn oil demand, is growing strongly. Many non-OECD countries are also experiencing rapid growth in population, which is an additional factor supporting strong oil consumption growth.</p>
+        <p>Structural conditions in each country's economy further influence the relationship between oil prices and economic growth. Developing countries tend to have a greater proportion of their economies in manufacturing, which is more energy intensive than service-based industries. Although transport-related oil use is usually a smaller share of total oil consumption in non-OECD countries, this use tends to increase rapidly as expanding economies increase the need to move goods and people. Vehicle ownership per capita is also highly correlated with rising incomes and has much room to grow in non-OECD countries. For these reasons, non-OECD economic growth rates tend to be an important factor affecting oil prices.</p>
+        <p>Energy policies also significantly affect the relationship between oil consumption and economic activity. Some developing countries, for example, control or subsidize end-use prices, dampening consumer responsiveness to price fluctuations. This reduced demand response to price changes further contributes to the importance of economic growth as a key driver of non-OECD demand and in turn global oil prices.</p>
+        <p>Although current oil consumption is primarily related to current economic activity, changes in the outlook for future economic conditions can also have an immediate impact on oil prices. For example, an improvement in the economic outlook would tend to increase the chance that oil markets will tighten in the future, resulting in higher expected future oil prices. This change in expectations would be reflected in higher oil futures prices. This rise in futures prices increases the incentive to hold inventories, which in turn decreases the available current supply and tends to raise current prices.</p>
 			</div>
-
-			<p>Rising oil consumption reflects rapid economic growth in these countries. Current and expected levels of economic growth heavily influence global oil demand and oil prices. Commercial and personal transportation activities, in particular, require large amounts of oil and are directly tied to economic conditions. Many manufacturing processes consume oil as fuel or use it as feedstock, and in some non-OECD countries, oil remains an important fuel for power generation. Because of these uses, oil prices tend to rise when economic activity and in turn oil demand is growing strongly. Many non-OECD countries are also experiencing rapid growth in population, which is an additional factor supporting strong oil consumption growth.</p>
-			<div class="chart_r">
-				<div class="chart_h">Rising oil prices held down global oil consumption growth from 2005-2008 despite high
-					economic growth
-				</div>
-				<?php include("includes/charts/nonoecd_demand_world.inc"); ?>
-
-				<div class="chart_desc">In this chart, WTI price levels are graphed with changes in world GDP growth rates (as an indicator of underlying oil demand growth) and world oil consumption. Rising oil prices held down global oil consumption growth from 2005 to 2008, despite high economic growth. </div>
-			</div>
-
-			<p>Structural conditions in each country's economy further influence the relationship between oil prices and economic growth. Developing countries tend to have a greater proportion of their economies in manufacturing industries, which are more energy intensive than service industries. Although transportation oil use is usually a smaller share of total oil consumption in non-OECD countries, this use tends to increase rapidly as expanding economies increase the need to move goods and people. Vehicle ownership per capita is also highly correlated with rising incomes and has much room to grow in non-OECD countries. For these reasons, non-OECD economic growth rates tend to be an important factor affecting oil prices. China's strong economic growth has recently resulted in that country becoming the largest energy consumer and second largest oil consumer in the world. In addition, China's rising oil consumption has been a major contributor to incremental growth in worldwide oil consumption. EIA projects that virtually all the net increase in oil consumption in the next 25 years will come from non-OECD countries.</p>
-			<p>Although oil use is clearly tied to economic activity, energy policies also significantly affect that relationship. Many developing countries, for example, control or subsidize end-use prices, which inhibits consumer response to market price changes. This reduced demand response to price changes further contributes to the importance of economic growth as a key driver of non-OECD demand and in turn global oil prices.</p>
-			<p>While current oil consumption is primarily related to current economic activity, changes in the outlook for future economic conditions can also have an immediate impact on oil prices. For example, an improvement in the economic outlook would tend to increase the chance that oil markets will tighten in the future, resulting in higher expected future oil prices. This change in expectations would be reflected in higher oil futures prices. This rise in futures prices increases the incentive to hold inventories, which in turn decreases available current supply and tends to raise current prices.</p>
-			<div class="chart_r">
-				<div class="chart_h">Changes in expectations of economic growth can affect oil prices</div>
-				<?php /* Once a year update: Change the SQL statement for the growth_asia query located in the finance/markets/crudeoil/data.php file */ ?>
-				<?php include("includes/charts/non_oecd_expectation.inc"); ?>
-
-				<div class="chart_desc">Oil markets often respond to changing expectations of future supply and demand. This
-					chart shows how projections of economic growth in Non-OECD changed over time for various forecast years.
-				</div>
-			</div>
-		</div>
-	</div>
+</div>

@@ -7,9 +7,5 @@
 		</ul>
 	</div>
 	<div class="right">
-		<!-- span>
-				<a href="<?=$glossaryURL?>"><?=$glossaryLabel?></a>
-				<a href="<?=$faqURL?>"><?=$faqLabel?></a>
-			</span -->
 	</div>
 </div>

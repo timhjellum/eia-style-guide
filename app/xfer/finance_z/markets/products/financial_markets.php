@@ -32,6 +32,6 @@ include('./includes/financial_markets.inc');
  include('global/footer/includes/footer.inc');
 	?>
 </body>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<!-- script src="https://code.highcharts.com/modules/accessibility.js"></script-->
 
 </html>

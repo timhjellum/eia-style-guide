@@ -1,83 +1,173 @@
-<div class="pub_title bg_pub_default"><?php /* Page/Section Title */ ?>
-	<h3><?php echo $L2Title; ?></h3>
-	<h1 style="padding-top:0px;">What drives petroleum product prices?</h1>
-	<p style="font-size:14px;margin-top:-6px;">Graphs & data updated monthly and quarterly</p>
-</div><?php /* / Page/Section Title */ ?>
-<div class="subnav"><?php /* Page/Sub Nav */ ?>
-	<?php /*<span class="right"><a href="<cfoutput>#glossary_path#</cfoutput>">Glossary &rsaquo;</a> <a href="<cfoutput>#faqs_path#</cfoutput>">FAQS &rsaquo;</a></span>*/ ?>
-	<ul>
-		<li><a href="../crudeoil/">Crude Oil</a></li>
-		<li class="active"><a href=".">Petroleum Products</a></li>
-	</ul>
-</div>
-<?php /* / Page/Sub Nav */ ?>
+<style>
+    :root {
+        --hover-size: 80%;
+    }
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        clip-path: inset(50%);
+        border: 0;
+    }
 
-<div class="efmi_ui" id="efmi_ui">
-	<style>
-		#bubble2 li {
-			margin-left: 62px;
-		}
+    .efm-container {
+        background-image: url("./images/ui/arrows_back4a.png");
+        aspect-ratio: 920 / 270;
+        background-repeat: no-repeat;
+        background-position: 13px 6px;
+        background-size: contain;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(4, 25%);
+        max-width: 920px;
+        max-height: 270px;
+        margin-top: 10px;
+    }
 
-		.efmi_ui_container3 {
-			margin: 10px 10px 0 45px;
-		}
-	</style>
-	<div class="efmi_ui_container3 left">
-		<?php /* Row 1 */ ?>
-		<ul id="bubble2">
-			<li>
-				<a href="consumption.php">
-					<img class="small" src="images/ui/b_productconsumption_button_off.png" alt="Supply non-OECD"/>
-					<img class="large" src="images/ui/b_productconsumption_button_on.png" alt="Supply non-OECD"/>
-				</a>
-			</li>
-			<li>&nbsp;</li>
-			<li>&nbsp;</li>
-			<li>
-				<a href="trade.php">
-					<img class="small" src="images/ui/b_producttrade_button_off.png" alt="Demand OECD"/>
-					<img class="large" src="images/ui/b_producttrade_button_on.png" alt="Demand OECD"/>
-				</a>
-			</li>
-		</ul>
-		<div class="clear"></div>
-		<?php /* Row 2 */ ?>
-		<ul id="bubble2">
-			<li>
-				<a href="production.php">
-					<img class="small" src="images/ui/b_productproduction_button_off.png" alt="Supply OECD"/>
-					<img class="large" src="images/ui/b_productproduction_button_on.png" alt="Supply OECD"/>
-				</a>
-			</li>
-			<li class="mid-adjust">
-				<a href="prices.php">
-					<img class="small" src="images/ui/b_productprice_button_off.png" alt="Spot Prices"/>
-					<img class="large" src="images/ui/b_productprice_button_on.png" alt="Spot Prices"/>
-				</a>
-			</li>
-			<li class="mid-adjust">
-				<a href="financial_markets.php">
-					<img class="small" src="images/ui/b_productfinancialmarkets_button_off.png" alt="Balance"/>
-					<img class="large" src="images/ui/b_productfinancialmarkets_button_on.png" alt="Balance"/>
-				</a>
-			</li>
-			<li>
-				<a href="balance.php">
-					<img class="small" src="images/ui/b_productbalance_button_off.png" alt="Financial Markets"/>
-					<img class="large" src="images/ui/b_productbalance_button_on.png" alt="Financial Markets"/>
-				</a>
-			</li>
-		</ul>
-		<div class="clear"></div>
-		<div>
-			<a href="prices.php">Price</a> &nbsp;|&nbsp;
-			<a href="consumption.php">Consumption</a> &nbsp;|&nbsp;
-			<a href="production.php">Production</a> &nbsp;|&nbsp;
-			<a href="financial_markets.php">Financial Markets</a> &nbsp;|&nbsp;
-			<a href="trade.php">Trade</a> &nbsp;|&nbsp;
-			<a href="balance.php">Balance</a>
+    .efm-container>div {
+        background-repeat: no-repeat;
+        aspect-ratio: 166 / 125;
+        background-size: 80%;
+        animation: hover-off 500ms cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
+    }
+
+
+    .efm-container>div:hover {
+        /*
+        aspect-ratio: 199 / 150;
+        */
+        animation: hover-on 500ms cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
+
+    }
+
+    .efm-container>div a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .efm-container .consumption {
+        background-image: url("./images/ui/b_productconsumption_button_off.png");
+background-position: top center;
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+
+    .efm-container .consumption:hover {
+        background-image: url("./images/ui/b_productconsumption_button_on.png");
+    }
+
+
+    .efm-container .production {
+        background-image: url("./images/ui/b_productproduction_button_off.png");
+background-position: top center;
+        grid-column: 1;
+        grid-row: 3 / 5;
+    }
+
+    .efm-container .production:hover {
+        background-image: url("./images/ui/b_productproduction_button_on.png");
+    }
+
+
+    .efm-container .prices {
+        background-image: url("./images/ui/b_productprice_button_off.png");
+ background-position: center center;
+        grid-column: 2;
+        grid-row: 2 / 4;
+    }
+
+    .efm-container .prices:hover {
+        background-image: url("./images/ui/b_productprice_button_on.png");
+    }
+
+
+    .efm-container .financial_markets {
+        background-image: url("./images/ui/b_productfinancialmarkets_button_off.png");
+ background-position: center center;
+        grid-column: 3;
+        grid-row: 2 / 4;
+    }
+
+    .efm-container .financial_markets:hover {
+        background-image: url("./images/ui/b_productfinancialmarkets_button_on.png");
+    }
+
+
+    .efm-container .trade {
+        background-image: url("./images/ui/b_producttrade_button_off.png");
+background-position: top center;
+        grid-column: 4;
+        grid-row: 1 / 3;
+    }
+
+    .efm-container .trade:hover {
+        background-image: url("./images/ui/b_producttrade_button_on.png");
+    }
+
+
+
+    .efm-container .balance {
+        background-image: url("./images/ui/b_productbalance_button_off.png");
+background-position: bottom center;
+        grid-column: 4;
+        grid-row: 3 / 5;
+    }
+
+    .efm-container .balance:hover {
+        background-image: url("./images/ui/b_productbalance_button_on.png");
+    }
+
+
+
+    @keyframes hover-on {
+        from {
+            background-size: 80%;
+        }
+
+        to {
+            background-size: var(--hover-size);
+        }
+    }
+
+    @keyframes hover-off {
+        from {
+            background-size: var(--hover-size);
+        }
+
+        to {
+            background-size: 80%;
+        }
+    }
+</style>
+<script>
+    setTimeout(() => {
+document.documentElement.style.setProperty("--hover-size", "90%");
+}, 500);
+</script>
+
+
+<div class="efm-container">
+    <div class="consumption">
+        <a href="consumption.php" title="Consumption"><span class="sr-only">Consumption</span></a>
 		</div>
+    <div class="trade">
+        <a href="trade.php" title="Trade"><span class="sr-only">Trade</span></a>
+    </div>
+    <div class="production">
+        <a href="production.php" title="Production"><span class="sr-only">Production</span></a>
+    </div>
+    <div class="prices">
+        <a href="prices.php" title="Prices"><span class="sr-only">Prices</span></a>
+    </div>
+    <div class="financial_markets">
+        <a href="financial_markets.php" title="Financial Markets"><span class="sr-only">Financial Markets</span></a>
+    </div>
+    <div class="balance">
+        <a href="balance.php" title="Balance"><span class="sr-only">Balance</span></a>
 	</div>
-
-	<div class="clear"></div>
 </div>

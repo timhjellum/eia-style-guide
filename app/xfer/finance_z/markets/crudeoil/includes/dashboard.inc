@@ -1,4 +1,7 @@
 <style>
+    :root {
+        --hover-size: 80%;
+    }
     .sr-only {
         position: absolute;
         width: 1px;
@@ -29,6 +32,16 @@
         background-repeat: no-repeat;
         aspect-ratio: 166 / 125;
         background-size: 80%;
+        animation: hover-off 500ms cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
+    }
+
+
+    .efm-container>div:hover {
+        /*
+        aspect-ratio: 199 / 150;
+        */
+        animation: hover-on 500ms cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
+
     }
 
     .efm-container>div a {
@@ -112,6 +125,28 @@
 
     .efm-container .demand_oecd:hover {
         background-image: url("./images/ui/demand_oecd_on.png");
+    }
+
+
+
+    @keyframes hover-on {
+        from {
+            background-size: 80%;
+        }
+
+        to {
+            background-size: var(--hover-size);
+        }
+    }
+
+    @keyframes hover-off {
+        from {
+            background-size: var(--hover-size);
+        }
+
+        to {
+            background-size: 80%;
+        }
     }
 </style>
 

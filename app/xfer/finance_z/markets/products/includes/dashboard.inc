@@ -52,6 +52,7 @@
 
     .efm-container .consumption {
         background-image: url("./images/ui/b_productconsumption_button_off.png");
+background-position: top center;
         grid-column: 1;
         grid-row: 1 / 3;
     }
@@ -63,6 +64,7 @@
 
     .efm-container .production {
         background-image: url("./images/ui/b_productproduction_button_off.png");
+background-position: top center;
         grid-column: 1;
         grid-row: 3 / 5;
     }
@@ -74,6 +76,7 @@
 
     .efm-container .prices {
         background-image: url("./images/ui/b_productprice_button_off.png");
+ background-position: center center;
         grid-column: 2;
         grid-row: 2 / 4;
     }
@@ -85,6 +88,7 @@
 
     .efm-container .financial_markets {
         background-image: url("./images/ui/b_productfinancialmarkets_button_off.png");
+ background-position: center center;
         grid-column: 3;
         grid-row: 2 / 4;
     }
@@ -96,6 +100,7 @@
 
     .efm-container .trade {
         background-image: url("./images/ui/b_producttrade_button_off.png");
+background-position: top center;
         grid-column: 4;
         grid-row: 1 / 3;
     }
@@ -108,6 +113,7 @@
 
     .efm-container .balance {
         background-image: url("./images/ui/b_productbalance_button_off.png");
+background-position: bottom center;
         grid-column: 4;
         grid-row: 3 / 5;
     }

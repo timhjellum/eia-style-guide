@@ -27,10 +27,11 @@ SQL;
         margin: 0 0 10px;
         padding: 0 0 6px
     }
-        h2.underline span {
- font-size: 14px !important;
+
+    h2.underline span {
+        font-size: 14px !important;
     }
-    
+
     li em {
         color: #000;
         font-size: 90%;
@@ -39,7 +40,7 @@ SQL;
         line-height: 150%;
         line-height: 1.1;
         display: flex;
-/*
+        /*
 font-size: 14.4px;
 font-style: italic;
 font-weight: 400;
@@ -50,21 +51,24 @@ line-height: 15.84px;
     }
 
     li p strong a {
-font-size: 1em;
-font-style: normal;
-font-weight: 400;
-line-height: 22.4px;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22.4px;
     }
-    </style>
+</style>
 
 
-            
-            
-            <a href="/todayinenergy/">
-				<h2 class="underline">Today in Energy<br /><span>Energy Analysis Every Weekday</span></h2></a>
-	<ul class="l-margin-top l-margin-bottom" style="margin-bottom: 2.5em">
-		<li><?php include("todayinenergy/outreach/file_scrub_tie_side_sm_top3.php"); ?></li>
-	</ul>
+
+
+<a href="/todayinenergy/">
+    <h2 class="underline">Today in Energy<br /><span>Energy Analysis Every Weekday</span></h2>
+</a>
+<ul class="l-margin-top l-margin-bottom" style="margin-bottom: 2.5em">
+    <li>
+        <?php include("todayinenergy/outreach/file_scrub_tie_side_sm_top3.php"); ?>
+    </li>
+</ul>
 
 
 <?php
@@ -72,7 +76,6 @@ line-height: 22.4px;
 			?>
 <h2 class="underline">Contact</h2>
 <ul class="top-picks l-margin-top l-margin-bottom">
- <li>Office of Energy Production and Markets Analysis</li>
-		<li><a href="mailto:Jeffrey.Barron@eia.gov">Jeffrey.Barron@eia.gov</a></li>
-    </ul>
-
+    <li>Office of Energy Production and Markets Analysis</li>
+    <li><a href="mailto:Jeffrey.Barron@eia.gov">Jeffrey.Barron@eia.gov</a></li>
+</ul>

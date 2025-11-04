@@ -1,72 +1,36 @@
 <?php
 $locale 		= 'crudeoil';
-$linkpage 	= 'link03page';
+$linkPage 		= 'link03page';
 $globalTitle 	= 'U.S. Energy Information Administration (EIA)';
 $pageTitle 		= 'What drives crude oil prices: Supply OPEC';
+$l2id 			= 10;
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
 
 <head>
+	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
 	<?php
 	$doNotIncludeHighcharts = true;
-	include("global/includes/eia_head_info.inc");
+	include('global/head/includes/head.inc');
 	include('../includes/header_efmi.inc');
 	include('../includes/highcharts.inc');
 	?>
-
 	<link rel="stylesheet" href="includes/efmi.css" type="text/css">
-
-	<script type="text/javascript" src="../includes/efmi.js"></script>
-	<script>
-	$(function() {
-		$('#efmi_ui').show();
-	});
-	</script>
-	<?php if (!isset($no_titling)) include "global/includes/titling.inc"; ?>
 </head>
 
 <body>
-	<?php /*  BEGIN Outer Wrapper  */ ?>
-	<div id="outerX">
-		<?php
-	include('global/includes/eia_header.inc');
-	include("includes/dashboard.inc");
-	?>
-		<div class="blue_top"><a class="right <?php /* show_menu */ ?>" style="cursor:pointer;">&nbsp;</a></div>
-		<div class="clear"></div>
-
-		<?php /*  BEGIN Page/Body Content  */ ?>
-		<div class="pagecontent mr_temp4">
-			<?php /*  BEGIN Main Column  */ ?>
-		  <div class="main_col" style="margin-top:-20px;">
-<h1><?=$pageTitle?></h1>
-
-				<p>Crude oil  production by the&nbsp;<a href="https://www.eia.gov/tools/glossary/index.php?id=O#opec">Organization of the Petroleum  Exporting Countries (OPEC)</a>&nbsp;is an important factor that affects oil prices. OPEC seeks to  actively manage oil production among its member countries by setting production  targets – limits on how much oil each country can produce. Historically, oil  prices tend to increase when OPEC reduces these production targets. </p>
-			<p><img src="images/Supply_OPEC_01.svg" alt="Changes to OPEC's crude production targets can significantly impact global crude oil prices"/></p>
-			  <p style="font-size: 80%;">Data source: U.S. Energy Information Administration,Thomson Reuters<br/>
-				  Note: <a href="https://www.eia.gov/todayinenergy/detail.php?id=56420">OPEC+</a> refers to the coalition of the existing OPEC member countries and a group of major  non-OPEC oil-exporting nations, the largest of which is Russia. </p>
-			<p>OPEC countries collectively produce about 35% of the world's crude oil, and OPEC's oil exports account for around 50% of all the oil traded internationally, according to Vortexa Analytics. This dominant market share gives OPEC considerable leverage, allowing its actions to significantly influence global oil prices. For instance, any signals of changes in crude oil production from Saudi Arabia, OPEC's largest crude producer and the world's largest crude exporter, often send ripples through the market.</p>
-			<p><strong>OPEC’s spare crude oil production capacity </strong></p>
-			<p>OPEC’s spare crude oil production capacity –readily available, additional oil production that can quickly be brought to market to mitigate supply disruptions– also influences global crude prices and serves as an indicator of oil market tightness and how much upward pressure OPEC is putting on prices.  </p>	
-			<p>Spare capacity, as defined by EIA, is the volume of production that can be brought online within 30 days and sustained for at least 90 days. It represents the difference between a country’s maximum sustainable production and its current output. OPEC member countries collectively hold almost all of the world’s spare oil production capacity. Saudi Arabia, the largest oil producer within OPEC and the world's largest oil exporter, historically has had the greatest spare capacity. </p>
-			<p>OPEC’s spare capacity provides an indicator of the global oil market's ability to respond to potential crises that reduce oil supplies that could lead to price spikes. If OPEC has a lot of spare capacity, it suggests that the market is well supplied and reduces fears of supply shortages. This dampens price volatility, reassuring traders and investors. Conversely, low spare capacity means there’s less cushion in case something disrupts oil supplies, indicating vulnerability to disruptions. As a result, oil prices tend to incorporate a rising risk premium when OPEC spare capacity reaches low levels. </p>
-			<p><img src="images/Supply_OPEC_02.svg" alt="OPEC's spare capacity influences global crude oil prices and serves as an indicator of oil market tightness"/></p>
-			<p style="font-size: 80%;">Data source: U.S.  Energy Information Administration, <a href="https://www.eia.gov/outlooks/steo/data/browser/#/?v=3&amp;f=Q&amp;s=000000000000000000g000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000g000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000&amp;start=199701&amp;end=202604&amp;map=&amp;ctype=linechart&amp;maptype=0&amp;linechart=~COPS_OPEC~"><em>Short-Term Energy Outlook</em></a><em>, </em>Refinitiv An LSEG Business</p>  
-			<p>OPEC's ability to utilize spare capacity effectively mitigates the impact of unforeseen supply shocks, such as geopolitical events or natural disasters. By increasing production to offset disruptions, OPEC can stabilize prices. However, limited spare capacity restricts its ability to respond, leading to greater price volatility.</p>
-			<p>Ultimately, OPEC spare capacity acts as a buffer, dampening or amplifying price fluctuations based on its level and perceived accessibility.</p>  
-			<p><strong>Factors limiting the impact of OPEC supply on prices</strong></p>
-			<p>Despite OPEC's efforts to manage production, its member countries don't always adhere to the agreed-upon production targets. This non-compliance can affect oil prices. </p> 
-			<p>In addition, unexpected disruptions, such as geopolitical events, equipment failures or natural disasters, can reduce OPEC production. The magnitude of these disruptions, how quickly they occur, and the uncertainty surrounding the restoration of output all have a considerable impact on oil prices.</p>
-			<p>Oil prices are driven not only by current supply and demand, but also by expectations of future supply and demand. OPEC tries to adjust its production targets based on these expectations. However, estimating future supply and demand is particularly challenging when market conditions are uncertain and evolving rapidly. Lags in OPEC's production target adjustments in response to shifting market conditions can also impact crude prices.</p>  
-			</div>
-			<div class="clear"></div>
-			<?php /*  END Main Column  */ ?>
-		</div>
-		<?php /*  END Page/Body Content  */ ?>
-		<?php include("global/includes/eia_footer.inc"); ?>
-	</div>
-	<?php /* END Outer Wrapper  */ ?>
+	<?php
+include('global/header/includes/header.inc');
+include('./includes/report-header.inc');
+include('./includes/sub-navigation.inc');
+include('./includes/dashboard.inc');
+include('./includes/tertiary-navigation.inc');
+include('./includes/supply-opec.inc');
+include('global/footer/includes/footer.inc');
+?>
 </body>
 
 </html>
