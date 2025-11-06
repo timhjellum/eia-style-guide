@@ -14,21 +14,23 @@ SQL;
 				$tietopic = 'crude';
 				?>
 
-<a href="/todayinenergy/">
-    <h2 class="underline">Today in Energy<br /><span>Energy Analysis Every Weekday</span></h2>
-</a>
-<ul class="l-margin-top l-margin-bottom" style="margin-bottom: 2.5em">
-    <li>
-        <?php include("todayinenergy/outreach/file_scrub_tie_side_sm_top3.php"); ?>
-    </li>
-</ul>
-
+<div class="secondary">
+	<ul class="tie-list">
+		<li class="head tie-head"><a href="/todayinenergy/">
+				<h4>Today in Energy<br /><span>Energy Analysis Every Weekday</span></h4>
+			</a></li>
+		<li><?php include("todayinenergy/outreach/file_scrub_tie_side_sm_top3.php"); ?></li>
+	</ul>
+</div>
 
 <?php
 			}
 			?>
-<h2 class="underline">Contact</h2>
-<ul class="top-picks l-margin-top l-margin-bottom">
-		<li>Petroleum and liquid fuels markets team</li>
-		<li><a href="mailto:eiainfopetroleum@eia.gov">eiainfopetroleum@eia.gov</a></li>
-</ul>
+<div class="secondary">
+	<ul>
+		<li class="head">Contact</li>
+		<li><strong>Jeff Barron</strong></li>
+		<li>Office of Energy Production and Markets Analysis</li>
+		<li><a href="mailto:Jeffrey.Barron@eia.gov">Jeffrey.Barron@eia.gov</a></li>
+	</ul>
+</div>

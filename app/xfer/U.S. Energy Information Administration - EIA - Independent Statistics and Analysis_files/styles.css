@@ -1,0 +1,116 @@
+.row-description {
+    color: white;
+    position: sticky;
+    left: 0;
+}
+
+.erp-table-div {
+    overflow: auto;
+}
+
+.ui-tabs .ui-tabs-panel {
+    border: none;
+}
+
+.erp-title {
+    border-bottom: none;
+    font-weight: 600;
+}
+
+.erp-square-container > p {
+    font-size: 14px;
+}
+
+.erp-square-container {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #d9eef7;
+}
+
+.accordion {
+    background-color: #f6f6f6;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+.accordion:after {
+    content: "\2B9F";
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: '\2B9D';
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #f6f6f6;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#map {
+	width: 45em;
+	height: 450px;
+	padding: .5em;
+	margin: 0;
+}
+
+.map_legend_gradient {
+    margin: 0 0 0 0; 
+    height: 20px;
+    width: 236px;
+    font-weight: bold;
+}
+
+.map-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.map-legend {
+    margin-top: auto;
+}
+
+.map-legend-min-max {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+}
+
+.map-legend-min-number {
+    margin-left: -10px;
+    margin-right: auto;
+}
+
+.map-legend-max-number {
+    margin-left: auto;
+    margin-right: -10px;
+}
+
+.map-legend-text {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.map-legend-figure {
+    display: inline-block;
+    margin-right: 10px;
+    width: 236px;
+    height: 20px;
+    background: linear-gradient(to right, #b0efff, #001F37);
+}
