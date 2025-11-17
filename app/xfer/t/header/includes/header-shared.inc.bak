@@ -87,7 +87,7 @@
 								<p>Crude oil, gasoline, heating oil, diesel, propane, and other liquids including biofuels and natural gas liquids.</p>
 								<ul>
 									<li>
-										<a href="/petroleum/gasdiesel/" title="Gasoline and Diesel Fuel Update">Gasoline and Diesel Fuel Update</a>
+										<a href="/petroleum/weekly/" title="This Week in Petroleum">This Week in Petroleum</a>
 									</li>
 									<li>
 										<a href="/petroleum/supply/weekly/" title="Weekly Petroleum Status Report">Weekly Petroleum Status Report</a>
@@ -391,7 +391,7 @@
 								<h3>
 									<a href="/tools/emailupdates/" title="Email Updates">Email Updates</a>
 								</h3>
-								<p>Sign up for email subscriptions to receive messages about specific EIA products</p>
+								<p>Sign up for email subcriptions to receive messages about specific EIA products</p>
 							</div>
 							<div class="nav-menu rss-complex">
 								<span class="ico-menu rss-complex-icon"></span>
@@ -605,6 +605,9 @@
 									<li>
 										<a href="/pressroom/events/" title="Events">Events</a>
 									</li>
+									<!--li>
+										<a href="/pressroom/radio/" title="Radio Spots">Radio Spots</a>
+									</li-->
 								</ul>
 							</div>
 						</div>

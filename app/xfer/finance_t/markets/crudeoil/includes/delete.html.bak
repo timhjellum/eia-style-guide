@@ -1,0 +1,80 @@
+// begin responsive data table styles
+// ========================================================================
+
+div {
+    &.responsive-table {}
+}
+table {
+    &.responsive-table {
+        width: 100%;
+        color: #000;
+        overflow: hidden;
+        color: var(--font-color);
+        tr {
+            &:last-child {
+                td {
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+            &:hover {
+                transition: all 0.33s;
+                background-color: var(--table-row-hover-color);
+            }
+            td {
+                padding: 0.5em;
+                &:nth-of-type(odd) {
+                    background: transparent;
+                }
+                &:hover {
+                    transition: none;
+                    background-color: unset;
+                }
+            }
+        }
+        thead {
+            th {
+                display: table-cell;
+                text-align: right;
+                padding: var(--responsive-table-cell-padding-x);
+            }
+        }
+        tbody {
+            td,
+            th {
+                display: table-cell;
+                text-align: right;
+                width: unset;
+                position: relative;
+                &:first-child {
+                    padding-top: var(--responsive-table-cell-padding-x);
+                    &:before {
+                        top: var(--responsive-table-cell-padding-x);
+                    }
+                }
+                &:before {
+                    content: "";
+                    font-weight: bold;
+                    position: absolute;
+                    left: var(--responsive-table-cell-padding-y);
+                }
+                &.row-description {
+                    text-align: left;
+                    color: #000;
+                    font-size: 100%;
+                    padding: var(--responsive-table-cell-padding-x);
+                }
+            }
+            tr {
+                &:nth-of-type(odd) {
+                    background: var(--primary-color-zebra-stripes);
+                }
+                &:hover {
+                    transition: all 0.33s;
+                    background-color: var(--table-row-hover-color);
+                }
+            }
+        }
+    }
+}

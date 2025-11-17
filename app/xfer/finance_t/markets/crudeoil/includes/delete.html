@@ -1,0 +1,63 @@
+// begin responsive data table styles
+// ========================================================================
+
+div {
+    &.responsive-table {}
+}
+table {
+    &.responsive-table {
+
+        tr {
+
+            &:hover {
+                transition: all 0.33s;
+                background-color: var(--table-row-hover-color);
+            }
+            td {
+
+                transition: unset;
+                &:nth-of-type(odd) {
+                    background: unset;
+                }
+                &:hover {
+                    transition: unset;
+                    background-color: unset;
+                }
+            }
+        }
+        thead {
+            th {
+                display: table-cell;
+                text-align: right;
+                padding: var(--responsive-table-cell-padding-x);
+            }
+        }
+        tbody {
+            td,
+            th {
+                display: table-cell;
+
+                width: unset;
+
+
+                &:before {
+                    content: "";
+                }
+                &.row-description {
+
+                    color: var(--font-color);;
+                    font-size: 100%;
+                }
+            }
+            tr {
+                &:nth-of-type(odd) {
+                    background: var(--primary-color-zebra-stripes);
+                }
+                &:hover {
+                    transition: all 0.33s;
+                    background-color: var(--table-row-hover-color);
+                }
+            }
+        }
+    }
+}

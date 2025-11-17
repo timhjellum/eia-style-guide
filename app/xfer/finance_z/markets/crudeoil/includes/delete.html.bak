@@ -1,0 +1,76 @@
+// begin responsive data table styles
+// ========================================================================
+
+div {
+    &.responsive-table {}
+}
+table {
+    &.responsive-table {
+        width: 100%;
+        color: #000;
+        overflow: hidden;
+        font-family: var(--font-family);
+        font-size: var(--p);
+        color: var(--font-color);
+        caption {
+            margin-bottom: 1em;
+        }
+        tr {
+            &:last-child {
+                td {
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+            td {
+                padding: 0.5em;
+                transition: all 0.33s;
+                &:nth-of-type(odd) {
+                    background: var(--primary-color-zebra-stripes);
+                }
+
+                &:hover {
+                    transition: all 0.33s;
+                    background-color: var(--table-row-hover-color);
+                }
+            }
+        }
+        thead {
+            th {
+                display: none;
+            }
+        }
+        tbody {
+            td,
+            th {
+                display: block;
+                text-align: right;
+                width: 100%;
+                position: relative;
+
+                &:first-child {
+                    padding-top: var(--responsive-table-cell-padding-x);
+                    &:before {
+                        top: var(--responsive-table-cell-padding-x);
+                    }
+                }
+                &:before {
+                    content: attr(data-responsive) ": ";
+                    font-weight: bold;
+                    position: absolute;
+                    left: var(--responsive-table-cell-padding-y);
+                }
+                &.row-description {
+                    text-align: left;
+                    color: var(--primary-color);
+                    font-size: 110%;
+                    padding: var(--responsive-table-cell-padding-x) 0;
+                    &:before {
+                        content: attr(data-responsive) "";
+                    }
+                }
+            }
+        }
+    }
+}
