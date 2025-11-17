@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
         series: {
             regions: [{
                 values: averageMapData,
-                scale: ['#b0efff', '#001F37'],
+                scale: ['#a9d6e5', '#012a4a'],
                 normalizeFunction: 'polynomial',
                 max: 50
             }]
