@@ -88,7 +88,7 @@ ob_start();
 	"fontFamily": "Arial"
 	},
 	"formatter": function () {
-	return '<b>' + this.series.name + '<br/>' + '</b>' + Highcharts.dateFormat('%B %Y', this.x) + '<br/>' + '$' + this.y.toFixed(2) + ' dollars per barrel';
+	return '<strong>' + this.series.name + '<br/>' + '</strong>' + Highcharts.dateFormat('%B %Y', this.x) + '<br/>' + '$' + this.y.toFixed(2) + ' dollars per barrel';
 	}
 	},
 <?php } else { ?>

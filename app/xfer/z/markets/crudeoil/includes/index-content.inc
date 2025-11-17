@@ -1,6 +1,6 @@
 <h1><?=$pageTitle?></h1>
-<p>We assess the various factors that may influence crude oil prices &#8212; physical market factors as well as those related to trading and financial markets. We describe the seven key factors that could influence oil markets and explore possible links between each factor and crude oil prices. We include regularly updated graphs that depict aspects of those relationships. </p>
-<p>Several graphs include projections from our <a href="/forecasts/steo/">Short-Term Energy Outlook</a>. Graphs are updated with new data on a monthly, quarterly, and annual basis according to the schedule below. Analytical text will be updated as needed. </p>
+<p class="para">We assess the various factors that may influence crude oil prices &#8212; physical market factors as well as those related to trading and financial markets. We describe the seven key factors that could influence oil markets and explore possible links between each factor and crude oil prices. We include regularly updated graphs that depict aspects of those relationships. </p>
+<p class="para">Several graphs include projections from our <a href="/forecasts/steo/">Short-Term Energy Outlook</a>. Graphs are updated with new data on a monthly, quarterly, and annual basis according to the schedule below. Analytical text will be updated as needed. </p>
 
 <strong><a href="./reports_presentations/crude.pdf" class="ico pdf"><span>PDF</span> All graphs</a></strong><br />
 <div class="basic-table">
@@ -109,7 +109,7 @@
 			</tr>
 			<tr>
 				<td>
-					<p>Commodity index assets under management &amp; Dow Jones UBS price index</p>
+					<p class="para">Commodity index assets under management &amp; Dow Jones UBS price index</p>
 				</td>
 				<td><?php echo $dataArray["FIN_5"]["frequency"]; ?></td>
 				<td><?php echo $dataArray["FIN_5"]["update_date"]; ?></td>

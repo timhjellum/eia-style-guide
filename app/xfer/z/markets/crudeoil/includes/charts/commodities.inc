@@ -205,7 +205,7 @@ $rowOutput = array(
 	<div><span>Negative Correlation</span><span>Positive Correlation</span></div>
 </div>
 <br clear="all">
-<p>
+<p class="para">
 <div style="color:gray;font-size:10px; margin-bottom: -20px;">Data source: U.S. Energy Information Administration</div><br
 		clear="all">
 <div style="color:grey;font-size:10px;">Updated: Quarterly | Last

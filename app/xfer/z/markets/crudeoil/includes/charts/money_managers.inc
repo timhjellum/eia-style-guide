@@ -102,7 +102,7 @@ ob_start();
 	"crosshairs": "false",
 	"formatter": function () {
 
-	return "<b>" + this.series.name + "</b><br/>" + Highcharts.dateFormat("%B %Y", this.x) + "<br/>" + Highcharts.numberFormat(this.y, 3) + " thousands of contracts" + "<br>";
+	return "<strong>" + this.series.name + "</strong><br/>" + Highcharts.dateFormat("%B %Y", this.x) + "<br/>" + Highcharts.numberFormat(this.y, 3) + " thousands of contracts" + "<br>";
 	}
 	},
 <?php } else { ?>

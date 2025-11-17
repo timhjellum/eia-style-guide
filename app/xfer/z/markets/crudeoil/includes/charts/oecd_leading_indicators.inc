@@ -167,7 +167,7 @@ date_default_timezone_set('UTC');
 
 						//quarter = {1:"1st",2:"2nd",3:"3rd",4:"4th"}[quarter];
 
-						return "<b>" + this.series.name + "</b><br/>" + year + ", quarter " + quarter + "<br/>" + val;
+						return "<strong>" + this.series.name + "</strong><br/>" + year + ", quarter " + quarter + "<br/>" + val;
 					}
 				},
 				<?php } else { ?>

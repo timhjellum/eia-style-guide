@@ -136,7 +136,7 @@ for ($i = 0; $i < sizeof($query); $i++) {
 	"OECD liquid fuels consumption": this.y.toFixed(1) + "% change",
 	"WTI crude oil price": "$" + this.y.toFixed(2) + " per barrel"
 	}[this.series.name];
-	return "<b>" + this.series.name + "</b><br/>" + year + ", quarter " + quarter + "<br/>" + val;
+	return "<strong>" + this.series.name + "</strong><br/>" + year + ", quarter " + quarter + "<br/>" + val;
 	}
 	},
 <?php } else { ?>

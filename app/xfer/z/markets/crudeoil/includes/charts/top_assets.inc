@@ -108,7 +108,7 @@ ob_start();
 	"assets under management (4 largest public U.S. commodity index funds)": this.y.toFixed(1) + "% change"
 	}[this.series.name];
 
-	return "<b>" + this.series.name + "</b><br/>" + year + ", quarter " + quarter + "<br/>" + val;
+	return "<strong>" + this.series.name + "</strong><br/>" + year + ", quarter " + quarter + "<br/>" + val;
 	}
 	},
 <?php } else { ?>

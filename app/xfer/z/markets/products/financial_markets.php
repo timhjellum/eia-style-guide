@@ -35,7 +35,7 @@
 		<?php /*  BEGIN Main Column  */ ?>
 		<div class="main_col" style="margin-top:-20px;">
 			<h1>What drives petroleum product prices: Financial Markets</h1>
-			<p>
+			<p class="para">
 				Gasoline and distillate both have futures contracts for delivery in New York Harbor on the New York Mercantile
 				Exchange (Nymex). Since 2007, open interest (the number of contracts in a trading session that have not been
 				settled or closed) and trading volume in these contracts increased for both products.
@@ -54,7 +54,7 @@
 						?>
 						Updated: Quarterly | Last Updated: <?php echo $updateDate[0]['update_date']; ?>
 					</div>
-			<p>
+			<p class="para">
 		</div>
 		<div class="chart_r">
 			<div class="chart_h">Trading volumes of gasoline and distillate futures contracts grew substantially over the past
@@ -70,10 +70,10 @@
 				?>
 				Updated: Quarterly | Last Updated: <?php echo $updateDate[0]['update_date']; ?>
 			</div>
-			<p>
+			<p class="para">
 		</div>
 		</p>
-		<p>
+		<p class="para">
 			The Commodity Futures Trading Commission publishes a weekly activity report, the Commitment of Traders Report, on
 			oil and petroleum product open interest on exchanges (e.g., Nymex). In this report, the activities of multiple
 			trading categories are detailed, including physical participants (producers, merchants, processors, and end
@@ -82,7 +82,7 @@
 			contracts are bought rather than sold&mdash;on RBOB and ULSD futures, though significant changes in market
 			expectations of demand and supply for these products can push overall positions to be net short.
 		</p>
-		<p>
+		<p class="para">
 		<div class="chart_r">
 			<div class="chart_h">Money managers' net positions in RBOB and ULSD futures trading</div>
 			<?php include("includes/charts/exchange_traded_futures.inc"); ?>

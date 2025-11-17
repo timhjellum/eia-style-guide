@@ -145,7 +145,7 @@ for ($i = 0; $i < sizeof($query); $i++) {
 	"WTI crude oil price": "$"
 	}[this.series.name];
 
-	return "<b>" + this.series.name + "</b><br/>" + year + ", quarter " + quarter + "<br/>" + symbol + this.y.toFixed(2) + unit;
+	return "<strong>" + this.series.name + "</strong><br/>" + year + ", quarter " + quarter + "<br/>" + symbol + this.y.toFixed(2) + unit;
 	}
 	},
 <?php } else { ?>

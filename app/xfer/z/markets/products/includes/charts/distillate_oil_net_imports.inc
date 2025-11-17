@@ -118,7 +118,7 @@ ob_start();
 						var d = new Date(this.x),
 								quarter = Math.ceil(( d.getMonth() / 3)) + 1 < 5 ? Math.ceil(( d.getMonth() / 3)) + 1 : 1;
 						year = Math.ceil(( d.getMonth() / 3)) + 1 < 5 ? d.getFullYear() : d.getFullYear() + 1;
-						return '<b>' + this.series.name + '</b>' + '<br/>' + year + ', quarter ' + quarter + '<br/>' + Highcharts.numberFormat(this.y, 3) + (this.series.name == "PADD 1 + 5 Distillate Net Imports" ? " million barrels per day" : " million barrels per day");
+						return '<strong>' + this.series.name + '</strong>' + '<br/>' + year + ', quarter ' + quarter + '<br/>' + Highcharts.numberFormat(this.y, 3) + (this.series.name == "PADD 1 + 5 Distillate Net Imports" ? " million barrels per day" : " million barrels per day");
 					}
 				},
 				<?php } else { ?>

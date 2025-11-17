@@ -84,7 +84,7 @@ ob_start();
 	var d = new Date(this.x),
 	quarter = Math.ceil(( d.getMonth() / 3)) + 1 < 5 ? Math.ceil(( d.getMonth() / 3)) + 1 : 1;
 	year = Math.ceil(( d.getMonth() / 3)) + 1 < 5 ? d.getFullYear() : d.getFullYear() + 1;
-	return '<b>' + year + ', quarter ' + quarter + '</b><br/>' + Highcharts.numberFormat(this.y, 3) + ' thousand contracts';
+	return '<strong>' + year + ', quarter ' + quarter + '</strong><br/>' + Highcharts.numberFormat(this.y, 3) + ' thousand contracts';
 	}
 	},
 <?php } else { ?>

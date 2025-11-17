@@ -134,7 +134,7 @@ ob_start();
 	"fontFamily": "Arial"
 	},
 	"formatter": function () {
-	return "<b>" + this.series.name + " forecast" + "</b><br/>" +
+	return "<strong>" + this.series.name + " forecast" + "</strong><br/>" +
 	"forecast made: " + Highcharts.dateFormat("%b %Y", this.x) + "<br>" +
 	this.y.toFixed(1) + " percent";
 	}

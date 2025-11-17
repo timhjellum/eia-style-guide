@@ -107,7 +107,7 @@ ob_start();
 	year = Math.ceil(( d.getMonth() / 3)) + 1 < 5 ? d.getFullYear() : d.getFullYear() + 1;
 	if (this.y < 0) val = '-' + val; //add negative sign in front of value
 
-	return '<b>' + this.series.name + '</b><br/>' + year + ', quarter ' + quarter + '<br/>' + val;
+	return '<strong>' + this.series.name + '</strong><br/>' + year + ', quarter ' + quarter + '<br/>' + val;
 	}
 	},
 <?php } else { ?>

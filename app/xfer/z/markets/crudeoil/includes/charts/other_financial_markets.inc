@@ -229,14 +229,14 @@ $rowOutput = array(
 	</div>
 </div>
 <br clear="all">
-<p>
+<p class="para">
 <div style="color:gray;font-size:10px; margin-bottom: -20px;">Data source: U.S. Energy Information Administration</div><br>
 <div style="color:grey; font-size:10px; margin-bottom: 10px;">Updated: Quarterly | Last
 	Updated: <?php echo $updateDate[0]['update_date']; ?></div>
 </p>
-<p><sup>1</sup> U.S. Dollar Index (DXY), which is a weighted index of a basket of currencies, per U.S. dollar. As the
+<p class="para"><sup>1</sup> U.S. Dollar Index (DXY), which is a weighted index of a basket of currencies, per U.S. dollar. As the
 	dollar strengthens against other currencies, the value of the index rises.</p>
-<p><sup>2</sup> U.S. bonds is based on the negative of the change in yield on 30-year U.S. government bonds because as
+<p class="para"><sup>2</sup> U.S. bonds is based on the negative of the change in yield on 30-year U.S. government bonds because as
 	yields rise, bond prices fall.</p>
-<p><sup>3</sup> Inflation Expectations are based on daily changes in the 5 year Treasury - TIPS (Treasury Inflation
+<p class="para"><sup>3</sup> Inflation Expectations are based on daily changes in the 5 year Treasury - TIPS (Treasury Inflation
 	Protected Securities) spread.</p>

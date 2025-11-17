@@ -143,13 +143,13 @@ ob_start();
 	var d = new Date(this.x),
 	quarter = Math.ceil(( d.getMonth() / 3)) + 1 < 5 ? Math.ceil(( d.getMonth() / 3)) + 1 : 1,
 	year = Math.ceil(( d.getMonth() / 3)) + 1 < 5 ? d.getFullYear() : d.getFullYear() + 1,
-	ret = '<b>' + this.series.name + '</b><br/>' + year + ', quarter ' + quarter + '<br/>$' + this.y.toFixed(2) + ' per barrel';
+	ret = '<strong>' + this.series.name + '</strong><br/>' + year + ', quarter ' + quarter + '<br/>$' + this.y.toFixed(2) + ' per barrel';
 
 	if (typeof(this.point.name) != 'undefined')
-	ret += '<br><b>' + this.point.name + '</b>';
+	ret += '<br><strong>' + this.point.name + '</strong>';
 
 	if (this.series.name == 'Events')
-	return '<b>' + this.point.name + '</b>';
+	return '<strong>' + this.point.name + '</strong>';
 	else
 	return ret;
 	}

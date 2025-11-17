@@ -1,6 +1,6 @@
 <section class="questions-and-answers margin-bottom">
 	<div class="l-grid l-full-width-col">
-		<p>Electricity prices vary in each state. We have compiled years of data to find pricing trends around the country. You can see data for all 50 states below, but deregulated states are labeled in each chart/graph.</p>
+		<p class="para">Electricity prices vary in each state. We have compiled years of data to find pricing trends around the country. You can see data for all 50 states below, but deregulated states are labeled in each chart/graph.</p>
 		<ul>
 			<li>
 				The Average Electricity Rate in the U.S. is 17.47 cents per kilowatt-hour.

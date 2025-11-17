@@ -35,7 +35,7 @@
 		<div class="main_col" style="margin-top:-20px;">
 
 			<h1>What drives petroleum product prices: Consumption</h1>
-			<p>
+			<p class="para">
 				Countries outside of the Organization for Economic Cooperation and Development (OECD) drove increases in global
 				demand for petroleum products in recent years. In aggregate, non-OECD countries consumed more petroleum products
 				than OECD countries for the first time in 2014. Global distillate consumption tends to rise as developing
@@ -50,7 +50,7 @@
 				<?php include("includes/charts/product_demand.inc"); ?>
 			</div>
 			</p>
-			<p>
+			<p class="para">
 				Gasoline is the most consumed petroleum product in the United States and is used primarily as a transportation
 				fuel. Gasoline consumption is affected by a variety of factors including gasoline prices, disposable income,
 				employment, weather, <a href="http://www.eia.gov/forecasts/aeo/MT_transportation.php#miles_traveled">vehicle
@@ -64,7 +64,7 @@
 			</div>
 			</p>
 
-			<p>Distillate is the second-most consumed petroleum product in the United States. In addition to its use as a
+			<p class="para">Distillate is the second-most consumed petroleum product in the United States. In addition to its use as a
 				transportation fuel, distillate is also consumed for heating and power generation purposes. Distillate's use as
 				a heating fuel drives the seasonal pattern of higher consumption during the winter months. Distillate
 				consumption is affected by economic growth and weather conditions as well as vehicle efficiency and miles

@@ -104,7 +104,7 @@ ob_start();
 							"fontFamily": "Arial"
 						},
 						"formatter": function () {
-							return "<b>" + this.series.name + "</b><br>" + Highcharts.dateFormat("%B %Y", this.x)
+							return "<strong>" + this.series.name + "</strong><br>" + Highcharts.dateFormat("%B %Y", this.x)
 									+ "<br/>" + "$" + Highcharts.numberFormat(this.y, 3) + (this.series.name == "U.S. retail price of regular gasoline" ? " per gallon" : " per barrel");
 						}
 					},

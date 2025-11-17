@@ -109,7 +109,7 @@ ob_start();
 
 	if (this.y < 0) val = "-" + val;
 
-	return "<b>" + this.series.name + "</b><br/>" + year + ", quarter " + quarter + "<br/>" + val;
+	return "<strong>" + this.series.name + "</strong><br/>" + year + ", quarter " + quarter + "<br/>" + val;
 	}
 	},
 <?php } else { ?>

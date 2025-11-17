@@ -126,7 +126,7 @@ for ($i = 0; $i < sizeof($query); $i++) {
 	var d = new Date(this.x),
 	quarter = Math.ceil(( d.getMonth() / 3)) + 1 < 5 ? Math.ceil(( d.getMonth() / 3)) + 1 : 1;
 	year = Math.ceil(( d.getMonth() / 3)) + 1 < 5 ? d.getFullYear() : d.getFullYear() + 1;
-	return '<b>' + this.series.name + '</b><br/>' + year + ', quarter ' + quarter + '<br/>' + this.y.toFixed(1) + '% change';
+	return '<strong>' + this.series.name + '</strong><br/>' + year + ', quarter ' + quarter + '<br/>' + this.y.toFixed(1) + '% change';
 	}
 	},
 <?php } else { ?>

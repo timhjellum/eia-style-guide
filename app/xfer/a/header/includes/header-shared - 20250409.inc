@@ -17,7 +17,7 @@
 					<div class="toggle-bar"></div>
 					<div class="toggle-bar"></div>
 				</div>
-				<p>Menu</p>
+				<p class="para">Menu</p>
 			</a>
 		</div>
 		<ul class="nav-primary">
@@ -84,7 +84,7 @@
 								<h3>
 									<a href="/petroleum/" title="Petroleum & Other Liquids">Petroleum &amp; Other Liquids</a>
 								</h3>
-								<p>Crude oil, gasoline, heating oil, diesel, propane, and other liquids including biofuels and natural gas liquids.</p>
+								<p class="para">Crude oil, gasoline, heating oil, diesel, propane, and other liquids including biofuels and natural gas liquids.</p>
 								<ul>
 									<li>
 										<a href="/petroleum/weekly/" title="This Week in Petroleum">This Week in Petroleum</a>
@@ -99,7 +99,7 @@
 								<h3>
 									<a href="/naturalgas/" title="Natural Gas">Natural Gas</a>
 								</h3>
-								<p>Exploration and reserves, storage, imports and exports, production, prices, sales.</p>
+								<p class="para">Exploration and reserves, storage, imports and exports, production, prices, sales.</p>
 								<ul>
 									<li>
 										<a href="http://ir.eia.gov/ngs/ngs.html" title="Weekly Natural Gas Storage Report">Weekly Natural Gas Storage Report</a>
@@ -114,7 +114,7 @@
 								<h3>
 									<a href="/electricity/" title="Electricity">Electricity</a>
 								</h3>
-								<p>Sales, revenue and prices, power plants, fuel use, stocks, generation, trade, demand &amp; emissions.
+								<p class="para">Sales, revenue and prices, power plants, fuel use, stocks, generation, trade, demand &amp; emissions.
 								</p>
 								<ul>
 									<li>
@@ -130,7 +130,7 @@
 								<h3>
 									<a href="/consumption/" title="Consumption & Efficiency">Consumption &amp; Efficiency</a>
 								</h3>
-								<p>Energy use in homes, commercial buildings, manufacturing, and transportation.</p>
+								<p class="para">Energy use in homes, commercial buildings, manufacturing, and transportation.</p>
 								<ul>
 									<li>
 										<a href="/consumption/residential/" title="Residential Energy Consumption Survey (RECS)">Residential Energy Consumption Survey (RECS)</a>
@@ -147,7 +147,7 @@
 								<h3>
 									<a href="/coal/" title="Coal">Coal</a>
 								</h3>
-								<p>Reserves, production, prices, employment and productivity, distribution, stocks, imports and exports.</p>
+								<p class="para">Reserves, production, prices, employment and productivity, distribution, stocks, imports and exports.</p>
 								<ul>
 									<li>
 										<a href="/coal/production/quarterly/" title="Quarterly Coal Report">Quarterly Coal Report</a>
@@ -162,7 +162,7 @@
 								<h3>
 									<a href="/renewable/" title="Renewable & Alternative Fuels">Renewable &amp; Alternative Fuels</a>
 								</h3>
-								<p>Includes hydropower, solar, wind, geothermal, biomass and ethanol.</p>
+								<p class="para">Includes hydropower, solar, wind, geothermal, biomass and ethanol.</p>
 								<ul>
 									<li>
 										<a href="/renewable/afv/" title="Alternative Fuel Vehicle Browser">Alternative Fuel Vehicle Browser</a>
@@ -174,7 +174,7 @@
 								<h3>
 									<a href="/nuclear/" title="Nuclear & Uranium">Nuclear &amp; Uranium</a>
 								</h3>
-								<p>Uranium fuel, nuclear reactors, generation, spent fuel.</p>
+								<p class="para">Uranium fuel, nuclear reactors, generation, spent fuel.</p>
 								<ul>
 									<li>
 										<a href="/nuclear/outages/" title="Daily Status of Nuclear Outages">Daily Status of Nuclear Outages</a>
@@ -186,7 +186,7 @@
 								<h3>
 									<a href="/totalenergy/" title="Total Energy">Total Energy</a>
 								</h3>
-								<p>Comprehensive data summaries, comparisons, analysis, and projections integrated across all energy sources.</p>
+								<p class="para">Comprehensive data summaries, comparisons, analysis, and projections integrated across all energy sources.</p>
 								<ul>
 									<li>
 										<a href="/totalenergy/data/monthly/" title="Monthly Energy Review">Monthly Energy Review</a>
@@ -207,7 +207,7 @@
 								<h3>
 									<a href="/analysis/" title="Analysis & Projections">Analysis &amp; Projections</a>
 								</h3>
-								<p>Monthly and yearly energy forecasts, analysis of energy topics, financial analysis, congressional reports.
+								<p class="para">Monthly and yearly energy forecasts, analysis of energy topics, financial analysis, congressional reports.
 								</p>
 								<ul>
 									<li>
@@ -226,7 +226,7 @@
 								<h3>
 									<a href="/finance/" title="Markets & Finance">Markets &amp; Finance</a>
 								</h3>
-								<p>Financial market analysis and financial data for major energy companies.</p>
+								<p class="para">Financial market analysis and financial data for major energy companies.</p>
 								<ul>
 									<li>
 										<a href="/finance/data.php" title="Market Prices and Uncertainty Report">Market Prices and Uncertainty Report</a>
@@ -243,7 +243,7 @@
 								<h3>
 									<a href="/environment/" title="Environment">Environment</a>
 								</h3>
-								<p>Greenhouse gas data, voluntary reporting, electric power plant emissions.</p>
+								<p class="para">Greenhouse gas data, voluntary reporting, electric power plant emissions.</p>
 								<ul>
 									<li><a href="/environment/emissions/carbon/" title="U.S. Energy-Related Carbon Dioxide Emissions">U.S. Energy-Related Carbon Dioxide Emissions</a></li>
 									<!-- li><a href="/environment/emissions/state/analysis/" title="Energy-Related Carbon Dioxide Emissions at the State Level, 2005-2016">Energy-Related Carbon Dioxide Emissions at the State Level, 2005-2016</a></li -->
@@ -255,7 +255,7 @@
 								<h3>
 									<a href="/special/disruptions/" title="Energy Disruptions">Energy Disruptions</a>
 								</h3>
-								<p>Maps, tools, and resources related to energy disruptions and infrastructure.</p>
+								<p class="para">Maps, tools, and resources related to energy disruptions and infrastructure.</p>
 								<ul>
 									<li><a href="/special/disruptions/" title="Energy Disruptions">Energy Disruptions</a></li>
 								</ul>
@@ -271,7 +271,7 @@
 								<h3>
 									<a href="/beta/states/" title="U.S. States">U.S. States</a>
 								</h3>
-								<p>State energy information, including overviews, rankings, data, and analyses.</p>
+								<p class="para">State energy information, including overviews, rankings, data, and analyses.</p>
 								<ul>
 									<li>
 										<a href="/state/seds/" title="State Energy Data System (SEDS)">State Energy Data System (SEDS)</a>
@@ -283,7 +283,7 @@
 								<h3>
 									<a href="/maps/" title="Maps">Maps</a>
 								</h3>
-								<p>Maps by energy source and topic, includes forecast maps.</p>
+								<p class="para">Maps by energy source and topic, includes forecast maps.</p>
 								<ul>
 									<li>
 										<a href="https://atlas.eia.gov/" title="U.S. Energy Atlas">U.S. Energy Atlas</a>
@@ -303,7 +303,7 @@
 								<h3>
 									<a href="/beta/international/" title="International">International</a>
 								</h3>
-								<p>International energy information, including overviews, rankings, data, and analyses.</p>
+								<p class="para">International energy information, including overviews, rankings, data, and analyses.</p>
 								<ul>
 									<li>
 										<a href="/beta/international/data/browser/" title="International Energy Statistics">International Energy Statistics</a>
@@ -315,7 +315,7 @@
 								<h3>
 									<a href="/regional/" title="Regional Dashboards & Data">Regional Dashboards &amp; Data</a>
 								</h3>
-								<p>Regional energy information including dashboards, maps, data, and analyses.</p>
+								<p class="para">Regional energy information including dashboards, maps, data, and analyses.</p>
 								<ul>
 									<li>
 										<a href="/dashboard/newengland/overview" title="New England Dashboard">New England Dashboard</a>
@@ -346,28 +346,28 @@
 								<h3>
 									<a href="/tools/" title="Data Tools, Apps, & Maps">Data Tools, Apps, &amp; Maps</a>
 								</h3>
-								<p>Tools to customize searches, view specific data sets, study detailed documentation, and access time-series data.</p>
+								<p class="para">Tools to customize searches, view specific data sets, study detailed documentation, and access time-series data.</p>
 							</div>
 							<div class="nav-menu open-data">
 								<span class="ico-menu open-data-icon"></span>
 								<h3>
 									<a href="/opendata/" title="Open Data">Open Data</a>
 								</h3>
-								<p>EIA's free and open data available as API, Excel add-in, bulk files, and widgets</p>
+								<p class="para">EIA's free and open data available as API, Excel add-in, bulk files, and widgets</p>
 							</div>
 							<div class="nav-menu beta">
 								<span class="ico-menu beta-icon"></span>
 								<h3>
 									<a href="/beta" title="EIA Beta">EIA Beta</a>
 								</h3>
-								<p>Come test out some of the products still in development and let us know what you think!</p>
+								<p class="para">Come test out some of the products still in development and let us know what you think!</p>
 							</div>
 							<div class="nav-menu open-source-code">
 								<span class="ico-menu open-source-code-icon"></span>
 								<h3>
 									<a href="/tools/open-source-code/" title="Open Source Code">Open Source Code</a>
 								</h3>
-								<p>EIA's open source code, available on GitHub.</p>
+								<p class="para">EIA's open source code, available on GitHub.</p>
 							</div>
 						</div>
 						<div class="tools right">
@@ -383,7 +383,7 @@
 								<h3>
 									<a href="/survey/" title="EIA Survey Forms">EIA Survey Forms</a>
 								</h3>
-								<p>Forms EIA uses to collect energy data including descriptions, links to survey instructions, and additional information.</p>
+								<p class="para">Forms EIA uses to collect energy data including descriptions, links to survey instructions, and additional information.</p>
 								<?php /* include('global/header/includes/survey-search.inc'); */ ?>
 							</div>
 							<div class="nav-menu email-complex">
@@ -391,19 +391,19 @@
 								<h3>
 									<a href="/tools/emailupdates/" title="Email Updates">Email Updates</a>
 								</h3>
-								<p>Sign up for email subcriptions to receive messages about specific EIA products</p>
+								<p class="para">Sign up for email subcriptions to receive messages about specific EIA products</p>
 							</div>
 							<div class="nav-menu rss-complex">
 								<span class="ico-menu rss-complex-icon"></span>
 								<h3>
 									<a href="/tools/rssfeeds/" title="RSS Feeds">RSS Feeds</a>
 								</h3>
-								<p>Subscribe to feeds for updates on EIA products including Today in Energy and What's New.</p>
+								<p class="para">Subscribe to feeds for updates on EIA products including Today in Energy and What's New.</p>
 							</div>
 							<div class="nav-menu follow-us">
 								<span class="ico-menu follow-us-icon"></span>
 								<h3>Follow us. . .</h3>
-								<p>
+								<p class="para">
 									<a href="http://facebook.com/eiagov/" title="facebook" target="_blank">
 										<span class="ico-menu facebook"></span>
 									</a>
@@ -432,7 +432,7 @@
 								<h3>
 									<a href="/todayinenergy/" title="Today in Energy">Today in Energy</a>
 								</h3>
-								<p>Short, timely articles with graphics on energy, facts, issues, and trends.</p>
+								<p class="para">Short, timely articles with graphics on energy, facts, issues, and trends.</p>
 							</div>
 							<div class="nav-menu energy-explained">
 								<span class="ico-menu energy-explained-icon"></span>
@@ -504,7 +504,7 @@
 								<h3>
 									<a href="/kids/energy.php?page=6" title="For Teachers">For Teachers</a>
 								</h3>
-								<p>Lesson plans, science fair experiments, field trips, teacher guide, and career corner.</p>
+								<p class="para">Lesson plans, science fair experiments, field trips, teacher guide, and career corner.</p>
 							</div>
 
 						</div>
@@ -623,7 +623,7 @@
 								<h3>
 									Featured Reports
 								</h3>
-								<p>Reports requested by congress or otherwise deemed important.</p>
+								<p class="para">Reports requested by congress or otherwise deemed important.</p>
 								<ul>
 									<?php include('global/includes/header-featured-reports.inc') ?>
 								</ul>

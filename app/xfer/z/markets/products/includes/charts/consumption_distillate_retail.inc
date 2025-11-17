@@ -129,7 +129,7 @@ ob_start();;
             var d = new Date(this.x),
                     quarter = Math.ceil(( d.getMonth() / 3)) + 1 < 5 ? Math.ceil(( d.getMonth() / 3)) + 1 : 1;
             year = Math.ceil(( d.getMonth() / 3)) + 1 < 5 ? d.getFullYear() : d.getFullYear() + 1;
-            return '<b>' + this.series.name + '</b>' + '<br/>' + year + ', quarter ' + quarter + '<br/>' + Highcharts.numberFormat(this.y, 3) + (this.series.name == "U.S. distillate product supplied" ? " percent change product supplied (year over year)" : " dollars per gallon, nominal");
+            return '<strong>' + this.series.name + '</strong>' + '<br/>' + year + ', quarter ' + quarter + '<br/>' + Highcharts.numberFormat(this.y, 3) + (this.series.name == "U.S. distillate product supplied" ? " percent change product supplied (year over year)" : " dollars per gallon, nominal");
         }
     },
     <?php } else { ?>

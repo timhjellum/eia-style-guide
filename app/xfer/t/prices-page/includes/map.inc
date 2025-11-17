@@ -20,7 +20,7 @@
 <section class="first-section margin-bottom">
 	<div class="l-grid l-full-width-col">
 		<h1>Lorem ipsum dolor sit amet</h1>
-		<p>Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor um tellus duis conva .</p>
+		<p class="para">Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor um tellus duis conva .</p>
 		<h1>Average retail price of electricity : all sectors <?= DateTime::createFromFormat('Ym', $recentYearMonth)->format('M Y'); ?></h1>
 	</div>
 	<div class="l-grid l-full-width-col map-container">

@@ -1,8 +1,8 @@
 <h1 class="l-border-bottom l-border-thin">
     <?=$pageTitle?>
 </h1>
-<p>Although crude oil prices receive a lot of media attention, consumers purchase petroleum products refined from crude oil rather than the crude oil itself. Refiners produce many petroleum products from crude oil for a wide range of applications. Prices for some petroleum products, such as gasoline, are very visible to consumers, while others are much less so. This section focuses on the two most prominent groups of petroleum products&#8212;gasoline and distillate (or diesel fuel).</p>
-<p>Graphs are updated with new data on a monthly, quarterly, and annual basis according to the schedule below.</p> <a href="<?php echo $rootPath; ?>/products/reports_presentations/product.pdf" class="ico pdf"><span>All graphs</span></a>
+<p class="para">Although crude oil prices receive a lot of media attention, consumers purchase petroleum products refined from crude oil rather than the crude oil itself. Refiners produce many petroleum products from crude oil for a wide range of applications. Prices for some petroleum products, such as gasoline, are very visible to consumers, while others are much less so. This section focuses on the two most prominent groups of petroleum products&#8212;gasoline and distillate (or diesel fuel).</p>
+<p class="para">Graphs are updated with new data on a monthly, quarterly, and annual basis according to the schedule below.</p> <a href="<?php echo $rootPath; ?>/products/reports_presentations/product.pdf" class="ico pdf"><span>All graphs</span></a>
 <div class="basic-table">
     <table class="basic-table full-width">
         <thead>

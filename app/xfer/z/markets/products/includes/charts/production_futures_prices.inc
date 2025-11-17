@@ -113,7 +113,7 @@ ob_start();
             "fontFamily": "Arial"
         },
         "formatter": function () {
-            return "<b>" + this.series.name + "</b><br>" + Highcharts.dateFormat("%Y", this.x) + "<br/>" + " " + Highcharts.numberFormat(this.y, 5) + (this.series.name == "Distillate to gasoline production ratio" ? " production ratio" : "price spread (dollars per gallon, nominal)");
+            return "<strong>" + this.series.name + "</strong><br>" + Highcharts.dateFormat("%Y", this.x) + "<br/>" + " " + Highcharts.numberFormat(this.y, 5) + (this.series.name == "Distillate to gasoline production ratio" ? " production ratio" : "price spread (dollars per gallon, nominal)");
         }
     },
     <?php } else { ?>

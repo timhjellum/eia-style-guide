@@ -141,7 +141,7 @@ ob_start();
 	"fontFamily": "Arial"
 	},
 	"crosshairs": false,
-	"formatter": function () { return '<b>' + this.point.name + '</b>: ' + this.y.toFixed(1) + ' %'; }
+	"formatter": function () { return '<strong>' + this.point.name + '</strong>: ' + this.y.toFixed(1) + ' %'; }
 	},
 <?php } else { ?>
 	"tooltip": {
@@ -172,7 +172,7 @@ ob_start();
 "fontSize": <?php if($forPPT) { echo '"8px"'; } else { echo '"11px"'; }?>,
 "color": "black"
 },
-"formatter": function () { return '<b>' + this.point.name + '</b>: ' + this.y.toFixed(1) + ' %'; }
+"formatter": function () { return '<strong>' + this.point.name + '</strong>: ' + this.y.toFixed(1) + ' %'; }
 
 }
 }

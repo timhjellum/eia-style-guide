@@ -171,8 +171,8 @@ for ($i = 0; $i < sizeof($query); $i++) {
 	}[this.series.name];*/
 
 	//quarter = {1:"1st",2:"2nd",3:"3rd",4:"4th"}[quarter];
-	//return "<b>" + this.series.name + "</b><br/>" + quarter + " quarter of //"+ year +"<br/>"  + val;
-	return "<b>" + this.series.name + "</b><br/>" + year + ", quarter " + quarter + "<br/>" + unit;
+	//return "<strong>" + this.series.name + "</strong><br/>" + quarter + " quarter of //"+ year +"<br/>"  + val;
+	return "<strong>" + this.series.name + "</strong><br/>" + year + ", quarter " + quarter + "<br/>" + unit;
 	}
 	},
 <?php } else { ?>

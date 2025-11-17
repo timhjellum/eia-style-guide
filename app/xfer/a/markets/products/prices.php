@@ -36,14 +36,14 @@
 		<?php /*  BEGIN Main Column  */ ?>
 		<div class="main_col" style="margin-top:-20px;">
 			<h1>What drives petroleum product prices: Prices and Crack Spreads</h1>
-			<p>Gasoline is the most widely used petroleum product in the United States. Although gasoline is traded globally
+			<p class="para">Gasoline is the most widely used petroleum product in the United States. Although gasoline is traded globally
 				and priced at various locations around the world, all these prices tend to move together in the long run because
 				gasoline can be transported between markets, thereby linking their supply and prices. Differences in absolute
 				price levels as well as short-term price changes across the world reflect varying gasoline specifications,
 				refinery maintenance schedules, unplanned refinery outages, transportation constraints, peak consumption
 				seasons, as well as regional inventory levels.</p>
 
-			<p>
+			<p class="para">
 			<div class="chart_r">
 				<div class="chart_h">Gasoline spot prices in different regions of the world generally move together</div>
 
@@ -59,11 +59,11 @@
 				</div>
 			</div>
 			</p>
-			<p>Distillate is also traded globally and priced in various regions around the world. Like the disparity in
+			<p class="para">Distillate is also traded globally and priced in various regions around the world. Like the disparity in
 				gasoline prices, the disparity in distillate prices primarily reflects differences in quality, primary uses,
 				seasonal consumption, and local market factors.
 			</p>
-			<p>
+			<p class="para">
 			<div class="chart_r">
 				<div class="chart_h">Distillate spot prices in different regions of the world generally move together</div>
 
@@ -79,17 +79,17 @@
 				</div>
 			</div>
 			</p>
-			<p>In addition to trading physical quantities of petroleum products, market participants can also use futures
+			<p class="para">In addition to trading physical quantities of petroleum products, market participants can also use futures
 				contracts to buy or sell gasoline and distillate for future delivery, or to hedge or speculate on future price
 				movements. Since 2006, the underlying commodity for the gasoline futures contract has been reformulated
 				blendstock for oxygenate blending (RBOB), the petroleum component of gasoline in many areas of the country prior
 				to the addition of ethanol to produce finished gasoline. </p>
-			<p>Since the spring of 2013, the underlying commodity for the distillate futures contract has been ultra-low
+			<p class="para">Since the spring of 2013, the underlying commodity for the distillate futures contract has been ultra-low
 				sulfur diesel (ULSD), a distillate with sulfur content of less than 15 parts per million (ppm). Prior to this
 				change, the underlying commodity for the distillate futures contract was allowed to have sulfur content up to
 				2,000 ppm, reflecting the type of distillate commonly used for home heating purposes.
 			</p>
-			<p>
+			<p class="para">
 			<div class="chart_r">
 				<div class="chart_h">Gasoline contracts traded in futures markets use RBOB as the underlying commodity</div>
 
@@ -106,11 +106,11 @@
 			</div>
 		</div>
 		</p>
-		<p><a href="http://www.eia.gov/todayinenergy/detail.php?id=1630">Crack spreads</a>, which represent the price
+		<p class="para"><a href="http://www.eia.gov/todayinenergy/detail.php?id=1630">Crack spreads</a>, which represent the price
 			difference between products and crude oil, can be used to determine the relative value of various petroleum
 			products for refineries to produce. Crack spreads vary by product and can rise or fall depending on the time of
 			year and on market conditions. </p>
-		<p>
+		<p class="para">
 		<div class="chart_r">
 			<div class="chart_h">Since 2013, distillate contracts traded in futures markets use ULSD as the underlying
 				commodity
@@ -130,7 +130,7 @@
 
 		</p>
 		<h1> Seasonality </h1>
-		<p> Petroleum product crack spreads often exhibit seasonality. During the summer months, the underlying commodity of
+		<p class="para"> Petroleum product crack spreads often exhibit seasonality. During the summer months, the underlying commodity of
 			the RBOB front month contract is required to be gasoline with a lower <a
 					href="http://www.eia.gov/todayinenergy/detail.php?id=11031">Reid vapor pressure</a> (RVP) specification, a
 			more expensive type of gasoline to refine. Starting March 1, RBOB futures prices tend to increase several cents
@@ -139,7 +139,7 @@
 			U.S. driving season picks up, resulting in higher domestic demand for the product. On September 1, the underlying
 			commodity of the RBOB front month contract reverts back to a higher RVP specification, representing a lower-cost
 			gasoline. The gasoline crack spread declines to reflect the lower price of gasoline. </p>
-		<p>
+		<p class="para">
 		<div class="chart_r">
 			<div class="chart_h">The value of gasoline exhibits seasonality due to increased consumption and changes in
 				specifications during the summer
@@ -157,10 +157,10 @@
 			</div>
 		</div>
 		</p>
-		<p> As domestic gasoline consumption declines during the winter months, distillate consumption historically rises as
+		<p class="para"> As domestic gasoline consumption declines during the winter months, distillate consumption historically rises as
 			consumers in the United States, particularly in the U.S. northeast, use distillate for heating purposes. With the
 			increased demand, distillate crack spreads are usually highest from October to February. </p>
-		<p>
+		<p class="para">
 		<div class="chart_r">
 			<div class="chart_h">The value of distillate exhibits seasonality due to increased domestic consumption in the
 				winter months

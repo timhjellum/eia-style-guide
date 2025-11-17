@@ -35,7 +35,7 @@
 		<?php /*  BEGIN Main Column  */ ?>
 		<div class="main_col" style="margin-top:-20px;">
 			<h1>What drives petroleum product prices: Trade</h1>
-			<p>With <a href="http://www.eia.gov/todayinenergy/detail.php?id=20572">significant increases in U.S. crude oil
+			<p class="para">With <a href="http://www.eia.gov/todayinenergy/detail.php?id=20572">significant increases in U.S. crude oil
 					production</a> and higher refinery runs, increased production of petroleum products reduced the reliance on
 				oil imports to meet domestic demand. In the fourth quarter of 2012, the United States became a net exporter of
 				gasoline after historically being a net importer. Since then, the United States has often been a net exporter of
@@ -48,13 +48,13 @@
 				<?php include("includes/charts/gasoline_net_imports.inc"); ?>
 			</div>
 			</p>
-			<p>
+			<p class="para">
 			<div class="chart_r">
 				<div class="chart_h">Most of the gasoline exports from the United States originate from PADD 3</div>
 				<?php include("includes/charts/gasoline_net_imports_by_padd.inc"); ?>
 			</div>
 			</p>
-			<p>The United States became a net exporter of distillate in the fourth quarter of 2007, five years before the
+			<p class="para">The United States became a net exporter of distillate in the fourth quarter of 2007, five years before the
 				first time the United States was a net gasoline exporter. Diesel, a type of distillate, is the primary
 				transportation fuel source in much of the world, unlike in the United States, providing U.S. refiners with
 				international consumers year-round. PADD 3 has been a net exporter of distillate since the third quarter of
@@ -65,7 +65,7 @@
 				<?php include("includes/charts/distillate_fuel_net_imports.inc"); ?>
 			</div>
 			</p>
-			<p>
+			<p class="para">
 			<div class="chart_r">
 				<div class="chart_h">Most of the distillate exports from the United States originate from PADD 3</div>
 				<?php include("includes/charts/distillate_oil_net_imports.inc"); ?>

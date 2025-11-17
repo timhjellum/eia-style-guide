@@ -108,7 +108,7 @@ ob_start();
 
 		"formatter": function () {
 
-		return "<b>" + this.series.name + "</b><br/>" + Highcharts.dateFormat("%B %Y", this.x) + "<br/>" + Highcharts.numberFormat(this.y, 3) + " million barrels per day" + "<br>";
+		return "<strong>" + this.series.name + "</strong><br/>" + Highcharts.dateFormat("%B %Y", this.x) + "<br/>" + Highcharts.numberFormat(this.y, 3) + " million barrels per day" + "<br>";
 		}<?php } ?>
 
 	},

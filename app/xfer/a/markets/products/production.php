@@ -34,7 +34,7 @@
 		<?php /*  BEGIN Main Column  */ ?>
 		<div class="main_col" style="margin-top:-20px;">
 			<h1>What drives petroleum product prices: Production </h1>
-			<p>Refineries produce a wide range of petroleum products when processing crude oil. More complex refineries can
+			<p class="para">Refineries produce a wide range of petroleum products when processing crude oil. More complex refineries can
 				upgrade some of the volume of heavier or lower-quality streams into more valuable products such as gasoline or
 				distillate. Some refineries also have a degree of flexibility with respect to the volume of gasoline versus
 				distillate produced. Price signals can influence short-term production decisions as well as long-term
@@ -49,7 +49,7 @@
 				<div class="clear"></div>
 			</div>
 			</p>
-			<p>
+			<p class="para">
 			<div class="chart_r">
 				<div class="chart_h">Distillate is the second largest product produced by U.S. refiners</div>
 				<div class="chart_h"></div>
@@ -58,7 +58,7 @@
 
 			</div>
 			</p>
-			<p>
+			<p class="para">
 			<div class="chart_r">
 				<div class="chart_h">Some refineries can modify the volume of gasoline and distillate produced</div>
 				<?php include("includes/charts/refinery_output.inc"); ?>
@@ -66,7 +66,7 @@
 				<!-- <div class="chart_desc"></div>-->
 			</div>
 			</p>
-			<p>
+			<p class="para">
 			<div class="chart_r">
 				<div class="chart_h">Price changes can influence refinery production decisions</div>
 
