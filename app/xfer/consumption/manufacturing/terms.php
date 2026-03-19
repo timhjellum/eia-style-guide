@@ -1,10 +1,9 @@
 <?php
-$globalTitle = 'U.S. Energy Information Administration (EIA)';
-$pageTitle = "MECS Terminology";
-$locale = 'data';
-$L2Title = "MECS Terminology";
-$locale = 'overview';
-$linkPage 	= 'link03page';
+$globalTitle 	= 'U.S. Energy Information Administration (EIA)';
+$pageTitle 		= "MECS Terminology";
+$L2Title 		= "MECS Terminology";
+$locale 		= 'overview';
+$linkPage 		= 'link03page';
 ?>
 <html>
 
@@ -114,7 +113,7 @@ $linkPage 	= 'link03page';
 	<?php
 include('global/header/includes/header.inc');
 include('consumption/manufacturing/includes/sub-navigation.inc');
-//include ('./includes/report-header.inc')
+include ('consumption/includes/report-header.inc')
 ?>
 
 	<div class="l-row l-full-width-col">
@@ -604,13 +603,13 @@ include('consumption/manufacturing/includes/sub-navigation.inc');
 <li>
 </li>
 </ul-->
-
-				<?php include('./includes/mecs_survey_manager_contact_info.inc'); ?>
 			</div>
 		</div>
 		<div class="l-col">
-			<?php include('./includes/side-nav-manufacturing.inc'); ?>
+			<?php include('consumption/manufacturing/includes/side-nav-manufacturing.inc'); ?>
 		</div>
 	</div>
 	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
+
+</html>

@@ -1,40 +1,37 @@
 <?php
-$pageTitle = "";
+$globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
+$pageTitle 		= "Manufacturing Energy Consumption Survey (MECS)";
+$L2Title 		= "Manufacturing Energy Consumption Survey (MECS)";
 $locale = 'overview';
-
-$page['year'] = 'maps';
-$L2Title = "Manufacturing Energy Consumption Survey (MECS)";
+$linkPage 	= 'link02page';
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
+
 <head>
-<?php include ('global/includes/eia_head_info.inc') ; ?>
-  <script type="text/javascript">
-    $(function() {
-      $('#tabs').tabs();
-    });
-  </script>
-<?php  if(!isset($no_titling)) include "global/includes/titling.inc"; ?></head>
+	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<?php include('global/head/includes/head.inc'); ?>
+
+</head>
+
 <body>
-<div id="outerX"> 
-  <?php /* Outer Wrapper */ ?>
-  <?php include ('global/includes/eia_header.inc') ; ?>
-      <?php include ('../includes/subnav_consumption_mecs.inc') ; ?>
-      <?php /* Page/Body Content */ ?><p>
+	<?php
+include('global/header/includes/header.inc');
+include('consumption/manufacturing/includes/sub-navigation.inc');
+include ('./includes/report-header.inc');
+?>
+	<div class="l-row l-two-col-right-narrow">
+		<div class="l-col article">
  <h2><a name="census"></a>U. S. Census Regions and Divisions:</h2>
-      <div class="pagecontent mr_temp3"> 
-        <?php /* Main Column */ ?>
-        
-        <img src="../commercial/images/cendivco.gif" width="599" height="516" alt="census map" />    
-            <?php /* /Main Column */ ?>
-        <div class="side_col right">
-          <?php include ('../includes/side_nav_manufacturing.inc') ; ?>
+			<img src="consumption/commercial/images/cendivco.gif" alt="census map" />
         </div>
-      </div>
-      <?php /*/ Page/Body Content */ ?>
-      <?php include ('global/includes/eia_footer.inc') ; ?>
-</div>
-<?php /*/ Outer Wrapper */ ?>
+		<div class="l-col">
+			<?php include('consumption/manufacturing/includes/side-nav-manufacturing.inc'); ?>
+		</div>
+	</div>
+	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
 
 </html>

@@ -20,7 +20,8 @@
 <?php /* (i.e. publication data month = 6; ending time period = 7) */ ?>
 <?php /* ********************************************************* */ ?>
 <?php /* Set MER publication month value */ ?>
-<?php $iPubMonth = 01; $iPubYear = date("Y"); ?>
+<?php $iPubMonth = 01;
+$iPubYear = date("Y"); ?>
 <?php /* ******************************* */ ?>
 <?php /* Start of data queries */ ?>
 <?php /* Consumption Queries */ ?>

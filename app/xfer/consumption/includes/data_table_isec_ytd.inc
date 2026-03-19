@@ -23,7 +23,8 @@
 <?php /* (i.e. publication month = 6; ending time period = 7) */ ?>
 <?php /* **************************************************** */ ?>
 <?php /* Set MER publication month value */ ?>
-<?php $iPubMonth = 7; $iPubYear = date("Y"); ?>
+<?php $iPubMonth = 7;
+$iPubYear = date("Y"); ?>
 <?php /* ************************* REQUIRED UPDATE *********************** */ ?>
 <?php /* Manually update the ending value of the sql statements            */ ?>
 <?php /* Change the m_yyyymm value to the publication month plus one value */ ?>

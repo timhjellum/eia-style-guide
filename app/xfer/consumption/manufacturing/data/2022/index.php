@@ -398,15 +398,14 @@ $L2Title 		= "Manufacturing Energy Consumption Survey (MECS)";
 	<?php
 include('global/header/includes/header.inc');
 include('consumption/manufacturing/includes/sub-navigation.inc');
-include ('./includes/report-header.inc')
+include ('consumption/includes/report-header.inc')
 ?>
 	<div class="l-row l-two-col-right-narrow">
 		<div class="l-col">
 
 
 
-			<?php include ('../../includes/tabs-data-pages-2022.inc') ; ?>
-
+			<?php include ('consumption/manufacturing/includes/tabs-data-pages-2022.inc') ; ?>
 			<div data-tab-count="2" class="l-col eia-tabs">
 				<input type="radio" id="section-two-eia-tab-1" name="section-two" checked="">
 				<input type="radio" id="section-two-eia-tab-2" name="section-two">
@@ -416,17 +415,14 @@ include ('./includes/report-header.inc')
 				</ul>
 				<div class="tab-content">
 					<?php include ('includes/data-tables.inc'); ?>
-					<?php include ('../../includes/mecs_survey_manager_contact_info.inc'); ?>
 				</div>
 				<div class="tab-content">
 					<?php include ('includes/methodology.inc'); ?>
-					<?php include ('../../includes/mecs_survey_manager_contact_info.inc'); ?>
 				</div>
 			</div>
 		</div>
 		<div class="l-col">
-			<? /* php include ('./includes/previous-releases.inc'); */ ?>
-			<?php include ('./includes/side-content.inc') ; ?>
+			<?php include('consumption/manufacturing/includes/side-nav-manufacturing.inc'); ?>
 		</div>
 	</div>
 	<?php include('global/footer/includes/footer.inc'); ?>

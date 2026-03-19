@@ -1,7 +1,6 @@
 <?php
 $globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
 $pageTitle 		= "Manufacturing Energy Consumption Survey (MECS)";
-$locale 		= 'data';
 $L2Title 		= "Manufacturing Energy Consumption Survey (MECS)";
 $locale = 'overview';
 $linkPage 	= 'link02page';
@@ -21,15 +20,15 @@ $linkPage 	= 'link02page';
 	<?php
 include('global/header/includes/header.inc');
 include('consumption/manufacturing/includes/sub-navigation.inc');
-include ('./includes/report-header.inc')
+include ('./includes/report-header.inc');
 ?>
 	<div class="l-row l-two-col-right-narrow">
 		<div class="l-col article">
 			<h2><a name="census"></a>U. S. Census Regions and Divisions:</h2>
-			<img src="../commercial/images/cendivco.gif" height="" alt="census map" />
+			<img src="consumption/commercial/images/cendivco.gif" alt="census map" />
 		</div>
 		<div class="l-col">
-			<?php include('../includes/side-nav-manufacturing.inc'); ?>
+			<?php include('consumption/manufacturing/includes/side-nav-manufacturing.inc'); ?>
 		</div>
 	</div>
 	<?php include('global/footer/includes/footer.inc'); ?>

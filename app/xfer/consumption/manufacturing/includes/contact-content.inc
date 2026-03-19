@@ -1,15 +1,9 @@
-
-
-<?php /*
-
-
 <hr>
 <p>Specific questions on this product may be directed to:</p>
 	  <p><a href="mailto:thomas.lorenz@eia.gov">Tom Lorenz</a><br />
       Phone: 202-586-3442
-		  <!--<br />
-      Fax: 202-586-0018--></p>
-*/ ?>
+		  <!--<br />Fax: 202-586-0018--></p>
+
 
 <!--
 <blockquote>

@@ -1,63 +1,432 @@
+<!doctype html>
+
 <?php
-$pageTitle = "";
+$globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
+$pageTitle 		= "Manufacturing Energy Consumption Survey (MECS)";
 $locale = 'data';
 
 $page['year'] = '2022';
 $url['view'] = isset($_REQUEST['view']) ? $_REQUEST['view'] : '';
 $L2Title = "Manufacturing Energy Consumption Survey (MECS)";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
+
 <head>
-<?php include ('global/includes/eia_head_info.inc') ; ?>
-<script type="text/javascript">
-$(function() {
-$('#tabs').tabs();
-});
-</script>
-<?php  if(!isset($no_titling)) include "global/includes/titling.inc"; ?>
+	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<?php include('global/head/includes/head.inc'); ?>
+	<style>
+	:root {
+		--eia-tab-content-top: 4px solid silver;
+		--eia-tab-content-top-margin-top: -4px;
+		--eia-tab-color-active: #000;
+		--eia-tab-color-active-hover: #0096d7;
+		--eia-tab-color-inactive: #0096d7;
+		--eia-tab-color-inactive-hover: #0096d7;
+		--eia-tab-border-color-active: #0096d7;
+		--eia-tab-border-color-inactive: #fff;
+		--eia-tab-border-bottom-color-inactive: #0096d7;
+		--eia-tab-border-bottom-color-active: #fff;
+		--eia-tab-border-width: 1px;
+		--eia-tab-border-bottom-width: 1px;
+		--eia-tab-background-color-inactive: #fff;
+		--eia-tab-background-color-active: #fff
+	}
+
+	:root {
+		--select-bg-color-inactive: white;
+		--select-bg-color-hover: #fff;
+		--select-bg-color-focus: #fff;
+		--select-border-inactive: 1px solid #007eb5;
+		--select-border-hover: 1px solid #007eb5;
+		--select-border-expanded: 1px solid #007eb5;
+		--select-color-inactive: #007eb5;
+		--select-color-hover: #007eb5;
+		--select-drop-active-color: #fff;
+		--select-drop-active-color-hover: #fff;
+		--select-drop-active-bg-color: #007eb5;
+		--select-drop-active-bg-color-hover: #007eb5;
+		--select-drop-color: #007eb5;
+		--select-drop-color-hover: #007eb5;
+		--select-drop-bg-color-hover: rgba(0, 126, 181, 0.1);
+		--select-drop-bg-color: #ffffff;
+		--arrow-color-inactive: #007eb5;
+		--arrow-color-hover: #007eb5;
+		--arrow-color: #007eb5;
+		--select-border-radius: 0;
+		--select-height: 26px;
+	}
+
+	@media (min-width: 1px) {
+		.eia-select {
+			position: relative;
+			z-index: 100;
+		}
+
+		.eia-select span,
+		.eia-select li,
+		.eia-select label {
+			font-size: 0.80rem !important;
+		}
+
+		.fieldset {
+			position: absolute;
+			top: -4px;
+			left: 8px;
+			border: 0;
+			background-color: white;
+			color: var(--select-drop-color);
+			font-size: 0.75rem;
+			font-weight: 700;
+			line-height: 1em;
+			padding: 0 5px;
+			z-index: 101;
+		}
+
+		span.select__label--placeholder {
+			line-height: 2.5 !important;
+			padding-left: 14px;
+		}
+
+		.select {
+			width: 100%;
+			height: var(--select-height);
+			margin: 0;
+			padding: 0;
+			cursor: pointer;
+			font-family: var(--font-family);
+		}
+
+		.select>li {
+			position: relative;
+		}
+
+		.select__expand {
+			width: 0;
+			height: var(--select-height);
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: var(--select-bg-color-focus);
+		}
+
+		.select__expand:after {
+			content: "\2770";
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translate(-15px, -50%) rotate(270deg);
+			color: var(--arrow-color-inactive);
+			font-size: 1.1rem;
+			pointer-events: none;
+			z-index: 102;
+			transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+			font-weight: 900;
+			font-size-adjust: 0.5;
+		}
+
+		.select__expand:hover:after {
+			color: var(--arrow-color-hover);
+		}
+
+		.select__options {
+			padding-left: 0;
+
+		}
+
+		.select__option {
+			position: relative;
+		}
+
+		.select__expand:hover:after {
+			opacity: 1;
+		}
+
+		.select__expand:checked:after {
+			transform: translate(-15px, -50%) rotate(90deg);
+			color: var(--arrow-color);
+		}
+
+		.select__expand--label {
+			display: block;
+			width: 100%;
+			height: var(--select-height);
+			position: absolute;
+			top: 0;
+			left: 0;
+			cursor: pointer;
+		}
+
+		.select__close {
+			display: none;
+		}
+
+		.select__close--label {
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: none;
+		}
+
+		.select__items {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: var(--select-border-inactive);
+			border-radius: var(--select-border-radius);
+			padding-top: var(--select-height);
+		}
+
+		.select__items:hover {
+			border: var(--select-border-hover);
+		}
+
+		.select__input {
+			display: none;
+		}
+
+		.select__label {
+			transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+			display: block;
+			height: 0;
+			font-size: 1.1rem;
+			line-height: 40px;
+			overflow: hidden;
+			cursor: pointer;
+			padding-left: 20px;
+			display: flex;
+			align-items: center;
+		}
+
+		.select__label a {
+			color: var(--select-drop-color);
+			text-decoration: none;
+		}
+
+		.select__label a:hover {
+			text-decoration: none;
+			color: var(--select-drop-color-hover);
+		}
+
+		.select__label--placeholder {
+			height: var(--select-height);
+			vertical-align: middle;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: transparent;
+			color: var(--select-color-inactive);
+			align-items: flex-start;
+		}
+
+		.select__expand:checked+.select__close--label+.select__options .select__label {
+			height: var(--select-height);
+		}
+
+		.select__expand:checked+.select__close--label+.select__options .select__label:hover {
+			background-color: var(--select-drop-bg-color-hover);
+		}
+
+		.select__expand:checked+.select__close--label {
+			display: block;
+		}
+
+		.select__expand:checked+.select__close--label+.select__options .select__label {
+			background-color: var(--select-drop-bg-color);
+		}
+
+		.select__expand:checked+.select__close--label+.select__options .select__active .select__label {
+			background-color: var(--select-drop-active-bg-color);
+		}
+
+		.select__expand:checked+.select__close--label+.select__options .select__active .select__label a {
+			color: var(--select-drop-active-color);
+		}
+
+		.select__expand:checked+.select__close--label+.select__options .select__active .select__label:hover {
+			background-color: var(--select-drop-active-bg-color-hover);
+			color: var(--select-drop-color-focus);
+		}
+
+		.select__expand:checked+.select__close--label+.select__options+.select__expand--label {
+			display: none;
+		}
+
+		.select__input:checked+.select__label {
+			height: var(--select-height);
+			margin-top: var(--select-height);
+		}
+
+		li:has(input.select__expand[type="radio"]:checked) {
+			border: var(--select-border-expanded);
+			outline: 0;
+			box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.075), 0 3px 8px rgba(102, 175, 233, 0.6);
+		}
+
+		.eia-select input[type="radio"] {
+			display: none !important;
+		}
+
+		.eia-select li {
+			margin: 0 !important;
+			list-style: none !important;
+		}
+	}
+
+	@media (min-width: 1px) {
+
+
+
+		h1 {
+			display: flex;
+		}
+
+		h1 span.right {
+			font-size: 16px;
+		}
+
+
+		.eia-tabs {
+			overflow-x: hidden;
+			padding-bottom: 2em;
+			width: 100%
+		}
+
+		.eia-tabs [type=radio] {
+			display: none
+		}
+
+		.eia-tabs>ul {
+			display: flex;
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			border-bottom-width: var(--eia-tab-border-bottom-width);
+			border-bottom-style: solid;
+			border-bottom-color: var(--eia-tab-border-bottom-color-inactive)
+		}
+
+		.eia-tabs>ul li label {
+			display: block;
+			margin-bottom: -1px;
+			padding: 6px 1em;
+			border-width: var(--eia-tab-border-width);
+			border-style: solid;
+			border-color: var(--eia-tab-border-color-inactive);
+			border-bottom-width: var(--eia-tab-border-bottom-width);
+			border-bottom-color: var(--eia-tab-border-bottom-color-inactive);
+			background: var(--eia-tab-background-color-inactive);
+			color: var(--eia-tab-color-inactive);
+			font-weight: 600;
+			letter-spacing: 1px;
+			cursor: pointer;
+			transition: all .3s
+		}
+
+		.eia-tabs>ul li:hover label {
+			color: var(--eia-tab-color-inactive-hover)
+		}
+
+		.eia-tabs>ul li:nth-child(1),
+		.eia-tabs>ul li:nth-child(2) {
+			align-self: flex-start
+		}
+
+		.eia-tabs[data-tab-count="3"]>ul li:nth-child(3) {
+			align-self: flex-start
+		}
+
+		.eia-tabs[data-tab-count="2"]>ul li:nth-child(3),
+		.eia-tabs[data-tab-count="3"]>ul li:nth-child(4) {
+			flex-grow: 1
+		}
+
+		.eia-tabs>ul li:nth-child(5),
+		.eia-tabs>ul li:nth-child(6),
+		.eia-tabs>ul li:nth-child(7) {
+			align-self: flex-end
+		}
+
+		.eia-tabs[data-tab-count="2"]>ul li:nth-child(4) {
+			align-self: flex-end
+		}
+
+		.eia-tabs [type=radio]:checked~ul>li:hover label {
+			color: var(--eia-tab-color-active-hover)
+		}
+
+		.eia-tabs [type=radio]:nth-of-type(1):checked~ul>li:nth-of-type(1) label,
+		.eia-tabs [type=radio]:nth-of-type(2):checked~ul>li:nth-of-type(2) label,
+		.eia-tabs[data-tab-count="3"] [type=radio]:nth-of-type(3):checked~ul>li:nth-of-type(3) label {
+			border-width: var(--eia-tab-border-width);
+			border-style: solid;
+			border-color: var(--eia-tab-border-color-active);
+			border-bottom-width: var(--eia-tab-border-bottom-width);
+			border-bottom-color: var(--eia-tab-border-bottom-color-active);
+			background: var(--eia-tab-background-color-active);
+			color: var(--eia-tab-color-active)
+		}
+
+		.eia-tabs [type=radio]:nth-of-type(1):checked~.tab-content:nth-of-type(1),
+		.eia-tabs [type=radio]:nth-of-type(2):checked~.tab-content:nth-of-type(2),
+		.eia-tabs[data-tab-count="3"] [type=radio]:nth-of-type(3):checked~.tab-content:nth-of-type(3) {
+			display: block
+		}
+
+		.eia-tabs .tab-content {
+			display: none
+		}
+	}
+
+	.eia-tabs .tab-content .article {
+		border-top: none !important;
+	}
+
+	.eia-tabs .tab-content .article p {
+		font-size: 1rem !important;
+		line-height: 1.3 !important;
+		margin: 0 0 1em !important;
+	}
+	</style>
 </head>
 <body>
-<?php /* Outer Wrapper */ ?>
-<div id="outerX">
-<?php include ('global/includes/eia_header.inc') ; ?>
-<?php include ('../../../includes/subnav_consumption_mecs.inc') ; ?>
-<?php /* Page/Body Content */ ?>
-<div class="pagecontent mr_temp3">
-<div class="main_col">
-<?php include ('../../includes/data_cycle_jump_menu.inc') ; ?>
-<?php include ('../../includes/tabs-data-pages-2022.inc') ; ?>
-<div class="tab-contentbox">
-<?php if ( $url['view'] == "methodology") { ?>
-<div id="methodology">
-<?php include ('includes/methodology.inc'); ?>
-<?php include ('../../includes/mecs_survey_manager_contact_info.inc'); ?>
-</div>
-	<?php /*
-<?php } else if ( $url['view'] == "methodology_2018") { ?>
-<div id="methodology_2018">
-<?php include ('includes/methodology_2018.inc'); ?>
-<?php include ('../../includes/mecs_survey_manager_contact_info.inc'); ?>
-</div>*/ ?>
-<?php  } else { ?>
-<div id="data">
-<?php include ('includes/data-tables.inc'); ?>
-<?php include ('../../includes/mecs_survey_manager_contact_info.inc'); ?>
-</div>
-<?php  } // end if ?>
-</div>
-</div>
-<?php /*/ Main Column */ ?>
-<?php /* Side Column */ ?>
-<div class="side_col right">
-<?php include ('../../includes/side_nav_manufacturing_data.inc') ; ?>
-</div>
-<?php /*/ Side Column */ ?>
-</div>
-<?php /*/ Page/Body Content */ ?>
-<?php include ('global/includes/eia_footer.inc') ; ?>
-</div>
-<?php /*/ Outer Wrapper */ ?>
+	<?php
+include('global/header/includes/header.inc');
+include('consumption/manufacturing/includes/sub-navigation.inc');
+include ('consumption/includes/report-header.inc')
+?>
+	<div class="l-row l-two-col-right-narrow">
+		<div class="l-col">
+
+
+
+			<?php include ('consumption/manufacturing/includes/tabs-data-pages-2022.inc') ; ?>
+
+			<div data-tab-count="2" class="l-col eia-tabs">
+				<input type="radio" id="section-two-eia-tab-1" name="section-two" checked="">
+				<input type="radio" id="section-two-eia-tab-2" name="section-two">
+				<ul class="l-margin-bottom">
+					<li><label for="section-two-eia-tab-1">Data</label></li>
+					<li><label for="section-two-eia-tab-2">Methodology & Forms</label></li>
+				</ul>
+				<div class="tab-content">
+					<?php include ('includes/data-tables.inc'); ?>
+				</div>
+				<div class="tab-content">
+					<?php include ('includes/methodology.inc'); ?>
+				</div>
+			</div>
+		</div>
+		<div class="l-col">
+			<?php include('consumption/manufacturing/includes/side-nav-manufacturing.inc'); ?>
+		</div>
+	</div>
+	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
 
 </html>

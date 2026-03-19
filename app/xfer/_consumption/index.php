@@ -11,17 +11,20 @@ $l2id 			= 4;
 <html>
 
 <head>
-	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<title>
+		<?=$pageTitle?> -
+		<?=$globalTitle?>
+	</title>
 	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
-	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['PHP_SELF']?>">
-	<meta name="url" content="https://www.eia.gov<?=$_SERVER['PHP_SELF']?>">
-	<?php include('adaptive/global/head/includes/head.inc'); ?>
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<?php include('global/head/includes/head.inc'); ?>
 </head>
 
 <body>
-	<?php include('adaptive/global/header/includes/header.inc'); ?>
+	<?php include('global/header/includes/header.inc'); ?>
 	<?php include('./includes/sub-navigation.inc'); ?>
-	<?php include('global/sliders/multi-card-slider.inc'); ?>
+	<?php include('global/sliders/carousel.inc'); ?>
 	<div class="l-row l-two-col-even">
 		<div class="l-col">
 			<?php include('./includes/recent-data.inc'); ?>
@@ -37,7 +40,13 @@ $l2id 			= 4;
 	<?php include('./includes/consumption-survey.inc'); ?>
 	<?php include('./includes/visualizations.inc'); ?>
 	<?php include('./includes/energy-education.inc'); ?>
-	<?php include('adaptive/global/footer/includes/footer.inc'); ?>
+	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
+<script>
+	var petroleumTable = document.querySelectorAll('.basic_table')
+	for (var i = 0; i < petroleumTable.length; i++) {
+		petroleumTable[i].setAttribute("class", "basic-table full-width");
+	}
+</script>
 
 </html>

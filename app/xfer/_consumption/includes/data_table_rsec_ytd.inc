@@ -330,7 +330,8 @@ $ELECTRICITY_CONS_YTD_2015 = $neic->get($bindVariables);
 	<?php /* (i.e. publication month = 6; ending time period = 7) */ ?>
 	<?php /* **************************************************** */ ?>
 	<?php /* Set MER publication month value */ ?>
-	<?php $iPubMonth = 11; $iPubYear = date("Y"); ?>
+	<?php $iPubMonth = 11;
+$iPubYear = date("Y"); ?>
 	<?php /* ********************************************** */ ?>
 	<?php /* Convert publication month value into calendar text string */ ?>
 	<?php $strPubMonthString = date("F", mktime(0, 0, 0, $iPubMonth, 1, $iPubYear)); ?>

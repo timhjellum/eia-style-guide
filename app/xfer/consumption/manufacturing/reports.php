@@ -1,18 +1,10 @@
-<?php
-
-?>
-
 <!doctype html>
 
 <?php
 $globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
 $pageTitle 		= "Manufacturing Energy Consumption Survey (MECS)";
-$globalTitle 	= 'U.S. Energy Information Administration (EIA)';
-$pageTitle 		= 'Consumption & Efficiency Reports';
 $L2T 			= 'Consumption & Efficiency';
 $l2id 			= 4;
-$l2page 		= 'ap';
-$locale 		= 'ap';
 $sect 			= 'Consumption';
 $L2Title 		= "Manufacturing Energy Consumption Survey (MECS)";
 
@@ -35,8 +27,8 @@ $locale = 'overview';
 <body onLoad="clearForms()" onUnload="clearForms()">
 	<?php
 include('global/header/includes/header.inc');
-include('../../../includes/sub-navigation.inc');
-include ('./includes/report-header.inc')
+include('consumption/manufacturing/includes/sub-navigation.inc');
+include ('./includes/report-header.inc');
 ?>
 
 	<?php $url['t'] = '90'; ?>

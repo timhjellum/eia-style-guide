@@ -32,7 +32,7 @@
   <p class="no-border"><a href="https://www.energy.gov/eere/amo/manufacturing-energy-and-carbon-footprints-2014-mecs">Manufacturing Energy and Carbon Footprints
 </a>
 <p class="no-border"><img src="../manufacturing/reports/2010/images/doe_mecs.jpg"></span>
-  
+
 
   <?php /*/ Side Content */ ?>
   </div>

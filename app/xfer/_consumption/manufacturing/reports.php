@@ -1,41 +1,47 @@
-<?php
-$pageTitle = "";
-$locale = 'ap';
-$sect = 'Consumption';
-$l2id = 4; // for consumption, see NEIC.BS_L2_PAGES
-$L2Title = "Manufacturing Energy Consumption Survey (MECS)";
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-<?php include ('global/includes/eia_head_info.inc') ; ?>
+<!doctype html>
 
-<?php  if(!isset($no_titling)) include "global/includes/titling.inc"; ?></head>
+<?php
+$globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
+$pageTitle 		= "Manufacturing Energy Consumption Survey (MECS)";
+$L2T 			= 'Consumption & Efficiency';
+$l2id 			= 4;
+$sect = 'Consumption';
+$L2Title = "Manufacturing Energy Consumption Survey (MECS)";
+
+require_once 'global/includes/utils/utils.inc';
+require_once 'global/includes/utils/Neic.inc';
+$neic      = new NEIC();
+$locale = 'overview';
+?>
+<html>
+
+<head>
+	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<?php include('global/head/includes/head.inc'); ?>
+
+</head>
 
 <body onLoad="clearForms()" onUnload="clearForms()">
-<div id="outerX"><?php /* Outer Wrapper */ ?>
-<?php include ('global/includes/eia_header.inc') ; ?>
-<?php include ('../includes/subnav_consumption_mecs.inc') ; ?>
+	<?php
+include('global/header/includes/header.inc');
+include('consumption/manufacturing/includes/sub-navigation.inc');
+include ('./includes/report-header.inc');
+?>
 
-<?php $url['t'] = '90'; ?><?php /* Classifies this reports page as commercial (id88) */ ?>
-<?php include ('global/includes/bookshelf_single.inc') ; ?>
-<?php /* Page/Body Content */ ?>
-
-    <div class="pagecontent mr_temp1">
-      <div class="side_col left">
-		<?php /* Side Column */ ?>
-          <?php include ('global/includes/bookshelf_side_search.inc') ; ?>
-        <?php /* Side Column */ ?>
-
+	<?php $url['t'] = '90'; ?>
+	<?php /* Classifies this reports page as commercial (id88) */ ?>
+	<?php include('global/includes/bookshelf_single.inc'); ?>
+	<div class="l-row l-two-col-left-narrow">
+		<div class="l-col">
+			<?php include('global/includes/bookshelf_side_search.inc'); ?>
       </div>
-      <div class="main_col">
-      <?php /* Main Column */ ?>
-        <?php include ('global/includes/bookshelf_results_sub.inc') ; ?>
-      <?php /* Main Column */ ?>
+		<div class="l-col article">
+				<?php include('global/includes/bookshelf_results_sub.inc'); ?>
       </div>
     </div>
-<?php /*/ Page/Body Content */ ?>
-<?php include ('global/includes/eia_footer.inc') ; ?>
-</div><?php /*/ Outer Wrapper */ ?>
+	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
 </html>

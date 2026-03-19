@@ -1,5 +1,12 @@
 <!doctype html>
-<?php $globalTitle = 'U.S. Energy Information Administration (EIA)'; $pageTitle = "Manufacturing Energy Consumption Survey (MECS)"; $locale = 'overview'; //$page['year'] = '2022'; //$url['view'] = isset($_REQUEST['view']) ? $_REQUEST['view'] : ''; $L2Title = "Manufacturing Energy Consumption Survey (MECS)"; ?>
+<?php
+$globalTitle = 'U.S. Energy Information Administration (EIA)';
+$pageTitle = "Manufacturing Energy Consumption Survey (MECS)";
+$locale = 'overview';
+//$page['year'] = '2022';
+//$url['view'] = isset($_REQUEST['view']) ? $_REQUEST['view'] : '';
+$L2Title = "Manufacturing Energy Consumption Survey (MECS)";
+?>
 <html>
 
 <head>
@@ -18,42 +25,361 @@
 
 <body>
 	<?php
-	include('global/header/includes/header.inc');
+include('global/header/includes/header.inc');
 include('consumption/manufacturing/includes/sub-navigation.inc');
-	include('./includes/report-header.inc');
-	include('./includes/carousel.inc');
+include('consumption/manufacturing/includes/report-header.inc');
+include('consumption/manufacturing/includes/carousel.inc');
 	?>
 	<div class="l-row l-two-col-right-narrow">
 		<div class="l-col article">
-			<h2>Industry Analysis Briefs </h2>
-			<h5><a href="/consumption/manufacturing/briefs/steel/index.php">Steel Industry Analysis</a></h5>
-			<p>The steel industry is critical to the U.S. economy. Steel is the material of choice for many elements of construction, transportation, manufacturing, and a variety of consumer products. It is the backbone of bridges, skyscrapers, railroads, automobiles, and appliances. Most grades of steel used today - particularly high-strength steels that are lighter and more versatile - were not available a decade ago.</p>
-			<h5><a href="/consumption/manufacturing/briefs/chemical/index.php">Chemical Industry Analysis</a></h5>
-			<p>The chemical industries are a cornerstone of the U.S. economy, converting raw materials such as oil, natural gas, air, water, metals, and minerals into thousands of various products. Chemicals are key materials for producing an extensive assortment of consumer goods.</p>
-			<h2>Features</h2>
-			<h3><a href="/consumption/manufacturing/reports/2014/fuel_switching/"><img src="/consumption/manufacturing/reports/2014/fuel_switching/images/fig1.png" alt="bar chart" />The Capability of U.S. Manufacturing to Switch Fuels</a></h3>
-			<p><span class="release-dates">Release Date:</span> September 6, 2018</p>
-			<p>Preliminary estimates show that the total U.S. manufacturing energy consumption increased about 3.7% between 2010 and 2014. This is the first measured 4-year increase in manufacturing energy consumption since 2002 (Figure 1). Energy source shares have changed modestly since 2002, with natural gas rising from 29% to 33% of all manufacturing energy consumption. Conversely, during this same period, the share of delivered energy to manufacturing from coal, coke and breeze declined from 10% to 8%, while the share of fuel oils and naphtha together decreased from 7% to 5%.</p>
-			<h3><a href="/consumption/manufacturing/reports/2014/enduse_intensity/"><img src="/consumption/manufacturing/reports/2014/enduse_intensity/images/fig1.png" alt="bar chart" />Energy Use and Energy Intensity of U.S. Manufacturing—Data from the 2014 Manufacturing Energy Consumption Survey (MECS) </a></h3>
-			<p><span class="release-dates">Release Date:</span> October 18, 2017</p> Energy intensity in manufacturing in the United States decreased from 2010 to 2014.U.S. manufacturing overall fuel intensity decreased by 4.4% from 3.016 thousand British thermal units (Btu) per dollar of output in 2010 to 2.882 thousand Btu in 2014. U.S. manufacturing fuel consumption rose 4.7% from 2010 to 2014, although real gross output increased more rapidly at 9.6%. <h3><a href="/consumption/manufacturing/reports/2014/pre_estimates/"><img src="/consumption/manufacturing/reports/2014/pre_estimates/images/figure_1.png" alt="bar chart" />Preliminary estimates show that U.S. manufacturing energy consumption increased between 2010 and 2014 </a></h3>
-			<p><span class="release-dates">Release Date:</span> October 13, 2016</p>
-			<p>Preliminary estimates show that the total U.S. manufacturing energy consumption increased about 3.7% between 2010 and 2014. This is the first measured 4-year increase in manufacturing energy consumption since 2002 (Figure 1). Energy source shares have changed modestly since 2002, with natural gas rising from 29% to 33% of all manufacturing energy consumption. Conversely, during this same period, the share of delivered energy to manufacturing from coal, coke and breeze declined from 10% to 8%, while the share of fuel oils and naphtha together decreased from 7% to 5%.</p>
-			<h3><a href="/consumption/manufacturing/reports/2010/ng_cost/"><img src="/consumption/manufacturing/reports/2010/ng_cost/fig1.png" alt="bar chart" />Cost of Natural Gas Used in Manufacturing Sector Has Fallen</a></h3>
-			<p><span class="release-dates">Release Date:</span> September 6, 2013</p>
-			<p>Natural gas has been an important exception to the trend of rising prices for energy sources used by manufacturers. Production of natural gas in the United States increased rapidly beginning in 2007 as a result of resources found in shale formations. That increase in supply has in turn lowered the price of natural gas to manufacturers as well as other consumers.</p>
-			<h3><a href="/consumption/manufacturing/reports/2010/decrease_use.php"><img src="/consumption/manufacturing/reports/2010/images/fig1-lg.png" alt="bar chart" />Manufacturing energy consumption data show large reductions in both manufacturing energy use and the energy intensity of manufacturing activity between 2002 and 2010</a></h3>
-			<p><span class="release-dates">Release Date:</span> March 19, 2013</p>
-			<p>Total energy consumption in the manufacturing sector decreased by 17 percent from 2002 to 2010 (Figure 1), according to new 2010 MECS data.</p>
-			<h3><a href="/consumption/manufacturing/reports/2010/early_estimates.php"><img src="/consumption/manufacturing/reports/2010/images/acbfig1-lg.jpg" alt="bar chart" />Early-release estimates from the 2010 MECS show that energy consumption in the manufacturing sector decreased between 2006 and 2010</a></h3>
-			<p><span class="release-dates">Release Date:</span> March 28, 2012</p>
-			<p>Energy consumption in the U.S. manufacturing sector fell from 21,098 trillion Btu (tBtu) in 2006 to 19,062 tBtu in 2010, a decline of almost 10 percent, based on preliminary estimates released from the 2010 Manufacturing Energy Consumption Survey (MECS). This decline continues the downward trend in manufacturing energy use since the 1998 MECS report.</p>
+			<?php include('consumption/manufacturing/includes/index-content.inc'); ?>
+
 		</div>
 		<div class="l-col">
-			<?php include('../includes/side-nav-manufacturing.inc'); ?>
+			<!-- include ('../includes/side_nav_manufacturing.inc') -->
+			<!-- include ('../includes/side_nav_manufacturing.inc') -->
+			<?php include('consumption/manufacturing/includes/side-nav-manufacturing.inc'); ?>
 		</div>
 	</div>
 	<?php include('global/footer/includes/footer.inc'); ?>
 	<script src="/global/scripts/global.mecs.min.js"></script>
 </body>
+
+<script>
+$(document).ready(function() {
+
+	var colors = Highcharts.getOptions().colors,
+		tooltipFormatter = {
+			0: function(point) {
+				return '<b>Average consumption</b><br>' + Highcharts.numberFormat(point.y, 1) + ' million Btu per housing unit'
+			},
+			1: function(point) {
+				return '<b>Number of housing units</b><br>' + Highcharts.numberFormat(point.y, 1) + ' million housing units'
+			}
+		}
+	for (var i = 0; i < $('.fig1').length; i++) {
+		new Highcharts.Chart({
+			chart: {
+				zoomType: 'xy',
+				renderTo: $('.fig1')[i],
+				defaultSeriesType: 'line',
+				height: 360,
+				marginLeft: 50
+			},
+			exporting: {
+				csvOptions: {
+					overrideURL: '/consumption/residential/reports/2009/xls/2009 RECS CE DER 1 Graphs v3.xlsx'
+				}
+			},
+			credits: {
+				enabled: false,
+				text: 'Source: Residential Energy Consumption Survey. Includes occupied primary housing units only.',
+				href: '/consumption/residential/data/2009/'
+			},
+			title: {
+				text: 'Average energy consumption per home and number of housing units, 1980-2009'
+			},
+			tooltip: {
+				formatter: function() {
+					return tooltipFormatter[this.series.index](this);
+				},
+				crosshairs: true
+			},
+			xAxis: {
+				categories: ['1980', '', '1982', '', '1984', '', '', '1987', '', '', '1990', '', '', '1993', '', '', '', '1997', '', '', '', '2001', '', '', '', '2005', '', '', '', '2009'],
+				tickColor: '#ffffff'
+			},
+			yAxis: [{
+				title: {
+					text: 'million Btu per housing unit',
+					style: {
+						color: colors[0]
+					}
+				},
+				max: 115,
+				min: 0,
+				//tickInterval: 5,
+			}, {
+				title: {
+					text: 'million housing units',
+					style: {
+						color: colors[1]
+					}
+				},
+				max: 115,
+				min: 0,
+				//tickInterval: 5,
+				opposite: true
+			}],
+			series: [{
+				data: [114, null, 103, null, 104.7, null, null, 100.8, null, null, 98, null, null, 103.6, null, null, null, 101, null, null, null, 92.2, null, null, null, 94.9, null, null, null, 89.6],
+				name: 'Average Consumption',
+				connectNulls: true,
+				marker: {
+					enabled: true,
+					radius: 2
+				}
+			}, {
+				data: [81.6, null, 83.8, null, 86.3, null, null, 90.5, null, null, 94, null, null, 96.6, null, null, null, 101.5, null, null, null, 107, null, null, null, 111.1, null, null, null, 113.6],
+				name: 'Number Housing Units',
+				connectNulls: true,
+				marker: {
+					enabled: true,
+					radius: 3
+				},
+				yAxis: 1
+			}]
+		});
+	}
+	for (var i = 0; i < $('.fig2').length; i++) {
+		new Highcharts.Chart({
+			chart: {
+				zoomType: 'xy',
+				renderTo: $('.fig2')[i],
+				defaultSeriesType: 'column',
+				//width: 640,
+				height: 350,
+				//marginBottom: 50
+			},
+			credits: {
+				enabled: false,
+				text: 'Source: Table HC10.8 Average Square Footage of U.S. Homes, By Housing Characteristics, 2009',
+				href: '/consumption/residential/data/2009/#sf'
+			},
+			title: {
+				text: 'Figure 1. Newer homes trend larger in all regions of the country'
+			},
+			tooltip: {
+				formatter: function() {
+					return '<b>' + this.x + ' homes built in ' + this.series.name + '</b><br/>' + this.y + ' average square footage';
+				}
+			},
+			xAxis: {
+				categories: ['US', 'Northeast', 'Midwest', 'South', 'West'],
+				plotLines: [
+					$.extend(true, {
+						value: 0.5
+					}, Highcharts.eia_projections_line)
+				],
+			},
+			yAxis: [{
+				max: 3600,
+				tickInterval: 600,
+				title: {
+					text: 'average square footage'
+				}
+			}],
+			series: [{
+				name: '1970s',
+				data: [1685, 1922, 1887, 1604, 1493]
+			}, {
+				name: '1980s',
+				data: [1770, 2125, 2010, 1619, 1677]
+			}, {
+				name: '1990s',
+				data: [2200, 2507, 2524, 2073, 2082]
+			}, {
+				name: '2000s',
+				data: [2465, 3006, 3033, 2302, 2146]
+			}]
+		});
+	}
+	for (var i = 0; i < $('.fig3').length; i++) {
+		new Highcharts.Chart({
+			chart: {
+				renderTo: $('.fig3')[i],
+
+				defaultSeriesType: 'column',
+				//width: 640,
+				height: 350,
+				//marginBottom: 50
+			},
+			credits: {
+				enabled: false,
+				text: 'Source: U.S. Energy Information Administration, 2009 Residential Energy Consumption Survey',
+				href: 'http://www.eia.gov/consumption/residential/'
+			},
+			title: {
+				text: 'Number of electronic devices by household, 2009',
+				align: 'left',
+				x: 1,
+				y: 20
+			},
+			xAxis: [{
+				categories: ['0', '1', '2', '3', '4', '5+', ' ', '0', '1', '2', '3', '4', '5+', ' ', '0', '1-3', '4-8', '9+'],
+			}, { // slave axis
+				linkedTo: 0,
+				lineWidth: 0,
+				tickLength: 0,
+				offset: 25,
+				categories: ['Televisions', '', '', '', '', '', ' ', 'Computers', '', '', '', '', '', ' ', 'Rechargeable electronic devices', '', '', ''],
+				labels: {
+					align: 'left',
+					x: 30
+				}
+			}],
+			yAxis: {
+				min: 0,
+				max: 60,
+				tickInterval: 10,
+				title: {
+					text: 'million households'
+				}
+			},
+			tooltip: {
+				formatter: function() {
+					return '<b>' + this.point.name + '</b> ' + '</br> in ' + Highcharts.numberFormat(this.y, 1) + ' million households';
+				}
+			},
+			plotOptions: {
+				column: {
+					pointWidth: 30,
+				},
+			},
+			series: [{
+				showInLegend: false,
+				color: 'rgba(0, 150, 215, 1.0)',
+				data: [{
+					name: '0 Televisions',
+					y: 1.5
+				}, {
+					y: 24.2,
+					name: '1 Television'
+				}, {
+					y: 37.5,
+					name: '2 Televisions'
+				}, {
+					y: 26.6,
+					name: '3 Televisions'
+				}, {
+					y: 14.2,
+					name: '4 Televisions'
+				}, {
+					y: 9.7,
+					name: '5+ Televisions'
+				}, {
+					y: null
+				}, {
+					name: '0 Computers',
+					y: 27.4
+				}, {
+					y: 46.9,
+					name: '1 Computer'
+				}, {
+					y: 24.3,
+					name: '2 Computers'
+				}, {
+					y: 9.5,
+					name: '3 Computers'
+				}, {
+					y: 3.6,
+					name: '4 Computers'
+				}, {
+					y: 2.0,
+					name: '5+ Computers'
+				}, {
+					y: null
+				}, {
+					name: '0 Rechargeable electronic<br/>devices',
+					y: 11.4
+				}, {
+					y: 57.9,
+					name: '1-3 Rechargeable electronic<br/>devices'
+				}, {
+					y: 36.4,
+					name: '4-8 Rechargeable electronic<br/>devices'
+				}, {
+					y: 7.9,
+					name: '9+ Rechargeable electronic<br/> devices'
+				}]
+			}]
+		});
+	}
+});
+
+for (var i = 0; i < $('.20130103').length; i++) {
+	new Highcharts.Chart({
+		chart: {
+			renderTo: $('.20130103')[i],
+			defaultSeriesType: 'bar',
+			zoomType: 'xy',
+			height: 320
+		},
+		title: {
+			text: 'Percentage of household site energy consumption by end-use, 1993-2009'
+		},
+
+		tooltip: {
+			/*formatter: function() {
+                return '<b>' + this.series.name + '</b><br />' + this.x +
+                    '<br />'+ this.y;
+								}*/
+			enabled: false
+		},
+		credits: {
+			enabled: false,
+			text: 'Sources: U.S. Energy Information Administration, 2009 Residential Energy Consumption Survey',
+			//href: 'http://www.eia.doe.gov/emeu/mecs/mecs2002/data02/shelltables.html',
+			position: {
+				y: -20
+			},
+			style: {
+				width: 550
+			}
+		},
+		legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlign: 'middle'
+		},
+		xAxis: {
+			categories: ['Space Heating', 'Air-conditioning', 'Water heating', 'Refrigerators', 'Other Appliances , Electronics, Lighting, Misc.']
+		},
+		yAxis: {
+			title: {
+				text: 'Percent of total end uses'
+			}
+		},
+		captions: {
+			enabled: true,
+			style: {
+				color: 'black',
+				fontSize: '11px',
+				fontFamily: 'Arial, Verdana, sans-serif',
+				fontWeight: 'bold'
+			}
+			/*,
+							items:[{
+								text: "* Not Reported/Not Asked includes end use that was not collected along with those establishments that did not know or report their end use"
+								}]*/
+		},
+		plotOptions: {
+			series: {
+				dataLabels: {
+					enabled: true,
+					formatter: function() {
+						return (this.y * 10).toFixed(0) + '%';
+					},
+					style: {
+						fontWeight: 'bold',
+						color: 'black'
+					}
+				}
+			}
+		},
+		series: [{
+			data: [5.32, 0.46, 1.83, 0.46, 1.94],
+			color: 'rgba(0,150,215,.85)',
+			name: '1993',
+			lineWidth: 10
+		}, {
+			data: [4.23, 0.64, 1.80, 0.48, 3.04],
+			color: 'rgba(163,52,64,.85)',
+			name: '2009',
+			lineWidth: 10
+		}]
+	});
+}
+</script>
 
 </html>
