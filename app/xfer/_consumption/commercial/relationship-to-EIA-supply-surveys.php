@@ -1,24 +1,30 @@
-<?php
-$pageTitle = "";
-$locale = 'overview';
-$L2Title = "Commercial Buildings Energy Consumption Survey (CBECS)";
+<!doctype html>
 
-$pageYear = '';
+<?php
+$globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
+$pageTitle		= 'Commercial Buildings Energy Consumption Survey (CBECS)';
+$L2Title 		= "Commercial Buildings Energy Consumption Survey (CBECS)";
+$locale = 'overview';
+$L2Title = "";
 ?>
-<!DOCTYPE html PuBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
 <head>
-<?php include ('global/includes/eia_head_info.inc') ; ?>
-<?php  if(!isset($no_titling)) include "global/includes/titling.inc"; ?></head>
+	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<?php include('global/head/includes/head.inc'); ?>
+
+</head>
+
 <body>
-<div id="outerX">
-<?php /* Outer Wrapper */ ?>
-<?php include ('global/includes/eia_header.inc') ; ?>
-<?php include ('../includes/subnav_consumption_cbecs.inc') ; ?>
-<?php /* Page/Body Content */ ?>
-<div class="pagecontent mr_temp2">
-  <div class="main_col"> 
-    <?php /* Main Column */ ?>
+	<?php
+include('global/header/includes/header.inc');
+include('consumption/commercial/includes/sub-navigation.inc');
+include('consumption/includes/report-header.inc')
+?>
+	<div class="l-row l-two-col-right-narrow">
+		<div class="l-col">
     
     <h1>Relationship of CBECS Coverage to EIA Supply Surveys</h1>
     <p>The primary purpose of the CBECS is to collect accurate statistics of energy consumption by individual buildings. EIA also collects data on total energy supply (sales). For the information on sales totals, a different reporting system is used for each fuel and the boundaries between the different sectors (e.g., residential, commercial, industrial) are drawn differently for each fuel.</p>
@@ -229,18 +235,12 @@ $pageYear = '';
         </tr>
       </tfoot>
     </table>
-    <?php include ('includes/cbecs_survey_manager_contact_info.inc') ; ?>
   </div>
-  <?php /* Side Column */ ?>
-  <div class="side_col right">
-    <?php include ('includes/side_nav_commercial_data.inc') ; ?>
+		<div class="l-col">
+			<?php include('consumption/commercial/includes/side-nav-commercial.inc'); ?>
+		</div>
   </div>
-  
-  <?php /*/ Side Content */ ?> 
-  
-  <?php /*/ Page/Body Content */ ?> 
-</div>
-<?php include ('global/includes/eia_footer.inc') ; ?>
-<?php /*/ Outer Wrapper */ ?>
+	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
+  
 </html>

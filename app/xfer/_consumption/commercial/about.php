@@ -1,66 +1,38 @@
+<!doctype html>
+
 <?php
-$pageTitle = "";
+$globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
+$pageTitle		= 'Commercial Buildings Energy Consumption Survey (CBECS)';
+$L2Title 		= "Commercial Buildings Energy Consumption Survey (CBECS)";
 $locale = 'overview';
-$L2Title = "Commercial Buildings Energy Consumption Survey (CBECS)";
-$pagetitle = 'Energy Information Administration (EIA)- About the Commercial Buildings Energy Consumption Survey (CBECS)';
+$L2Title = "";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
 <head>
-<title><?php echo "$pagetitle"?></title>
-<?php include ('global/includes/eia_head_info.inc') ; ?>
-<?php  if(!isset($no_titling)) include "global/includes/titling.inc"; ?></head>
-<body>
-<div id="outerX"> 
-  <?php /* Outer Wrapper */ ?>
-  <?php include ('global/includes/eia_header.inc') ; ?>
-      <?php include ('../includes/subnav_consumption_cbecs.inc') ; ?>
-    <?php /* Page/Body Content */ ?>
-    <div class="pagecontent mr_temp3">
-      <div class="main_col"> 
-        <?php /* Main Column */ ?>
+	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<?php include('global/head/includes/head.inc'); ?>
         
-<h1>About the Commercial Buildings Energy Consumption Survey</h1>
-<p>The Commercial Buildings Energy Consumption Survey (CBECS) is a national sample survey that collects information on the stock of U.S. commercial buildings, including their energy-related building characteristics and energy usage data (consumption and expenditures). Commercial buildings include all buildings in which at least half of the floorspace is used for a purpose that is not residential, industrial, or agricultural. By this definition, CBECS includes building types that might not traditionally be considered commercial, such as schools, hospitals, correctional institutions, and buildings used for religious worship, in addition to traditional commercial buildings such as stores, restaurants, warehouses, and office buildings.</p>
+</head>
 
-<p>CBECS is conducted in two phases:</p>
-<p><strong>Phase 1 is the Buildings Survey</strong>, which collects building characteristics (such as building size and use, structural characteristics, energy sources and uses, and energy-using equipment) and energy usage data (annual consumption and costs) from a respondent at the building, either by an interviewer or using a web questionnaire.</p>
-
-<p><strong>Phase 2 is the Energy Supplier Survey (ESS)</strong>, which is a follow-up survey of the energy providers for buildings that responded in Phase 1. Providers of electricity, natural gas, heating oil (which includes fuel oil, kerosene, and diesel), and district heat (steam or hot water) supply monthly energy usage data for each building. The energy data are collected using a secure website that offers several reporting options designed to minimize reporting burden.</p>
-<?php /*p><strong>Phase 2 is the Energy Supplier Survey (ESS)</strong>, where EIA follows up with the energy providers (like electric utilities) identified in Phase 1, to collect missing or invalid energy usage data for these buildings. Energy data are collected using a secure website that offers several reporting options. EIA works with hundreds of utilities each survey cycle to minimize the burden associated with requests for building data.</p*/ ?>
-<?php /*p>Set to begin in March 2014, Westat is  EIA's contractor for the 2012 CBECS-ESS data collection.  EIA works with hundreds of utilities each  survey cycle to minimize the burden associated with building data requests.</p*/ ?>
-<p>The first CBECS was conducted in 1979; all CBECS data are available on this website. <?php /*CBECS is currently conducted on a quadrennial  basis.*/ ?></p>
-<p>Users of the CBECS data are  diverse.  Among many others, they  include:</p>
-
-<ul>
-  <ul>
-    <li>Building owners and  managers (for benchmarking)</li>
-    <li>  Energy  modelers (for forecasting)
-    </li>
-    <li>Product developers (to  gauge market potential)</li>
-    <li>Government leaders (to  formulate policy)</li>
-    <li> Energy Star (as the  foundation for their rating system targets)</li>
-  </ul>
-</ul>
-  <div>
-    <div> </div>
-</div>
-<p>
-  <?php include ('includes/cbecs_survey_manager_contact_info.inc') ; ?>
-  
-  <?php /* /Main Column */ ?> 
-  
-</div>
-      <?php /* Side Column */ ?>
-      <div class="side_col right">
-        <?php include ('../includes/side_nav_commercial.inc') ; ?>
+<body>
+	<?php
+include('global/header/includes/header.inc');
+include('consumption/commercial/includes/sub-navigation.inc');
+include('consumption/includes/report-header.inc')
+?>
+	<div class="l-row l-two-col-right-narrow">
+		<div class="l-col">
+			<?php
+				include('consumption/commercial/includes/about-content.inc');
+				?>
+		</div>
+		<div class="l-col">
+			<?php include('consumption/commercial/includes/side-nav-commercial.inc'); ?>
       </div>
-      
-      <?php /*/ Side Content */ ?> 
-      
-      <?php /*/ Page/Body Content */ ?> 
     </div>
-    <?php include ('global/includes/eia_footer.inc') ; ?>
-<?php /*/ Outer Wrapper */ ?>
+	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
 </html>

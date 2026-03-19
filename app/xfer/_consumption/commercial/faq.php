@@ -1,30 +1,30 @@
-<?php
-$pageTitle = "";
-$L2Title = "Commercial Buildings Energy Consumption Survey (CBECS)";
+<!doctype html>
 
-$pagetitle = 'Energy Information Administration (EIA)- Frequently Asked Questions (FAQ) about the CBECS';
+<?php
+$globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
+$pageTitle		= 'Commercial Buildings Energy Consumption Survey (CBECS)';
+$L2Title = "Commercial Buildings Energy Consumption Survey (CBECS)";
+$locale = 'overview';
+$L2Title = "";
 ?>
-<!DOCTYPE html
-        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<?php $locale = 'overview'; ?>
-	<head>
-        <title>
-			<?php echo "$pagetitle"?>
-        </title>
-		<?php include ('global/includes/eia_head_info.inc') ; ?>
-        <?php  if(!isset($no_titling)) include "global/includes/titling.inc"; ?>
-		</head>
-	<body>
-		<div id="outerX">
-			<?php /* Outer Wrapper */ ?>
-            <?php include ('global/includes/eia_header.inc') ; ?>
-            <?php include ('../includes/subnav_consumption_cbecs.inc') ; ?>
-            <?php /* Page/Body Content */ ?>
-			
-			<div class="pagecontent mr_temp5">
-				<div class="main_col">
-					<?php /* Main Column */ ?>
+<html>
+<head>
+	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<?php include('global/head/includes/head.inc'); ?>
+
+</head>
+
+<body>
+	<?php
+include('global/header/includes/header.inc');
+include('consumption/commercial/includes/sub-navigation.inc');
+include('consumption/includes/report-header.inc')
+?>
+	<div class="l-row l-two-col-right-narrow">
+		<div class="l-col">
 					<h1>FAQs for CBECS</h1>
 					<ul>
 					<li><a href="#q1">What do you mean by <em>commercial</em>?</a></li>
@@ -122,20 +122,12 @@ $pagetitle = 'Energy Information Administration (EIA)- Frequently Asked Question
 				  <a name="q14" id="q14"></a>
 					<h3>For the 2007 CBECS, why is there information only for large hospitals and not for the rest of the commercial building population?</h3>
 					<p>A majority of the 2007 CBECS buildings were sampled from a frame that used a less expensive experimental method to update the 2003 frame for new construction. After careful analysis, we determined that the buildings sampled from this experimental frame were not representative of the commercial building population. As a result, the 2007 CBECS sample as a whole did not meet our standards for quality, credible energy information. However, the large hospital buildings are a subset of the CBECS sample that was not sampled from the experimental frame. They were sampled from high-quality, well-established lists of hospitals, federal buildings, and other large buildings. We did a thorough evaluation of this frame and the data collected from its sampled units and deemed them to be representative of the large hospital building population as a whole. See <em><a href="/consumption/commercial/reports/2007/large-hospital.php">Energy Characteristics and Energy Consumed in Large Hospital Buildings in the United States in 2007</a></em> for the report, methodology, and data tables.</p>
-				<?php include ('includes/cbecs_survey_manager_contact_info.inc') ; ?>
-                                <?php /* /Main Column */ ?>
 				</div>
-				<?php /* Side Column */ ?>
-				<div class="side_col right">
-						<?php include ('../includes/side_nav_commercial.inc') ; ?>
+		<div class="l-col">
+			<?php include('consumption/commercial/includes/side-nav-commercial.inc'); ?>
 				</div>
-
-				<?php /*/ Side Content */ ?>
-
-				<?php /*/ Page/Body Content */ ?>
 		</div>
-		<?php include ('global/includes/eia_footer.inc') ; ?>
-		<?php /*/ Outer Wrapper */ ?>
+	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
 
 </html>

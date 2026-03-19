@@ -1,28 +1,30 @@
+<!doctype html>
+
 <?php
-$pageTitle = "";
+$globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
+$pageTitle		= 'Commercial Buildings Energy Consumption Survey (CBECS)';
+$L2Title 		= "Commercial Buildings Energy Consumption Survey (CBECS)";
 $locale = 'overview';
-$L2Title = "Commercial Buildings Energy Consumption Survey (CBECS)";
-
-$pagetitle = 'Energy Information Administration (EIA)- Guide to 2018 Commercial Buildings Energy Consumption Survey (CBECS)';
+$L2Title = "";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
 <head>
-<title><?php echo "$pagetitle"?></title>
-<?php include ('global/includes/eia_head_info.inc') ; ?>
+	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<?php include('global/head/includes/head.inc'); ?>
 
-<?php  if(!isset($no_titling)) include "global/includes/titling.inc"; ?></head>
+</head>
+
 <body>
- <div id="outerX"> 
-  <?php /* Outer Wrapper */ ?>
-  <?php include ('global/includes/eia_header.inc') ; ?>
-      <?php include ('consumption/includes/subnav_consumption_cbecs.inc') ; ?>
-    <?php /* Page/Body Content */ ?>
-    <div class="pagecontent mr_temp3">
-      <div class="main_col left">
-        <?php /* Main Column */ ?>
-		  
-  
+	<?php
+include('global/header/includes/header.inc');
+include('consumption/commercial/includes/sub-navigation.inc');
+include('consumption/includes/report-header.inc')
+?>
+	<div class="l-row l-two-col-right-narrow">
+		<div class="l-col">
 <h1>Guide to the 2018 CBECS Tables</h1>
 		  
 <ul type="disc">
@@ -268,25 +270,11 @@ $pagetitle = 'Energy Information Administration (EIA)- Guide to 2018 Commercial 
   <li>We have added rows for <em>Internet-connected/smart thermostat and Programmable thermostat</em>. The question about internet-connected or smart thermostats was new to the 2018 CBECS and was only asked for buildings that did not have a building automation system. For buildings that didn’t have BAS or a smart thermostat, we showed a list of other methods of controlling the indoor temperature, one of which was a programmable thermostat.  </li>
 </ul>
 <p><strong>Electric vehicle (EV) charging</strong>—This new row category provides information about whether any electric vehicle charging stations were associated with the building, either inside or outside the building.   </p>
-
-  <div>
-</div>
-<p>
- <?php /* <?php include ('../../../includes/cbecs_survey_manager_contact_info.inc') ; ?>*/ ?>
-  
-  <?php /* /Main Column */ ?> 
-  
-</div>
-      <?php /* Side Column */ ?>
-      <div class="side_col right">
-        <?php include ('consumption/includes/side_nav_commercial.inc') ; ?>
       </div>
-      
-      <?php /*/ Side Content */ ?> 
-      
-      <?php /*/ Page/Body Content */ ?> 
+		<div class="l-col">
+			<?php include('consumption/commercial/includes/side-nav-commercial.inc'); ?>
+		</div>
     </div>
-    <?php include ('global/includes/eia_footer.inc') ; ?>
-<?php /*/ Outer Wrapper */ ?>
+	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
 </html>

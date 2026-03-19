@@ -28,8 +28,8 @@ include ('./includes/report-header.inc');
 			<img src="consumption/commercial/images/cendivco.gif" alt="census map" />
         </div>
 		<div class="l-col">
-			<?php include('../includes/side-nav-manufacturing.inc'); ?>
-      </div>
+			<?php include('consumption/manufacturing/includes/side-nav-manufacturing.inc'); ?>
+		</div>
 	</div>
 	<?php include('global/footer/includes/footer.inc'); ?>
 </body>

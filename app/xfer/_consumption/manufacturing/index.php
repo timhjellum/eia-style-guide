@@ -27,12 +27,14 @@ $L2Title = "Manufacturing Energy Consumption Survey (MECS)";
 	<?php
 include('global/header/includes/header.inc');
 include('consumption/manufacturing/includes/sub-navigation.inc');
-include('consumption/manufacturing/includes/report-header.inc');
-include('consumption/manufacturing/includes/carousel.inc');
+include('consumption/includes/report-header.inc');
 	?>
 	<div class="l-row l-two-col-right-narrow">
 		<div class="l-col article">	  	  
-			<?php include('consumption/manufacturing/includes/index-content.inc'); ?>
+			<?php
+			include('consumption/manufacturing/includes/index-content.inc');
+			include('consumption/manufacturing/includes/carousel.inc');
+			?>
 
 		</div>
 		<div class="l-col">

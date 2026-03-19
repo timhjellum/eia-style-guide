@@ -1,58 +1,48 @@
+<!doctype html>
 <?php
-$hct="y";
-$pageTitle = "";
+$globalTitle	= 'U.S. Energy Information Administration (EIA)';
+$pageTitle		= 'Commercial Buildings Energy Consumption Survey (CBECS)';
 $locale = 'overview';
+//$page['year'] = '2022';
+//$url['view']	= isset($_REQUEST['view']) ? $_REQUEST['view'] : '';
 $L2Title = "Commercial Buildings Energy Consumption Survey (CBECS)";
-
-$pagetitle = 'Energy Information Administration (EIA)- Commercial Buildings Energy Consumption Survey (CBECS)';
+$hct			= "y";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
+
 <head>
-<title>
-<?php echo "$pagetitle"; print PHP_EOL;?>
-</title>
-<?php include ('global/includes/eia_head_info.inc') ; ?>
-<?php  if(!isset($no_titling)) include "global/includes/titling.inc"; ?></head>
+	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<?php include('global/head/includes/head.inc'); ?>
+	<link href="/global/styles/global.mecs.min.css" type="text/css" media="screen, projection" rel="stylesheet">
+	<style>
+	.next:after {
+		display: none !important;
+	}
+	</style>
+</head>
 <body>
-<div id="outerX">
-<?php /* Outer Wrapper */ ?>
-<?php include ('global/includes/eia_header.inc') ; ?>
-
-<?php include ('../includes/subnav_consumption_cbecs.inc') ; ?>
-
-<?php /* Page/Body Content */ ?>
-<div class="pagecontent mr_temp1"> 
-  <?php /* Main Column */ ?>
-  
-  <div class="main_col">
-	  
-	  <h1>2018 Commercial Buildings Energy Consumption Survey final results</h1>
-	<br>
-    <img src="images/townscape.png" style="margin-right:10px; padding-bottom: 15px" alt="&quot;&quot;" class="left" width="300"/>	  
-    <p>Based on the 2018 <em>Commercial Buildings Energy Consumption Survey</em> (CBECS), the estimated 5.9 million U.S. commercial buildings consumed 6.8 quadrillion British thermal units of energy and spent $141 billion on energy in 2018. Electricity and natural gas were the main energy sources. Space heating accounted for close to one-third of end-use consumption in 2018.<br><strong><a href="/consumption/commercial/data/2018/">Data Tables</a></strong> 
-		<br><strong>Consumption and expenditures report &nbsp;</strong> <a href="/consumption/commercial/data/2018/pdf/CBECS 2018 CE Release 2 Flipbook.pdf" class="ico_pdf"><strong>PDF</strong></a>&nbsp;&nbsp;<a href="/consumption/commercial/data/2018/ppt/CBECS 2018 CE Release 2 Flipbook.pptx" class="ico_ppt"><strong>PPT</strong></a>
-		<br><strong>Buildings characteristics report   &nbsp;</strong> <a href="/consumption/commercial/data/2018/pdf/CBECS_2018_Building_Characteristics_Flipbook.pdf" class="ico_pdf"><strong>PDF</strong></a>&nbsp;&nbsp;<a href="/consumption/commercial/data/2018/ppt/CBECS_2018_Building_Characteristics_Flipbook.pptx" class="ico_ppt"><strong>PPT</strong></a>
-		
-		 <?php /*<br><strong>Report&nbsp;</strong> <a href="/consumption/commercial/data/2018/pdf/CBECS_2018_Building_Characteristics_Flipbook.pdf" class="ico_pdf"><strong>PDF</strong></a>&nbsp;&nbsp;<a href="/consumption/commercial/data/2018/ppt/CBECS_2018_Building_Characteristics_Flipbook.pptx" class="ico_ppt"><strong>PPT</strong></a>*/ ?>
-	  </p>
-
-            <?php include ('includes/blog.inc') ; ?>
-		
+	<?php
+include('global/header/includes/header.inc');
+include('consumption/commercial/includes/sub-navigation.inc');
+include('consumption/includes/report-header.inc');
+	?>
+	<div class="l-row l-two-col-right-narrow">
+		<div class="l-col article">
+		<?php
+		include('consumption/manufacturing/includes/carousel.inc');
+		include('consumption/commercial/includes/index-content.inc');
+		include('includes/blog.inc');
+		?>	  		
+		</div>
+		<div class="l-col">
+    	<?php include('consumption/commercial/includes/side-nav-commercial.inc'); ?>
   </div>
-        
-  <?php /*/div*/ ?>
-  <?php /* /Main Column */ ?> 
-  <?php /* Side Column */ ?>
-  <div class="side_col right">
-    <?php include ('consumption/includes/side_nav_commercial.inc') ; ?>
   </div>
-  <?php /*/ Side Content */ ?> 
-</div>
-<?php /*/ Page/Body Content */ ?>
-<?php include ('global/includes/eia_footer.inc') ; ?>
-<?php /*/ Outer Wrapper */ ?>
-
+	<?php include('global/footer/includes/footer.inc'); ?>
+	<script src="/global/scripts/global.mecs.min.js"></script>
 </body>
 <script>
 jQuery(document).ready(function(){

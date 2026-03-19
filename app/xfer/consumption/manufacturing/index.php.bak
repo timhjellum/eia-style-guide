@@ -27,362 +27,362 @@ $L2Title = "Manufacturing Energy Consumption Survey (MECS)";
 	<?php
 include('global/header/includes/header.inc');
 include('consumption/manufacturing/includes/sub-navigation.inc');
-include('consumption/manufacturing/includes/report-header.inc');
-include('consumption/manufacturing/includes/carousel.inc');
+include('consumption/includes/report-header.inc');
+
 	?>
 	<div class="l-row l-two-col-right-narrow">
 		<div class="l-col article">
-<?php include('consumption/manufacturing/includes/manufacturing-index-content.inc'); ?>
-		<!-- include ('../includes/side_nav_manufacturing.inc') -->
-			<?php include('../includes/side-nav-manufacturing.inc'); ?>
-</div>
-<div class="l-col">
-<!-- include ('../includes/side_nav_manufacturing.inc') -->
-<?php include('consumption/includes/side-nav-manufacturing.inc'); ?>
-</div>
+			<?php
+			include('consumption/manufacturing/includes/index-content.inc');
+			include('consumption/manufacturing/includes/carousel.inc');
+			?>
+
+		</div>
+		<div class="l-col">
+			<!-- include ('../includes/side_nav_manufacturing.inc') -->
+			<!-- include ('../includes/side_nav_manufacturing.inc') -->
+			<?php include('consumption/manufacturing/includes/side-nav-manufacturing.inc'); ?>
+		</div>
 	</div>
 	<?php include('global/footer/includes/footer.inc'); ?>
 	<script src="/global/scripts/global.mecs.min.js"></script>
 </body>
 
-<script type="text/javascript">
-$(document).ready(function(){
-  $('#slider1').bxSlider(sliderOpts);
-	
+<script>
+$(document).ready(function() {
+
 	var colors = Highcharts.getOptions().colors,
-	tooltipFormatter = {
-		0: function (point) {
-				return '<b>Average consumption</b><br>' + Highcharts.numberFormat(point.y, 1)+' million Btu per housing unit'
-				},
-		1: function (point) {
-				return '<b>Number of housing units</b><br>' + Highcharts.numberFormat(point.y, 1)+' million housing units'
-				}
+		tooltipFormatter = {
+			0: function(point) {
+				return '<b>Average consumption</b><br>' + Highcharts.numberFormat(point.y, 1) + ' million Btu per housing unit'
+			},
+			1: function(point) {
+				return '<b>Number of housing units</b><br>' + Highcharts.numberFormat(point.y, 1) + ' million housing units'
+			}
 		}
-	for(var i = 0; i <$('.fig1').length; i++)
-  {
+	for (var i = 0; i < $('.fig1').length; i++) {
 		new Highcharts.Chart({
-				chart: {
-					zoomType:'xy',
-					renderTo: $('.fig1')[i],
-					defaultSeriesType: 'line',
-          height: 360,
-          marginLeft: 50
-					},
-				exporting: {
-					csvOptions: {
-						overrideURL: '/consumption/residential/reports/2009/xls/2009 RECS CE DER 1 Graphs v3.xlsx'
-						}
-					},
-				credits: {
-					enabled: false,
-					text: 'Source: Residential Energy Consumption Survey. Includes occupied primary housing units only.',
-					href: '/consumption/residential/data/2009/'
-					},
-				title: {
-					text: 'Average energy consumption per home and number of housing units, 1980-2009' 
-					},
-				tooltip: {
-					formatter: function(){
-						return tooltipFormatter[this.series.index](this);
-						},
-					crosshairs: true
-					},
-				xAxis: {
-					categories: ['1980', '', '1982', '', '1984', '','','1987', '', '', '1990', '', '','1993', '', '','','1997', '', '','','2001', '', '','','2005', '', '','','2009'],
-					tickColor: '#ffffff'
-					},          
-				yAxis: [{
-					title:{
-						text:'million Btu per housing unit',
-						style: {
-							color: colors[0]
-							}
-						},
-					max: 115,
-					min: 0,
-					//tickInterval: 5,
-					},{
-					title:{
-						text:'million housing units',
-						style: {
-							color: colors[1]
-							}
-						},
-					max: 115,
-					min: 0,
-					//tickInterval: 5,
-					opposite: true
-					}],
-				series: [{
-					data: [114, null, 103, null, 104.7, null, null, 100.8, null, null,98, null, null,103.6, null, null,null,101, null, null,null,92.2, null, null,null,94.9, null, null,null,89.6],
-					name: 'Average Consumption',
-					connectNulls:true,
-					marker: {
-						enabled: true,
-						radius: 2
-						}
-					},{
-					data: [81.6, null, 83.8, null, 86.3, null, null, 90.5, null, null,94, null, null,96.6, null, null,null,101.5, null, null,null,107, null, null,null,111.1, null, null,null,113.6],
-					name: 'Number Housing Units',
-					connectNulls:true,
-					marker: {
-						enabled: true,
-						radius: 3
-						},
-					yAxis: 1
-					}]
-		  });
-		}
-	for(var i = 0; i <$('.fig2').length; i++)
-	{
-    new Highcharts.Chart({
 			chart: {
-				zoomType:'xy',
+				zoomType: 'xy',
+				renderTo: $('.fig1')[i],
+				defaultSeriesType: 'line',
+				height: 360,
+				marginLeft: 50
+			},
+			exporting: {
+				csvOptions: {
+					overrideURL: '/consumption/residential/reports/2009/xls/2009 RECS CE DER 1 Graphs v3.xlsx'
+				}
+			},
+			credits: {
+				enabled: false,
+				text: 'Source: Residential Energy Consumption Survey. Includes occupied primary housing units only.',
+				href: '/consumption/residential/data/2009/'
+			},
+			title: {
+				text: 'Average energy consumption per home and number of housing units, 1980-2009'
+			},
+			tooltip: {
+				formatter: function() {
+					return tooltipFormatter[this.series.index](this);
+				},
+				crosshairs: true
+			},
+			xAxis: {
+				categories: ['1980', '', '1982', '', '1984', '', '', '1987', '', '', '1990', '', '', '1993', '', '', '', '1997', '', '', '', '2001', '', '', '', '2005', '', '', '', '2009'],
+				tickColor: '#ffffff'
+			},
+			yAxis: [{
+				title: {
+					text: 'million Btu per housing unit',
+					style: {
+						color: colors[0]
+					}
+				},
+				max: 115,
+				min: 0,
+				//tickInterval: 5,
+			}, {
+				title: {
+					text: 'million housing units',
+					style: {
+						color: colors[1]
+					}
+				},
+				max: 115,
+				min: 0,
+				//tickInterval: 5,
+				opposite: true
+			}],
+			series: [{
+				data: [114, null, 103, null, 104.7, null, null, 100.8, null, null, 98, null, null, 103.6, null, null, null, 101, null, null, null, 92.2, null, null, null, 94.9, null, null, null, 89.6],
+				name: 'Average Consumption',
+				connectNulls: true,
+				marker: {
+					enabled: true,
+					radius: 2
+				}
+			}, {
+				data: [81.6, null, 83.8, null, 86.3, null, null, 90.5, null, null, 94, null, null, 96.6, null, null, null, 101.5, null, null, null, 107, null, null, null, 111.1, null, null, null, 113.6],
+				name: 'Number Housing Units',
+				connectNulls: true,
+				marker: {
+					enabled: true,
+					radius: 3
+				},
+				yAxis: 1
+			}]
+		});
+	}
+	for (var i = 0; i < $('.fig2').length; i++) {
+		new Highcharts.Chart({
+			chart: {
+				zoomType: 'xy',
 				renderTo: $('.fig2')[i],
 				defaultSeriesType: 'column',
 				//width: 640,
 				height: 350,
 				//marginBottom: 50
-				},
+			},
 			credits: {
 				enabled: false,
 				text: 'Source: Table HC10.8 Average Square Footage of U.S. Homes, By Housing Characteristics, 2009',
 				href: '/consumption/residential/data/2009/#sf'
-				},
+			},
 			title: {
 				text: 'Figure 1. Newer homes trend larger in all regions of the country'
-				},
+			},
 			tooltip: {
 				formatter: function() {
-					return '<b>'+ this.x +' homes built in ' + this.series.name +'</b><br/>'+ this.y +' average square footage';
-					}
-			 },
+					return '<b>' + this.x + ' homes built in ' + this.series.name + '</b><br/>' + this.y + ' average square footage';
+				}
+			},
 			xAxis: {
 				categories: ['US', 'Northeast', 'Midwest', 'South', 'West'],
-				plotLines : [
+				plotLines: [
 					$.extend(true, {
 						value: 0.5
-						},Highcharts.eia_projections_line)
-					],
-				},
+					}, Highcharts.eia_projections_line)
+				],
+			},
 			yAxis: [{
 				max: 3600,
 				tickInterval: 600,
-				title:{
-					text:'average square footage'
-					}
-				}],
+				title: {
+					text: 'average square footage'
+				}
+			}],
 			series: [{
 				name: '1970s',
 				data: [1685, 1922, 1887, 1604, 1493]
-				},{
+			}, {
 				name: '1980s',
 				data: [1770, 2125, 2010, 1619, 1677]
-				},{
+			}, {
 				name: '1990s',
 				data: [2200, 2507, 2524, 2073, 2082]
-				},{
+			}, {
 				name: '2000s',
 				data: [2465, 3006, 3033, 2302, 2146]
-				}]
-			});
-		}
-	for(var i = 0; i <$('.fig3').length; i++)
-	{
-    new Highcharts.Chart({
-      chart: {
+			}]
+		});
+	}
+	for (var i = 0; i < $('.fig3').length; i++) {
+		new Highcharts.Chart({
+			chart: {
 				renderTo: $('.fig3')[i],
 
 				defaultSeriesType: 'column',
 				//width: 640,
 				height: 350,
 				//marginBottom: 50
-				},
+			},
 			credits: {
 				enabled: false,
 				text: 'Source: U.S. Energy Information Administration, 2009 Residential Energy Consumption Survey',
 				href: 'http://www.eia.gov/consumption/residential/'
-				},
+			},
 			title: {
-					text: 'Number of electronic devices by household, 2009',
-					align: 'left',
-					x: 1,
-					y: 20
-					},
+				text: 'Number of electronic devices by household, 2009',
+				align: 'left',
+				x: 1,
+				y: 20
+			},
 			xAxis: [{
-				categories:  ['0','1', '2', '3', '4', '5+', ' ', '0','1', '2', '3', '4', '5+',' ','0', '1-3','4-8', '9+'],
-				},{ // slave axis
+				categories: ['0', '1', '2', '3', '4', '5+', ' ', '0', '1', '2', '3', '4', '5+', ' ', '0', '1-3', '4-8', '9+'],
+			}, { // slave axis
 				linkedTo: 0,
 				lineWidth: 0,
-				tickLength:0,
-				offset:25,
-				categories: ['Televisions','', '', '', '', '', ' ', 'Computers','', '', '', '', '',' ','Rechargeable electronic devices', '','', ''],
+				tickLength: 0,
+				offset: 25,
+				categories: ['Televisions', '', '', '', '', '', ' ', 'Computers', '', '', '', '', '', ' ', 'Rechargeable electronic devices', '', '', ''],
 				labels: {
 					align: 'left',
 					x: 30
-					}
-				}],
+				}
+			}],
 			yAxis: {
 				min: 0,
 				max: 60,
 				tickInterval: 10,
-				title:{
-					text:'million households'
-					}
-				},
-				tooltip: {
-					formatter: function() {
-						return'<b>'+this.point.name +'</b> ' +'</br> in '+ Highcharts.numberFormat(this.y, 1) + ' million households';
-						}
-					},
-				plotOptions: {
-					column: {
-						pointWidth: 30,
-						},
-					},
-				series: [{
-					showInLegend: false,
-					color: 'rgba(0, 150, 215, 1.0)', 
-					data: [{
-						name: '0 Televisions',
-						y: 1.5
-						},{
-						y: 24.2,
-						name: '1 Television'   
-						},{
-						y: 37.5,
-						name: '2 Televisions' 
-						},{
-						y: 26.6,
-						name: '3 Televisions'   
-						},{
-						y: 14.2,
-						name: '4 Televisions'   
-						},{
-						y: 9.7,
-						name: '5+ Televisions'   	   
-						},{
-						y: null
-						},{
-						name: '0 Computers',
-						y: 27.4
-						},{
-						y: 46.9,
-						name: '1 Computer'
-						},{
-						y: 24.3,
-						name: '2 Computers'
-						},{
-						y: 9.5,
-						name: '3 Computers'
-						},{
-						y: 3.6,
-						name: '4 Computers'
-						},{
-						y: 2.0,	  
-						name: '5+ Computers' 
-						},{
-						y: null
-						},{
-						name: '0 Rechargeable electronic<br/>devices',
-						y: 11.4
-						},{
-						y: 57.9,
-						name: '1-3 Rechargeable electronic<br/>devices'
-						},{
-						y: 36.4,
-						name: '4-8 Rechargeable electronic<br/>devices'
-						},{
-						y: 7.9,
-						name: '9+ Rechargeable electronic<br/> devices'
-					}]
-				}]
-	    });
-		}
-	});
-
-for(var i = 0; i <$('.20130103').length; i++)
-	{
-		new Highcharts.Chart({
-			chart: {
-				renderTo: $('.20130103')[i],
-				defaultSeriesType: 'bar',
-				zoomType:'xy',
-				height:320
-				},
-			title: {
-        text: 'Percentage of household site energy consumption by end-use, 1993-2009'
-        },
-			
+				title: {
+					text: 'million households'
+				}
+			},
 			tooltip: {
-            /*formatter: function() {
+				formatter: function() {
+					return '<b>' + this.point.name + '</b> ' + '</br> in ' + Highcharts.numberFormat(this.y, 1) + ' million households';
+				}
+			},
+			plotOptions: {
+				column: {
+					pointWidth: 30,
+				},
+			},
+			series: [{
+				showInLegend: false,
+				color: 'rgba(0, 150, 215, 1.0)',
+				data: [{
+					name: '0 Televisions',
+					y: 1.5
+				}, {
+					y: 24.2,
+					name: '1 Television'
+				}, {
+					y: 37.5,
+					name: '2 Televisions'
+				}, {
+					y: 26.6,
+					name: '3 Televisions'
+				}, {
+					y: 14.2,
+					name: '4 Televisions'
+				}, {
+					y: 9.7,
+					name: '5+ Televisions'
+				}, {
+					y: null
+				}, {
+					name: '0 Computers',
+					y: 27.4
+				}, {
+					y: 46.9,
+					name: '1 Computer'
+				}, {
+					y: 24.3,
+					name: '2 Computers'
+				}, {
+					y: 9.5,
+					name: '3 Computers'
+				}, {
+					y: 3.6,
+					name: '4 Computers'
+				}, {
+					y: 2.0,
+					name: '5+ Computers'
+				}, {
+					y: null
+				}, {
+					name: '0 Rechargeable electronic<br/>devices',
+					y: 11.4
+				}, {
+					y: 57.9,
+					name: '1-3 Rechargeable electronic<br/>devices'
+				}, {
+					y: 36.4,
+					name: '4-8 Rechargeable electronic<br/>devices'
+				}, {
+					y: 7.9,
+					name: '9+ Rechargeable electronic<br/> devices'
+				}]
+			}]
+		});
+	}
+});
+
+for (var i = 0; i < $('.20130103').length; i++) {
+	new Highcharts.Chart({
+		chart: {
+			renderTo: $('.20130103')[i],
+			defaultSeriesType: 'bar',
+			zoomType: 'xy',
+			height: 320
+		},
+		title: {
+			text: 'Percentage of household site energy consumption by end-use, 1993-2009'
+		},
+
+		tooltip: {
+			/*formatter: function() {
                 return '<b>' + this.series.name + '</b><br />' + this.x +
                     '<br />'+ this.y;
 								}*/
-				enabled: false
-        },
-			credits: {
-				enabled: false,
-				text: 'Sources: U.S. Energy Information Administration, 2009 Residential Energy Consumption Survey',
-					//href: 'http://www.eia.doe.gov/emeu/mecs/mecs2002/data02/shelltables.html',
-				position: {
-					y: -20
+			enabled: false
+		},
+		credits: {
+			enabled: false,
+			text: 'Sources: U.S. Energy Information Administration, 2009 Residential Energy Consumption Survey',
+			//href: 'http://www.eia.doe.gov/emeu/mecs/mecs2002/data02/shelltables.html',
+			position: {
+				y: -20
+			},
+			style: {
+				width: 550
+			}
+		},
+		legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlign: 'middle'
+		},
+		xAxis: {
+			categories: ['Space Heating', 'Air-conditioning', 'Water heating', 'Refrigerators', 'Other Appliances , Electronics, Lighting, Misc.']
+		},
+		yAxis: {
+			title: {
+				text: 'Percent of total end uses'
+			}
+		},
+		captions: {
+			enabled: true,
+			style: {
+				color: 'black',
+				fontSize: '11px',
+				fontFamily: 'Arial, Verdana, sans-serif',
+				fontWeight: 'bold'
+			}
+			/*,
+							items:[{
+								text: "* Not Reported/Not Asked includes end use that was not collected along with those establishments that did not know or report their end use"
+								}]*/
+		},
+		plotOptions: {
+			series: {
+				dataLabels: {
+					enabled: true,
+					formatter: function() {
+						return (this.y * 10).toFixed(0) + '%';
 					},
-				style:{
-					width:550
+					style: {
+						fontWeight: 'bold',
+						color: 'black'
 					}
-				},
-			legend: {
-				layout: 'vertical',
-				align: 'right',
-				verticalAlign: 'middle'
-				},
-			xAxis: {
-				categories: ['Space Heating', 'Air-conditioning', 'Water heating', 'Refrigerators', 'Other Appliances , Electronics, Lighting, Misc.']
-				},
-			yAxis: {
-				title: {
-					text: 'Percent of total end uses'
-					}
-				},
-			captions: {
-				enabled: true,
-				style: {
-					color: 'black',
-					fontSize: '11px',
-					fontFamily: 'Arial, Verdana, sans-serif',
-					fontWeight:'bold'
-					}/*,
-				items:[{
-					text: "* Not Reported/Not Asked includes end use that was not collected along with those establishments that did not know or report their end use"
-					}]*/
-        },
-			plotOptions: {
-				series: {
-					dataLabels: {
-						enabled: true,
-						formatter: function() {
-                        return (this.y*10).toFixed(0) +'%';
-                    },
-						style: {
-              fontWeight: 'bold',
-							color:'black'
-							}
-						}
-					}
-				},
-			series: [{
-				data: [5.32, 0.46, 1.83, 0.46, 1.94],
-				color: 'rgba(0,150,215,.85)',
-				name: '1993',
-				lineWidth: 10
-				},{
-				data: [4.23, 0.64, 1.80, 0.48, 3.04],
-				color: 'rgba(163,52,64,.85)',
-				name: '2009',
-				lineWidth: 10
-				}]
-			});
-		}
+				}
+			}
+		},
+		series: [{
+			data: [5.32, 0.46, 1.83, 0.46, 1.94],
+			color: 'rgba(0,150,215,.85)',
+			name: '1993',
+			lineWidth: 10
+		}, {
+			data: [4.23, 0.64, 1.80, 0.48, 3.04],
+			color: 'rgba(163,52,64,.85)',
+			name: '2009',
+			lineWidth: 10
+		}]
+	});
+}
 </script>
+
 </html>

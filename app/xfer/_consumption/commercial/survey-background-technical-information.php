@@ -1,36 +1,30 @@
+<!doctype html>
+
 <?php
-$pageTitle = "";
+$globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
+$pageTitle		= 'Commercial Buildings Energy Consumption Survey (CBECS)';
+$L2Title 		= "Commercial Buildings Energy Consumption Survey (CBECS)";
 $locale = 'overview';
-$L2Title = "Commercial Buildings Energy Consumption Survey (CBECS)";
-$pageyear = '';
+$L2Title = "";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
 <head>
-<?php include ('global/includes/eia_head_info.inc') ; ?>
-  <style type="text/css">
-    <!--
-    p.MsoNormal {
-      margin-top:0in;
-      margin-right:0in;
-      margin-bottom:10.0pt;
-      margin-left:0in;
-      line-height:115%;
-      font-size:11.0pt;
-      font-family:"Calibri","sans-serif";
-    }
-    -->
-  </style>
-<?php  if(!isset($no_titling)) include "global/includes/titling.inc"; ?></head>
+	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<?php include('global/head/includes/head.inc'); ?>
+
+</head>
+
 <body>
-<div id="outerX">
-<?php /* Outer Wrapper */ ?>
-<?php include ('global/includes/eia_header.inc') ; ?>
-<?php include ('../includes/subnav_consumption_cbecs.inc') ; ?>
-<?php /* Page/Body Content */ ?>
-<div class="pagecontent mr_temp1">
-  <div class="main_col"> 
-    <?php /* Main Column */ ?>
+	<?php
+include('global/header/includes/header.inc');
+include('consumption/commercial/includes/sub-navigation.inc');
+include('consumption/includes/report-header.inc')
+?>
+	<div class="l-row l-two-col-right-narrow">
+		<div class="l-col">
     <h1><a name="survey_background" id="survey_background"></a>Survey Background and Technical Information</h1>
     <h2>Survey Background</h2>
     <p>The commercial sector encompasses a vast range of building types-service businesses, such as retail and wholesale stores, hotels and motels, restaurants, and hospitals, as well as certain buildings that would not be considered &quot;commercial&quot; in a traditional economic sense, such as public and private schools, correctional institutions, and religious and fraternal organizations. Excluded from the sector are the goods-producing industries: manufacturing, agriculture, mining, forestry and fisheries, and construction.</p>
@@ -61,19 +55,12 @@ $pageyear = '';
       <li><a href="/consumption/commercial/reports/2012/water/">2012 CBECS: Water Consumption in Large Buildings Summary</a></li>
       <li><a href="/consumption/commercial/reports/2007/hospital-water-data-collection.php">Water Data Collection in the 2007 CBECS</a></li>
     </ul>
-    
-    <?php include ('includes/cbecs_survey_manager_contact_info.inc') ; ?>
   </div>
-  <?php /* Side Column */ ?>
-  <div class="side_col right">
-    <?php include ('includes/side_nav_commercial_data.inc') ; ?>
+		<div class="l-col">
+			<?php include('consumption/commercial/includes/side-nav-commercial.inc'); ?>
+		</div>
   </div>
-  
-  <?php /*/ Side Content */ ?> 
-  
-  <?php /*/ Page/Body Content */ ?> 
-</div>
-<?php include ('global/includes/eia_footer.inc') ; ?>
-<?php /*/ Outer Wrapper */ ?>
+	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
+  
 </html>

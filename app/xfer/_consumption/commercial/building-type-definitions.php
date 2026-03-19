@@ -1,24 +1,30 @@
-<?php
-$pageTitle = "";
-$locale = 'overview';
-$L2Title = "Commercial Buildings Energy Consumption Survey (CBECS)";
+<!doctype html>
 
-$pageyear = '';
+<?php
+$globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
+$pageTitle		= 'Commercial Buildings Energy Consumption Survey (CBECS)';
+$L2Title 		= "Commercial Buildings Energy Consumption Survey (CBECS)";
+$locale = 'overview';
+$L2Title = "";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
 <head>
-<?php include ('global/includes/eia_head_info.inc') ; ?>
-<?php  if(!isset($no_titling)) include "global/includes/titling.inc"; ?></head>
+	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<?php include('global/head/includes/head.inc'); ?>
+
+</head>
+
 <body>
-<div id="outerX">
-<?php /* Outer Wrapper */ ?>
-<?php include ('global/includes/eia_header.inc') ; ?>
-    <?php include ('../includes/subnav_consumption_cbecs.inc') ; ?>
-    <?php /* Page/Body Content */ ?>
-    <div class="pagecontent mr_temp1">
-      <div class="main_col"> 
-        <?php /* Main Column */ ?>
+	<?php
+include('global/header/includes/header.inc');
+include('consumption/commercial/includes/sub-navigation.inc');
+include('consumption/includes/report-header.inc')
+?>
+	<div class="l-row l-two-col-right-narrow">
+		<div class="l-col">
         <h1>Building Type Definitions</h1>
         <p>In the Commercial Buildings Energy Consumption Survey (CBECS), buildings are classified according to principal building activity, which is the primary business, commerce, or function carried on within each building. Buildings used for more than one of the activities described below are assigned to the activity occupying the most floorspace. A building assigned to a particular principal activity category may be used for other activities in a portion of its space or at some time during the year. Respondents are asked to place their building into a more specific activity sub-category to ensure the quality of the data. After data collection, we combine the subcategories into the more general building categories.</p>
         <h2>Building Types:</h2>
@@ -251,16 +257,10 @@ $pageyear = '';
           </tfoot>
         </table>
       </div>
-      <?php /* Side Column */ ?>
-      <div class="side_col right">
-        <?php include ('includes/side_nav_commercial_data.inc') ; ?>
+		<div class="l-col">
+			<?php include('consumption/commercial/includes/side-nav-commercial.inc'); ?>
       </div>
-      
-      <?php /*/ Side Content */ ?> 
-      
-      <?php /*/ Page/Body Content */ ?> 
     </div>
-    <?php include ('global/includes/eia_footer.inc') ; ?>
-<?php /*/ Outer Wrapper */ ?>
+	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
 </html>

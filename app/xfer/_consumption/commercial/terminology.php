@@ -1,22 +1,30 @@
+<!doctype html>
+
 <?php
+$globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
+$pageTitle		= 'Commercial Buildings Energy Consumption Survey (CBECS)';
+$L2Title 		= "Commercial Buildings Energy Consumption Survey (CBECS)";
 $locale = 'overview';
-$pageyear = '';
-$L2Title = "Commercial Buildings Energy Consumption Survey (CBECS)";
+$L2Title = "";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
 <head>
-<?php include ('global/includes/eia_head_info.inc') ; ?>
-<?php  if(!isset($no_titling)) include "global/includes/titling.inc"; ?></head>
+	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<?php include('global/head/includes/head.inc'); ?>
+
+</head>
+
 <body>
-<div id="outerX">
-<?php /* Outer Wrapper */ ?>
-<?php include ('global/includes/eia_header.inc') ; ?>
-<?php include ('../includes/subnav_consumption_cbecs.inc') ; ?>
-<?php /* Page/Body Content */ ?>
-<div class="pagecontent mr_temp1">
-  <div class="main_col"> 
-    <?php /* Main Column */ ?>
+	<?php
+include('global/header/includes/header.inc');
+include('consumption/commercial/includes/sub-navigation.inc');
+include('consumption/includes/report-header.inc')
+?>
+	<div class="l-row l-two-col-right-narrow">
+		<div class="l-col">
     <h1>CBECS Terminology</h1>
     <p>This glossary is specific to the <em>2018 Commercial Buildings Energy Consumption Survey</em> (CBECS). CBECS glossaries for prior years can be found in <a href="/consumption/commercial/terminology_2012.php">1999 to 2012 CBECS Terminology</a> and in the appendixes of <a href="/consumption/commercial/data/archive/ ">past CBECS reports</a>.</p>
     <p align="center">A&nbsp;&nbsp;<a href="#B">B</a>&nbsp;&nbsp;<a href="#C">C</a>&nbsp;&nbsp;<a href="#D">D</a>&nbsp;&nbsp;<a href="#E">E</a>&nbsp;&nbsp;<a href="#F">F</a>&nbsp;&nbsp;<a href="#G">G</a>&nbsp;&nbsp;<a href="#H">H</a>&nbsp;&nbsp;<a href="#I">I</a>&nbsp;&nbsp;J&nbsp;&nbsp;<a href="#K">K</a>&nbsp;&nbsp;<a href="#L">L</a>&nbsp;&nbsp;<a href="#M">M</a>&nbsp;&nbsp;<a href="#N">N</a>&nbsp;&nbsp;<a href="#O">O</a>&nbsp;&nbsp;<a href="#P">P</a>&nbsp;&nbsp;Q&nbsp;&nbsp;<a href="#R">R</a>&nbsp;&nbsp;<a href="#S">S</a>&nbsp;&nbsp;<a href="#T">T</a>&nbsp;&nbsp;U&nbsp;&nbsp;<a href="#V">V</a>&nbsp;&nbsp;<a href="#W">W</a>&nbsp;&nbsp;X&nbsp;&nbsp;<a href="#Y">Y</a>&nbsp;&nbsp;Z</p>
@@ -431,19 +439,12 @@ $L2Title = "Commercial Buildings Energy Consumption Survey (CBECS)";
 
       
       <P><strong><a name="Y"></a>Year constructed:</strong> The year in which the major part or the largest portion of a building was constructed.</P>
-      </P>
     </div>
+		<div class="l-col">
+			<?php include('consumption/commercial/includes/side-nav-commercial.inc'); ?>
   </div>
-  <?php /* Side Column */ ?>
-  <div class="side_col right">
-    <?php include ('includes/side_nav_commercial_data.inc') ; ?>
   </div>
-  
-  <?php /*/ Side Content */ ?> 
-  
-  <?php /*/ Page/Body Content */ ?> 
-</div>
-<?php include ('global/includes/eia_footer.inc') ; ?>
-<?php /*/ Outer Wrapper */ ?>
+	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
+  
 </html>

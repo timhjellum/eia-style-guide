@@ -602,8 +602,6 @@ include ('./includes/report-header.inc');
 <li>
 </li>
 </ul-->
-
-				<?php include('./includes/mecs_survey_manager_contact_info.inc'); ?>
         	</div>
         </div>
 		<div class="l-col">

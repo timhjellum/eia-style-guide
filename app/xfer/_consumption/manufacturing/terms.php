@@ -112,7 +112,7 @@ $linkPage 	= 'link03page';
 	<?php
 include('global/header/includes/header.inc');
 include('consumption/manufacturing/includes/sub-navigation.inc');
-include ('./includes/report-header.inc');
+include ('consumption/includes/report-header.inc');
 ?>
 
 	<div class="l-row l-full-width-col">

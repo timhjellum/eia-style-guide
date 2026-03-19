@@ -1,27 +1,30 @@
-<?php
-$pageTitle = "";
-$locale = 'overview';
-$L2Title = "Commercial Buildings Energy Consumption Survey (CBECS)";
+<!doctype html>
 
-$pagetitle = 'Energy Information Administration (EIA)- CBECS Survey Background and Technical Information';
+<?php
+$globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
+$pageTitle		= 'Commercial Buildings Energy Consumption Survey (CBECS)';
+$L2Title 		= "Commercial Buildings Energy Consumption Survey (CBECS)";
+$locale = 'overview';
+$L2Title = "";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
 <head>
-<title>
-<?php echo "$pagetitle"; print PHP_EOL;?>
-</title>
-<?php include ('global/includes/eia_head_info.inc') ; ?>
-<?php  if(!isset($no_titling)) include "global/includes/titling.inc"; ?></head>
+	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<?php include('global/head/includes/head.inc'); ?>
+
+</head>
+
 <body>
-<div id="outerX">
-<?php /* Outer Wrapper */ ?>
-<?php include ('global/includes/eia_header.inc') ; ?>
-<?php include ('../includes/subnav_consumption_cbecs.inc') ; ?>
-<?php /* Page/Body Content */ ?>
-<div class="pagecontent mr_temp3">
-  <div class="main_col"> 
-    <?php /* Main Column */ ?>
+	<?php
+include('global/header/includes/header.inc');
+include('consumption/commercial/includes/sub-navigation.inc');
+include('consumption/includes/report-header.inc')
+?>
+	<div class="l-row l-two-col-right-narrow">
+		<div class="l-col">
     <h1>Estimation of Standard Errors</h1>
     <p>The standard error, or sampling error, of a  survey estimate is a measure of the variation among the estimates from all  possible samples, so it measures how precisely an estimate from a particular  sample approximates the average from all possible samples. This difference arises because we observe a  random subset, rather than the whole population. We measure the typical  magnitude of the sampling error by the standard error of the estimate.</p>     
 <p>If the estimates are unbiased, which means they have no systematic error, this average over all possible samples is the true population value. If systematic error is present, however, this bias is not included in the error measured by the standard error. So, the standard error tends to understate the total estimation error if non-negligible biases exist.</p>
@@ -42,19 +45,12 @@ $pagetitle = 'Energy Information Administration (EIA)- CBECS Survey Background a
     <p>Specific questions on these topics may be directed to:</p>
     <p>Jay Olsen<br>
       <a href="mailto:jay.olsen@eia.gov">jay.olsen@eia.gov</a></p>
-    <?php /*cfinclude template="includes/cbecs_survey_manager_contact_info.cfm"*/ ?>
-    <?php /* /Main Column */ ?> 
   </div>
-  <?php /* Side Column */ ?>
-  <div class="side_col right">
-    <?php include ('../includes/side_nav_commercial.inc') ; ?>
+		<div class="l-col">
+			<?php include('consumption/commercial/includes/side-nav-commercial.inc'); ?>
+		</div>
   </div>
-  
-  <?php /*/ Side Content */ ?> 
-  
-  <?php /*/ Page/Body Content */ ?> 
-</div>
-<?php include ('global/includes/eia_footer.inc') ; ?>
-<?php /*/ Outer Wrapper */ ?>
+	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
+  
 </html>

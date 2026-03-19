@@ -1,0 +1,8 @@
+<h1>2018 Commercial Buildings Energy Consumption Survey final results</h1>
+
+<img src="images/townscape.png" style="margin-right:10px; padding-bottom: 15px" alt="&quot;&quot;" class="left" width="300"/>	  
+<p>Based on the 2018 <em>Commercial Buildings Energy Consumption Survey</em> (CBECS), the estimated 5.9 million U.S. commercial buildings consumed 6.8 quadrillion British thermal units of energy and spent $141 billion on energy in 2018. Electricity and natural gas were the main energy sources. Space heating accounted for close to one-third of end-use consumption in 2018.<br><strong><a href="/consumption/commercial/data/2018/">Data Tables</a></strong> 
+<br><strong>Consumption and expenditures report &nbsp;</strong> <a href="/consumption/commercial/data/2018/pdf/CBECS 2018 CE Release 2 Flipbook.pdf" class="ico_pdf"><strong>PDF</strong></a>&nbsp;&nbsp;<a href="/consumption/commercial/data/2018/ppt/CBECS 2018 CE Release 2 Flipbook.pptx" class="ico_ppt"><strong>PPT</strong></a>
+<br><strong>Buildings characteristics report   &nbsp;</strong> <a href="/consumption/commercial/data/2018/pdf/CBECS_2018_Building_Characteristics_Flipbook.pdf" class="ico_pdf"><strong>PDF</strong></a>&nbsp;&nbsp;<a href="/consumption/commercial/data/2018/ppt/CBECS_2018_Building_Characteristics_Flipbook.pptx" class="ico_ppt"><strong>PPT</strong></a>
+<?php /*<br><strong>Report&nbsp;</strong> <a href="/consumption/commercial/data/2018/pdf/CBECS_2018_Building_Characteristics_Flipbook.pdf" class="ico_pdf"><strong>PDF</strong></a>&nbsp;&nbsp;<a href="/consumption/commercial/data/2018/ppt/CBECS_2018_Building_Characteristics_Flipbook.pptx" class="ico_ppt"><strong>PPT</strong></a>*/ ?>
+</p>
