@@ -1,33 +1,36 @@
-<?php
-$pageTitle = "";
-$locale = 'data';
+<!doctype html>
 
+<?php
+//$locale = 'data';
 $page['year'] = 'Archive';
 $L2Title = "Manufacturing Energy Consumption Survey (MECS)";
+$globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
+$pageTitle		= 'Manufacturing Energy Consumption Survey (MECS)';
+$L2Title		= 'Manufacturing Energy Consumption Survey (MECS)';
+$locale 		= 'overview';
+//$linkPage 		= 'link00page';
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
+
 <head>
-<?php include ('global/includes/eia_head_info.inc') ; ?>
-  <link rel="stylesheet" href="/global/scripts/JQuery/tablesorter/themes/blue/eia_style.css" type="text/css" media="print, projection, screen" />
-  <script type="text/javascript">
-    $(function() {
-      $('#tabs').tabs();
-    });
-  </script>
-<?php  if(!isset($no_titling)) include "global/includes/titling.inc"; ?></head>
+	<title><?=$pageTitle?> - <?=$globalTitle?></title>
+	<meta property="og:title" content="<?=$pageTitle?> - <?=$globalTitle?>">
+	<meta property="og:url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<meta name="url" content="https://www.eia.gov<?=$_SERVER['SCRIPT_NAME']?>">
+	<?php include('global/head/includes/head.inc'); ?>
+
+</head>
+
 <body>
-<div id="outerX"> 
-  <?php /* Outer Wrapper */ ?>
-  <?php include ('global/includes/eia_header.inc') ; ?>
-      <?php include ('consumption/includes/subnav_consumption_mecs.inc') ; ?>
-      <?php /* Page/Body Content */ ?>
-      <div class="pagecontent mr_temp3"> 
-        <?php /* Main Column */ ?>
-        
-        <div class="main_col">
-        <?php include ('../../includes/data_cycle_jump_menu.inc') ; ?>
-          <table width="100%" class="tablesorter basic_table" id="tablesorter-demo">
+	<?php
+include('global/header/includes/header.inc');
+include('consumption/manufacturing/includes/sub-navigation.inc');
+include ('consumption/includes/report-header.inc')
+?>
+	<div class="l-row l-two-col-right-narrow">
+		<div class="l-col primary">
+<div class="basic-table">
+          <table class="basic-table full-width">
             <caption>
             Special Reports (click on table headings to sort)
             <p>
@@ -35,9 +38,9 @@ $L2Title = "Manufacturing Energy Consumption Survey (MECS)";
             <thead>
               <tr>
                 <th><strong>Title</strong></th>
-                <th width="17%"><strong>Release Year</strong></th>
-                <th width="15%"><strong>Cycle Year</strong></th>
-                <th width="15%"><strong>Format</strong></th>
+                <th><strong>Release Year</strong></th>
+                <th><strong>Cycle Year</strong></th>
+                <th><strong>Format</strong></th>
               </tr>
             </thead>
             <tbody>
@@ -242,21 +245,11 @@ $L2Title = "Manufacturing Energy Consumption Survey (MECS)";
             </tbody>
           </table>
         </div>
-        <?php /* /Main Column */ ?>
-        <div class="side_col right">
-          <?php include("../../includes/side_nav_manufacturing_data.inc"); ?>
-        </div>
-      </div>
-  <?php /*/ Page/Body Content */ ?>
-  <?php include("global/includes/eia_footer.inc"); ?>
-</div>
-<?php /*/ Outer Wrapper */ ?>
+ </div>
+		<div class="l-col">
+			<?php include('consumption/manufacturing/includes/side-nav-manufacturing.inc'); ?>
+		</div>
+	</div>
+	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
-<script type="text/javascript" src="/global/scripts/JQuery/tablesorter/jquery.tablesorter.min.js"></script>
-<script type="text/javascript">
-  $(function() {
-    $("#tablesorter-demo").tablesorter({sortList:[[1,0]], widgets: ['zebra']});
-    $("#options").tablesorter({sortList: [[0,0]], headers: { 3:{sorter: false}, 4:{sorter: false}}});
-  });
-</script>
 </html>

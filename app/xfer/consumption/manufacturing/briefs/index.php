@@ -25,7 +25,7 @@ include('consumption/manufacturing/includes/sub-navigation.inc');
 include ('consumption/includes/report-header.inc')
 ?>
 	<div class="l-row l-two-col-right-narrow">
-		<div class="l-col">
+		<div class="l-col article">
 <h1>MECS Industry Analysis Briefs</h1>
 <h2><a href="steel/">Steel Industry Analysis</a></h2>
 <p>The steel industry is critical to the U.S. economy. Steel is the material of choice for many elements of construction, transportation, manufacturing, and a variety of consumer products. It is the backbone of bridges, skyscrapers, railroads, automobiles, and appliances. Most grades of steel used today - particularly high-strength steels that are lighter and more versatile - were not available a decade ago.</p>

@@ -6,7 +6,8 @@ $locale = 'ap';
 $briefTopic = 'Steel';
 $page['year'] = '';
 $hct = 'y';
-$L2Title = ""; ?>
+$L2Title = "";
+?>
 <html>
 
 <head>

@@ -2,8 +2,8 @@
 
 <?php
 $globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
-$pageTitle		= 'MECS Industry Analysis Briefs)';
-$L2Title		= 'MECS Industry Analysis Briefs)';
+$pageTitle		= 'MECS Industry Analysis Briefs';
+$L2Title		= 'MECS Industry Analysis Briefs';
 $locale 		= 'overview';
 //$linkPage 		= 'link00page';
 ?>

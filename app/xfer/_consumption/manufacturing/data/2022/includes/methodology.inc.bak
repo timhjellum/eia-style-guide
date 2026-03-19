@@ -2,12 +2,13 @@
 <?php $page['year'] = '2022'; ?>
 <div class="article">
 	<h1>2022 MECS Methodology</h1>
-	<p>The 2022 MECS is EIA's eleventh survey of the manufacturing sector and covers the 50 States and the District of Columbia. Previous surveys were conducted every three years starting in 1985, and every four years since 1994. Subsequent MECS are planned for every three to four years. For more details on how the scope of the MECS survey has changed over time, see <a href="/consumption/manufacturing/xls/MECS%20Attributes.xlsx" class="ico_xls">MECS attributes</a>. The data collection for the 2026 MECS starts in 2027.</p>
-	<p>The basic unit of data collection for MECS is the manufacturing establishment. The 2022 MECS sample size of about 15,000 establishments was drawn from a nationally representative sample frame representing 97-98% of the manufacturing payroll. This sample allows EIA to report separate estimates of energy use for 21 three-digit industry subsectors, and 58 industry groups and industries according to the North American Industry Classification System (NAICS).</p>
-	<p>The 2022 MECS methodology was identical to the methodology used for the 2018 MECS. Until we can update the 2022 MECS methodology webpage, please use the <a href="/consumption/manufacturing/data/2018/index.php?view=methodology">2018 MECS methodology</a> as a reference.</p>
+    <p>The 2022 MECS is EIA's eleventh survey of the manufacturing sector and covers the 50 States and the District of Columbia. Previous surveys were conducted every three years starting in 1985, and every four years since 1994. Subsequent MECS are planned for every three to four years. For more details on how the scope of the MECS survey has changed over time, see <a href="/consumption/manufacturing/xls/MECS%20Attributes.xlsx" class="ico_xls">MECS attributes</a>. The data collection for the 2026 MECS starts in 2027.</p>
+    <p>The basic unit of data collection for MECS is the manufacturing establishment. The 2022 MECS sample size of about 15,000 establishments was drawn from a nationally representative sample frame representing 97-98% of the manufacturing payroll. This sample allows EIA to report separate estimates of energy use for 21 three-digit industry subsectors, and 58 industry groups and industries according to the North American Industry Classification System (NAICS).</p>
+    <p>The 2022 MECS methodology was identical to the methodology used for the 2018 MECS. Until we can update the 2022 MECS methodology webpage, please use the  <a href="/consumption/manufacturing/data/2018/index.php?view=methodology">2018 MECS methodology</a> as a reference.</p>
 </div>
 <div class="primary">
 	<div class="accordion all-open">
+		<!-- start new panel -->
 		<h3>2018 MECS Survey Forms</h3>
 		<div class="accordion-content">
 			<ul>

@@ -1,43 +1,40 @@
-<!doctype html>
-
 <?php
-$globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
-$pageTitle 		= 'Manufacturing Energy Consumption Survey (MECS)';
+$pageTitle = "MECS Archive";
 $locale = 'data';
+$L2Title = "Manufacturying Energy Consumption Survey (MECS)";
+
 $page['year'] = 'Previous';
 
 ?>
-</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <?php
+  if(isset($pageTitle) && $pageTitle) {
+    print "<title>" . $pageTitle . "</title>"; print PHP_EOL;
+    $pageTitle = '';
+  }
+  ?>
+<?php include ('global/includes/eia_head_info.inc') ; ?>
+<?php  if(!isset($no_titling)) include "global/includes/titling.inc"; ?></head>
 <body>
-	<?php
-include('global/header/includes/header.inc');
-include('consumption/manufacturing/includes/sub-navigation.inc');
-include ('consumption/includes/report-header.inc');
-?>
-	<div class="l-row l-two-col-right-narrow">
-		<div class="l-col article">
+<div id="outerX"> 
+  <?php /* Outer Wrapper */ ?>
+  <?php include ('global/includes/eia_header.inc') ; ?>
+      <?php include ('../../includes/subnav_consumption_mecs.inc') ; ?>
+      <?php /* Page/Body Content */ ?>
+      <div class="pagecontent mr_temp2">
+        <div class="main_col">
+          <?php include ('consumption/manufacturing/includes/data_cycle_jump_menu.inc') ; ?>
           
-	<div class="l-row l-two-col-right-narrow">
-		<div class="l-col primary">
-			<span class="expand-collapse-container">
-				<i class="ico expand"><span>Expand all</span></i>
-				<i class="ico collapse"><span>Collapse all</span></i>
-			</span>
-			<div class="accordion">
           <h3>1991</h3>
-				<div class="accordion-content">
-          
           <ul>
             <li><a href="/consumption/manufacturing/data/previous/pdf/1991/1991.pdf" class="ico_pdf">Consumption of Energy for All Purposes (First Use)</a></li>
             
             <li><a href="recspubuse90/90publicuse.html">Microdata</a></li>
             <li><a href="/survey/#eia-457">Survey Forms</a></li>
           </ul>
-          </div>
-          
-          
           <h3>1994</h3>
-				<div class="accordion-content">
           <ul>
             <li><a href="/consumption/residential/data/archive/pdf/DOE%20EIA-0314(87).pdf" class="ico_pdf"> Housing Characteristics Tables</a></li>
             <li>Consumption &amp; Expenditures Tables
@@ -49,11 +46,7 @@ include ('consumption/includes/report-header.inc');
             <li><a href="/consumption/archive/residential/recspubuse87/87publicuse.html">Microdata</a></li>
             <li><a href="/survey/#eia-457">Survey Forms</a></li>
           </ul>
-          
-          
-          </div>
           <h3>1988</h3>
-				<div class="accordion-content">
           <ul>
             <li><a href="/consumption/residential/data/archive/pdf/DOE%20EIA-0314(84).pdf" class="ico_pdf">Housing Characteristics Tables</a></li>
             <li>Consumption &amp; Expenditures Tables
@@ -64,11 +57,7 @@ include ('consumption/includes/report-header.inc');
             </li>
             <li><a href="/survey/#eia-457">Survey Forms</a> 1984/1985</li>
           </ul>
-          
-          
-          </div>
           <h3>1982</h3>
-				<div class="accordion-content">
           <ul>
             <li><a href="/consumption/residential/data/archive/pdf/DOE%20EIA-0314(82).pdf" class="ico_pdf">Housing Characteristics Tables</a></li>
             <li>Consumption &amp; Expenditures Tables
@@ -79,11 +68,7 @@ include ('consumption/includes/report-header.inc');
             </li>
             <li><a href="/survey/#eia-457">Survey Forms</a> 1982/1983</li>
           </ul>
-          
-          
-          </div>
           <h3>1981</h3>
-				<div class="accordion-content">
           <ul>
             <li><a href="/consumption/residential/data/archive/pdf/DOE%20EIA-0314(81).pdf" class="ico_pdf">Housing Characteristics Tables</a></li>
             <li>Consumption &amp; Expenditures Tables
@@ -94,11 +79,7 @@ include ('consumption/includes/report-header.inc');
             </li>
             <li><a href="/survey/#eia-457">Survey Forms</a> 1981/1982</li>
           </ul>
-          
-          
-          </div>
           <h3>1980</h3>
-				<div class="accordion-content">
           <ul>
             <li><a href="/consumption/residential/data/archive/pdf/DOE%20EIA-0314.pdf" class="ico_pdf">Housing Characteristics Tables</a></li>
             <li>Consumption &amp; Expenditures Tables
@@ -109,11 +90,7 @@ include ('consumption/includes/report-header.inc');
             </li>
             <li><a href="/survey/#eia-457">Survey Forms</a> 1980/1981</li>
           </ul>
-          
-          
-          </div>
           <h3>1979</h3>
-				<div class="accordion-content">
           <ul>
             <li>Housing Characteristics Tables <strong>not available</strong></li>
             <li>Consumption &amp; Expenditures Tables
@@ -125,18 +102,14 @@ include ('consumption/includes/report-header.inc');
             <li>Survey Forms <strong>not available</strong></li>
           </ul>
           
-          
-          </div>          
           <h3>Historical Trends</h3>
-				<div class="accordion-content">
-          <div class="basic-table">
-          <table class="basic-table full-width">
+          <table class="basic_table width=100%">
             <thead>
               <tr>
-                <th>Total</th>
-                <th>Electricity</th>
-                <th>LPG</th>
-                <th>Natural gas</th>
+                <th width="88">Total</th>
+                <th width="88">Electricity</th>
+                <th width="88">LPG</th>
+                <th width="88">Natural gas</th>
                 <th>Fuel oil/kerosene</th>
               </tr></thead>
             <tbody>
@@ -206,12 +179,13 @@ include ('consumption/includes/report-header.inc');
             </tbody>
           </table>
         </div>
-</div>
+        <div class="side_col right">
+          <?php include ('../../includes/side_nav_manufacturing.inc') ; ?>
         </div>
-		<div class="l-col">
-			<?php include('consumption/manufacturing/includes/side-nav-manufacturing.inc'); ?>
       </div>
-	</div>
-	<?php include('global/footer/includes/footer.inc'); ?>
+      <?php /*/ Page/Body Content */ ?>
+      <?php include ('global/includes/eia_footer.inc') ; ?>
+</div>
+<?php /*/ Outer Wrapper */ ?>
 </body>
 </html>

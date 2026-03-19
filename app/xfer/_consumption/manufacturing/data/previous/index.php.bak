@@ -2,12 +2,12 @@
 
 <?php
 $globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
-$pageTitle 		= 'Manufacturing Energy Consumption Survey (MECS)';
+$pageTitle 		= "Manufacturing Energy Consumption Survey (MECS)";
 $locale = 'data';
 $page['year'] = 'Previous';
-
 ?>
 </head>
+
 <body>
 	<?php
 include('global/header/includes/header.inc');
@@ -16,7 +16,7 @@ include ('consumption/includes/report-header.inc');
 ?>
 	<div class="l-row l-two-col-right-narrow">
 		<div class="l-col article">
-          
+		
 	<div class="l-row l-two-col-right-narrow">
 		<div class="l-col primary">
 			<span class="expand-collapse-container">
@@ -24,12 +24,11 @@ include ('consumption/includes/report-header.inc');
 				<i class="ico collapse"><span>Collapse all</span></i>
 			</span>
 			<div class="accordion">
-          <h3>1991</h3>
+				<h3>1991</h3>
 				<div class="accordion-content">
           
           <ul>
             <li><a href="/consumption/manufacturing/data/previous/pdf/1991/1991.pdf" class="ico_pdf">Consumption of Energy for All Purposes (First Use)</a></li>
-            
             <li><a href="recspubuse90/90publicuse.html">Microdata</a></li>
             <li><a href="/survey/#eia-457">Survey Forms</a></li>
           </ul>
@@ -207,10 +206,10 @@ include ('consumption/includes/report-header.inc');
           </table>
         </div>
 </div>
-        </div>
+	</div>
 		<div class="l-col">
 			<?php include('consumption/manufacturing/includes/side-nav-manufacturing.inc'); ?>
-      </div>
+		</div>
 	</div>
 	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
