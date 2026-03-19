@@ -32,13 +32,13 @@ include ('consumption/includes/report-header.inc')
 <hr />
 <h2><a href="chemical/">Chemical Industry Analysis</a></h2>
 <p>The chemical industries are a cornerstone of the U.S. economy, converting raw materials such as oil, natural gas, air, water, metals, and minerals into thousands of various products. Chemicals are key materials for producing an extensive assortment of consumer goods. They are also crucial materials in creating many resources that are essential inputs to the numerous industries and sectors of the U.S. economy.</p>
-  </div>
+		</div>
 		<div class="l-col">
 			<?php include('consumption/manufacturing/includes/side-nav-manufacturing.inc'); ?>
-  </div>
+		</div>
 	</div>
 	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
-  
-  
+
+    
 </html>

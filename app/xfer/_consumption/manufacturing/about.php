@@ -3,7 +3,6 @@
 <?php
 $globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
 $pageTitle		= 'About the Manufacturing Energy Consumption Survey';
-$locale 		= 'data';
 $L2Title 		= "Manufacturing Energy Consumption Survey (MECS)";
 $locale 		= 'overview';
 $linkPage 		= 'link00page';
@@ -29,7 +28,6 @@ include ('consumption/includes/report-header.inc')
 		<div class="l-col">
 			<?php
 				include('consumption/includes/about-content.inc');
-				//include('consumption/includes/contact-content.inc');
 			?>
 		</div>
 		<div class="l-col">
@@ -38,5 +36,4 @@ include ('consumption/includes/report-header.inc')
 	</div>
 	<?php include('global/footer/includes/footer.inc'); ?>
 </body>
-
 </html>

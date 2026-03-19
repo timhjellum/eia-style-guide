@@ -2,10 +2,10 @@
 
 <?php
 $globalTitle 	= 'U.S. Energy Information Administration (EIA)'; 
-$pageTitle 		= "Manufacturing Energy Consumption Survey (MECS)";
+$pageTitle		= 'About the Manufacturing Energy Consumption Survey';
 $locale 		= 'data';
 $L2Title 		= "Manufacturing Energy Consumption Survey (MECS)";
-$locale = 'overview';
+$locale 		= 'overview';
 $linkPage 		= 'link00page';
 ?>
 <html>
@@ -23,17 +23,17 @@ $linkPage 		= 'link00page';
 	<?php
 include('global/header/includes/header.inc');
 include('consumption/manufacturing/includes/sub-navigation.inc');
-include ('./includes/report-header.inc')
+include ('consumption/includes/report-header.inc')
 ?>
 	<div class="l-row l-two-col-right-narrow">
 		<div class="l-col">
 			<?php
-			include('./includes/about-content.inc');
-			include('./includes/contact.inc');
+				include('consumption/includes/about-content.inc');
+				//include('consumption/includes/contact-content.inc');
 			?>
 		</div>
 		<div class="l-col">
-			<?php include('../includes/side-nav-manufacturing.inc'); ?>
+			<?php include('consumption/manufacturing/includes/side-nav-manufacturing.inc'); ?>
 		</div>
 	</div>
 	<?php include('global/footer/includes/footer.inc'); ?>
