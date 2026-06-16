@@ -1,1 +1,0 @@
-<h3><a href="archive.cfm">Current Version</a> <span class="right">See Previous: <a href="archive1.cfm">version 1</a> <a href="archive2.cfm">version 2</a> <a href="archive3.cfm">Original</a></span></h3>

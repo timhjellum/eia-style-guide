@@ -1,1 +1,0 @@
-<script src='/adaptive/global/'></script>
