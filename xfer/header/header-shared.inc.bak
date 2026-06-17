@@ -55,12 +55,15 @@
 			<div class="section-tabs">
 				<div class="tabs-wrapper" id="thumbCarousel">
 					<ul>
-							<li class="primary-nav-active" data-target="nav-sources">
-								<a href="javascript:;" title="Statistics" data-target="nav-sources">Statistics</a>
+						<li class="primary-nav-active" data-target="nav-stats">
+							<a href="javascript:;" title="Stastics" data-target="nav-stats">Statistics</a>
 						</li>
-							<li class="" data-target="nav-topics">
-								<a href="javascript:;" title="Analysis" data-target="nav-topics">Analysis</a>
+						<li class="" data-target="nav-analysis">
+							<a href="javascript:;" title="Analysis" data-target="nav-analysis">Analysis</a>
 						</li>
+						<!--li class="" data-target="nav-geography">
+							<a href="javascript:;" title="Geography" data-target="nav-geography">Geography</a>
+						</li-->
 						<li class="" data-target="nav-tools">
 							<a href="javascript:;" title="Tools" data-target="nav-tools">Tools</a>
 						</li>
@@ -82,6 +85,14 @@
 									<a href="/petroleum/" title="Petroleum & Other Liquids">Petroleum &amp; Other Liquids</a>
 								</h3>
 								<p>Crude oil, gasoline, heating oil, diesel, propane, and other liquids including biofuels and natural gas liquids.</p>
+								<!--ul>
+									<li>
+										<a href="/petroleum/gasdiesel/" title="Gasoline and Diesel Fuel Update">Gasoline and Diesel Fuel Update</a>
+									</li>
+									<li>
+										<a href="/petroleum/supply/weekly/" title="Weekly Petroleum Status Report">Weekly Petroleum Status Report</a>
+									</li>
+								</ul-->
 							</div>
 							<div class="nav-menu natural-gas">
 								<span class="ico-menu natural-gas-icon"></span>
@@ -89,6 +100,14 @@
 									<a href="/naturalgas/" title="Natural Gas">Natural Gas</a>
 								</h3>
 								<p>Exploration and reserves, storage, imports and exports, production, prices, sales.</p>
+								<!--ul>
+									<li>
+										<a href="http://ir.eia.gov/ngs/ngs.html" title="Weekly Natural Gas Storage Report">Weekly Natural Gas Storage Report &#8250;</a>
+									</li>
+									<li>
+										<a href="/beta/naturalgas/weekly/supplement/" title="Weekly Natural Gas Storage Report Supplement">Weekly Natural Gas Storage Report Supplement</a>
+									</li>
+								</ul-->
 							</div>
 							
 							<div class="nav-menu consumption">
