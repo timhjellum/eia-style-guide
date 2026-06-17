@@ -35,7 +35,7 @@
 				</li>
 			</ul>
 		</div>
-		<li class="list-spacer"></li>
+		<!--li class="list-spacer"></li-->
 		<h3><a name="uranium"></a>Uranium (nuclear fuel)</h3>
 		<div class="accordion-content">
 			<ul>
