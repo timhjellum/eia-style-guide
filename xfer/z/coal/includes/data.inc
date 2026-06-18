@@ -11,11 +11,11 @@
                     </span> <span class="pipe">|</span> <span class="source">Data from: </span> <a href="/totalenergy/data/monthly/">Monthly Energy Review</a> <span class="pipe">|</span> <span class="source">Interactive data from:</span> <a href="/totalenergy/data/browser/" title="Interactive data from">Total Energy Browser</a></li>
                 <li><span class="formats">Available formats:</span> <a href="/totalenergy/data/monthly/pdf/sec6_3.pdf" title="Coal overview monthly"><span class="ico pdf"><span>PDF</span></span></a> <a href="/totalenergy/data/browser/csv.php?tbl=T06.01" title="Coal overview monthly"><span class="ico csv"><span>CSV</span></span></a> <a href="/totalenergy/data/browser/xls.php?tbl=T06.01&amp;freq=m" title="Coal overview monthly"><span class="ico xls"><span>XLS</span></span></a><span class="pipe-alt">|</span><a title="View Coal overview monthly in Total Energy Browser" href="/totalenergy/data/browser/index.php?tbl=T06.01#/?f=M&start=200001"><span class="ico interactive"><span>Interactive</span></span></a></li>
                 <li class="list-spacer"></li>
-                <li><a href="/totalenergy/data/annual/showtext.pdf?t=ptb0701">Annual</a></li>
+                <li><!--a href="/totalenergy/data/annual/showtext.pdf?t=ptb0701"-->Annual</li>
                 <li><span class="release-date">Release Date:</span> <span class="date">
                         <?php include('totalenergy/data/annual/includes/releasedate.inc') ?>
-                    </span> <span class="pipe">|</span> <span class="source">Data from:</span> <a href="/totalenergy/data/annual/">Annual Energy Review, 1949 through 2011</a> <span class="alert">(no longer updated)</span></li>
-                <li><span class="formats">Available formats:</span> <a href="/totalenergy/data/annual/pdf/sec7_5.pdf" title="Coal overview annual"><span class="ico pdf"><span>PDF</span></span></a> <a href="/totalenergy/data/annual/xls/stb0701.xls" title="Coal overview annual"><span class="ico xls"><span>XLS</span></span></a></li>
+                    </span> <span class="pipe">|</span> <span class="source">Data from:</span> <a href="/totalenergy/data/annual/">Annual Energy Review, 1949 through 2011</a> <!--span class="alert"-->(discontinued)<!--/span--></li>
+                <li><span class="formats">Available formats:</span> <a href="/totalenergy/data/annual/pdf/sec7_5.pdf" title="Coal overview annual"><span class="ico pdf"><span>PDF</span></span></a> <a href="/totalenergy/data/annual/xls/stb0701.xls" title="Coal overview annual"><span class="ico xls"><span>XLS</span></span></a></li-->
             </ul>
         </div>
         <h3 id="prices">Prices </h3>
@@ -51,7 +51,7 @@
                 <li>By coal rank</li>
                 <li><span class="release-date">Release Date:</span> <span class="date">
                         <?php include('totalenergy/data/annual/includes/releasedate.inc') ?>
-                    </span> <span class="pipe">|</span> <span class="source">Data from:</span> <a href="/totalenergy/data/annual/">Annual Energy Review, 1949 through 2011</a> <span class="alert">(no longer updated)</span> </li>
+                    </span> <span class="pipe">|</span> <span class="source">Data from:</span> <a href="/totalenergy/data/annual/">Annual Energy Review, 1949 through 2011</a> <!--span class="alert"-->(discontinued)<!--/span--> </li>
                 <li><span class="formats">Available formats:</span> <a href="/totalenergy/data/annual/pdf/sec7_21.pdf" title="Average sales price By coal rank"><span class="ico pdf"><span>PDF</span></span></a> <a href="/totalenergy/data/annual/xls/stb0709.xls" title="Average sales price By coal rank"><span class="ico xls"><span>XLS</span></span></a></li>
                 <li class="list-spacer"></li>
                 <li>Average delivered prices to end use sector by Census division and state</li>
@@ -129,7 +129,7 @@
                 <li>By sector (1949-2011)</li>
                 <li><span class="release-date">Release Date:</span> <span class="date">
                         <?php include('totalenergy/data/annual/includes/releasedate.inc') ?>
-                    </span> <span class="pipe">|</span> <span class="source">Data from:</span> <a href="/totalenergy/data/annual/">Annual Energy Review, 1949 through 2011</a> <span class="alert">(no longer updated)</span></li>
+                    </span> <span class="pipe">|</span> <span class="source">Data from:</span> <a href="/totalenergy/data/annual/">Annual Energy Review, 1949 through 2011</a> <!--span class="alert"-->(discontinued)<!--/span--></li>
                 <li><span class="formats">Available formats:</span> <a href="/totalenergy/data/annual/pdf/sec7_9.pdf" title="Consumption Annual By sector (1949-2011)"><span class="ico pdf"><span>PDF</span></span></a> <a href="/totalenergy/data/annual/xls/stb0703.xls" title="Consumption Annual By sector (1949-2011)"><span class="ico xls"><span>XLS</span></span></a><span class="pipe-alt">|</span> <a href="/beta/MER/index.pdf?tbl=T06.02#/?f=A&amp;start=1949&amp;end=2014&amp;charted=1-5-12-13-14" title="Consumption Annual By sector (1949-2011)"><span class="ico interactive"><span>Interactive</span></span></a></li>
                 <li class="list-spacer"></li>
                 <li>By electric power sector, Census division, and state</li>
@@ -285,10 +285,10 @@
                 <li><span class="formats">Available formats:</span> <a href="/totalenergy/data/monthly/pdf/sec6_5.pdf" title="Monthly by sector"><span class="ico pdf"><span>PDF</span></span></a> <a href="/totalenergy/data/browser/csv.php?tbl=T06.03" title="Monthly by sector"><span class="ico csv"><span>CSV</span></span></a> <a href="/totalenergy/data/browser/xls.php?tbl=T06.03&amp;freq=m" title="Monthly by sector"><span class="ico xls"><span>XLS</span></span></a><span class="pipe-alt">|</span><a href="/totalenergy/data/browser/index.php?tbl=T06.03#/?f=M&start=200001" title="Monthly by sector"><span class="ico interactive"><span>Interactive</span></span></a></li>
             </ul>
             <ul>
-                <li class="head"><a href="/totalenergy/data/annual/showtext.cfm?t=ptb0706" title="Annual by sector">Annual by sector</a></li>
+                <li class="head"><!--a href="/totalenergy/data/annual/showtext.cfm?t=ptb0706" title="Annual by sector"-->Annual by sector</li>
                 <li><span class="release-date">Release Date:</span> <span class="date">
                         <?php include('totalenergy/data/annual/includes/releasedate.inc') ?>
-                    </span> <span class="pipe">|</span> <span class="source">Data from:</span> <a href="/totalenergy/data/annual/">Annual Energy Review, 1949 through 2011</a> <span class="alert">(no longer updated)</span></li>
+                    </span> <span class="pipe">|</span> <span class="source">Data from:</span> <a href="/totalenergy/data/annual/">Annual Energy Review, 1949 through 2011</a> <!--span class="alert"-->(discontinued)<!--/span--></li>
                 <li><span class="formats">Available formats:</span> <a href="/totalenergy/data/annual/pdf/sec7_15.pdf" title="Annual by sector"><span class="ico pdf"><span>PDF</span></span></a> <a href="/totalenergy/data/annual/xls/stb0706.xls" title="Annual by sector"><span class="ico xls"><span>XLS</span></span></a></li>
             </ul>
         </div>
