@@ -1,4 +1,6 @@
 <div class="primary">
+
+    <p>
     <p>Find statistics on renewable energy consumption by source type, electric capacity and electricity generation from renewable sources, biomass and alternative fuels.</p>
     <span class="expand-collapse-container"> <i class="ico expand"><span>Expand all</span></i> <i class="ico collapse"><span>Collapse all</span></i> </span>
     <div class="accordion">
@@ -143,6 +145,7 @@
                 <li><span class="formats">Available formats:</span> <a href="/electricity/annual/xls/epa_03_14.xlsx" alt="Hydropower generation"><span class="ico xls"><span>XLS</span></span></a></li>
             </ul>
             <ul>
+
                 <li><span class="source">Data from:</span> <a href="/international/data/world/">International Energy Statistics</a></li>
                 <li><a href="/international/data/world/electricity/electricity-generation?pd=2&p=000000000000000000000000000000g&u=0&f=A&v=mapbubble&a=-&i=none&vo=value&&t=C&g=00000000000000000000000000000000000000000000000001&l=249-ruvvvvvfvtvnvv1vrvvvvfvvvvvvfvvvou20evvvvvvvvvvvvvvs&s=94694400000&e=1514764800000">Hydrolectricity net electricity generation</a></li>
                 <li><a href="/international/data/world/electricity/electricity-generation?pd=2&p=00000000000000000000008&u=0&f=A&v=mapbubble&a=-&i=none&vo=value&&t=C&g=00000000000000000000000000000000000000000000000001&l=249-ruvvvvvfvtvnvv1vrvvvvfvvvvvvfvvvou20evvvvvvvvvvvvvvs&s=94694400000&e=1514764800000">Hydrolectricity electricity installed capacity</a></li>

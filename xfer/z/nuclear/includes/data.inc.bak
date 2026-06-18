@@ -1,10 +1,5 @@
 <div class="primary">
-    <p>Find statistics on nuclear operable units, nuclear electricity net generation, nuclear share of electricity net generation, and capacity factor.</p>
-
-    <span class="expand-collapse-container">
-        <i class="ico expand"><span>Expand all</span></i>
-        <i class="ico collapse"><span>Collapse all</span></i>
-    </span>
+    <p>Find statistics on nuclear operable units, nuclear electricity net generation, nuclear share of electricity net generation, and capacity factor.</p> <span class="expand-collapse-container"> <span class="ico expand"><span>Expand all</span></span> <span class="ico collapse"><span>Collapse all</span></span> </span>
     <div class="accordion">
         <h3><a name="nuclear"></a>Nuclear power plants</h3>
         <div class="accordion-content">
@@ -31,7 +26,6 @@
                 <li><span class="formats">Available formats:</span> <a href="/totalenergy/data/annual/pdf/sec9_3.pdf" title="Nuclear generator licensing data"> <span class="ico pdf"><span>PDF</span></span></a><a href="/totalenergy/data/annual/xls/stb0901.xls" title="Nuclear generator licensing data"> <span class="ico xls"><span>XLS</span></span></a></li>
             </ul>
             <ul>
-
                 <li class="head">International nuclear data</li>
                 <li><span class="source">Data from:</span></li>
                 <li>
@@ -43,8 +37,8 @@
                 </li>
             </ul>
         </div>
+        <!--li class="list-spacer"></li-->
         <h3><a name="uranium"></a>Uranium (nuclear fuel)</h3>
-
         <div class="accordion-content">
             <ul>
                 <li class="head"><a href="/uranium/production/annual/ureserve.php">Uranium reserves estimates</a></li>
@@ -102,9 +96,6 @@
                 <li>...more uranium data from: <a href="/totalenergy/data/browser/index.php?tbl=T08.02#/?f=M&start=200001">Monthly Energy Review</a></li>
             </ul>
         </div>
-
-
-
         <h3><a name="spentfuel"></a>Spent nuclear fuel (radioactive waste)</h3>
         <div class="accordion-content">
             <ul>

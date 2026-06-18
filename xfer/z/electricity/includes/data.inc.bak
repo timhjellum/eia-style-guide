@@ -269,6 +269,7 @@
             <ul>
                 <li class="head">International electricity data</li>
                 <li><span class="source">Data from:</span> <a href="/international/data/world/">International Energy Statistics</a></li>
+                <li>
                 <li><a href="/international/data/world/electricity/electricity-consumption">Electricity net consumption</a></li>
             </ul>
         </div>

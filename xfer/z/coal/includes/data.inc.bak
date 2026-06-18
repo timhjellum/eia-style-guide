@@ -1,15 +1,5 @@
 <div class="primary">
-    <div class="tie_correction">
-        <strong>Notice:</strong> We have revised Table 3b, Average annual coal transportation costs from coal basin to
-        state by waterway. We updated this table to include the omitted data for New Hampshire and to correct a
-        transcription error.
-    </div>
-    <br>
-    <p>Find statistics on coal production, consumption, exports, imports, stocks, mining, and prices.</p>
-    <span class="expand-collapse-container">
-        <span class="ico expand"><span>Expand all</span></span>
-        <span class="ico collapse"><span>Collapse all</span></span>
-    </span>
+    <p>Find statistics on coal production, consumption, exports, imports, stocks, mining, and prices.</p> <span class="expand-collapse-container"> <span class="ico expand"><span>Expand all</span></span> <span class="ico collapse"><span>Collapse all</span></span> </span>
     <div class="accordion">
         <h3 id="summary">Summary </h3>
         <div class="accordion-content">
