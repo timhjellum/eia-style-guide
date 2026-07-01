@@ -1,8 +1,0 @@
-img {
-    border: 1px solid #cccccc;
-    max-width: 100%;
-    max-height: 100%;
-  }
-a.external-link:after, a[href*=".com"]:after, a[href^="http:"]:after, a[href^="https:"]:after {
-    display: none;
-}
