@@ -1,0 +1,17 @@
+<div>
+  @if (ShowInfoLink) {
+    <a type="button" pButton (click)="setValue()" class="pull-right">
+      <em class="fa fa-question-circle"></em>
+    </a>
+  }
+  <h4 class="iframe-title">{{Config.chartTitle}}</h4>
+</div>
+@if (loadMap) {
+  <div>
+    <div>
+      <a target="_blank" href="{{url}}" title="View the interactive map">
+        <img id="energyMap" alt="{{Config.id}}" [src]="mapImage">
+      </a>
+    </div>
+  </div>
+}

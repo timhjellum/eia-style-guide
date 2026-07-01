@@ -1,0 +1,15 @@
+<div [ngStyle]="getStyle()" class="sep-ag-grid">
+  <ag-grid-angular
+    class="ag-theme-balham"
+    [gridOptions]="gridOptions"
+    [rowData]="TableObject.rowData"
+    [columnDefs]="TableObject.columnDef"
+    [rowStyle]="TableObject.rowStyle"
+    [getRowStyle]="TableObject.getRowStyle"
+    [animateRows]="true"
+    [enableRangeSelection]="true"
+    enableColResize="true"
+    (gridReady)="onGridReady($event)"
+    (gridSizeChanged)="onSizeChanged()"
+  ></ag-grid-angular>
+</div>

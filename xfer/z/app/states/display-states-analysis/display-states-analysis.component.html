@@ -1,0 +1,13 @@
+<app-display-states-menu></app-display-states-menu>
+<div class="l-full-width-page s-analysis">
+  <div class="l-row l-full-width-col">
+    <div id="state-analysis-profile">
+      <h1>Analysis</h1>
+
+      @if (analysis) {
+        <div #stateanalysis  [innerHTML]="analysis">
+        </div>
+      }
+    </div>
+  </div>
+</div>

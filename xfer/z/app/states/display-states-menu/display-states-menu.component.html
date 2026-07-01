@@ -1,0 +1,32 @@
+<a href="#page-content" class="eia-accessibility">Skip to page content</a>
+<div id="individual-states-header-menu" class="sub-navigation tools">
+  <div class="left">
+    <ul class="left-nav">
+      <li routerLinkActive="active"><a routerLink="/{{stateService.getStateAbbr()}}/overview">Overview</a></li>
+      <li routerLinkActive="active" class="dropdown dropdown-data">
+        <a routerLink="/{{stateService.getStateAbbr()}}/data" [ngClass]="!isTerritory ? 'dropbtn':''">Data@if (!isTerritory) {
+          <span class="ico sort-up"></span>
+        }</a>
+
+        @if (!isTerritory) {
+          <div class="dropdown-data-content dropdown-content">
+            <app-dasboard-menu
+              [BasePath]="path"
+              [ShowDescription] = false
+            ></app-dasboard-menu>
+          </div>
+        }
+      </li>
+      <li routerLinkActive="active"><a routerLink="/{{stateService.getStateAbbr()}}/analysis">Analysis</a></li>
+      <li routerLinkActive="active" [class.disabled]="isTerritory ? true : null"><a routerLink="/{{stateService.getStateAbbr()}}/rankings">Rankings</a></li>
+    </ul>
+  </div>
+  <div class="right right--how-to">
+    <ul>
+      <li><a routerLink="/{{stateService.getStateAbbr()}}/how-to">How To</a></li>
+      <app-print-dashboard></app-print-dashboard>
+    </ul>
+
+  </div>
+</div>
+<div id="page-content"></div>

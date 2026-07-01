@@ -1,0 +1,53 @@
+<app-display-states-menu></app-display-states-menu>
+@if (!isTeritories) {
+  <div class="blue-template data-tab l-row l-two-col-right-narrow">
+    <div class="l-main-col" >
+      <app-dasboard-menu [BasePath]="path"></app-dasboard-menu>
+    </div>
+    <div class="l-narrow-col">
+      <div class="secondary-alt">
+        <div class="ico-create-dashboard"></div>
+        <strong><a routerLink="/{{stateInfoService.getStateAbbr()}}/data/dashboard/custom">Create Custom Dashboard</a></strong>
+      </div>
+      <div class="secondary">
+        <ul>
+          <li class="head"><h2>Topic</h2></li>
+          <li>
+            <app-special-view-list [BasePath]="path"></app-special-view-list>
+          </li>
+        </ul>
+      </div>
+      <div class="secondary">
+        <ul>
+          <li class="head"><h2>State Energy Data System (SEDS)</h2></li>
+          <li>
+            <ul class="list-items" id="sedsAboutLinks">
+              <li><a href="/state/seds/seds-data-complete.php?sid=US">1960-2016 estimates</a></li>
+              <li><a href="/state/seds/seds-data-fuel.php?sid=US">2017 updates</a></li>
+              <li><a href="/state/seds/seds-technical-notes-complete.php?sid=US">Technical notes and documentation - complete 2016</a></li>
+              <li><a href="/state/seds/seds-technical-notes-updates.php?sid=US">Technical notes and documentation - 2017 updates</a></li>
+              <li><a href="/state/seds/seds-data-changes.php?sid=US">Data and methodology changes</a></li>
+              <li><a href="/about/contact/state.php">Contact SEDS experts</a></li>
+              <li><a href="/state/seds/archive/">Current and previous reports (PDF)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+}
+
+@if (isTeritories) {
+  <div class="blue-template data-tab l-row l-full-width-col territories-sep-table">
+    <app-display-states-profile></app-display-states-profile>
+    <hr/>
+    <div style="font-size: 14px;">
+    <app-display-notes-and-sources></app-display-notes-and-sources>
+      <div>-- = No data reported. </div>
+      <div>*  = Value is less than half of the smallest unit of measure (e.g., for values with no decimals, the smallest unit is 1 then values less than 0.5 are shown as *.) </div>
+      <div>NA = Not available.</div>
+      <div style="margin-bottom: 10px">NM = Not meaningful due to large relative standard error or excessive percentage change.</div>
+    </div>
+  </div>
+
+}

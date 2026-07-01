@@ -1,0 +1,7 @@
+<div class="clearAll">
+  <div class="sep-display-header"><strong>{{Config.chartTitle}}</strong></div>
+  @if (displayChart) {
+    <app-display-sep-ag-grid [TableId]="Config.id" [TableObject]="TableObject" [Width]="Width" [Height]="Height"
+    [ToFit]="ToFit"></app-display-sep-ag-grid>
+  }
+</div>

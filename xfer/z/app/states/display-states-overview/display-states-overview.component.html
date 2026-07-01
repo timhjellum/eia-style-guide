@@ -1,0 +1,72 @@
+<app-display-states-menu></app-display-states-menu>
+<div class="s-overview blue-template l-full-width-page">
+    <div class="l-row l-full-width-col">
+        <div class="l-col">
+            @if (!isTerritory) {
+            <app-states-svg [State]="currentState" class="border-set"></app-states-svg>
+            }
+            @if (isTerritory) {
+            <h3>{{ mapName }}</h3>
+            <app-territory [usTerritory]="currentState"></app-territory>
+            }
+        </div>
+    </div>
+    <div class="l-row l-full-width-col browse">
+        <div class="l-col">
+            <h1>Browse data by&hellip;</h1>
+            <div class="l-row l-four-col">
+                <div class="l-col ico-states"><a (click)="openList()">state/territory<span></span></a></div>
+                <div class="l-col ico-sources"><a routerLink="/{{getStateAbbrUrl()}}/data">energy source<span></span></a></div>
+                <div class="l-col ico-activities"><a routerLink="/{{getStateAbbrUrl()}}/data">activity<span></span></a></div>
+                <div class="l-col"><span class="list-header">topic</span> <app-special-view-list [BasePath]="dashboardPath"></app-special-view-list></div>
+            </div>
+        </div>
+        <div class="l-row quick-facts l-full-width-col">
+            <div class="l-col">
+
+                <h1>Facts about {{getStateName()}}</h1>
+                @if (displayFacts) {
+                <ul>
+                    @for (fact of facts; track fact.FACT) {
+                    <li [innerHTML]="toHTML(fact.FACT)"></li>
+                    }
+                </ul>
+                }
+                <a routerLink="/{{getStateAbbrUrl()}}/analysis">Read full profile analysis</a>
+            </div>
+        </div>
+        @if (!isTerritory) {
+        <div class="l-row l-full-width-col">
+            <div class="l-col">
+                <h1>Energy indicators for {{getStateName()}}</h1>
+                <app-display-states-profile [EndPoint]="profileEndpoint"></app-display-states-profile>
+                <app-display-notes-and-sources></app-display-notes-and-sources>
+            </div>
+        </div>
+        }
+        @if (!isTerritory) {
+        <div class="l-row overview-rankings-container l-full-width-col">
+            <div class="l-col">
+                <h1>Selected rankings for {{getStateName()}}</h1>
+                <div>
+                    <app-display-eia-rankings-top-three></app-display-eia-rankings-top-three>
+                    <a class="view" routerLink="/{{getStateAbbrUrl()}}/rankings">View all rankings</a>
+                </div>
+            </div>
+        </div>
+        }
+        @if (!isTerritory && isLoadTie) {
+        <div class="l-row l-full-width-col">
+            <div class="l-col full-width">
+                <app-display-tie-articles (loadTie)="loadTie($event)"></app-display-tie-articles>
+            </div>
+        </div>
+        }
+        <div class="l-row l-full-width-col">
+            <div class="l-col full-width">
+                <h1>Other resources for {{getStateName()}}</h1>
+                <app-display-other-resources></app-display-other-resources>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div #staticImage class="viz-static-images-container">
+  <div [ngStyle]="imageContainerStyle">
+    @if (Config.data.series.length > 1) {
+      <p-carousel
+        [value]="Config.data.series"
+        numVisible="1"
+        pageLinks="8">
+        <ng-template pTemplate="header">
+          <h3>{{Config.chartTitle}}</h3>
+        </ng-template>
+        <ng-template let-item pTemplate="item">
+          <img
+            class="centered"
+            src="{{item.key}}"
+            alt="{{item.name}}"
+            [ngStyle]="imageIndividualStyle" />
+          </ng-template>
+        </p-carousel>
+      }
+      @if (Config.data.series.length == 1) {
+        <div class="viz-static-images-header">{{Config.chartTitle}}</div>
+        <img
+          class="centered"
+          src="{{Config.data.series[0].key}}"
+          alt="{{Config.data.series[0].name}}"
+          [ngStyle]="imageIndividualStyle" />
+        }
+      </div>
+    </div>

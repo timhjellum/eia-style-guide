@@ -1,0 +1,17 @@
+<div class="s-overview blue-template l-full-width-page">
+  <div class="l-row">
+    <div class="l-full-width-col">
+      <div class="l-row">
+        @if (showChart) {
+          <div>
+            <app-display-ranking-widget
+              State = 'params.state'
+              Width = 'width'
+              Height = 'height'>
+            </app-display-ranking-widget>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>

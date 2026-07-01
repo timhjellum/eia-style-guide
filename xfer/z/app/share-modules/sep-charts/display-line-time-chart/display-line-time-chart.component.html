@@ -1,0 +1,13 @@
+@if (displayChart) {
+  <app-display-sep-highcharts
+    [ChartId]="Config.id"
+    [ChartObject]="ChartObject"
+    [ChartType]="ChartType"
+    [Width]="Width"
+    [Height]="Height"
+    (ChangeMaxMin)="setMinMax($event)"
+    [style]="{'width':'100%'}">
+  </app-display-sep-highcharts>
+}
+
+

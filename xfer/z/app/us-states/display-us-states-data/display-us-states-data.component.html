@@ -1,0 +1,37 @@
+<app-display-us-states-menu></app-display-us-states-menu>
+<div class="blue-template data-tab l-row l-two-col-right-narrow">
+  <!--<h1>Data</h1>-->
+  <div class="l-main-col">
+	  <app-dasboard-menu></app-dasboard-menu>
+  </div>
+  <div class="l-narrow-col">
+	<div class="secondary-alt">
+		<div class="ico-create-dashboard"></div>
+		<strong><a routerLink="/data/dashboard/custom">Create Custom Dashboard</a></strong>
+	</div>
+    <div class="secondary">
+      <ul>
+		<li class="head"><h2>Topic</h2></li>
+		<li>
+			<app-special-view-list></app-special-view-list>
+		</li>
+      </ul>
+    </div>
+    <div class="secondary">
+      <ul id="sedsAboutLinks">
+		<li class="head"><h2>State Energy Data System (SEDS)</h2></li>
+		<li>
+			<ul class="list-items">
+				<li><a href="/state/seds/seds-data-complete.php?sid=US">1960-2016 estimates</a></li>
+				<li><a href="/state/seds/seds-data-fuel.php?sid=US">2017 updates</a></li>
+				<li><a href="/state/seds/seds-technical-notes-complete.php?sid=US">Technical notes and documentation - complete 2016</a></li>
+				<li><a href="/state/seds/seds-technical-notes-updates.php?sid=US">Technical notes and documentation - 2017 updates</a></li>
+				<li><a href="/state/seds/seds-data-changes.php?sid=US">Data and methodology changes</a></li>
+				<li><a href="/about/contact/state.php">Contact SEDS experts</a></li>
+				<li><a href="/state/seds/archive/">Current and previous reports (PDF)</a></li>
+			</ul>
+		</li>
+      </ul>
+    </div>
+  </div>
+</div>

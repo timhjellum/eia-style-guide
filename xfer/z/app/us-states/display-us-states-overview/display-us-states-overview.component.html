@@ -1,0 +1,30 @@
+<app-display-us-states-menu></app-display-us-states-menu>
+
+<div class="s-overview blue-template l-full-width-page">
+    <div class="l-row l-full-width-col">
+        <div class="l-col">
+            <app-us-svg  class="border-set"></app-us-svg>
+        </div>
+    </div>
+    <div class="l-row browse l-full-width-col">
+        <div class="l-col">
+            <h1>Browse data by&hellip;</h1>
+            <div class="l-four-col">
+                <div class="l-col ico-states"><a (click)="openList()">state/territory<span></span></a></div>
+                <div class="l-col ico-sources"><a routerLink="/data">energy source<span></span></a></div>
+                <div class="l-col ico-activities"><a routerLink="/data">activity<span></span></a></div>
+                <div class="l-col"><span class="list-header">topic</span> <app-special-view-list></app-special-view-list></div>
+            </div>
+        </div>
+    </div>
+      <div class="l-row subsection today-in-energy-container l-full-width-col">
+        <div class="l-col">
+            <h1>Today In Energy articles</h1>
+            <ul>
+            @for (article of articles; track article.TITLE) {
+                <li><a href="/todayinenergy/detail.php?id={{article.ID}}">{{article.TITLE}}</a></li>
+            }
+            </ul>
+        </div>
+    </div>
+</div>

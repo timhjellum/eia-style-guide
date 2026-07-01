@@ -1,0 +1,18 @@
+
+@if (this.showView) {
+  <div>
+    @if (this.showToggle) {
+      <div class="toggle-ranking-menu">
+        @if (this.showTableData) {
+          <a class="toggle-ranking" (click)="this.toggle()">hide data table (-)</a>
+        }
+        @if (!this.showTableData) {
+          <a class="toggle-ranking" (click)="this.toggle()">show data table (+)</a>
+        }
+      </div>
+    }
+    @if (this.showTableData || !this.showToggle) {
+      <app-display-eia-table [gridOptions]="gridOptions"></app-display-eia-table>
+    }
+  </div>
+}

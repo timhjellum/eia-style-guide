@@ -1,0 +1,443 @@
+<div class="l-row">
+    <div class="l-button-container l-right">
+        <button class="right right--download" (click)="printSvg()">
+            <span class="ico download">
+                <span>Download</span>
+            </span>
+        </button>
+    </div>
+
+    @if (displaySVG) {
+    <div id="us-states-overview-svg" class="us-infographic-container">
+        <h1>Total energy production and consumption by state, {{svgData.year}}</h1>
+        <h2>trillion British thermal units</h2>
+        <div class="l-row l-two-col-right-narrow">
+            <div class="l-col svg-scaler" [ngStyle]="{'height': height}">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1262.57 824.38" aria-hidden="true" role="presentation">
+                    <g id="info-hexagons">
+                        <a (click)="goToPage('ak', 'overview')" EiaTooltip="{{getStateName('ak')}}&#13;Consumption: {{getTETCB('ak') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ak') | number : '1.2-2'}}">
+                            <polygon id="AK-1" points="112 38.33 67 12.35 22 38.33 22 90.29 112 38.33" [attr.class]="[getTETCBfill('AK')]" />
+                            <polygon id="AK-2" points="26 94.29 71 120.27 116 94.29 116 42.33 26 94.29" [attr.class]="[getTEPRBfill('AK')]" />
+                            <circle r="22" cx="69" cy="66.31" />
+                            <text transform="translate(51.67 75.09)">AK</text>
+                        </a>
+                        <a (click)="goToPage('hi', 'overview')" EiaTooltip="{{getStateName('hi')}}&#13;Consumption: {{getTETCB('hi') | number : '1.2-2'}}&#13;Production: {{getTEPRB('hi') | number : '1.2-2'}}">
+                            <polygon id="HI-1" points="112 730.33 67 704.35 22 730.33 22 782.29 112 730.33" [attr.class]="[getTETCBfill('HI')]" />
+                            <polygon id="HI-2" points="26 786.29 71 812.27 116 786.29 116 734.33 26 786.29" [attr.class]="[getTEPRBfill('HI')]" />
+                            <circle r="22" cx="69" cy="758.31" />
+                            <text transform="translate(57 767.09)">HI</text>
+                        </a>
+                        <a (click)="goToPage('wa', 'overview')" EiaTooltip="{{getStateName('wa')}}&#13;Consumption: {{getTETCB('wa') | number : '1.2-2'}}&#13;Production: {{getTEPRB('wa') | number : '1.2-2'}}">
+                            <polygon id="WA-1" points="210 208.33 165 182.35 120 208.33 120 260.29 210 208.33" [attr.class]="[getTETCBfill('WA')]" />
+                            <polygon id="WA-2" points="124 264.29 169 290.27 214 264.29 214 212.33 124 264.29" [attr.class]="[getTEPRBfill('WA')]" />
+                            <circle r="22" cx="167" cy="236.31" />
+                            <text transform="translate(148.12 245.09)" letter-spacing="-0.06em">W<tspan x="21.33" y="0" letter-spacing="-0.04em">A</tspan></text>
+                        </a>
+                        <a (click)="goToPage('id', 'overview')" EiaTooltip="{{getStateName('id')}}&#13;Consumption: {{getTETCB('id') | number : '1.2-2'}}&#13;Production: {{getTEPRB('id') | number : '1.2-2'}}">
+                            <polygon id="ID-1" points="263 295.33 218 269.35 173 295.33 173 347.29 263 295.33" [attr.class]="[getTETCBfill('ID')]" />
+                            <polygon id="ID-2" points="177 351.29 222 377.27 267 351.29 267 299.33 177 351.29" [attr.class]="[getTEPRBfill('ID')]" />
+                            <circle r="22" cx="220" cy="323.31" />
+                            <text transform="translate(208 332.09)">ID</text>
+                        </a>
+                        <a (click)="goToPage('or', 'overview')" EiaTooltip="{{getStateName('or')}}&#13;Consumption: {{getTETCB('or') | number : '1.2-2'}}&#13;Production: {{getTEPRB('or') | number : '1.2-2'}}">
+                            <polygon id="OR-1" points="215 381.33 170 355.35 125 381.33 125 433.29 215 381.33" [attr.class]="[getTETCBfill('OR')]" />
+                            <polygon id="OR-2" points="129 437.29 174 463.27 219 437.29 219 385.33 129 437.29" [attr.class]="[getTEPRBfill('OR')]" />
+                            <circle r="22" cx="172" cy="409.31" />
+                            <text transform="translate(154 418.09)">OR</text>
+                        </a>
+                        <a (click)="goToPage('ca', 'overview')" EiaTooltip="{{getStateName('ca')}}&#13;Consumption: {{getTETCB('ca') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ca') | number : '1.2-2'}}">
+                            <polygon id="CA-1" points="268 468.33 223 442.35 178 468.33 178 520.29 268 468.33" [attr.class]="[getTETCBfill('CA')]" />
+                            <polygon id="CA-2" points="182 524.29 227 550.27 272 524.29 272 472.33 182 524.29" [attr.class]="[getTEPRBfill('CA')]" />
+                            <circle r="22" cx="225" cy="496.31" />
+                            <text transform="translate(208.11 505.09)">C<tspan x="17.33" y="0" letter-spacing="-0.04em">A</tspan></text>
+                        </a>
+                        <a (click)="goToPage('mt', 'overview')" EiaTooltip="{{getStateName('mt')}}&#13;Consumption: {{getTETCB('mt') | number : '1.2-2'}}&#13;Production: {{getTEPRB('mt') | number : '1.2-2'}}">
+                            <polygon id="MT-1" points="312 209.33 267 183.35 222 209.33 222 261.29 312 209.33" [attr.class]="[getTETCBfill('MT')]" />
+                            <polygon id="MT-2" points="226 265.29 271 291.27 316 265.29 316 213.33 226 265.29" [attr.class]="[getTEPRBfill('MT')]" />
+                            <circle r="22" cx="269" cy="237.31" />
+                            <text transform="translate(251.67 246.09)">MT</text>
+                        </a>
+                        <a (click)="goToPage('wy', 'overview')" EiaTooltip="{{getStateName('wy')}}&#13;Consumption: {{getTETCB('wy') | number : '1.2-2'}}&#13;Production: {{getTEPRB('wy') | number : '1.2-2'}}">
+                            <polygon id="WY-1" points="365 296.33 320 270.35 275 296.33 275 348.29 365 296.33" [attr.class]="[getTETCBfill('WY')]" />
+                            <polygon id="WY-2" points="279 352.29 324 378.27 369 352.29 369 300.33 279 352.29" [attr.class]="[getTEPRBfill('WY')]" />
+                            <circle r="22" cx="322" cy="324.31" />
+                            <text transform="translate(302.89 333.09)">W<tspan x="22.65" y="0" letter-spacing="-0.02em">Y</tspan></text>
+                        </a>
+                        <a (click)="goToPage('nv', 'overview')" EiaTooltip="{{getStateName('nv')}}&#13;Consumption: {{getTETCB('nv') | number : '1.2-2'}}&#13;Production: {{getTEPRB('nv') | number : '1.2-2'}}">
+                            <polygon id="NV-1" points="317 382.33 272 356.35 227 382.33 227 434.29 317 382.33" [attr.class]="[getTETCBfill('NV')]" />
+                            <polygon id="NV-2" points="231 438.29 276 464.27 321 438.29 321 386.33 231 438.29" [attr.class]="[getTEPRBfill('NV')]" />
+                            <circle r="22" cx="274" cy="410.31" />
+                            <text transform="translate(257.33 419.09)">NV</text>
+                        </a>
+                        <a (click)="goToPage('az', 'overview')" EiaTooltip="{{getStateName('az')}}&#13;Consumption: {{getTETCB('az') | number : '1.2-2'}}&#13;Production: {{getTEPRB('az') | number : '1.2-2'}}">
+                            <polygon id="AZ-1" points="370 469.33 325 443.35 280 469.33 280 521.29 370 469.33" [attr.class]="[getTETCBfill('AZ')]" />
+                            <polygon id="AZ-2" points="284 525.29 329 551.27 374 525.29 374 473.33 284 525.29" [attr.class]="[getTEPRBfill('AZ')]" />
+                            <circle r="22" cx="327" cy="497.31" />
+                            <text transform="translate(311 506.09)">AZ</text>
+                        </a>
+                        <a (click)="goToPage('nd', 'overview')" EiaTooltip="{{getStateName('nd')}}&#13;Consumption: {{getTETCB('nd') | number : '1.2-2'}}&#13;Production: {{getTEPRB('nd') | number : '1.2-2'}}">
+                            <polygon id="ND-1" points="414 209.33 369 183.35 324 209.33 324 261.29 414 209.33" [attr.class]="[getTETCBfill('ND')]" />
+                            <polygon id="ND-2" points="328 265.29 373 291.27 418 265.29 418 213.33 328 265.29" [attr.class]="[getTEPRBfill('ND')]" />
+                            <circle r="22" cx="371" cy="237.31" />
+                            <text transform="translate(353.67 246.09)">ND</text>
+                        </a>
+                        <a (click)="goToPage('sd', 'overview')" EiaTooltip="{{getStateName('sd')}}&#13;Consumption: {{getTETCB('sd') | number : '1.2-2'}}&#13;Production: {{getTEPRB('sd') | number : '1.2-2'}}">
+                            <polygon id="SD-1" points="467 296.33 422 270.35 377 296.33 377 348.29 467 296.33" [attr.class]="[getTETCBfill('SD')]" />
+                            <polygon id="SD-2" points="381 352.29 426 378.27 471 352.29 471 300.33 381 352.29" [attr.class]="[getTEPRBfill('SD')]" />
+                            <circle r="22" cx="424" cy="324.31" />
+                            <text transform="translate(407.33 333.09)">SD</text>
+                        </a>
+                        <a (click)="goToPage('co', 'overview')" EiaTooltip="{{getStateName('co')}}&#13;Consumption: {{getTETCB('co') | number : '1.2-2'}}&#13;Production: {{getTEPRB('co') | number : '1.2-2'}}">
+                            <polygon id="CO-1" points="419 382.33 374 356.35 329 382.33 329 434.29 419 382.33" [attr.class]="[getTETCBfill('CO')]" />
+                            <polygon id="CO-2" points="333 438.29 378 464.27 423 438.29 423 386.33 333 438.29" [attr.class]="[getTEPRBfill('CO')]" />
+                            <circle r="22" cx="376" cy="410.31" />
+                            <text transform="translate(358 419.09)">CO</text>
+                        </a>
+                        <a (click)="goToPage('ut', 'overview')" EiaTooltip="{{getStateName('ut')}}&#13;Consumption: {{getTETCB('ut') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ut') | number : '1.2-2'}}">
+                            <polygon id="UT-1" points="472 469.33 427 443.35 382 469.33 382 521.29 472 469.33" [attr.class]="[getTETCBfill('UT')]" />
+                            <polygon id="UT-2" points="386 525.29 431 551.27 476 525.29 476 473.33 386 525.29" [attr.class]="[getTEPRBfill('UT')]" />
+                            <circle r="22" cx="429" cy="497.31" />
+                            <text transform="translate(413 506.09)">UT</text>
+                        </a>
+                        <a (click)="goToPage('mn', 'overview')" EiaTooltip="{{getStateName('mn')}}&#13;Consumption: {{getTETCB('mn') | number : '1.2-2'}}&#13;Production: {{getTEPRB('mn') | number : '1.2-2'}}">
+                            <polygon id="MN-1" points="516 209.33 471 183.35 426 209.33 426 261.29 516 209.33" [attr.class]="[getTETCBfill('MN')]" />
+                            <polygon id="MN-2" points="430 265.29 475 291.27 520 265.29 520 213.33 430 265.29" [attr.class]="[getTEPRBfill('MN')]" />
+                            <circle r="22" cx="473" cy="237.31" />
+                            <text transform="translate(454.34 246.09)">MN</text>
+                        </a>
+                        <a (click)="goToPage('ia', 'overview')" EiaTooltip="{{getStateName('ia')}}&#13;Consumption: {{getTETCB('ia') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ia') | number : '1.2-2'}}">
+                            <polygon id="IA-1" points="569 296.33 524 270.35 479 296.33 479 348.29 569 296.33" [attr.class]="[getTETCBfill('IA')]" />
+                            <polygon id="IA-2" points="483 352.29 528 378.27 573 352.29 573 300.33 483 352.29" [attr.class]="[getTEPRBfill('IA')]" />
+                            <circle r="22" cx="526" cy="324.31" />
+                            <text transform="translate(514.45 333.09)">I<tspan x="6.67" y="0" letter-spacing="-0.04em">A</tspan></text>
+                        </a>
+                        <a (click)="goToPage('ne', 'overview')" EiaTooltip="{{getStateName('ne')}}&#13;Consumption: {{getTETCB('ne') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ne') | number : '1.2-2'}}">
+                            <polygon id="NE-1" points="521 382.33 476 356.35 431 382.33 431 434.29 521 382.33" [attr.class]="[getTETCBfill('NE')]" />
+                            <polygon id="NE-2" points="435 438.29 480 464.27 525 438.29 525 386.33 435 438.29" [attr.class]="[getTEPRBfill('NE')]" />
+                            <circle r="22" cx="478" cy="410.31" />
+                            <text transform="translate(461.33 419.09)">NE</text>
+                        </a>
+                        <a (click)="goToPage('ks', 'overview')" EiaTooltip="{{getStateName('ks')}}&#13;Consumption: {{getTETCB('ks') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ks') | number : '1.2-2'}}">
+                            <polygon id="KS-1" points="574 469.33 529 443.35 484 469.33 484 521.29 574 469.33" [attr.class]="[getTETCBfill('KS')]" />
+                            <polygon id="KS-2" points="488 525.29 533 551.27 578 525.29 578 473.33 488 525.29" [attr.class]="[getTEPRBfill('KS')]" />
+                            <circle r="22" cx="531" cy="497.31" />
+                            <text transform="translate(514.33 506.09)">KS</text>
+                        </a>
+                        <a (click)="goToPage('nm', 'overview')" EiaTooltip="{{getStateName('nm')}}&#13;Consumption: {{getTETCB('nm') | number : '1.2-2'}}&#13;Production: {{getTEPRB('nm') | number : '1.2-2'}}">
+                            <polygon id="NM-1" points="423 556.33 378 530.35 333 556.33 333 608.29 423 556.33" [attr.class]="[getTETCBfill('NM')]" />
+                            <polygon id="NM-2" points="337 612.29 382 638.27 427 612.29 427 560.33 337 612.29" [attr.class]="[getTEPRBfill('NM')]" />
+                            <circle r="22" cx="380" cy="584.31" />
+                            <text transform="translate(361.34 593.09)">NM</text>
+                        </a>
+                        <a (click)="goToPage('tx', 'overview')" EiaTooltip="{{getStateName('tx')}}&#13;Consumption: {{getTETCB('tx') | number : '1.2-2'}}&#13;Production: {{getTEPRB('tx') | number : '1.2-2'}}">
+                            <polygon id="TX-1" points="476 643.33 431 617.35 386 643.33 386 695.29 476 643.33" [attr.class]="[getTETCBfill('TX')]" />
+                            <polygon id="TX-2" points="390 699.29 435 725.27 480 699.29 480 647.33 390 699.29" [attr.class]="[getTEPRBfill('TX')]" />
+                            <circle r="22" cx="433" cy="671.31" />
+                            <text transform="translate(417.67 680.09)">TX</text>
+                        </a>
+                        <a (click)="goToPage('ok', 'overview')" EiaTooltip="{{getStateName('ok')}}&#13;Consumption: {{getTETCB('ok') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ok') | number : '1.2-2'}}">
+                            <polygon id="OK-1" points="525 556.33 480 530.35 435 556.33 435 608.29 525 556.33" [attr.class]="[getTETCBfill('OK')]" />
+                            <polygon id="OK-2" points="439 612.29 484 638.27 529 612.29 529 560.33 439 612.29" [attr.class]="[getTEPRBfill('OK')]" />
+                            <circle r="22" cx="482" cy="584.31" />
+                            <text transform="translate(464 593.09)">OK</text>
+                        </a>
+                        <a (click)="goToPage('la', 'overview')" EiaTooltip="{{getStateName('la')}}&#13;Consumption: {{getTETCB('la') | number : '1.2-2'}}&#13;Production: {{getTEPRB('la') | number : '1.2-2'}}">
+                            <polygon id="LA-1" points="627 556.33 582 530.35 537 556.33 537 608.29 627 556.33" [attr.class]="[getTETCBfill('LA')]" />
+                            <polygon id="LA-2" points="541 612.29 586 638.27 631 612.29 631 560.33 541 612.29" [attr.class]="[getTEPRBfill('LA')]" />
+                            <circle r="22" cx="584" cy="584.31" />
+                            <text transform="translate(568.45 593.09)">L<tspan x="14.66" y="0" letter-spacing="-0.04em">A</tspan></text>
+                        </a>
+                        <a (click)="goToPage('wi', 'overview')" EiaTooltip="{{getStateName('wi')}}&#13;Consumption: {{getTETCB('wi') | number : '1.2-2'}}&#13;Production: {{getTEPRB('wi') | number : '1.2-2'}}">
+                            <polygon id="WI-1" points="618 209.33 573 183.35 528 209.33 528 261.29 618 209.33" [attr.class]="[getTETCBfill('WI')]" />
+                            <polygon id="WI-2" points="532 265.29 577 291.27 622 265.29 622 213.33 532 265.29" [attr.class]="[getTEPRBfill('WI')]" />
+                            <circle r="22" cx="575" cy="237.31" />
+                            <text transform="translate(560.34 246.09)">WI</text>
+                        </a>
+                        <a (click)="goToPage('il', 'overview')" EiaTooltip="{{getStateName('il')}}&#13;Consumption: {{getTETCB('il') | number : '1.2-2'}}&#13;Production: {{getTEPRB('il') | number : '1.2-2'}}">
+                            <polygon id="IL-1" points="671 296.33 626 270.35 581 296.33 581 348.29 671 296.33" [attr.class]="[getTETCBfill('IL')]" />
+                            <polygon id="IL-2" points="585 352.29 630 378.27 675 352.29 675 300.33 585 352.29" [attr.class]="[getTEPRBfill('IL')]" />
+                            <circle r="22" cx="628" cy="324.31" />
+                            <text transform="translate(617.55 333.09)">I<tspan x="6.67" y="0" letter-spacing="-0.02em">L</tspan></text>
+                        </a>
+                        <a (click)="goToPage('mo', 'overview')" EiaTooltip="{{getStateName('mo')}}&#13;Consumption: {{getTETCB('mo') | number : '1.2-2'}}&#13;Production: {{getTEPRB('mo') | number : '1.2-2'}}">
+                            <polygon id="MO-1" points="623 382.33 578 356.35 533 382.33 533 434.29 623 382.33" [attr.class]="[getTETCBfill('MO')]" />
+                            <polygon id="MO-2" points="537 438.29 582 464.27 627 438.29 627 386.33 537 438.29" [attr.class]="[getTEPRBfill('MO')]" />
+                            <circle r="22" cx="580" cy="410.31" />
+                            <text transform="translate(560.67 419.09)">MO</text>
+                        </a>
+                        <a (click)="goToPage('oh', 'overview')" EiaTooltip="{{getStateName('oh')}}&#13;Consumption: {{getTETCB('oh') | number : '1.2-2'}}&#13;Production: {{getTEPRB('oh') | number : '1.2-2'}}">
+                            <polygon id="OH-1" points="874 296.33 829 270.35 784 296.33 784 348.29 874 296.33" [attr.class]="[getTETCBfill('OH')]" />
+                            <polygon id="OH-2" points="788 352.29 833 378.27 878 352.29 878 300.33 788 352.29" [attr.class]="[getTEPRBfill('OH')]" />
+                            <circle r="22" cx="831" cy="324.31" />
+                            <text transform="translate(813 333.09)">OH</text>
+                        </a>
+                        <a (click)="goToPage('wv', 'overview')" EiaTooltip="{{getStateName('wv')}}&#13;Consumption: {{getTETCB('wv') | number : '1.2-2'}}&#13;Production: {{getTEPRB('wv') | number : '1.2-2'}}">
+                            <polygon id="WV-1" points="826 382.33 781 356.35 736 382.33 736 434.29 826 382.33" [attr.class]="[getTETCBfill('WV')]" />
+                            <polygon id="WV-2" points="740 438.29 785 464.27 830 438.29 830 386.33 740 438.29" [attr.class]="[getTEPRBfill('WV')]" />
+                            <circle r="22" cx="783" cy="410.31" />
+                            <text transform="translate(763.67 419.09)">WV</text>
+                        </a>
+                        <a (click)="goToPage('va', 'overview')" EiaTooltip="{{getStateName('va')}}&#13;Consumption: {{getTETCB('va') | number : '1.2-2'}}&#13;Production: {{getTEPRB('va') | number : '1.2-2'}}">
+                            <polygon id="VA-1" points="879 469.33 834 443.35 789 469.33 789 521.29 879 469.33" [attr.class]="[getTETCBfill('VA')]" />
+                            <polygon id="VA-2" points="793 525.29 838 551.27 883 525.29 883 473.33 793 525.29" [attr.class]="[getTEPRBfill('VA')]" />
+                            <circle r="22" cx="836" cy="497.31" />
+                            <text transform="translate(820.67 506.09)" letter-spacing="-0.07em">V<tspan x="14.23" y="0" letter-spacing="-0.04em">A</tspan></text>
+                        </a>
+                        <a (click)="goToPage('pa', 'overview')" EiaTooltip="{{getStateName('pa')}}&#13;Consumption: {{getTETCB('pa') | number : '1.2-2'}}&#13;Production: {{getTEPRB('pa') | number : '1.2-2'}}">
+                            <polygon id="PA-1" points="976 296.33 931 270.35 886 296.33 886 348.29 976 296.33" [attr.class]="[getTETCBfill('PA')]" />
+                            <polygon id="PA-2" points="890 352.29 935 378.27 980 352.29 980 300.33 890 352.29" [attr.class]="[getTEPRBfill('PA')]" />
+                            <circle r="22" cx="933" cy="324.31" />
+                            <text transform="translate(917.67 333.09)" letter-spacing="-0.07em">P<tspan x="14.23" y="0" letter-spacing="-0.04em">A</tspan></text>
+                        </a>
+                        <a (click)="goToPage('md', 'overview')" EiaTooltip="{{getStateName('md')}}&#13;Consumption: {{getTETCB('md') | number : '1.2-2'}}&#13;Production: {{getTEPRB('md') | number : '1.2-2'}}">
+                            <polygon id="MD-1" points="928 382.33 883 356.35 838 382.33 838 434.29 928 382.33" [attr.class]="[getTETCBfill('MD')]" />
+                            <polygon id="MD-2" points="842 438.29 887 464.27 932 438.29 932 386.33 842 438.29" [attr.class]="[getTEPRBfill('MD')]" />
+                            <circle r="22" cx="885" cy="410.31" />
+                            <text transform="translate(866.34 419.09)">MD</text>
+                        </a>
+                        <a (click)="goToPage('nc', 'overview')" EiaTooltip="{{getStateName('nc')}}&#13;Consumption: {{getTETCB('nc') | number : '1.2-2'}}&#13;Production: {{getTEPRB('nc') | number : '1.2-2'}}">
+                            <polygon id="NC-1" points="981 469.33 936 443.35 891 469.33 891 521.29 981 469.33" [attr.class]="[getTETCBfill('NC')]" />
+                            <polygon id="NC-2" points="895 525.29 940 551.27 985 525.29 985 473.33 895 525.29" [attr.class]="[getTEPRBfill('NC')]" />
+                            <circle r="22" cx="938" cy="497.31" />
+                            <text transform="translate(920.67 506.09)">NC</text>
+                        </a>
+                        <a (click)="goToPage('ny', 'overview')" EiaTooltip="{{getStateName('ny')}}&#13;Consumption: {{getTETCB('ny') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ny') | number : '1.2-2'}}">
+                            <polygon id="NY-1" points="1025 209.33 980 183.35 935 209.33 935 261.29 1025 209.33" [attr.class]="[getTETCBfill('NY')]" />
+                            <polygon id="NY-2" points="939 265.29 984 291.27 1029 265.29 1029 213.33 939 265.29" [attr.class]="[getTEPRBfill('NY')]" />
+                            <circle r="22" cx="982" cy="237.31" />
+                            <text transform="translate(965.55 246.09)">N<tspan x="17.33" y="0" letter-spacing="-0.02em">Y</tspan></text>
+                        </a>
+                        <a (click)="goToPage('nj', 'overview')" EiaTooltip="{{getStateName('nj')}}&#13;Consumption: {{getTETCB('nj') | number : '1.2-2'}}&#13;Production: {{getTEPRB('nj') | number : '1.2-2'}}">
+                            <polygon id="NJ-1" points="1078 296.33 1033 270.35 988 296.33 988 348.29 1078 296.33" [attr.class]="[getTETCBfill('NJ')]" />
+                            <polygon id="NJ-2" points="992 352.29 1037 378.27 1082 352.29 1082 300.33 992 352.29" [attr.class]="[getTEPRBfill('NJ')]" />
+                            <circle r="22" cx="1035" cy="324.31" />
+                            <text transform="translate(1019.66 333.09)">NJ</text>
+                        </a>
+                        <a (click)="goToPage('de', 'overview')" EiaTooltip="{{getStateName('de')}}&#13;Consumption: {{getTETCB('de') | number : '1.2-2'}}&#13;Production: {{getTEPRB('de') | number : '1.2-2'}}">
+                            <polygon id="DE-1" points="1030 382.33 985 356.35 940 382.33 940 434.29 1030 382.33" [attr.class]="[getTETCBfill('DE')]" />
+                            <polygon id="DE-2" points="944 438.29 989 464.27 1034 438.29 1034 386.33 944 438.29" [attr.class]="[getTEPRBfill('DE')]" />
+                            <circle r="22" cx="987" cy="410.31" />
+                            <text transform="translate(970.33 419.09)">DE</text>
+                        </a>
+                        <a (click)="goToPage('dc', 'overview')" EiaTooltip="{{getStateName('dc')}}&#13;Consumption: {{getTETCB('dc') | number : '1.2-2'}}&#13;Production: {{getTEPRB('dc') | number : '1.2-2'}}">
+                            <polygon id="DC-1" points="1132 382.33 1087 356.35 1042 382.33 1042 434.29 1132 382.33" [attr.class]="[getTETCBfill('DC')]" />
+                            <polygon id="DC-2" points="1046 438.29 1091 464.27 1136 438.29 1136 386.33 1046 438.29" [attr.class]="[getTEPRBfill('DC')]" />
+                            <circle r="22" cx="1089" cy="410.31" />
+                            <text transform="translate(1071.67 419.09)">DC</text>
+                        </a>
+                        <a (click)="goToPage('ar', 'overview')" EiaTooltip="{{getStateName('ar')}}&#13;Consumption: {{getTETCB('ar') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ar') | number : '1.2-2'}}">
+                            <polygon id="AR-1" points="676 469.33 631 443.35 586 469.33 586 521.29 676 469.33" [attr.class]="[getTETCBfill('AR')]" />
+                            <polygon id="AR-2" points="590 525.29 635 551.27 680 525.29 680 473.33 590 525.29" [attr.class]="[getTEPRBfill('AR')]" />
+                            <circle r="22" cx="633" cy="497.31" />
+                            <text transform="translate(615.67 506.09)">AR</text>
+                        </a>
+                        <a (click)="goToPage('in', 'overview')" EiaTooltip="{{getStateName('in')}}&#13;Consumption: {{getTETCB('in') | number : '1.2-2'}}&#13;Production: {{getTEPRB('in') | number : '1.2-2'}}">
+                            <polygon id="IN-1" points="773 296.33 728 270.35 683 296.33 683 348.29 773 296.33" [attr.class]="[getTETCBfill('IN')]" />
+                            <polygon id="IN-2" points="687 352.29 732 378.27 777 352.29 777 300.33 687 352.29" [attr.class]="[getTEPRBfill('IN')]" />
+                            <circle r="22" cx="730" cy="324.31" />
+                            <text transform="translate(718 333.09)">IN</text>
+                        </a>
+                        <a (click)="goToPage('ky', 'overview')" EiaTooltip="{{getStateName('ky')}}&#13;Consumption: {{getTETCB('ky') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ky') | number : '1.2-2'}}">
+                            <polygon id="KY-1" points="725 382.33 680 356.35 635 382.33 635 434.29 725 382.33" [attr.class]="[getTETCBfill('KY')]" />
+                            <polygon id="KY-2" points="639 438.29 684 464.27 729 438.29 729 386.33 639 438.29" [attr.class]="[getTEPRBfill('KY')]" />
+                            <circle r="22" cx="682" cy="410.31" />
+                            <text transform="translate(665.55 419.09)">K<tspan x="17.33" y="0" letter-spacing="-0.02em">Y</tspan></text>
+                        </a>
+                        <a (click)="goToPage('tn', 'overview')" EiaTooltip="{{getStateName('tn')}}&#13;Consumption: {{getTETCB('tn') | number : '1.2-2'}}&#13;Production: {{getTEPRB('tn') | number : '1.2-2'}}">
+                            <polygon id="TN-1" points="778 469.33 733 443.35 688 469.33 688 521.29 778 469.33" [attr.class]="[getTETCBfill('TN')]" />
+                            <polygon id="TN-2" points="692 525.29 737 551.27 782 525.29 782 473.33 692 525.29" [attr.class]="[getTEPRBfill('TN')]" />
+                            <circle r="22" cx="735" cy="497.31" />
+                            <text transform="translate(719 506.09)">TN</text>
+                        </a>
+                        <a (click)="goToPage('ms', 'overview')" EiaTooltip="{{getStateName('ms')}}&#13;Consumption: {{getTETCB('ms') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ms') | number : '1.2-2'}}">
+                            <polygon id="MS-1" points="729 556.33 684 530.35 639 556.33 639 608.29 729 556.33" [attr.class]="[getTETCBfill('MS')]" />
+                            <polygon id="MS-2" points="643 612.29 688 638.27 733 612.29 733 560.33 643 612.29" [attr.class]="[getTEPRBfill('MS')]" />
+                            <circle r="22" cx="686" cy="584.31" />
+                            <text transform="translate(668 593.09)">MS</text>
+                        </a>
+                        <a (click)="goToPage('al', 'overview')" EiaTooltip="{{getStateName('al')}}&#13;Consumption: {{getTETCB('al') | number : '1.2-2'}}&#13;Production: {{getTEPRB('al') | number : '1.2-2'}}">
+                            <polygon id="AL-1" points="831 556.33 786 530.35 741 556.33 741 608.29 831 556.33" [attr.class]="[getTETCBfill('AL')]" />
+                            <polygon id="AL-2" points="745 612.29 790 638.27 835 612.29 835 560.33 745 612.29" [attr.class]="[getTEPRBfill('AL')]" />
+                            <circle r="22" cx="788" cy="584.31" />
+                            <text transform="translate(772.22 593.09)">A<tspan x="17.33" y="0" letter-spacing="-0.02em">L</tspan></text>
+                        </a>
+                        <a (click)="goToPage('ga', 'overview')" EiaTooltip="{{getStateName('ga')}}&#13;Consumption: {{getTETCB('ga') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ga') | number : '1.2-2'}}">
+                            <polygon id="GA-1" points="884 643.33 839 617.35 794 643.33 794 695.29 884 643.33" [attr.class]="[getTETCBfill('GA')]" />
+                            <polygon id="GA-2" points="798 699.29 843 725.27 888 699.29 888 647.33 798 699.29" [attr.class]="[getTEPRBfill('GA')]" />
+                            <circle r="22" cx="841" cy="671.31" />
+                            <text transform="translate(823.45 680.09)">G<tspan x="18.67" y="0" letter-spacing="-0.04em">A</tspan></text>
+                        </a>
+                        <a (click)="goToPage('fl', 'overview')" EiaTooltip="{{getStateName('fl')}}&#13;Consumption: {{getTETCB('fl') | number : '1.2-2'}}&#13;Production: {{getTEPRB('fl') | number : '1.2-2'}}">
+                            <polygon id="FL-1" points="937 730.33 892 704.35 847 730.33 847 782.29 937 730.33" [attr.class]="[getTETCBfill('FL')]" />
+                            <polygon id="FL-2" points="851 786.29 896 812.27 941 786.29 941 734.33 851 786.29" [attr.class]="[getTEPRBfill('FL')]" />
+                            <circle r="22" cx="894" cy="758.31" />
+                            <text transform="translate(879.56 767.09)">F<tspan x="14.66" y="0" letter-spacing="-0.02em">L</tspan></text>
+                        </a>
+                        <a (click)="goToPage('mi', 'overview')" EiaTooltip="{{getStateName('mi')}}&#13;Consumption: {{getTETCB('mi') | number : '1.2-2'}}&#13;Production: {{getTEPRB('mi') | number : '1.2-2'}}">
+                            <polygon id="MI-1" points="821 209.33 776 183.35 731 209.33 731 261.29 821 209.33" [attr.class]="[getTETCBfill('MI')]" />
+                            <polygon id="MI-2" points="735 265.29 780 291.27 825 265.29 825 213.33 735 265.29" [attr.class]="[getTEPRBfill('MI')]" />
+                            <circle r="22" cx="778" cy="237.31" />
+                            <text transform="translate(764.67 246.09)">MI</text>
+                        </a>
+                        <a (click)="goToPage('vt', 'overview')" EiaTooltip="{{getStateName('vt')}}&#13;Consumption: {{getTETCB('vt') | number : '1.2-2'}}&#13;Production: {{getTEPRB('vt') | number : '1.2-2'}}">
+                            <polygon id="VT-1" points="1073 123.33 1028 97.35 983 123.33 983 175.29 1073 123.33" [attr.class]="[getTETCBfill('VT')]" />
+                            <polygon id="VT-2" points="987 179.29 1032 205.27 1077 179.29 1077 127.33 987 179.29" [attr.class]="[getTEPRBfill('VT')]" />
+                            <circle r="22" cx="1030" cy="151.31" />
+                            <text transform="translate(1014.67 160.09)">VT</text>
+                        </a>
+                        <a (click)="goToPage('ri', 'overview')" EiaTooltip="{{getStateName('ri')}}&#13;Consumption: {{getTETCB('ri') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ri') | number : '1.2-2'}}">
+                            <polygon id="RI-1" points="1228 209.33 1183 183.35 1138 209.33 1138 261.29 1228 209.33" [attr.class]="[getTETCBfill('RI')]" />
+                            <polygon id="RI-2" points="1142 265.29 1187 291.27 1232 265.29 1232 213.33 1142 265.29" [attr.class]="[getTEPRBfill('RI')]" />
+                            <circle r="22" cx="1185" cy="237.31" />
+                            <text transform="translate(1173 246.09)">RI</text>
+                        </a>
+                        <a (click)="goToPage('nh', 'overview')" EiaTooltip="{{getStateName('nh')}}&#13;Consumption: {{getTETCB('nh') | number : '1.2-2'}}&#13;Production: {{getTEPRB('nh') | number : '1.2-2'}}">
+                            <polygon id="NH-1" points="1175 123.33 1130 97.35 1085 123.33 1085 175.29 1175 123.33" [attr.class]="[getTETCBfill('NH')]" />
+                            <polygon id="NH-2" points="1089 179.29 1134 205.27 1179 179.29 1179 127.33 1089 179.29" [attr.class]="[getTEPRBfill('NH')]" />
+                            <circle r="22" cx="1132" cy="151.31" />
+                            <text transform="translate(1114.67 160.09)">NH</text>
+                        </a>
+                        <a (click)="goToPage('ma', 'overview')" EiaTooltip="{{getStateName('ma')}}&#13;Consumption: {{getTETCB('ma') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ma') | number : '1.2-2'}}">
+                            <polygon id="MA-1" points="1127 209.33 1082 183.35 1037 209.33 1037 261.29 1127 209.33" [attr.class]="[getTETCBfill('MA')]" />
+                            <polygon id="MA-2" points="1041 265.29 1086 291.27 1131 265.29 1131 213.33 1041 265.29" [attr.class]="[getTEPRBfill('MA')]" />
+                            <circle r="22" cx="1084" cy="237.31" />
+                            <text transform="translate(1065.78 246.09)">M<tspan x="19.99" y="0" letter-spacing="-0.04em">A</tspan></text>
+                        </a>
+                        <a (click)="goToPage('ct', 'overview')" EiaTooltip="{{getStateName('ct')}}&#13;Consumption: {{getTETCB('ct') | number : '1.2-2'}}&#13;Production: {{getTEPRB('ct') | number : '1.2-2'}}">
+                            <polygon id="CT-1" points="1180 296.33 1135 270.35 1090 296.33 1090 348.29 1180 296.33" [attr.class]="[getTETCBfill('CT')]" />
+                            <polygon id="CT-2" points="1094 352.29 1139 378.27 1184 352.29 1184 300.33 1094 352.29" [attr.class]="[getTEPRBfill('CT')]" />
+                            <circle r="22" cx="1137" cy="324.31" />
+                            <text transform="translate(1121 333.09)">CT</text>
+                        </a>
+                        <a (click)="goToPage('me', 'overview')" EiaTooltip="{{getStateName('me')}}&#13;Consumption: {{getTETCB('me') | number : '1.2-2'}}&#13;Production: {{getTEPRB('me') | number : '1.2-2'}}">
+                            <polygon id="ME-1" points="1223 36.33 1178 10.35 1133 36.33 1133 88.29 1223 36.33" [attr.class]="[getTETCBfill('ME')]" />
+                            <polygon id="ME-2" points="1137 92.29 1182 118.27 1227 92.29 1227 40.33 1137 92.29" [attr.class]="[getTEPRBfill('ME')]" />
+                            <circle r="22" cx="1180" cy="64.31" />
+                            <text transform="translate(1162 73.09)">ME</text>
+                        </a>
+                        <a (click)="goToPage('sc', 'overview')" EiaTooltip="{{getStateName('sc')}}&#13;Consumption: {{getTETCB('sc') | number : '1.2-2'}}&#13;Production: {{getTEPRB('sc') | number : '1.2-2'}}">
+                            <polygon id="SC-1" points="932 556.33 887 530.35 842 556.33 842 608.29 932 556.33" [attr.class]="[getTETCBfill('SC')]" />
+                            <polygon id="SC-2" points="846 612.29 891 638.27 936 612.29 936 560.33 846 612.29" [attr.class]="[getTEPRBfill('SC')]" />
+                            <circle r="22" cx="889" cy="584.31" />
+                            <text transform="translate(872.33 593.09)">SC</text>
+                        </a>
+                    </g>
+                </svg>
+            </div>
+            <div class="l-col">
+                <ul class="legend">
+                    <li class="head">Consumption</li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" aria-hidden="true" role="presentation">
+                            <polygon id="legend-1" class="category4" points="98 27.02 53 1.04 8 27.02 8 78.98 98 27.02" />
+                            <polygon id="legend-2" class="noCategory" points="12 82.98 57 108.96 102 82.98 102 31.02 12 82.98" />
+                            <circle r="22" cx="55" cy="55" class="info-text-bg" />
+                        </svg>
+                        &gt; {{mapRange.rangeHigh | number}}
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" aria-hidden="true" role="presentation">
+                            <polygon id="legend-1" class="category3" points="98 27.02 53 1.04 8 27.02 8 78.98 98 27.02" />
+                            <polygon id="legend-2" class="noCategory" points="12 82.98 57 108.96 102 82.98 102 31.02 12 82.98" />
+                            <circle r="22" cx="55" cy="55" class="info-text-bg" />
+                        </svg>
+                        {{mapRange.rangeMid | number}} to {{mapRange.rangeHigh | number}}
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" aria-hidden="true" role="presentation">
+                            <polygon id="legend-1" class="category2" points="98 27.02 53 1.04 8 27.02 8 78.98 98 27.02" />
+                            <polygon id="legend-2" class="noCategory" points="12 82.98 57 108.96 102 82.98 102 31.02 12 82.98" />
+                            <circle r="22" cx="55" cy="55" class="info-text-bg" />
+                        </svg>
+                        {{mapRange.rangeLow | number}} to {{mapRange.rangeMid | number}}
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" aria-hidden="true" role="presentation">
+                            <polygon id="legend-1" class="category1" points="98 27.02 53 1.04 8 27.02 8 78.98 98 27.02" />
+                            <polygon id="legend-2" class="noCategory" points="12 82.98 57 108.96 102 82.98 102 31.02 12 82.98" />
+                            <circle r="22" cx="55" cy="55" class="info-text-bg" />
+                        </svg>
+                        &lt; {{mapRange.rangeLow | number}}
+                    </li>
+                </ul>
+                <ul class="legend">
+                    <li class="head">Production</li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" aria-hidden="true" role="presentation">
+                            <polygon id="legend-1" class="noCategory" points="98 27.02 53 1.04 8 27.02 8 78.98 98 27.02" />
+                            <polygon id="legend-2" class="category4" points="12 82.98 57 108.96 102 82.98 102 31.02 12 82.98" />
+                            <circle r="22" cx="55" cy="55" class="info-text-bg" />
+                        </svg>
+                        &gt; {{mapRange.rangeHigh | number}}
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" aria-hidden="true" role="presentation">
+                            <polygon id="legend-1" class="noCategory" points="98 27.02 53 1.04 8 27.02 8 78.98 98 27.02" />
+                            <polygon id="legend-2" class="category3" points="12 82.98 57 108.96 102 82.98 102 31.02 12 82.98" />
+                            <circle r="22" cx="55" cy="55" class="info-text-bg" />
+                        </svg>
+                        {{mapRange.rangeMid | number}} to {{mapRange.rangeHigh | number}}
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" aria-hidden="true" role="presentation">
+                            <polygon id="legend-1" class="noCategory" points="98 27.02 53 1.04 8 27.02 8 78.98 98 27.02" />
+                            <polygon id="legend-2" class="category2" points="12 82.98 57 108.96 102 82.98 102 31.02 12 82.98" />
+                            <circle r="22" cx="55" cy="55" class="info-text-bg" />
+                        </svg>
+                        {{mapRange.rangeLow | number}} to {{mapRange.rangeMid | number}}
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" aria-hidden="true" role="presentation">
+                            <polygon id="legend-1" class="noCategory" points="98 27.02 53 1.04 8 27.02 8 78.98 98 27.02" />
+                            <polygon id="legend-2" class="category1" points="12 82.98 57 108.96 102 82.98 102 31.02 12 82.98" />
+                            <circle r="22" cx="55" cy="55" class="info-text-bg" />
+                        </svg>
+                        &lt; {{mapRange.rangeLow | number}}
+                    </li>
+                </ul>
+                <ul class="legend">
+                    <li class="head">U.S. Territories</li>
+                    <li><a (click)="goToPage('AQ', 'overview')">American Samoa</a></li>
+                    <li><a (click)="goToPage('GQ', 'overview')">Guam</a></li>
+                    <li><a (click)="goToPage('CQ', 'overview')">Northern Mariana Islands</a></li>
+                    <li><a (click)="goToPage('RQ', 'overview')">Puerto Rico</a></li>
+                    <li><a (click)="goToPage('VQ', 'overview')">U.S. Virgin Islands</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    }
+        <div class="l-button-container l-left">
+        <a class="left notation notesAndSources left--notes-and-sources" type="text" (click)="displayNotes = displayNotes ? false : true"><span class="ico info"></span>Notes, Sources, and Related Links
+        </a>
+    </div>
+</div>
+
+
+<p-dialog header="Notes, sources, and related links" [(visible)]="displayNotes" [style]="{minWidth: '800px', minHeight: '400px'}" [modal]="true" [blockScroll]="true" [dismissableMask]="true">
+    <div class="primary notes overview-source">
+        <h3>Consumption</h3>
+        <ul>
+            <li>Total consumption is the heat content of energy consumed by all end-use sectors, including energy losses associated with the generation, transmission, and distribution of the electricity flowing within and across state lines.</li>
+        </ul>
+        <h3>Production</h3>
+        <ul>
+            <li>Total primary energy production is the heat content of all primary energy sources produced in the state (for example; coal, natural gas, crude oil, ethanol, and wood). Primary energy production also includes nuclear and renewable energy sources used for electric power generation; however, it does not include the production of electricity, which is considered a secondary energy source.</li>
+            <li>Production of federal offshore natural gas along the Pacific coast is included in California. Other federal offshore production along the Pacific coast and all production in the Gulf of Mexico is not allocated to states.</li>
+        </ul>
+        <h3>Sources</h3>
+        <ul class="bullet">
+            <li><a href="/state/seds/#_blank">State Energy Data System (SEDS)</a></li>
+        </ul>
+        <h3>Related Data Products</h3>
+        <ul class="bullet">
+            <li><a href="/state/seds/seds-data-complete.php?sid=US#_blank">Complete SEDS data</a></li>
+        </ul>
+        <h3>Methodology, Data Notes, and Other Documentation</h3>
+        <ul class="bullet">
+            <li><a href="/state/seds/seds-technical-notes-complete.php?sid=US#_blank">SEDS technical notes and documentation</a></li>
+            <li><a href="/state/seds/seds-data-complete.php?sid=US#_blank">SEDS table notes</a></li>
+            <li><a href="/state/seds/seds-data-changes.php?sid=US#_blank">SEDS data and methodology changes</a></li>
+        </ul>
+    </div>
+</p-dialog>
