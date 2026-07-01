@@ -1,0 +1,10 @@
+<!--<h3 class="dashboard-title">{{getStateName()}} {{title}}</h3>-->
+<app-display-dashboard-title [id]="sourceDashboard"></app-display-dashboard-title>
+
+<app-display-eia-dashboard
+  [PlaceHolder]="placeHolder"
+  [ConfigEndPoint]="endPoint"
+  [SourceDashboard]="sourceDashboard"
+  [DashboardTitle]="title"
+  [AddChartItem]="item"
+></app-display-eia-dashboard>

@@ -1,0 +1,7 @@
+@if (displayArticles) {
+  <ul>
+    @for (article of articles; track article.TITLE) {
+      <li><a href="https://www.eia.gov{{article.LINK}}">{{article.TITLE}}</a><br /><br /></li>
+    }
+  </ul>
+}

@@ -1,0 +1,26 @@
+@if (this.displayChart) {
+  <div class="ranking-scatter-chart">
+    <div (mouseover)="displayMenu = true" (mouseleave)="displayMenu = false" class="download-dropdown-container right">
+      <button class="download-dropdown"><span class="ico add-to-download"></span> Download</button>
+      @if (displayMenu) {
+        <ul  class="add-to-downloads-menu" >
+          <li><button (click)="printChart()" class="export">Print</button></li>
+          <hr>
+            <li><button (click)="downloadChart('application/pdf')" class="export">Download Pdf</button></li>
+            <li><button (click)="downloadChart('image/png')" class="export">Download Image</button></li>
+            <li><button (click)="exportCsv()" class="export">Download Data</button></li>
+          </ul>
+        }
+      </div>
+      @if (displayChart) {
+        <app-display-eia-highchart
+          #scatter_chart
+          [chartId]="'chart_123'"
+          [inputChart]="chart"
+          [countMe]="countMe"
+          [inputStyles]="{'height': '200px', 'margin-bottom':'20px'}"
+          (CallBack)="setMyChart($event)">
+        </app-display-eia-highchart>
+      }
+    </div>
+  }

@@ -1,0 +1,39 @@
+@if (loadRanking) {
+  <div>
+    <div class="eia-ranking-widget-container" style="width:460px; height:300px;">
+      <p-carousel
+        [value]="getData()"
+        numVisible="1"
+        pageLinks="8"
+        class="carousel-dashboard ranking-carousel">
+        <ng-template pTemplate="header">
+          <h3>{{title}}</h3>
+        </ng-template>
+        <ng-template let-item pTemplate="item">
+          <app-states-outline [State]="getState()" class="rankSeriesState"></app-states-outline>
+          <div class="overview-ranking">
+            <div class="rankSeriesRank">
+              <em>#</em>
+              <span class="rankValue">{{item.rank}}</span>
+              <span class="r-label">Rank</span>
+            </div>
+            <div class="rankMetrics">
+              <div class="rankSeriesValue">{{item.displayValue}}</div>
+              <div class="rankSeriesName">{{item.displayName}}</div>
+              @if (item.frequency == 'M') {
+                <div class="rankDate">{{item.date | date: 'MMMM yyyy'}}</div>
+              }
+              @if (item.frequency != 'M') {
+                <div class="rankFreq">{{item.date | date: 'yyyy'}}</div>
+              }
+            </div>
+          </div>
+          <div class="widget-ranking-footer">
+            <span class="logo-white-background"></span>
+            <span>Source: <a href="#">U.S. Energy Information Administration</a></span>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  </div>
+}

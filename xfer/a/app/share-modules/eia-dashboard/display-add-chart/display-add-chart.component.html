@@ -1,0 +1,64 @@
+
+@if (currentDashboard !='custom') {
+  <div>
+    @if (!showAll) {
+      <a (click)="showAllItems()">Show all Visualizations</a>
+    }
+    @if (showAll) {
+      <a (click)="showAvailable()">Show available charts</a>
+    }
+  </div>
+}
+@if (ready) {
+  <div class="l-row l-two-col-left-wide">
+    <div class="l-col add-chart-list">
+      @if (!showAll) {
+        <div>
+          <h2>{{DashboardTitle}} Visualizations</h2>
+          <ul>
+            @for (c of availableCharts; track c.chartTitle) {
+              <li class="add-chart-item"><a (click)="setSelectChartConfig(c)" [ngClass]="c.displayClassName">{{c.chartTitle}}</a></li>
+            }
+          </ul>
+        </div>
+      }
+      @if (showAll) {
+        <div>
+          <div class="filter-item-nav add-chart">
+            Search:
+            <input id="addSearch" #term [(ngModel)]="searchValue" (ngModelChange)="search()">
+            <button (click)="clearSearch()" class="add-chart-reset"><span class="ico reset"></span></button>
+          </div>
+          <ul class="all-charts">
+            @for (d of dashboard; track d.id) {
+              <li class="add-dashboard-item">
+                @if (all[d.id] && all[d.id].length) {
+                  <h3>{{d.name}}</h3>
+                  <ul>
+                    @for (c of all[d.id]; track c.chartTitle) {
+                      <li  class="add-chart-item"><a (click)="setSelectChartConfig(c)" [ngClass]="c.displayClassName">{{c.chartTitle}}</a></li>
+                    }
+                  </ul>
+                }
+              </li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+    <div class="l-col">
+      @if (selectedChartConfig) {
+        <div>
+          <h2>Select a chart type</h2>
+          <ul>
+            @for (visual of chartTypeOptionsAvailable; track visual.name; let i = $index) {
+              <li [attr.data-index]="i">
+                <a (click)="setChartVisual(visual.key); addChart();">{{visual.name}}</a>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+}

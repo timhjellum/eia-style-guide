@@ -1,0 +1,38 @@
+@if (showDisplay) {
+  <table class="basic-table overview-profile-table">
+    @for (d of data.profiles; track d.NAME) {
+      <tr class="sep-table-level-{{d.HIER_LEVEL}}" >
+        @if (d.HIER_LEVEL == '1') {
+          <td class="subheader subheader-top" colspan="4">{{d.NAME}}</td>
+        }
+        @if (d.HIER_LEVEL == '2') {
+          <td class="subheader">{{d.NAME}}</td>
+        }
+        @if (d.HIER_LEVEL == '2') {
+          <td class="subheader">{{data.state.NAME}}</td>
+        }
+        @if (d.HIER_LEVEL == '2') {
+          <td class="subheader" [innerHTML]="getUsName(d)"></td>
+        }
+        @if (d.HIER_LEVEL == '2') {
+          <td class="subheader">Period</td>
+        }
+        @if (getDetailType(d) == 'LINK') {
+          <td [ngClass]="d.HIER_LEVEL === '4' ? 'indent bullet':''">{{d.NAME}}</td>
+        }
+        @if (getDetailType(d) == 'TEXT') {
+          <td [ngClass]="d.HIER_LEVEL === '4' ? 'indent bullet':''">{{d.NAME}}</td>
+        }
+        @if (d.HIER_LEVEL == '3' || d.HIER_LEVEL == '4') {
+          <td>{{getDetailValue(d, 'STATE_FORMATTED_DATA')}}</td>
+        }
+        @if (d.HIER_LEVEL == '3' || d.HIER_LEVEL == '4') {
+          <td>{{getDetailValue(d, 'US_FORMATTED_DATA')}}</td>
+        }
+        @if (d.HIER_LEVEL == '3' || d.HIER_LEVEL == '4') {
+          <td>{{d.FORMAT_PERIOD}}</td>
+        }
+      </tr>
+    }
+  </table>
+}

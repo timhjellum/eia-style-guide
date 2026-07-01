@@ -1,0 +1,10 @@
+<div class="l-row download-list">
+  <h4>Copy and paste the following HTML into your web page:</h4>
+  <p class="iframe-html-code" [innerText]="code"></p>
+  <img src="{{image}}" alt="State outline for {{selectedState}}" height="200px" />
+</div>
+
+<p-dropdown
+  [options]="states"
+  [(ngModel)]="selectedState"
+  (onChange)="setCode()"></p-dropdown>

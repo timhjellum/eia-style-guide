@@ -1,0 +1,21 @@
+<ul class="overview-ranking">
+  @for (series of this.stateData; track series.displayName) {
+    <li>
+      <div class="rankSeriesRank">
+        <em>#</em>
+        <span class="rankValue">{{series.rank}}</span>
+        <span class="r-label">Rank</span>
+      </div>
+      <div class="rankMetrics">
+        <div class="rankSeriesValue">{{series.displayValue}}</div>
+        <div class="rankSeriesName">{{series.displayName}}</div>
+        @if (series.frequency == 'M') {
+          <div class="rankDate">{{series.date | date: 'MMMM yyyy'}}</div>
+        }
+        @if (series.frequency != 'M') {
+          <div class="rankFreq">{{series.date | date: 'yyyy'}}</div>
+        }
+      </div>
+    </li>
+  }
+</ul>

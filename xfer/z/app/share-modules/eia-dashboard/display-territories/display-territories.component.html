@@ -1,0 +1,18 @@
+<select (change)="changeSelectedItem($event)">
+  @for (region of dropDown; track region.label) {
+    <option [value]="region.id">{{region.label}}</option>
+  }
+</select>
+<select (change)="changeSelectedRegion($event)">
+  @for (region of regionDropDown; track region.label) {
+    <option  [value]="region.id">{{region.label}}</option>
+  }
+</select>
+<div>
+  ** Current State is part of region
+</div>
+
+<div id="mapContainer">
+  <div #chart id="usMap" class="us-map"></div>
+</div>
+

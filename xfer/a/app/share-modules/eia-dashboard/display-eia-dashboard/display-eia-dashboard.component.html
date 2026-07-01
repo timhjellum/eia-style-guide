@@ -1,0 +1,447 @@
+<!--<div><a (click)="regionText = regionText == 'Show' ? 'Hide' : 'Show'">{{regionText}} regions map</a></div>
+<app-display-territories *ngIf="regionText == 'Hide'"></app-display-territories>
+-->
+<div class="dashboard-controls-container">
+    <div class="dashboard-frequency-container">
+    <label for="dashboard-frequency">Choose dashboard frequency</label>
+    <!--  class="eia-accessibility" -->
+    <select
+    name="frequency"
+    id="dashboard-frequency"
+    (change)="applyGlobalFilterFrequency($event.target.value)"
+        pTooltip="
+        Choose dashboard frequency.
+
+        The 'most recent' option shows the latest data available for each visualization
+
+        " tooltipPosition="top"
+    [ngModel]="globalFrequencyNgModel">
+    @for (option of globalFilterOptions; track option.key) {
+        <option
+        [value]="option.key"
+        [disabled]="getGlobalFrequenciesDisabled(option.key)"
+        >{{option.name}}</option>
+    }
+    </select>
+    </div>
+
+  <button
+    class="enable-disable-dashboard"
+    (click)="toggleEditChart()"><span class="ico edit-dashboard {{editBtnClass}}"><span>{{editBtnText}} Dashboard</span></span></button>
+    @if (displayEditBtn) {
+      <button
+        class="add-more-chart"
+        type="text"
+        (click)="displayAdd = displayAdd ? false : true;"
+        ><span class="ico add-chart"><span>Add Visualization</span></span></button>
+      }
+
+
+      @if (displayShoppingCartButton) {
+        <button
+          class="right right--download"
+          type="text"
+          (click)="displayShoppingCart = true"
+          ><span class="ico download"><span>Download Selected Data ({{numberOfItems}})</span></span></button>
+        }
+        <p-toast position="bottom-center"></p-toast>
+      </div>
+
+
+
+      <p-dialog header="Map Information" [(visible)]="displayMapInfo" [style]="{maxWidth: '1024px', Width: '100%', minHeight: '400px'}" [modal]="true" [blockScroll]="true">
+        <div>
+          <div>
+            <a href="/maps/layer_info-m.cfm">❖ Layer information and map data</a>
+          </div>
+          <div>Map questions, comments and suggestions: <a href="mailto:mapping@eia.gov">mapping&#64;eia.gov</a></div>
+        </div>
+
+        <div>
+          <table>
+            <tr>
+              <td class="maplink"><a href="https://atlas.eia.gov/apps/all-energy-infrastructure-and-resources/explore"><span class="circle_u"><span class="circle_text">U</span></span></a></td>
+              <td class="maplink"><a href="https://atlas.eia.gov/apps/all-energy-infrastructure-and-resources/explore">U.S. Energy Mapping System</a></td>
+              <td class="cgap"></td>
+              <td class="maplink"><a href="/states/"><span class="circle_s"><span class="circle_text">S</span></span></a></td>
+              <td class="maplink"><a href="/states/">State Energy Profiles</a></td>
+            </tr>
+            <tr>
+              <td class="maplink"><span class="circle_d"><a href="/special/disruptions/"><span class="circle_text">D</span></a></span></td>
+              <td class="maplink"><a href="/special/disruptions/">Energy Disruptions</a></td>
+              <td class="cgap"></td>
+              <td class="maplink"><span class="circle_g"><a href="/special/gulf_of_mexico/"><span class="circle_text">G</span></a></span></td>
+              <td class="maplink"><a href="/special/gulf_of_america/">Gulf of America Fact Sheet</a></td>
+            </tr>
+            <tr>
+              <td class="maplink"><span class="circle_f"><a href="/special/floodhazard/"><span class="circle_text">F</span></a></span></td>
+              <td class="maplink"><a href="/special/floodhazard/">Flood Vulnerability</a></td>
+              <td class="cgap"></td>
+              <td class="maplink"><span class="circle_p"><a href="/special/shaleplays/"><span class="circle_text">P</span></a></span></td>
+              <td class="maplink"><a href="/special/shaleplays/">Major Oil and Gas Plays</a></td>
+            </tr>
+          </table>
+        </div>
+      </p-dialog>
+
+
+
+
+      <p-dialog header="Add a Visualization" [(visible)]="displayAdd" [modal]="true" [blockScroll]="true"[style]="{maxWidth: '1024px', Width: '100%', minHeight: '400px'}" >
+        <!-- th removed this [style]="{maxWidth: '1024px', Width: '100%', minHeight: '400px'}" -->
+        @if (isLoaded) {
+          <app-display-add-chart
+            [availableCharts]="availableCharts"
+            [allCharts]="allCharts"
+            [currentDashboard]="SourceDashboard"
+            [NumberMapViz]="NumberMapViz"
+            (onAddChart)="addChart($event)"
+            [DashboardTitle] = DashboardTitle
+          ></app-display-add-chart>
+        }
+      </p-dialog>
+
+
+
+      <a href=""></a>
+
+      <p-dialog header="Notes and Sources" class="download-pop dashboard-notes-sources" [(visible)]="notesSourcesDisplay" [style]="{maxWidth: '1024px', Width: '100%', minHeight: '400px'}" [modal]="true" [blockScroll]="true">
+        <div class="primary notes">
+          <ul>
+            <li class="head">Description</li>
+            <li class="sub-list">
+              <ul>
+                @if (notesSourcesData.shortDesc != '') {
+                  <li [innerHTML]="notesSourcesData.shortDesc"></li>
+                }
+                @if (notesSourcesData.shortDesc == '') {
+                  <li>
+                    Not Available
+                  </li>
+                }
+              </ul>
+            </li>
+            <li class="head">Sources</li>
+            @if (notesSourcesData.sources.length) {
+              <li>
+                <ul class="bullet">
+                  @for (v of notesSourcesData.sources; track v.text) {
+                    <li>
+                      <a href="{{v.link}}" target="_BLANK" [innerHTML]="toHTML(v.text)"></a>
+                    </li>
+                  }
+                </ul>
+              </li>
+            }
+            @if (!notesSourcesData.sources.length) {
+              <li class="sub-list">
+                Not Available
+              </li>
+            }
+            <li class="head">Related Data Products</li>
+            @if (notesSourcesData.relatedProducts.length) {
+              <li>
+                <ul class="bullet">
+                  @for (v of notesSourcesData.relatedProducts; track v.text) {
+                    <li>
+                      <a href="{{v.link}}" target="_BLANK" [innerHTML]="toHTML(v.text)"></a>
+                    </li>
+                  }
+                </ul>
+              </li>
+            }
+            @if (!notesSourcesData.relatedProducts.length) {
+              <li class="sub-list">
+                Not Available
+              </li>
+            }
+            <li class="head">Methodology, notes, and other documentation</li>
+            @if (notesSourcesData.meth.length) {
+              <li>
+                <ul>
+                  @for (v of notesSourcesData.meth; track v.text) {
+                    <li>
+                      <a href="{{v.link}}" target="_BLANK" [innerHTML]="toHTML(v.text)"></a>
+                    </li>
+                  }
+                </ul>
+              </li>
+            }
+            @if (!notesSourcesData.meth.length) {
+              <li class="sub-list">
+                Not Available
+              </li>
+            }
+          </ul>
+        </div>
+
+      </p-dialog>
+
+      <p-dialog header="Download selected API series" class="download-pop" [(visible)]="displayShoppingCart" [style]="{maxWidth: '1024px', Width: '100%', minHeight: '400px', maxWidth: '900px'}" [modal]="true" [blockScroll]="true">
+        <div class="l-row download-list">
+          <ul>
+            @for (item of cartItems; track item.key) {
+              <li>
+                <button (click)="removeFromCart(item)" class="remove">&nbsp;</button>
+                <a
+                  target="_blank"
+                  href="https://www.eia.gov/opendata/qb.php?sdid={{item.key}}"><span><strong>{{item.key}}:</strong> {{item.apiSeriesName}}</span></a>
+                  <div>{{item.apiSeriesDescription}}</div>
+                </li>
+              }
+            </ul>
+
+            <div class="filter-item-nav">
+              <button (click)="addAllSeriesToDownload()"><span class="ico plus"><span>Add All Series from Dashboard</span></span></button>
+              <button (click)="detectionService.emptySeries()"><span class="ico reset"><span>Remove All Series</span></span></button>
+            </div>
+            <fieldset>
+              <span>
+                <label>Download: </label>
+                <select class="select-download-menu" [(ngModel)]="selectedDownload">
+                  @for (select of downloadOpt; track select.name) {
+                    <option [ngValue]="select.key">{{select.name}}</option>
+                  }
+                </select>
+              </span>
+            </fieldset>
+          </div>
+          <div class="filter-item-nav">
+            <button (click)="goToDownLoad(selectedDownload)"><span class="ico save"><span>Download</span></span></button>
+            <button (click)="closeAllDownload()"><span class="ico cancel"><span>Cancel</span></span></button>
+          </div>
+        </p-dialog>
+
+
+        <p-sidebar id="edit-dashboard-container" [(visible)]="editChart" [fullScreen]="true" (onHide)="closeItemChart($event)" [blockScroll]="true" [ngStyle]="{height: screenHeight}" [showCloseIcon]="false">
+
+          <app-display-edit-chart
+            [Config]="editChartItem"
+            [PlaceHolder]="PlaceHolder"
+            [EnableFilter]="enableEdit"
+            [EditChart]="editChart"
+            [CountChange]="countChange"
+            (onChangeApply)="applyChange($event)"
+            (onDateChangeApply)="applyDateChange($event)"
+            (onEditChartClose)="closeEditPage()"
+          ></app-display-edit-chart>
+        </p-sidebar>
+
+
+
+        <p-dialog
+          header="HTML FOR THE EMBEDDED VISUALIZATION"
+          class="download-pop"
+          [(visible)]="displayEmbedChart"
+          [style]="{maxWidth: '1024px', Width: '100%', minHeight: '400px'}"
+          [modal]="true"
+          [blockScroll]="true">
+          <template #embedcontainer></template>
+          <app-display-embed-credits></app-display-embed-credits>
+        </p-dialog>
+
+
+
+
+        <div id="gridster-test" class="dasboard-gridster-main-container">
+          @if (isLoaded) {
+            <gridster [options]="options">
+              @for (item of getItems(); track item.chartId; let i = $index) {
+                <gridster-item [item]="item" id="{{item.chartId}}-gridster-item">
+                  <div class="dashboard-chart-outer-container">
+                    @if (item.width != '' && item.height != '') {
+                      <div class="dashboard-chart-container gridster-item-content" >
+                        @if (options.draggable.enabled) {
+                          <div class="drag-overlay-container">
+                            @if (options.draggable.enabled) {
+                              <button class="delete-handler" (click)="removeItem($event, item)"><span>Delete</span></button>
+                            }
+                            <div class="drag-overlay-controls">
+                              <button class="drag-handler">Drag Me</button>
+                            </div>
+                          </div>
+                        }
+                        @if (item.isEditable) {
+                          <div class="dashboard-gridster-item-header">
+                            &nbsp;
+                            @if (!options.draggable.enabled) {
+                              <div class="chart-controls right">
+                                @if (displayEditBtn) {
+                                  <button
+                                    (click)="displayNotesAndSources(item)"
+                                    class="edit"
+                                    pTooltip="Notes and Sources" tooltipPosition="top">
+                                    <span class="ico info"></span>
+                                  </button>
+                                }
+                                @if (displayEditBtn) {
+                                  <button
+                                    (click)="fullScreen($event, item, i)"
+                                    class="edit"
+                                    pTooltip="Full Screen" tooltipPosition="top">
+                                    <span class="ico fullscreen"></span>
+                                  </button>
+                                }
+                                @if (displayFullMenu(item.config.chartType)) {
+                                  @if (displayEditBtn) {
+                                    <button
+                                      (click)="editItemChart($event, item, i)"
+                                      pTooltip="Chart Options" tooltipPosition="top"
+                                      class="edit">
+                                      <span class="ico chart-options"></span>
+                                    </button>
+                                  }
+                                  <button
+                                    (click)="cloneViz($event, item)"
+                                    pTooltip="Clone Visualization"
+                                    tooltipPosition="top">
+                                    <span class="ico clone"></span>
+                                  </button>
+                                  <div (mouseover)="item.displayMenu = true" (mouseleave)="item.displayMenu = false" class="right" style="z-index: 999;">
+                                    <button
+                                      pTooltip="Download"
+                                      tooltipPosition="top">
+                                      <span [ngClass]="item.displayMenu ? 'ico add-to-download active':'ico add-to-download'"><span>Download</span></span>
+                                    </button>
+                                    @if (item.displayMenu) {
+                                      <ul class="add-to-downloads-menu">
+                                        <li [ngClass]="item.config.data.isExternal ? 'disabled':''">
+                                          <button (click)="addToCart($event, item)" class="export" [disabled]="item.config.data.isExternal"[attr.title]="item.config.data.isExternal ? 'data not available for download' : ''">Add to download</button>
+                                        </li>
+                                        @if (item.config.chartType != 'TABLE') {
+                                          <li>
+                                            <button (click)="exportViz($event, item, 'div')" class="export">Print Chart</button>
+                                          </li>
+                                        }
+                                        <li>
+                                          <button (click)="embedChart(item.config)" class="export">Embed chart</button>
+                                        </li>
+                                        <hr>
+                                          @if (item.config.chartType != 'TABLE') {
+                                            <li>
+                                              <button (click)="exportViz($event, item, 'pdf')" class="export">Download Pdf</button>
+                                            </li>
+                                          }
+                                          @if (item.config.chartType != 'TABLE') {
+                                            <li>
+                                              <button (click)="exportViz($event, item, 'image-png')" class="export">Download Image</button>
+                                            </li>
+                                          }
+                                          <li [ngClass]="item.config.data.isExternal ? 'disabled':''">
+                                            <button (click)="downloadCSV(item)" class="export" [disabled]="item.config.data.isExternal" [attr.title]="item.config.data.isExternal ? 'data not available for download' : ''">Download Csv</button>
+                                          </li>
+                                          <li [ngClass]="item.config.data.isExternal ? 'disabled':''">
+                                            <button (click)="downloadJSON(item)" class="export" [disabled]="item.config.data.isExternal" [attr.title]="item.config.data.isExternal ? 'data not available for download' : ''">Download Json</button>
+                                          </li>
+                                        </ul>
+                                      }
+                                    </div>
+                                  }
+                                </div>
+                              }
+                            </div>
+                          }
+                          <div class="gridster-item-content-viz">
+                            @if (item.config.chartType == 'BAR-STACKTIME') {
+                              <app-display-stack-bar-chart
+                                [Width]="item.width"
+                                [Height]="item.height"
+                                [Config]="item.config"
+                              [PlaceHolder]="PlaceHolder"></app-display-stack-bar-chart>
+                            }
+                            @if (item.config.chartType == 'SNAPSHOT') {
+                              <app-display-snapshot-chart
+                                [Width]="item.width"
+                                [Height]="item.height"
+                                [Config]="item.config"
+                              [PlaceHolder]="PlaceHolder"></app-display-snapshot-chart>
+                            }
+                            @if (item.config.chartType == 'BAR-CATEGORY') {
+                              <app-display-bar-categories-chart
+                                [Config]="item.config"
+                                [Width]="item.width"
+                                [Height]="item.height"
+                              [PlaceHolder]="PlaceHolder"></app-display-bar-categories-chart>
+                            }
+                            @if (item.config.chartType == 'LINE-TIME') {
+                              <app-display-line-time-chart
+                                [Config]="item.config"
+                                [Width]="item.width"
+                                [Height]="item.height"
+                              [PlaceHolder]="PlaceHolder"></app-display-line-time-chart>
+                            }
+                            @if (item.config.chartType == 'ANALYSIS') {
+                              <app-display-analysis-chart
+                                [Config]="item.config"
+                                [PlaceHolder]="PlaceHolder"
+                                [Width]="item.width"
+                              [Height]="item.height"></app-display-analysis-chart>
+                            }
+                            <!--
+                            <app-display-nowvs-chart
+                              *ngIf="item.config.chartType == 'TIME-NOWVS'"
+                              [Config]="item.config"
+                              [Width]="item.width"
+                              [Height]="item.height"
+                            [PlaceHolder]="PlaceHolder"></app-display-nowvs-chart>
+                            -->
+                            @if (item.config.chartType == 'MULTIPLE-YAXIS') {
+                              <app-display-multiple-yaxis-chart
+                                [Config]="item.config"
+                                [Width]="item.width"
+                                [Height]="item.height"
+                              [PlaceHolder]="PlaceHolder"></app-display-multiple-yaxis-chart>
+                            }
+                            @if (item.config.chartType == 'IFRAME-CHART') {
+                              <app-display-iframe-chart
+                                style="width: 100%; height: 100%"
+                                [Config]="item.config"
+                                [Width]="item.width"
+                                [Height]="item.height"
+                                [PlaceHolder]="PlaceHolder"
+                                [Dashboard]="SourceDashboard"
+                              [DashboardTitle]="DashboardTitle"></app-display-iframe-chart>
+                            }
+                            @if (item.config.chartType == 'TABLE') {
+                              <app-display-sep-table
+                                [Config]="item.config"
+                                [ToFit]="1"
+                                [Width]="item.width"
+                                [Height]="item.height">
+                              </app-display-sep-table>
+                            }
+                            @if (item.config.chartType == 'CAROUSEL') {
+                              <app-display-carousel-chart
+                                [Config]="item.config"
+                                class="carousel">
+                              </app-display-carousel-chart>
+                            }
+                            @if (item.config.chartType == 'STATIC-IMAGES') {
+                              <app-display-static-images
+                                [Config]="item.config"
+                                [Width]="item.width"
+                                [Height]="item.height"
+                                class="viz-static-images">
+                              </app-display-static-images>
+                            }
+                            @if (item.config.chartType == 'ADDCHART') {
+                              <div>
+                                <div class="create-custom-container">
+                                    <!-- removed by tph [ngStyle]="{'width': item.width, 'height': item.width}" -->
+                                  <div (click)="displayAdd = displayAdd ? false : true;" class="create-custom">
+                                    <span class="ico plus"></span>
+                                    <span>Add a Chart</span>
+                                  </div>
+                                </div>
+                              </div>
+                            }
+                          </div>
+                        <!--div *ngIf="options.draggable.enabled" class="viz-edit-dashboard-overlay"></div-->
+                      </div>
+                    }
+                  </div>
+                </gridster-item>
+              }
+            </gridster>
+          }
+        </div>

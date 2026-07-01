@@ -1,0 +1,13 @@
+@if (displayElement) {
+  <div>
+    @for (value of inputElementValues; track value.value; let i = $index) {
+      <span>
+        <input type="{{inputElementType}}" name="{{inputElementKey}}" value="{{value.value}}" (click)="updateValue(value.value)">
+      {{value.text}}&nbsp;&nbsp;&nbsp;</span>
+    }
+  </div>
+}
+
+@if (!displayElement) {
+  <span>{{inputDefaultFilters[inputElementKey]}}</span>
+}

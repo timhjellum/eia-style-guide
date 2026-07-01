@@ -1,0 +1,13 @@
+<div class="s-overview blue-template l-full-width-page">
+  <div class="l-row l-full-width-col">
+      <div class="l-col">
+        @if (this.params.state == 'US') {
+          <app-us-svg></app-us-svg>
+        }
+        @if (this.params.state != 'US') {
+          <app-states-svg
+          [State]="getState()"></app-states-svg>
+        }
+    </div>
+  </div>
+</div>

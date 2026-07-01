@@ -1,0 +1,19 @@
+<div class="l-row download-list l-full-width-col">
+    <div class="l-col">
+        <h4>Copy and paste the following HTML into your web page:</h4>
+        <p class="iframe-html-code" [innerText]="code"></p>
+        <p>Note: modify the width and height style to size the visualization on your web page.</p>
+        @if (selectedState == 'US') {
+        <app-us-svg></app-us-svg>
+        }
+        @if (selectedState != 'US') {
+        <app-states-svg [State]="getState()">
+        </app-states-svg>
+        }
+
+    </div>
+</div>
+
+
+
+<p-dropdown [options]="states" [(ngModel)]="selectedState" (onChange)="setCode()"></p-dropdown>

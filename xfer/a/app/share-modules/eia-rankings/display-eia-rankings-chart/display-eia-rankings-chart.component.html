@@ -1,0 +1,13 @@
+@if (ready) {
+  <div>
+    <app-display-eia-rankings-scatter-chart
+      [seriesId]="seriesId"
+      [seriesData]="seriesData"
+    [(stateCode)]="stateCode"></app-display-eia-rankings-scatter-chart>
+    <app-display-eia-rankings-data-table
+      [seriesId]="seriesId"
+      [seriesData]="seriesData"
+    [(stateCode)]="stateCode"></app-display-eia-rankings-data-table>
+  </div>
+}
+<br />

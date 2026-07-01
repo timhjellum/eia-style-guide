@@ -1,0 +1,17 @@
+<div class="l-row download-list">
+  <h4>Copy and paste the following HTML into your web page:</h4>
+  <p class="iframe-html-code" [innerText]="code"></p>
+  <p>Note: modify the width and height style to size the visualization on your web page.</p>
+  <app-display-ranking-widget
+    State="selectedState"
+    Width="'100%'"
+    Height="'300px'">
+  </app-display-ranking-widget>
+</div>
+
+
+
+<p-dropdown
+  [options]="states"
+  [(ngModel)]="selectedState"
+  (onChange)="setCode()"></p-dropdown>

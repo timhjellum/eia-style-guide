@@ -1,0 +1,57 @@
+<div #IframeContainer style="width: '100%'">
+  @if (showChart) {
+    <div>
+      @if (config.chartType == 'BAR-STACKTIME') {
+        <app-display-stack-bar-chart
+          [Width]="width"
+          [Height]="height"
+        [Config]="config"></app-display-stack-bar-chart>
+      }
+      @if (config.chartType == 'SNAPSHOT') {
+        <app-display-snapshot-chart
+        [Config]="config"></app-display-snapshot-chart>
+      }
+      @if (config.chartType == 'BAR-CATEGORY') {
+        <app-display-bar-categories-chart
+          [Width]="width"
+          [Height]="height"
+        [Config]="config"></app-display-bar-categories-chart>
+      }
+      @if (config.chartType == 'LINE-TIME') {
+        <app-display-line-time-chart
+          [Width]="width"
+          [Height]="height"
+        [Config]="config"></app-display-line-time-chart>
+      }
+      @if (config.chartType == 'ANALYSIS') {
+        <app-display-analysis-chart
+          [Width]="width"
+          [Height]="height"
+        [Config]="config"></app-display-analysis-chart>
+      }
+      @if (config.chartType == 'TABLE') {
+        <app-display-sep-table
+          [Config]="config"
+          [ToFit]="1"
+          [Width]="'100%'"
+          [Height]="'500px'"
+          >
+        </app-display-sep-table>
+      }
+      @if (config.chartType == 'CAROUSEL') {
+        <app-display-carousel-chart
+          [Config]="config"
+          class="carousel">
+        </app-display-carousel-chart>
+      }
+      @if (config.chartType == 'STATIC-IMAGES') {
+        <app-display-static-images
+          [Config]="config"
+          [Width]="width"
+          [Height]="height"
+          class="viz-static-images">
+        </app-display-static-images>
+      }
+    </div>
+  }
+</div>

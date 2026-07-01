@@ -1,0 +1,141 @@
+@if (displayComp) {
+  <div class="l-full-width-page rankings">
+    <div class="l-row l-full-width-col" >
+      <div class="l-col">
+        <div id="states-rankings-header-menu" class="controls-container">
+          <button (click)="this.view = 'rankings-chart'" [ngClass]="this.view === 'rankings-chart' ? 'active':''" id="rankings-chart"><span class="ico chart"><span>Chart</span></span></button>
+          <button (click)="this.view = 'rankings-data-table'" [ngClass]="this.view === 'rankings-data-table' ? 'active':''"><span class="ico detailed-data"><span>Table data</span></span></button>
+          <button (click)="this.view = 'rankings-heat-map'" [ngClass]="this.view === 'rankings-heat-map' ? 'active':''"><span class="ico heat-map"><span>Heat Map</span></span></button>
+        </div>
+      </div>
+    </div>
+    <div class="l-row l-full-width-col" >
+      <div class="l-col" style="position: relative; min-height: 1px; margin: 0; float: left; width: 100%;">
+        @if (this.view === 'rankings-heat-map' || this.view === 'rankings-data-table') {
+          <div id="states-rankings-category-menu" class="select-container">
+            <div id="rankingsPage">
+              <label for="categoryMenu" class="eia-accessibility">Choose rankings category</label>
+              <select (change)="changeCategory($event.target.value)" id="categoryMenu" name="categoryMenu">
+                @for (menuItem of menuItems; track menuItem.name) {
+                  <optgroup label="{{ menuItem.name }}">
+                    @for (subMenuItem of menuItem.subCategories; track subMenuItem.seriesId) {
+                      <option
+                      [value]="subMenuItem.seriesId">{{subMenuItem.name}}</option>
+                    }
+                  </optgroup>
+                }
+              </select>
+            </div>
+          </div>
+        }
+        <!--Heat Map-->
+        @if (this.view === 'rankings-heat-map') {
+          <div>
+            <h2>{{getCategoryHeaderName()}}</h2>
+            <app-display-eia-rankings-us-heat-map
+              [seriesId]="seriesId"
+              [mapId]="'eia_rankings_heat_map1'"
+              [seriesData]="seriesData"
+              [(stateCode)]="stateCode">
+            </app-display-eia-rankings-us-heat-map>
+          </div>
+        }
+        <!--Ranking Chart-->
+        @if (this.view === 'rankings-chart') {
+          <div>
+            <div class="main_container">
+              <div>
+                <h2>Choose a state on the map to highlight its rank below</h2>
+              </div>
+              <div>
+                <a id="mapLink" href="#largeMapContainer" style="display:none;"></a>
+                <app-display-eia-rankings-heat-map
+                  [seriesId]="seriesId"
+                  [mapId]="'eia_rankings_heat_map2'"
+                  [seriesData]="seriesData"
+                  [(stateCode)]="stateCode">
+                </app-display-eia-rankings-heat-map>
+              </div>
+              <div id="rankingChartContainer">
+                <app-display-eia-rankings-chart [seriesId]="12" [(stateCode)]="stateCode"></app-display-eia-rankings-chart>
+                <app-display-eia-rankings-chart [seriesId]="225" [(stateCode)]="stateCode"></app-display-eia-rankings-chart>
+                <app-display-eia-rankings-chart [seriesId]="101" [(stateCode)]="stateCode"></app-display-eia-rankings-chart>
+                <app-display-eia-rankings-chart [seriesId]="46" [(stateCode)]="stateCode"></app-display-eia-rankings-chart>
+                <app-display-eia-rankings-chart [seriesId]="47" [(stateCode)]="stateCode"></app-display-eia-rankings-chart>
+                <app-display-eia-rankings-chart [seriesId]="48" [(stateCode)]="stateCode"></app-display-eia-rankings-chart>
+                <app-display-eia-rankings-chart [seriesId]="51" [(stateCode)]="stateCode"></app-display-eia-rankings-chart>
+                <app-display-eia-rankings-chart [seriesId]="226" [(stateCode)]="stateCode"></app-display-eia-rankings-chart>
+                <app-display-eia-rankings-chart [seriesId]="28" [(stateCode)]="stateCode"></app-display-eia-rankings-chart>
+                <app-display-eia-rankings-chart [seriesId]="31" [(stateCode)]="stateCode"></app-display-eia-rankings-chart>
+              </div>
+            </div>
+          </div>
+        }
+        <!--Data Table-->
+        @if (this.view === 'rankings-data-table') {
+          <div>
+            <div class="main_container">
+              <div id="rankingDataTableContainer">
+                <!--<div class="pagecontent eqcol_temp" id="rankingsPage">-->
+                <!--<app-display-eia-rankings-filters [seriesId]="seriesId"></app-display-eia-rankings-filters>-->
+              <!--</div>-->
+              <div id="rankingDataTableSubTitleContainer">
+                <h2>{{getCategoryHeaderName()}}</h2>
+              </div>
+              <app-display-eia-rankings-data-table [showToggle]="false" [seriesId]="seriesId" [seriesData]="seriesData"></app-display-eia-rankings-data-table>
+            </div>
+          </div>
+        </div>
+      }
+      <div class="l-row">
+        <a class="notation notesAndSources"
+          type="text"
+          (click)="isShow()"><span class="ico info"></span>
+          Notes, sources, and related links
+        </a>
+        <p-dialog header="Notes, sources, and related links" [(visible)]="displayNotes" [style]="{minWidth: '800px', minHeight: '400px'}" [modal]="true" [blockScroll]="true" [dismissableMask]="true">
+          <div id="rankings_sources" class="primary">
+            <ul>
+              <li class="head">Consumption</li>
+              <li>
+                <ul class="bullet">
+                  <li>Total Energy per Capita: <a href="/state/seds/data.php?incfile=/state/seds/sep_sum/html/rank_use_capita.html&amp;sid=US">EIA, State Energy Data System, Total Consumption Per Capita</a></li>
+                </ul>
+              </li>
+              <li class="head">Expenditures</li>
+              <li>
+                <ul class="bullet">
+                  <li>Total Energy per Capita: <a href="/state/seds/data.php?incfile=/state/seds/sep_sum/html/rank_pr.html&amp;sid=US">EIA, State Energy Data System, Total Expenditures Per Capita</a></li>
+                </ul>
+              </li>
+              <li class="head">Production</li>
+              <li>
+                <ul class="bullet">
+                  <li>Total Energy: <a href="/state/seds/sep_prod/xls/P2.xlsx">EIA, State Energy Data System, Total Energy Production</a></li>
+                  <li>Crude Oil: <a href="/dnav/pet/pet_crd_crpdn_adc_mbbl_m.htm">EIA, Petroleum Supply Annual, Crude Oil Production</a></li>
+                  <li>Natural Gas: <a href="/dnav/ng/ng_prod_sum_a_EPG0_VGM_mmcf_a.htm">EIA, Natural Gas Annual, Natural Gas Gross Withdrawals and Production</a></li>
+                  <li>Coal: <a href="/coal/annual/xls/table1.xls">EIA, Annual Coal Report, Coal Production and Number of Mines by State</a></li>
+                  <li>Electricity: <a href="/electricity/monthly/xls/table_1_03_a.xlsx">EIA, Electric Power Monthly, Net Generation by State</a></li>
+                </ul>
+              </li>
+              <li class="head">Environment</li>
+              <li>
+                <ul class="bullet">
+                  <li>Carbon Dioxide Emissions: <a href="/environment/emissions/state/state_emissions.cfm">State CO<sub>2</sub> Emissions</a></li>
+                </ul>
+              </li>
+              <li class="head">Prices</li>
+              <li>
+                <ul class="bullet">
+                  <li>Natural Gas: <a href="/dnav/ng/ng_pri_sum_a_EPG0_PRS_DMcf_m.htm">EIA, Natural Gas Monthly, Natural Gas Prices</a></li>
+                  <li>Electricity: <a href="/electricity/monthly/xls/table_5_06_a.xlsx">EIA, Electric Power Monthly, Residential Electricity Prices</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+</div>
+}

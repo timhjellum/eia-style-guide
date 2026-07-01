@@ -1,0 +1,7 @@
+<div #chart [ngStyle]="ChartStyles" class="sep-chart-container"></div>
+<form #exportForm action="/global/scripts/jquery/highcharts/exporting-server/index.php" method="POST" enctype="multipart/form-data">
+	<input #exportInputFilename type="hidden" name="filename">
+	<input #exportInputSvg type="hidden" name="svg">
+	<input #exportInputType type="hidden" name="type">
+	<input #exportInputWidth type="hidden" name="width">
+</form>

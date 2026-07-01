@@ -1,0 +1,75 @@
+<div class="l-button-container">
+    <button class="choose-state-popup left" type="text" (click)="isShow()" pButton>Choose State/Territory</button>
+    </div>
+<p-dialog header="Choose a state or territory to view its profile" [(visible)]="displayPopup" [style]="{minWidth: '1000px', minHeight: '400px'}" [modal]="true" [blockScroll]="true" class="state-selector" (onHide)="close()" (onShow)="show()">
+    <div class="state-tab l-full-width-page blue-template">
+        <div class="l-row l-full-width-col">
+            <div class="l-col">
+                <!-- h1>Choose a state or territory to view its profile</h1 -->
+
+                <ul class="map-list-toggle">
+                    <li [ngClass]="this.stateView === 'states-list' ? 'ico-list active':'ico-list' " (click)="stateView = 'states-list'"><a>List<span></span>view</a></li>
+                    <li [ngClass]="this.stateView === 'states-list' ? 'ico-indicator-left':'ico-indicator-right' "></li>
+                    <li [ngClass]="this.stateView === 'states-map' ? 'ico-us-map active':'ico-us-map' " (click)="stateView = 'states-map'; resize();"><a>Map<span></span>view</a></li>
+                </ul>
+
+                @if (this.stateView == 'states-list') {
+                <div class="list-container">
+                    <h3>United States</h3>
+                    <div class="l-row l-six-col-even">
+                        @for (column of lut.getState6Columns(); track column) {
+                        <div class="l-col">
+                            <ul>
+                                @for (state of column; track state.id) {
+                                <li>
+                                    <a routerLink="/{{state.id}}" (click)="stateListPopupService.updateChangedBehavior();">{{state.name}}</a>
+                                </li>
+                                }
+                            </ul>
+                        </div>
+                        }
+                    </div>
+                    <h3><a routerLink="/data" (click)="stateListPopupService.updateChangedBehavior();">U.S. Total</a></h3>
+                    <h3>U.S. Territories</h3>
+                    <div class="l-row l-six-col-even">
+                        <div class="l-col">
+                            <ul>
+                                @for (territory of lut.getTerritoryDisplay(); track territory.id) {
+                                <li>
+                                    <a routerLink="/{{territory.id}}" (click)="stateListPopupService.updateChangedBehavior();">{{territory.name}}</a>
+                                </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                }
+
+                @if (this.stateView == 'states-map') {
+                <div class="list-container">
+                    <div #chart id="{{mapId}}" class="us-map"></div>
+                    <div class="territory-container">
+                        <div>
+                            <ul>
+                                <li>
+                                    <h4><a routerLink="/data" (click)="stateListPopupService.updateChangedBehavior();">U.S. Total</a></h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>U.S. Territories</h4>
+                            <ul>
+                                <li><a routerLink="/AQ" (click)="stateListPopupService.updateChangedBehavior();">American Samoa</a></li>
+                                <li><a routerLink="/GQ" (click)="stateListPopupService.updateChangedBehavior();">Guam</a></li>
+                                <li><a routerLink="/CQ" (click)="stateListPopupService.updateChangedBehavior();">Northern Mariana Islands</a></li>
+                                <li><a routerLink="/RQ" (click)="stateListPopupService.updateChangedBehavior();">Puerto Rico</a></li>
+                                <li><a routerLink="/VQ" (click)="stateListPopupService.updateChangedBehavior();">U.S. Virgin Islands</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</p-dialog>

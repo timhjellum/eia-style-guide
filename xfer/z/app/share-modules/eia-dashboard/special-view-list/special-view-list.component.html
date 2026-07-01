@@ -1,0 +1,7 @@
+<ul class="list-items">
+  @for (menu of sharedStatesService.getSpecialViews(); track menu.name) {
+    <li>
+      <a routerLink="{{BasePath}}/data/dashboard/{{menu.id}}">{{menu.name}}</a>
+    </li>
+  }
+</ul>

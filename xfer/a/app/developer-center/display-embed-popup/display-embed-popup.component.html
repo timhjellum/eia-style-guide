@@ -1,0 +1,19 @@
+@if (displayEmbed) {
+  <div class="l-row download-list">
+    <h3>{{Config.chartTitle}}</h3>
+    <h4>Copy and paste the following HTML into your web page:</h4>
+    <p class="iframe-html-code" [innerText]="code"></p>
+    <p>Note: modify the width and height style to size the visualization on your web page.</p>
+    <app-iframe></app-iframe>
+  </div>
+}
+@if (!displayEmbed) {
+  <div class="l-row download-list">
+    <p>
+      Any of the charts and tables available in all the data dashboards,
+      either the defaults or ones that you customize,
+    have the “embed” option available. Copy that code into your page.</p>
+    <img src="assets/images/chart_visual.png" alt="Chart Visual" />
+  </div>
+}
+

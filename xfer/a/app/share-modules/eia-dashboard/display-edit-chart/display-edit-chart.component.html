@@ -1,0 +1,392 @@
+@if (displayChart && Config) {
+  <div [ngClass]="containerClass">
+    <div class="filter-item-nav dialog-box-edit-close">
+      <button (click)="applyChanges()"><span class="ico save"></span></button>
+      <button (click)="closeAllEdit()"><span class="ico cancel"></span></button>
+    </div>
+    <p-toast position="bottom-center"></p-toast>
+    <div style="max-width: 600px;">
+      <p-overlayPanel #op3 [appendTo]="'body'">
+        <div class="right right--print-map"><a href="assets/images/{{displayRegionTooltip}}.png" target="_blank">Print</a></div>
+        <img src="assets/images/{{displayRegionTooltip}}.png" style="max-width: 600px;" alt="Region Map"/>
+      </p-overlayPanel>
+    </div>
+    @if (_enabledFilter) {
+      <h1>Chart options for {{EditConfig.chartTitle}}</h1>
+    }
+    @if (!_enabledFilter) {
+      <h1>Full screen mode for {{EditConfig.chartTitle}}</h1>
+    }
+    <div #detailOverlay class="l-row">
+      <div class="dashboard-chart-container">
+        @if (displayFullMenu(EditConfig.chartType)) {
+          <div (mouseover)="displayMenu = true" (mouseleave)="displayMenu = false" class="download-dropdown-container">
+            <button class="download-dropdown"><span class="ico add-to-download"></span> Download</button>
+            @if (displayMenu) {
+              <ul class="add-to-downloads-menu">
+                <!--
+                <li>
+                  <button (click)="addToCart($event, EditConfig)" class="export" >Add to download</button>
+                </li>
+                -->
+                @if (EditConfig.chartType != 'TABLE') {
+                  <li>
+                    <button (click)="exportViz($event, EditConfig, 'div')" class="export">Print Chart</button>
+                  </li>
+                }
+                <hr>
+                  @if (EditConfig.chartType != 'TABLE') {
+                    <li>
+                      <button (click)="exportViz($event, EditConfig, 'pdf')" class="export">Download Pdf</button>
+                    </li>
+                  }
+                  @if (EditConfig.chartType != 'TABLE') {
+                    <li>
+                      <button (click)="exportViz($event, EditConfig, 'image-png')" class="export">Download Image</button>
+                    </li>
+                  }
+                  <li [ngClass]="EditConfig.data.isExternal ? 'disabled':''">
+                    <button (click)="downloadCSV(EditConfig)" class="export" [disabled]="EditConfig.data.isExternal" [attr.title]="EditConfig.data.isExternal ? 'data not available for download' : ''">Download Csv</button>
+                  </li>
+                  <li [ngClass]="EditConfig.data.isExternal ? 'disabled':''">
+                    <button (click)="downloadJSON(EditConfig)" class="export" [disabled]="EditConfig.data.isExternal" [attr.title]="EditConfig.data.isExternal ? 'data not available for download' : ''">Download Json</button>
+                  </li>
+                </ul>
+              }
+            </div>
+          }
+          @if (EditConfig.chartType == 'SNAPSHOT') {
+            <app-display-snapshot-chart
+              [Config]="EditConfig"
+            [PlaceHolder]="PlaceHolder"></app-display-snapshot-chart>
+          }
+          @if (EditConfig.chartType == 'CAROUSEL') {
+            <app-display-carousel-chart
+              [Config]="EditConfig"
+            class="carousel"></app-display-carousel-chart>
+          }
+          @if (EditConfig.chartType == 'BAR-STACKTIME') {
+            <app-display-stack-bar-chart
+              [Config]="EditConfig"
+              [PlaceHolder]="PlaceHolder"
+              [ChartType]="Stock"
+            ></app-display-stack-bar-chart>
+          }
+          @if (EditConfig.chartType == 'BAR-CATEGORY') {
+            <app-display-bar-categories-chart
+              [Config]="EditConfig"
+              [PlaceHolder]="PlaceHolder"
+              [ChartType]="Stock"
+            ></app-display-bar-categories-chart>
+          }
+          @if (EditConfig.chartType == 'LINE-TIME') {
+            <app-display-line-time-chart
+              [Config]="EditConfig"
+              [PlaceHolder]="PlaceHolder"
+              [ChartType]="Stock"
+            ></app-display-line-time-chart>
+          }
+          @if (EditConfig.chartType == 'ANALYSIS') {
+            <app-display-analysis-chart
+              [Config]="EditConfig"
+              [PlaceHolder]="PlaceHolder"
+            ></app-display-analysis-chart>
+          }
+          <!--
+          <app-display-nowvs-chart
+            *ngIf="EditConfig.chartType == 'TIME-NOWVS'"
+            [Config]="EditConfig"
+          [PlaceHolder]="PlaceHolder"></app-display-nowvs-chart>
+          -->
+          @if (EditConfig.chartType == 'MULTIPLE-YAXIS') {
+            <app-display-multiple-yaxis-chart
+              [Config]="EditConfig"
+              [PlaceHolder]="PlaceHolder"
+              [ChartType]="Stock"
+            ></app-display-multiple-yaxis-chart>
+          }
+          @if (EditConfig.chartType == 'TABLE') {
+            <app-display-sep-table
+              [Height]="Height"
+              [ToFit]="1"
+              [Config]="EditConfig">
+            </app-display-sep-table>
+          }
+          @if (EditConfig.chartType == 'STATIC-IMAGES') {
+            <app-display-static-images
+              [Config]="EditConfig"
+            ></app-display-static-images>
+          }
+          <div class="notes">
+            <div>
+              <h3>Description</h3>
+              @if (EditConfig.shortDesc != '') {
+                <p [innerHtml]="EditConfig.shortDesc">
+                </p>
+              }
+              @if (EditConfig.shortDesc == '') {
+                <p>
+                  Not Available
+                </p>
+              }
+              <!--
+              <p *ngIf="!EditConfig.sources.length">
+                Not Available
+              </p>
+              -->
+            </div>
+            <div>
+              <h3>Sources</h3>
+              @if (EditConfig.sources.length) {
+                <ul>
+                  @for (v of EditConfig.sources; track v.text) {
+                    <li>
+                      <a href="{{v.link}}" target="_BLANK" [innerHTML]="toHTML(v.text)"></a>
+                    </li>
+                  }
+                </ul>
+              }
+              @if (!EditConfig.sources.length) {
+                <p>
+                  Not Available
+                </p>
+              }
+            </div>
+            <div>
+              <h3>RELATED DATA Products</h3>
+              @if (EditConfig.relatedProducts.length) {
+                <div>
+                  <ul>
+                    @for (v of EditConfig.relatedProducts; track v.text) {
+                      <li>
+                        <a href="{{v.link}}" target="_BLANK" [innerHTML]="toHTML(v.text)"></a>
+                      </li>
+                    }
+                  </ul>
+                </div>
+              }
+              @if (!EditConfig.relatedProducts.length) {
+                <div>
+                  Not Available
+                </div>
+              }
+            </div>
+            <div>
+              <h3>Methodology, notes, and other documentation</h3>
+              @if (EditConfig.meth.length) {
+                <div>
+                  <ul>
+                    @for (v of EditConfig.meth; track v.text) {
+                      <li>
+                        <a href="{{v.link}}" target="_BLANK" [innerHTML]="toHTML(v.text)"></a>
+                      </li>
+                    }
+                  </ul>
+                </div>
+              }
+              @if (!EditConfig.meth.length) {
+                <div>
+                  Not Available
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+        @if (displayFullMenu(EditConfig.chartType)) {
+          <div class="chart-filter-options"><a (click)="toggleEditConfig()"><span class="ico arrow"></span><span class="ico chart-options-large"></span></a></div>
+        }
+        @if (_enabledFilter) {
+          <div class="filters-outer-container">
+            <div class="filters-container">
+              @if (enabledStateFilter) {
+                <div class="filter-item-container filter-item-container-states">
+                  <h2 class="filter-item-header">{{EditConfig.editOptions.states.label}}</h2>
+                  <div class="filter-item-content">
+                    @for (stateOption of stateOptions; track stateOption.key) {
+                      <p-checkbox
+                        name="states"
+                        value="{{stateOption.key}}"
+                        label="{{stateOption.name}}"
+                        [(ngModel)]="EditConfig.filters.states"
+                        [disabled]="disableSeasonalFilter || EditConfig.analysis == 'none' ? false : true"
+                      (onChange)="processFilters($event)"></p-checkbox>
+                    }
+                  </div>
+                </div>
+              }
+              @if (enabledRegionFilter) {
+                <div class="filter-item-container filter-item-container-regions">
+                  <h2 class="filter-item-header">{{EditConfig.editOptions.regions.label}}</h2>
+                  <div class="filter-item-content">
+                    @if (displayUsRegionFilter()) {
+                      <p-checkbox
+                        name="regions"
+                        value="{{usRegions.key}}"
+                        label="{{usRegions.name}}"
+                        [(ngModel)]="EditConfig.filters.regions"
+                      (onChange)="processFilters($event)"></p-checkbox>
+                    }
+                    @if (isEnableStateRegion()) {
+                      <a (click)="filterStateRegion()">{{getStateRegionText()}}</a>
+                    }
+                    @for (options of regionsOptions; track options.name) {
+                      <h4>
+                        {{options.name}}
+                        @if (options.tooltip != '') {
+                          <a type="button" pButton (click)="showRegionTooltip($event, op3, options.tooltip, detailOverlay)" icon="pi pi-search" class="region-info">
+                            <span class="ico question"></span>
+                          </a>
+                        }
+                      </h4>
+                      @for (option of options.regions; track option.key) {
+                        <p-checkbox
+                          name="regions"
+                          value="{{option.key}}"
+                          label="{{option.name}}"
+                          [(ngModel)]="EditConfig.filters.regions"
+                          [disabled]="disableSeasonalFilter || EditConfig.analysis == 'none' ? false : true"
+                        (onChange)="processFilters($event)"></p-checkbox>
+                      }
+                    }
+                  </div>
+                </div>
+              }
+              @if (enabledSectorsFilter) {
+                <div class="filter-item-container filter-item-container-sectors">
+                  <h2 class="filter-item-header">{{EditConfig.editOptions.sectors.label}}</h2>
+                  <div class="filter-item-content">
+                    @for (option of sectorsOptions; track option.key) {
+                      <p-checkbox
+                        name="sectors"
+                        value="{{option.key}}"
+                        label="{{option.name}}"
+                        [(ngModel)]="EditConfig.filters.sectors"
+                        [disabled]="disableSeasonalFilter || EditConfig.analysis == 'none' ? false : true"
+                      (onChange)="processFilters($event)"></p-checkbox>
+                    }
+                  </div>
+                </div>
+              }
+              @if (enabledEnergyFilter) {
+                <div class="filter-item-container filter-item-container-energy">
+                  <h2 class="filter-item-header">{{EditConfig.editOptions.energies.label}}</h2>
+                  <div class="filter-item-content">
+                    @for (option of energyOptions; track option.key) {
+                      <p-checkbox
+                        name="units"
+                        value="{{option.key}}"
+                        label="{{option.name}}"
+                        [(ngModel)]="EditConfig.filters.energies"
+                        [disabled]="disableSeasonalFilter || EditConfig.analysis == 'none' ? false : true"
+                      (onChange)="processFilters($event)"></p-checkbox>
+                    }
+                  </div>
+                </div>
+              }
+              @if (enabledUnitFilter) {
+                <div class="filter-item-container filter-item-container-units">
+                  <h2 class="filter-item-header">{{EditConfig.editOptions.units.label}}</h2>
+                  <div class="filter-item-content">
+                    @for (option of unitOptions; track option.key) {
+                      <p-radioButton
+                        name="units"
+                        value="{{option.key}}"
+                        label="{{option.name}}"
+                        [(ngModel)]="unitSelected"
+                        [disabled]="disableSeasonalFilter || EditConfig.analysis == 'none' ? false : true"
+                      (click)="processUnitFilter($event)"></p-radioButton>
+                    }
+                  </div>
+                </div>
+              }
+              @if (enableFrequencyFilter) {
+                <div class="filter-item-container filter-item-container-frequency">
+                  <h2 class="filter-item-header">Frequency</h2>
+                  <div class="filter-item-content">
+                    @for (option of frequencyOptions; track option.key) {
+                      <p-radioButton
+                        name="frequency"
+                        value="{{option.key}}"
+                        label="{{option.name}}"
+                        [(ngModel)]="frequency"
+                      (click)="processRadioFilters(option.key)"></p-radioButton>
+                    }
+                  </div>
+                </div>
+              }
+              @if (enableChartTypeFilter) {
+                <div class="filter-item-container filter-item-container-chart-type">
+                  <h2 class="filter-item-header">Chart Type</h2>
+                  <div class="filter-item-content">
+                    @for (option of chartTypeAvailable; track option.key) {
+                      <p-radioButton
+                        name="chart_type"
+                        value="{{option.key}}"
+                        label="{{option.name}}"
+                        (click)="applyChartType()"
+                      [(ngModel)]="EditConfig.chartType"></p-radioButton>
+                    }
+                  </div>
+                </div>
+              }
+              <div class="filter-item-container filter-item-container-chart-type">
+                <h2 class="filter-item-header">
+                  Chart Indexing Options
+                  <a (click)="displayAnalysisPopup = true" pTooltip="to enable this feature a line chart must be selected" tooltipPosition="left">
+                    <em class="fa fa-question-circle"></em>
+                  </a>
+                </h2>
+                <div class="filter-item-content">
+                  @for (option of indexOptions; track option.key) {
+                    <p-radioButton
+                      [disabled]="disableIndexingFilter"
+                      name="index_option"
+                      value="{{option.key}}"
+                      label="{{option.name}}"
+                      [(ngModel)]="EditConfig.viewType"
+                    (click)="applyChartIndex()"></p-radioButton>
+                  }
+                </div>
+              </div>
+              <div class="filter-item-container filter-item-container-chart-type">
+                <h2 class="filter-item-header">
+                  Seasonal Analysis Options
+                  <a (click)="displayAnalysisPopup = true" pTooltip="to enable this feature a line chart with one data series must be selected with a quarterly or monthly frequency" tooltipPosition="left">
+                    <em class="fa fa-question-circle"></em>
+                  </a>
+                </h2>
+                <div class="filter-item-content">
+                  @for (option of analysisOptions; track option.key) {
+                    <p-radioButton
+                      [disabled]="disableSeasonalFilter"
+                      name="seasonal_option"
+                      value="{{option.key}}"
+                      label="{{option.name}}"
+                      [(ngModel)]="EditConfig.analysis"
+                    (click)="applySeasonAnalysis()"></p-radioButton>
+                  }
+                </div>
+              </div>
+            </div>
+            @if (this.Stock) {
+              <div class="filter-item-nav apply-all-charts">
+                <div class="filter-item-content">
+                  <p-checkbox
+                    label="Apply Date Range to all Charts"
+                  (onChange)="applyDateRanges($event)"></p-checkbox>
+                </div>
+              </div>
+            }
+            <div class="filter-item-nav">
+              <button (click)="applyChanges()"><span class="ico save"><span>Save Changes</span></span></button>
+              <button (click)="revertChanges()"><span class="ico reset"><span>Reset</span></span></button>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  }
+
+  @if (!displayChart) {
+    <div>loading...</div>
+  }

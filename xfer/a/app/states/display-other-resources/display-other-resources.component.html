@@ -1,0 +1,10 @@
+@if (display) {
+  <div class="other-resources-container">
+    <ul>
+      @for (resource of resources; track resource.NAME) {
+        <li><a href="{{resource.URL}}">{{resource.NAME}}</a></li>
+      }
+    </ul>
+    <a href="{{stateAbbr}}/other-resources" target="_blank">More resources</a>
+  </div>
+}

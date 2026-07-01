@@ -1,0 +1,10 @@
+@if (display) {
+  <div class="today-in-energy-container">
+    <h1>Today In Energy articles related to {{getStateName()}}</h1>
+    <ul>
+      @for (article of articles; track article.TITLE) {
+        <li><a href="/todayinenergy/detail.php?id={{article.ID}}">{{article.TITLE}}</a></li>
+      }
+    </ul>
+  </div>
+}

@@ -1,0 +1,22 @@
+<div [ngStyle]="snappyStyle" class="snapshot">
+  <h4>{{ChartObject.title}}</h4>
+  @if (ChartObject.hasData) {
+    <div>
+      <div class="snapshot-date">
+        {{ChartObject.date}}
+      </div>
+      <h2 class="snap-content">
+        <span class="snap-value">{{ChartObject.value}}</span>
+      </h2>
+      <span class="snap-units">{{ChartObject.units}}</span>
+    </div>
+  }
+  @if (!ChartObject.hasData) {
+    <div>
+      <br /><br />
+      <div class="null-data">
+        {{ChartObject.value}}
+      </div>
+    </div>
+  }
+</div>

@@ -1,0 +1,79 @@
+<app-display-states-menu></app-display-states-menu>
+<div class="dashboard blue-template l-full-width-page">
+	<div class="l-row" >
+		<div class="l-full-width-col">
+		<router-outlet></router-outlet>
+		</div>
+	</div>
+	@if (module !== 'environment' && module !== 'custom' && state !== 'dc') {
+	@defer(on viewport) {
+	<div class="l-row">
+        <div class="l-full-width-col">
+			<!--<h3>Map</h3>
+			 <br>
+				@if (module === 'coal') {
+					<app-coal [state]="state"></app-coal>
+				} @else if (module === 'crude-oil-petroleum') {
+					<app-crude-oil-petroleum [state]="state"></app-crude-oil-petroleum>
+				} @else if (module === 'electricity') {
+					<app-electricity [state]="state"></app-electricity>
+				} @else if (module === 'natural-gas') {
+					<app-natural-gas [state]="state"></app-natural-gas>
+				} @else if (module === 'nuclear-uranium') {
+					<app-nuclear-uranium [state]="state"></app-nuclear-uranium>
+				} @else if (module === 'renewables') {
+					<app-renewables [state]="state"></app-renewables>
+				} @else if (module === 'total-energy' || 
+							module === 'state-energy-planning' || 
+							module === 'reliability-resiliency' ||
+							module === 'energy-infrastructure') {
+					<app-total-energy [state]="state"></app-total-energy>
+				} @else if (module === 'prices-rates-revenues-costs-expenditures') {
+					<app-prices-rates-revenues-costs-expenditures [state]="state"></app-prices-rates-revenues-costs-expenditures>
+				} @else if (module === 'consumption' || 
+							module === 'energy-indicators' ||
+							module === 'energy-efficiency-cogeneration') {
+					<app-consumption [state]="state"></app-consumption>
+				} @else if (module === 'imports-exports-movements') {
+					<app-imports-exports-movements [state]="state"></app-imports-exports-movements>
+				} @else if (module === 'stocks-storage-inventories') {
+					<app-stocks-storage-inventories [state]="state"></app-stocks-storage-inventories>
+				} @else if (module === 'production-capacity-generation') {
+					<app-production-capacity-generation [state]="state"></app-production-capacity-generation>
+				} @else if (module === 'reserves-resources-potential') {
+					<app-reserves-resources-potential [state]="state"></app-reserves-resources-potential>
+				} @else if (module === 'supply-disposition') {
+					<app-supply-disposition [state]="state"></app-supply-disposition>
+				}
+			<br> -->
+        </div>
+    </div>
+	}  @placeholder {
+		<p>.</p>
+	} @loading {
+		<i class="pi pi-spin pi-spinner" style="font-size: 2rem"></i>
+	} }
+	@if (module === 'renewables' || module === 'consumption' || module === 'production-capacity-generation') {
+		<div class="l-row">
+			<div class="l-full-width-col">
+				<div class="other-resources-container">
+					<h1>Other Resources</h1>
+					<ul>
+					@if (module === 'renewables') {
+						<li><a href="https://www.eia.gov/biofuels/update/table1.pdf">Monthly Biofuels Capacity and Feedstocks Update Report</a></li>
+					}
+					@if(module === 'consumption') {
+						<li><a href="https://www.eia.gov/consumption/residential/">Residential Energy Consumption Survey</a></li>
+						<li><a href="https://www.eia.gov/consumption/commercial/">Commercial Buildings Energy Consumption Survey</a></li>
+						<li><a href="https://www.eia.gov/consumption/manufacturing/">Manufacturing Energy Consumption Survey</a></li>
+						<li><a href="https://apps1.eere.energy.gov/sled/#/">DOE's State and Local Energy Data estimates</a></li>
+					}
+					@if(module === 'production-capacity-generation') {
+						<li><a href="https://www.eia.gov/petroleum/wells/">U.S. Oil and Natural Gas Wells by Production Rate</a></li>
+					}
+					</ul>
+				</div>
+			</div>
+		</div> 
+	}	
+</div>	

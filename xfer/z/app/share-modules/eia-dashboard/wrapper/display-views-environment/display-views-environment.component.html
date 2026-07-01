@@ -1,0 +1,17 @@
+<!--<h3 class="dashboard-title">{{getStateName()}} {{title}}</h3>-->
+<app-display-dashboard-title [id]="sourceDashboard"></app-display-dashboard-title>
+
+<app-display-eia-dashboard
+  [PlaceHolder]="placeHolder"
+  [ConfigEndPoint]="endPoint"
+  [SourceDashboard]="sourceDashboard"
+  [DashboardTitle]="title"
+></app-display-eia-dashboard>
+
+<div class="other-resources-container">
+	<h1>Other Resources</h1>
+	<ul>
+		<li><a href="https://www.eia.gov/electricity/data/water/">EIA's thermoelectric cooling water data</a></li>
+<!--		<li><a href="http://www.noggateway.org/">National Oil and Gas Gateway</a></li>-->
+	</ul>
+</div>

@@ -1,0 +1,63 @@
+@if (ShowDescription) {
+  <div class="l-row l-two-col-even">
+    <div class="l-col l-two-col">
+      <h2 class="column-header">Energy Source</h2>
+      @for (menu of sharedStatesService.getDashboardMenus().energySource; track menu.name) {
+        <div class="l-row">
+          <div class="{{menu.icon}}"></div>
+          <div class="section">
+            <h2><a routerLink="{{BasePath}}/data/dashboard/{{menu.id}}">{{menu.name}}</a></h2>
+            <p>{{menu.description}}</p>
+          </div>
+        </div>
+      }
+    </div>
+    <div class="l-col l-two-col">
+      <h2 class="column-header">Activity</h2>
+      @for (menu of sharedStatesService.getDashboardMenus().activityTopic; track menu.name) {
+        <div class="l-row">
+          <div class="{{menu.icon}}"></div>
+          <div class="section">
+            <h2><a routerLink="{{BasePath}}/data/dashboard/{{menu.id}}">{{menu.name}}</a></h2>
+            <p>{{menu.description}}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+}
+
+<!-- the commented section below needs to show in the data dropdown menu -->
+@if (!ShowDescription) {
+  <div class="l-row l-three-col-even">
+    <div class="l-col l-one-third-col">
+      <h4>Energy Source</h4>
+      <ul>
+        @for (menu of sharedStatesService.getDashboardMenus().energySource; track menu.name) {
+          <li>
+            <a routerLink="{{BasePath}}/data/dashboard/{{menu.id}}">{{menu.name}}</a>
+          </li>
+        }
+      </ul>
+    </div>
+    <div class="l-col l-one-third-col">
+      <h4>Activity</h4>
+      <ul>
+        @for (menu of sharedStatesService.getDashboardMenus().activityTopic; track menu.name) {
+          <li>
+            <a routerLink="{{BasePath}}/data/dashboard/{{menu.id}}">{{menu.name}}</a>
+          </li>
+        }
+      </ul>
+    </div>
+    <div class="l-col l-one-third-col">
+      <h4>More data...</h4>
+      <ul>
+        <li>
+          <a routerLink="{{BasePath}}/data/dashboard/custom">Create Custom Dashboard</a>
+        </li>
+        <li><a href="/state/seds/seds-data-complete.cfm?sid=US">State Energy Data System (SEDS) estimates</a></li>
+      </ul>
+    </div>
+  </div>
+}

@@ -1,0 +1,145 @@
+<style>
+
+  .test-circle {
+  color: #189bd7;
+  /*background-color: #ffffff;
+  width: 70px;
+  height: 30px;
+  border-radius: 50%;*/
+  font-size: 24px;
+  text-align: left;
+  margin: 4px 0 2px 0;
+  z-index: 999;
+  /*margin-left:auto;
+  margin-right:auto;*/
+}
+.circle-label{ font-size:12px; text-align: left; font-weight:bold;}
+.circle-title { color: #858585; font-size:16px; font-weight: bold; text-align: left;}
+.toggle-carousel { text-align: left; font-size:12px; padding-bottom:5px; width:100%; display:block;}
+.dialog-box-download-close { margin-bottom:0; bottom:-5px;}
+p-carousel h4 {
+width: 100%;
+text-align: left;
+margin-bottom:10px;
+border-bottom:1px dashed #cccccc;
+font-size: 14px;
+font-weight:bold;
+padding:0 0 10px 0;
+}
+.carousel-container {
+display: flex;
+}
+.carousel-col {
+padding: 0 12px;
+margin-left: 12px;
+border-left: 1px solid #cccccc;
+}
+.carousel-col:first-child {
+margin-left: 0;
+padding-left: 0;
+border-left: none;
+}
+
+
+
+p-carousel /deep/ .ui-carousel .ui-carousel-header .ui-carousel-header-title { width:100%; text-align:left; font-weight:bold; font-size:16px;}
+p-carousel /deep/ .ui-carousel .ui-carousel-viewport .ui-carousel-items li.ui-carousel-item { border:0 !important;}
+
+.carousel-table /deep/ table thead tr th{background-color:#f5f5f5;}
+.carousel-table /deep/ table thead tr th,
+.carousel-table /deep/ table tbody tr td{ border:1px solid #cccccc; border-right:0 solid;}
+.carousel-table /deep/ table thead tr:last-child th:last-child,
+.carousel-table /deep/ table tbody tr td:last-child { border-right:1px solid #cccccc;}
+p-carousel /deep/ .ui-carousel { border: 0 solid; overflow:visible;}
+p-carousel /deep/ .ui-carousel .ui-carousel-header { border:0; background:transparent; padding:13px 0; margin:0;}
+p-carousel /deep/ .ui-carousel-page-link { color:#333333;}
+gridster-item { overflow:visible!important;}
+</style>
+@if (ready) {
+  <div  class="width: 100%" #carouselBody>
+    <div class="toggle-carousel">
+      <a (click)="switchDisplay()">Show {{getSwitchName()}}</a>
+      |
+      <a (click)="printNewChart()">Print</a>
+    </div>
+    @if (Config.displayType=='carousel') {
+      <div>
+        <p-carousel
+          [value]="items"
+          numVisible="1"
+          pageLinks="8"
+          class="carousel-dashboard">
+          <ng-template pTemplate="header">
+            <h3>{{getStateName()}} {{Config.chartTitle}}</h3>
+          </ng-template>
+          <ng-template let-item pTemplate="item">
+            @if (item.hasData) {
+              <div>
+                <div>
+                  <h4>{{item.SERIES_NAME}}</h4>
+                </div>
+                <div class="carousel-container">
+                  <div class="carousel-col">
+                    <div class="circle-title">
+                      State
+                    </div>
+                    <div class="test-circle">{{convertNumber(item.STATE_FORMATTED_DATA)}}</div>
+                    <div class="circle-label">{{item.UNITS}}&nbsp;</div>
+                  </div>
+                  <div class="carousel-col">
+                    <div class="circle-title">{{item.SECTION_NAME}}</div>
+                    <div class="test-circle">{{item.US_FORMATTED_DATA}}</div>
+                    <div class="circle-label">{{item.US_UNIT}}</div>
+                  </div>
+                  <div class="carousel-col">
+                    <div class="circle-title">Period</div>
+                    <div  class="test-circle">{{item.FORMAT_PERIOD}}</div>
+                    <div class="circle-label">&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+            }
+            @if (!item.hasData) {
+              <div>
+                <div class="null-data">No data to display</div>
+              </div>
+            }
+          </ng-template>
+        </p-carousel>
+      </div>
+    }
+    @if (Config.displayType=='table') {
+      <div class="carousel-table-view">
+        <p-table [value]="items"  class="carousel-table" >
+          <ng-template pTemplate="caption">
+            <h4 class="chartTitle">{{getStateName()}} {{Config.chartTitle}}</h4>
+          </ng-template>
+          <ng-template pTemplate="header">
+            <tr>
+              <th>Name</th>
+              <th>State Value</th>
+              <th>{{items[0].SECTION_NAME}}</th>
+              <th>Period</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-item>
+            @if (item.hasData) {
+              <tr>
+                <td>{{item.SERIES_NAME}}</td>
+                <td>{{convertDollarUnit(item.STATE_FORMATTED_DATA, item.UNITS )}}</td>
+                <td>{{convertDollarUnit(item.US_FORMATTED_DATA, item.US_UNIT )}}</td>
+                <td>{{item.FORMAT_PERIOD}}</td>
+              </tr>
+            }
+            @if (!item.hasData) {
+              <tr>
+                <td colspan="4" class="null-data">No data to display</td>
+              </tr>
+            }
+          </ng-template>
+        </p-table>
+      </div>
+    }
+  </div>
+}
+

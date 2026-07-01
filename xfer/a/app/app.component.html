@@ -1,0 +1,17 @@
+<div id="state-app-root">
+  @if (!isIframe) {
+    <div class="title-banner bg_pub_states_tall" [ngClass]="{'us-level': stateName == '', '': stateName != ''}">
+      @if (stateName != '') {
+        <a class="us-return"  routerLink="/overview">&lsaquo; U.S. States </a>
+      }
+      @if (stateName == '') {
+        <h1>U.S. States</h1>
+      }
+      @if (stateName != '') {
+        <h1>{{stateName}}</h1>
+      }
+      <app-state-list-popup></app-state-list-popup>
+    </div>
+  }
+  <router-outlet></router-outlet>
+</div>
