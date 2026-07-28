@@ -1,0 +1,34 @@
+button {
+    &.ico {
+        &.reset-animation {
+            &:before {
+                .icon-reset-animation(@fill-color: @eia-red,
+                    @fill-opacity: 0.8);
+            }
+
+            &:hover {
+                &:before {
+                    .icon-reset-animation(@fill-color: @eia-red,
+                        @fill-opacity: 1);
+                }
+            }
+        }
+    }
+}
+
+a {
+    &.ico {
+        &.line-chart {
+            &:before {
+                .controls-icon(20px, 20px);
+                .icon-line-chart(@fill-color: @eia-blue, @fill-opacity: 0.8);
+            }
+
+            &:hover {
+                &:before {
+                    .icon-line-chart(@fill-color: @eia-blue, @fill-opacity: 1);
+                }
+            }
+        }
+    }
+}

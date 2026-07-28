@@ -1,0 +1,19 @@
+
+[class*="basic"] {
+	&.schedule {
+		border-collapse: collapse;
+	}
+
+	&.past-holiday {
+
+		td,
+		th {
+			color: fade(@eia-black, 40%);
+		}
+
+		+tr th,
+		+tr td {
+			border-top: 1px solid fade(@eia-black, 40%);
+		}
+	}
+}

@@ -1,0 +1,528 @@
+@media (min-width: 1px) {
+    //////////////////////////////////////////////////////////////////
+    //  home slider ratio is 283 / 958 = 29.123%                 //
+    ////////////////////////////////////////////////////////////////
+
+    .f-carousel {
+        &.home {
+            position: relative; // global?
+            margin: 0;
+            padding: 0;
+            *zoom: 1;
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+
+            &.has-dots {
+                margin-bottom: 0.5rem;
+            }
+
+            .f-carousel__viewport {
+                // global?
+                //position: relative;
+                //overflow: hidden;
+                //max-width: 100%;
+                //max-height: 100%;
+                //width: 100%;
+                //.f-carousel__track {
+                // global?
+                //display: flex;
+                //}
+
+                .f-carousel__slide {
+                    background-color: rgb(0, 59, 87); // must be rgba - do not use var
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .slider-overlay {
+                    display: block;
+                    width: 100%;
+                    //height: 220px;
+                    height: 180px;
+                    margin: 0;
+                    padding: 5% 22px;
+                    background-color: rgb(0, 59, 87); // must be rgba - do not use var
+                    text-align: left;
+
+                    &.no-description {
+                        h2 {
+                            a {
+                                &:after {
+                                    content: "\00a0\203A";
+                                }
+                            }
+                        }
+
+                        h3 {
+                            display: none;
+                        }
+                    }
+
+                    h2 {
+                        //line-height: 32px;
+                        margin: 0 0 0.5em 0;
+
+                        //height: 90px;
+                        a {
+                            .header-font;
+                            font-weight: normal;
+                            color: @eia-white;
+                            font-size: 24px;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    h3 {
+                        //font-family: Times New Roman,Times,serif;
+                        //line-height: 32px;
+                        margin: 0;
+
+                        //height: 80px;
+                        a {
+                            .header-font;
+                            font-weight: normal;
+                            color: #b3c2c9;
+                            font-size: 18px;
+                            color: #b3c2c9;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+
+                            &:after {
+                                content: "\00a0\203A";
+                            }
+
+                            &:empty {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .carousel__dots {
+                top: 85%;
+
+                .carousel__dot {
+                    float: left;
+                    z-index: 10;
+                    padding: 0;
+                    border: 0;
+                    display: block;
+                    position: relative;
+                    width: 22px;
+                    height: 22px;
+                    cursor: pointer;
+
+                    &:after {
+                        content: "";
+                        width: 13px;
+                        height: 13px;
+                        margin-right: 0.5em;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: #a9c1da; // @eia-greyish-blue;
+                        opacity: 1; //.25;
+                        transition: opacity 0.15s ease-in-out;
+                    }
+
+                    &.is-selected {
+                        &:after {
+                            background-color: #ffc702; // @eia-yellow;
+                        }
+                    }
+
+                    &:hover {
+                        &:after {
+                            background-color: #ffc702; // @eia-yellow;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width: 480px) {
+
+    // smartphones, Android phones, landscape iPhone
+    .f-carousel {
+        &.home {
+            .f-carousel__viewport {
+                .slider-overlay {
+                    padding: 2% 22px;
+                    height: 150px;
+
+                    h2 {
+                        font-size: 24px;
+                        //	height: 55px;
+                    }
+
+                    h3 {
+                        font-size: 18px;
+                        //	height: 40px;
+                    }
+                }
+
+                .carousel__dots {
+                    top: 85%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .f-carousel {
+        &.home {
+            .f-carousel__viewport {
+                .slider-overlay {
+                    h2 {
+                        font-size: 24px;
+                        //	height: 60px;
+                    }
+
+                    h3 {
+                        font-size: 18px;
+                        //	height: 60px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1025px) {
+    .slider-home-top {
+        width: 960px;
+        border-bottom: solid 1px #d5d5d5;
+        padding-bottom: 1px;
+    }
+
+    .f-carousel {
+        &.home {
+            width: 960px;
+            height: 280px;
+
+            &.has-dots {
+                margin-bottom: .1rem;
+            }
+
+            .f-carousel__viewport {
+                width: 960px;
+                height: 280px;
+
+                .f-carousel__slide {
+                    img {
+                        width: 960px;
+                        height: 280px;
+                    }
+                }
+
+                .slider-overlay {
+                    //float: right;
+                    float: right;
+                    margin: 28px;
+                    padding: 17px;
+                    width: 353px;
+                    height: 224px; // 280 - ( 28 - 28 ) = 234
+                    top: -280px;
+                    position: relative;
+                    background-color: rgba(0, 60, 87, 0.7); // must be rgba - do not use var
+
+                    h2 {
+                        font-size: 24px;
+                        //	height: 90px;
+                    }
+
+                    h3 {
+                        font-size: 18px;
+                        //	height: 90px;
+                    }
+                }
+            }
+
+            .carousel__dots {
+                text-align: center;
+                position: relative;
+                left: 200px;
+                top: -70px;
+                width: 300px;
+            }
+        }
+    }
+
+    .slider-home-bottom {
+        width: 960px;
+        height: 18px;
+        padding: 0;
+        margin: 0;
+        background: url(/global/images/bg/h_line_shadow_feature_banner.png) no-repeat top center;
+        border-top: 1px solid @eia-divider-color;
+    }
+}
+
+
+
+
+
+/*
+  @media (min-width: 1px) {
+	//////////////////////////////////////////////////////////////////
+	//  home slider ratio is 283 / 958 = 29.123%                 //
+	////////////////////////////////////////////////////////////////
+	.slider-home {
+		//opacity: 0;
+		//visibility: hidden;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		width: 100%;
+		overflow: hidden;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li {
+				background-repeat: no-repeat;
+				background-size: cover;
+				list-style: none;
+				position: relative;
+				img {
+					display: block;
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+		.slider-home-wrapper {
+			position: relative;
+			margin: 0;
+			padding: 0;
+			*zoom: 1;
+			-ms-touch-action: pan-y;
+			touch-action: pan-y;
+			.bx-viewport {
+				.slider-overlay {
+					display: block;
+					width: 100%;
+					height: 220px;
+					margin: 0;
+					padding: 5% 22px;
+					background-color: rgb(0, 59, 87); // must be rgba - do not use var
+					&.no-description {
+						h2 {
+							a {
+								&:after {
+									content: "\00a0\203A";
+								}
+							}
+						}
+						h3 {
+							display: none;
+						}
+					}
+					h2 {
+						.header-font;
+						color: @eia-white;
+						font-size: 24px;
+						//line-height: 32px;
+						margin: 0 0 0.5em 0;
+						//height: 90px;
+						a {
+							color: @eia-white;
+							text-decoration: none;
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+					}
+					h3 {
+						.header-font;
+						color: #b3c2c9;
+						font-size: 18px;
+						//line-height: 32px;
+						margin: 0;
+						//height: 80px;
+						a {
+							color: #b3c2c9;
+							text-decoration: none;
+							&:hover {
+								text-decoration: underline;
+							}
+							&:after {
+								content: "\00a0\203A";
+							}
+							&:empty {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.slider-home-pager {
+		top: -25px;
+		text-align: center;
+		position: relative;
+		.bx-pager.bx-default-pager {
+			display: table;
+			margin: 0 auto;
+			.bx-pager-item {
+				position: relative;
+				float: left;
+				display: block;
+				z-index: 10;
+				.bx-pager-link {
+					text-indent: -99999px;
+					border-radius: 50%;
+					display: inline-block;
+					margin-right: 0.5em;
+					width: 13px;
+					height: 13px;
+					background-color: @eia-greyish-blue; // @eia-blue;
+					padding: 0;
+					border: 0;
+					&:hover {
+						background-color: @eia-yellow;
+					}
+					&.active {
+						background-color: @eia-yellow;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 480px) {
+	// smartphones, Android phones, landscape iPhone
+	.slider-home {
+		.slider-home-wrapper {
+			.bx-viewport {
+				.slider-overlay {
+					padding: 2% 22px;
+					height: 140px;
+					h2 {
+						font-size: 24px;
+						//	height: 55px;
+					}
+					h3 {
+						font-size: 18px;
+						//	height: 40px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 600px) {
+	.slider-home {
+		.slider-home-wrapper {
+			.slider-overlay {
+				h2 {
+					font-size: 24px;
+					//	height: 60px;
+				}
+				h3 {
+					font-size: 18px;
+					//	height: 60px;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1025px) {
+	.slider-home-top {
+		width: 960px;
+		border-bottom: solid 1px #d5d5d5;
+		padding-bottom: 1px;
+	}
+	.slider-home {
+		width: 960px;
+		height: 280px;
+		.slider-home-wrapper {
+			width: 960px;
+			height: 280px;
+			.bx-viewport {
+				width: 960px;
+				height: 280px;
+				.slider-overlay {
+					float: right;
+					margin: 28px;
+					padding: 17px;
+					width: 353px;
+					height: 224px; // 280 - ( 28 - 28 ) = 234
+					top: -280px;
+					position: relative;
+					background-color: rgba(
+						0,
+						60,
+						87,
+						0.7
+					); // must be rgba - do not use var
+					h2 {
+						font-size: 24px;
+						//	height: 90px;
+					}
+					h3 {
+						font-size: 18px;
+						//	height: 90px;
+					}
+				}
+
+				ul {
+					li {
+						width: 960px;
+						height: 280px;
+					}
+				}
+			}
+		}
+	}
+	.slider-home-pager {
+		width: 300px;
+		top: -70px;
+		left: 600px;
+		.bx-pager.bx-default-pager {
+			top: 0;
+			left: 0;
+			width: 300px;
+		}
+	}
+	.slider-home-bottom {
+		width: 960px;
+		height: 18px;
+		float: left;
+		padding: 0;
+		margin: 0;
+		//margin-bottom: 1em;
+		background: url(/global/images/bg/h_line_shadow_feature_banner.png)
+			no-repeat top center;
+	}
+}
+
+@media @desktop {
+	//////////////////////////////////////////////////////////////////
+	//  minimum 990                                                //
+	////////////////////////////////////////////////////////////////
+	.slider-home {
+		margin: inherit;
+	}
+}
+*/

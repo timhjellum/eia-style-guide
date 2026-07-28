@@ -1,0 +1,301 @@
+@media (min-width: 1px) {
+    ul {
+        &.numbered {
+            &>li {
+                padding-left: 8%;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    ul {
+        &.numbered {
+            &>li {
+                padding-left: 16%;
+            }
+        }
+    }
+}
+
+.tabs-shared-mobile() {
+    .tabs {
+        &>ul {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+
+            li {
+                list-style: none;
+                border-top: none;
+                border-right: 1px solid #999;
+                border-bottom: none;
+                border-left: none;
+                margin-bottom: 1px;
+                position: relative;
+                padding: 0 6px;
+                float: none;
+                flex: none;
+                display: inline-block;
+
+                &:first-child {
+                    padding-left: 6px;
+                }
+
+                &:last-child {
+                    border-right: none;
+                    padding-right: 6px;
+                }
+            }
+        }
+
+        .tab-content {
+            /* moved to tab content
+font-size: @medium; // 12 pixels
+padding: 0;
+margin: 0;
+width: 100%;
+
+&>p,
+&>ul,
+&>ol,
+&>h1,
+&>h2,
+&>h3,
+&>h4,
+&>h5,
+&>h6 {
+padding: 14px 0;
+//	margin: 0 0 0 20px; this doesn't work for secondary and -alt
+}
+
+&>ol {
+margin: 5px 0 0 36px;
+
+li {
+margin-bottom: 5px;
+}
+}
+
+&>ul {
+&:last-child {
+margin-bottom: 26px;
+}
+
+&.bullet {
+margin: 5px 0 0 36px;
+
+li {
+margin-bottom: 5px;
+list-style: disc;
+}
+}
+
+li {
+list-style: none;
+margin: 0 0 5px 0;
+
+&.head {
+margin-top: 12px;
+
+&:first-child {
+margin-top: 0;
+}
+}
+
+ul {
+margin: 20px;
+padding: 14px 0;
+
+&.bullet {
+margin-left: 22px;
+margin-top: 5px;
+
+li {
+margin-bottom: 5px;
+list-style: disc;
+}
+}
+
+li {
+list-style: disc;
+}
+}
+}
+}
+}
+*/
+  
+            .numbered;
+            //}
+            // mobile
+        }
+    }
+}
+
+.accordion-shared-mobile() {
+    .accordion {
+        width: 100%;
+        clear: both;
+        margin-bottom: 2em;
+
+        h3 {
+			.accordion-h3();
+
+            .right {
+                float: right;
+                //.font;
+                font-weight: @bold; // 700
+                font-size: @small; // 12 pixels
+            }
+        }
+    }
+
+    .accordion-content {
+        // add here
+        ul {
+
+            .numbered;
+        }
+    }
+}
+
+
+.tabs-shared() {
+    .tabs {
+        &>ul {
+            border-bottom: 1px solid @eia-blue;
+
+            //list-style: none;
+            li {
+                padding: 10px;
+                margin: 0;
+                bottom: -1px;
+
+                &:first-child {
+                    padding: 10px;
+                    margin-left: 22px;
+                }
+
+                &:last-child {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+.numbered() {
+    ul {
+        &.numbered {
+            li {
+                span {
+                    &.number {
+                        display: inline-block;
+
+                        &.mer {
+                            color: #999;
+                        }
+
+                        &.aer {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+
+        // the corresponding js is in the Electricity Monthly
+        // the build anchor builds an anchor tag around the report ".number" and ".report-name"
+        // this class makes both links above have a consistent hover effect
+        &.calculated-numbered,
+        &.numbered {
+
+            /*
+			&:hover {
+				a {
+					&.number {
+						text-decoration: underline;
+					}
+					&.report-name {
+						text-decoration: underline;
+					}
+				}
+			}
+			*/
+            li {
+                list-style: none;
+            }
+        }
+
+        &.calculated-numbered {
+            width: 100%;
+
+            &>li {
+                position: relative;
+
+                span {
+                    &.number {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
+        &.numbered {
+            width: 100%;
+
+            &>li {
+                position: relative;
+                width: 100%;
+
+                //padding-left: 16%; // 90px;
+                span {
+                    &.number {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        //width: 70px;
+                        white-space: nowrap;
+                    }
+                }
+
+                &>ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    &.sub-list,
+                    &.list-spacer {
+                        list-style: none;
+                        margin: 0;
+                    }
+
+                    &>li {
+                        list-style: none;
+                        margin: 0;
+                    }
+                }
+            }
+
+            //&.small {
+            //	& > li {
+            //		padding-left: 50px; // approved - do not mess with
+            //	span {
+            //		&.number {
+            //			width: 70px;
+            //		}
+            //	}
+            //	}
+            //}
+            //&.large {
+            //	& > li {
+            //		padding-left: 110px;
+            //	}
+            //}
+        }
+    }
+}

@@ -1,0 +1,8 @@
+/*
+@import '../../base/vars';
+@import '../../base/icons-mixins';
+@import '../../base/icons';
+@import './icons';
+*/
+@import './styles.less';
+@import '../tabs/eia-tabs.less';

@@ -1,0 +1,165 @@
+html,
+body,
+.l-full-width-col,
+.l-row,
+.page-wrapper,
+.l-outer-wrapper,
+.l-inner-wrapper {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: #333;
+    background: white;
+    width: 100%;
+}
+
+body {
+    font-size: 12pt;
+    font-weight: @regular;
+    font-family: "Jost", sans-serif;
+    line-height: 1.1;
+
+    a {
+        color: #0096d7;
+        text-decoration: none;
+    }
+
+    .image-container {
+        page-break-inside: avoid;
+
+        a {
+            color: transparent;
+            border-bottom: none;
+        }
+    }
+
+    .responsive {
+        margin: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        max-width: auto;
+        width: auto;
+
+        &.frame {
+            padding: 4px;
+            border: 1px solid @eia-divider-color;
+            float: none;
+            margin: 0 18px 10px 0px;
+        }
+    }
+}
+
+
+
+/*
+h1 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 18pt;
+}
+
+h4 {
+    font-size: 16pt;
+}
+
+h5 {
+    font-size: 16pt;
+}
+
+h6 {
+    font-size: 16pt;
+}
+*/
+
+.title-cad {
+    h1 {}
+}
+
+.l-one-third-col {
+    h1 {
+        clear: both;
+        border-bottom: 1px solid #333;
+        padding: 12pt 0 6px 0;
+        font-size: 26pt;
+    }
+
+    h2 {
+        clear: both;
+        border-bottom: 1px solid #333;
+        padding: 12pt 0 6px 0;
+        margin-bottom: 13px;
+    }
+}
+
+.l-two-third-col {
+    h1 {
+        clear: both;
+        border-bottom: 1px solid #333;
+        padding: 12pt 0 6px 0;
+        margin-bottom: 13px;
+    }
+
+    h2 {
+        clear: both;
+        border-bottom: 1px solid #333;
+        padding: 12pt 0 6px 0;
+        margin-bottom: 13px;
+    }
+}
+
+.svg-container,
+.image-container {
+    text-align: center;
+    width: 100%;
+
+    &+p,
+    &+ul,
+    &+ol,
+    &+div {
+        padding-bottom: 1em;
+    }
+
+    &+a {
+        padding-bottom: 1em;
+    }
+
+    a {
+        width: 100%;
+
+        img {
+            text-align: center;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 850px;
+        }
+    }
+
+    svg {
+        margin: 0 auto;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        background-size: cover;
+    }
+}
+
+// petroleum weekly pages
+p {
+    &.tags {
+        font-size: 11.25pt;
+
+        font-style: italic;
+        margin-top: 0.65em;
+    }
+}

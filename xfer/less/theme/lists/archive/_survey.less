@@ -1,0 +1,48 @@
+.survey {
+//span {
+//&
+		.fixed-width {
+            width: 180px;
+
+            &.label {
+                .italic;
+                display: inline-block;
+            }
+        }
+//}
+//}
+//.survey {
+    .accordion-content {
+        .number {
+            width: 80px;
+            //.normal;
+            color: black;
+            text-align: left;
+
+            &.terminated {
+                color: #999;
+            }
+        }
+        li {
+            padding-left: 80px;
+            &.head {
+                .alert {
+                    font-weight: @light; // 300
+                }
+            }
+
+            &.sub-head {
+                margin: 12px 0 5px 0;
+            }
+
+            ul {
+                &.highlight {
+                    li {
+                        padding-left: 20px;
+                        //border: 3px solid red;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+/*
+@import './less/theme/tables/basic-table';
+@import './less/theme/tables/caption';
+@import './less/theme/tables/petroleum-new-navigation';
+@import './less/theme/tables/selected';
+@import './less/theme/tables/holiday-schedule';
+@import './less/theme/tables/sticky';
+*/
+
+@import '../../base/vars';
+@import '../../base/fonts';
+@import '../../base/mixins';
+@import './basic-table';
+@import './caption';
+@import './sticky';
+@import './tables-v2';

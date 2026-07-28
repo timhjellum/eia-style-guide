@@ -1,0 +1,384 @@
+/* $$$$$       $$$$$ $$$$$$$$$$$$$$$ */
+/*  $$$$$     $$$$$  $$$$$$$$$$$$$$$ */
+/*   $$$$$   $$$$$   $$$$$           */
+/*    $$$$$ $$$$$    $$$$$           */
+/*     $$$$$$$$$     $$$$$$$$$$$$$$$ */
+/*     $$$$$$$$$     $$$$$$$$$$$$$$$ */
+/*    $$$$$ $$$$$              $$$$$ */
+/*   $$$$$   $$$$$             $$$$$ */
+/*  $$$$$     $$$$$  $$$$$$$$$$$$$$$ */
+/* $$$$$       $$$$$ $$$$$$$$$$$$$$$ */
+@media (min-width: 1px) {
+    .homepage {
+        .search-reports-by-tags {
+            border-bottom: 1px solid @eia-black-10;
+            width: 100%;
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-template:
+                "label"
+                "form"
+                "more";
+
+            >div {
+                font-size: 100%;
+                line-height: 1;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+
+                &:nth-child(1) {
+                    color: fade(@eia-black, 80%);
+                    padding: 18px 0 0 0;
+                    grid-area: label;
+                }
+
+                &:nth-child(2) {
+                    padding: 18px 0 0 0;
+                    grid-area: form;
+
+                    form {
+                        width: 100%;
+                        display: flex;
+                    }
+
+                    .tags-search-container {
+                        position: relative;
+                        max-height: 150px;
+                        flex-grow: 5;
+                    }
+
+                    input {
+                        margin: 0 0 0 0;
+                        width: 100%;
+                        background-color: #fff;
+                        background-image: none;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+                        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+                        font-style: normal;
+                        font-weight: 400;
+                        height: 36px;
+                        padding: 6px 12px;
+                        -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                        -o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                        -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+                        transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+                        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+
+                        &:focus-visible {
+                            outline: none;
+                        }
+
+                        &::placeholder {
+                            font-style: italic;
+                            color: @eia-508-dark-grey;
+                        }
+                    }
+
+                    .tags-search {
+                        background-color: #fff;
+                        overflow-y: auto;
+                        position: absolute;
+                        z-index: 99;
+                        padding: 5px 10px;
+                        outline: 0;
+                        border: 1px solid #ccc;
+                        border-radius: 0 0 4px 4px;
+                        border-top: none;
+                        font-size: 90%;
+                        margin-top: -16px;
+                        width: 100%;
+
+                        .highlight {
+                            background-color: @eia-yellow;
+                        }
+                    }
+
+                    padding: 18px 0 0 0;
+
+                    button {
+                        width: unset;
+                        margin: 0;
+                        margin-left: 1.5em;
+                    }
+                }
+
+                &:nth-child(3) {
+                    padding: 18px 0;
+                    grid-area: more;
+
+                    a {
+                        color: @eia-508-link-color;
+
+                        &:after {
+                            content: "\00a0\203A";
+                        }
+                    }
+                }
+            }
+        }
+
+        .data-analysis-projections {
+            h2 {
+                margin-bottom: 0;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+
+                    h3 {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .ico {
+                border-radius: 50%;
+                border: 1px solid @eia-black;
+                width: 40px;
+                height: 40px;
+                margin: 0 auto 20px auto;
+                float: left;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-content: center;
+
+                &.natural-gas-icon {
+                    &:before {
+                        content: "";
+                        width: 30px;
+                        height: 30px;
+                        background-size: 100%;
+                    }
+                }
+
+                &.electricity-icon {
+                    &:before {
+                        content: "";
+                        width: 30px;
+                        height: 30px;
+                        background-size: 100%;
+                    }
+                }
+
+                &.nuclear-icon {
+                    &:before {
+                        content: "";
+                        width: 30px;
+                        height: 30px;
+                        background-size: 100%;
+                    }
+                }
+
+                &.consumption-icon {
+                    &:before {
+                        content: "";
+                        width: 30px;
+                        height: 30px;
+                        background-size: 100%;
+                    }
+                }
+
+                &.analysis-projections-icon {
+                    &:before {
+                        content: "";
+                        width: 30px;
+                        height: 30px;
+                        background-size: 100%;
+                    }
+                }
+
+                &.petroleum-icon {
+                    &:before {
+                        content: "";
+                        width: 30px;
+                        height: 30px;
+                        background-size: 100%;
+                    }
+                }
+
+                &.coal-icon {
+                    &:before {
+                        content: "";
+                        width: 30px;
+                        height: 30px;
+                        background-size: 100%;
+                    }
+                }
+
+                &.renewable-icon {
+                    &:before {
+                        content: "";
+                        width: 30px;
+                        height: 30px;
+                        background-size: 100%;
+                    }
+                }
+
+                &.total-energy-icon {
+                    &:before {
+                        content: "";
+                        width: 30px;
+                        height: 30px;
+                        background-size: 100%;
+                    }
+                }
+            }
+
+            h3 {
+                line-height: 100%;
+                font-weight: 500;
+                padding: 0 0 0 0;
+                color: @eia-508-link-color;
+                font-weight: @bold;
+                margin: 0 0 0 60px;
+
+                &:after {
+                    content: "\00a0\203A";
+                }
+            }
+
+            p {
+                margin: 0.5em 0 0 60px;
+                color: @eia-black;
+                font-style: italic;
+                font-size: 90%;
+                line-height: 1.225;
+                min-height: 36px;
+            }
+
+            .l-full-width-col {
+                &:nth-child(2) {
+                    .l-col {
+                        background-color: rgb(237, 247, 252);
+                        padding: 1em;
+                        border-top: 1px solid @eia-dark-grey;
+                        border-bottom: 1px solid @eia-dark-grey;
+                    }
+                }
+            }
+
+            .sources-uses {
+                a {
+                    margin: 0;
+                    padding: 1em 0;
+                    width: 100%;
+                    border-bottom: 1px solid @eia-divider-color;
+
+                    &:hover {
+                        text-decoration: none;
+
+                        h3 {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .right {
+                    a {
+                        &:last-child {
+                            border-bottom: none;
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* $$$$$$$$$$$$$$  $$$$$       $$$$$ */
+/* $$$$$$$$$$$$$$  $$$$$$     $$$$$$ */
+/* $$$$$           $$$$$$$   $$$$$$$ */
+/* $$$$$           $$$$$$$$ $$$$$$$$ */
+/* $$$$$$$$$$$$$$  $$$$$$$$$$$$$$$$$ */
+/* $$$$$$$$$$$$$$  $$$$$ $$$$$ $$$$$ */
+/*          $$$$$  $$$$$  $$$  $$$$$ */
+/*          $$$$$  $$$$$   $   $$$$$ */
+/* $$$$$$$$$$$$$$  $$$$$       $$$$$ */
+/* $$$$$$$$$$$$$$  $$$$$       $$$$$ */
+
+@media (min-width: 480px) {}
+
+/* $$$$$       $$$$$ */
+/* $$$$$$     $$$$$$ */
+/* $$$$$$$   $$$$$$$ */
+/* $$$$$$$$ $$$$$$$$ */
+/* $$$$$$$$$$$$$$$$$ */
+/* $$$$$$$$$$$$$$$$$ */
+/* $$$$$ $$$$$ $$$$$ */
+/* $$$$$  $$$  $$$$$ */
+/* $$$$$   $   $$$$$ */
+/* $$$$$       $$$$$ */
+/* $$$$$       $$$$$ */
+
+@media (min-width: 600px) {}
+
+/* $$$$$ */
+/* $$$$$ */
+/* $$$$$ */
+/* $$$$$ */
+/* $$$$$ */
+/* $$$$$ */
+/* $$$$$ */
+/* $$$$$$$$$$$$$$$ */
+/* $$$$$$$$$$$$$$$ */
+/* $$$$$$$$$$$$$$$ */
+
+@media (min-width: 801px) {}
+
+
+
+@media (min-width: 1025px) {
+    .homepage {
+
+        .search-reports-by-tags {
+            grid-auto-columns: 25% 45% 30%;
+            grid-template: "label form more";
+            background-color: rgb(237, 247, 252);
+
+            >div {
+                &:nth-child(1) {
+                    padding: 18px 20px 18px 20px;
+                }
+
+                &:nth-child(2) {
+                    padding: 18px 0 18px 0;
+                }
+
+                &:nth-child(3) {
+                    padding: 18px 18px 18px 18px;
+                }
+            }
+        }
+
+        .sources-uses {
+            .left {
+                a {
+                    &:last-child {
+                        border-bottom: none;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+
+            .right {
+                a {
+                    &:last-child {
+                        border-bottom: none;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

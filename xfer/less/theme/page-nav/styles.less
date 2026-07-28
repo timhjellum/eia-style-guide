@@ -1,0 +1,513 @@
+body,
+html {
+    scroll-snap-type: block;
+    scroll-padding-top: 100px;
+}
+
+/*
+#page-content {
+    //z-index: 999;
+
+    button {
+        z-index: 1000;
+        outline: none;
+        cursor: pointer;
+
+        &.menu-open {
+            background-color: @eia-blue;
+            //width: 100%;
+            height: 31px;
+            padding: 4px 0;
+            //margin: 4px 0 -14px 0;
+            border: 0;
+
+            div {
+                float: left;
+
+                &.menu-label {
+                    .font;
+                    color: white;
+                    font-size: 1.2em;
+                    text-transform: uppercase;
+                    margin-left: 20px
+                }
+
+                &.menu-icons {
+                    width: 21px;
+
+                }
+
+                div {
+                    background-color: white;
+                    border-radius: 2px;
+                    float: left;
+                    height: 2px;
+                    margin: 2px 6px;
+                    width: 100%;
+                }
+            }
+        }
+
+        &.scroll-spy {
+            visibility: hidden;
+        }
+
+        &.off-canvas {
+            visibility: visible;
+        }
+    }
+}
+*/
+#page-content {
+    //z-index: 999;
+
+    button {
+        z-index: 1000;
+        outline: none;
+        cursor: pointer;
+
+        &.menu-open {
+            background-color: @eia-blue;
+
+            height: 31px;
+            padding: 4px 0;
+            border: none;
+            border-radius: 1px;
+            cursor: pointer;
+
+            //font-size: 1.1em;
+            font-weight: @bold; // 700
+            //line-height: 20px;			
+            div {
+                float: left;
+
+                &.menu-label {
+                    .font;
+                    color: white;
+                    font-size: 1.2em;
+                    text-transform: uppercase;
+                    margin-left: 20px
+                }
+
+                &.menu-icons {
+                    width: 21px;
+
+                }
+
+                div {
+                    background-color: white;
+                    border-radius: 2px;
+                    float: left;
+                    height: 2px;
+                    margin: 2px 6px;
+                    width: 100%;
+                }
+            }
+        }
+
+        &.scroll-spy {
+            visibility: hidden;
+        }
+
+        &.off-canvas {
+            visibility: visible;
+        }
+    }
+}
+
+
+
+@media (min-width: 1px) {
+    .page-nav {
+
+        background-color: white;
+
+        &.is-visible {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 2s;
+            -webkit-transition: opacity 2s;
+        }
+
+        ul {
+            width: 100%; //margin-left: 20px;
+
+            li {
+                width: 100%;
+                padding: 2px 5px;
+                display: table;
+                list-style: none;
+                width: 100%;
+                display: table;
+                background-color: white;
+
+                a {
+                    //color: @eia-508-link-color;
+                    display: inline-block;
+                    margin-bottom: 1px;
+                }
+
+                background-color: white;
+
+                &.lvl-1 {
+                    background-color: white;
+
+                    &:hover {
+                        background-color: @eia-508-link-color; // #0096d7;
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+
+                    &.active {
+                        background-color: @eia-508-link-color; // #0096d7;
+
+                        a {
+                            color: white;
+                        }
+                    }
+                }
+
+                &.lvl-2 {
+                    background-color: white;
+
+                    a {
+                        margin-left: 15px;
+                        //display: inline-block;
+                    }
+
+                    &:before {
+                        border-radius: 100%;
+                        content: '';
+                        display: block;
+                        height: 4px;
+                        left: 5px;
+                        position: relative;
+                        top: 12px;
+                        width: 4px;
+                        background-color: @eia-508-link-color;
+                    }
+
+                    &:hover {
+                        background-color: @eia-508-link-color; // #0096d7;
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                        }
+
+                        &:before {
+                            background-color: white;
+                        }
+                    }
+
+                    &.active {
+                        background-color: @eia-508-link-color; // #0096d7;
+
+                        a {
+                            color: white;
+                        }
+
+                        &:before {
+                            background-color: white;
+                        }
+                    }
+                }
+
+                &.head {
+                    //border-bottom: 1px dashed @eia-black-10;
+                    //font-size: 1.1875rem;
+                    font-weight: @bold; // 700
+                    //margin: 0;
+
+                    &:hover {
+                        background-color: white; // #0096d7;
+
+                        &:before {
+                            display: none;
+                        }
+                    }
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+
+                &.bold {
+                    .bold
+                }
+            }
+        }
+    }
+
+    #scrollSpy {
+        transform: translateX(0);
+        width: 100%;
+        font-size: var(--lrg); // 15 pixels
+        //display: block;
+        position: sticky;
+        top: 80px;
+
+        &.offset {
+            position: absolute;
+            width: 215px;
+            //z-index: 1051;
+            z-index: 100;
+            transition-timing-function: ease-out;
+            transition: 0.25s;
+            //top: auto;
+
+            ul {
+                border-top: 4px solid @eia-blue; // #0096d7;
+
+                li {
+                    &:hover {
+                        background-color: @eia-508-link-color; // #0096d7;
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                        }
+
+                        &:before {
+                            background-color: white;
+                        }
+                    }
+
+                    &.active {
+                        background-color: @eia-508-link-color; // #0096d7;
+
+                        a {
+                            color: white;
+                        }
+
+                        &:before {
+                            background-color: white;
+                        }
+                    }
+
+                    &.head {
+                        border-bottom: 1px dashed @eia-black-10;
+                        font-size: 1.1875rem;
+                        font-weight: @bold; // 700
+                        //margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    #offCanvas {
+        position: fixed;
+        transform: translateX(-350px);
+        width: 350px;
+        font-size: 1.2rem;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1051;
+        transition: 0.25s;
+        transition-timing-function: ease-out;
+        transition-duration: 500ms;
+        display: block;
+
+        &.is-opened {
+            transform: translateX(0);
+        }
+
+        li {
+            &.head {
+                border-bottom: 1px dashed @eia-black-10;
+                font-size: 1.1875rem;
+                font-weight: @bold; // 700
+                //margin: 0;
+            }
+        }
+
+        .menu-wrapper {
+            padding: 20px;
+            font-size: 1.2rem;
+
+            button {
+                //outline: none;
+                //cursor: pointer;
+                //color: @eia-blue;
+
+                &.menu-close {
+                    //position: absolute;
+                    border: none;
+                    right: 5px;
+                    top: 5px;
+                }
+            }
+        }
+    }
+
+    #page-content {
+        button {
+            &.menu-open {
+                width: 100%;
+                //margin: 4px 0 -14px
+            }
+        }
+
+        /*
+&.sticky {
+button {
+&.menu-open {
+position: fixed;
+top: 40px;
+}
+}
+}
+*/
+    }
+}
+
+@media (min-width: 480px) {
+    #offCanvas {
+        transform: translateX(-480px);
+        width: 480px;
+    }
+}
+
+@media (min-width: 600px) {
+    #offCanvas {
+        transform: translateX(-600px);
+        width: 600px;
+    }
+}
+
+@media (min-width: 801px) {
+    #offCanvas {
+        transform: translateX(-800px);
+        width: 800px;
+    }
+}
+
+@media (min-width: 1025px) {
+    #page-content {
+        button {
+            &.menu-open {
+                max-width: 955px;
+            }
+        }
+
+        /*
+        &.sticky {
+            button {
+                &.menu-open {
+                    top: 50px;
+                    //margin: 0;
+                }
+            }
+        }
+		*/
+    }
+
+    //#scrollSpy {
+    /*
+        li {
+            &.lvl-1 {
+                &:hover {
+                    background-color: @eia-508-link-color; // #0096d7;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+
+                &.active {
+                    background-color: @eia-508-link-color; // #0096d7;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+
+            &.lvl-2 {
+                &:hover {
+                    background-color: @eia-508-link-color; // #0096d7;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                    &:before {
+                        background-color: white;
+                    }
+                }
+
+                &.active {
+                    background-color: @eia-508-link-color; // #0096d7;
+
+                    a {
+                        color: white;
+                    }
+
+                    &:before {
+                        background-color: white;
+                    }
+                }
+            }
+        }
+
+        &.offset {
+            ul {
+                li {
+                    &:hover {
+                        background-color: @eia-508-link-color; // #0096d7;
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                        }
+
+                        &:before {
+                            background-color: white;
+                        }
+                    }
+
+                    &.active {
+                        background-color: @eia-508-link-color; // #0096d7;
+
+                        a {
+                            color: white;
+                        }
+
+                        &:before {
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+*/
+    //}
+}
+
+// move to base global folder
+.offcanvas {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.25s ease-in;
+    /* It slowly shows the element as we place the mouse on the box and when the time reaches 2 seconds, it is fully visible. */
+    -webkit-transition: opacity 0.25s ease-in;
+    -moz-transition: opacity 0.25s ease-in-out;
+
+    &.is-visible {
+        cursor: pointer;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.25s ease-out;
+        /* It slowly shows the element as we place the mouse on the box and when the time reaches 2 seconds, it is fully visible. */
+        -webkit-transition: opacity 0.25s ease-out;
+        -moz-transition: opacity 0.25s ease-in-out;
+    }
+}

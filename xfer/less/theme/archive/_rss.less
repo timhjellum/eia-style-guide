@@ -1,0 +1,37 @@
+//@media (min-width: 1px) {
+.rss-feeds {
+    h1 {
+        &>span {
+            float: right;
+            //.font
+            font-size: @xSmall;
+            color: #7e7c6f;
+            text-transform: uppercase;
+            font-weight: @bold; // 700
+            padding: 15px 0 0 0;
+            margin: 0;
+        }
+    }
+
+    h3 {
+        &>span {
+            float: right;
+            font-weight: @bold; // 700
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+//}
+
+
+@media (min-width: 1025px) {
+    .l-row {
+        .rss-feeds {
+            &.l-two-col-right-narrow {
+                padding: 0 22px;
+            }
+        }
+    }
+}

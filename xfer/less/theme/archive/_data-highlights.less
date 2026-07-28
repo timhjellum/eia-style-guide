@@ -1,0 +1,184 @@
+span {
+
+    /*---Up and Down arrows for use in data highlights and elsewhere on the website---*/
+    &.ico_down,
+    &.ico_up {
+        font-size: 0;
+        text-indent: -9999px;
+        line-height: 0;
+
+        &:before {
+            .controls-icon(12px, 14px);
+            .left;
+            margin-right: 3px;
+        }
+    }
+}
+
+@media (min-width: 1px) {
+    .data-highlights {
+        margin-bottom: 1em;
+
+        //border: 1px solid @eia-divider-color;
+        //padding: 4px;
+        .accent {
+            //background-color: @eia-blue-module-background;
+            background-color: @eia-508-notice-blue-bg-color;
+            padding: 0.938em 0.813em;
+
+            h2 {
+                padding: 0 0 0.625em 0;
+                margin: 0 0 0.625em 0;
+                border-bottom: 1px solid fade(@eia-black, 40%);
+                font-size: 1.125rem * 1.2%;
+            }
+
+            h3 {
+                //.font
+                font-size: 0.625rem * 1.5%;
+                margin: 0 0 0.625em 0;
+                padding: 0;
+                margin: 1.25em 0 4px;
+                //color: #5e625e;
+                font-weight: @bold; // 700
+                font-size: 0.75rem * 1.2%;
+
+                /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+                /* ***** ***** ***** *** data highlights *** ***** ***** ***** */
+                /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+                &>a {
+                    .eia-508-link(@color: @eia-508-notice-blue-color; @borderBottom: 0 solid @transparent; @borderImage: none);
+                    .eia-508-link-hover(@color: @eia-508-notice-blue-color; @borderBottom: 0 solid @transparent; @textDecoration: underline);
+                    .eia-508-link-focus(@color: @eia-508-focus-color; @background: @eia-508-notice-blue-color; @borderBottom: 0 solid @transparent; @textDecoration: none);
+                }
+            }
+
+            p {
+                //.font
+                font-size: 0.75rem * 1.2%;
+                font-style: normal;
+                line-height: 1.5;
+                margin: 0;
+
+                b {
+                    font-weight: @bold; // 700
+                }
+
+                /*
+				.p12 {
+                    font-size: @xSmall; // 12 pixels
+                }
+				*/
+            }
+        }
+    }
+
+    .homepage {
+        .data-highlights {
+            .accent {
+                p {
+
+                    // homepage specific
+                    &.p12 {
+                        font-size: @xSmall; // 12 pixels // 12 pixels
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .data-highlights {
+        margin-bottom: 2em;
+
+        .accent {
+            background-color: transparent;
+
+            h3 {
+
+                /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+                /* ***** ***** ***** *** data highlights *** ***** ***** ***** */
+                /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+                a {
+                    .eia-508-link(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: none);
+                    .eia-508-link-hover(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: underline);
+                    .eia-508-link-focus(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @background: transparent; @borderImage: none; @textDecoration: underline);
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 1025px) {
+    .data-highlights {
+        margin-bottom: 1em;
+        border: 1px solid @eia-divider-color;
+        padding: 4px;
+
+        .accent {
+            //background-color: @eia-blue-module-background;
+            background-color: @eia-508-notice-blue-bg-color;
+            padding: 0.938em 0.813em;
+
+            h2 {
+                padding: 0 0 5px 0;
+                margin: 0 0 5px 0;
+                font-size: 1.125rem; // 18 pixels
+            }
+
+            p {
+                //.font
+                color: @eia-dark-grey;
+                font-size: @medium; // 14 pixels
+                line-height: 1.4;
+            }
+
+            h3 {
+                //font-size: @xxSmall; // 11 pixels // 10 pixels
+                //margin: 10px 0 2px;
+                margin: 9px 0 0 0;
+                font-size: @xSmall; // 12 pixels // 12 pixels
+
+                /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+                /* ***** ***** ***** *** data highlights *** ***** ***** ***** */
+                /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+                &>a {
+                    .eia-508-link(@color: @eia-508-notice-blue-color; @borderBottom: 0 solid @transparent; @borderImage: none);
+                    .eia-508-link-hover(@color: @eia-508-notice-blue-color; @borderBottom: 0 solid @transparent; @textDecoration: underline);
+                    .eia-508-link-focus(@color: @eia-508-focus-color; @background: @eia-508-notice-blue-color; @borderBottom: 0 solid @transparent; @textDecoration: none);
+                }
+            }
+        }
+    }
+
+    .homepage {
+        .data-highlights {
+            .accent {
+                p {
+                    font-size: @xxSmall; // 11 pixels // 10 pixels
+                }
+
+                p {
+
+                    // homepage specific
+                    &.p12 {
+                        font-size: @xSmall; // 12 pixels // 12 pixels
+                    }
+                }
+
+                /*
+                h3 {
+                    &>a {
+                        .eia-508-link(@color: @eia-508-notice-blue-color; @borderBottom: 0 solid @transparent; @borderImage: none);
+                        .eia-508-link-hover(@color: @eia-508-notice-blue-color; @borderBottom: 2px solid @eia-508-notice-blue-color);
+                        .eia-508-link-focus(@color: @eia-508-focus-color; @background: @eia-508-notice-blue-color);
+                    }
+                }
+				*/
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+ul {
+	&.sub-list {
+        //&.list-item {
+        //    &>ul {
+        //        padding-left: 22px;
+        //    }
+        //}
+
+        &>li {
+            margin-bottom: 5px;
+            list-style: none;
+
+            &.sub-list {
+                ul {
+                    &>li {
+                        margin-bottom: 5px;
+                        list-style: none;
+                    }
+                }
+            }
+        }
+
+        ul {
+            //padding: 0;
+            margin-bottom: 0 0 12px 0;
+
+            &.bullet {
+                //list-style: disc;
+                //margin-left: 22px;
+                //margin-top: 5px;
+
+                &>li {
+                    margin-bottom: 5px;
+                    list-style: disc;
+
+                    &.sub-list {
+                        ul {
+                            &>li {
+                                margin-bottom: 5px;
+                                list-style: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

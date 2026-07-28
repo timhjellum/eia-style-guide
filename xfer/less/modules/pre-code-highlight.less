@@ -1,0 +1,328 @@
+.hljs-punctuation,
+.hljs-quote {
+    color: #8e908c;
+}
+
+.hljs-etc {
+    color: #333;
+}
+
+.hljs-comment {
+    color: silver;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+    color: @eia-red;
+}
+
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+    color: @eia-blue;
+}
+
+.hljs-attribute {
+    color: @eia-yellow;
+}
+
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+    color: @eia-dark-blue;
+}
+
+.hljs-title,
+.hljs-section {
+    color: @eia-dark-blue;
+}
+
+.hljs-keyword,
+.hljs-selector-tag {
+    color: @eia-purple;
+}
+
+.hljs {
+    color: #477326;
+    //color: #416a23;
+    padding: 0.5em;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: @bold; // 700
+}
+
+mark {
+    background-color: @eia-light-yellow-25;
+}
+
+
+
+
+@media (min-width: 1px) {
+    .api-call-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5em;
+
+        &>h3 {
+            font-size: var(--med); // 14 pixels
+            line-height: 19px;
+            color: @eia-green;
+            text-transform: uppercase;
+            font-weight: @bold; // 700
+            margin: 0;
+        }
+
+        &>code {
+            overflow-x: scroll;
+            word-wrap: break-word;
+            /*
+			&>.geoset {
+                padding-bottom: 0px;
+            }
+			*/
+        }
+
+        /*
+		.relations {
+            word-wrap: break-word;
+
+            &>ul {
+                margin-bottom: 0.75em;
+            }
+        }
+		*/
+    }
+
+    .api-call-sub {
+        h3 {
+            color: @eia-green;
+            text-transform: uppercase;
+            font-weight: @bold; // 700
+            .font;
+            margin-top: 6px;
+        }
+
+        p {
+            font-family: monospace, monospace;
+        }
+
+        pre {
+            code {
+                //display: block;
+                //margin: 0;
+                //padding: 10px 0 10px 15px;
+                font-family: monospace, monospace;
+                font-size: var(--med); // 14 pixels
+                line-height: 19px;
+                //background-color: #eee; // move this open-data if you need to change it.
+            }
+        }
+    }
+}
+
+
+
+.code-container {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    //float: left;
+    //clear: both;
+    margin: 0 0 2em 0; // must be 2 em for opendata - move this open-data if you need to change it.
+
+    &.l-two-col-left-narrow {
+        &>.l-col {
+            &:first-child {
+                text-align: right;
+            }
+
+            &:last-child {}
+        }
+    }
+
+    pre {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-left: 3px solid @eia-green;
+        background-color: #eee; // move this open-data if you need to change it.
+        //min-height: 44px;
+        overflow: auto;
+        overflow-y: visible;
+        overflow-x: auto;
+
+        //&.wrap {}
+
+        code {
+            display: block;
+            margin: 0;
+            padding: 10px 0 10px 15px;
+            font-family: monospace, monospace;
+            background-color: #eee; // move this open-data if you need to change it.
+        }
+    }
+
+    h3 {
+
+        font-size: var(--med); // 14 pixels
+        line-height: 19px;
+        color: @eia-green;
+        text-transform: uppercase;
+        font-weight: @bold; // 700
+        //.font;
+        //float: left;
+        //width: 70px;
+        //margin: 10px 0;
+        //min-width: 70px;
+        //flex: 0 0 auto;
+        //align-self: center;
+
+        //margin-top: 18px;
+        //padding-top: 6px;
+        //clear: left;
+
+    }
+
+    /*
+        p {
+            word-wrap: break-word;
+            border-left: 3px solid @eia-green;
+            padding: 6px 0 6px 12px;
+            margin: 0 0 0 12px;
+
+            pre {
+                //float: left;
+                //width: 100%;
+                //margin: 0;
+                //padding: 0;
+                border-left: none;
+                //background-color: #eee; // move this open-data if you need to change it.
+                //min-height: 44px;
+                overflow: auto;
+                overflow-y: visible;
+                overflow-x: auto;
+
+                //&.wrap {}
+
+                //code {
+                //display: block;
+                //margin: 0;
+                //padding: 10px 0 10px 15px;
+                //font-size: var(--med); // 14 pixels
+                //line-height: 19px;
+                //background-color: #eee; // move this open-data if you need to change it.
+                //}
+            }
+        }
+		*/
+}
+
+@media (min-width: 600px) {
+    .code-container {
+        pre {
+            float: left;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border-left: 3px solid @eia-green;
+            background-color: #eee; // move this open-data if you need to change it.
+
+            &.wrap {
+                overflow: visible;
+                overflow-y: visible;
+                overflow-x: visible;
+                white-space: pre-wrap;
+                /* css-3 */
+                white-space: -moz-pre-wrap;
+                /* Mozilla, since 1999 */
+                white-space: -pre-wrap;
+                /* Opera 4-6 */
+                white-space: -o-pre-wrap;
+                /* Opera 7 */
+                word-wrap: break-word;
+                /* Internet Explorer 5.5+ */
+            }
+        }
+    }
+
+    //}
+
+
+
+
+    //@media (min-width: 1025px) {
+    .api-call-container {
+        flex-direction: row;
+
+        &>h3 {
+            //color: @eia-green;
+            //text-transform: uppercase;
+            font-weight: @bold; // 700
+            //.font;
+            //margin-top: 6px;
+            //float: left;
+            //width: 60px;
+            flex: 0 0 60px;
+            flex-grow: 0;
+            padding-top: 15px;
+            text-align: right;
+        }
+
+        &>code {
+            //font-size: 9.5pt;
+            //float: left;
+            flex-grow: 1;
+            padding: 6px 0 6px 12px;
+            margin: 8px 0 0 12px;
+            //width: 560px;
+            border-left: 3px solid @eia-green;
+            min-height: 30px;
+
+
+            /*
+.api_call_container>p:first-of-type,
+.api_call_container>b:first-of-type {
+    margin-top: 0px;
+}
+
+            &>.geoset {
+                padding-bottom: 0px;
+            }
+			*/
+        }
+
+        .relations {
+            float: left;
+            width: 560px;
+            margin-left: 72px;
+            border-left: 3px solid @eia-green;
+            padding-left: 12px;
+            padding-top: 6px;
+
+
+            &>ul {
+                margin-bottom: 0.75em;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+ul {
+	&.calculated-numbered {
+		width: 100%;
+		& > li {
+			position: relative;
+			span {
+				&.number {
+					position: absolute;
+					top: 0;
+					left: 0;
+					white-space: nowrap;
+				}
+			}
+		}
+	}
+}

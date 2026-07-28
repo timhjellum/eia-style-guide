@@ -1,0 +1,222 @@
+.fancybox__container.is-animated[aria-hidden=false] .fancybox__backdrop,
+.fancybox__container.is-animated[aria-hidden=false] .fancybox__caption,
+.fancybox__container.is-animated[aria-hidden=false] .fancybox__nav,
+.fancybox__container.is-animated[aria-hidden=false] .carousel__dots,
+.fancybox__container.is-animated[aria-hidden=false] .f-button.is-close {
+    animation: .15s ease backwards fancybox-fadeIn;
+}
+
+.fancybox__container {
+    margin: 0;
+    padding: 0;
+}
+
+//.fancybox__backdrop {}
+
+.fancybox__carousel {
+    margin: 0;
+    padding: 0;
+    z-index: 9000;
+}
+
+.fancybox__viewport {
+    margin: 0;
+    padding: 0;
+
+    /* cursor: default; */
+    height: 100%
+        /* overflow: visible; */
+        /* position: relative; */
+        /* width: 100%; */
+
+}
+
+.fancybox__track {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.fancybox__content {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 20;
+    background-color: @eia-white;
+
+    &.fancybox__chart {
+        width: 75%;
+        padding: 1.5em;
+    }
+}
+
+
+.fancybox__backdrop {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    //z-index: -1;
+    //background: var(--fancybox-bg, rgba(24, 24, 27, 0.92));
+
+    //position: absolute; // do not edit
+    //top: 0; // do not edit
+    //left: 0; // do not edit
+    overflow: hidden; // do not edit
+    //display: none;
+    //z-index: 8010; // do not edit
+    //background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.fancybox__container {
+    .is-animated[aria-hidden="false"] {
+
+        //.fancybox__caption,
+        //.fancybox__nav,
+        //.carousel__dots,
+        .fancybox__backdrop {
+            animation: 0.15s ease backwards fancybox-fadeIn;
+        }
+
+        /*
+	  .f-button {
+	  .is-close {
+		animation: .15s ease backwards fancybox-fadeIn;
+	  }
+	 }
+	  */
+    }
+}
+
+.fancybox__toolbar {
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1px) {
+    &.archive {
+        padding: 20px;
+        background-color: @eia-white;
+    }
+
+    .l-row {
+        &.archive {
+            padding: 20px;
+        }
+    }
+
+    .fancybox__content {
+        .f-button {
+            &.is-close {
+                text-indent: -9999px;
+                line-height: 0;
+                //.icon-cancel;
+                //.controls-icon(40px, 40px);
+
+                &>span {
+                    //font-size: 0;
+                    text-indent: -9999px;
+                    line-height: 0;
+                    margin: 0;
+                }
+
+                //	}
+                //}
+
+                //.close {
+                //    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Ccircle cx='18' cy='18' r='16.5' fill='%230096d7'/%3E%3Cpath fill='%23fff' d='M25.8 22.7 21.1 18l4.7-4.7-3.1-3.1-4.7 4.7-4.7-4.7-3.1 3.1 4.7 4.7-4.7 4.7 3.1 3.1 4.7-4.7 4.7 4.7 3.1-3.1z'/%3E%3C/svg%3E") no-repeat 50%;
+                //    content: " ";
+                //    display: block;
+                //    height: 30px;
+                //    width: 30px;
+                cursor: pointer;
+                font-size: 0;
+                position: absolute;
+                right: -15px;
+                text-indent: -9999px;
+                z-index: 8040;
+                right: 0px;
+                top: 0px;
+            }
+        }
+    }
+
+    .fancybox__slide {
+        margin: 0;
+        padding: 0;
+
+        /* --carousel-button-width: 36px; */
+        /* --carousel-button-height: 36px; */
+        /* --carousel-button-svg-width: 22px; */
+        /* --carousel-button-svg-height: 22px; */
+        display: flex;
+        //flex: 0 0 auto;
+        //flex-direction: column;
+        /* max-width: 100%; */
+        /* outline: 0; */
+        /* overflow: auto; */
+        /* overscroll-behavior: contain; */
+        /* padding: 48px 8px 8px; */
+        /* position: relative; */
+        width: 100%;
+
+        &:after,
+        &:before {
+            content: ""; // from cdn css
+            flex: 0 0 0; // from cdn css
+            //margin: auto; // from cdn css
+            margin: auto;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 801px) {
+    .fancybox__carousel {
+        //top: 40px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .fancybox__content {
+        .f-button {
+            &.is-close {
+                right: -15px;
+                top: -15px;
+            }
+        }
+
+        .fancybox__iframe {
+            width: 980px;
+        }
+    }
+
+    .fancybox__slide {
+
+        &:after,
+        &:before {
+            margin: 40px auto 0 auto;
+        }
+    }
+}

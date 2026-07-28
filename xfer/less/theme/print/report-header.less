@@ -1,0 +1,85 @@
+//.article-alt {
+.release-dates {
+    color: #7d7d7d;
+    margin-bottom: 1em;
+    font-weight: @bold; // 700
+
+    +.release-dates {
+        margin-top: -1em;
+    }
+
+    .responsive-container {
+        margin: 0;
+        display: inline-block;
+
+        &:after {
+            content: "\00a0\00a0|\00a0\00a0 ";
+        }
+
+        &:last-child {
+            &:after {
+                content: "";
+            }
+        }
+    }
+}
+
+&.l-report-header-opendata,
+&.l-report-header-petroleum-weekly {
+    padding: 0 !important;
+    margin: 0 !important;
+
+    h1 {
+
+        font-size: 22pt !important;
+        padding: 12pt 0 6px !important;
+        margin: 0 !important;
+        border: none !important;
+    }
+}
+
+&.l-report-header-opendata,
+&.l-report-header-petroleum-weekly,
+.l-report-header {
+    margin-bottom: 0.5em;
+    padding-bottom: 12pt;
+    border-bottom: 1px solid #ededee;
+    width: 100%;
+    //display: table;
+    //visibility: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+.l-report-header {
+    h1 {
+
+        color: #333 !important;
+        font-size: 12.8px !important;
+        margin: 0 !important;
+        border: none !important;
+        //border-bottom-color: #fff !important;
+    }
+
+    .publish-metadata {
+
+        font-weight: @regular; // 400
+        padding: 0;
+        color: #333;
+        width: 100%;
+        clear: both;
+        font-size: 8.25pt;
+        margin: 0 0 1em;
+        color: #7d7d7d;
+
+        span {
+            &.pipe {
+                &:before {
+                    content: "|";
+                }
+            }
+        }
+    }
+}
+
+//}

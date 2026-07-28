@@ -1,0 +1,41 @@
+@import './footer.less';
+@import './search-panel.less';
+@import './social-sticker.less';
+@import './mega-menu.less';
+@import './header.less';
+//@layer header-footer {
+.footer();
+.search-panel();
+.social-sticker();
+.mega-menu();
+
+//@media (min-width: 320px) {}
+
+@media (min-width: 480px) {
+    .search-panel-mobile-landscape();
+    .mega-menu-mobile-landscape();
+}
+
+@media (min-width: 600px) {
+    .footer-tablet()
+}
+
+@media (min-width: 801px) {
+    .footer-tablet-landscape();
+    .search-panel-tablet-landscape();
+    .mega-menu-tablet-landscape()
+}
+
+@media (min-width: 1025px) {
+    .footer-laptop();
+    .social-sticker-laptop();
+    .mega-menu-laptop()
+}
+
+//}
+
+// xs  mobile: ~"(min-width: 320px)"; // could be 320px - smartphones, portrait iPhone, portrait 480x320 phones (Android)
+// sl @mobile-landscape: ~"(min-width: 480px)"; // smartphones, Android phones, landscape iPhone
+// md  tablet: ~"(min-width: 600px)"; // mobile panorama
+// ml tablet-landscape: ~"(min-width: 801px)"; // tablet, landscape iPad, lo-res laptops ands desktops
+// lrg  laptop: ~"(min-width: 1025px)"; // normall 1025 - big landscape tablets, laptops, and desktops

@@ -1,0 +1,179 @@
+#AZ-content {
+    .l-padding-medium-bottom {
+        >li {
+            &.head {
+                margin-left: 0;
+
+                h2 {
+                    font-size: 1.5rem
+                }
+            }
+        }
+    }
+
+    ul {
+        margin-bottom: .5em;
+
+        .list-item {
+            >ul {
+                margin-bottom: 1em;
+            }
+        }
+
+        ul {
+            .list-item {
+                >ul {
+                    margin-bottom: .5em;
+                }
+            }
+
+            .sub-head {
+                padding-top: .5em;
+                font-weight: 500;
+            }
+
+            ul {
+                .sub-head {
+                    padding-top: .25em;
+                    font-weight: 400 !important;
+                }
+            }
+
+            &.head {
+                margin-left: 0;
+            }
+
+            ul {
+                margin-left: 8px;
+
+                &.head {
+                    margin-left: 0;
+                }
+
+                ul {
+                    margin-left: 20px;
+
+                    &.head {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    li {
+        &:has(ul) {
+            list-style: none;
+        }
+    }
+
+    .list-item {
+        list-style: none;
+        margin-left: 0;
+    }
+
+    .list-item {
+        .sub-head {
+            margin-left: 0;
+        }
+    }
+
+    .secondary {
+        ul {
+            &.bullet {
+                margin-left: 17px !important;
+            }
+        }
+    }
+
+    .sub-head-foot {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul>li {
+        margin-bottom: 0.5em;
+        list-style: disc;
+        margin-left: 12px;
+    }
+
+    ul li.head,
+    ul>li.list-item {
+        list-style: none;
+        margin-left: 0;
+    }
+
+    ul>li.list-item ul li {
+        margin-left: 32px;
+    }
+
+    ul>li.list-item ul li.sub-head {
+        margin-left: 12px;
+    }
+}
+
+
+
+
+.filtered-term {
+    padding: 0 0 0 0;
+}
+
+
+
+@media (min-width: 1px) {
+    .az-list {
+        background-color: tint(@eia-blue, 90%);
+        ////.font
+        //color: @eia-dark-grey;
+        font-size: 1.625rem; // 20pt 26px
+        padding: 12px 0;
+        margin: 0 0 1em 0;
+        text-align: center;
+        clear: both;
+
+        a {
+            ////.font
+            //color: @eia-blue;
+            font-size: 1.625rem; // 20pt 26px
+            line-height: 1.8;
+            padding: 4px 8px 4px 8px;
+            margin: 0 -5px 0 0;
+
+            //color: @eia-blue;
+            &.active {
+                background-color: @eia-blue;
+                color: @eia-white;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            &:hover {
+                background-color: @eia-blue;
+                color: @eia-white;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .aeo-list {
+        border-top: 1px solid lightgrey;
+        width: 100%;
+        list-style: none;
+
+        li {
+            border-bottom: 1px dashed #ddd;
+            padding: 3px 5px;
+
+            .document-container {
+                float: right;
+
+                .pipe,
+                a {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

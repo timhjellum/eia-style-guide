@@ -1,0 +1,889 @@
+/*
+1. Change blue link color from @eia-blue (#0096d7) to shade(@eia-blue, 16%). This yields #007eb5.
+2. For blue links in the footer or on the same gray background as in the footer (e.g., there's a paragraph with a gray background on the top of the MER page), use 20% for the shade value (yields #0071a1).
+3. For blue links in accent class (light blue background), use 25% for the shade value (yields #0071a1)
+4. For blue links in notice class (blue background, #cceaf7), use 45% for the shade value (yields #005376)
+5. For red beta banner and alert class (light red background), use shade(@eia-red, 16%). This yields #892b36.
+6. For green links in success class (light green background), use shade(@eia-green, 25%). This yields #467126.
+7. For yellow links in light yellow background, use tint 80% for the background (yields #fff4cc) and shade 47% for the text/link color (yields #876901). We need to determine if this should be the notice class or a different class.
+*/
+//@color: shade(@eia-yellow);
+
+
+
+
+//@eia-508-grey-link-color: #007eb5;
+//@eia-508-grey-bg-color: #000000; 
+
+//@eia-508-light-grey-link-color: #767676; // was #999
+//@eia-508-light-grey-hover-underline-color: #767676; // was #999
+//@eia-508-light-grey-focus-bg-color: #767676; // was #999
+
+
+
+.eia-508-link(@color: @eia-508-link-color; @paddingBottom: 0; @borderBottom: 1px solid @transparent; @borderImage: repeating-linear-gradient(to right, @transparent, @transparent 2px, @eia-508-link-color 0, @eia-508-link-color 3px) 2 stretch; @textDecoration: none) {
+    color: @color;
+    padding-bottom: @paddingBottom;
+    border-bottom: @borderBottom;
+    border-image: @borderImage;
+    text-decoration: @textDecoration;
+}
+
+.eia-508-link-hover(@color: @eia-508-link-color; @paddingBottom: 0; @borderBottom: 2px solid @eia-508-hover-underline-color; @borderImage: none; @textDecoration: none) {
+    &:hover {
+        color: @color;
+        padding-bottom: @paddingBottom;
+        border-bottom: @borderBottom;
+        border-image: @borderImage;
+        text-decoration: @textDecoration;
+    }
+}
+
+.eia-508-link-focus(@color: @eia-508-focus-color; @borderBottom: 3px solid @eia-508-focus-underline-color; @background: @eia-508-focus-bg-color; @borderImage: none; @textDecoration: none; @outline: none; @outlineOffset: 0) {
+    &:focus {
+        color: @color;
+        border-bottom: @borderBottom;
+        border-image: @borderImage;
+        background: @background;
+        text-decoration: @textDecoration;
+        outline: @outline;
+        outline-offset: @outlineOffset;
+    }
+}
+
+.ui-state-focus {
+    outline: none;
+}
+
+span {
+    &.responsive-container {
+        &:focus-visible {
+            outline: none;
+        }
+
+        a {
+            .eia-508-link-focus();
+        }
+    }
+}
+
+
+
+:focus-visible {
+    outline: #0096d7 auto 2px;
+}
+
+
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** ****    article    **** ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+.article,
+.article-alt {
+    a {
+        .eia-508-link();
+        .eia-508-link-hover();
+        .eia-508-link-focus();
+    }
+
+    .basic-table,
+    .expand-collapse-container,
+    .accordion-content {
+        a {
+            .eia-508-link(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: none);
+            .eia-508-link-hover(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: underline);
+            .eia-508-link-focus(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @background: transparent; @borderImage: none; @textDecoration: underline);
+        }
+    }
+
+    /*
+	.tabs {
+        &>div {
+            a {
+                .eia-508-link(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: none);
+                .eia-508-link-hover(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: underline);
+                .eia-508-link-focus(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @background: transparent; @borderImage: none; @textDecoration: underline);
+            }
+        }
+
+    }
+	*/
+}
+
+.accordion {
+    h3 {
+        &.ui-state-focus {
+            background-color: tint(#0096d7, 90%);
+            outline: none;
+        }
+    }
+}
+
+
+
+
+
+
+a {
+    &.accessible {
+        .eia-508-link();
+        .eia-508-link-hover();
+        .eia-508-link-focus();
+    }
+}
+
+
+
+
+.hidden {
+    clip: rect(1px 1px 1px 1px);
+    /* IE 6/7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.eia-accessibility {
+    clip: rect(1px 1px 1px 1px);
+    /* IE 6/7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/*
+.emulated-link-button {
+	cursor: pointer;
+	text-decoration: underline;
+	color: blue;
+}
+a {
+	&.eia-508-link {
+		color: #0000ee;
+		text-decoration: underline;
+		&:link {
+			color: #0000ee;
+			text-decoration: underline;
+		}
+		&:active {
+			color: red;
+			text-decoration-color: red;
+			text-decoration-style: dotted;
+		}
+		&:visited {
+			color: #551a8b;
+			text-decoration: underline;
+		}
+		&:hover {
+			color: #0000ee;
+			 text-decoration: none; // !important;
+		}
+		&:focus {
+			color: red;
+			text-decoration-color: red;
+			text-decoration-style: dotted;
+		}
+	}
+}
+*/
+#skip {
+    a {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+
+        &:focus {
+            position: static;
+            width: auto;
+            height: auto;
+        }
+    }
+}
+
+
+
+
+
+
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** ****  exceptions   **** ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+a {
+
+    &.close-chart,
+    &.close-overlay,
+    &.close-menu,
+    &.bottom,
+    &.top,
+    &.next,
+    &.previous {
+        .eia-508-link(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: none);
+        .eia-508-link-hover(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: underline);
+        .eia-508-link-focus(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @background: transparent; @borderImage: none; @textDecoration: underline);
+    }
+
+    span {
+        .eia-508-link(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: none);
+        .eia-508-link-hover(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: underline);
+        .eia-508-link-focus(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @background: transparent; @borderImage: none; @textDecoration: underline);
+    }
+
+    &.p,
+    &.ico {
+        .eia-508-link(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: none);
+        .eia-508-link-hover(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: underline);
+        .eia-508-link-focus(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @background: transparent; @borderImage: none; @textDecoration: underline);
+    }
+}
+
+.toggle,
+.see-all,
+.tags,
+.p {
+    a {
+        .eia-508-link(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: none);
+        .eia-508-link-hover(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: underline);
+        .eia-508-link-focus(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @background: transparent; @borderImage: none; @textDecoration: underline);
+    }
+}
+
+/*
+a[href*=".xls"],
+a[href*=".xlsx"],
+a[href*=".doc"],
+a[href*=".docx"],
+a[href*=".pdf"],
+a[href*=".img"],
+a[href*=".docx"],
+a[href*=".txt"],
+a[href*=".ppt"],
+a[href*=".pptx"] {
+        .eia-508-link(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: none);
+        .eia-508-link-hover(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: underline);
+        .eia-508-link-focus(@color: @eia-link-color; @borderBottom: 0 solid @transparent; @background: transparent; @borderImage: none; @textDecoration: underline);
+}
+*
+/
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** ****     images    **** ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+.svg-container,
+.image-container {
+    a {
+        border-bottom: none;
+        border-image: none;
+        border: 2px solid transparent;
+
+        &:hover {
+            border-image: none;
+            border: 2px solid transparent;
+        }
+
+        &:focus {
+            //color: white;
+            //border-image: none;
+            //border-bottom: 3px solid #ffd84e;
+            //background: #0078ac;
+            //outline: none;
+            //text-decoration: none; // !important;
+            border-color: @eia-508-link-color;
+            border-style: dashed;
+            border-width: 5px;
+            //color: white;
+            //border-image: none;
+            //border-top: 2px dashed @eia-508-link-blue;
+            //border-right: 2px dashed @eia-508-link-blue;
+            //border-bottom: 2px dashed @eia-508-link-blue;
+            //border-left: 2px dashed @eia-508-link-blue;
+            background: @eia-white;
+            //outline: none;
+            //text-decoration: none; // !important;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.fake-tabs {
+    &>ul {
+        li {
+            &.tab-nav {
+                &>a {
+                    .eia-508-link(@color: @eia-508-link-color; @borderBottom: none; @borderImage: none);
+                    .eia-508-link-hover(@color: @eia-508-link-color; @borderBottom: none; @borderImage: none; @textDecoration: underline);
+                    .eia-508-link-focus(@color: @eia-508-focus-color; @borderBottom: none; @background: @eia-508-focus-bg-color; @borderImage: none);
+                }
+            }
+
+            &.tab-nav-active {
+                &>a {
+                    .eia-508-link(@color: @eia-dark-grey; @borderBottom: none; @borderImage: none);
+                    .eia-508-link-hover(@color: @eia-dark-grey; @borderBottom: none; @borderImage: none);
+                    .eia-508-link-focus(@color: @eia-dark-grey; @borderBottom: none; @background: transparent; @borderImage: none);
+                }
+            }
+        }
+
+        &.responsive {
+            li {
+                &.tab-nav {
+                    &>a {
+                        .eia-508-link(@color: @eia-508-link-color; @borderBottom: none; @borderImage: none);
+                        .eia-508-link-hover(@color: @eia-508-link-color; @borderBottom: none; @borderImage: none; @textDecoration: underline);
+                        .eia-508-link-focus(@color: @eia-508-focus-color; @borderBottom: none; @background: @eia-508-focus-bg-color; @borderImage: none);
+                    }
+                }
+
+                &.tab-nav-active {
+                    &>a {
+                        .eia-508-link(@borderBottom: none; @borderImage: none);
+                        .eia-508-link-hover(@borderBottom: none; @borderImage: none);
+                        .eia-508-link-focus(@color: @eia-508-link-color; @borderBottom: none; @background: transparent; @borderImage: none);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+.tabs {
+    &>ul {
+        li {
+            &.ui-state-default {
+                &.ui-state-active {
+                    &.ui-state-focus {
+                        background-color: tint(#0096d7, 90%);
+                        outline: @eia-link-color;
+                    }
+                }
+            }
+        }
+    }
+}
+*/
+.tabs {
+    &>ul {
+        li {
+
+            //&.ui-state-default {
+            //&>
+            &>a {
+                //.eia-508-link(@color: @eia-508-link-color; @borderBottom: none; @borderImage: none);
+                //.eia-508-link-hover(@color: @eia-508-link-color; @borderBottom: none; @borderImage: none; @textDecoration: underline);
+                //.eia-508-link-focus(@color: @eia-508-focus-color; @borderBottom: none; @background: @eia-508-focus-bg-color; @borderImage: none; @outline: 5px solid transparent; @outlineOffset: -5px);
+                .eia-508-link(@color: @eia-508-link-color; @borderBottom: none; @borderImage: none);
+                .eia-508-link-hover(@color: @eia-508-link-color; @borderBottom: none; @borderImage: none; @textDecoration: underline);
+                .eia-508-link-focus(@color: @eia-508-focus-color; @borderBottom: none; @background: transparent; @borderImage: none);
+            }
+
+            &.ui-state-default {
+                outline: none;
+
+                &>a {
+
+                    .eia-508-link(@borderBottom: none; @borderImage: none);
+                    .eia-508-link-hover(@borderBottom: none; @borderImage: none);
+                    .eia-508-link-focus(@color: @eia-508-link-color; @borderBottom: none; @background: transparent; @borderImage: none);
+
+                    &.ui-state-focus {
+                        a {
+                            color: @eia-link-color; // #007eb5;
+                        }
+                    }
+                }
+            }
+
+            &:focus-visible {
+                outline: none;
+
+                a {
+                    border-bottom: 2px solid @eia-508-hover-underline-color; // #007eb5;
+                    border-image: none;
+                    color: @eia-link-color; // #007eb5;
+                    text-decoration: none
+                }
+            }
+
+            // }
+
+
+            //}
+        }
+    }
+}
+
+
+
+
+
+
+//&.ui-state-default {
+//    &.ui-state-active {
+
+//	}
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sub-tabs {
+    .sub-tab-nav {
+        &>a {
+            em {
+                text-decoration: none !important;
+            }
+
+            .eia-508-link(@borderBottom: 2px solid @transparent; @borderImage: none);
+            .eia-508-link-hover(@borderBottom: 2px solid @eia-508-hover-underline-color; @borderImage: none);
+            .eia-508-link-focus(@color: @eia-508-link-color; @borderBottom: 2px solid @eia-508-hover-underline-color; @background: transparent; @borderImage: none);
+
+            &:hover,
+            &:focus {
+                em {
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
+
+    .sub-tab-nav-active {
+        &>a {
+            em {
+                text-decoration: none !important;
+            }
+
+            .eia-508-link(@color: @eia-dark-grey; @borderBottom: 2px solid @transparent; @borderImage: none);
+            .eia-508-link-hover(@color: @eia-dark-grey; @borderBottom: 2px solid @transparent; @borderImage: none);
+            .eia-508-link-focus(@color: @eia-dark-grey; @borderBottom: 2px solid @transparent; @background: transparent; @borderImage: none);
+
+            &:hover,
+            &:focus {
+                em {
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.secondary-alt {
+    p {
+        a {
+            color: #4e7f2a;
+            padding-bottom: 0;
+            border-bottom: 3px solid white;
+            border-image: repeating-linear-gradient(to right, transparent, transparent 3px, #4e7f2a 3px, #4e7f2a 10px) 3 stretch;
+
+            &:hover {
+                border-image: none;
+                border-bottom: 2px solid #4e7f2a;
+                color: #4e7f2a;
+                 text-decoration: none; // !important; // !important;
+            }
+
+            &:focus {
+                color: white;
+                border-image: none;
+                border-bottom: 2px solid #ffd84e;
+                background: #4e7f2a;
+                outline: none;
+                 text-decoration: none; // !important; // !important;
+            }
+        }
+    }
+}
+*/
+
+
+
+
+
+@media (min-width: 1px) {
+
+    /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+    /* ***** ***** ***** * homepage exceptions * ***** ***** ***** */
+    /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+    /*
+	.homepage {
+        .today-in-energy {
+
+            p,
+            h3 {
+                a {
+                    .eia-508-link(@borderBottom: 0 solid @transparent);
+                    .eia-508-link-hover();
+                    .eia-508-link-focus();
+                }
+            }
+        }
+
+        .secondary {
+            &.features {
+                &>div {
+                    ul {
+                        li {
+                            &.head {
+
+                                // start features specific
+                                // start features specific
+                                // start features specific
+                                h3 {
+                                    &>a {
+                                        .eia-508-link(@color: @eia-dark-link-color; @borderBottom: 0 solid @transparent; @borderImage: none);
+                                        .eia-508-link-hover(@color: @eia-dark-link-color; @borderBottom: 2px solid @eia-dark-link-color);
+                                        .eia-508-link-focus(@color: @eia-508-focus-color; @background: @eia-dark-link-color);
+                                    }
+                                }
+
+                                // end features specific
+                                // end features specific
+                                // end features specific
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+*/
+    /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+    /* ***** ***** ***** ** header exceptions ** ***** ***** ***** */
+    /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+    header {
+        .navigation {
+            .search-panel {
+                .search {
+                    .accessibility {
+                        left: -12345px;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ************ ************ ************ */
+    /* ************ *** MENU *** ************ */
+    /* ************ ************ ************ */
+    .nav-menu {
+        .ui-tabs-panel {
+            h3 {
+                a {
+                    .eia-508-link(@color: @eia-dark-link-color; @borderBottom: 0 solid @transparent; @borderImage: none);
+                    .eia-508-link-hover(@color: @eia-dark-link-color; @borderBottom: 2px solid @eia-dark-link-color);
+                    .eia-508-link-focus(@color: @eia-508-focus-color; @background: @eia-dark-link-color);
+                }
+            }
+
+            ul {
+                li {
+                    a {
+                        .eia-508-link(@color: @eia-508-link-color; @borderBottom: 0 solid @transparent);
+                        .eia-508-link-hover(@color: @eia-508-link-color);
+                        .eia-508-link-focus();
+                    }
+                }
+            }
+        }
+
+        &.a-z-index {
+            .a-z-list {
+                a {
+                    .eia-508-link(@color: @eia-508-link-color; @borderBottom: 0 solid @transparent);
+                    .eia-508-link-hover(@color: @eia-508-link-color);
+                    .eia-508-link-focus();
+                }
+            }
+        }
+    }
+
+    /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+    /* ***** ***** ***** *** beta exceptions **** **** ***** ***** */
+    /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+    /*
+	.l-body-wrapper {
+        &.beta {
+            header {
+                .navigation {
+                    a {
+                        &.logo {}
+
+                        &.beta {}
+                    }
+                }
+            }
+        }
+    }
+	*/
+
+
+
+
+
+
+
+
+
+
+    /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+    /* ***** ***** ***** ** footer exceptions ** ***** ***** ***** */
+    /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+    .footer {
+        .address-bar {
+            .above-address-links {
+                a {
+                    .eia-508-link(@color: #717171; @borderBottom: 0 solid @transparent; @borderImage: none);
+                    .eia-508-link-hover(@color: @eia-dark-link-color; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: underline);
+                    .eia-508-link-focus(@color: @eia-508-focus-color; @borderBottom: 0 solid @transparent; @background: @eia-dark-link-color; @textDecoration: none);
+
+                }
+            }
+        }
+
+        .footer-links {
+            ul {
+                li {
+                    a {
+                        .eia-508-link(@color: #0078AC; @borderBottom: 0 solid @transparent; @borderImage: none);
+                        .eia-508-link-hover(@color: #0078AC; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: underline);
+                        .eia-508-link-focus(@color: @eia-508-focus-color; @borderBottom: 0 solid @transparent; @background: @eia-dark-link-color; @textDecoration: none);
+
+                        span {
+                            color: #0078AC;
+                        }
+
+                        &:hover {
+                            span {
+                                color: #0078AC;
+                                text-decoration: underline;
+                            }
+                        }
+
+                        &:focus {
+                            span {
+                                color: @eia-508-focus-color;
+                                background: @eia-dark-link-color;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//@media (min-width: 600px) {}
+
+@media (min-width: 1025px) {
+
+    /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+    /* ***** ***** ***** ** header exceptions ** ***** ***** ***** */
+    /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+    header {
+        .navigation {
+            .nav-primary {
+                .nav-primary-item {
+                    a {
+                        &:focus {
+                            background-color: @eia-blue;
+                        }
+                    }
+                }
+            }
+
+            // delete after v6 nav update
+            .nav-secondary {
+                .nav-secondary-item {
+                    a {
+                        &:focus {
+                            color: white;
+                            border-bottom: 0;
+                            background-color: @eia-blue;
+                        }
+                    }
+                }
+            }
+
+
+            a {
+                &.logo {
+                    &:focus {
+                        outline: 2px solid @eia-blue;
+                        outline-offset: -10px;
+                        border-image: none;
+                        border-bottom: 0;
+                        //background-color: rgba(255, 255, 255, .15);
+                        //background-color: rgba(0, 42, 61, 0.65);
+                    }
+                }
+            }
+        }
+
+        &.shrink {
+            .navigation {
+                a {
+                    &.logo {
+                        &:focus {
+                            outline-offset: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** *** data highlights *** ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/*
+	.data-highlights {
+        .accent {
+            h3 {
+                &>a {
+                    .eia-508-link(@color: @eia-dark-link-color; @borderBottom: 0 solid @transparent; @borderImage: none);
+                    .eia-508-link-hover(@color: @eia-dark-link-color; @borderBottom: 2px solid @eia-dark-link-color);
+                    .eia-508-link-focus(@color: @eia-508-focus-color; @background: @eia-dark-link-color);
+                }
+            }
+        }
+    }
+	*/
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** *** beta exceptions **** **** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+@media (min-width: 1px) {
+    .sub-navigation {
+        .left-nav {
+            &>li {
+                a {
+                    .eia-508-link(@color: @eia-508-link-color; @borderBottom: 3px solid #fff; @borderImage: none);
+                }
+
+                &.active {
+                    a {
+                        .eia-508-link(@color: @eia-508-link-color; @borderBottom: 3px solid @eia-508-link-color; @borderImage: none);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** *** sub-navigation  *** ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+@media (min-width: 1025px) {
+    .sub-navigation {
+        //.left {
+
+        .left-nav {
+            &>li {
+
+                //a,
+                //&:hover {
+                .eia-508-link(@color: @eia-508-link-color; @borderBottom: 0 solid @transparent; @borderImage: none);
+                .eia-508-link-hover(@color: @eia-dark-link-color; @borderBottom: 0 solid @transparent);
+                .eia-508-link-focus(@color: @eia-508-focus-color; @borderBottom: 0 solid @transparent; @background: @eia-dark-link-color; @outline: 5px solid @eia-dark-link-color; @outlineOffset: -5px);
+                //}
+
+                &.active {
+                    a {
+                        .eia-508-link(@color: @eia-dark-link-color; @borderBottom: 0 solid @transparent; @borderImage: none);
+                        .eia-508-link-hover(@color: @eia-dark-link-color; @borderBottom: 0 solid @transparent);
+                        .eia-508-link-focus(@color: @eia-508-focus-color; @borderBottom: 0 solid @transparent; @background: @eia-dark-link-color; @outline: 5px solid @eia-dark-link-color; @outlineOffset: -5px);
+                    }
+
+                    .dropdown-content {
+                        a {
+                            .eia-508-link(@color: @eia-508-link-color; @paddingBottom: 5px; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: none);
+                            .eia-508-link-hover(@color: @eia-508-link-color; @paddingBottom: 5px; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: underline);
+                            .eia-508-link-focus(@color: @eia-508-link-color; @borderBottom: 0 solid @transparent; @background: transparent; @borderImage: none; @textDecoration: underline);
+                        }
+                    }
+                }
+
+                li {
+                    .dropdown-content {
+                        a {
+                            .eia-508-link(@color: @eia-508-link-color; @paddingBottom: 5px; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: none);
+                            .eia-508-link-hover(@color: @eia-508-link-color; @paddingBottom: 5px; @borderBottom: 0 solid @transparent; @borderImage: none; @textDecoration: underline);
+                            .eia-508-link-focus(@color: @eia-508-link-color; @borderBottom: 0 solid @transparent; @background: transparent; @borderImage: none; @textDecoration: underline);
+                        }
+                    }
+                }
+            }
+        }
+
+        .right {
+            a {
+                .eia-508-link(@color: @eia-508-link-color; @borderBottom: 0 @transparent);
+                .eia-508-link-hover(@color: @eia-508-link-color; @borderBottom: 2px solid @eia-dark-link-color);
+                .eia-508-link-focus(@color: @eia-508-focus-color; @background: @eia-dark-link-color; @borderBottom: 0 @transparent);
+            }
+        }
+    }
+}
+
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** *** sub-navigation  *** ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */

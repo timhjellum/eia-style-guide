@@ -1,0 +1,6 @@
+@import '../../base/_vars';
+@import '../../base/_mixins';
+@import './styles';
+@import '../outlooks/shared';
+@import '../outlooks/page-footer';
+@import './carousel';

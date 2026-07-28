@@ -1,0 +1,67 @@
+@media (min-width: 1px) {
+
+    .expand-collapse-container {
+        //font-size: var(--sm);
+        //color: @eia-black;
+        //display: inline-block;
+        font-size: var(--med);
+        font-weight: @semiBold;
+        margin-bottom: 4px;
+        margin-top: 7px;
+        color: @eia-508-link-color;
+        float: right;
+        cursor: pointer;
+
+        .ico {
+            span {
+                font-size: var(--med);
+            }
+        }
+
+        //float: right;
+        //&
+        .expand {
+            &:before {
+                position: relative;
+                top: -1px;
+                content: "\002B";
+                display: inline-flex;
+                background: none;
+                width: unset;
+                height: unset;
+            }
+        }
+
+        //&
+        .collapse {
+            &:before {
+                position: relative;
+                top: -1px;
+                content: "\2212";
+                display: inline-flex;
+                background: none;
+                width: unset;
+                height: unset;
+            }
+        }
+
+        //}
+    }
+
+    h2 {
+        .expand-collapse-container {
+            width: 200px;
+            padding-top: 4px;
+            //float: right;
+            margin-top: 0;
+        }
+    }
+}
+
+
+@media (min-width: 600px) {
+    //.expand-collapse-container {
+    //font-size: var(--sm);
+    //color: @eia-black;
+    //}
+}

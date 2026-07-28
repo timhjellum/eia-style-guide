@@ -1,0 +1,408 @@
+@media (min-width: 1px) {
+    .outlooks {
+        font-size: var(--base-font-size);
+
+        p {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 0;
+            margin-right: 0;
+            font-size: var(--xlrg);
+            line-height: 1.6;
+            color: @eia-508-dark-grey;
+        }
+
+        h2 {
+            .outlooks-header-h2();
+            .outlooks-header-alt();
+        }
+
+        .l-row {
+            &.l-full-width-col {
+                h2 {
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        h1 {
+            .outlooks-header-h1();
+
+            &.overview {
+                .outlooks-header-alt();
+                background-color: transparent;
+                border-bottom: 1px solid @eia-divider-color;
+                min-height: 100px
+            }
+
+            .link-button {
+                position: absolute;
+                right: 0;
+                bottom: 3px;
+                font-size: 1rem;
+
+                &:hover {
+                    background-color: #5d9732;
+                    border-bottom: none;
+                    color: #fff;
+                    text-decoration: none
+                }
+
+                &:after {
+                    content: "\00a0\203A"
+                }
+            }
+        }
+
+        .accordion {
+            margin-bottom: 0;
+
+            h2 {
+                border-top: 2px solid @eia-blue;
+                border-bottom: none;
+                color: @eia-link-color;
+                cursor: pointer;
+                //font-size: 1.2rem;
+                font-weight: @regular;
+                padding: 10px 0 0 0;
+                margin: 0;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                &:first-child {
+                    border-top: none;
+                }
+
+                &:before {
+                    display: none;
+                }
+
+                span {
+                    &.label {
+                        display: block;
+                        flex: 1 0;
+                        font-size: 1.3rem;
+                        font-weight: 500;
+
+                    }
+                }
+
+                p {
+                    padding: 0 0 10px 22px;
+                    margin: 0 0 0 0;
+                }
+
+                .plusminus {
+                    //margin: 0 7px 0 0;
+                    margin: -4px 7px 0 0;
+                    color: @eia-link-color;
+                    font-weight: @bold;
+                    width: 15px;
+                }
+            }
+
+            .accordion-content {
+                p {
+                    padding-left: 22px;
+                    margin: 0;
+                }
+
+                .link-button {
+                    margin-left: 22px;
+                    margin-top: 2em;
+                }
+            }
+        }
+
+        &.narrative {
+            h1 {
+                &.outlooks-alt {
+                    .outlooks-header-h1();
+                    .outlooks-header-alt();
+                    border-bottom: none;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+            }
+
+            .expand-collapse-container {
+                position: absolute;
+                right: 0;
+                bottom: 5px;
+                color: @eia-link-color;
+                font-size: .813rem;
+
+                .expand,
+                .collapse {
+                    color: @eia-link-color;
+                    font-size: .813rem;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                //color: @eia-link-color;
+                //&:before {
+                //    display: none;
+                //}
+            }
+
+
+            .accordion {
+                h2 {
+                    padding-bottom: 10px;
+
+                    &:first-child {
+                        border-top: 2px solid @eia-blue;
+                    }
+                }
+
+                .accordion-content {
+                    .article {
+                        //padding-top: 0;
+                        //padding-left: 12px;
+
+                        h4 {
+                            margin-top: 1em;
+                        }
+                    }
+                }
+
+                //.accordion {
+                h2 {
+                    margin: 0;
+
+                    &:before {
+                        margin-left: -10px;
+                    }
+                }
+
+                .accordion-content {
+                    .article {
+                        padding-top: 0;
+                        padding-left: 20px;
+
+                        p {
+                            padding-left: 0;
+                        }
+                    }
+                }
+
+                //}
+            }
+        }
+    }
+}
+
+@media (min-width: 480px) {}
+
+@media (min-width: 600px) {}
+
+@media (min-width: 801px) {}
+
+@media (min-width: 1025px) {
+
+    .outlooks {
+        h1 {
+            &.overview {
+                min-height: 50px
+            }
+        }
+
+        &.narrative {
+            //.l-full-width-col {
+            //margin-left: 12px;
+            //margin-right: 12px;
+            //}
+
+            .accordion {
+                h2 {
+                    margin: 0;
+
+                    &:before {
+                        margin-left: -10px;
+                    }
+                }
+
+                .accordion-content {
+                    .article {
+                        padding-top: 0;
+                        padding-left: 20px;
+
+                        p {
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+.video-container {
+    width: 283px;
+
+    .iframe {
+        width: 283px;
+        height: 154px;
+    }
+}
+*/
+
+@media (min-width: 1px) {
+    /*
+	.carousel {
+        &.energy-outlook {
+            width: 100%;
+            border-bottom: 4px solid @eia-blue; // @eia-blue;
+
+            .carousel__dots {
+                position: absolute !important; // !important is for codepen only
+                right: 10px !important; // !important is for codepen only
+                top: -40px !important; // !important is for codepen only
+                left: initial; // codepen only
+                bottom: initial; // codepen only
+
+                .carousel__dot {
+                    display: block;
+                    z-index: 10;
+                    padding: 0;
+                    border: 0;
+
+                    &:after {
+                        content: "";
+                        width: 13px;
+                        height: 13px;
+                        margin-right: 0.5em;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: @eia-dash-color;
+                        opacity: 1; //.25;
+                        transition: opacity 0.15s ease-in-out;
+                    }
+
+                    &.is-selected {
+                        &:after {
+                            background-color: @eia-blue; // @eia-blue;
+                        }
+                    }
+
+                    &:hover {
+                        &:after {
+                            background-color: @eia-blue; // @eia-blue;
+                        }
+                    }
+                }
+            }
+
+            .carousel__slide {
+                width: 100%;
+            }
+
+            .carousel__nav {
+                display: none;
+            }
+        }
+    }
+
+
+    .energy-outlook-carousel-foot {
+        width: 100%;
+        clear: both;
+        border-bottom: 1px solid #0e1316;
+
+        p {
+            padding: 1em;
+            margin: 0;
+        }
+    }
+	*/
+}
+
+@media (min-width: 480px) {}
+
+@media (min-width: 600px) {}
+
+@media (min-width: 801px) {}
+
+@media (min-width: 1025px) {
+
+
+    /*
+	.carousel {
+        &.energy-outlook {
+            width: 591px;
+            margin: 0;
+
+            .energy-outlook-wrapper {
+                position: relative;
+                margin: 0 auto;
+            }
+
+            .carousel__viewport {
+                width: 515px;
+                margin: 0 46px;
+
+                .carousel__slide {
+                    width: 515px;
+                }
+            }
+
+            .carousel__nav {
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                transition: all 0.6s;
+                z-index: 9999;
+
+                .carousel__button {
+                    .font;
+                    font-size: 80px !important;
+                    color: @eia-blue;
+                    font-weight: @bold; // 700
+                    height: 500px;
+                    width: 30px;
+                    padding: 0;
+                    margin: 12px 0 0 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    pointer-events: all;
+                    cursor: pointer;
+                    border-radius: 0 0 0 0;
+                    box-shadow: none;
+                    transition: opacity 0.15s ease;
+                    background-color: #fff;
+
+                    &.is-next {
+                        right: 0;
+                        top: 0;
+                        transform: none;
+                        .font;
+                        font-size: 80px !important;
+                        color: @eia-blue;
+
+                    }
+
+                    &.is-prev {
+                        left: 0;
+                        top: 0;
+                        transform: none;
+                        .font;
+                        font-size: 80px !important;
+                        color: @eia-blue;
+                    }
+                }
+            }
+        }
+    }
+	*/
+}

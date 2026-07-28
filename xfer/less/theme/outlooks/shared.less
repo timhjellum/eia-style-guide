@@ -1,0 +1,318 @@
+.outlooks-header-alt() {
+	&:before {
+		content: '';
+		background-color: #70d4ff;
+		display: inline-block;
+		margin-right: 4px;
+		transform: skew(-20deg, 0deg);
+		height: calc(@font-size * 0.8);
+		margin-top: calc(@font-size * 0.15);
+	}
+
+	&:focus-visible {
+		&:before {
+			outline: none;
+		}
+	}
+}
+
+.outlooks-header-h1() {
+	border-bottom: 1px dashed @eia-dash-color; // was #d4d4d4
+	color: @eia-508-dark-grey;
+	font-weight: 700;
+	margin-bottom: 1em;
+	padding-top: 6px;
+	position: relative;
+	display: block;
+	line-height: 1.2;
+	@font-size: 1.94444444rem;
+	font-size: @font-size;
+
+	&:before {
+		height: 1.4rem;
+		width: 8px
+	}
+}
+
+
+.outlooks-header-h2() {
+	border: none;
+	@font-size: 1.4rem;
+	font-size: @font-size;
+	font-weight: 700;
+	margin: 0;
+	padding: .25em 0 0;
+	text-decoration: none;
+	line-height: 1.2;
+
+	&:before {
+		float: left;
+		width: 6px;
+		height: 1rem;
+		margin-top: 4px;
+	}
+}
+
+.outlooks-header-h3() {
+	@font-size: 1.125rem;
+	font-size: @font-size;
+	color: @eia-508-dark-grey;
+	font-weight: 800;
+	line-height: 1.2;
+	margin-bottom: 0;
+
+	&:before {
+		float: left;
+		height: 0.9rem;
+		width: 4px;
+	}
+}
+
+.outlooks-header-h4() {
+
+}
+
+figcaption {
+	font-weight: 700;
+}
+
+@media (min-width: 1px) {
+	.outlooks {
+		font-size: var(--base-font-size);
+
+		a {
+			&.back {
+				&:before {
+					content: "\2039\00a0";
+					position: relative;
+					top: -2px;
+				}
+			}
+
+			&.previous {
+				&:before {
+					content: '\2039\00a0\Previous';
+				}
+			}
+
+			&.next {
+				&:after {
+					content: 'Next\00a0\203A';
+				}
+			}
+		}
+
+
+
+		.release-event {
+
+			&.l-three-col-even,
+			&.l-two-col-left {
+				h1 {
+					.outlooks-header-h1();
+					border-bottom: 1px dashed silver;
+					font-size: 1.6rem;
+
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+
+
+		table {
+			&[class*="basic"] {
+				thead {
+					z-index: 20;
+				}
+
+				tbody {
+					tr>* {
+						font-size: var(--sm);
+
+						th {
+							font-weight: 650;
+						}
+					}
+				}
+			}
+
+		}
+
+		h2 {
+			&+ul {
+				margin-top: 1em;
+			}
+		}
+
+
+		h4 {
+		font-style: italic;
+	font-weight: 700;
+	line-height: 1.2;
+		}
+
+		.title-banner {
+			h1 {
+				border-bottom: none;
+				margin-bottom: 0;
+				padding-top: 0;
+
+				&:before {
+					display: none;
+				}
+			}
+		}
+		ol {
+			&.roman {
+				padding: 0 0 0 0;
+				margin-left: 0;
+				counter-reset: countername;
+
+				li {
+					counter-increment: countername;
+					position: relative;
+					display: block;
+					padding: 0 0 6px 9px;
+
+					&:before {
+						content: counter(countername, upper-roman);
+						position: absolute;
+						left: -3px;
+						top: -3px;
+						font-size: 70%;
+						text-align: end;
+					}
+				}
+			}
+		}
+
+		ul {
+			&.bullet {
+				padding: 0 0 1em 16px;
+				li {
+					list-style-type: disc;
+				}
+			}
+		}
+
+		.links {
+			ul {
+				li {
+					list-style-type: disc;
+					padding: 0.25em 0 0 0;
+					margin-left: 20px;
+					&.head {
+						border-bottom: 1px dashed @eia-dash-color; // was #d4d4d4
+
+						font-size: 1.1875rem;
+
+						font-weight: 700;
+						margin: 0;
+						list-style: none;
+					}
+				}
+				&.bullet {
+					margin-bottom: 1em;
+				}
+			}
+		}
+
+		blockquote {
+			margin: 1.5em 0 1.5em 0;
+			width: 100%;
+			line-height: 1.6;
+			&.dark-bg {
+				background-color: @eia-508-link-color;
+				color: white;
+			}
+
+			&.light-bg {
+				background-color: tint(@eia-light-blue-60, 80%);
+			}
+
+			&.left {
+				float: none;
+			}
+
+			&.right {
+				float: none;
+			}
+
+			&.em {
+				font-style: italic !important;
+				p {
+					font-style: italic !important;
+				}
+			}
+		}
+		a {
+			&.Figure-data {
+				padding: .5 0 1.5em;
+				display: block;
+
+				&>span {
+					&:before {
+						content: 'Figure data';
+					}
+				}
+			}
+		}
+		.image-container {
+			&+p {
+				padding-bottom: 1em;
+			}
+		}
+	}
+}
+
+
+@media (min-width: 480px) {
+	.outlooks {
+		blockquote {
+			margin: 0 0 1.5em 0;
+
+			&.l-width-small {
+				width: 20%;
+			}
+
+			&.l-width-medium {
+				width: 30%;
+			}
+
+			&.l-width-large {
+				width: 40%;
+			}
+
+			&.l-width-xlarge {
+				width: 50%;
+			}
+			&.left {
+				float: left;
+				margin-right: 1.5em;
+				margin-left: 0;
+			}
+			&.right {
+				float: right;
+				margin-right: 0;
+				margin-left: 1.5em;
+			}
+		}
+	}
+}
+
+@media (min-width: 1025px) {
+	.outlooks {
+		.accordion-content {
+			.article {
+				margin: 0;
+
+				blockquote {
+					padding: 2em;
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}

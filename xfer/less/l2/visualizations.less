@@ -1,0 +1,117 @@
+@media (min-width: 1px) {
+
+
+    div {
+        &.circle {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px auto;
+            display: block;
+
+            img {
+                border-radius: 50%;
+                border: 3px solid @eia-dash-color;
+                margin-left: -3px;
+            }
+        }
+    }
+
+    .visualizations {
+        margin: 0 0 .5em; // margin-bottom: 2em;
+        width: 100%;
+
+        &>div {
+            margin-bottom: 1.5em;
+        }
+        h1 {
+			.primary-h1();
+        }
+
+        ul {
+            text-align: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                a {
+                    //.font;
+                    font-weight: @bold; // 700
+                    display: block;
+                    font-size: var(--sm); // 13 pixels // 13 pixels
+                    line-height: 1.4;
+                    color: @eia-508-link-color;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                h3 {
+                    //.font;
+                    font-weight: @bold; // 700
+                    font-size: var(--sm); // 13 pixels // 13 pixels
+                    line-height: 1.4;
+                    display: inline;
+                    color: @eia-508-link-color;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        &.l-row {
+            &.l-six-col-even {
+                .l-col {
+                    width: 48%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 480px) {
+
+    // tablet, landscape iPad, lo-res laptops ands desktops
+    .visualizations {
+        &.l-row {
+            &.l-six-col-even {
+                .l-col {
+                    width: 32%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 801px) {
+
+    // tablet, landscape iPad, lo-res laptops ands desktops
+    .visualizations {
+        margin-bottom: .5em;
+
+        &>div {
+            margin-bottom: 1.5em;
+        }
+
+        &.l-row {
+            &.l-six-col-even {
+                .l-col {
+                    width: 14.666%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    margin-bottom: 2em;
+
+    &>div {
+        margin-bottom: 0;
+    }
+}

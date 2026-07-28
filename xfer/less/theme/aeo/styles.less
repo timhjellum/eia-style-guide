@@ -1,0 +1,155 @@
+@media (min-width: 1px) {
+    .outlooks {
+        font-size: var(--base-font-size);
+
+
+
+        p {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 0;
+            margin-right: 0;
+            font-size: var(--xlrg);
+            line-height: 1.6;
+        }
+
+        section {
+            &#related-today-in-energy-articles {
+                h2 {
+                    font-size: 1.1875rem;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+
+            border-top: 4px solid @eia-blue; // @eia-blue;
+
+            &.l-border-remove {
+                border-top: none !important;
+            }
+
+        }
+
+        .l-row {
+            &.l-three-col-even {
+                padding-left: 0;
+                padding-right: 0;
+
+                h1 {
+                    &:before {
+                        display: none;
+                    }
+
+                    margin-bottom: .5em;
+                }
+            }
+
+            //.article {
+            //    h1 {
+            //        border-bottom: 1px solid #d6d6d6;
+            //    }
+            //}
+
+            //&.l-full-width-col {
+            .article {
+                h1 {
+                    border-bottom: 1px solid @eia-dash-color;
+                    padding-top: 6px;
+                    margin-bottom: 1em;
+                    padding-top: 12px;
+                    font-style: 600;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                //}
+
+
+                ul {
+                    li.hide-bullet {
+                        list-style: none !important;
+                    }
+
+                    &:has(.hide-bullet) {
+                        margin-left: 0 !important;
+                    }
+                }
+            }
+        }
+
+
+        h2 {
+
+            .outlooks-header-h2();
+            .outlooks-header-alt();
+        }
+
+        &.narrative {
+            section {
+
+                h1 {
+                    .outlooks-header-h1();
+
+                    &.outlooks-alt {
+                        .outlooks-header-alt();
+                    }
+                }
+
+                h2 {
+
+                    .outlooks-header-h2();
+                    .outlooks-header-alt();
+                }
+
+                h3 {
+                    .outlooks-header-h3();
+                    .outlooks-header-alt();
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .outlooks {
+        .l-row {
+            &.l-full-width-col {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            &.l-three-col-even {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+
+
+        &.narrative {
+            section {
+                margin-left: 22px;
+                margin-right: 12px;
+                width: 922px;
+
+                h1 {
+                    &:before {
+                        margin-left: -14px;
+                    }
+                }
+
+                h2 {
+                    margin: 0;
+
+                    &:before {
+                        margin-left: -10px;
+                    }
+                }
+            }
+        }
+    }
+}

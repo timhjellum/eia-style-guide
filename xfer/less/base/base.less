@@ -1,0 +1,558 @@
+@layer icons;
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    //box-sizing: border-box;
+
+    a {
+        color: @eia-508-link-color;
+        text-decoration: none;
+
+        &:hover {
+            color: @eia-508-link-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+body {
+    font-size: var(--base-font-size);
+    font-weight: @regular;
+    font-family: "Jost", sans-serif;
+    line-height: 1.1;
+}
+
+.nowrap {
+    white-space: preserve nowrap;
+}
+
+
+
+
+::marker {
+    font-size: var(--xsm);
+}
+
+
+/* moved to base
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+    margin-top: 0.5em;
+    margin-bottom: 1.38888889em;
+    //font-size: var(--med);
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+*/
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: @eia-white;
+}
+
+.print-only {
+    display: none;
+}
+
+
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** *****   anchors   ***** ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+a[name] {
+    vertical-align: top;
+}
+
+
+
+// these are iconic links only
+.downloadable-files {
+
+    a[href*=".com"],
+    a[href^="http:"],
+    a[href^="https:"] {
+        &:after {
+            margin: 0 8px 0 -6px;
+        }
+    }
+}
+
+a[href^="tel:"] {
+    color: @eia-508-dark-grey;
+    text-decoration: none;
+
+    &:hover {
+        color: @eia-508-dark-grey;
+        text-decoration: none;
+    }
+}
+
+@media @mobile-only {
+    a[href^="tel:"] {
+        color: @eia-508-link-color;
+        text-decoration: none;
+    }
+}
+
+
+.top-container {
+    display: flex;
+    justify-content: center;
+    border-top: 1px dashed #eee;
+    margin: 2em 0 0 0;
+    padding: 2em 0;
+
+    .top {
+        border-bottom: 0 solid transparent;
+        border-image: none;
+        color: white;
+        text-decoration: none;
+        //margin: 2em auto 0 auto;
+        padding: 10px 14px 10px 10px;
+        background-color: @eia-508-link-color;
+        //font-size: 1.2em;
+        text-transform: uppercase;
+        //float: right;
+        font-weight: @bold; // 700
+
+        &:before {
+            .icon-up-arrow(@fill-color: #fff);
+        }
+
+        &:hover {
+            padding: 10px 14px 10px 10px;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+
+.svg-container {
+    overflow: hidden;
+
+    .image-download {
+        margin-bottom: 0;
+    }
+}
+
+// 26px finalized
+h2 {
+    em {
+        &.sub-head {
+            font-size: var(--xsm); // 12 pixels
+        }
+    }
+}
+
+//0.75rem; } // finalized
+
+
+// finalized
+p {
+
+    margin: 0 0 1em;
+
+    &.foot {
+        font-weight: @bold; // 700
+        margin-top: 1em;
+    }
+}
+
+[type=checkbox] {
+    accent-color: #0096d7;
+}
+
+p,
+li {
+    line-height: 1.4;
+}
+
+
+
+figure {
+    margin: 1em 40px;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: var(--base-font-size); // 1em;
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+
+details,
+menu {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1025px) {
+    .top-container {
+        justify-content: flex-start;
+
+        .top {
+            background-color: #fff;
+            color: #007eb5;
+            //float: left;
+            font-size: .75rem;
+            padding: 0;
+            text-decoration: none;
+            text-transform: capitalize;
+
+            &:before {
+                .icon-up-arrow(@fill-color: @eia-blue);
+            }
+
+            &:hover {
+                color: @eia-508-link-color;
+                padding: 0;
+                background-color: white;
+                text-transform: capitalize;
+                &:before {
+                    .icon-up-arrow(@fill-color: @eia-blue);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.next,
+.previous {
+    font-size: var(--xsm); // 12 pixels
+    font-weight: @bold; // 700
+}
+
+.previous {
+    &:before {
+        content: "\2039\00a0\Previous";
+    }
+}
+
+.next {
+    &:after {
+        content: "Next\00a0\203A";
+    }
+}
+
+
+
+.sticky-top {
+    position: sticky;
+    top: 80px;
+}
+
+
+.bottom {
+    align-items: flex-start;
+}
+
+
+
+
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** **** global reset ***** ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+.vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+.vertical-align-bottom td,
+.vertical-align-bottom th {
+    vertical-align: bottom;
+}
+
+.grey_side p:last-child {
+    border-bottom: none;
+}
+
+.ico.download:before {
+    display: inline-block !important;
+}
+
+.l-col.title-banner.bg-countries-big>div {
+    border: none !important;
+}
+
+.print-modal {
+    .fancybox__content {
+        width: 960px;
+        //height: 300px;
+    }
+}
+
+.fancybox-overlay {
+
+    .ui-widget,
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-state-active,
+    .ui-widget-content .ui-state-active {
+        border-width: 0px;
+        background-color: transparent;
+        background-image: none;
+        color: @eia-508-dark-grey;
+        outline: none;
+        //.font
+        .normal;
+    }
+
+    .ui-corner-left {
+        -moz-border-radius-topleft: 0;
+        -webkit-border-top-left-radius: 0;
+        -moz-border-radius-bottomleft: 0;
+        -webkit-border-bottom-left-radius: 0;
+    }
+}
+
+
+
+.filtered-term {
+    //.font;
+    display: block;
+    border-bottom: 1px solid shade(white, 16.8%);
+    padding: 1em 0 6px 0;
+    clear: both;
+    line-height: 1.5;
+    margin-bottom: 13px;
+    font-size: 1.875rem; // 30 pixels
+    color: @eia-508-dark-grey;
+}
+
+
+
+/*
+i {
+	font-style: normal;
+}
+*/
+//strong {
+//    font-weight: @bold; // 700
+//}
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** ***** base styles ***** ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+.print-version,
+.hide {
+    display: none;
+}
+
+/**
+* 1. Add the correct box sizing in Firefox.
+* 2. Show the overflow in Edge and IE.
+*/
+hr {
+    //	box-sizing: content-box; /* 1 */
+    //	height: 0; /* 1 */
+    overflow: visible;
+    /* 2 */
+    background: shade(white, 17%);
+    color: shade(white, 17%);
+    clear: both;
+    float: none;
+    width: 100%;
+    height: 1px;
+    margin: 1.45em 0;
+    border: none;
+
+    &.secondary {
+        background: @eia-blue;
+        color: @eia-blue;
+    }
+}
+
+
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** *** force line-break ** ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+// this forces break
+// <span class="line-break">Data Tools, Apps,</span> <span class="line-break">and Maps</span>
+// Line will break after the Apps,
+
+span {
+    &.line-break {
+        display: inline-block;
+    }
+
+    &.highlight {
+        background: @eia-yellow;
+    }
+}
+
+.message-updated {
+    &:after {
+        content: ' - Updated';
+        display: inline;
+        font-weight: @bold; // 700
+    }
+}
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** ***** **** responsiveness *** ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+
+
+.responsive-container {
+    //	margin:0;
+    //	display: inline-block;
+    //.font;
+    //color: @eia-508-dark-grey; // was #858585;
+    //font-size: var(--xsm); // 12 pixels
+
+    .date {
+        display: inline-block;
+        .normal;
+        color: @eia-508-dark-grey; // was #858585;
+    }
+
+    .label {
+        display: inline-block;
+        font-weight: @bold; // 700
+        color: @eia-508-dark-grey; // was #858585;
+    }
+}
+
+/* this should go to base */
+/* this should go to base */
+/* this should go to base */
+.formats {
+    font-style: italic;
+
+    a {
+        display: inline-block;
+
+        .ico {
+            &:before {
+                display: inline-block;
+            }
+
+            span {
+                margin: 0 0 0 2px;
+            }
+        }
+    }
+}
+
+.release-schedule,
+.source {
+    font-style: italic;
+}
+
+div:not(:is(.l-body-wrapper, .source)) {
+    font-style: normal;
+}
+
+.normal {
+    font-style: normal;
+    color: @eia-508-dark-grey;
+}
+
+.release-date {
+    font-style: italic;
+    color: @eia-508-dark-grey; // was #999;
+}
+
+.pipe {
+    padding: 0 8px;
+    color: @eia-dash-color;
+}
+
+.pipe-alt {
+    padding: 0;
+    color: @eia-dash-color;
+}
+
+
+/* Scripting
+========================================================================== */
+
+/**
+* Add the correct display in IE 9-.
+*/
+
+canvas {
+    display: inline-block;
+}
+
+/**
+* Add the correct display in IE.
+*/
+
+template {
+    display: none;
+}

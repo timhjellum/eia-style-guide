@@ -1,0 +1,33 @@
+.l-row {
+    &.l-two-col-even {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.l-row {
+
+    &.l-five-col-even,
+    &.l-four-col-even,
+    &.l-full-width-col,
+    &.l-report-header,
+    &.l-six-col-even,
+    &.l-three-col,
+    &.l-three-col-even,
+    &.l-two-col-even,
+    &.l-two-col-left,
+    &.l-two-col-left-narrow,
+    &.l-two-col-left-wide,
+    &.l-two-col-right,
+    &.l-two-col-right-wide {
+        padding: 0 !important;
+    }
+}
+
+.l-report-header-opendata,
+.l-report-header-petroleum-weekly,
+&~div {
+    &.l-row {
+        margin-top: 0 !important;
+    }
+}

@@ -1,0 +1,119 @@
+@media (min-width: 1px) {
+    .accordion-content {
+        font-size: @baseFontSize;
+
+        &>ul {
+            margin: 0 20px;
+            padding: 15px 0;
+            width: calc(100% - 40px);
+        }
+    }
+
+    .primary-alt {
+        .accordion-content {
+            ul {
+                &.numbered {
+                    &>li {
+                        padding-left: 80px;
+
+                        span {
+                            &.number {
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .accordion-content {
+        padding: 0;
+        margin: 0;
+
+
+        &>ol {
+            padding: 14px 0;
+
+            //margin: 5px 0 0 22px; moved to lists
+            //li {
+            //margin-bottom: 5px;
+            //}
+        }
+
+        &>ul {
+            padding: 14px 0;
+            margin: 0;
+            border-bottom: 1px dashed @eia-dash-color;
+
+            &:last-child {
+                border-bottom: none;
+                margin-bottom: 1.5em;
+            }
+
+            ul {
+                margin: 20px;
+                padding: 14px 0;
+
+                &.bullet {
+                    margin-left: 22px;
+                    margin-top: 5px;
+
+                    li {
+                        // move to bullet
+                        margin-bottom: 5px;
+                        list-style: disc;
+                    }
+                }
+
+                li {
+                    //        list-style: disc;
+                    //    }
+                    //}
+
+                    //ol {
+                    //	li {
+                    //		list-style-type: decimal; inherit from lists
+                    //	}
+                    li {
+                        &:first-child {
+                            margin-top: 0;
+                        }
+
+                        &.head {
+                            h3 {
+                                border-top: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .article {
+            padding: 20px 0 0 20px;
+
+            h2 {
+
+                font-weight: @bold;
+                line-height: 1.25;
+                margin: 1em 0 0;
+
+            }
+
+            blockquote {
+                &.accent {
+                    margin: 0;
+                    padding: 2.5em;
+                    background-color: @eia-508-notice-blue-bg-color;
+                }
+            }
+
+            figure {
+                margin: 0 0 1em 0;
+            }
+        }
+    }
+}

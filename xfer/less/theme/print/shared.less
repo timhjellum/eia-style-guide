@@ -1,0 +1,533 @@
+#page-sub-nav {
+    display: none !important;
+}
+
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+/* ***** ***** *****  messaging and banners  ***** ***** ***** */
+/* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+
+
+.title-banner h1,
+.l-report-header h1,
+.article h1 {
+    color: black;
+}
+
+.title-banner {
+    padding: 0 0 12pt 0;
+    margin: 12pt 0;
+    border-bottom: 1px solid #ccc;
+}
+
+
+h1 {
+    font-weight: @bold;
+    color: @eia-508-dark-grey;
+    font-size: 20pt;
+
+    line-height: 1.1;
+
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2 {
+    font-weight: @bold;
+    color: @eia-508-dark-grey;
+    font-size: 18pt;
+
+    line-height: 1.1;
+
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h3 {
+    font-weight: @extraBold;
+    color: @eia-508-dark-grey;
+    font-size: 16.5pt;
+
+    line-height: 1.1;
+
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h4 {
+    font-weight: @extraBold;
+    color: @eia-508-dark-grey;
+    font-size: 12pt;
+
+    line-height: 1.1;
+
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h5 {
+    font-weight: @bold;
+    color: @eia-508-dark-grey;
+    font-size: 12pt;
+
+    line-height: 1.1;
+
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+h6 {
+    font-weight: @mediumBold;
+    color: @eia-508-dark-grey;
+    font-size: 12pt;
+    line-height: 1.1;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.article-alt,
+.article,
+.primary-alt,
+.primary,
+.secondary-alt,
+.secondary,
+.accordion-content,
+.tab-content {
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 12pt;
+    font-weight: @regular;
+    font-family: "Jost", sans-serif;
+    line-height: 1.1;
+
+    li {
+        .ico {
+            margin-right: 8px;
+            display: inline-block;
+        }
+    }
+
+    &.no-sub-navigation {
+        margin-top: 24pt;
+    }
+}
+
+.ico {
+
+    &.down-arrow,
+    &.up-arrow {
+        &:before {
+            width: 12px;
+            height: 14px;
+            display: inline-block;
+            margin: -3px 0 0 4px;
+        }
+
+        span {
+            display: none;
+        }
+    }
+}
+
+
+.accordion-content {
+    ul {
+        li {
+            margin: 0 0 5px 0;
+        }
+    }
+}
+
+.secondary-alt,
+.secondary {
+    &.align-with-tabs {
+        margin-top: 30px;
+    }
+}
+
+.formats {
+    font-style: italic;
+
+    a {
+        display: inline-block;
+
+        .ico {
+            &:before {
+                display: inline-block;
+            }
+
+            span {
+                margin: 0 0 0 2px;
+            }
+        }
+    }
+}
+
+.indent {
+    margin-left: 35px;
+
+    &.indent {
+        margin-left: 70px;
+
+        &.indent {
+            margin-left: 100px;
+        }
+    }
+}
+
+.release-schedule,
+.formats,
+.source {
+    font-style: italic;
+}
+
+.normal {
+    font-style: normal;
+}
+
+.release-date {
+    font-style: italic;
+}
+
+// move to primary
+
+.primary-alt {
+    ul {
+        padding-left: 0;
+    }
+}
+
+.sub-section+p {
+    margin: 12pt 0 0 0;
+}
+
+.sub-section {
+    padding: 12pt 0 0 0;
+    margin: 12pt 0 0 0;
+    border-top: 1px solid @eia-dark-grey;
+}
+
+.sub-section-minor {
+    padding: 12pt 0 0 0;
+    margin: 12pt 0 0 0;
+    border-top: 1px dashed #cccccc;
+}
+
+.mobile-navigation {
+    display: none;
+}
+
+.screen-navigation {
+    display: none;
+}
+
+
+
+
+.list-items {
+    break-inside: avoid;
+    margin: 0 0 16.5pt 0;
+    padding: 0 0 16.5pt 0;
+    border-bottom: 1px dashed #ccc;
+
+    .list-items {
+        break-inside: unset;
+        margin: 0 0 16.5pt 0;
+        padding: 0 0 0 0;
+        border-bottom: none;
+    }
+}
+
+.secondary {
+    >ul {
+        margin: 0 0 34pt 0;
+
+        li {
+            &.head {
+                padding-bottom: 0;
+                margin-left: 0;
+                list-style: none;
+
+                h2,
+                h3,
+                h4 {
+                    margin: .25em 0;
+                    color: #333;
+                    font-weight: 800;
+                    line-height: 1.1;
+                    font-size: 16.5pt;
+                }
+            }
+        }
+    }
+}
+
+
+ul {
+    li {
+        &.head {
+            padding-bottom: 0;
+            margin-left: 0;
+            list-style: none;
+
+            h2,
+            h3,
+            h4 {
+                margin: .25em 0;
+                color: #333;
+                font-weight: 800;
+                line-height: 1.1;
+                font-size: 16.5pt;
+            }
+        }
+    }
+
+    &.updated-data-series,
+    &.upcoming-releases {
+        margin: 0 0 34pt 0;
+        padding: 0.5em 0 0 0;
+
+        li {
+            padding-bottom: 0.8em;
+            list-style-type: disc;
+            margin-left: 22px;
+
+            color: @eia-dark-grey;
+            font-weight: 800;
+            line-height: 1.1;
+            font-size: 12pt;
+
+
+            &.head {
+                padding-bottom: 0;
+                margin-left: 0;
+                list-style: none;
+
+                h2,
+                h3,
+                h4 {
+                    margin: .25em 0;
+                    color: #333;
+                    font-weight: 800;
+                    line-height: 1.1;
+                    font-size: 16.5pt;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.visualizations {
+    break-inside: avoid;
+
+    li {
+        list-style: none;
+    }
+
+    .l-row {
+        &.l-six-col-even {
+            display: flex;
+
+            &>.l-col {
+                width: 16.6%;
+            }
+        }
+    }
+
+    h3 {
+        min-height: unset;
+        color: @eia-dark-grey;
+        font-size: 12pt;
+        font-weight: 600;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 100px;
+        border: 2px solid #ccc;
+        //margin: 0 auto 20px auto;
+        margin: 4px auto 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: flex-end;
+        overflow: hidden;
+    }
+
+    h3 {
+        line-height: 110%;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        min-height: 50px;
+    }
+
+    a {
+        text-align: center;
+        display: block;
+        text-decoration: none;
+
+        &:after {
+            content: " (https://www.eia.gov"attr(href) ")";
+            font-size: 100%;
+        }
+    }
+
+    h2 {
+        a {
+            display: none;
+        }
+    }
+}
+
+
+.energy-education {
+    break-inside: avoid;
+    display: none;
+
+    .l-three-col-even {
+        display: flex;
+
+        li {
+            list-style: none;
+        }
+
+        .l-col {
+            &:nth-child(1) {
+                width: 33%;
+                flex-direction: row;
+                padding-bottom: 0;
+                border-bottom: none;
+                margin-bottom: 0;
+            }
+
+            &:nth-child(2) {
+                width: 33.333%;
+                flex-direction: row;
+                padding-bottom: 0;
+                border-bottom: none;
+                margin-bottom: 0;
+
+            }
+
+            &:nth-child(3) {
+                width: 33.333%;
+                flex-direction: row;
+                padding-bottom: 0;
+                border-bottom: none;
+                margin-bottom: 0;
+                align-items: center;
+            }
+        }
+    }
+
+
+
+    span {
+        float: left;
+        width: 75px;
+        height: 66px;
+        margin: 0;
+        margin: 0 1.4em 0 1em;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            padding: 0;
+            list-style: none;
+            margin-top: 10px;
+            text-align: left;
+            //width: 100%;
+            border: none;
+
+            h3 {
+                width: 100%;
+
+                a {
+                    width: 100%;
+                    line-height: 120%;
+                    color: @eia-508-link-color;
+                    font-weight: @semiBold;
+                }
+
+                p {
+                    margin: 0;
+                    color: @eia-black;
+                    font-weight: @regular; // 400
+                    font-size: 90%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.visualizations {
+    width: 100%;
+    display: table;
+    padding: 0 0 3em 0;
+    padding: 0 0 0 0;
+    border-bottom: 3em solid #fefefe;
+    list-style: none;
+
+    .l-col {
+        width: 16.666%;
+        float: left;
+    }
+}
+
+.energy-education {
+    width: 100%;
+    display: table;
+    padding: 0 0 3em 0;
+    padding: 0 0 0 0;
+    border-bottom: 3em solid #fefefe;
+    list-style: none;
+
+    .l-one-third-col {
+        width: 33.333%;
+        float: left;
+    }
+}
+
+.upcoming-releases {
+    li {
+        a {
+            color: #0096d7;
+        }
+    }
+}

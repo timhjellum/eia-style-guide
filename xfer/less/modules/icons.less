@@ -1,0 +1,78 @@
+a,
+i,
+span {
+	&.rss {
+		&:before {
+			height: 20px;
+			width: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			padding: 0;
+			margin: 0 3px 0 0;
+		}
+	}
+}
+
+.dashboard {
+	a {
+		.ico {
+			&.full-screen,
+			&.info,
+			&.printer,
+			&.download {
+				font-size: 0;
+				//text-indent: -9999px;
+				line-height: 0;
+			}
+		}
+	}
+}
+
+.plus-yellow {
+	.font;
+	font-weight: @bold; // 700
+	color: @eia-yellow;
+	font-size: 18px;
+}
+
+.plus-greyish-blue {
+	.font;
+	font-weight: @bold; // 700
+	color: @eia-greyish-blue;
+	font-size: var(--xsm); // 12 pixels
+}
+
+.up-arrow,
+.down-arrow {
+	&:before {
+		position: relative;
+		top: -2px;
+		display: inline-block;
+	}
+}
+
+ul {
+	&.icon-list {
+		li {
+			&.head {
+				margin: 0;
+			}
+
+			&.ico {
+				min-height: 44px;
+				display: inline-block;
+				width: 100%;
+				a[href] {
+					//display: table; this doesn't work of there's a (map) afterwards
+					display: block; // dont set: https://wwwdev.eia.gov/adaptive/tools/a-z/index.php?id=N
+					padding-left: 0;
+				}
+				&.telephone {
+					a[href] {
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}

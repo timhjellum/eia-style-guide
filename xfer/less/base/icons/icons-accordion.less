@@ -1,0 +1,19 @@
+.accordion {
+
+    h3 {
+        .ico {
+            &.expand {
+                &:before {
+                    .controls-icon(12px, 12px);
+                    .icon-remove();
+                }
+            }
+
+            &.collapse {
+                &:before {
+                    .controls-icon(12px, 12px);
+                }
+            }
+        }
+    }
+}

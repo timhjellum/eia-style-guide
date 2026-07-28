@@ -1,0 +1,207 @@
+
+    ul {
+        padding-left: 0;
+        margin: 0;
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+
+            li {
+                margin: 3px 0 0 17px;
+            }
+        }
+
+        ol {
+            padding: 0;
+            margin-top: 5px;
+            margin-left: 22px;
+
+            li {
+                list-style: decimal;
+                margin-bottom: 5px;
+
+                ul {
+                    li {
+                        list-style: disc;
+                    }
+                }
+            }
+        }
+
+        ul {
+            li {
+                margin-left: 22px;
+                list-style: disc;
+
+                ol {
+                    li {
+                        list-style: decimal;
+                    }
+                }
+
+                ul {
+                    li {
+                        list-style: circle;
+                    }
+                }
+            }
+        }
+    }
+
+    ul {
+        &.labeled-list {
+            .label {
+                display: inline-block;
+                width: 90px;
+
+                +.ico {
+                    margin-right: 12px;
+                }
+            }
+        }
+
+        //all ul styles
+        a {
+            color: @eia-508-link-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                color: @eia-508-link-color;
+            }
+        }
+    }
+
+    li {
+
+        //margin: 0 0 5px 0;
+        &.head,
+        &.sub-head {
+            margin-top: 12px;
+            //list-style: none;
+            font-weight: @bold;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            h3 {
+                border-top: none;
+            }
+        }
+
+
+        &.foot {
+            margin-top: 10px;
+
+            a {
+                font-weight: @bold;
+
+                &:after {
+                    content: "\00a0\203A";
+                }
+            }
+        }
+
+        &.hide-bullet {
+            list-style: none;
+        }
+
+        &.indent {
+            margin-left: 35px;
+
+            &.indent {
+                margin-left: 70px;
+
+                &.indent {
+                    margin-left: 100px;
+                }
+            }
+        }
+    }
+
+    [class^="article"],
+    [class^="primary"]:not([class^="primary-nav"]),
+    [class^="secondary"] {
+        margin-bottom: 2em;
+        width: 100%;
+
+        li {
+            p {
+                margin: 0;
+                padding: 0 !important;
+            }
+        }
+
+        &.no-sub-navigation {
+            margin-top: 2em;
+        }
+    }
+
+    [class^="article"] {
+        &>ul {
+
+            li {
+                margin: 3px 0 0 17px;
+                list-style: disc;
+            }
+        }
+    }
+
+    //.primary-alt,
+    //.primary,
+    //.secondary-alt,
+    //.secondary {
+    [class^="primary"]:not([class^="primary-nav"]),
+    [class^="secondary"] {
+        &>ul {
+            &>li {
+                list-style: none;
+
+                li {
+                    margin: 3px 0 0 17px;
+                    list-style: disc;
+                }
+            }
+        }
+    }
+
+    li {
+
+        &.list-spacer,
+        &.list-item,
+        &.head,
+        &.sub-head {
+            list-style: none !important;
+        }
+
+        &.head,
+        &.sub-head {
+            margin-left: 0; // !important;
+        }
+
+        &.list-spacer {
+            padding-top: .5em;
+            padding-bottom: .5em;
+            margin-top: 0;
+            margin-bottom: 0;
+
+            >ul {
+                margin-top: 0;
+                margin-bottom: 0;
+                //padding: 0;
+                //display: block;
+                //    &:first-child {
+                //        margin-top: 0;
+                //    }
+                //    &:last-child {
+                //        margin-bottom: 0;
+                //    }
+            }
+        }
+    }

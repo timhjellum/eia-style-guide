@@ -1,0 +1,571 @@
+@media (min-width: 1px) {
+    .l-row {
+        &.l-three-col-even {
+            &.energy-outlook-page-foot {
+                margin: 3em 0;
+                padding: 0;
+
+                a {
+                    &.back {
+                        &:before {
+                            content: "\2039\00a0";
+                            position: relative;
+                            top: -2px;
+                        }
+                    }
+                }
+
+                .l-col {
+                    width: 33.333%;
+
+                    h2 {
+                        font-size: 1.125rem; // 1.125rem;
+                        color: @eia-dark-grey;
+                        font-size: 1em;
+                        border-bottom: 1px solid #333;
+                        padding: 0 0 3px 0;
+                        margin: 0 0 8px 0;
+
+                        &:before {
+                            display: none;
+                        }
+                    }
+
+                    .form-container {
+                        padding-top: 3px;
+                    }
+
+                    fieldset {
+                        display: table !important;
+                        border: 1px solid @eia-blue  !important;
+                        background-color: @eia-white;
+                    }
+
+                    &:first-child {
+                        background-color: @eia-blue-module-background;
+                    }
+
+                    ul {
+                        //list-style-type: none;
+                        padding: 1em;
+
+                        li {
+                            list-style-type: none;
+                            padding: 0;
+                            margin: 0;
+
+                            ul {
+                                //list-style-type: disc;
+                                padding: 0 0 0 16px;
+
+                                li {
+                                    list-style-type: disc;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            border-bottom: none;
+            border-bottom-color: transparent;
+
+            h1 {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+    .link-button {
+        border: 1px solid @eia-508-link-color; // #0096d7;
+        border-radius: 1px;
+        font-weight: @bold; // 700
+        background: @eia-blue;
+        color: @eia-white;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+        line-height: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        text-transform: uppercase;
+        padding: 10px 12px 7px 12px;
+        display: inline-block;
+
+        &:hover {
+            border: 1px solid @eia-green; // #0096d7;
+            background-color: @eia-green;
+
+            padding: 10px 12px 7px 12px;
+            color: @eia-white;
+            text-decoration: none;
+        }
+
+        &.read-more {
+            margin-top: 1em;
+
+            &:after {
+                content: "\00a0\203A";
+            }
+        }
+    }
+
+
+
+
+
+
+    .outlooks {
+        p {
+            line-height: 1.6;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // add outlooks to title banner
+        // overide
+        .title-banner {
+            h1 {
+                border-bottom: none !important;
+                .header-font;
+                .normal;
+                font-size: 2rem !important;
+                //font-style: normal;
+                //font-weight: @regular; // 400
+                margin: 0;
+                padding: 0 !important;
+                width: 100%;
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+
+
+        /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+        /* ***** *** ordered list footnotes with superscript *** ***** */
+        /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+        ol {
+
+            /*
+			&.sup {
+                padding: 0 0 0 0;
+                margin-left: 0;
+                counter-reset: item;
+                list-style: none;
+
+                li {
+                    position: relative;
+                    display: block;
+                    padding: 0 0 6px 9px;
+
+
+                    &:before {
+                        content: counter(item) "";
+                        counter-increment: item;
+                        position: absolute;
+                        left: 0;
+                        top: -3px;
+                        font-size: 70%;
+                    }
+
+                    &:nth-child(n+10) {
+                        padding-left: 14px;
+                    }
+                }
+            }
+*/
+            &.roman {
+                padding: 0 0 0 0;
+                margin-left: 0;
+                counter-reset: countername;
+
+                li {
+                    counter-increment: countername;
+                    position: relative;
+                    display: block;
+                    padding: 0 0 6px 9px;
+
+                    &:before {
+                        content: counter(countername, upper-roman);
+                        position: absolute;
+                        left: -3px;
+                        top: -3px;
+                        font-size: 70%;
+                        text-align: end;
+                    }
+                }
+            }
+        }
+
+        ul {
+            &.bullet {
+                //list-style-type: disc;
+                padding: 0 0 0 16px;
+
+                li {
+                    list-style-type: disc;
+                }
+            }
+        }
+
+        .links {
+            ul {
+                li {
+                    list-style-type: disc;
+                    padding: 0.25em 0 0 0;
+                    margin-left: 20px;
+
+                    &.head {
+                        border-bottom:1px solid @eia-dash-color;
+
+                        font-size: 1.1875rem;
+
+                        font-weight: @bold; // 700
+                        margin: 0;
+                        list-style: none;
+                    }
+                }
+
+                &.bullet {
+                    margin-bottom: 1em;
+                }
+            }
+        }
+
+
+        /* we need to overide this 
+        .article {
+            blockquote {
+                margin-top: 0;
+                margin-bottom: 1.5em;
+                //padding: 0.5em 10px
+                padding-bottom: 2em; // 2em; // 32px
+            }
+        }*/
+
+        blockquote {
+            margin: 1.5em 0 1.5em 0;
+            //position: relative;
+            width: 100%;
+
+            /*
+		    &.l-width-small,
+            &.l-width-medium,
+            &.l-width-large,
+            &.l-width-xlarge {
+                width: 100%;
+            }
+*/
+            &.dark-bg {
+                background-color: @eia-508-link-color;
+                color: white;
+            }
+
+            &.light-bg {
+                //background-color: @eia-light-blue-60;
+                //background-color: #d9eff9;
+                //background-color: @eia-light-blue-60; // #d9eff9
+                background-color: tint(@eia-light-blue-60, 80%);
+            }
+
+            &.left {
+                float: none;
+                //margin-right: 12px;
+                //margin-left: 12px;
+            }
+
+            &.right {
+                float: none;
+                //margin-right: 12px;
+                //margin-left: 12px;
+            }
+
+            &.em {
+                .italic !important;
+
+                p {
+                    .italic !important;
+                }
+            }
+        }
+
+
+
+
+
+        /*
+		
+@media (min-width: 1px)
+.outlooks h2:before {
+    float: left;
+
+}
+@media (min-width: 1px)
+.outlooks h1:before, .outlooks h2:before, .outlooks h3:before {
+    background-color: #70d4ff;
+    content: "";
+    display: inline-block;
+    font-weight: @bold; // 700
+    line-height: 1.4;
+    margin-right: 4px;
+    margin-top: 4px;
+    transform: skew(-20deg,0deg);
+}
+		
+		
+
+*/
+
+
+        // mobile
+
+
+
+        a {
+            &.Figure-data {
+                padding: .5 0 1.5em;
+                display: block;
+
+                &>span {
+                    &:before {
+                        content: 'Figure data';
+                    }
+                }
+            }
+        }
+
+        .image-container {
+            &+p {
+                padding-bottom: 1em;
+            }
+        }
+
+        h1,
+        h2 {
+            &:before {
+                content: "";
+                background-color: #70d4ff;
+                transform: skew(-20deg, 0deg);
+                margin-top: 2px;
+                line-height: 1.4;
+                margin-right: 4px;
+                display: inline-block;
+                font-weight: @bold; // 700
+                /* margin-left: -14px; */
+            }
+
+            &:focus-visible {
+                &:before {
+                    outline: none;
+                }
+            }
+        }
+
+
+
+
+        h1 {
+            border-bottom:1px solid @eia-dash-color;
+            padding-top: 6px;
+            .font;
+            font-weight: @bold; // 700
+            margin-bottom: 1em;
+            position: relative;
+
+            &:before {
+                height: 1.2rem;
+                //margin-left: -14px;
+                width: 8px;
+            }
+
+            .link-button {
+                float: right;
+                padding: 10px;
+                border-radius: 1px;
+                font-weight: @bold; // 700
+                background: @eia-blue;
+                color: @eia-white;
+                text-align: center;
+                text-decoration: none;
+                white-space: nowrap;
+                line-height: 20px;
+                cursor: pointer;
+                font-size: 1rem;
+                text-transform: uppercase;
+                border: none;
+                top: -14px;
+                position: relative;
+
+                &:hover {
+                    background-color: @eia-green;
+                    text-decoration: none;
+                    padding: 10px;
+                    border-bottom: none;
+                    color: @eia-white;
+                }
+
+                &:after {
+                    content: "\00a0\203A";
+                }
+            }
+        }
+
+        h2 {
+            text-decoration: none;
+            border: none;
+            font-size: 1.5rem;
+            font-weight: @bold; // 700
+            margin: 0;
+            padding: 0.25em 0 0 0;
+            text-transform: none;
+
+            &:before {
+                //height: 0.9rem;
+                float: left;
+                //width: 6px;
+                margin-top: 4px;
+                height: 1.2rem;
+                width: 8px;
+            }
+
+            /*
+			&+ul {
+                margin-top: 1em;
+            }
+			*/
+        }
+
+        /*
+        h3 {
+            text-transform: none;
+
+            &:before {
+                height: 0.8rem;
+                width: 4px;
+            }
+        }
+
+        h4 {
+            .font;
+            font-style: italic;
+            font-weight: @bold; // 700
+        }
+*/
+    }
+}
+
+@media (min-width: 480px) {
+    .outlooks {
+
+        blockquote {
+            margin: 0 0 1.5em 0;
+
+            &.l-width-small {
+                width: 20%;
+            }
+
+            &.l-width-medium {
+                width: 30%;
+            }
+
+            &.l-width-large {
+                width: 40%;
+            }
+
+            &.l-width-xlarge {
+                width: 50%;
+            }
+
+
+            &.left {
+                float: left;
+                margin-right: 1.5em;
+                margin-left: 0;
+            }
+
+            &.right {
+                float: right;
+                margin-right: 0;
+                margin-left: 1.5em;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .outlooks {
+        h2 {
+            font-size: 1.1875rem;
+
+            &:before {
+                height: 0.9rem;
+                float: left;
+                width: 6px;
+                margin-top: 2px;
+            }
+        }
+    }
+}
+
+@media (min-width: 801px) {
+    .l-row {
+        &.l-three-col-even {
+            &.energy-outlook-page-foot {
+                background-color: #f4f4f4;
+                background-image: url(/outlooks/images/energy-outlook-foot.jpg);
+                background-position: 94% 100%;
+                background-repeat: no-repeat;
+                border-top: 3px solid @eia-blue;
+                min-height: 200px;
+
+                h2 {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .l-row {
+        &.l-three-col-even {
+            border-bottom: none;
+            border-bottom-color: transparent;
+        }
+    }
+
+    .outlooks {
+        h2 {
+            font-size: 1.0rem;
+        }
+
+        .accordion-content {
+            .article {
+                padding: 20px 0 0 24px;
+                margin: 0;
+
+                blockquote {
+                    padding: 2em;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

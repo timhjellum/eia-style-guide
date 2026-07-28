@@ -1,0 +1,46 @@
+table {
+	&[class*="basic"] {
+		border-bottom-color: #cccccc !important;
+		width: 100%;
+
+		caption {
+			font-weight: bolder;
+			width: 100%;
+			text-align: center;
+		}
+
+		thead {
+			th {
+				text-align: right;
+
+				&:first-child {
+					text-align: left !important;
+				}
+			}
+		}
+
+		tfoot {
+			//tr {
+			//&:last-child {
+			//    >* {
+			//        border-bottom: 1px solid #ccc !important;
+			//    }
+			//}
+			//}
+
+			td {
+				font-size: var(--sm);
+
+				a {
+					font-size: var(--sm);
+				}
+			}
+
+			&:first-child {
+				td {
+					border-top: 2px solid @eia-blue;
+				}
+			}
+		}
+	}
+}

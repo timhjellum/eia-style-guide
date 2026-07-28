@@ -1,0 +1,214 @@
+/* $$$$$       $$$$$ $$$$$$$$$$$$$$$ */
+/*  $$$$$     $$$$$  $$$$$$$$$$$$$$$ */
+/*   $$$$$   $$$$$   $$$$$           */
+/*    $$$$$ $$$$$    $$$$$           */
+/*     $$$$$$$$$     $$$$$$$$$$$$$$$ */
+/*     $$$$$$$$$     $$$$$$$$$$$$$$$ */
+/*    $$$$$ $$$$$              $$$$$ */
+/*   $$$$$   $$$$$             $$$$$ */
+/*  $$$$$     $$$$$  $$$$$$$$$$$$$$$ */
+/* $$$$$       $$$$$ $$$$$$$$$$$$$$$ */
+@media (min-width: 1px) {
+
+
+
+    .homepage {
+
+        /* accessibility */
+        .today-in-energy h3 a:focus,
+        .today-in-energy p a:focus {
+            background: #007eb5;
+            border-image: none;
+            color: #ffffff;
+            outline: none;
+            outline-offset: 0;
+            text-underline-offset: 3px;
+            text-decoration: underline 3px solid #ffc702;
+        }
+
+        .today-in-energy {
+            .date {
+                .date();
+
+
+
+
+            }
+
+            h3 {
+                margin: 0.25em 0;
+
+                a {
+                    font-weight: 600;
+                }
+            }
+
+            p {
+                margin-top: 0;
+                font-weight: @regular;
+            }
+
+            .release-schedule,
+            .source {
+                font-style: normal;
+            }
+
+            .source+hr {
+                .hard-return-dashed();
+            }
+
+            hr {
+                .hard-return-solid();
+            }
+
+            ul {
+                &.previous-today-in-energy {
+                    margin: 0;
+                    padding: 0.5em 0 0 0;
+
+                    li {
+                        padding-bottom: 0.8em;
+                        list-style-type: disc;
+                        margin-left: 22px;
+
+                        a {
+                            font-weight: @regular;
+                        }
+
+                        &.foot {
+                            padding-bottom: 1em;
+                            font-weight: @bold;
+                            list-style: none;
+                            margin: 0;
+
+                            a {
+                                font-weight: @bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .whats-new,
+        .coming-up,
+        .top-picks {
+            padding: 0;
+
+            li {
+                list-style: none;
+
+                font-weight: @regular;
+
+
+                &.date {
+                    .date();
+                    padding-bottom: 0.75em;
+                    padding-top: 2px;
+                    line-height: 1.1;
+                }
+
+                &.foot {
+                    font-weight: @bold;
+                }
+            }
+        }
+
+        .whats-new {
+            li {
+                &.date {
+                    margin-bottom: 0.75em;
+                }
+            }
+        }
+
+        .coming-up {
+            li {
+                &.foot {}
+            }
+        }
+
+        .coming-up,
+        .top-picks {
+            li {
+                margin-bottom: 0.75em;
+            }
+
+            margin-bottom: 2.5em;
+        }
+    }
+}
+
+/* $$$$$$$$$$$$$$  $$$$$       $$$$$ */
+/* $$$$$$$$$$$$$$  $$$$$$     $$$$$$ */
+/* $$$$$           $$$$$$$   $$$$$$$ */
+/* $$$$$           $$$$$$$$ $$$$$$$$ */
+/* $$$$$$$$$$$$$$  $$$$$$$$$$$$$$$$$ */
+/* $$$$$$$$$$$$$$  $$$$$ $$$$$ $$$$$ */
+/*          $$$$$  $$$$$  $$$  $$$$$ */
+/*          $$$$$  $$$$$   $   $$$$$ */
+/* $$$$$$$$$$$$$$  $$$$$       $$$$$ */
+/* $$$$$$$$$$$$$$  $$$$$       $$$$$ */
+
+@media (min-width: 480px) {
+    .homepage {}
+}
+
+/* $$$$$       $$$$$ */
+/* $$$$$$     $$$$$$ */
+/* $$$$$$$   $$$$$$$ */
+/* $$$$$$$$ $$$$$$$$ */
+/* $$$$$$$$$$$$$$$$$ */
+/* $$$$$$$$$$$$$$$$$ */
+/* $$$$$ $$$$$ $$$$$ */
+/* $$$$$  $$$  $$$$$ */
+/* $$$$$   $   $$$$$ */
+/* $$$$$       $$$$$ */
+/* $$$$$       $$$$$ */
+
+@media (min-width: 600px) {
+    .homepage {}
+}
+
+/* $$$$$ */
+/* $$$$$ */
+/* $$$$$ */
+/* $$$$$ */
+/* $$$$$ */
+/* $$$$$ */
+/* $$$$$ */
+/* $$$$$$$$$$$$$$$ */
+/* $$$$$$$$$$$$$$$ */
+/* $$$$$$$$$$$$$$$ */
+
+@media (min-width: 801px) {
+    .homepage {}
+}
+
+
+
+@media (min-width: 1025px) {
+    .homepage {
+        .today-in-energy {
+            ul {
+                &.previous-today-in-energy {
+                    margin: 0 0 2em 0;
+                    //padding: 0.5em 0 0 0;
+                }
+            }
+        }
+
+        .whats-new {
+            li {
+                &.date {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .coming-up,
+        .top-picks {
+            //margin-bottom: 1.5em;
+        }
+    }
+}

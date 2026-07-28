@@ -1,0 +1,47 @@
+@media print and (color) {
+    * {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+}
+
+@media print {
+    @page {
+        margin: 1cm;
+    }
+
+    @import "../../base/vars";
+    @import "../../base/mixins";
+    @import "./base";
+    @import "./accessibility";
+
+    @import "../../base/icons-vars";
+    @import "../../base/icons-mixins";
+    @import "../../base/icons";
+    @import "../../base/icons-list";
+    @import "../../base/icons-file-type";
+    @import "../../base/icons-social";
+    @import "../../base/icons-header";
+    @import "../../base/icons-logos";
+    @import "../../base/icons-weekly";
+    @import "../../base/icons-opendata";
+    @import '../../theme/tables/table-icons';
+
+    /* @import "../../modules/_banners"; */
+    @import "./modules";
+    @import "./article";
+    @import "./primary";
+    @import "./secondary";
+    @import "./shared";
+    @import "./header";
+    @import "./reports";
+    @import "./report-header";
+    @import "./accordion";
+    @import "./lists";
+    @import "./dont-print";
+    @import "./tables";
+    @import "./homepage";
+    @import "./contact";
+    @import "./layouts";
+}

@@ -1,0 +1,38 @@
+.calculated-numbered {
+    li {
+        list-style: none;
+    }
+    width: 100%;
+    &>li {
+        position: relative;
+
+        span {
+            &.number {
+                position: absolute;
+                top: 0;
+                left: 0;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+
+.numbered {
+    &>ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        &.sub-list,
+        &.list-spacer {
+            list-style: none;
+            margin: 0;
+        }
+
+        &>li {
+            list-style: none;
+            margin: 0;
+        }
+    }
+}
