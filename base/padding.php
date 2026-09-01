@@ -1,709 +1,116 @@
-<?php
-require_once '../includes/variables.inc';
-$globalTitle 	= 'U.S. Energy Information Administration (EIA)';
-?>
-<!doctype html>
-<html>
+<a id="scrollTop" href>
+	<div></div>
+</a>
+<aside>
+	<nav>
+		<ul>
+		</ul>
+	</nav>
+</aside>
+<main>
+	<h1 class="eia-h1">Padding</h1>
+	<section>
+		<div class="eia-container">
+			<!-- h2 class="eia-h2"></h2 -->
+			<p class="eia-para">A collection of utility classes to add spacing between elements and their content.</p>
 
-<head>
-	<?php include('../includes/head.inc'); ?>
-</head>
+			<h2 id="usage" class="">Usage</h2>
+			<p>To apply this component, add one of the following classes to a block element.</p>
+			<div>
+				<!-- p class="eia-para"></p -->
+				<h3 class="eia-h3">Example</h3>
+				<div class="eia-card">
+					<div class="l-margin-bottom eia-container-resizer">
 
-<body>
-	<?php include('../includes/header.inc'); ?>
-	<main>
-		<section>
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<div class="wrapper">
-						<h1 id="defaultMargin" class="header">Margin</h1>
-						<p class="eia-lead">A collection of utility classes to add spacing between elements.</p>
-						<h2 id="usage" class="uk-h3">Usage</h2>
-						<p>Add one or more of the following classes to any element to create the same vertical and/or
-							horizontal margin that a paragraph usually has.</p>
-						<div class="uk-overflow-auto">
-							<table class="uk-table uk-table-divider">
-								<thead>
-									<tr>
-										<th>Class</th>
-										<th>Description</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td><code>.margin</code></td>
-										<td>Adds top margin, if it is preceded by another element, and always bottom
-											margin.
-										</td>
-									</tr>
-									<tr>
-										<td><code>.margin-top</code></td>
-										<td>Adds top margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-bottom</code></td>
-										<td>Adds bottom margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-left</code></td>
-										<td>Adds left margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-right</code></td>
-										<td>Adds right margin.</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<!-- div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-					<div class="margin uk-alert-primary">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							labore et dolore magna aliqua.</p>
+						<table class="eia-table eia-table-divider">
+							<thead>
+								<tr>
+									<th>Class</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><code>.</code></td>
+									<td>Adds default padding to the element.</td>
+								</tr>
+								<tr>
+									<td><code>.-small</code></td>
+									<td>Adds small padding to the element.</td>
+								</tr>
+								<tr>
+									<td><code>.-large</code></td>
+									<td>Adds large padding to the element.</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<div class="margin uk-alert-primary">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							labore et dolore magna aliqua.</p>
+					<div class="eia-margin-medium">
+						<pre><code></code></pre>
 					</div>
-					<h3 class="uk-heading-small">HTML</h3>
-					<pre><code id="margin">&lt;div class="margin"&gt;&lt;/div&gt;</code></pre>
-					<p>
-						<button class="copy-element uk-button uk-button-primary" data-clipboard-action="cut"
-							data-clipboard-target="#margin">
-							Cut to clipboard
-						</button>
-					</p>
-				-->
+					<div class="uk-position-relative eia-margin-medium js-example">
+						<ul uk-tab="swiping: false" class="uk-tab">
+							<li class="uk-active"><a href="#" aria-expanded="true">Preview</a></li>
+							<li data-section="" aria-expanded="false">Markup</a></li>
+						</ul>
+
+						<ul class="uk-switcher uk-margin">
+							<li class="uk-active">
+								<div class="uk-background-muted uk-width-1-2@s">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</div>
+							</li>
+							<li>
+								<pre><code id="code-example-260" class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">" uk-background-muted uk-width-1-2@s"</span>&gt;
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+							</li>
+						</ul>
 					</div>
-					<!-- end main template area -->
-				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</section>
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<!-- $$$$$$$$$$  new section  $$$$$$$$$$ -->
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<section>
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<div class="wrapper">
-						<h2 class="eia-sub-heading">Small margin</h2>
-						<p>Add one of the following classes to add small spacing to block elements.</p>
-						<div class="uk-overflow-auto">
-							<table class="uk-table uk-table-divider">
-								<thead>
-									<tr>
-										<th>Class</th>
-										<th>Description</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td><code>.margin-small</code></td>
-										<td>Adds small top margin, if it is preceded by another element, and always
-											bottom margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-small-top</code></td>
-										<td>Adds small top margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-small-bottom</code></td>
-										<td>Adds small bottom margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-small-left</code></td>
-										<td>Adds small left margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-small-right</code></td>
-										<td>Adds small right margin.</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<!-- div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-						<div class="margin-small uk-alert-primary">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et
-								dolore magna aliqua.</p>
-						</div>
-						<div class="margin-small uk-alert-primary">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et
-								dolore magna aliqua.</p>
-						</div>
-
-						<h3 class="uk-heading-small">HTML</h3>
-						<pre><code id="margin-small">&lt;div class="margin-small"&gt;&lt;/div&gt;</code></pre>
-
-						<p>
-							<button class="copy-element uk-button uk-button-primary" data-clipboard-action="cut"
-								data-clipboard-target="#margin-small">
-								Cut to clipboard
-							</button>
-						</p>
-					-->
+					<hr class="uk-margin-large">
+					<h2 id="remove-padding" class="">Remove padding</h2>
+					<p>In some cases you want to remove padding from an element, rather than adding it. To do so, apply one of the following classes.</p>
+					<div>
+						<table class="eia-table eia-table-divider">
+							<thead>
+								<tr>
+									<th>Class</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><code>.-remove</code></td>
+									<td>Removes all padding from an element.</td>
+								</tr>
+								<tr>
+									<td><code>.-remove-top</code></td>
+									<td>Removes top padding from an element.</td>
+								</tr>
+								<tr>
+									<td><code>.-remove-bottom</code></td>
+									<td>Removes bottom padding from an element.</td>
+								</tr>
+								<tr>
+									<td><code>.-remove-left</code></td>
+									<td>Removes left padding from an element.</td>
+								</tr>
+								<tr>
+									<td><code>.-remove-right</code></td>
+									<td>Removes right padding from an element.</td>
+								</tr>
+								<tr>
+									<td><code>.-remove-vertical</code></td>
+									<td>Removes top and bottom padding from an element.</td>
+								</tr>
+								<tr>
+									<td><code>.-remove-horizontal</code></td>
+									<td>Removes left and right padding from an element.</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<!-- end main template area -->
 				</div>
-				<div class="grid-right"></div>
 			</div>
-			<!-- end master layout-->
-		</section>
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<!-- $$$$$$$$$$  new section  $$$$$$$$$$ -->
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<section>
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<div class="wrapper">
-						<h2 id="medium-margin" class="uk-h3">Medium margin</h2>
-						<p>Add one of the following classes to add medium spacing to block elements.</p>
-						<div class="uk-overflow-auto">
-							<table class="uk-table uk-table-divider">
-								<thead>
-									<tr>
-										<th>Class</th>
-										<th>Description</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td><code>.margin-medium</code></td>
-										<td>Adds medium top margin, if it is preceded by another element, and always
-											bottom margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-medium-top</code></td>
-										<td>Adds medium top margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-medium-bottom</code></td>
-										<td>Adds medium bottom margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-medium-left</code></td>
-										<td>Adds medium left margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-medium-right</code></td>
-										<td>Adds medium right margin.</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<!-- div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-						<div class="margin-medium uk-alert-primary">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et
-								dolore magna aliqua.</p>
-						</div>
-						<div class="margin-medium uk-alert-primary">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et
-								dolore magna aliqua.</p>
-						</div>
-
-						<h3 class="uk-heading-small">HTML</h3>
-						<pre><code id="margin-medium">&lt;div class="margin-medium"&gt;&lt;/div&gt;</code></pre>
-
-						<p>
-							<button class="copy-element uk-button uk-button-primary" data-clipboard-action="cut"
-								data-clipboard-target="#margin-medium">
-								Cut to clipboard
-							</button>
-						</p>
-					-->
-					</div>
-					<!-- end main template area -->
-				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</section>
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<!-- $$$$$$$$$$  new section  $$$$$$$$$$ -->
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<section>
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<div class="wrapper">
-						<h2 id="large-margin" class="uk-h3">Large margin</h2>
-						<p>Add one of the following classes to add large spacing to block elements.</p>
-						<div class="uk-overflow-auto">
-							<table class="uk-table uk-table-divider">
-								<thead>
-									<tr>
-										<th>Class</th>
-										<th>Description</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td><code>.margin-large</code></td>
-										<td>Adds large margin, if it is preceded by another element, and always bottom
-											margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-large-top</code></td>
-										<td>Adds large top margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-large-bottom</code></td>
-										<td>Adds large bottom margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-large-left</code></td>
-										<td>Adds large left margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-large-right</code></td>
-										<td>Adds large right margin.</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<!-- div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-						<div class="margin-large uk-alert-primary">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et
-								dolore magna aliqua.</p>
-						</div>
-						<div class="margin-large uk-alert-primary">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et
-								dolore magna aliqua.</p>
-						</div>
-
-						<h3 class="uk-heading-small">HTML</h3>
-						<pre><code id="margin-large">&lt;div class="margin-large"&gt;&lt;/div&gt;</code></pre>
-
-						<p>
-							<button class="copy-element uk-button uk-button-primary" data-clipboard-action="cut"
-								data-clipboard-target="#margin-large">
-								Cut to clipboard
-							</button>
-						</p>
-					-->
-					</div>
-					<!-- end main template area -->
-				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</section>
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<!-- $$$$$$$$$$  new section  $$$$$$$$$$ -->
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<section>
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<div class="wrapper">
-						<h2 id="x-large-margin" class="uk-h3">X-Large margin</h2>
-						<p>Add one of the following classes to add very large spacing to block elements.</p>
-						<div class="uk-overflow-auto">
-							<table class="uk-table uk-table-divider">
-								<thead>
-									<tr>
-										<th>Class</th>
-										<th>Description</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td><code>.margin-xlarge</code></td>
-										<td>Adds larger margin, if it is preceded by another element, and always bottom
-											margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-xlarge-top</code></td>
-										<td>Adds larger top margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-xlarge-bottom</code></td>
-										<td>Adds larger bottom margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-xlarge-left</code></td>
-										<td>Adds larger left margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-xlarge-right</code></td>
-										<td>Adds larger right margin.</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<!-- div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-						<div class="margin-xlarge uk-alert-primary">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et
-								dolore magna aliqua.</p>
-						</div>
-						<div class="margin-xlarge uk-alert-primary">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et
-								dolore magna aliqua.</p>
-						</div>
-
-						<h3 class="uk-heading-small">HTML</h3>
-						<pre><code id="margin-xlarge">&lt;div class="margin-xlarge"&gt;&lt;/div&gt;</code></pre>
-
-						<p>
-							<button class="copy-element uk-button uk-button-primary" data-clipboard-action="cut"
-								data-clipboard-target="#margin-xlarge">
-								Cut to clipboard
-							</button>
-						</p>
-					-->
-					</div>
-					<!-- end main template area -->
-				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</section>
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<!-- $$$$$$$$$$  new section  $$$$$$$$$$ -->
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<section>
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<div class="wrapper">
-						<h2 id="remove-margin" class="uk-h3">Remove margin</h2>
-						<p>Add one of the following classes to remove margin from block elements.</p>
-						<div class="uk-overflow-auto">
-							<table class="uk-table uk-table-divider">
-								<thead>
-									<tr>
-										<th>Class</th>
-										<th>Description</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td><code>.margin-remove</code></td>
-										<td>Removes all margins.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-remove-top</code></td>
-										<td>Removes top margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-remove-bottom</code></td>
-										<td>Removes bottom margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-remove-left</code></td>
-										<td>Removes left margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-remove-right</code></td>
-										<td>Removes right margin.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-remove-vertical</code></td>
-										<td>Removes all vertical margins.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-remove-adjacent</code></td>
-										<td>Removes the top margin of the directly succeeding element.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-remove-first-child</code></td>
-										<td>Removes the top margin of the first child element.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-remove-last-child</code></td>
-										<td>Removes the bottom margin of the last child element.</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-
-						<!-- div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-						<div class="margin-remove uk-alert-primary">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et
-								dolore magna aliqua.</p>
-						</div>
-						<div class="margin-remove uk-alert-primary">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et
-								dolore magna aliqua.</p>
-						</div>
-
-						<h3 class="uk-heading-small">HTML</h3>
-						<pre><code id="margin-remove">&lt;div class="margin-remove"&gt;&lt;/div&gt;</code></pre>
-
-						<p>
-							<button class="copy-element uk-button uk-button-primary" data-clipboard-action="cut"
-								data-clipboard-target="#margin-remove">
-								Cut to clipboard
-							</button>
-						</p>
-					-->
-					</div>
-					<!-- end main template area -->
-				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</section>
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<!-- $$$$$$$$$$  new section  $$$$$$$$$$ -->
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<section>
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<div class="wrapper">
-						<h2 id="auto-margin" class="uk-h3">Auto margin</h2>
-						<p>Add one of the following classes to set auto margin. This can be useful to center or
-							otherwise align block
-							elements with a fixed width as well as flex elements.</p>
-						<div class="uk-overflow-auto">
-							<table class="uk-table uk-table-divider">
-								<thead>
-									<tr>
-										<th>Class</th>
-										<th>Description</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td><code>.margin-auto</code></td>
-										<td>Sets left and right margin to auto, horizontally centering block and flex
-											elements.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-auto-top</code></td>
-										<td>Sets top margin to auto, pushing block and flex elements to the bottom.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-auto-bottom</code></td>
-										<td>Sets bottom margin to auto, pushing block and flex elements to the top.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-auto-left</code></td>
-										<td>Sets left margin to auto, pushing block and flex elements to the right.</td>
-									</tr>
-									<tr>
-										<td><code>.margin-auto-right</code></td>
-										<td>Sets right margin to auto, pushing block and flex elements to the left</td>
-									</tr>
-									<tr>
-										<td><code>.margin-auto-vertical</code></td>
-										<td>Sets top and bottom margin to auto, vertically centering only flex elements.
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<!-- end main template area -->
-				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</section>
-		
-
-
-		<section id="introduction">
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<div class="wrapper">
-						<h1 class="header">Introduction</h1>
-					</div>
-					<!-- end main template area -->
-				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</section>
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<!-- $$$$$$$$$$  new section  $$$$$$$$$$ -->
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<section id="fileTypes">
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<div id="FileTypes" class="fp-auto-height uk-child-width-1-4 uk-grid-small uk-margin-xlarge-bottom"
-						uk-grid></div>
-					<!-- end main template area -->
-				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</section>
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<!-- $$$$$$$$$$  new section  $$$$$$$$$$ -->
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<section id="grid">
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<div id="Grid" class="fp-auto-height uk-child-width-1-4 uk-grid-small uk-margin-xlarge-bottom"
-						uk-grid></div>
-					<!-- end main template area -->
-				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</section>
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<!-- $$$$$$$$$$  new section  $$$$$$$$$$ -->
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<section id="list">
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<div id="List" class="fp-auto-height uk-child-width-1-4 uk-grid-small uk-margin-xlarge-bottom"
-						uk-grid></div>
-					<!-- end main template area -->
-				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</section>
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<!-- $$$$$$$$$$  new section  $$$$$$$$$$ -->
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<section id="menu">
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<div id="Menu" class="fp-auto-height uk-child-width-1-4 uk-grid-small uk-margin-xlarge-bottom"
-						uk-grid></div>
-					<!-- end main template area -->
-				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</section>
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<!-- $$$$$$$$$$  new section  $$$$$$$$$$ -->
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<section id="social">
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<div id="Social" class="fp-auto-height uk-child-width-1-4 uk-grid-small uk-margin-xlarge-bottom"
-						uk-grid></div>
-					<!-- end main template area -->
-				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</section>
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<!-- $$$$$$$$$$  new section  $$$$$$$$$$ -->
-		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-		<footer>
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div><!-- left nav --></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<h1>footer</h1>
-					<!-- end main template area -->
-				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</footer>
-	</main>
-</body>
-
-</html>
+		</div>
+	</section>

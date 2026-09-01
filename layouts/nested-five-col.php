@@ -1,32 +1,22 @@
-<?php
+<?php /*
 require_once '../includes/variables.inc';
 $globalTitle 	= 'U.S. Energy Information Administration (EIA)';
 $section		= 'Layouts';
 $subSection		= 'Home';
-?>
-<!doctype html>
-<html>
+*/ ?>
 
-<head>
-	<?php include('../includes/head.inc'); ?>
-</head>
 
-<body>
-	<?php include('../includes/header.inc'); ?>
-	<main>
-		<section id="top">
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<!-- content here -->
 
-					<script>
+
+
+
+
+
+<div class="grid-main">
+<!-- start main template area -->
+<!-- content here -->
+
+<script>
 					function baseDivFullWidthCol() {
 						var baseDiv = document.getElementById('baseDivStyleSwitcher')
 						baseDiv.setAttribute('class', 'l-row l-full-width-col nested-example');
@@ -213,224 +203,221 @@ $subSection		= 'Home';
 						var secondColumn = document.getElementById('secondColumnStyleSwitcher')
 						secondColumn.setAttribute('class', 'l-row l-six-col-even nested-example');
 					}
-					</script>
-					<h2 class="header">Base Layout</h2>
-					<div class="thumb-switcher column-one">
-						<div class="seven">
-							<a onclick="baseDivTwoColLeftNarrow()">Two Columns<br />Left Narrow<br />(25% 75%)<br />
+</script>
+<h2 class="header">Base Layout</h2>
+<div class="thumb-switcher column-one">
+<div class="seven">
+<a onclick="baseDivTwoColLeftNarrow()">Two Columns<br />Left Narrow<br />(25% 75%)<br />
 								l-two-col-left-narrow
-							</a>
-						</div>
-						<div class="seven">
-							<a onclick="baseDivTwoColLeft()">
+</a>
+</div>
+<div class="seven">
+<a onclick="baseDivTwoColLeft()">
 								Two Columns<br />33/66-Split<br />(33.333% 66.666%)<br />
 								l-two-col-left
-							</a>
-						</div>
-						<div class="seven">
-							<a onclick="baseDivTwoColRightWide()">
+</a>
+</div>
+<div class="seven">
+<a onclick="baseDivTwoColRightWide()">
 								Two Columns<br />42/58-Split<br />(41.666% 58.333%)<br />
 								l-two-col-right-wide
-							</a>
-						</div>
-						<div class="seven">
-							<a onclick="baseDivTwoColEven()">
+</a>
+</div>
+<div class="seven">
+<a onclick="baseDivTwoColEven()">
 								Two Columns<br />Even<br />(50% 50%)<br />
 								l-two-col-even
-							</a>
-						</div>
-						<div class="seven">
-							<a onclick="baseDivTwoColLeftWide()">
+</a>
+</div>
+<div class="seven">
+<a onclick="baseDivTwoColLeftWide()">
 								Two Columns<br />58/42-Split<br />(58.333% 41.666%)<br />
 								l-two-col-left-wide
-							</a>
-						</div>
-						<div class="seven">
-							<a onclick="baseDivTwoColRight()">
+</a>
+</div>
+<div class="seven">
+<a onclick="baseDivTwoColRight()">
 								Two Columns<br />66/33-Split<br />(66.666% 33.333%)<br />
 								l-two-col-right
-							</a>
-						</div>
-						<div class="seven">
-							<a onclick="baseDivTwoColRightNarrow()">
+</a>
+</div>
+<div class="seven">
+<a onclick="baseDivTwoColRightNarrow()">
 								Two Columns<br />Right Narrow<br />(75% 25%)<br />
 								l-two-col-right-narrow
-							</a>
-						</div>
+</a>
+</div>
 
-						<a onclick="baseDivThreeCol()">
+<a onclick="baseDivThreeCol()">
 							Three Columns<br />(25% 50% 25%)<br />
 							l-three-col
-						</a>
-						<a onclick="baseDivThreeColEven()">
+</a>
+<a onclick="baseDivThreeColEven()">
 							Three Columns<br />Even<br />(33.333% 33.333% 33.333%)<br />
 							l-three-col-even
-						</a>
+</a>
 
 
-						<a onclick="baseFourThreeColEven()">
+<a onclick="baseFourThreeColEven()">
 							Four Columns<br />Even<br />(25% 25% 25% 25%)<br />
 							l-four-col-even
-						</a>
+</a>
 
 
-						<a onclick="baseFiveThreeColEven()">
+<a onclick="baseFiveThreeColEven()">
 							Five Columns<br />Even<br />(20% 20% 20% 20% 20%)<br />
 							l-five-col-even
-						</a>
+</a>
 
 
-						<a onclick="baseDivSixColEven()">
+<a onclick="baseDivSixColEven()">
 							Six Columns<br />Even<br />(18.25% 18.25% 18.25% 18.25% 18.25% 18.25%)<br />
 							l-six-col-even
-						</a>
+</a>
 
-						<h2 class="header">Column Two</h2>
-						<div class="thumb-switcher column-two">
-							<div class="seven">
-								<a onclick="firstColumnTwoColLeftNarrow()">Two Columns<br />Left Narrow<br />(25% 75%)<br />
+<h2 class="header">Column Two</h2>
+<div class="thumb-switcher column-two">
+<div class="seven">
+<a onclick="firstColumnTwoColLeftNarrow()">Two Columns<br />Left Narrow<br />(25% 75%)<br />
 									l-two-col-left-narrow
-								</a>
-							</div>
-							<div class="seven">
-								<a onclick="firstColumnTwoColLeft()">
+</a>
+</div>
+<div class="seven">
+<a onclick="firstColumnTwoColLeft()">
 									Two Columns<br />33/66-Split<br />(33.333% 66.666%)<br />
 									l-two-col-left
-								</a>
-							</div>
-							<div class="seven">
-								<a onclick="firstColumnTwoColRightWide()">
+</a>
+</div>
+<div class="seven">
+<a onclick="firstColumnTwoColRightWide()">
 									Two Columns<br />42/58-Split<br />(41.666% 58.333%)<br />
 									l-two-col-right-wide
-								</a>
-							</div>
-							<div class="seven">
-								<a onclick="firstColumnTwoColEven()">
+</a>
+</div>
+<div class="seven">
+<a onclick="firstColumnTwoColEven()">
 									Two Columns<br />Even<br />(50% 50%)<br />
 									l-two-col-even
-								</a>
-							</div>
-							<div class="seven">
-								<a onclick="firstColumnTwoColLeftWide()">
+</a>
+</div>
+<div class="seven">
+<a onclick="firstColumnTwoColLeftWide()">
 									Two Columns<br />58/42-Split<br />(58.333% 41.666%)<br />
 									l-two-col-left-wide
-								</a>
-							</div>
-							<div class="seven">
-								<a onclick="firstColumnTwoColRight()">
+</a>
+</div>
+<div class="seven">
+<a onclick="firstColumnTwoColRight()">
 									Two Columns<br />66/33-Split<br />(66.666% 33.333%)<br />
 									l-two-col-right
-								</a>
-							</div>
-							<div class="seven">
-								<a onclick="firstColumnTwoColRightNarrow()">
+</a>
+</div>
+<div class="seven">
+<a onclick="firstColumnTwoColRightNarrow()">
 									Two Columns<br />Right Narrow<br />(75% 25%)<br />
 									l-two-col-right-narrow
-								</a>
-							</div>
-						</div>
-						<h2 class="header">Column 3</h2>
-						<div class="thumb-switcher column-thr">
-							<div class="seven">
-								<a onclick="secondColumnTwoColLeftNarrow()">Two Columns<br />Left Narrow<br />(25% 75%)<br />
+</a>
+</div>
+</div>
+<h2 class="header">Column 3</h2>
+<div class="thumb-switcher column-thr">
+<div class="seven">
+<a onclick="secondColumnTwoColLeftNarrow()">Two Columns<br />Left Narrow<br />(25% 75%)<br />
 									l-two-col-left-narrow
-								</a>
-							</div>
-							<div class="seven">
-								<a onclick="secondColumnTwoColLeft()">
+</a>
+</div>
+<div class="seven">
+<a onclick="secondColumnTwoColLeft()">
 									Two Columns<br />33/66-Split<br />(33.333% 66.666%)<br />
 									l-two-col-left
-								</a>
-							</div>
-							<div class="seven">
-								<a onclick="secondColumnTwoColRightWide()">
+</a>
+</div>
+<div class="seven">
+<a onclick="secondColumnTwoColRightWide()">
 									Two Columns<br />42/58-Split<br />(41.666% 58.333%)<br />
 									l-two-col-right-wide
-								</a>
-							</div>
-							<div class="seven">
-								<a onclick="secondColumnTwoColEven()">
+</a>
+</div>
+<div class="seven">
+<a onclick="secondColumnTwoColEven()">
 									Two Columns<br />Even<br />(50% 50%)<br />
 									l-two-col-even
-								</a>
-							</div>
+</a>
+</div>
 
-							<div class="seven">
-								<a onclick="secondColumnTwoColLeftWide()">
+<div class="seven">
+<a onclick="secondColumnTwoColLeftWide()">
 									Two Columns<br />58/42-Split<br />(58.333% 41.666%)<br />
 									l-two-col-left-wide
-								</a>
-							</div>
+</a>
+</div>
 
 
-							<div class="seven">
-								<a onclick="secondColumnTwoColRight()">
+<div class="seven">
+<a onclick="secondColumnTwoColRight()">
 									Two Columns<br />66/33-Split<br />(66.666% 33.333%)<br />
 									l-two-col-right
-								</a>
-							</div>
-							<div class="seven">
-								<a onclick="secondColumnTwoColRightNarrow()">
+</a>
+</div>
+<div class="seven">
+<a onclick="secondColumnTwoColRightNarrow()">
 									Two Columns<br />Right Narrow<br />(75% 25%)<br />
 									l-two-col-right-narrow
-								</a>
-							</div>
-						</div>
+</a>
+</div>
+</div>
 
-						<div class="l-row l-two-col-even nested-example" id="baseDivStyleSwitcher">
-							<div class="l-col">
-								<h4>column 1</h4>
-								<div class="l-row l-five-col-even nested-example">
-									<div class="l-col hide-overflow">
+<div class="l-row l-two-col-even nested-example" id="baseDivStyleSwitcher">
+<div class="l-col">
+<h4>column 1</h4>
+<div class="l-row l-five-col-even nested-example">
+<div class="l-col hide-overflow">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
-									</div>
-									<div class="l-col hide-overflow">
+</div>
+<div class="l-col hide-overflow">
 
-										<h4>column 2b</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
-									</div>
-									<div class="l-col hide-overflow">
-										<h4>column 2c</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
-									</div>
-									<div class="l-col hide-overflow">
-										<h4>column 2d</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
-									</div>
-									<div class="l-col hide-overflow">
-										<h4>column 2d</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
-									</div>
+<h4>column 2b</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
+</div>
+<div class="l-col hide-overflow">
+<h4>column 2c</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
+</div>
+<div class="l-col hide-overflow">
+<h4>column 2d</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
+</div>
+<div class="l-col hide-overflow">
+<h4>column 2d</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
+</div>
 
-								</div>
-							</div>
-							<div class="l-col">
-								<h4>column 2</h4>
-								<div class="l-row l-five-col-even nested-example">
-									<div class="l-col hide-overflow">
-										<h4>column 3a</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
-									</div>
-									<div class="l-col hide-overflow">
-										<h4>column 3b</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
-									</div>
-									<div class="l-col hide-overflow">
-										<h4>column 3c</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
-									</div>
-									<div class="l-col hide-overflow">
-										<h4>column 3d</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
-									</div>
-									<div class="l-col hide-overflow">
-										<h4>column 3e</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- end content -->
-					<!-- end main template area -->
-				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</section>
-		<?php include('../includes/footer.inc'); ?>
-	</main>
+</div>
+</div>
+<div class="l-col">
+<h4>column 2</h4>
+<div class="l-row l-five-col-even nested-example">
+<div class="l-col hide-overflow">
+<h4>column 3a</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
+</div>
+<div class="l-col hide-overflow">
+<h4>column 3b</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
+</div>
+<div class="l-col hide-overflow">
+<h4>column 3c</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
+</div>
+<div class="l-col hide-overflow">
+<h4>column 3d</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
+</div>
+<div class="l-col hide-overflow">
+<h4>column 3e</h4><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.<div class="fade"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end content -->
+
+
+</section>
+
+</main>
 </body>
 
 </html>

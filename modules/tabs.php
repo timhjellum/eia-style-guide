@@ -1,39 +1,13 @@
-<?php
-require_once '../includes/variables.inc';
-$globalTitle 	= 'U.S. Energy Information Administration (EIA)';
-$section		= 'Layouts';
-$subSection		= 'Home';
-?>
-<!doctype html>
-<html>
 
-<head>
-	<?php include('../includes/head.inc'); ?>
-</head>
+  <h1 class="eia-h1">Tabs</h1>
+  <section>
+    <div class="eia-container">
+      <!-- h2 class="eia-h2">Default</h2 -->
+      <!-- p class="eia-para"></p -->
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer">
 
-<body>
-	<?php include('../includes/header.inc'); ?>
-	<main>
-		<section id="top">
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<!-- content here -->
-			<div class="wrapper">
-				<h1 class="header"><?=$section?></h1>
-				<p class="para"></p>
-</div>
-<!-- end top template -->
-<!-- content here -->
-
-
-<h2 class="header">Default</h2>
 
 <p>Tabs are generally used to break content into multiple sections that can be swapped to save space, much like an accordion.</p>
 <p>Tabs have a particular set of markup that must be used in order for them to work properly:</p>
@@ -102,12 +76,12 @@ $subSection		= 'Home';
 	</ul>
 
 	<!-- HTML -->
-	<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-	<div class="uk-margin-medium">
+	<h3 class="eia-h3">HTML</h3>
+	<div class="eia-margin-medium">
 		<div class="tabs">
 			<ul>
-				<li><a href="#tabOne">Tab One</a></li>
-				<li><a href="#tabTwo">Tab Two</a></li>
+				<li data-section="tabOne">Tab One</a></li>
+				<li data-section="tabTwo">Tab Two</a></li>
 			</ul>
 			<div id="tabOne">
 				<div class="tab-content">
@@ -122,8 +96,8 @@ $subSection		= 'Home';
 		</div>
 	</div>
 	<!-- HTML -->
-	<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-	<div class="uk-margin-medium">
+	<h3 class="eia-h3">HTML</h3>
+	<div class="eia-margin-medium">
 		<pre><code class="language-html" id="tabs">&lt;div class="tabs"&gt;
   &lt;ul&gt;
 	&lt;li&gt;&lt;a href="#tabOne"&gt;Tab One&lt;/a&gt;&lt;/li&gt;
@@ -143,8 +117,8 @@ $subSection		= 'Home';
 	</div>
 	<!-- Copy Button -->
 	<p>
-		<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#tabs">
-			<span uk-icon="copy"></span>Copy to clipboard
+		<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#tabs">
+			<span></span>Copy to clipboard
 		</button>
 	</p>
 </div>
@@ -152,8 +126,8 @@ $subSection		= 'Home';
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
-	<div class="wrapper">
+<section class="dilly">
+	<div class="eia-container">
 
 
 
@@ -200,8 +174,8 @@ $subSection		= 'Home';
 	</div>
 	<!-- Copy Button -->
 	<p>
-		<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#fakeTabsResponsive">
-			<span uk-icon="copy"></span>Copy to clipboard
+		<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#fakeTabsResponsive">
+			<span></span>Copy to clipboard
 		</button>
 	</p>
 	</div>
@@ -209,8 +183,8 @@ $subSection		= 'Home';
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$$$      dilly      $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="dilly">
-	<div class="wrapper">
+<section class="dilly">
+	<div class="eia-container">
 
 
 
@@ -245,19 +219,9 @@ $subSection		= 'Home';
 &lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#subTabNavigation">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#subTabNavigation">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
-	</div>
-</section>
-<!-- end content -->
-				<!-- start bottom template -->
-				</div>
-		</div>
-		<div class="grid-right"></div>
-		<?php include('../includes/footer.inc'); ?>
-	</div>
-</body>
-
-</html>
+</div>
+	</section>

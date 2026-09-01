@@ -1,7 +1,0 @@
-@import '../../base/variables/colors';
-@import '../../base/variables/font-sizes';
-@import '../../base/variables/responsive';
-/* @import '../../base/mixins'; */
-@import './styles';
-@import '../outlooks/shared';
-@import '../outlooks/page-footer';

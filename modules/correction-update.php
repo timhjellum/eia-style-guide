@@ -1,63 +1,22 @@
-<?php
-require_once '../includes/variables.inc';
-$globalTitle 	= 'U.S. Energy Information Administration (EIA)';
-$section		= 'Layouts';
-$subSection		= 'Home';
-?>
-<!doctype html>
-<html>
 
-<head>
-	<?php include('../includes/head.inc'); ?>
-</head>
-
-<body>
-	<?php include('../includes/header.inc'); ?>
-	<main>
-		<section id="top">
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
+  <h1 class="eia-h1">Correction Update</h1>
+  <section>
+    <div class="eia-container">
+      <!-- h2 class="eia-h2"></h2 -->
+      <!-- p class="eia-para"></p -->
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer">
+			
+			<a href="#correctionUpdate" class="enlarge-content">Correction Update
+				<div id="correctionUpdate" style="display: none">
+					<span class="date">Month xx, 20xx</span>
+					<h2>H2 Lorem Ipsum Dolor</h2>
+					<p class="eia-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.</p>
 				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<!-- content here -->
-			<div class="wrapper">
-				<h1 class="header"><?=$section?></h1>
-				<p class="para"></p>
-</div>
-<!-- end top template -->
-<!-- content here -->
-
-
-
-
-
-		
-
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<!-- $$$$$$$$ Correction Update $$$$$$$$ -->
-<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="correctionUpdate">
-	<div class="wrapper">
-
-		<h1 class="header">Correction Update</h1>
-		<p class="para"></p>
-		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-		<div class="eia-card">
-			<a href="#correctionUpdate" class="enlarge-content">Correction Update</a>
-			<div id="correctionUpdate" style="display: none">
-				<span class="date">Month xx, 20xx</span>
-				<h2 class="eia">H2 Lorem Ipsum Dolor</h2>
-				<p class="eia">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.</p>
-			</div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="CorrectionUpdate">&lt;a href="#correctionUpdate" class="enlarge-content"&gt;Correction Update&lt;/a&gt;
 &lt;div id="correctionUpdate" style="display: none"&gt;
   &lt;span class="date"&gt;Month xx, 20xx&lt;/span&gt;
@@ -66,8 +25,8 @@ $subSection		= 'Home';
 &lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#CorrectionUpdate">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#CorrectionUpdate">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
 	</div>
@@ -75,23 +34,23 @@ $subSection		= 'Home';
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!-- $$$$$$$$ Revision Notice $$$$$$$$$$ -->
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-<section id="revisionNotice">
-	<div class="wrapper">
+<section class="revisionNotice">
+	<div class="eia-container">
 
-		<h1 class="header">Revision Notice</h1>
-		<p class="para"></p>
+		<h1 class="eia-h1">Revision Notice</h1>
+		<p class="eia-para"></p>
 		<!-- Example -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
+		<h3 class="eia-h3">Example</h3>
 		<div class="eia-card">
-			<a href="#revisionNotice" class="enlarge-content">Revision Notice</a>
-			<div id="revisionNotice" style="display: none">
-				<span class="date">Month xx, 20xx</span>
-				<h2 class="eia">H2 Lorem Ipsum Dolor</h2>
-				<p class="eia">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.</p>
-			</div>
+			<a href="#revisionNotice" class="enlarge-content">Revision Notice
+				<div id="revisionNotice" style="display: none">
+					<span class="date">Month xx, 20xx</span>
+					<h2>H2 Lorem Ipsum Dolor</h2>
+					<p class="eia-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem massa, semper nec eros a, lacinia porttitor nunc. Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien. Suspendisse sagittis risus eu sem suscipit sodales. Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus. Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis. Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem. Vestibulum ut odio id nulla commodo dignissim. Proin a pharetra tellus.</p>
+				</div>
 		</div>
 		<!-- HTML -->
-		<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
+		<h3 class="eia-h3">HTML</h3>
 		<pre><code class="language-html" id="RevisionNotice">&lt;a href="#revisionNotice" class="enlarge-content"&gt;Revision Notice&lt;/a&gt;
 &lt;div id="revisionNotice" style="display: none"&gt;
   &lt;span class="date"&gt;Month xx, 20xx&lt;/span&gt;
@@ -100,19 +59,9 @@ $subSection		= 'Home';
 &lt;/div&gt;</code></pre>
 		<!-- Copy Button -->
 		<p>
-			<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#RevisionNotice">
-				<span uk-icon="copy"></span>Copy to clipboard
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#RevisionNotice">
+				<span></span>Copy to clipboard
 			</button>
 		</p>
-	</div>
-</section>
-<!-- end content -->
-				<!-- start bottom template -->
-				</div>
-		</div>
-		<div class="grid-right"></div>
-		<?php include('../includes/footer.inc'); ?>
-	</div>
-</body>
-
-</html>
+</div>
+	</section>

@@ -1,610 +1,554 @@
-<?php
-require_once '../includes/variables.inc';
-$globalTitle 	= 'U.S. Energy Information Administration (EIA)';
-$section		= 'Layouts';
-$subSection		= 'Home';
-?>
-<!doctype html>
-<html>
 
-<head>
-	<?php include('../includes/head.inc'); ?>
-</head>
+  <h1 class="eia-h1">Lists</h1>
+  <section>
+    <div class="eia-container">
+<h2 class="eia-h2">Basic List</h2>
+		<p>Add <code>.basic-list</code> to the <code>ul</code> of any list to apply the responsive EIA style which consists of the spacing and padding.</p>
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer">
 
-<body>
-	<?php include('../includes/header.inc'); ?>
-	<main>
-		<section id="top">
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<!-- content here -->
-			<div class="wrapper">
-				<h1 class="header"><?=$section?></h1>
-				<p class="para"></p>
-</div>
-<!-- end top template -->
-<!-- content here -->
-
-
-
-
-
-
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
 			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$  Introduction $$$$$$$$$$ -->
+			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
 			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="introduction">
-				<div class="wrapper">
-					<h1 class="header">Lists</h1>
-					<p class="para"></p>
+			<section class="example-basic">
+				<div class="eia-container">
+
 				</div>
 			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$  Introduction $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="introduction">
-				<div class="wrapper">
-					<h2 class="uk-h3">Basic List</h2>
-					<p>Add <code>.basic-list</code> to the <code>ul</code> of any list to apply the responsive EIA style which consists of the spacing and padding.</p>
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-					<div class="uk-card uk-card-default uk-padding">
-						<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-						<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-						<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-						<section id="example-basic">
-							<div class="wrapper">
-
-							</div>
-						</section>
-					</div>
-					<!-- HTML -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-					<pre><code class="language-html" id="basicList">&lt;ul class="basic"&gt;
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="basicList">&lt;ul class="basic"&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		&lt;/ul&gt;</code></pre>
-					<!-- Copy Button -->
-					<p>
-						<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#basicList">
-							<span uk-icon="copy"></span>Copy to clipboard
-						</button>
-					</p>
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="introduction">
-				<div class="wrapper">
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#basicList">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="introduction">
+	<div class="eia-container">
 
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="basic">
-				<div class="wrapper">
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="basic">
+	<div class="eia-container">
 
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="bulleted">
-				<div class="wrapper">
-					<h2 class="uk-h3">Bulleted List (forced)</h2>
-					<p>Adding <code>.bulleted</code> to the <code>ul</code> of any list will <strong>force</strong> bullets to the responsive EIA unordered list.</p>
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-					<div class="uk-card uk-card-default uk-padding">
-						<app-example-bulleted><-example-bulleted>
-					</div>
-					<!-- HTML -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-					<pre><code class="language-html" id="bulletedList">&lt;ul class="bulleted"&gt;
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="bulleted">
+	<div class="eia-container">
+		<h2 class="eia-h2">Bulleted List (forced)</h2>
+		<p>Adding <code>.bulleted</code> to the <code>ul</code> of any list will <strong>force</strong> bullets to the responsive EIA unordered list.</p>
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
+			<app-example-bulleted></app-example-bulleted>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="bulletedList">&lt;ul class="bulleted"&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		&lt;/ul&gt;</code></pre>
-					<!-- Copy Button -->
-					<p>
-						<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#bulletedList">
-							<span uk-icon="copy"></span>Copy to clipboard
-						</button>
-					</p>
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="unordered">
-				<div class="wrapper">
-					<h2 class="uk-h3">Unordered List List</h2>
-					<!-- p>Add <code>.unordered-list</code> to the <code>ul</code> of any list to apply the responsive EIA style which consists of the spacing and padding.</p -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-					<div class="uk-card uk-card-default uk-padding">
-						<ul class="eia">
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-						</ul>
-					</div>
-					<!-- HTML -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-					<pre><code class="language-html" id="unorderedList">&lt;ul"&gt;
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#bulletedList">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="unordered">
+	<div class="eia-container">
+		<h2 class="eia-h2">Unordered List List</h2>
+		<!-- p>Add <code>.unordered-list</code> to the <code>ul</code> of any list to apply the responsive EIA style which consists of the spacing and padding.</p -->
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
+			<ul>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+			</ul>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="unorderedList">&lt;ul"&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		&lt;/ul&gt;</code></pre>
-					<!-- Copy Button -->
-					<p>
-						<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#unorderedList">
-							<span uk-icon="copy"></span>Copy to clipboard
-						</button>
-					</p>
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="head">
-				<div class="wrapper">
-					<h2 class="uk-h3">List Head</h2>
-					<p>Add <code>.head</code> to the <code>li</code> of any list item to apply <strong>bold</strong> to the font, and EIA styling based on the parent class of either <code>.primary</code>, <code>.primary-alt</code>, <code>.secondary</code>, <code>.secondary-alt</code>, or <code>.article</code>.</p>
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-					<div class="uk-card uk-card-default uk-padding">
-						<app-example-head><-example-head>
-					</div>
-					<!-- HTML -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-					<pre><code class="language-html" id="listHead">&lt;ul class="basic"&gt;
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#unorderedList">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="head">
+	<div class="eia-container">
+		<h2 class="eia-h2">List Head</h2>
+		<p>Add <code>.head</code> to the <code>li</code> of any list item to apply <strong>bold</strong> to the font, and EIA styling based on the parent class of either <code>.primary</code>, <code>.primary-alt</code>, <code>.secondary</code>, <code>.secondary-alt</code>, or <code>.article</code>.</p>
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
+			<app-example-head></app-example-head>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="listHead">&lt;ul class="basic"&gt;
 		  &lt;li class="head"&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;&lt;a&gt;Lorem ipsum dolor sit amet&lt;/a&gt;&lt;/li&gt;
 		&lt;/ul&gt;</code></pre>
-					<!-- Copy Button -->
-					<p>
-						<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#listHead">
-							<span uk-icon="copy"></span>Copy to clipboard
-						</button>
-					</p>
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="foot">
-				<div class="wrapper">
-					<h2 class="uk-h3">List Foot</h2>
-					<p>Add <code>.foot</code> to the <code>li</code> of any list item to apply <strong>bold</strong> to the font, and an <a>&rsaquo;</a> to the end of a link.</p>
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-					<div class="uk-card uk-card-default uk-padding">
-						<app-example-foot><-example-foot>
-					</div>
-					<!-- HTML -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-					<pre><code class="language-html" id="listFoot">&lt;ul class="basic"&gt;
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#listHead">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="foot">
+	<div class="eia-container">
+		<h2 class="eia-h2">List Foot</h2>
+		<p>Add <code>.foot</code> to the <code>li</code> of any list item to apply <strong>bold</strong> to the font, and an <a>&rsaquo;</a> to the end of a link.</p>
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
+			<app-example-foot></app-example-foot>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="listFoot">&lt;ul class="basic"&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li class="foot"&gt;&lt;a&gt;Lorem ipsum dolor sit amet&lt;/a&gt;&lt;/li&gt;
 		&lt;/ul&gt;</code></pre>
-					<!-- Copy Button -->
-					<p>
-						<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#listFoot">
-							<span uk-icon="copy"></span>Copy to clipboard
-						</button>
-					</p>
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="footnotes-list">
-				<div class="wrapper">
-					<h2 class="uk-h3">Footnotes</h2>
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-					<div class="uk-card uk-card-default uk-padding">
-						<ul class="footnotes eia">
-							<li class="eia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-							<li class="eia">Donec lorem massa, semper nec eros a, lacinia porttitor nunc.</li>
-							<li class="eia">Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.</li>
-							<li class="eia">Suspendisse sagittis risus eu sem suscipit sodales.</li>
-						</ul>
-					</div>
-					<!-- HTML -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-					<pre><code class="language-html" id="FootnotesList">&lt;ul class="footnotes"&gt;
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#listFoot">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="footnotes-list">
+	<div class="eia-container">
+		<h2 class="eia-h2">Footnotes</h2>
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
+			<ul class="footnotes eia">
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+				<li>Donec lorem massa, semper nec eros a, lacinia porttitor nunc.</li>
+				<li>Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.</li>
+				<li>Suspendisse sagittis risus eu sem suscipit sodales.</li>
+			</ul>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="FootnotesList">&lt;ul class="footnotes"&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/li&gt;
 		  &lt;li&gt;Donec lorem massa, semper nec eros a, lacinia porttitor nunc.&lt;/li&gt;
 		  &lt;li&gt;Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.&lt;/li&gt;
 		  &lt;li&gt;Suspendisse sagittis risus eu sem suscipit sodales.&lt;/li&gt;
 		&lt;/ul&gt;</code></pre>
-					<!-- Copy Button -->
-					<p>
-						<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#FootnotesList">
-							<span uk-icon="copy"></span>Copy to clipboard
-						</button>
-					</p>
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="footnotes-ordered-list-superscript">
-				<div class="wrapper">
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#FootnotesList">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="footnotes-ordered-list-superscript">
+	<div class="eia-container">
 
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="seperator">
-				<div class="wrapper">
-					<h2 class="uk-h3">List Seperator</h2>
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Example</div>
-					<dl class="uk-description-list uk-description-list-divider">
-						<dd></dd>
-						<dd></dd>
-					</dl>
-					<p>Add <code>.list-seperator</code> to the <code>li</code> of any list to apply a space between the lists.</p>
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-					<div class="uk-card uk-card-default uk-padding">
-						<ul class="basic eia">
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-							<li class="list-seperator"></li>
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-						</ul>
-					</div>
-					<!-- HTML -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-					<pre><code class="language-html" id="basicList">&lt;ul class="basic"&gt;
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="seperator">
+	<div class="eia-container">
+		<h2 class="eia-h2">List Seperator</h2>
+		<div class="">Live Example</div>
+		<dl class="">
+			<dd></dd>
+			<dd></dd>
+		</dl>
+		<p>Add <code>.list-seperator</code> to the <code>li</code> of any list to apply a space between the lists.</p>
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
+			<ul class="basic eia">
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li class="list-seperator"></li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+			</ul>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="basicList">&lt;ul class="basic"&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li class="list-seperator"&gt;&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		&lt;/ul&gt;</code></pre>
-					<!-- Copy Button -->
-					<p>
-						<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#listSeperator">
-							<span uk-icon="copy"></span>Copy to clipboard
-						</button>
-					</p>
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="spacer">
-				<div class="wrapper">
-					<h2 class="uk-h3">List Spacer</h2>
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Example</div>
-					<dl class="uk-description-list uk-description-list-divider">
-						<dd></dd>
-						<dd></dd>
-					</dl>
-					<p>Add <code>.list-spacer</code> to the <code>li</code> of any list to apply a space between the lists.</p>
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-					<div class="uk-card uk-card-default uk-padding">
-						<ul class="basic eia">
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-							<li class="list-spacer"></li>
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-						</ul>
-					</div>
-					<!-- HTML -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-					<pre><code class="language-html" id="basicList">&lt;ul class="basic"&gt;
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#listSeperator">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="spacer">
+	<div class="eia-container">
+		<h2 class="eia-h2">List Spacer</h2>
+		<div class="">Live Example</div>
+		<dl class="">
+			<dd></dd>
+			<dd></dd>
+		</dl>
+		<p>Add <code>.list-spacer</code> to the <code>li</code> of any list to apply a space between the lists.</p>
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
+			<ul class="basic eia">
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li class="list-spacer"></li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+			</ul>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="basicList">&lt;ul class="basic"&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li class="list-spacer"&gt;&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		&lt;/ul&gt;</code></pre>
-					<!-- Copy Button -->
-					<p>
-						<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#listSpacer">
-							<span uk-icon="copy"></span>Copy to clipboard
-						</button>
-					</p>
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="highlight">
-				<div class="wrapper">
-					<h2 class="uk-h3">Highlight</h2>
-					<p>Add <code>.highlight</code> to the <code>ul</code> of any list item to apply <strong>bold</strong> to the font, and EIA styling.</p>
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-					<div class="uk-card uk-card-default uk-padding">
-						<ul class="basic highlight eia">
-							<li class="head eia">
-								<h2 class="header">Lorem ipsum dolor sit amet</h2>
-							</li>
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-						</ul>
-					</div>
-					<!-- HTML -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-					<pre><code class="language-html" id="highlightList">&lt;ul class="highlight"&gt;
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#listSpacer">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="highlight">
+	<div class="eia-container">
+		<h2 class="eia-h2">Highlight</h2>
+		<p>Add <code>.highlight</code> to the <code>ul</code> of any list item to apply <strong>bold</strong> to the font, and EIA styling.</p>
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
+			<ul class="basic highlight eia">
+				<li class="head eia">
+					<h2>Lorem ipsum dolor sit amet</h2>
+				</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+			</ul>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="highlightList">&lt;ul class="highlight"&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		&lt;/ul&gt;</code></pre>
-					<!-- Copy Button -->
-					<p>
-						<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#listHead">
-							<span uk-icon="copy"></span>Copy to clipboard
-						</button>
-					</p>
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="ordered">
-				<div class="wrapper">
-					<h2 class="uk-h3">Ordered List</h2>
-					<p><code>ol</code> makes a numbered list.</p>
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Example</div>
-					<dl class="uk-description-list uk-description-list-divider">
-						<dd></dd>
-						<dd></dd>
-					</dl>
-					<!-- Example -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-					<div class="uk-card uk-card-default uk-padding">
-						<ol class="eia">
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-							<li class="eia">Lorem ipsum dolor sit amet</li>
-						</ol>
-					</div>
-					<!-- HTML -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-					<pre><code class="language-html" id="orderedList">&lt;ol"&gt;
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#listHead">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="ordered">
+	<div class="eia-container">
+		<h2 class="eia-h2">Ordered List</h2>
+		<p><code>ol</code> makes a numbered list.</p>
+		<div class="">Live Example</div>
+		<dl class="">
+			<dd></dd>
+			<dd></dd>
+		</dl>
+		<!-- Example -->
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
+			<ol>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+			</ol>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="orderedList">&lt;ol"&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		&lt;/ol&gt;</code></pre>
-					<!-- Copy Button -->
-					<p>
-						<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#orderedList">
-							<span uk-icon="copy"></span>Copy to clipboard
-						</button>
-					</p>
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="calculated-numbered">
-				<div class="wrapper">
-					<h2 class="uk-h3">Calculated Numbered</h2>
-					<p>Note adding the <code>.calculated-numbered</code> to the <code>&lt;ul"&gt;</code> will apply a sequential numerical pattern to the list.</p>
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Example</div>
-					<dl class="uk-description-list uk-description-list-divider">
-						<dd></dd>
-					</dl>
-					<!-- Example -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-					<div class="uk-card uk-card-default uk-padding">
-						<div class="primary">
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#orderedList">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="calculated-numbered">
+	<div class="eia-container">
+		<h2 class="eia-h2">Calculated Numbered</h2>
+		<p>Note adding the <code>.calculated-numbered</code> to the <code>&lt;ul"&gt;</code> will apply a sequential numerical pattern to the list.</p>
+		<div class="">Live Example</div>
+		<dl class="">
+			<dd></dd>
+		</dl>
+		<!-- Example -->
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
+			<div class="primary">
 
-						</div>
-					</div>
-					<!-- HTML -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-					<pre><code class="language-html" id="calculatedNumbered">&lt;ul class="calculated-numbered"&gt;
+			</div>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="calculatedNumbered">&lt;ul class="calculated-numbered"&gt;
 		  &lt;li&gt;&lt;span class="number"&gt;1.1.1&lt;/span&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 		&lt;/ul&gt;</code></pre>
-					<!-- Copy Button -->
-					<p>
-						<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#calculatedNumbered">
-							<span uk-icon="copy"></span>Copy to clipboard
-						</button>
-					</p>
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="">
-				<div class="wrapper">
-					<h2 class="uk-h3">Ordered Numerical Footnotes</h2>
-					<p>Note adding the <code>sup</code> to the footnotes class: <code>&lt;ol class="footnotes"&gt;</code> will apply a sequential numerical superscript to the footnotes.</p>
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Live Example</div>
-					<dl class="uk-description-list uk-description-list-divider">
-						<dd><a href="https://wwwdev.eia.gov/international/analysis/country/ECU/background">https://wwwdev.eia.gov/international/analysis/country/ECU/background</a></dd>
-					</dl>
-					<!-- Example -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">Example</div>
-					<div class="uk-card uk-card-default uk-padding">
-						<ol class="sup footnotes eia">
-							<li class="eia">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-							<li class="eia">Donec lorem massa, semper nec eros a, lacinia porttitor nunc.</li>
-							<li class="eia">Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.</li>
-							<li class="eia">Suspendisse sagittis risus eu sem suscipit sodales.</li>
-						</ol>
-					</div>
-					<!-- HTML -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-					<pre><code class="language-html" id="OrderedFootnotes">&lt;ol class="sup footnotes"&gt;
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#calculatedNumbered">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="">
+	<div class="eia-container">
+		<h2 class="eia-h2">Ordered Numerical Footnotes</h2>
+		<p>Note adding the <code>sup</code> to the footnotes class: <code>&lt;ol class="footnotes"&gt;</code> will apply a sequential numerical superscript to the footnotes.</p>
+		<div class="">Live Example</div>
+		<dl class="">
+			<dd><a href="https://wwwdev.eia.gov/international/analysis/country/ECU/background">https://wwwdev.eia.gov/international/analysis/country/ECU/background</a></dd>
+		</dl>
+		<!-- Example -->
+		<h3 class="eia-h3">Example</h3>
+		<div class="eia-card">
+			<ol class="sup footnotes eia">
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+				<li>Donec lorem massa, semper nec eros a, lacinia porttitor nunc.</li>
+				<li>Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.</li>
+				<li>Suspendisse sagittis risus eu sem suscipit sodales.</li>
+			</ol>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="OrderedFootnotes">&lt;ol class="sup footnotes"&gt;
   &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/li&gt;
   &lt;li&gt;Donec lorem massa, semper nec eros a, lacinia porttitor nunc.&lt;/li&gt;
   &lt;li&gt;Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.&lt;/li&gt;
   &lt;li&gt;Suspendisse sagittis risus eu sem suscipit sodales.&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-					<!-- Copy Button -->
-					<p>
-						<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#OrderedFootnotes">
-							<span uk-icon="copy"></span>Copy to clipboard
-						</button>
-					</p>
-				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="">
-				<div class="wrapper">
-					<div class="uk-card uk-card-default uk-padding">
-						<div class="uk-text-default uk-text-normal uk-text-uppercase">Example Primary</div>
-						<p><code>.primary</code></p>
-						<div class="module-inner">
-							<div class="l-row l-two-col-left-wide">
-								<div class="l-col primary">
-									<ul class="basic eia">
-										<li class="head eia">
-											<h2 class="header">Lorem ipsum dolor sit amet</h2>
-										</li>
-										<li class="eia">Lorem ipsum dolor sit amet</li>
-										<li class="eia">Lorem ipsum dolor sit amet</li>
-									</ul>
-								</div>
-								<div class="l-col"><br /></div>
-							</div>
-						</div>
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#OrderedFootnotes">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="">
+	<div class="eia-container">
+		<div class="eia-card">
+			<div class="">Example Primary</div>
+			<p><code>.primary</code></p>
+			<div class="module-inner">
+				<div class="l-row l-two-col-left-wide">
+					<div class="l-col primary">
+						<ul class="basic eia">
+							<li class="head eia">
+								<h2>Lorem ipsum dolor sit amet</h2>
+							</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+						</ul>
 					</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="">
-				<div class="wrapper">
-					<div class="uk-card uk-card-default uk-padding">
-						<div class="uk-text-default uk-text-normal uk-text-uppercase">Example Primary-Alt</div>
-						<p><code>.primary-alt</code></p>
-						<div class="module-inner">
-							<div class="l-row l-two-col-left-wide">
-								<div class="l-col primary-alt">
-									<ul class="basic eia">
-										<li class="head eia">
-											<h2 class="header">Lorem ipsum dolor sit amet</h2>
-										</li>
-										<li class="eia">Lorem ipsum dolor sit amet</li>
-										<li class="eia">Lorem ipsum dolor sit amet</li>
-									</ul>
-								</div>
-								<div class="l-col"><br /></div>
-							</div>
-						</div>
-					</div>
+					<div class="l-col"><br /></div>
 				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="">
-				<div class="wrapper">
-					<div class="uk-card uk-card-default uk-padding">
-						<div class="uk-text-default uk-text-normal uk-text-uppercase">Example Secondary</div>
-						<p><code>.secondary</code></p>
-						<div class="module-inner">
-							<div class="l-row l-two-col-left-wide">
-								<div class="l-col"><br /></div>
-								<div class="l-col secondary">
-									<ul class="basic eia">
-										<li class="head eia">
-											<h2 class="header">Lorem ipsum dolor sit amet</h2>
-										</li>
-										<li class="eia">Lorem ipsum dolor sit amet</li>
-										<li class="eia">Lorem ipsum dolor sit amet</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+			</div>
+		</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="">
+	<div class="eia-container">
+		<div class="eia-card">
+			<div class="">Example Primary-Alt</div>
+			<p><code>.primary-alt</code></p>
+			<div class="module-inner">
+				<div class="l-row l-two-col-left-wide">
+					<div class="l-col primary-alt">
+						<ul class="basic eia">
+							<li class="head eia">
+								<h2>Lorem ipsum dolor sit amet</h2>
+							</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+						</ul>
+					</div>
+					<div class="l-col"><br /></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="">
+	<div class="eia-container">
+		<div class="eia-card">
+			<div class="">Example Secondary</div>
+			<p><code>.secondary</code></p>
+			<div class="module-inner">
+				<div class="l-row l-two-col-left-wide">
+					<div class="l-col"><br /></div>
+					<div class="l-col secondary">
+						<ul class="basic eia">
+							<li class="head eia">
+								<h2>Lorem ipsum dolor sit amet</h2>
+							</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+						</ul>
 					</div>
 				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="">
-				<div class="wrapper">
-					<div class="uk-card uk-card-default uk-padding">
-						<div class="uk-text-default uk-text-normal uk-text-uppercase">Example Secondary-Alt</div>
-						<p><code>.secondary-alt</code></p>
-						<div class="module-inner">
-							<div class="l-row l-two-col-left-wide">
-								<div class="l-col"><br /></div>
-								<div class="l-col secondary-alt">
-									<ul class="basic eia">
-										<li class="head eia">
-											<h2 class="header">Lorem ipsum dolor sit amet</h2>
-										</li>
-										<li class="eia">Lorem ipsum dolor sit amet</li>
-										<li class="eia">Lorem ipsum dolor sit amet</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="">
+	<div class="eia-container">
+		<div class="eia-card">
+			<div class="">Example Secondary-Alt</div>
+			<p><code>.secondary-alt</code></p>
+			<div class="module-inner">
+				<div class="l-row l-two-col-left-wide">
+					<div class="l-col"><br /></div>
+					<div class="l-col secondary-alt">
+						<ul class="basic eia">
+							<li class="head eia">
+								<h2>Lorem ipsum dolor sit amet</h2>
+							</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+						</ul>
 					</div>
 				</div>
-			</section>
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
-			<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-			<section id="">
-				<div class="wrapper">
-					<div class="uk-card uk-card-default uk-padding">
-						<div class="uk-text-default uk-text-normal uk-text-uppercase">Article</div>
-						<p><code>.article</code>.</p>
-						<div class="module-inner">
-							<div class="l-row l-two-col-left-wide">
-								<div class="l-col article">
-									<ul class="basic eia">
-										<li class="head eia">
-											<h2 class="header">Lorem ipsum dolor sit amet</h2>
-										</li>
-										<li class="eia">Lorem ipsum dolor sit amet</li>
-										<li class="eia">Lorem ipsum dolor sit amet</li>
-									</ul>
-								</div>
-								<div class="l-col"><br /></div>
-							</div>
-						</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     Lists     $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="">
+	<div class="eia-container">
+		<div class="eia-card">
+			<div class="">Article</div>
+			<p><code>.article</code>.</p>
+			<div class="module-inner">
+				<div class="l-row l-two-col-left-wide">
+					<div class="l-col article">
+						<ul class="basic eia">
+							<li class="head eia">
+								<h2>Lorem ipsum dolor sit amet</h2>
+							</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+						</ul>
 					</div>
-					<!-- HTML -->
-					<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-					<pre><code class="language-html" id="listHead">&lt;div class="<code class="nohighlight"><mark>primary</mark></code>, <code>primary-alt</code> <code>secondary</code>, <code>.secondary-alt</code> or <code>.article</code>"&gt;
+					<div class="l-col"><br /></div>
+				</div>
+			</div>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="listHead">&lt;div class="<code class="nohighlight"><mark>primary</mark></code>, <code>primary-alt</code> <code>secondary</code>, <code>.secondary-alt</code> or <code>.article</code>"&gt;
   &lt;ul class="basic"&gt;
     &lt;li class="head"&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
     &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
     &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
-					<!-- Copy Button -->
-					<p>
-						<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#listHead">
-							<span uk-icon="copy"></span>Copy to clipboard
-						</button>
-					</p>
-				</div>
-		</div>
-		</section>
-<!-- end content -->
-				<!-- start bottom template -->
-				</div>
-		</div>
-		<div class="grid-right"></div>
-		<?php include('../includes/footer.inc'); ?>
-	</div>
-</body>
-
-</html>
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#listHead">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+</div>
+	</section>

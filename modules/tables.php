@@ -1,197 +1,146 @@
-<?php
-require_once '../includes/variables.inc';
-$globalTitle 	= 'U.S. Energy Information Administration (EIA)';
-$section		= 'Layouts';
-$subSection		= 'Home';
-?>
-<!doctype html>
-<html>
+<style>
+	#Default:active {
+		color: red;
+	}
 
-<head>
-	<?php include('../includes/head.inc'); ?>
-</head>
+	#Basic:active {
+		color: red;
+	}
 
-<body>
-	<?php include('../includes/header.inc'); ?>
-	<main>
-		<section id="top">
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-					<!-- content here -->
-					<div class="wrapper">
-						<h1 class="header"><?=$section?></h1>
-						<p class="para"></p>
-					</div>
-					<!-- end top template -->
-					<!-- content here -->
+	#FullWidth:active {
+		color: red;
+	}
 
+	#Caption:active {
+		color: red;
+	}
 
+	#HeadDouble:active {
+		color: red;
+	}
 
+	#RowHead:active {
+		color: red;
+	}
 
-					<style>
-					#Default:active {
-						color: red;
-					}
+	#RowTotal:active {
+		color: red;
+	}
 
-					#Basic:active {
-						color: red;
-					}
+	#RowBold:active {
+		color: red;
+	}
 
-					#FullWidth:active {
-						color: red;
-					}
+	#RowIndent:active {
+		color: red;
+	}
 
-					#Caption:active {
-						color: red;
-					}
+	#RowSectionHead:active {
+		color: red;
+	}
 
-					#HeadDouble:active {
-						color: red;
-					}
+	#RowSectionDivider:active {
+		color: red;
+	}
 
-					#RowHead:active {
-						color: red;
-					}
+	#ColumnHighlight:active {
+		color: red;
+	}
 
-					#RowTotal:active {
-						color: red;
-					}
+	#ColumnDivider:active {
+		color: red;
+	}
 
-					#RowBold:active {
-						color: red;
-					}
+	#ColumnAlign:active {
+		color: red;
+	}
 
-					#RowIndent:active {
-						color: red;
-					}
+	#ColumnHide:active {
+		color: red;
+	}
 
-					#RowSectionHead:active {
-						color: red;
-					}
+	#Foot:active {
+		color: red;
+	}
 
-					#RowSectionDivider:active {
-						color: red;
-					}
+	#Footnotes:active {
+		color: red;
+	}
 
-					#ColumnHighlight:active {
-						color: red;
-					}
+	#Stacked:active {
+		color: red;
+	}
 
-					#ColumnDivider:active {
-						color: red;
-					}
+	#RowSelected:active {
+		color: red;
+	}
 
-					#ColumnAlign:active {
-						color: red;
-					}
+	#HolidaySchedule:active {
+		color: red;
+	}
 
-					#ColumnHide:active {
-						color: red;
-					}
+	.tertiary-table-nav {
+		display: block;
+	}
+</style>
 
-					#Foot:active {
-						color: red;
-					}
+  <h1 class="eia-h1">Introduction</h1></h1>
+  <section>
+    <div class="eia-container">
+      <!-- h2 class="eia-h2">Basic Table</h2 -->
+      <!-- p class="eia-para"></p -->
+      <h3 class="eia-h3">Example</h3>
+      <div class="eia-card">
+        <div class="l-margin-bottom eia-container-resizer">
 
-					#Footnotes:active {
-						color: red;
-					}
-
-					#Stacked:active {
-						color: red;
-					}
-
-					#RowSelected:active {
-						color: red;
-					}
-
-					#HolidaySchedule:active {
-						color: red;
-					}
-
-					.tertiary-table-nav {
-						display: block;
-					}
-					</style>
-
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$  Introduction $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="introduction">
-						<div class="wrapper">
-							<h1 class="header">Introduction</h1>
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     basic    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="basic">
-						<div class="wrapper">
-							<h3 class="uk-h3">Basic Table</h3>
-							<p>
-								The basic EIA styled table can created by nesting the table in a div with the style: <code>class="basic-table"</code>, and adding the style <code>class="basic-table"</code> to the <code>table</code> tag. It's also important to use the HTML table structure of <code>&lt;head&gt;&lt;/head&gt;</code>, <code>&lt;body&gt;&lt;/body&gt;</code>, and <code>&lt;foot&gt;&lt;/foot&gt;</code> as needed.
-							</p>
-							<div class="uk-section uk-section-muted uk-padding">
-								<h3 id="" class="uk-h3"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
-								<p class="accessibility p">
-									Header cells must be marked up with <code>        &lt;th&gt;</code>, and data cells with <code>        &lt;td&gt;</code>, along with a <code>scope</code> to make tables accessible.
-								</p>
-							</div>
-							<div class="basic-table">
-								<table class="basic-table full-width">
-									<thead>
-										<tr>
-											<th scope="col"><code>left aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<td scope="row"><code>left aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colSpan="4" scope="colgroup">
-												<code>left aligned</code>
-											</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="Basic">&lt;div class="basic-table"&gt;
+		<div class="basic-table">
+			<table class="basic-table full-width">
+				<thead>
+					<tr>
+						<th scope="col"><code>left aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<td scope="row"><code>left aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colSpan="4" scope="colgroup">
+							<code>left aligned</code>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="Basic">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -236,71 +185,71 @@ $subSection		= 'Home';
     &lt;/tfoot&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Basic">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     full-width    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="fullWidth">
-						<div class="wrapper">
-							<h3 class="uk-h3">Full Width</h3>
-							<p>
-								Adding a <code>&lt;full-width&gt;</code> to the table class ( &lt;table class="basic-table full-width&gt;).
-							</p>
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Basic">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     full-width    $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="fullWidth">
+	<div class="eia-container">
+		<h3 class="">Full Width</h3>
+		<p>
+			Adding a <code>&lt;full-width&gt;</code> to the table class ( &lt;table class="basic-table full-width&gt;).
+		</p>
 
-							<div class="basic-table">
-								<table class="basic-table full-width">
-									<thead>
-										<tr>
-											<th scope="col"><code>left aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td scope="row"><code>left aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<td scope="row"><code>left aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<td scope="row"><code>left aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<td scope="row"><code>left aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colSpan="4" scope="colgroup"><code>left aligned</code>
-											</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
+		<div class="basic-table">
+			<table class="basic-table full-width">
+				<thead>
+					<tr>
+						<th scope="col"><code>left aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td scope="row"><code>left aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<td scope="row"><code>left aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<td scope="row"><code>left aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<td scope="row"><code>left aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colSpan="4" scope="colgroup"><code>left aligned</code>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
 
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="FullWidth">&lt;div class="basic-table"&gt;
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="FullWidth">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -344,49 +293,49 @@ $subSection		= 'Home';
     &lt;/tfoot&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#FullWidth">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     caption    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="caption">
-						<div class="wrapper">
-							<h3 class="uk-h3">Caption</h3>
-							<p><code>caption</code></p>
-							<div class="basic-table">
-								<table class="basic-table full-width">
-									<caption>
-										Primary Caption Goes Here
-										<br />
-										<span>(Secondary Caption if needed)</span>
-									</caption>
-									<thead>
-										<tr>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>...</td>
-											<td>...</td>
-											<td>...</td>
-											<td>...</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#FullWidth">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     caption    $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="caption">
+	<div class="eia-container">
+		<h3 class="">Caption</h3>
+		<p><code>caption</code></p>
+		<div class="basic-table">
+			<table class="basic-table full-width">
+				<caption>
+					Primary Caption Goes Here
+					<br />
+					<span>(Secondary Caption if needed)</span>
+				</caption>
+				<thead>
+					<tr>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>...</td>
+						<td>...</td>
+						<td>...</td>
+						<td>...</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="Caption">&lt;div class="basic-table"&gt;
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="Caption">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
 &lt;caption&gt;
 		Primary Caption Goes Here
@@ -411,126 +360,126 @@ $subSection		= 'Home';
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Caption">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Caption">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$      section      $$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section>
+	<div class="eia-container">
+		<h2 class="eia-sub-heading uk-text-center">HEAD</h2>
+		<p><code>&lt;head&gt;...&lt;/head&gt;</code></p>
+		<ul class="  uk-flex-center ">
+			<li>
+				<div class="eia-card prototype-table">
+					<div class="prototype-table-inside">
+						<div class="prototype-table-cell active">
+							<div class="prototype-column">head</div>
 						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$      section      $$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section>
-						<div class="wrapper">
-							<h2 class="eia-sub-heading uk-text-center">HEAD</h2>
-							<p><code>&lt;head&gt;...&lt;/head&gt;</code></p>
-							<ul class="uk-grid-small uk-child-width-1-2 uk-flex-center uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
-								<li>
-									<div class="uk-card uk-card-default uk-card-body prototype-table">
-										<div class="prototype-table-inside">
-											<div class="prototype-table-cell active">
-												<div class="prototype-column">head</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">1</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">2</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">3</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">4</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">5</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">6</div>
-											</div>
-											<div class="flex-break"></div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">1</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">2</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">3</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">4</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">5</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">6</div>
-											</div>
-											<div class="flex-break"></div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">foot</div>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">1</div>
 						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     double-head    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="doubleHead">
-						<div class="wrapper">
-							<h3 class="uk-h3">Double Head</h3>
-							<a name="DoubleHeader"></a>
-							<div class="uk-section uk-section-muted uk-padding">
-								<h3 id="" class="uk-h3"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
-								<p class="accessibility p">
-									Add a <code>scope="colgroup"</code> whenever you use a <code>colspan="x"</code>.
-								</p>
-							</div>
-							<div class="basic-table">
-								<table class="basic-table full-width">
-									<thead class="double-header">
-										<tr scope="colgroup">
-											<th scope="col"></th>
-											<th colSpan="2" scope="colgroup"><code>left aligned</code>
-											</th>
-											<th colSpan="2" scope="colgroup"><code>left aligned</code>
-											</th>
-										</tr>
-										<tr>
-											<th scope="col"><code>left aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td scope="row"><code>left aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<td scope="row"><code>left aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="DoubleHeader">&lt;div class="basic-table"&gt;
+						<div class="prototype-table-cell">
+							<div class="prototype-column">2</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">3</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">4</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">5</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">6</div>
+						</div>
+						<div class="flex-break"></div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">1</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">2</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">3</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">4</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">5</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">6</div>
+						</div>
+						<div class="flex-break"></div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">foot</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     double-head    $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="doubleHead">
+	<div class="eia-container">
+		<h3 class="">Double Head</h3>
+		<a name="DoubleHeader"></a>
+		<div class=" ">
+			<h3 id="" class=""><span class=" -danger">ACCESSIBILITY REQUIREMENT</span></h3>
+			<p class="accessibility p">
+				Add a <code>scope="colgroup"</code> whenever you use a <code>colspan="x"</code>.
+			</p>
+		</div>
+		<div class="basic-table">
+			<table class="basic-table full-width">
+				<thead class="double-header">
+					<tr scope="colgroup">
+						<th scope="col"></th>
+						<th colSpan="2" scope="colgroup"><code>left aligned</code>
+						</th>
+						<th colSpan="2" scope="colgroup"><code>left aligned</code>
+						</th>
+					</tr>
+					<tr>
+						<th scope="col"><code>left aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td scope="row"><code>left aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<td scope="row"><code>left aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="DoubleHeader">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
         &lt;thead class="double-header"&gt;
       &lt;tr scope="colgroup"&gt;
@@ -566,75 +515,75 @@ $subSection		= 'Home';
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#DoubleHeader">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$        Head Row         $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="rowHead">
-						<div class="wrapper">
-							<h3 class="uk-h3">Row head</h3>
-							<p>
-								Adding a <code>class="sectionhead"</code> to the table row.
-							</p>
-							<div class="uk-section uk-section-muted uk-padding">
-								<h3 id="" class="uk-h3"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
-								<p class="accessibility p">
-									Add a <code>scope="colgroup"</code> whenever you use a <code>colspan="x"</code>.
-								</p>
-							</div>
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#DoubleHeader">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$        Head Row         $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="rowHead">
+	<div class="eia-container">
+		<h3 class="">Row head</h3>
+		<p>
+			Adding a <code>class="sectionhead"</code> to the table row.
+		</p>
+		<div class=" ">
+			<h3 id="" class=""><span class=" -danger">ACCESSIBILITY REQUIREMENT</span></h3>
+			<p class="accessibility p">
+				Add a <code>scope="colgroup"</code> whenever you use a <code>colspan="x"</code>.
+			</p>
+		</div>
 
-							<div class="basic-table">
-								<table class="basic-table full-width">
-									<thead>
-										<tr>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<td colSpan="4" scope="colgroup" class="sectionhead">
-												Aligned-left
-											</td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
+		<div class="basic-table">
+			<table class="basic-table full-width">
+				<thead>
+					<tr>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<td colSpan="4" scope="colgroup" class="sectionhead">
+							Aligned-left
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
 
-										<tr class="sectionhead">
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-									</tbody>
-								</table>
-							</div><!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="RowSectionHead">&lt;div class="basic-table"&gt;
+					<tr class="sectionhead">
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="RowSectionHead">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -676,138 +625,138 @@ $subSection		= 'Home';
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowSectionHead">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowSectionHead">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$      section      $$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section>
+	<div class="eia-container">
+		<h2 class="eia-sub-heading uk-text-center">Table Rows</h2>
+		<p><code>    &lt;tbody&gt;...    &lt;/tbody&gt;</code></p>
+		<p><code>&lt;head&gt;...&lt;/head&gt;</code></p>
+		<ul class="  uk-flex-center ">
+			<li>
+				<div class="eia-card prototype-table">
+					<div class="prototype-table-inside">
+						<div class="prototype-table-cell">
+							<div class="prototype-column">head</div>
 						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$      section      $$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section>
-						<div class="wrapper">
-							<h2 class="eia-sub-heading uk-text-center">Table Rows</h2>
-							<p><code>    &lt;tbody&gt;...    &lt;/tbody&gt;</code></p>
-							<p><code>&lt;head&gt;...&lt;/head&gt;</code></p>
-							<ul class="uk-grid-small uk-child-width-1-2 uk-flex-center uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
-								<li>
-									<div class="uk-card uk-card-default uk-card-body prototype-table">
-										<div class="prototype-table-inside">
-											<div class="prototype-table-cell">
-												<div class="prototype-column">head</div>
-											</div>
-											<div class="prototype-table-cell active">
-												<div class="prototype-column">1</div>
-											</div>
-											<div class="prototype-table-cell active">
-												<div class="prototype-column">2</div>
-											</div>
-											<div class="prototype-table-cell active">
-												<div class="prototype-column">3</div>
-											</div>
-											<div class="prototype-table-cell active">
-												<div class="prototype-column">4</div>
-											</div>
-											<div class="prototype-table-cell active">
-												<div class="prototype-column">5</div>
-											</div>
-											<div class="prototype-table-cell active">
-												<div class="prototype-column">6</div>
-											</div>
-											<div class="flex-break"></div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">1</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">2</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">3</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">4</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">5</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">6</div>
-											</div>
-											<div class="flex-break"></div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">foot</div>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
+						<div class="prototype-table-cell active">
+							<div class="prototype-column">1</div>
 						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$         Bold Row        $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="rowBold">
-						<div class="wrapper">
-							<h3 class="uk-h3">Row Bold</h3>
-							<a name="RowBold"></a>
-							<p>
-								Adding a <code>class="bold"</code> to the table row ( &lt;tr&gt;).
-							</p>
-							<p class="accessibility p">
-								<strong>
-									<span class="accessibility-requirement">Accessibility requirement</span>
-								</strong>
-								Add a <code>scope="colgroup"</code> whenever you use a <code>colspan="x"</code>.
-							</p>
+						<div class="prototype-table-cell active">
+							<div class="prototype-column">2</div>
+						</div>
+						<div class="prototype-table-cell active">
+							<div class="prototype-column">3</div>
+						</div>
+						<div class="prototype-table-cell active">
+							<div class="prototype-column">4</div>
+						</div>
+						<div class="prototype-table-cell active">
+							<div class="prototype-column">5</div>
+						</div>
+						<div class="prototype-table-cell active">
+							<div class="prototype-column">6</div>
+						</div>
+						<div class="flex-break"></div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">1</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">2</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">3</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">4</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">5</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">6</div>
+						</div>
+						<div class="flex-break"></div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">foot</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$         Bold Row        $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="rowBold">
+	<div class="eia-container">
+		<h3 class="">Row Bold</h3>
+		<a name="RowBold"></a>
+		<p>
+			Adding a <code>class="bold"</code> to the table row ( &lt;tr&gt;).
+		</p>
+		<p class="accessibility p">
+			<strong>
+				<span class="accessibility-requirement">Accessibility requirement</span>
+			</strong>
+			Add a <code>scope="colgroup"</code> whenever you use a <code>colspan="x"</code>.
+		</p>
 
-							<div class="basic-table">
-								<table class="basic-table full-width">
-									<thead>
-										<tr>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr class="bold">
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr class="bold">
-											<td colSpan="4" scope="colgroup">
-												Aligned-left
-											</td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="RowBold">&lt;div class="basic-table"&gt;
+		<div class="basic-table">
+			<table class="basic-table full-width">
+				<thead>
+					<tr>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="bold">
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr class="bold">
+						<td colSpan="4" scope="colgroup">
+							Aligned-left
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="RowBold">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -850,75 +799,75 @@ $subSection		= 'Home';
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowBold">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     row-section-head    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="rowHead">
-						<div class="wrapper">
-							<h3 class="uk-h3">Row Head</h3>
-							<a name="RowHead"></a>
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowBold">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     row-section-head    $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="rowHead">
+	<div class="eia-container">
+		<h3 class="">Row Head</h3>
+		<a name="RowHead"></a>
 
-							Table Row Head (<span class="accessibility-requirement">Accessibility requirement</span>)
-							</h2>
-							<p>
-								Adding a <code>        &lt;th scope="row"&gt;&lt;/th&gt;</code> to the first cell ( &lt;th&gt; or &lt;td&gt;) in a table row.
-								<br />
-								<strong>Note:</strong> This does not change the appearance and is ony added for accessibility.
-							</p>
-							<div class="basic-table">
-								<table class="basic-table full-width">
-									<thead>
-										<tr>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="RowHead">&lt;div class="basic-table"&gt;
+		Table Row Head (<span class="accessibility-requirement">Accessibility requirement</span>)
+		</h2>
+		<p>
+			Adding a <code>        &lt;th scope="row"&gt;&lt;/th&gt;</code> to the first cell ( &lt;th&gt; or &lt;td&gt;) in a table row.
+			<br />
+			<strong>Note:</strong> This does not change the appearance and is ony added for accessibility.
+		</p>
+		<div class="basic-table">
+			<table class="basic-table full-width">
+				<thead>
+					<tr>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="RowHead">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -962,77 +911,77 @@ $subSection		= 'Home';
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowHead">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     row-indent    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="rowIndent">
-						<div class="wrapper">
-							<h3 class="uk-h3">Row Indent</h3>
-							<a name="RowIndent"></a>
-							<p>
-								Adding a <code>class="level-1/2/3-indent"</code> to the first table cell.
-							</p>
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowHead">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     row-indent    $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="rowIndent">
+	<div class="eia-container">
+		<h3 class="">Row Indent</h3>
+		<a name="RowIndent"></a>
+		<p>
+			Adding a <code>class="level-1/2/3-indent"</code> to the first table cell.
+		</p>
 
-							<div class="basic-table">
-								<table class="basic-table full-width">
-									<thead>
-										<tr>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row" class="level-1-indent">
-												Indent-one, aligned-left
-											</th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row" class="level-2-indent">
-												Indent-two, aligned-left
-											</th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row" class="level-3-indent">
-												Indent-three, aligned-left
-											</th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="RowIndent">&lt;div class="basic-table"&gt;
+		<div class="basic-table">
+			<table class="basic-table full-width">
+				<thead>
+					<tr>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row" class="level-1-indent">
+							Indent-one, aligned-left
+						</th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row" class="level-2-indent">
+							Indent-two, aligned-left
+						</th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row" class="level-3-indent">
+							Indent-three, aligned-left
+						</th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="RowIndent">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -1082,74 +1031,74 @@ $subSection		= 'Home';
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowIndent">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     row-Section-divider    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="rowDivider">
-						<div class="wrapper">
-							<h3 class="uk-h3">Row (Horizontal) Divider</h3>
-							<p>
-								Adding a <code>class="divider"</code> to the table row.
-							</p>
-							<div class="uk-section uk-section-muted uk-padding">
-								<h3 id="" class="uk-h3"><span class="uk-label uk-label-danger">ACCESSIBILITY REQUIREMENT</span></h3>
-								<p class="accessibility p">
-									Add a <code>scope="colgroup"</code> whenever you use a <code>colspan="x"</code>.
-								</p>
-							</div>
-							<div class="basic-table">
-								<table class="basic-table full-width">
-									<caption>Caption</caption>
-									<thead>
-										<tr>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr class="divider">
-											<th scope="row">Divider Row, Aligned-left</th>
-											<td>Divider Row, Aligned-right</td>
-											<td>Divider Row, Aligned-right</td>
-											<td>Divider Row, Aligned-right</td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr class="divider">
-											<td colSpan="4" scope="colgroup">
-												Divider
-											</td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-									</tbody>
-								</table>
-							</div><!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="RowSectionDivider">&lt;div class="basic-table"&gt;
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowIndent">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     row-Section-divider    $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="rowDivider">
+	<div class="eia-container">
+		<h3 class="">Row (Horizontal) Divider</h3>
+		<p>
+			Adding a <code>class="divider"</code> to the table row.
+		</p>
+		<div class=" ">
+			<h3 id="" class=""><span class=" -danger">ACCESSIBILITY REQUIREMENT</span></h3>
+			<p class="accessibility p">
+				Add a <code>scope="colgroup"</code> whenever you use a <code>colspan="x"</code>.
+			</p>
+		</div>
+		<div class="basic-table">
+			<table class="basic-table full-width">
+				<caption>Caption</caption>
+				<thead>
+					<tr>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr class="divider">
+						<th scope="row">Divider Row, Aligned-left</th>
+						<td>Divider Row, Aligned-right</td>
+						<td>Divider Row, Aligned-right</td>
+						<td>Divider Row, Aligned-right</td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr class="divider">
+						<td colSpan="4" scope="colgroup">
+							Divider
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="RowSectionDivider">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
 &lt;caption&gt;Caption&lt;/caption&gt;
     &lt;thead&gt;
@@ -1194,53 +1143,53 @@ $subSection		= 'Home';
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowSectionDivider">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     row-total    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="rowTotal">
-						<div class="wrapper">
-							<h3 class="uk-h3">Row Total</h3>
-							<div class="basic-table">
-								<table class="basic-table full-width">
-									<thead>
-										<tr>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr class="totals">
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-									</tbody>
-								</table>
-							</div><!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="RowTotal">&lt;div class="basic-table"&gt;
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowSectionDivider">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     row-total    $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="rowTotal">
+	<div class="eia-container">
+		<h3 class="">Row Total</h3>
+		<div class="basic-table">
+			<table class="basic-table full-width">
+				<thead>
+					<tr>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr class="totals">
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="RowTotal">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -1272,121 +1221,121 @@ $subSection		= 'Home';
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowTotal">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
-						</div>
-					</section>
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#RowTotal">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
 
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$      section      $$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section>
-						<div class="wrapper">
-							<h2 class="eia-sub-heading uk-text-center">Table Columns</h2>
-							<p><code>    &lt;tbody&gt;...    &lt;/tbody&gt;</code></p>
-							<ul class="uk-grid-small uk-child-width-1-2 uk-flex-center uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
-								<li>
-									<div class="uk-card uk-card-default uk-card-body prototype-table">
-										<div class="prototype-table-inside">
-											<div class="prototype-table-cell">
-												<div class="prototype-column">head</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">1</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column active">2</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">3</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column active">4</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">5</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column active">6</div>
-											</div>
-											<div class="flex-break"></div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">1</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column active">2</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">3</div>
-											</div>
-											<div class="prototype-table-cell active">
-												<div class="prototype-column">4</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">5</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column active">6</div>
-											</div>
-											<div class="flex-break"></div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">foot</div>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$      section      $$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section>
+	<div class="eia-container">
+		<h2 class="eia-sub-heading uk-text-center">Table Columns</h2>
+		<p><code>    &lt;tbody&gt;...    &lt;/tbody&gt;</code></p>
+		<ul class="  uk-flex-center ">
+			<li>
+				<div class="eia-card prototype-table">
+					<div class="prototype-table-inside">
+						<div class="prototype-table-cell">
+							<div class="prototype-column">head</div>
 						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     column-align    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="columnAlign">
-						<div class="wrapper">
-							<h3 class="uk-h3">Column Align</h3>
-							<a name="ColumnAlign"></a>
-							<p>
-								Adding a <code>class="align-left-col-1/2/3/4/5/6/7/8/9/10"</code> to the to the table class (Note, this may not have the desired effect if there are spanned columns).
-							</p>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">1</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column active">2</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">3</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column active">4</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">5</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column active">6</div>
+						</div>
+						<div class="flex-break"></div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">1</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column active">2</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">3</div>
+						</div>
+						<div class="prototype-table-cell active">
+							<div class="prototype-column">4</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">5</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column active">6</div>
+						</div>
+						<div class="flex-break"></div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">foot</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     column-align    $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="columnAlign">
+	<div class="eia-container">
+		<h3 class="">Column Align</h3>
+		<a name="ColumnAlign"></a>
+		<p>
+			Adding a <code>class="align-left-col-1/2/3/4/5/6/7/8/9/10"</code> to the to the table class (Note, this may not have the desired effect if there are spanned columns).
+		</p>
 
-							<div class="basic-table">
-								<table class="basic-table full-width align-left-col-2">
-									<thead>
-										<tr>
-											<th scope="col"><code>left aligned</code></th>
-											<th scope="col"><code>left aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>left aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>left aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>left aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="ColumnAlign">&lt;div class="basic-table"&gt;
+		<div class="basic-table">
+			<table class="basic-table full-width align-left-col-2">
+				<thead>
+					<tr>
+						<th scope="col"><code>left aligned</code></th>
+						<th scope="col"><code>left aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>left aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>left aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>left aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="ColumnAlign">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width align-left-col-2"&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -1418,86 +1367,86 @@ $subSection		= 'Home';
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnAlign">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     column-divider    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="columnDivider">
-						<div class="wrapper">
-							<h3 class="uk-h3">Column (Vertical) divider</h3>
-							<a name="ColumnDivider"></a>
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnAlign">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     column-divider    $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="columnDivider">
+	<div class="eia-container">
+		<h3 class="">Column (Vertical) divider</h3>
+		<a name="ColumnDivider"></a>
 
 
 
-							<p>
-								Adding a <code>class="vertical-divider-after-col-1/2/3/4/5/6/7/8/9/10"</code> to the to the table class (Note, this may not have the desired effect if there are spanned columns).
-							</p>
-							<div class="basic-table">
-								<table class="basic-table full-width vertical-divider-after-col-1">
-									<thead>
-										<tr>
-											<th scope="col"><code>left aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-											<th scope="col"><code>right aligned</code></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr class="divider">
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-										<tr>
-											<th scope="row"><code>left aligned</code></th>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-											<td><code>right aligned</code></td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td scope="colgroup" colSpan="99" class="footnotes">
-												Footnotes: Aligned-left
-											</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="ColumnDivider">&lt;div class="basic-table"&gt;
+		<p>
+			Adding a <code>class="vertical-divider-after-col-1/2/3/4/5/6/7/8/9/10"</code> to the to the table class (Note, this may not have the desired effect if there are spanned columns).
+		</p>
+		<div class="basic-table">
+			<table class="basic-table full-width vertical-divider-after-col-1">
+				<thead>
+					<tr>
+						<th scope="col"><code>left aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+						<th scope="col"><code>right aligned</code></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr class="divider">
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+					<tr>
+						<th scope="row"><code>left aligned</code></th>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+						<td><code>right aligned</code></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td scope="colgroup" colSpan="99" class="footnotes">
+							Footnotes: Aligned-left
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="ColumnDivider">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width vertical-divider-after-col-1"&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -1552,81 +1501,81 @@ $subSection		= 'Home';
     &lt;/tfoot&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnDivider">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     column-hide    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="columnHide">
-						<div class="wrapper">
-							<h3 class="uk-h3">Column Hide</h3>
-							<a name="ColumnHide"></a>
-							<p>
-								Hiding a column (head, body and foot) can be accomplished by adding a <code>class="hide-col-1/2/3/4/5..."</code> to the table class.
-							</p>
-							<h4>Before</h4>
-							<div class="basic-table">
-								<table class="basic-table full-width highlight-col-2  highlight-col-4">
-									<thead>
-										<tr>
-											<th scope="col">Col-1</th>
-											<th scope="col">Col-2</th>
-											<th scope="col">Col-3</th>
-											<th scope="col">Col-4</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Col-1</td>
-											<td>Col-2</td>
-											<td>Col-3</td>
-											<td>Col-4</td>
-										</tr>
-										<tr>
-											<td>Col-1</td>
-											<td>Col-2</td>
-											<td>Col-3</td>
-											<td>Col-4</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnDivider">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     column-hide    $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="columnHide">
+	<div class="eia-container">
+		<h3 class="">Column Hide</h3>
+		<a name="ColumnHide"></a>
+		<p>
+			Hiding a column (head, body and foot) can be accomplished by adding a <code>class="hide-col-1/2/3/4/5..."</code> to the table class.
+		</p>
+		<h4>Before</h4>
+		<div class="basic-table">
+			<table class="basic-table full-width highlight-col-2  highlight-col-4">
+				<thead>
+					<tr>
+						<th scope="col">Col-1</th>
+						<th scope="col">Col-2</th>
+						<th scope="col">Col-3</th>
+						<th scope="col">Col-4</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Col-1</td>
+						<td>Col-2</td>
+						<td>Col-3</td>
+						<td>Col-4</td>
+					</tr>
+					<tr>
+						<td>Col-1</td>
+						<td>Col-2</td>
+						<td>Col-3</td>
+						<td>Col-4</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 
-							<h4>After</h4>
-							<div class="basic-table">
-								<table class="basic-table full-width hide-col-2 hide-col-4 highlight-col-2  highlight-col-4">
-									<thead>
-										<tr>
-											<th scope="col">Col-1</th>
-											<th scope="col">Col-2</th>
-											<th scope="col">Col-3</th>
-											<th scope="col">Col-4</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Col-1</td>
-											<td>Col-2</td>
-											<td>Col-3</td>
-											<td>Col-4</td>
-										</tr>
-										<tr>
-											<td>Col-1</td>
-											<td>Col-2</td>
-											<td>Col-3</td>
-											<td>Col-4</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="ColumnHide">&lt;div class="basic-table"&gt;
+		<h4>After</h4>
+		<div class="basic-table">
+			<table class="basic-table full-width hide-col-2 hide-col-4 highlight-col-2  highlight-col-4">
+				<thead>
+					<tr>
+						<th scope="col">Col-1</th>
+						<th scope="col">Col-2</th>
+						<th scope="col">Col-3</th>
+						<th scope="col">Col-4</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Col-1</td>
+						<td>Col-2</td>
+						<td>Col-3</td>
+						<td>Col-4</td>
+					</tr>
+					<tr>
+						<td>Col-1</td>
+						<td>Col-2</td>
+						<td>Col-3</td>
+						<td>Col-4</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="ColumnHide">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width hide-col-2 hide-col-4 highlight-col-2  highlight-col-4"&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -1652,53 +1601,53 @@ $subSection		= 'Home';
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnHide">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$ column-highlight $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="columnHighlight">
-						<div class="wrapper">
-							<h2 class="uk-h3">Column Highlight</h2>
-							<a name="ColumnHighlight"></a>
-							<p>
-								Highlighting a column can be accomplished by adding a <code>class="highlight-col-1/2/3/4/5..."</code> to the to the table class.
-							</p>
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnHide">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$ column-highlight $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="columnHighlight">
+	<div class="eia-container">
+		<h2 class="eia-h2">Column Highlight</h2>
+		<a name="ColumnHighlight"></a>
+		<p>
+			Highlighting a column can be accomplished by adding a <code>class="highlight-col-1/2/3/4/5..."</code> to the to the table class.
+		</p>
 
-							<div class="basic-table">
-								<table class="basic-table full-width highlight-col-2  highlight-col-4">
-									<thead>
-										<tr>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Col-1</td>
-											<td>Col-2</td>
-											<td>Col-3</td>
-											<td>Col-4</td>
-										</tr>
-										<tr>
-											<td>Col-1</td>
-											<td>Col-2</td>
-											<td>Col-3</td>
-											<td>Col-4</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="ColumnHighlight">&lt;div class="basic-table"&gt;
+		<div class="basic-table">
+			<table class="basic-table full-width highlight-col-2  highlight-col-4">
+				<thead>
+					<tr>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Col-1</td>
+						<td>Col-2</td>
+						<td>Col-3</td>
+						<td>Col-4</td>
+					</tr>
+					<tr>
+						<td>Col-1</td>
+						<td>Col-2</td>
+						<td>Col-3</td>
+						<td>Col-4</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="ColumnHighlight">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width highlight-col-2  highlight-col-4"&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -1724,111 +1673,111 @@ $subSection		= 'Home';
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnHighlight">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#ColumnHighlight">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$            FOOT             $$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section>
+	<div class="eia-container">
+		<h2 class="eia-sub-heading uk-text-center">FOOT</h2>
+		<p><code>&lt;foot&gt;...&lt;/foot&gt;</code></p>
+		<ul class="  uk-flex-center ">
+			<li>
+				<div class="eia-card prototype-table">
+					<div class="prototype-table-inside">
+						<div class="prototype-table-cell">
+							<div class="prototype-column">head</div>
 						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$            FOOT             $$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section>
-						<div class="wrapper">
-							<h2 class="eia-sub-heading uk-text-center">FOOT</h2>
-							<p><code>&lt;foot&gt;...&lt;/foot&gt;</code></p>
-							<ul class="uk-grid-small uk-child-width-1-2 uk-flex-center uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
-								<li>
-									<div class="uk-card uk-card-default uk-card-body prototype-table">
-										<div class="prototype-table-inside">
-											<div class="prototype-table-cell">
-												<div class="prototype-column">head</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">1</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">2</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">3</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">4</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">5</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">6</div>
-											</div>
-											<div class="flex-break"></div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">1</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">2</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">3</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">4</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">5</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">6</div>
-											</div>
-											<div class="flex-break"></div>
-											<div class="prototype-table-cell active">
-												<div class="prototype-column">foot</div>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">1</div>
 						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$       Table Foot        $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="tableFoot">
-						<div class="wrapper">
-							<h2 class="uk-h3">Table Foot</h2>
-							<div class="basic-table">
-								<table class="basic-table full-width">
-									<thead>
-										<tr>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row">...</th>
-											<td>...</td>
-											<td>...</td>
-											<td>...</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td scope="col"><code>left aligned</code></td>
-											<td scope="col"><code>right aligned</code></td>
-											<td scope="col"><code>right aligned</code></td>
-											<td scope="col"><code>right aligned</code></td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="Foot">&lt;div class="basic-table"&gt;
+						<div class="prototype-table-cell">
+							<div class="prototype-column">2</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">3</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">4</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">5</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">6</div>
+						</div>
+						<div class="flex-break"></div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">1</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">2</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">3</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">4</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">5</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">6</div>
+						</div>
+						<div class="flex-break"></div>
+						<div class="prototype-table-cell active">
+							<div class="prototype-column">foot</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$       Table Foot        $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="tableFoot">
+	<div class="eia-container">
+		<h2 class="eia-h2">Table Foot</h2>
+		<div class="basic-table">
+			<table class="basic-table full-width">
+				<thead>
+					<tr>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">...</th>
+						<td>...</td>
+						<td>...</td>
+						<td>...</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td scope="col"><code>left aligned</code></td>
+						<td scope="col"><code>right aligned</code></td>
+						<td scope="col"><code>right aligned</code></td>
+						<td scope="col"><code>right aligned</code></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="Foot">&lt;div class="basic-table"&gt;
   &lt;table class="basic-table full-width"&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -1856,59 +1805,59 @@ $subSection		= 'Home';
     &lt;/tfoot&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Foot">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     footnotes    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="Footnotes">
-						<div class="wrapper">
-							<h3 class="uk-h3">Footnotes</h3>
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Foot">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     footnotes    $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="Footnotes">
+	<div class="eia-container">
+		<h3 class="">Footnotes</h3>
 
-							<div class="basic-table">
-								<table class="basic-table full-width">
-									<thead>
-										<tr>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-											<th scope="col">...</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row">...</th>
-											<td>...</td>
-											<td>...</td>
-											<td>...</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colSpan="99" scope="colgroup" class="footnotes">
-												<ul class="footnotes">
-													<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-													<li>Donec lorem massa, semper nec eros a, lacinia porttitor nunc.</li>
-													<li>Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.</li>
-													<li>Suspendisse sagittis risus eu sem suscipit sodales.</li>
-													<li>Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus.</li>
-													<li>Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis.</li>
-													<li>Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem.</li>
-													<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-												</ul>
-											</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="TableFootnotesOrderedList">&lt;div class="basic-table"&gt;
+		<div class="basic-table">
+			<table class="basic-table full-width">
+				<thead>
+					<tr>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+						<th scope="col">...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">...</th>
+						<td>...</td>
+						<td>...</td>
+						<td>...</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colSpan="99" scope="colgroup" class="footnotes">
+							<ul class="footnotes">
+								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+								<li>Donec lorem massa, semper nec eros a, lacinia porttitor nunc.</li>
+								<li>Phasellus ex dolor, ultricies eu ornare ut, placerat non sapien.</li>
+								<li>Suspendisse sagittis risus eu sem suscipit sodales.</li>
+								<li>Vivamus ligula turpis, aliquam et maximus vel, tempor sed lectus.</li>
+								<li>Mauris quis posuere massa. Ut quis diam sed mi placerat efficitur eu sed felis.</li>
+								<li>Aliquam ipsum metus, bibendum vel ipsum sed, lobortis fringilla sem.</li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+							</ul>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="TableFootnotesOrderedList">&lt;div class="basic-table"&gt;
 	&lt;table class="basic-table full-width"&gt;
 		&lt;tfoot&gt;
 			&lt;tr&gt;
@@ -1928,186 +1877,186 @@ $subSection		= 'Home';
 		&lt;/tfoot&gt;
 	&lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<!-- Copy Button -->
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#TableFootnotesOrderedList">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#TableFootnotesOrderedList">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$      section      $$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section>
+	<div class="eia-container">
+		<h2 class="eia-sub-heading uk-text-center">Multiple Tables</h2>
+		<ul class="  uk-flex-center ">
+			<li>
+				<div class="eia-card prototype-table">
+					<div class="prototype-table-inside">
+						<div class="prototype-table-cell">
+							<div class="prototype-column">head</div>
 						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$      section      $$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section>
-						<div class="wrapper">
-							<h2 class="eia-sub-heading uk-text-center">Multiple Tables</h2>
-							<ul class="uk-grid-small uk-child-width-1-2 uk-flex-center uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
-								<li>
-									<div class="uk-card uk-card-default uk-card-body prototype-table">
-										<div class="prototype-table-inside">
-											<div class="prototype-table-cell">
-												<div class="prototype-column">head</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">1</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">2</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">3</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">4</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">5</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">6</div>
-											</div>
-											<div class="flex-break"></div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">1</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">2</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">3</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">4</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">5</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">6</div>
-											</div>
-											<div class="flex-break"></div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">foot</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="uk-card uk-card-default uk-card-body prototype-table">
-										<div class="prototype-table-inside">
-											<div class="prototype-table-cell">
-												<div class="prototype-column">head</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">1</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">2</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">3</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">4</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">5</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">6</div>
-											</div>
-											<div class="flex-break"></div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">1</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">2</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">3</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">4</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">5</div>
-											</div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">6</div>
-											</div>
-											<div class="flex-break"></div>
-											<div class="prototype-table-cell">
-												<div class="prototype-column">foot</div>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">1</div>
 						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     stacked    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="stacked">
-						<div class="wrapper">
-							<h3 class="uk-h3">Stacked</h3>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">2</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">3</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">4</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">5</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">6</div>
+						</div>
+						<div class="flex-break"></div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">1</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">2</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">3</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">4</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">5</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">6</div>
+						</div>
+						<div class="flex-break"></div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">foot</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="eia-card prototype-table">
+					<div class="prototype-table-inside">
+						<div class="prototype-table-cell">
+							<div class="prototype-column">head</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">1</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">2</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">3</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">4</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">5</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">6</div>
+						</div>
+						<div class="flex-break"></div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">1</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">2</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">3</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">4</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">5</div>
+						</div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">6</div>
+						</div>
+						<div class="flex-break"></div>
+						<div class="prototype-table-cell">
+							<div class="prototype-column">foot</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     stacked    $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="stacked">
+	<div class="eia-container">
+		<h3 class="">Stacked</h3>
 
-							<div class="basic-table">
-								<table class="basic-table full-width">
-									<caption>Table One</caption>
-									<thead>
-										<tr>
-											<th scope="col">...</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>...</td>
-										</tr>
-										<tr>
-											<td>...</td>
-										</tr>
-									</tbody>
-								</table>
+		<div class="basic-table">
+			<table class="basic-table full-width">
+				<caption>Table One</caption>
+				<thead>
+					<tr>
+						<th scope="col">...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>...</td>
+					</tr>
+					<tr>
+						<td>...</td>
+					</tr>
+				</tbody>
+			</table>
 
-								<table class="basic-table full-width">
-									<caption>Table Two</caption>
-									<thead>
-										<tr>
-											<th scope="col">...</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>...</td>
-										</tr>
-										<tr>
-											<td>...</td>
-										</tr>
-									</tbody>
-								</table>
+			<table class="basic-table full-width">
+				<caption>Table Two</caption>
+				<thead>
+					<tr>
+						<th scope="col">...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>...</td>
+					</tr>
+					<tr>
+						<td>...</td>
+					</tr>
+				</tbody>
+			</table>
 
-								<table class="basic-table full-width">
-									<caption>Table Three</caption>
-									<thead>
-										<tr>
-											<th scope="col">...</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>...</td>
-										</tr>
-										<tr>
-											<td>...</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="Stacked">&lt;div class="basic-table"&gt;
+			<table class="basic-table full-width">
+				<caption>Table Three</caption>
+				<thead>
+					<tr>
+						<th scope="col">...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>...</td>
+					</tr>
+					<tr>
+						<td>...</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="Stacked">&lt;div class="basic-table"&gt;
 	&lt;table class="basic-table full-width"&gt;
 	&lt;caption&gt;Table One&lt;/caption&gt;
 	&lt;thead&gt;
@@ -2159,158 +2108,158 @@ $subSection		= 'Home';
 	&lt;/tbody&gt;
 	&lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<!-- Copy Button -->
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#Stacked">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$      section      $$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section>
-						<div class="wrapper">
-							<h2 class="eia-sub-heading uk-text-center">custom tables</h2>
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     row-selected    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="table">
-						<div class="wrapper">
-						</div>
-					</section>
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<!-- $$$$$$$$$$     holiday-schedule    $$$$$$$$$$ -->
-					<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-					<section id="table">
-						<div class="wrapper">
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#Stacked">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$      section      $$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section>
+	<div class="eia-container">
+		<h2 class="eia-sub-heading uk-text-center">custom tables</h2>
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     row-selected    $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="table">
+	<div class="eia-container">
+	</div>
+</section>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$     holiday-schedule    $$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<section class="table">
+	<div class="eia-container">
 
-							<div class="basic-table">
-								<table class="basic-table schedule full-width align-left-col-2 align-left-col-3 align-left-col-4 align-left-col-5">
-									<thead>
-										<tr>
-											<th scope="col">Data for the week ending</th>
-											<th scope="col">Alternate Release Date</th>
-											<th scope="col">Release Day</th>
-											<th scope="col">Release Time</th>
-											<th scope="col">Holiday</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr class="past-holiday">
-											<th scope="row">December 28, 2018</th>
-											<td>January 4, 2019</td>
-											<td>Friday</td>
-											<td>11:00 a.m.</td>
-											<td>New Year's</td>
-										</tr>
-										<tr class="past-holiday">
-											<th scope="row">January 18, 2019</th>
-											<td>January 24, 2019</td>
-											<td>Thursday</td>
-											<td>11:00 a.m.</td>
-											<td>Martin Luther King Jr.</td>
-										</tr>
-										<tr class="past-holiday">
-											<th scope="row">February 15, 2019</th>
-											<td>February 21, 2019</td>
-											<td>Thursday</td>
-											<td>11:00 a.m.</td>
-											<td>President's</td>
-										</tr>
-										<tr class="past-holiday">
-											<th scope="row">May 24, 2019</th>
-											<td>May 30, 2019</td>
-											<td>Thursday</td>
-											<td>11:00 a.m.</td>
-											<td>Memorial</td>
-										</tr>
-										<tr class="past-holiday">
-											<th scope="row">August 30, 2019</th>
-											<td>September 5, 2019</td>
-											<td>Thursday</td>
-											<td>11:00 a.m.</td>
-											<td>Labor</td>
-										</tr>
-										<tr class="past-holiday">
-											<th scope="row">October 11, 2019</th>
-											<td>October 17, 2019</td>
-											<td>Thursday</td>
-											<td>11:00 a.m.</td>
-											<td>Columbus</td>
-										</tr>
-										<tr class="past-holiday">
-											<th scope="row">November 8, 2019</th>
-											<td>November 14, 2019</td>
-											<td>Thursday</td>
-											<td>11:00 a.m.</td>
-											<td>Veterans</td>
-										</tr>
-										<tr class="past-holiday">
-											<th scope="row">December 20, 2019</th>
-											<td>December 27, 2019</td>
-											<td>Friday</td>
-											<td>11:00 a.m.</td>
-											<td>Christmas</td>
-										</tr>
-										<tr class="past-holiday">
-											<th scope="row">December 27, 2019</th>
-											<td>January 3, 2020</td>
-											<td>Friday</td>
-											<td>11:00 a.m.</td>
-											<td>New Year's</td>
-										</tr>
-										<tr class="past-holiday">
-											<th scope="row">January 17, 2020</th>
-											<td>January 23, 2020</td>
-											<td>Thursday</td>
-											<td>11:00 a.m.</td>
-											<td>Martin Luther King Jr.</td>
-										</tr>
-										<tr class="past-holiday">
-											<th scope="row">February 14, 2020</th>
-											<td>February 20, 2020</td>
-											<td>Thursday</td>
-											<td>11:00 a.m.</td>
-											<td>President's</td>
-										</tr>
-										<tr class="past-holiday">
-											<th scope="row">May 22, 2020</th>
-											<td>May 28, 2020</td>
-											<td>Thursday</td>
-											<td>11:00 a.m.</td>
-											<td>Memorial</td>
-										</tr>
-										<tr>
-											<th scope="row">September 4, 2020</th>
-											<td>September 10, 2020</td>
-											<td>Thursday</td>
-											<td>11:00 a.m.</td>
-											<td>Labor</td>
-										</tr>
-										<tr>
-											<th scope="row">October 9, 2020</th>
-											<td>October 15, 2020</td>
-											<td>Thursday</td>
-											<td>11:00 a.m.</td>
-											<td>Columbus</td>
-										</tr>
-										<tr>
-											<th scope="row">November 6, 2020</th>
-											<td>November 12, 2020</td>
-											<td>Thursday</td>
-											<td>11:00 a.m.</td>
-											<td>Veterans</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<!-- HTML -->
-							<div class="uk-text-default uk-text-normal uk-text-uppercase">HTML</div>
-							<pre><code class="language-html" id="HolidaySchedule">&lt;div class="basic-table"&gt;
+		<div class="basic-table">
+			<table class="basic-table schedule full-width align-left-col-2 align-left-col-3 align-left-col-4 align-left-col-5">
+				<thead>
+					<tr>
+						<th scope="col">Data for the week ending</th>
+						<th scope="col">Alternate Release Date</th>
+						<th scope="col">Release Day</th>
+						<th scope="col">Release Time</th>
+						<th scope="col">Holiday</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="past-holiday">
+						<th scope="row">December 28, 2018</th>
+						<td>January 4, 2019</td>
+						<td>Friday</td>
+						<td>11:00 a.m.</td>
+						<td>New Year's</td>
+					</tr>
+					<tr class="past-holiday">
+						<th scope="row">January 18, 2019</th>
+						<td>January 24, 2019</td>
+						<td>Thursday</td>
+						<td>11:00 a.m.</td>
+						<td>Martin Luther King Jr.</td>
+					</tr>
+					<tr class="past-holiday">
+						<th scope="row">February 15, 2019</th>
+						<td>February 21, 2019</td>
+						<td>Thursday</td>
+						<td>11:00 a.m.</td>
+						<td>President's</td>
+					</tr>
+					<tr class="past-holiday">
+						<th scope="row">May 24, 2019</th>
+						<td>May 30, 2019</td>
+						<td>Thursday</td>
+						<td>11:00 a.m.</td>
+						<td>Memorial</td>
+					</tr>
+					<tr class="past-holiday">
+						<th scope="row">August 30, 2019</th>
+						<td>September 5, 2019</td>
+						<td>Thursday</td>
+						<td>11:00 a.m.</td>
+						<td>Labor</td>
+					</tr>
+					<tr class="past-holiday">
+						<th scope="row">October 11, 2019</th>
+						<td>October 17, 2019</td>
+						<td>Thursday</td>
+						<td>11:00 a.m.</td>
+						<td>Columbus</td>
+					</tr>
+					<tr class="past-holiday">
+						<th scope="row">November 8, 2019</th>
+						<td>November 14, 2019</td>
+						<td>Thursday</td>
+						<td>11:00 a.m.</td>
+						<td>Veterans</td>
+					</tr>
+					<tr class="past-holiday">
+						<th scope="row">December 20, 2019</th>
+						<td>December 27, 2019</td>
+						<td>Friday</td>
+						<td>11:00 a.m.</td>
+						<td>Christmas</td>
+					</tr>
+					<tr class="past-holiday">
+						<th scope="row">December 27, 2019</th>
+						<td>January 3, 2020</td>
+						<td>Friday</td>
+						<td>11:00 a.m.</td>
+						<td>New Year's</td>
+					</tr>
+					<tr class="past-holiday">
+						<th scope="row">January 17, 2020</th>
+						<td>January 23, 2020</td>
+						<td>Thursday</td>
+						<td>11:00 a.m.</td>
+						<td>Martin Luther King Jr.</td>
+					</tr>
+					<tr class="past-holiday">
+						<th scope="row">February 14, 2020</th>
+						<td>February 20, 2020</td>
+						<td>Thursday</td>
+						<td>11:00 a.m.</td>
+						<td>President's</td>
+					</tr>
+					<tr class="past-holiday">
+						<th scope="row">May 22, 2020</th>
+						<td>May 28, 2020</td>
+						<td>Thursday</td>
+						<td>11:00 a.m.</td>
+						<td>Memorial</td>
+					</tr>
+					<tr>
+						<th scope="row">September 4, 2020</th>
+						<td>September 10, 2020</td>
+						<td>Thursday</td>
+						<td>11:00 a.m.</td>
+						<td>Labor</td>
+					</tr>
+					<tr>
+						<th scope="row">October 9, 2020</th>
+						<td>October 15, 2020</td>
+						<td>Thursday</td>
+						<td>11:00 a.m.</td>
+						<td>Columbus</td>
+					</tr>
+					<tr>
+						<th scope="row">November 6, 2020</th>
+						<td>November 12, 2020</td>
+						<td>Thursday</td>
+						<td>11:00 a.m.</td>
+						<td>Veterans</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- HTML -->
+		<h3 class="eia-h3">HTML</h3>
+		<pre><code class="language-html" id="HolidaySchedule">&lt;div class="basic-table"&gt;
 	&lt;table class="basic-table schedule full-width align-left-col-2 align-left-col-3 align-left-col-4 align-left-col-5"&gt;
 	&lt;thead&gt;
 		&lt;tr&gt;
@@ -2430,21 +2379,11 @@ $subSection		= 'Home';
 	&lt;/tbody&gt;
 	&lt;/table&gt;
 &lt;/div&gt;</code></pre>
-							<!-- Copy Button -->
-							<p>
-								<button class="copy-element uk-button uk-button-primary" data-clipboard-action="copy" data-clipboard-target="#HolidaySchedule">
-									<span uk-icon="copy"></span>Copy to clipboard
-								</button>
-							</p>
-						</div>
-					</section>
-					<!-- end content -->
-					<!-- start bottom template -->
-				</div>
-			</div>
-			<div class="grid-right"></div>
-			<?php include('../includes/footer.inc'); ?>
-			</div>
-</body>
-
-</html>
+		<!-- Copy Button -->
+		<p>
+			<button class="copy-element eia-button eia-button-primary" data-clipboard-action="copy" data-clipboard-target="#HolidaySchedule">
+				<span></span>Copy to clipboard
+			</button>
+		</p>
+</div>
+	</section>

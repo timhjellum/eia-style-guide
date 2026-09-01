@@ -1,9 +1,0 @@
-@import '../../base/_vars';
-@import '../../base/_mixins';
-@import "../../base/icons-mixins";
-@import "../../base/icons-vars";
-@import "../../base/icons";
-@import "../../base/icons-header";
-@import "../../l2/_browse-by-tag";
-
-@import './styles';

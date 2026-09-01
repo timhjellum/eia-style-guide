@@ -1,0 +1,82 @@
+@media @mobile {
+
+		ul {
+			&.basic {
+				&.highlight {
+					li {
+						&.ico {
+							&.api {
+								background-size: auto;
+							}
+						}
+						a {
+							&.ico {
+								&.xls {
+									&.button {
+										margin: 12px 0;
+										padding: 12px 40px 13px 12px;
+										border: 1px solid #333;
+										background-color: white;
+										box-shadow: 1px 1px 1px 0 rgb(89 87 87 / 50%);
+										border-radius: 1px;
+										cursor: pointer;
+										span {
+											display: inline;
+											margin-left: 8px;
+											//text-align: center;
+											color: #333;
+											font-weight: bold;
+											text-decoration: none;
+											white-space: nowrap;
+											line-height: 20px;
+											font-family: Arial, Helvetica, sans-serif;
+											font-size: 1em;
+										}
+									}
+									&:before {
+										height: 22.5px;
+										width: 22px;
+										margin-bottom: -6px;
+									}
+								}
+							}
+							&:hover {
+								background-color: #5e9c30;
+							}
+							/*
+							&.excel-button {
+								width: 312px;
+								height: 50px;
+								margin-top: 12px;
+								border: 1px solid red;
+								background-color: white;
+							}
+							*/
+						}
+					}
+				}
+			}
+		}
+
+		.l-row {
+			&.l-report-header-opendata {
+				padding: 0 !important;
+				margin: 0 !important;
+				width: 100% !important;
+				border-bottom: solid 0 #fff;
+				&.l-two-col-right-wide {
+					& > .l-col {
+						width: 100%;
+						&.opendata-navigation {
+							& > a {
+								flex-grow: 0;
+								margin: 0 20px 20px 0;
+								width: 129px !important;
+							}
+						}
+					}
+				}
+			}
+		}
+
+}

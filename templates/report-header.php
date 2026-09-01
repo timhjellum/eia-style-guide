@@ -1,9 +1,4 @@
 <?php
-require_once '../includes/variables.inc';
-$globalTitle 	= 'U.S. Energy Information Administration (EIA)';
-$section		= 'Themes';
-$subSection		= 'Report Header';
-
 $seeAll        = '<a href="//reports.php">See all Reports</a>';
 $dataSeries         = '<!--<span class="responsive-container"></span>-->';
 $reportTitle        = 'Annual Coal Report';
@@ -27,93 +22,62 @@ $selectOptions       = '<li class="eia ico pdf"><a href="./archive/05842017.pdf"
 <li class="eia ico pdf"><a href="./archive/05842003.pdf">2003</a></li>
 <li class="eia ico pdf"><a href="./archive/05842002.pdf">2002</a></li>
 <li class="eia ico pdf"><a href="./archive/">see all</a></li>';
-
 ?>
-<!doctype html>
-<html>
 
-<head>
-	<?php include('../includes/head.inc'); ?>
-</head>
 
-<body>
-	<?php include('../includes/header.inc'); ?>
-	<main>
-		<section class="report-header">
-			<!-- start master layout-->
-			<div class="grid-wrapper">
-				<div class="grid-left">
-					<!-- start left navigation-->
-					<div></div>
-					<!-- end master layout-->
-				</div>
-				<div class="grid-main">
-					<!-- start main template area -->
-
-					<div class="l-row l-report-header">
-						<div class="l-col">
-							<div class="see-all">
-								<?php echo "$seeAll"?>
-							</div>
-							<h1>
-								<?php echo "$pageTitle"?>
-							</h1>
-							<p class="para"></p>
-							<div class="release-dates">
-								<span class="responsive-container">
-									<?php echo "$dataSeries"?>
-								</span>
-								<span class="responsive-container">
-									<span class="label">Release Date:</span> <span class="date">
-										<?php echo "$releaseDate"?>
-									</span>
-								</span>
-								<span class="responsive-container">
-									<span class="label">Next Release Date:</span> <span class="date">
-										<?php echo "$nextReleaseDate"?>
-									</span>
-								</span>
-								<span class="responsive-container">
-									<span class="label">Re-released:</span> <span class="date">November 26, 2018 <a href="revision_notice.php">Correction</a></span>
-								</span>
-								<span class="responsive-container">
-									<?php echo "$fullReport"?>
-								</span>
-								<span class="responsive-container">
-									<span class="label">Re-released:</span> <span class="date">November 26, 2018 <a href="revision_notice.php">Correction</a></span>
-								</span>
-							</div>
-						</div>
-						<div class="l-col">
-							<span class="go-back"><a href="/uranium/marketing/"><span class="eia ico close"><span>Go Back</span></span></a></span>
-							<div class="form-container do-not-print">
-								<fieldset>
-									<legend>Previous reports</legend>
-									<div class="dropdown-container no-js">
-										<div class="dropdown-button">
-											<span class="text">Select Year</span>
-											<span class="eia ico d-arrow">
-												<span>dropdown arrow</span>
-											</span>
-										</div>
-										<div class="dropdown-menu">
-											<ul>
-												<?php echo "$select"?>
-											</ul>
-										</div>
-									</div>
-								</fieldset>
-							</div>
-						</div>
+<div class="l-row l-report-header">
+	<div class="l-col">
+		<div class="see-all">
+			<?php echo "$seeAll"?>
+		</div>
+		<h1 class="l-border-bottom l-border-thin">
+			<?php echo "$pageTitle"?>
+		</h1>
+		<p class="eia-para"></p>
+		<div class="release-dates">
+			<span class="responsive-container">
+				<?php echo "$dataSeries"?>
+			</span>
+			<span class="responsive-container">
+				<span class="label">Release Date:</span> <span class="date">
+					<?php echo "$releaseDate"?>
+				</span>
+			</span>
+			<span class="responsive-container">
+				<span class="label">Next Release Date:</span> <span class="date">
+					<?php echo "$nextReleaseDate"?>
+				</span>
+			</span>
+			<span class="responsive-container">
+				<span class="label">Re-released:</span> <span class="date">November 26, 2018 <a href="revision_notice.php">Correction</a></span>
+			</span>
+			<span class="responsive-container">
+				<?php echo "$fullReport"?>
+			</span>
+			<span class="responsive-container">
+				<span class="label">Re-released:</span> <span class="date">November 26, 2018 <a href="revision_notice.php">Correction</a></span>
+			</span>
+		</div>
+	</div>
+	<div class="l-col">
+		<span class="go-back"><a href="/uranium/marketing/"><span class="eia ico close"><span>Go Back</span></span></a></span>
+		<div class="form-container do-not-print">
+			<fieldset>
+				<legend>Previous reports</legend>
+				<div class="dropdown-container no-js">
+					<div class="dropdown-button">
+						<span class="text">Select Year</span>
+						<span class="eia ico d-arrow">
+							<span>dropdown arrow</span>
+						</span>
 					</div>
-					<!-- end main template area -->
+					<div class="dropdown-menu">
+						<ul>
+							<?php echo "$select"?>
+						</ul>
+					</div>
 				</div>
-				<div class="grid-right"></div>
-			</div>
-			<!-- end master layout-->
-		</section>
-		<?php include('../includes/footer.inc'); ?>
-	</main>
-</body>
-
-</html>
+			</fieldset>
+		</div>
+	</div>
+</div>

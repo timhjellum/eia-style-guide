@@ -1,5 +1,0 @@
-@import "../../base/_vars";
-@import "../../base/_mixins";
-
-@import "./styles";
-@import "../../modules/pre-code-highlight";
