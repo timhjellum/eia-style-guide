@@ -1,0 +1,284 @@
+/* Register the property */
+@property --alert-primary {
+	syntax: "<color>";
+	inherits: false;
+	initial-value: #ffc702;
+}
+@property --alert-secondary {
+	syntax: "<color>";
+	inherits: false;
+	initial-value: #ffea9f;
+}
+
+.banner--alert:has(+ .banner--call-out) {
+	margin-bottom: 0 !important;
+}
+@layer reset {
+	// reset
+	div.alert,
+	div.call-out,
+	div.error,
+	div.info,
+	div.notice,
+	div.success {
+		clear: unset;
+		display: unset;
+		font-size: unset;
+		line-height: unset;
+		margin: unset;
+		width: unset;
+	}
+}
+@layer banner {
+	.banner {
+		display: flex;
+		flex-direction: column;
+		border: none;
+		border-left: 8px solid;
+		font-size: 1.2rem;
+		padding: 1em !important;
+		margin-bottom: 2em;
+		font-weight: 400;
+		ul {
+			margin: 0.5em 0 1em 0.75em !important;
+			list-style: disc !important;
+			li {
+				list-style: disc !important;
+			}
+		}
+		&--full-width {
+			margin: 0;
+			position: relative;
+			width: 100%;
+			left: calc(-50vw + 50%);
+			width: calc(100vw);
+			border-top: 3px;
+			border-left: 0;
+			border-bottom: 3px;
+		}
+		p {
+			a {
+				//font-weight: bolder !important;
+				text-decoration: underline !important;
+				&:hover {
+					text-decoration: none !important;
+				}
+			}
+		}
+
+		&.icon {
+			&--beta {
+			}
+			&--call-out {
+			}
+			&--error {
+			}
+			&--alert {
+			}
+			&--success {
+			}
+			&--notice {
+			}
+		}
+		&--beta {
+			background-color: #ffea9f;
+			border-color: #ffc702;
+			p {
+				color: #333;
+				a {
+					color: #333 !important;
+				}
+			}
+		}
+		&--call-out {
+			background-color: #ededed;
+			border-color: #333;
+			p {
+				color: #333;
+				a {
+					color: #333 !important;
+				}
+			}
+		}
+		&--error {
+			background-color: #edd6d9;
+			border-color: #892b36;
+			p {
+				color: #892b36;
+				a {
+					color: #892b36 !important;
+				}
+			}
+		}
+		&--alert {
+			background-color: var(--alert-secondary);
+			border-color: var(--alert-primary);
+			p {
+				color: #333;
+				a {
+					color: #333;
+				}
+			}
+		}
+		&--success {
+			background-color: #dfead6;
+			border-color: #5d9732;
+			p {
+				color: #467126;
+				a {
+					color: #467126 !important;
+				}
+			}
+		}
+		&--notice {
+			background-color: #d9eff9;
+			border-color: #007eb5;
+
+			p,
+			li {
+				color: #007eb5;
+				a {
+					color: #007eb5 !important;
+				}
+			}
+		}
+
+		&.no-backgroud-color {
+		}
+		&.no-border {
+			border: 0 !important;
+		}
+		&.border-left {
+			border-top: 0;
+			border-left: 5px;
+			border-bottom: 0;
+		}
+		&.border-top-bottom {
+			border-top: 3px;
+			border-left: 0;
+			border-bottom: 3px;
+		}
+	}
+}
+
+.ico {
+	&.warning {
+		> .triangle {
+			position: absolute;
+			color: white;
+		}
+	}
+}
+
+.banner {
+	//display: flex;
+	//border-width: 3px;
+	//border-bottom-style: solid;
+	//border-top-style: solid;
+	//font-size: 1.2rem;
+	//padding: 1em !important;
+	//margin-bottom: 2em;
+	//font-weight: 400;
+
+	p {
+		margin: 0;
+
+		&.ico {
+			position: relative;
+			&.info {
+				padding-left: var(--icon-info-width);
+				&:before {
+					background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Ccircle cx='7' cy='7' r='6' fill='none' stroke='%230096d7' stroke-miterlimit='10'/%3E%3Cpath d='M8.17 6v3.3a1 1 0 0 0 .12.56.85.85 0 0 0 .61.14v.57H5.61V10h.12c.31 0 .5 0 .58-.16a.93.93 0 0 0 .12-.55V7.7a1 1 0 0 0-.12-.56C6.23 7 6 7 5.73 7h-.12v-.58ZM6.36 4.14a.93.93 0 0 1 .28-.68.94.94 0 0 1 .68-.29.91.91 0 0 1 .68.29.91.91 0 0 1 .28.68.94.94 0 0 1-.28.69.94.94 0 0 1-1.37 0 1 1 0 0 1-.27-.69Z' fill='%230096d7'/%3E%3C/svg%3E");
+					background-repeat: no-repeat;
+					background-size: 77%;
+					content: " ";
+					position: absolute;
+					top: 0;
+					left: 0;
+					//display: inline-block;
+					height: var(--icon-info-width);
+					margin: 0;
+					width: var(--icon-info-width);
+				}
+			}
+		}
+		&.submit {
+			padding-left: var(--icon-info-width);
+			&:before {
+				//background: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpath d='M34.5 18A16.5 16.5 0 1 1 18 1.5 16.5 16.5 0 0 1 34.5 18Z' fill='rgba(93, 151, 50, 0.8)' opacity='.8'/%3E%3Cpath fill='%23fff' d='m28.3 13.5-3.8-3.8-9.1 9.1-3.9-3.9-3.7 3.8 7.6 7.6 12.9-12.8z'/%3E%3C/svg%3E) no-repeat 50%;
+				background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpath d='M34.5 18A16.5 16.5 0 1 1 18 1.5 16.5 16.5 0 0 1 34.5 18Z' fill='%230096d7'/%3E%3Cpath fill='%23fff' d='m28.3 13.5-3.8-3.8-9.1 9.1-3.9-3.9-3.7 3.8 7.6 7.6 12.9-12.8z'/%3E%3C/svg%3E");
+				background-repeat: no-repeat;
+				background-size: 77%;
+				content: " ";
+				position: absolute;
+				top: 0;
+				left: 0;
+				//display: inline-block;
+				height: var(--icon-info-width);
+				margin: 0;
+				width: var(--icon-info-width);
+			}
+		}
+		&.warning {
+			padding-left: var(--icon-info-width);
+
+			&:before {
+				background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22200px%22%20height%3D%22200px%22%20viewBox%3D%220%200%20200%20200%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20id%3D%22triangle%22%20fill%3D%22%23000000%22%20points%3D%22100%200%20200%20200%200%20200%20%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 77%;
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				//display: inline-block;
+				height: var(--icon-info-width);
+				margin: 0;
+				width: var(--icon-info-width);
+				margin-left: -5px;
+			}
+			&:after {
+				content: "!";
+				position: absolute;
+				top: ~"calc(var(--icon-info-width) / 2.5)";
+				left: ~"calc(var(--icon-info-width) / 3)";
+				//transform: translate(-50%, -50%);
+				color: white;
+				font-weight: bolder;
+			}
+		}
+		&.error {
+			padding-left: var(--icon-info-width);
+			background-color: transparent !important;
+			a {
+				color: black;
+				text-decoration: underline;
+				border-bottom: none;
+			}
+			&:before {
+				background-image: url("data:image/svg+xml,%3Csvg%20height%3D%22100%22%20width%3D%22100%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20r%3D%2245%22%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22%22%20%2F%3E%3C%2Fsvg%3E");
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 77%;
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				//display: inline-block;
+				height: var(--icon-info-width);
+				margin: 0;
+				width: var(--icon-info-width);
+				margin-left: -5px;
+			}
+			&:after {
+				content: "!";
+				position: absolute;
+				top: ~"calc(var(--icon-info-width) / 3.5)";
+				left: ~"calc(var(--icon-info-width) / 3)";
+				//transform: translate(-50%, -50%);
+				color: white;
+				font-weight: bolder;
+			}
+		}
+	}
+}
