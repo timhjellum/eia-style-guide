@@ -1,3 +1,5 @@
+import './style.css'
+
 //import "./scripts/page-entry-animation.js";
 //import "./scripts/lenis.js";
 import "./scripts/routes.js";
