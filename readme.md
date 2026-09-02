@@ -1,9 +1,36 @@
-+-- index.html # Main application entry
-+-- app.js # Router and core logic
-+-- styles.css # App layout (sidebar, header)
-+-- patterns/ # 50 pattern data files
-+-- buttons/
-¦ +-- primary.js
-¦ +-- secondary.js
-+-- forms/
-+-- inputs.js
+# a #
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/37c5556f-280c-4904-8d49-44f210d1cc39/deploy-status)](https://app.netlify.com/projects/eia-style-guide/deploys)
+
+
+```
+deliverable/
++-- index.html
++-- styles.less
++-- scripts.js
++-- src/
+    +-- favicon.svg
+    +-- favicon.ico
+    +-- favicon-16.png
+    +-- favicon-32.png
+    +-- apple-touch-icon.png
+    +-- android-chrome-192x192.png
+    +-- android-chrome-512x512.png
+    +-- site.webmanifest
+```
+
+
+### Structure:
+
+* Single Page Application (SPA)
+* JavaScript processed through Babel
+* Less and CSS processed through Webpack
+
+---
+
+### How to build this app ###
+
+* Clone the repository [https://timhjellum@bitbucket.org/timberhjellum/eia-style-guide](git clone https://timhjellum@bitbucket.org/timberhjellum/eia-style-guide.git)
+* `cd eia-style-guide`
+* `npm install`
+* `run npm start`
